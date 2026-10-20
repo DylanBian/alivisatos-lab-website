@@ -9,7 +9,7 @@ import os
 
 import requests
 
-from wp import annotate, api, request, session, summary
+from wp import annotate, api, config, request, session, summary
 
 KEYS = ["edit_pages", "publish_pages", "edit_others_pages", "upload_files", "unfiltered_html", "edit_theme_options"]
 
@@ -20,6 +20,24 @@ def main():
     pw = os.environ.get("WP_APP_PASSWORD", "")
     annotate("notice", "Secrets", f"WP_USER length {len(user)}; WP_APP_PASSWORD length {len(pw)} "
              f"({len(pw.replace(' ', ''))} without spaces)")
+    # Try every candidate REST host; a proxy in front of one host may drop the Authorization header.
+    for base in config().get("api_base_candidates", []):
+        url = base.rstrip("/") + "/wp-json/wp/v2/users/me"
+        for variant, kwargs in [("pretty", {"params": {"context": "edit"}}),
+                                ("rest_route", {"params": {"rest_route": "/wp/v2/users/me", "context": "edit"}})]:
+            target = url if variant == "pretty" else base.rstrip("/") + "/"
+            try:
+                t = request(s, "GET", target, allow_redirects=False, **kwargs)
+                try:
+                    code = t.json().get("code") if t.status_code != 200 else f"user={t.json().get('slug')}"
+                except ValueError:
+                    code = t.text[:120]
+                loc = t.headers.get("location", "")
+                annotate("notice", "Host test", f"{base} [{variant}]: HTTP {t.status_code}; {code}; "
+                         f"server={t.headers.get('server')}; www-authenticate={t.headers.get('www-authenticate', '-')}"
+                         + (f"; redirect={loc[:120]}" if loc else ""))
+            except requests.RequestException as e:
+                annotate("notice", "Host test", f"{base} [{variant}]: {type(e).__name__}")
     try:
         r = request(s, "GET", f"{api()}/users/me", params={"context": "edit"})
     except requests.RequestException as e:
