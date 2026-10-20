@@ -1,4 +1,6 @@
-# New-paper highlight cards: drafts (not published)
+# New-paper highlight cards: drafts
+
+Status 2026-10-20: the figures are published (every Selected Publication shows a TOC graphic or Figure 1 with a credit line, captured from the publisher pages). The draft sentences below are not used on the site; Dylan accepted the current form. The rest of this file is the original draft, kept for reference.
 
 Follows `tasks/TASKS-P3-publication-images.md`. Each card would show an image, the citation, a DOI link and one
 sentence. Nothing here is on the site; each card waits for Dylan's (or the first author's) approval.
