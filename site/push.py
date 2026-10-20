@@ -190,7 +190,7 @@ def main():
     diff=''.join(difflib.unified_diff(raw.splitlines(True),updated.splitlines(True),fromfile='current',tofile='generated'))
     (ROOT/'reports'/f'{page}.diff').write_text(diff)
     print('Saved backup and diff. Current SHA256:',hashlib.sha256(raw.encode()).hexdigest())
-    if os.environ.get('GITHUB_ACTIONS'): print(f'::notice title=push {page}::live modified {saved.get("modified_gmt","?")}; raw {len(raw)} chars -> {len(updated)} chars; apply={args.apply}')
+    if os.environ.get('GITHUB_ACTIONS') and not args.apply: print(f'::notice title=push {page}::live modified {saved.get("modified_gmt","?")}; raw {len(raw)} chars -> {len(updated)} chars; dry run')
     # 2026-10-20: a 1,074,426-char save came back empty (PHP regex backtrack limit is 1,000,000); 879,405 chars saved fine.
     if len(updated)>MAX_RAW_CHARS:
         message=f'{page}: generated page is {len(updated)} chars, above the {MAX_RAW_CHARS} limit; WordPress may save it empty. Nothing written.'
@@ -213,6 +213,7 @@ def main():
     if roundtrip!=actual:
         raise RuntimeError('Saved markup differs from generated fragment. Backup retained; inspect before further writes.')
     print('Published and verified saved Divi module. Check the public page visually as well.')
+    if os.environ.get('GITHUB_ACTIONS'): print(f'::notice title=push {page}::published; read-back matches the build; raw {len(raw)} -> {len(actual)} chars')
     if page=='research':(ROOT/'build/research-content.before-c.raw').write_text(actual)
     # The public plain-URL check runs as a separate workflow step (scripts/verify_public.py at the repo root).
 
