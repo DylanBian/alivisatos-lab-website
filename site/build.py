@@ -262,7 +262,9 @@ def prefix_classes(root):
         if 'ag-site-card' not in article.get('class','').split() and 'ag-site-member-card' not in article.get('class','').split() and 'ag-site-alumni-card' not in article.get('class','').split() and 'ag-site-home-paper' not in article.get('class','').split():
             article.set('class',(article.get('class','')+' ag-site-card').strip())
         for img in article.xpath('./img'):
-            img.set('class','ag-site-card-image')
+            # Member photos keep their own size rule; only other cards get the full-width card image.
+            if 'ag-site-member-photo' not in img.get('class','').split():
+                img.set('class','ag-site-card-image')
         for time_node in article.xpath('.//time'):
             p=time_node.getparent()
             if p is not None and p.tag=='p': p.set('class','ag-site-kicker')
