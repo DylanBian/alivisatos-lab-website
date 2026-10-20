@@ -4,7 +4,9 @@ Record every publish: date (UTC), page, Actions run link, public-check result.
 
 ## 2026-10-20
 
-### Alumni positions with identity ties (built; dry run 39454736956 passed; publish waits for Dylan)
+### 16:22 UTC publish run 39456774253 (alumni, approved by Dylan): positions with identity ties
+- Read back identical to the build; cache refreshed; public check passed. Checked as a visitor: 187 cards, Ophir Klein under Undergraduate, Colvin, Scheele, Seo, Luther, Ha and Chou show the new entries; Betzler and Thau show no position.
+- Ophir Klein's role changed from Ph.D./postdoc to undergraduate (Dylan).
 - Rule from Dylan: a found person must be proven to be the Alivisatos group member. Each changed entry records the
   page that shows the position (`source`) and the page or ORCID/OpenAlex record that ties the person to the group
   (`identity`); `validate.py` requires both whenever `verified` is set.
