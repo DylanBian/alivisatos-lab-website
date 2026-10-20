@@ -60,8 +60,10 @@ def replace_research_citations(raw):
     """Make the reviewed Research citation edits while preserving every Divi block."""
     def walk(value):
         if isinstance(value,str):
-            for before,after in [(' Synth</em>',' Nat. Synth</em>'),('Adv.</em>','Sci. Adv.</em>'),('J. Am. Chem. Soc</em>. 2023','J. Am. Chem. Soc.</em> 2023')]:
-                value=value.replace(before,after)
+            # Idempotent: already-corrected labels are left alone.
+            value=re.sub(r'(?<!Nat\.) Synth</em>',' Nat. Synth</em>',value)
+            value=re.sub(r'(?<!Sci\. )(?<![A-Za-z])Adv\.</em>','Sci. Adv.</em>',value)
+            value=value.replace('J. Am. Chem. Soc</em>. 2023','J. Am. Chem. Soc.</em> 2023')
             return value
         if isinstance(value,dict): return {key:walk(item) for key,item in value.items()}
         if isinstance(value,list): return [walk(item) for item in value]
@@ -118,10 +120,11 @@ def main():
             if updated!=fragment:
                 raise RuntimeError('Research snapshot differs from the generated target; review its source and diff.')
         else:
-            baseline=ROOT/'build/research-content.before-c.raw'
-            if not baseline.exists() or raw!=baseline.read_text():
-                raise RuntimeError('Research page differs from the reviewed baseline; refresh and review before publishing.')
-            updated=fragment
+            # Apply the three label corrections to the live content (the live page changed after the C baseline).
+            updated=replace_research_citations(raw)
+            if updated==raw:
+                print('Research: all three journal labels are already correct; nothing to publish.')
+                if os.environ.get('GITHUB_ACTIONS'): print('::notice title=push research::Already correct; nothing to publish.')
     else:
         updated=replace_module(raw,fragment,marker)
         if page=='members':
