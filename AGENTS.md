@@ -34,7 +34,8 @@ Current tasks live in `tasks/`. The newest task file is the one to follow.
 
 ## Rules for changes
 - Minimal, targeted edits. Never rebuild a page from rendered HTML. Preserve Divi attributes, classes and IDs.
-- The generator replaces content only between AUTO markers and starts from the live `content.raw` (see `site/README.md`).
+- `site/push.py` replaces content only between AUTO markers in the live `content.raw` (see `site/README.md`).
+- Page data lives in `site/data/`; edit data and templates, never the generated files in `site/build/` by hand.
 - Never delete pages, media, menus or users. To take a page offline, set it to private.
 - Do not install plugins, change themes, change global Divi settings (including Theme Options > Integration),
   or edit other sites on the network.

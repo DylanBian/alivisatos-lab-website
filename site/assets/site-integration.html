@@ -1,0 +1,28 @@
+<script>
+(function(){
+  function ready(callback){if(document.readyState==='loading')document.addEventListener('DOMContentLoaded',callback);else callback()}
+  ready(function(){
+    var root=document.getElementById('alivisatos-publications');
+    if(root){
+      var input=root.querySelector('#publication-search'),clear=root.querySelector('.ag-site-publication-clear'),status=root.querySelector('#publication-search-status'),years=Array.from(root.querySelectorAll('.ag-site-year-toggle')),selected=root.querySelector('.ag-site-selected'),nav=root.querySelector('.ag-site-year-nav'),sections=years.map(function(section){return{el:section,open:section.dataset.defaultOpen==='true',cards:Array.from(section.querySelectorAll('.ag-site-card')).map(function(card){return{el:card,text:card.textContent.toLowerCase()}})}}),total=sections.reduce(function(n,s){return n+s.cards.length},0);
+      if(input&&clear&&status){
+        function filter(){var q=input.value.trim().toLowerCase(),words=q.split(/ +/).filter(Boolean),count=0;sections.forEach(function(section){var hits=0;section.cards.forEach(function(card){var match=words.every(function(word){return card.text.indexOf(word)!==-1});card.el.hidden=!match;card.el.style.display=match?'flex':'none';if(match)hits++});section.el.hidden=!!q&&!hits;section.el.open=q?hits>0:section.open;count+=hits});if(selected){selected.hidden=!!q;selected.style.display=q?'none':'grid'}if(nav){nav.hidden=!!q;nav.style.display=q?'none':'grid'}status.textContent=q?count+' of '+total+' publications match your search.':total+' publications. Type to filter the list.'}
+        input.addEventListener('input',filter);clear.addEventListener('click',function(){input.value='';filter();input.focus()});filter();
+      }
+    }
+    var alumni=document.querySelector('[data-alumni-root]');
+    if(alumni){
+      var cards=Array.from(alumni.querySelectorAll('[data-alumni-card]')),search=alumni.querySelector('#alumni-search'),status=alumni.querySelector('[role="status"]'),clear=alumni.querySelector('.ag-site-clear'),role='all',sector='all';
+      if(search&&status&&clear){
+        function setGroup(buttons,active){buttons.forEach(function(button){var on=button.dataset.value===active;button.setAttribute('aria-pressed',on?'true':'false');button.classList.toggle('ag-site-active',on);button.style.cssText=on?button.dataset.baseStyle+' '+button.dataset.activeStyle:button.dataset.baseStyle})}
+        function filter(){var q=search.value.trim().toLowerCase(),shown=0;cards.forEach(function(card){var roles=card.dataset.roles.split('|'),match=(role==='all'||roles.indexOf(role)!==-1)&&(sector==='all'||card.dataset.sector===sector)&&(!q||card.dataset.search.indexOf(q)!==-1);card.hidden=!match;card.style.display=match?'':'none';if(match)shown++});status.textContent=shown+' of '+cards.length+' alumni shown.'}
+        var roleButtons=Array.from(alumni.querySelectorAll('[data-role-filter]')),sectorButtons=Array.from(alumni.querySelectorAll('[data-sector-filter]'));
+        roleButtons.forEach(function(button){button.addEventListener('click',function(){role=button.dataset.value;setGroup(roleButtons,role);filter()})});
+        sectorButtons.forEach(function(button){button.addEventListener('click',function(){sector=button.dataset.value;setGroup(sectorButtons,sector);filter()})});
+        search.addEventListener('input',filter);clear.addEventListener('click',function(){search.value='';filter();search.focus()});setGroup(roleButtons,'all');setGroup(sectorButtons,'all');
+        alumni.querySelectorAll('[data-sector-segment]').forEach(function(segment){var total=Number(segment.dataset.total)||1;segment.style.width=(100*Number(segment.dataset.count)/total)+'%'});filter();
+      }
+    }
+  });
+})();
+</script>

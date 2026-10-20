@@ -4,11 +4,11 @@ base_url: https://alivisatoslab.uchicago.edu
 # Public pages: key -> WordPress page id (int) or slug (str, resolved at run time).
 pages:
   home: 2
-  research: research
-  members: members
-  alumni: alumni
+  research: 1198
+  members: 1153
+  alumni: 1120
   publications: 1147
-  news: news
+  news: 1179
   gallery: 1269
 
 # Public URL path for each page key (plain URLs, no query string).

@@ -1,0 +1,33 @@
+#alivisatos-publications{width:100%;font-family:UChicagoSansSerif-Regular,Helvetica,Arial,sans-serif;color:#3f3f3f}
+#alivisatos-publications *{box-sizing:border-box}
+#alivisatos-publications .ap-title{margin:0;padding:0 0 10px;color:#800000;font-size:34px;font-weight:500;line-height:1.15}
+#alivisatos-publications .ap-nav{display:grid;grid-template-columns:repeat(6,minmax(0,1fr));gap:12px;margin:58px 0 34px;padding:0}
+#alivisatos-publications .ap-nav a{display:flex;align-items:center;justify-content:center;min-height:42px;padding:8px 10px;border:1px solid #ded7d5;border-radius:999px;background:#fff;color:#4b4b4b;text-decoration:none;font-size:17px;font-weight:500;line-height:1.2;transition:background-color .16s ease,color .16s ease,border-color .16s ease}
+#alivisatos-publications .ap-nav a:hover{border-color:#800000;background:#800000;color:#fff}
+#alivisatos-publications .ap-nav a:focus-visible,#alivisatos-publications .ap-doi-link:focus-visible{outline:2px solid #800000;outline-offset:3px}
+#alivisatos-publications .ap-rule{height:3px;border:0;background:#800000;margin:28px 0 30px}
+#alivisatos-publications .ap-year{margin:0 0 42px;scroll-margin-top:24px}
+#alivisatos-publications .ap-year h2{margin:0 0 18px;padding:0;color:#800000;font-size:31px;font-weight:400;line-height:1.2}
+#alivisatos-publications .ap-entry{display:grid;grid-template-columns:1fr;gap:13px}
+#alivisatos-publications .ap-card{position:relative;padding:18px 21px 17px;border:1px solid #e5e0de;border-left:4px solid #800000;border-radius:7px;background:#fff;box-shadow:0 2px 7px rgba(35,20,20,.045)}
+#alivisatos-publications .ap-card-title{margin:0 0 7px;color:#292929;font-size:19px;font-weight:650;line-height:1.45}
+#alivisatos-publications .ap-card-title strong{font-weight:700}
+#alivisatos-publications .ap-authors{margin:0 0 11px;color:#707070;font-size:14px;font-weight:400;line-height:1.55}
+#alivisatos-publications .ap-card-meta{display:flex;align-items:center;flex-wrap:wrap;gap:7px;color:#666;font-size:13px;line-height:1.4}
+#alivisatos-publications .ap-journal,#alivisatos-publications .ap-year-tag,#alivisatos-publications .ap-highlight{display:inline-flex;align-items:center;min-height:25px;padding:4px 9px;border-radius:4px;background:#f0efed;color:#4b4b4b;font-weight:600}
+#alivisatos-publications .ap-journal-science{background:#e7eef8;color:#214b7a}
+#alivisatos-publications .ap-journal-nature{background:#e5f0e9;color:#14583c}
+#alivisatos-publications .ap-year-tag{background:#f4f1ed;color:#5b514b;font-weight:500}
+#alivisatos-publications .ap-highlight{background:#fff2d8;color:#765000;text-decoration:none}
+#alivisatos-publications .ap-highlight:hover{text-decoration:underline}
+#alivisatos-publications .ap-details{display:inline;color:#6d6d6d}
+#alivisatos-publications .ap-details em{font-style:italic}
+#alivisatos-publications .ap-doi-link{display:inline-flex;align-items:center;max-width:100%;padding:4px 9px;border:1px solid #d9c1c1;border-radius:4px;background:#fff;color:#800000;text-decoration:none;font-weight:600;overflow-wrap:anywhere}
+#alivisatos-publications .ap-doi-link:hover{background:#800000;color:#fff}
+#alivisatos-publications .ap-details a:not(.ap-doi-link){color:#800000;text-decoration:underline}
+#alivisatos-publications .ap-legacy-entry{padding:12px 0;color:#4d4d4d;font-size:15px;line-height:1.6}
+@media(max-width:900px){#alivisatos-publications .ap-nav{grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}#alivisatos-publications .ap-nav a{font-size:16px}}
+@media(max-width:600px){#alivisatos-publications .ap-title{font-size:30px}#alivisatos-publications .ap-nav{grid-template-columns:repeat(3,minmax(0,1fr));gap:8px;margin-top:38px}#alivisatos-publications .ap-nav a{min-height:38px;padding:7px;font-size:15px}#alivisatos-publications .ap-card{padding:15px 15px 14px}#alivisatos-publications .ap-card-title{font-size:17px}#alivisatos-publications .ap-authors{font-size:13px}}
+@media(max-width:380px){#alivisatos-publications .ap-nav{grid-template-columns:repeat(2,minmax(0,1fr))}}
+#alivisatos-publications .ap-rule + .ap-rule{display:none!important}
+

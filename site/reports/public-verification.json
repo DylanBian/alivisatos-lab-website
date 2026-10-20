@@ -1,0 +1,58 @@
+[
+  {
+    "path": "/",
+    "status": 200,
+    "result": "PASS",
+    "detail": "",
+    "url": "https://alivisatoslab.uchicago.edu/"
+  },
+  {
+    "path": "/positions/",
+    "status": 404,
+    "result": "PASS",
+    "detail": "",
+    "url": "https://alivisatoslab.uchicago.edu/positions/"
+  },
+  {
+    "path": "/members/",
+    "status": 200,
+    "result": "PASS",
+    "detail": "",
+    "url": "https://alivisatoslab.uchicago.edu/members/"
+  },
+  {
+    "path": "/alumni/",
+    "status": 200,
+    "result": "PASS",
+    "detail": "",
+    "url": "https://alivisatoslab.uchicago.edu/alumni/"
+  },
+  {
+    "path": "/research/",
+    "status": 200,
+    "result": "PASS",
+    "detail": "",
+    "url": "https://alivisatoslab.uchicago.edu/research/"
+  },
+  {
+    "path": "/publications/",
+    "status": 200,
+    "result": "PASS",
+    "detail": "",
+    "url": "https://alivisatoslab.uchicago.edu/publications/"
+  },
+  {
+    "path": "/news/",
+    "status": 200,
+    "result": "PASS",
+    "detail": "",
+    "url": "https://alivisatoslab.uchicago.edu/news/"
+  },
+  {
+    "path": "/gallery/",
+    "status": 200,
+    "result": "PASS",
+    "detail": "",
+    "url": "https://alivisatoslab.uchicago.edu/gallery/"
+  }
+]

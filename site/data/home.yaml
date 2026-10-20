@@ -1,0 +1,26 @@
+- id: home-004
+  title_html: <a href="https://alivisatoslab.uchicago.edu/news/#news-item-1" style="color:#333;text-decoration:none">Alumnus
+    Prof. Uri Banin visits the group</a>
+  template_html: "<article style=\"border:1px solid #e7e2e2;border-top:3px solid #800000;padding:20px;background:#fff\">\n\
+    \        <p style=\"margin:0 0 9px;color:#800000;font-size:.85rem;font-weight:600;text-transform:uppercase\">August 2026\
+    \ · Group visit</p>\n        <h3 style=\"margin:0 0 12px;font-size:1.18rem;line-height:1.35\">@@TITLE_HTML@@</h3>\n  \
+    \      <p style=\"margin:0;line-height:1.6\">We welcomed our alumnus Prof. Uri Banin back to the group.</p>\n      </article>"
+  source_url: https://alivisatoslab.uchicago.edu/gallery/
+- id: home-005
+  title_html: <a href="https://alivisatoslab.uchicago.edu/news/#news-item-2" style="color:#333;text-decoration:none">Millisecond
+    atomic dynamics of nanocrystals in liquid</a>
+  template_html: "<article style=\"border:1px solid #e7e2e2;border-top:3px solid #800000;padding:20px;background:#fff\">\n\
+    \        <p style=\"margin:0 0 9px;color:#800000;font-size:.85rem;font-weight:600;text-transform:uppercase\">June 18,\
+    \ 2026 · New paper</p>\n        <h3 style=\"margin:0 0 12px;font-size:1.18rem;line-height:1.35\">@@TITLE_HTML@@</h3>\n\
+    \        <p style=\"margin:0;line-height:1.6\">Our JACS paper captures atomic-scale dynamics in reactive liquid environments.</p>\n\
+    \      </article>"
+  source_url: https://doi.org/10.1021/jacs.6c08238
+- id: home-006
+  title_html: <a href="https://alivisatoslab.uchicago.edu/news/#news-item-3" style="color:#333;text-decoration:none">Nature
+    Synthesis cover feature</a>
+  template_html: "<article style=\"border:1px solid #e7e2e2;border-top:3px solid #800000;padding:20px;background:#fff\">\n\
+    \        <p style=\"margin:0 0 9px;color:#800000;font-size:.85rem;font-weight:600;text-transform:uppercase\">Published\
+    \ March 11, 2026; featured on the cover of the May 2026 issue</p>\n        <h3 style=\"margin:0 0 12px;font-size:1.18rem;line-height:1.35\"\
+    >@@TITLE_HTML@@</h3>\n        <p style=\"margin:0;line-height:1.6\">Kinetic-controlled transformations of group-III arsenide\
+    \ nanocubes.</p>\n      </article>"
+  source_url: https://www.nature.com/natsynth/volumes/5/issues/5

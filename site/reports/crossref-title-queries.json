@@ -1,0 +1,1610 @@
+{
+  "p0479": [
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            1
+          ]
+        ],
+        "date-time": "2026-10-01T05:54:22Z",
+        "timestamp": 1790834062398,
+        "version": "4.1.0"
+      },
+      "reference-count": 28,
+      "publisher": "Elsevier BV",
+      "issue": "5",
+      "license": [
+        {
+          "start": {
+            "date-parts": [
+              [
+                1992,
+                10,
+                1
+              ]
+            ],
+            "date-time": "1992-10-01T00:00:00Z",
+            "timestamp": 717897600000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://www.elsevier.com/tdm/userlicense/1.0/"
+        },
+        {
+          "start": {
+            "date-parts": [
+              [
+                1992,
+                10,
+                1
+              ]
+            ],
+            "date-time": "1992-10-01T00:00:00Z",
+            "timestamp": 717897600000
+          },
+          "content-version": "tdm",
+          "delay-in-days": 0,
+          "URL": "https://www.elsevier.com/legal/tdmrep-license"
+        }
+      ],
+      "content-domain": {
+        "domain": [
+          "elsevier.com",
+          "sciencedirect.com"
+        ],
+        "crossmark-restriction": true
+      },
+      "short-container-title": [
+        "Chemical Physics Letters"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            1992,
+            10
+          ]
+        ]
+      },
+      "DOI": "10.1016/0009-2614(92)80023-5",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2002,
+            7,
+            25
+          ]
+        ],
+        "date-time": "2002-07-25T03:48:58Z",
+        "timestamp": 1027568938000
+      },
+      "page": "431-436",
+      "update-policy": "https://doi.org/10.1016/elsevier_cm_policy",
+      "source": "Crossref",
+      "is-referenced-by-count": 109,
+      "title": [
+        "NMR studies of the surface structure and dynamics of semiconductor nanocrystals"
+      ],
+      "prefix": "10.1016",
+      "volume": "198",
+      "author": [
+        {
+          "given": "Joseph R.",
+          "family": "Sachleben",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "E.Wrenn",
+          "family": "Wooten",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lyndon",
+          "family": "Emsley",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Alexander",
+          "family": "Pines",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Vicki L.",
+          "family": "Colvin",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "A.Paul",
+          "family": "Alivisatos",
+          "sequence": "additional",
+          "affiliation": [],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "member": "78",
+      "reference": [
+        {
+          "key": "10.1016/0009-2614(92)80023-5_BIB1_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "4403",
+          "DOI": "10.1063/1.447218",
+          "volume": "80",
+          "author": "Brus",
+          "year": "1984",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "10.1016/0009-2614(92)80023-5_BIB1_2",
+          "doi-asserted-by": "crossref",
+          "first-page": "2555",
+          "DOI": "10.1021/j100403a003",
+          "volume": "90",
+          "author": "Brus",
+          "year": "1986",
+          "journal-title": "J. Phys. Chem."
+        },
+        {
+          "key": "10.1016/0009-2614(92)80023-5_BIB2_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "3232",
+          "DOI": "10.1063/1.457874",
+          "volume": "92",
+          "author": "Shiang",
+          "year": "1990",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "10.1016/0009-2614(92)80023-5_BIB2_2",
+          "doi-asserted-by": "crossref",
+          "first-page": "2786",
+          "DOI": "10.1103/PhysRevLett.66.2786",
+          "volume": "66",
+          "author": "Colvin",
+          "year": "1991",
+          "journal-title": "Phys. Rev. Letters"
+        },
+        {
+          "key": "10.1016/0009-2614(92)80023-5_BIB3_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "8113",
+          "DOI": "10.1103/PhysRevB.35.8113",
+          "volume": "B 35",
+          "author": "Shimitt-Rink",
+          "year": "1987",
+          "journal-title": "Phys. Rev."
+        },
+        {
+          "key": "10.1016/0009-2614(92)80023-5_BIB3_2",
+          "doi-asserted-by": "crossref",
+          "first-page": "6976",
+          "DOI": "10.1103/PhysRevB.33.6976",
+          "volume": "B 33",
+          "author": "Miller",
+          "year": "1986",
+          "journal-title": "Phys. Rev."
+        },
+        {
+          "key": "10.1016/0009-2614(92)80023-5_BIB4_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "649",
+          "DOI": "10.1002/bbpc.19840880715",
+          "volume": "88",
+          "author": "Weller",
+          "year": "1984",
+          "journal-title": "Ber. Bunsenges Physik. Chem."
+        },
+        {
+          "key": "10.1016/0009-2614(92)80023-5_BIB4_2",
+          "doi-asserted-by": "crossref",
+          "first-page": "4356",
+          "DOI": "10.1021/j100373a089",
+          "volume": "94",
+          "author": "O'Neil",
+          "year": "1990",
+          "journal-title": "Phys. Chem."
+        },
+        {
+          "key": "10.1016/0009-2614(92)80023-5_BIB4_3",
+          "unstructured": "c M.G. Bawendi, P.J. Carrolli, W.L. Wilson and L.E. Brus, J. Chem. Phys., submitted for publication."
+        },
+        {
+          "key": "10.1016/0009-2614(92)80023-5_BIB5_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "3046",
+          "DOI": "10.1021/ja00218a008",
+          "volume": "110",
+          "author": "Steigerwald",
+          "year": "1988",
+          "journal-title": "J. Am. Chem. Soc."
+        },
+        {
+          "key": "10.1016/0009-2614(92)80023-5_BIB5_2",
+          "unstructured": "b V.L. Colvin, A.N. Goldstein and A.P. Alivisatos, J. Am. Chem. Soc., in press."
+        },
+        {
+          "key": "10.1016/0009-2614(92)80023-5_BIB6_1",
+          "author": "Jeener",
+          "year": "1971"
+        },
+        {
+          "key": "10.1016/0009-2614(92)80023-5_BIB6_2",
+          "doi-asserted-by": "crossref",
+          "first-page": "2229",
+          "DOI": "10.1063/1.432450",
+          "volume": "64",
+          "author": "Aue",
+          "year": "1976",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "10.1016/0009-2614(92)80023-5_BIB7_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "165",
+          "DOI": "10.1002/anie.198601652",
+          "volume": "25",
+          "author": "Craig",
+          "year": "1986",
+          "journal-title": "Angew. Chem. Intern. Ed. Engl."
+        },
+        {
+          "key": "10.1016/0009-2614(92)80023-5_BIB7_2",
+          "unstructured": "b M. Steigerwald, private communication."
+        },
+        {
+          "key": "10.1016/0009-2614(92)80023-5_BIB8_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "1",
+          "DOI": "10.1063/1.1732274",
+          "volume": "36",
+          "author": "Woessner",
+          "year": "1962",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "10.1016/0009-2614(92)80023-5_BIB8_2",
+          "doi-asserted-by": "crossref",
+          "first-page": "1855",
+          "DOI": "10.1063/1.1696214",
+          "volume": "42",
+          "author": "Woessner",
+          "year": "1965",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "10.1016/0009-2614(92)80023-5_BIB8_3",
+          "doi-asserted-by": "crossref",
+          "first-page": "5258",
+          "DOI": "10.1063/1.1701790",
+          "volume": "47",
+          "author": "Wallach",
+          "year": "1967",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "10.1016/0009-2614(92)80023-5_BIB8_4",
+          "doi-asserted-by": "crossref",
+          "first-page": "1722",
+          "DOI": "10.1063/1.436748",
+          "volume": "69",
+          "author": "Wittebort",
+          "year": "1978",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "10.1016/0009-2614(92)80023-5_BIB8_5",
+          "doi-asserted-by": "crossref",
+          "first-page": "4618",
+          "DOI": "10.1021/bi00519a016",
+          "volume": "20",
+          "author": "Brainard",
+          "year": "1981",
+          "journal-title": "Biochemistry"
+        },
+        {
+          "key": "10.1016/0009-2614(92)80023-5_BIB8_6",
+          "first-page": "267",
+          "volume": "50",
+          "author": "John",
+          "year": "1982",
+          "journal-title": "J. Magn. Reson."
+        },
+        {
+          "key": "10.1016/0009-2614(92)80023-5_BIB9",
+          "doi-asserted-by": "crossref",
+          "first-page": "139",
+          "DOI": "10.1007/BF03166151",
+          "volume": "1",
+          "author": "Emsley",
+          "year": "1990",
+          "journal-title": "Appl. Magn. Reson."
+        },
+        {
+          "key": "10.1016/0009-2614(92)80023-5_BIB10",
+          "doi-asserted-by": "crossref",
+          "first-page": "10935",
+          "DOI": "10.1103/PhysRevB.39.10935",
+          "volume": "39",
+          "author": "Lippens",
+          "year": "1989",
+          "journal-title": "Phys. Rev. B."
+        },
+        {
+          "key": "10.1016/0009-2614(92)80023-5_BIB11_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "4001",
+          "DOI": "10.1063/1.454833",
+          "volume": "89",
+          "author": "Alivisatos",
+          "year": "1989",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "10.1016/0009-2614(92)80023-5_BIB11_2",
+          "doi-asserted-by": "crossref",
+          "first-page": "2516",
+          "DOI": "10.1109/3.40636",
+          "volume": "25",
+          "author": "Peyghambarian",
+          "year": "1989",
+          "journal-title": "IEEE J. Quantum Electron."
+        },
+        {
+          "key": "10.1016/0009-2614(92)80023-5_BIB11_3",
+          "doi-asserted-by": "crossref",
+          "first-page": "1623",
+          "DOI": "10.1103/PhysRevLett.65.1623",
+          "volume": "65",
+          "author": "Bawendi",
+          "year": "1990",
+          "journal-title": "Phys. Rev. Letters"
+        },
+        {
+          "key": "10.1016/0009-2614(92)80023-5_BIB11_4",
+          "doi-asserted-by": "crossref",
+          "first-page": "946",
+          "DOI": "10.1063/1.462114",
+          "volume": "96",
+          "author": "Bawendi",
+          "year": "1992",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "10.1016/0009-2614(92)80023-5_BIB12",
+          "unstructured": "J.R. Sachleben et al., to be published."
+        }
+      ],
+      "container-title": [
+        "Chemical Physics Letters"
+      ],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:0009261492800235?httpAccept=text/xml",
+          "content-type": "text/xml",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        },
+        {
+          "URL": "https://api.elsevier.com/content/article/PII:0009261492800235?httpAccept=text/plain",
+          "content-type": "text/plain",
+          "content-version": "vor",
+          "intended-application": "text-mining"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            3
+          ]
+        ],
+        "date-time": "2025-09-03T19:23:41Z",
+        "timestamp": 1756927421000
+      },
+      "score": 37.231853,
+      "resource": {
+        "primary": {
+          "URL": "https://linkinghub.elsevier.com/retrieve/pii/0009261492800235"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            1992,
+            10
+          ]
+        ]
+      },
+      "references-count": 28,
+      "journal-issue": {
+        "issue": "5",
+        "published-print": {
+          "date-parts": [
+            [
+              1992,
+              10
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "0009261492800235"
+      ],
+      "URL": "https://doi.org/10.1016/0009-2614(92)80023-5",
+      "ISSN": [
+        "0009-2614"
+      ],
+      "issn-type": [
+        {
+          "value": "0009-2614",
+          "type": "print"
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1992,
+            10
+          ]
+        ]
+      },
+      "assertion": [
+        {
+          "value": "Elsevier",
+          "name": "publisher",
+          "label": "This article is maintained by"
+        },
+        {
+          "value": "NMR studies of the surface structure and dynamics of semiconductor nanocrystals",
+          "name": "articletitle",
+          "label": "Article Title"
+        },
+        {
+          "value": "Chemical Physics Letters",
+          "name": "journaltitle",
+          "label": "Journal Title"
+        },
+        {
+          "value": "https://doi.org/10.1016/0009-2614(92)80023-5",
+          "name": "articlelink",
+          "label": "CrossRef DOI link to publisher maintained version"
+        },
+        {
+          "value": "converted-article",
+          "name": "content_type",
+          "label": "Content Type"
+        },
+        {
+          "value": "Copyright \u00a9 1992 Published by Elsevier B.V.",
+          "name": "copyright",
+          "label": "Copyright"
+        }
+      ]
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            15
+          ]
+        ],
+        "date-time": "2026-08-15T13:31:14Z",
+        "timestamp": 1786800674040,
+        "version": "build-2736575974"
+      },
+      "description": "Supplemental Information for 10.1021/acs.jpcc.7b09145",
+      "reference-count": 0,
+      "publisher": "American Chemical Society (ACS)",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "DOI": "10.1021/acs.jpcc.7b09145.s001",
+      "type": "component",
+      "created": {
+        "date-parts": [
+          [
+            2020,
+            4,
+            6
+          ]
+        ],
+        "date-time": "2020-04-06T07:19:01Z",
+        "timestamp": 1586157541000
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": [
+        "Electron Dynamics at the Surface of Semiconductor Nanocrystals"
+      ],
+      "prefix": "10.1021",
+      "member": "316",
+      "deposited": {
+        "date-parts": [
+          [
+            2026,
+            8,
+            15
+          ]
+        ],
+        "date-time": "2026-08-15T13:15:46Z",
+        "timestamp": 1786799746000
+      },
+      "score": 35.583836,
+      "resource": {
+        "primary": {
+          "URL": "https://pubs.acs.org/doi/suppl/10.1021/acs.jpcc.7b09145/suppl_file/jp7b09145_si_001.pdf"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            null
+          ]
+        ]
+      },
+      "references-count": 0,
+      "URL": "https://doi.org/10.1021/acs.jpcc.7b09145.s001",
+      "relation": {
+        "is-component-of": [
+          {
+            "id-type": "doi",
+            "id": "10.1021/acs.jpcc.7b09145",
+            "asserted-by": "object"
+          }
+        ]
+      }
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2026,
+            10,
+            1
+          ]
+        ],
+        "date-time": "2026-10-01T05:50:24Z",
+        "timestamp": 1790833824811,
+        "version": "4.1.0"
+      },
+      "reference-count": 45,
+      "publisher": "American Chemical Society (ACS)",
+      "issue": "50",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "J. Phys. Chem. B"
+      ],
+      "published-print": {
+        "date-parts": [
+          [
+            1998,
+            12,
+            1
+          ]
+        ]
+      },
+      "DOI": "10.1021/jp9820121",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2002,
+            7,
+            26
+          ]
+        ],
+        "date-time": "2002-07-26T05:28:13Z",
+        "timestamp": 1027661293000
+      },
+      "page": "10117-10128",
+      "source": "Crossref",
+      "is-referenced-by-count": 68,
+      "title": [
+        "Solution-State NMR Studies of the Surface Structure and Dynamics of Semiconductor Nanocrystals"
+      ],
+      "prefix": "10.1021",
+      "volume": "102",
+      "author": [
+        {
+          "given": "Joseph R.",
+          "family": "Sachleben",
+          "sequence": "first",
+          "affiliation": [
+            {
+              "name": "Campus Chemical Instrument Center, The Ohio State University, Johnston Laboratory 119, 176 West 18th Avenue, Columbus, Ohio 43210"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Vicki",
+          "family": "Colvin",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Department of Chemistry, Rice University, Houston, Texas 77005"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "Lyndon",
+          "family": "Emsley",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Laboratoire de St\u00e9r\u00e9ochimie et des Interactions Mol\u00e9culaires, UMR-117 (CNRS/ENS-Lyon), Ecole Normale Sup\u00e9rieure de Lyon, 69364 Lyon, France"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "E. Wrenn",
+          "family": "Wooten",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Materials Sciences Division, Lawrence Berkeley Laboratory, and Department of Chemistry, University of California, Berkeley, California 94720"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        },
+        {
+          "given": "A. Paul",
+          "family": "Alivisatos",
+          "sequence": "additional",
+          "affiliation": [
+            {
+              "name": "Materials Sciences Division, Lawrence Berkeley Laboratory, and Department of Chemistry, University of California, Berkeley, California 94720"
+            }
+          ],
+          "role": [
+            {
+              "vocabulary": "crossref",
+              "role": "author"
+            }
+          ]
+        }
+      ],
+      "member": "316",
+      "published-online": {
+        "date-parts": [
+          [
+            1998,
+            11,
+            20
+          ]
+        ]
+      },
+      "reference": [
+        {
+          "key": "jp9820121b00001/jp9820121b00001_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "3232",
+          "DOI": "10.1063/1.457874",
+          "volume": "92",
+          "author": "Shiang J. J.",
+          "year": "1990",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "jp9820121b00002/jp9820121b00002_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "2786",
+          "DOI": "10.1103/PhysRevLett.66.2786",
+          "volume": "66",
+          "author": "Colvin V. L.",
+          "year": "1991",
+          "journal-title": "Phys. Rev. Lett."
+        },
+        {
+          "key": "jp9820121b00003/jp9820121b00003_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "8113",
+          "DOI": "10.1103/PhysRevB.35.8113",
+          "volume": "35",
+          "author": "Shimitt-Rink S.",
+          "year": "1987",
+          "journal-title": "Phys. Rev. B"
+        },
+        {
+          "key": "jp9820121b00004/jp9820121b00004_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "6976",
+          "DOI": "10.1103/PhysRevB.33.6976",
+          "volume": "33",
+          "author": "Miller D. A. B.",
+          "year": "1986",
+          "journal-title": "Phys. Rev. B."
+        },
+        {
+          "key": "jp9820121b00005/jp9820121b00005_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "354",
+          "DOI": "10.1038/370354a0",
+          "volume": "370",
+          "author": "Colvin V. L.",
+          "year": "1994",
+          "journal-title": "Nature"
+        },
+        {
+          "key": "jp9820121b00006/jp9820121b00006_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "373",
+          "DOI": "10.1126/science.265.5170.373",
+          "volume": "265",
+          "author": "Tolbert S. H.",
+          "year": "1994",
+          "journal-title": "Science"
+        },
+        {
+          "key": "jp9820121b00007/jp9820121b00007_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "4109",
+          "DOI": "10.1021/j100066a034",
+          "volume": "98",
+          "author": "Katari J. E. B.",
+          "year": "1994",
+          "journal-title": "J. Phys. Chem."
+        },
+        {
+          "key": "jp9820121b00008/jp9820121b00008_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "3297",
+          "DOI": "10.1063/1.466420",
+          "volume": "100",
+          "author": "Becerra L. R.",
+          "year": "1994",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "jp9820121b00009/jp9820121b00009_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "431",
+          "DOI": "10.1016/0009-2614(92)80023-5",
+          "volume": "198",
+          "author": "Sachleben J. R.",
+          "year": "1992",
+          "journal-title": "Chem. Phys. Lett"
+        },
+        {
+          "key": "jp9820121b00010/jp9820121b00010_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "13705",
+          "DOI": "10.1021/j100102a042",
+          "volume": "98",
+          "author": "Majetich S. A.",
+          "year": "1994",
+          "journal-title": "J. Phys. Chem."
+        },
+        {
+          "key": "jp9820121b00011/jp9820121b00011_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "1",
+          "DOI": "10.1063/1.1732274",
+          "volume": "36",
+          "author": "Woessner D. E.",
+          "year": "1962",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "jp9820121b00012/jp9820121b00012_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "647",
+          "DOI": "10.1063/1.1701390",
+          "volume": "37",
+          "author": "Woessner D. E.",
+          "year": "1962",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "jp9820121b00013/jp9820121b00013_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "6285",
+          "DOI": "10.1021/ja00333a030",
+          "volume": "106",
+          "author": "Dance I. G.",
+          "year": "1984",
+          "journal-title": "J. Am. Chem. Soc."
+        },
+        {
+          "key": "jp9820121b00014/jp9820121b00014_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "165",
+          "DOI": "10.1002/anie.198601652",
+          "volume": "25",
+          "author": "Craig D.",
+          "year": "1986",
+          "journal-title": "Angew. Chem., Int. Ed. Engl."
+        },
+        {
+          "key": "jp9820121b00015/jp9820121b00015_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "3928",
+          "DOI": "10.1021/ic00141a015",
+          "volume": "21",
+          "author": "Hagen K. S.",
+          "year": "1982",
+          "journal-title": "Inorg. Chem."
+        },
+        {
+          "key": "jp9820121b00016/jp9820121b00016_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "1426",
+          "DOI": "10.1126/science.259.5100.1426",
+          "volume": "259",
+          "author": "Herron N.",
+          "year": "1993",
+          "journal-title": "Science"
+        },
+        {
+          "key": "jp9820121b00017/jp9820121b00017_1",
+          "first-page": "1",
+          "volume-title": "Advances in Magnetic Resonance",
+          "volume": "1",
+          "author": "Redfield A."
+        },
+        {
+          "key": "jp9820121b00018/jp9820121b00018_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "1787",
+          "DOI": "10.1103/PhysRev.98.1787",
+          "volume": "98",
+          "author": "Redfield A. G.",
+          "year": "1955",
+          "journal-title": "Phys. Rev."
+        },
+        {
+          "key": "jp9820121b00019/jp9820121b00019_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "19",
+          "DOI": "10.1147/rd.11.0019",
+          "volume": "1",
+          "author": "Redfield A. G.",
+          "year": "1957",
+          "journal-title": "IBM J. Res. Dev."
+        },
+        {
+          "key": "jp9820121b00020/jp9820121b00020_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "1722",
+          "DOI": "10.1063/1.436748",
+          "volume": "69",
+          "author": "Wittebort R. J.",
+          "year": "1978",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "jp9820121b00021/jp9820121b00021_1",
+          "doi-asserted-by": "crossref",
+          "DOI": "10.1142/0270",
+          "volume-title": "Quantum Theory of Angular Momentum",
+          "author": "Varshalovich D. A.",
+          "year": "1988"
+        },
+        {
+          "key": "jp9820121b00022/jp9820121b00022_1",
+          "volume-title": "Elementary Theory of Angular Momentum",
+          "author": "Rose M. E.",
+          "year": "1955"
+        },
+        {
+          "key": "jp9820121b00023/jp9820121b00023_1",
+          "volume-title": "Angular Momentum in Quantum Mechanics",
+          "volume": "4",
+          "author": "Edmonds A. R.",
+          "year": "1974",
+          "edition": "2"
+        },
+        {
+          "key": "jp9820121b00024/jp9820121b00024_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "5221",
+          "DOI": "10.1021/ja00039a038",
+          "volume": "114",
+          "author": "Colvin V. L.",
+          "year": "1992",
+          "journal-title": "J. Am. Chem. Soc."
+        },
+        {
+          "key": "jp9820121b00025/jp9820121b00025_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "299",
+          "DOI": "10.1016/0009-2614(86)87069-5",
+          "volume": "125",
+          "author": "Lianos P.",
+          "year": "1986",
+          "journal-title": "Chem. Phys. Lett."
+        },
+        {
+          "key": "jp9820121b00026/jp9820121b00026_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "3046",
+          "DOI": "10.1021/ja00218a008",
+          "volume": "110",
+          "author": "Steigerwald M. L.",
+          "year": "1988",
+          "journal-title": "J. Am. Chem. Soc."
+        },
+        {
+          "key": "jp9820121b00027/jp9820121b00027_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "139",
+          "DOI": "10.1007/BF03166151",
+          "volume": "1",
+          "author": "Emsley L.",
+          "year": "1990",
+          "journal-title": "Appl. Magn. Res."
+        },
+        {
+          "key": "jp9820121b00028/jp9820121b00028_1",
+          "first-page": "211",
+          "volume": "82",
+          "author": "Emsley L.",
+          "year": "1989",
+          "journal-title": "J. Magn. Reson."
+        },
+        {
+          "key": "jp9820121b00029/jp9820121b00029_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "469",
+          "DOI": "10.1016/0009-2614(90)87025-M",
+          "volume": "165",
+          "author": "Emsley L.",
+          "year": "1990",
+          "journal-title": "Chem. Phys. Lett."
+        },
+        {
+          "key": "jp9820121b00030/jp9820121b00030_1",
+          "volume-title": "Principles of Nuclear Magnetic Resonance in One and Two Dimensions",
+          "author": "Ernst R.",
+          "year": "1987"
+        },
+        {
+          "key": "jp9820121b00031/jp9820121b00031_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "5452",
+          "DOI": "10.1021/ja00384a034",
+          "volume": "104",
+          "author": "Vidusek D. A.",
+          "year": "1982",
+          "journal-title": "J. Am. Chem. Soc."
+        },
+        {
+          "key": "jp9820121b00032/jp9820121b00032_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "311",
+          "DOI": "10.1016/0014-5793(80)80969-0",
+          "volume": "117",
+          "author": "Roberts M. F.",
+          "year": "1980",
+          "journal-title": "FEBS Lett."
+        },
+        {
+          "key": "jp9820121b00033/jp9820121b00033_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "537",
+          "DOI": "10.1016/0009-2614(83)80443-6",
+          "volume": "96",
+          "author": "Redfield A.",
+          "year": "1983",
+          "journal-title": "J. Chem. Phys. Lett."
+        },
+        {
+          "key": "jp9820121b00034/jp9820121b00034_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "760",
+          "DOI": "10.1021/ja00497a058",
+          "volume": "101",
+          "author": "Morris G. A.",
+          "year": "1979",
+          "journal-title": "J. Am. Chem. Soc."
+        },
+        {
+          "key": "jp9820121b00035/jp9820121b00035_1",
+          "first-page": "163",
+          "volume": "39",
+          "author": "Burum D. P.",
+          "year": "1980",
+          "journal-title": "J. Magn. Reson."
+        },
+        {
+          "key": "jp9820121b00036/jp9820121b00036_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "185",
+          "DOI": "10.1016/0009-2614(80)80041-8",
+          "volume": "69",
+          "author": "Bodenhausen G.",
+          "year": "1980",
+          "journal-title": "J. Chem. Phys. Lett."
+        },
+        {
+          "key": "jp9820121b00037/jp9820121b00037_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "3683",
+          "DOI": "10.1063/1.1677747",
+          "volume": "56",
+          "author": "Doddrell D.",
+          "year": "1972",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "jp9820121b00038/jp9820121b00038_1",
+          "volume-title": "CRC Handbook of Chemistry and Physics",
+          "year": "1985",
+          "edition": "66"
+        },
+        {
+          "key": "jp9820121b00039/jp9820121b00039_1",
+          "volume-title": "Numerical Recipes in C:\u2009 The Art of Scientific Computing",
+          "author": "Press W. H.",
+          "year": "1992",
+          "edition": "2"
+        },
+        {
+          "key": "jp9820121b00041/jp9820121b00041_1",
+          "volume-title": "Principles of Nuclear Magnetism",
+          "volume": "32",
+          "author": "Abragam A.",
+          "year": "1989"
+        },
+        {
+          "key": "jp9820121b00042/jp9820121b00042_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "1420",
+          "DOI": "10.1021/j100156a071",
+          "volume": "95",
+          "author": "Vieth H. M.",
+          "year": "1991",
+          "journal-title": "J. Phys. Chem."
+        },
+        {
+          "key": "jp9820121b00043/jp9820121b00043_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "4001",
+          "DOI": "10.1063/1.454833",
+          "volume": "89",
+          "author": "Alivisatos A. P.",
+          "year": "1989",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "jp9820121b00044/jp9820121b00044_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "1623",
+          "DOI": "10.1103/PhysRevLett.65.1623",
+          "volume": "65",
+          "author": "Bawendi M. G.",
+          "year": "1990",
+          "journal-title": "Phys. Rev. Lett."
+        },
+        {
+          "key": "jp9820121b00045/jp9820121b00045_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "946",
+          "DOI": "10.1063/1.462114",
+          "volume": "96",
+          "author": "Bawendi M. G.",
+          "year": "1992",
+          "journal-title": "J. Chem. Phys."
+        },
+        {
+          "key": "jp9820121b00046/jp9820121b00046_1",
+          "doi-asserted-by": "crossref",
+          "first-page": "2516",
+          "DOI": "10.1109/3.40636",
+          "volume": "25",
+          "author": "Peyghambarian P.",
+          "year": "1989",
+          "journal-title": "J. Quantum Electron."
+        }
+      ],
+      "container-title": [
+        "The Journal of Physical Chemistry B"
+      ],
+      "language": "en",
+      "link": [
+        {
+          "URL": "https://pubs.acs.org/doi/pdf/10.1021/jp9820121",
+          "content-type": "unspecified",
+          "content-version": "vor",
+          "intended-application": "similarity-checking"
+        }
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2021,
+            10,
+            19
+          ]
+        ],
+        "date-time": "2021-10-19T03:35:35Z",
+        "timestamp": 1634614535000
+      },
+      "score": 34.434364,
+      "resource": {
+        "primary": {
+          "URL": "https://pubs.acs.org/doi/10.1021/jp9820121"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            1998,
+            11,
+            20
+          ]
+        ]
+      },
+      "references-count": 45,
+      "journal-issue": {
+        "issue": "50",
+        "published-print": {
+          "date-parts": [
+            [
+              1998,
+              12,
+              1
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "10.1021/jp9820121"
+      ],
+      "URL": "https://doi.org/10.1021/jp9820121",
+      "ISSN": [
+        "1520-6106",
+        "1520-5207"
+      ],
+      "issn-type": [
+        {
+          "value": "1520-6106",
+          "type": "print"
+        },
+        {
+          "value": "1520-5207",
+          "type": "electronic"
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            1998,
+            11,
+            20
+          ]
+        ]
+      }
+    }
+  ],
+  "p0286": [
+    {
+      "institution": [
+        {
+          "name": "Air Force Office of Scientific Research",
+          "acronym": [
+            "AFOSR/VA"
+          ],
+          "department": [
+            "Funding"
+          ]
+        },
+        {
+          "name": "CALIFORNIA UNIV BERKELEY",
+          "department": [
+            "Performing"
+          ]
+        }
+      ],
+      "indexed": {
+        "date-parts": [
+          [
+            2024,
+            8,
+            29
+          ]
+        ],
+        "date-time": "2024-08-29T00:07:01Z",
+        "timestamp": 1724890021555
+      },
+      "publisher-location": "Fort Belvoir, VA",
+      "reference-count": 0,
+      "publisher": "Defense Technical Information Center",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "published-print": {
+        "date-parts": [
+          [
+            2009,
+            6,
+            30
+          ]
+        ]
+      },
+      "DOI": "10.21236/ada585157",
+      "type": "report",
+      "created": {
+        "date-parts": [
+          [
+            2017,
+            9,
+            6
+          ]
+        ],
+        "date-time": "2017-09-06T21:20:04Z",
+        "timestamp": 1504732804000
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": [
+        "Hierarchial Junction Solar Cells Based on Hyper-Branched Semiconductor Nanocrystals"
+      ],
+      "prefix": "10.21236",
+      "author": [
+        {
+          "given": "A. P.",
+          "family": "Alivisatos",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "9879",
+      "original-title": [
+        ""
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2024,
+            8,
+            28
+          ]
+        ],
+        "date-time": "2024-08-28T21:03:08Z",
+        "timestamp": 1724878988000
+      },
+      "score": 29.066984,
+      "resource": {
+        "primary": {
+          "URL": "http://www.dtic.mil/docs/citations/ADA585157"
+        }
+      },
+      "subtitle": [
+        ""
+      ],
+      "issued": {
+        "date-parts": [
+          [
+            2009,
+            6,
+            30
+          ]
+        ]
+      },
+      "references-count": 0,
+      "URL": "https://doi.org/10.21236/ada585157",
+      "published": {
+        "date-parts": [
+          [
+            2009,
+            6,
+            30
+          ]
+        ]
+      }
+    },
+    {
+      "indexed": {
+        "date-parts": [
+          [
+            2024,
+            9,
+            19
+          ]
+        ],
+        "date-time": "2024-09-19T15:35:03Z",
+        "timestamp": 1726760103108
+      },
+      "reference-count": 0,
+      "publisher": "Springer Science and Business Media LLC",
+      "issue": "5",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "short-container-title": [
+        "Sci Am Mind"
+      ],
+      "DOI": "10.1038/scientificamericanmind1113-74b",
+      "type": "journal-article",
+      "created": {
+        "date-parts": [
+          [
+            2014,
+            9,
+            16
+          ]
+        ],
+        "date-time": "2014-09-16T13:35:19Z",
+        "timestamp": 1410874519000
+      },
+      "page": "74-74",
+      "source": "Crossref",
+      "is-referenced-by-count": 1,
+      "title": [
+        "How does virtual-reality therapy for PTSD work?"
+      ],
+      "prefix": "10.1038",
+      "volume": "24",
+      "author": [
+        {
+          "given": "Lauren",
+          "family": "Sippel",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "297",
+      "published-online": {
+        "date-parts": [
+          [
+            2013,
+            10,
+            17
+          ]
+        ]
+      },
+      "container-title": [
+        "Scientific American Mind"
+      ],
+      "deposited": {
+        "date-parts": [
+          [
+            2021,
+            1,
+            12
+          ]
+        ],
+        "date-time": "2021-01-12T02:49:59Z",
+        "timestamp": 1610419799000
+      },
+      "score": 28.33598,
+      "resource": {
+        "primary": {
+          "URL": "https://www.scientificamerican.com/article/how-does-virtual-reality-therapy-fo"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            2013,
+            10,
+            17
+          ]
+        ]
+      },
+      "references-count": 0,
+      "journal-issue": {
+        "issue": "5",
+        "published-online": {
+          "date-parts": [
+            [
+              2013,
+              10,
+              17
+            ]
+          ]
+        }
+      },
+      "alternative-id": [
+        "scientificamericanmind1113-74b"
+      ],
+      "URL": "https://doi.org/10.1038/scientificamericanmind1113-74b",
+      "ISSN": [
+        "1555-2284"
+      ],
+      "issn-type": [
+        {
+          "value": "1555-2284",
+          "type": "print"
+        }
+      ],
+      "published": {
+        "date-parts": [
+          [
+            2013,
+            10,
+            17
+          ]
+        ]
+      }
+    },
+    {
+      "institution": [
+        {
+          "name": "The Hong Kong University of Science and Technology",
+          "acronym": [
+            "HKUST"
+          ],
+          "place": [
+            "Clear Water Bay, Kowloon, Hong Kong"
+          ]
+        }
+      ],
+      "indexed": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            19
+          ]
+        ],
+        "date-time": "2025-09-19T20:18:56Z",
+        "timestamp": 1758313136008,
+        "version": "3.44.0"
+      },
+      "reference-count": 0,
+      "publisher": "The Hong Kong University of Science and Technology Library",
+      "content-domain": {
+        "domain": [],
+        "crossmark-restriction": false
+      },
+      "DOI": "10.14711/thesis-hdl152369",
+      "type": "dissertation",
+      "created": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            18
+          ]
+        ],
+        "date-time": "2025-09-18T23:02:42Z",
+        "timestamp": 1758236562000
+      },
+      "approved": {
+        "date-parts": [
+          [
+            2025
+          ]
+        ]
+      },
+      "source": "Crossref",
+      "is-referenced-by-count": 0,
+      "title": [
+        "How Does Political Leaning Affect Green Investment Efficiency? Evidence from US Solar Power Plants"
+      ],
+      "prefix": "10.14711",
+      "author": [
+        {
+          "given": "Zhuang",
+          "family": "Chu",
+          "sequence": "first",
+          "affiliation": [],
+          "role": [
+            {
+              "role": "author",
+              "vocabulary": "crossref"
+            }
+          ]
+        }
+      ],
+      "member": "5801",
+      "deposited": {
+        "date-parts": [
+          [
+            2025,
+            9,
+            18
+          ]
+        ],
+        "date-time": "2025-09-18T23:02:43Z",
+        "timestamp": 1758236563000
+      },
+      "score": 27.075672,
+      "degree": [
+        "Ph.D."
+      ],
+      "resource": {
+        "primary": {
+          "URL": "https://hdl.handle.net/1783.1/152369"
+        }
+      },
+      "issued": {
+        "date-parts": [
+          [
+            null
+          ]
+        ]
+      },
+      "references-count": 0,
+      "URL": "https://doi.org/10.14711/thesis-hdl152369"
+    }
+  ]
+}
