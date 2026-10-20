@@ -145,4 +145,14 @@ def main():
     if page=='research':(ROOT/'build/research-content.before-c.raw').write_text(actual)
     # The public plain-URL check runs as a separate workflow step (scripts/verify_public.py at the repo root).
 
-if __name__=='__main__':main()
+if __name__=='__main__':
+    try:
+        main()
+    except SystemExit:
+        raise
+    except Exception as error:
+        if os.environ.get('GITHUB_ACTIONS'):
+            page=sys.argv[1] if len(sys.argv)>1 else '?'
+            message=f'{type(error).__name__}: {error}'.replace('%','%25').replace('\n','%0A')[:900]
+            print(f'::error title=push {page}::{message}')
+        raise
