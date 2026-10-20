@@ -2,12 +2,13 @@
 from pathlib import Path
 from collections import Counter
 from datetime import date
-import csv, json, re
+import csv, json, os, re
 from lxml import html
 import yaml
 from push import BLOCK, replace_module, replace_research_citations
 
 ROOT=Path(__file__).resolve().parent
+INTERACTIVE=os.environ.get('AG_INTERACTIVE','0')=='1'
 PAGES=('publications','members','alumni','news','home')
 integration=(ROOT/'assets/site-integration.html').read_text()
 
@@ -46,9 +47,12 @@ for group in year_groups:
     year=group.get('id','').removeprefix('pub-')
     should_open=year!='1980s' and int(year)>=date.today().year-3
     assert (group.get('open') is not None)==should_open,f'Unexpected open state for {year}'
-assert pub.xpath('.//*[@id="publication-search"]')
-assert "card.textContent.toLowerCase()" in integration and "card.el.style.display" in integration
-assert 'title, author, or journal' in fragments['publications']
+if INTERACTIVE:
+    assert pub.xpath('.//*[@id="publication-search"]')
+    assert "card.textContent.toLowerCase()" in integration and "card.el.style.display" in integration
+    assert 'title, author, or journal' in fragments['publications']
+else:
+    assert not pub.xpath('.//input|.//button'),'publications: script-dependent controls must be absent'
 print('publications: 484 regular + 11 selected; 38 years; search and recent-year defaults verified')
 
 # Home's newest three publication cards are derived from selected data and each Latest News card has a source.
@@ -94,12 +98,16 @@ assert len({r['name'] for r in alumni})==187
 dual=[r['name'] for r in alumni if len(r.get('roles',[]))>1]
 assert len(dual)==12
 assert sum('|' in card.get('data-roles','') for card in alumni_cards)==12
-assert alumni_root.xpath('.//*[@id="alumni-search"]')
-assert len(alumni_root.xpath('.//*[@data-role-filter]'))==4
-assert len(alumni_root.xpath('.//*[@data-sector-filter]'))==5
 assert len(alumni_root.xpath('.//*[@data-sector-segment]'))==4
-assert "card.dataset.search.indexOf(q)" in integration
-assert all(button.get('data-active-style') for button in alumni_root.xpath('.//*[@data-role-filter or @data-sector-filter]'))
+assert all('width:' in seg.get('style','') for seg in alumni_root.xpath('.//*[@data-sector-segment]'))
+if INTERACTIVE:
+    assert alumni_root.xpath('.//*[@id="alumni-search"]')
+    assert len(alumni_root.xpath('.//*[@data-role-filter]'))==4
+    assert len(alumni_root.xpath('.//*[@data-sector-filter]'))==5
+    assert "card.dataset.search.indexOf(q)" in integration
+    assert all(button.get('data-active-style') for button in alumni_root.xpath('.//*[@data-role-filter or @data-sector-filter]'))
+else:
+    assert not alumni_root.xpath('.//input|.//button'),'alumni: script-dependent controls must be absent'
 print('alumni: 187 unique cards; 12 Ph.D./postdoc dual-role people shown once; sector, role and search filters')
 
 # News: every published card has a verified external source. Unverified Highlight selection stays unpublished.

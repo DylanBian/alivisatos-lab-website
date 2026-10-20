@@ -1,13 +1,16 @@
 """Render code-managed fragments from the publication and page data."""
 from pathlib import Path
 from datetime import date
-import csv, json, html, re
+import csv, json, html, os, re
 from lxml import html as tree
 from lxml import etree
 import yaml
 from push import BLOCK
 
 ROOT=Path(__file__).resolve().parent
+# Search boxes and filter buttons need a script. Page content on Voices drops <script>, so they are left out
+# unless AG_INTERACTIVE=1 (set it only once the script can actually run on the live site).
+INTERACTIVE=os.environ.get('AG_INTERACTIVE','0')=='1'
 OUT=ROOT/'build'; OUT.mkdir(exist_ok=True)
 records=list(csv.DictReader((ROOT/'data/publications.csv').open()))
 if any(r['kind']!='publication' for r in records):
@@ -303,10 +306,20 @@ def prefix_classes(root):
         if not isinstance(node.tag,str): continue
         declarations=style_for(node)
         if declarations: node.set('style',declarations)
+        if 'data-sector-segment' in node.attrib:
+            # Width set at build time so the bar renders without a script.
+            share=100*int(node.get('data-count','0'))/max(int(node.get('data-total','1')),1)
+            node.set('style',((declarations+' ') if declarations else '')+f'width: {share:.2f}%;')
         if 'ag-site-filter-button' in node.get('class','').split():
             node.set('data-base-style',declarations)
             node.set('data-active-style',style_for(node,('ag-site-active',)))
     return root
+
+def strip_controls(root):
+    """Remove script-dependent controls (search boxes, filter buttons) so no dead UI is published."""
+    for cls in ('ag-site-publication-tools','ag-site-alumni-tools','ag-site-filter-row'):
+        for el in root.xpath(f'.//*[contains(concat(" ",normalize-space(@class)," ")," {cls} ")]'):
+            el.getparent().remove(el)
 
 def build_research_corrections():
     source=ROOT/'build/research-content.before-c.raw'
@@ -402,6 +415,7 @@ for name,fragment in fragments.items():
     if fragment.count(f'<!-- AUTO:{main_marker}:START -->')!=1 or fragment.count(f'<!-- AUTO:{main_marker}:END -->')!=1:
         raise ValueError(f'Missing main AUTO marker in {name}')
     root=prefix_classes(tree.fragment_fromstring(fragment,create_parent='div'))
+    if not INTERACTIVE: strip_controls(root)
     rendered=''.join(tree.tostring(child,encoding='unicode',method='html') for child in root)
     if re.search(r'class="[^"]*(?:ap-|ag-pubs-|alivisatos-)',''.join(root.itertext())):
         raise ValueError(f'Legacy class prefix remains in {name}')
