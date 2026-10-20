@@ -1,0 +1,121 @@
+# New-paper candidates from OpenAlex author A5009848674 (A. Paul Alivisatos; overlap with the current list: 191 DOIs), published since 2025-01-01, checked 2026-10-20.
+# Review each entry; confirmed papers go into site/data/publications.csv with Crossref citation fields.
+- doi: 10.1021/acsnano.6c00377
+  title: Quantifying Photochemical Propulsion in Light-Powered Janus Micromotors
+  publication_date: '2026-05-05'
+  journal: ACS Nano
+  authors:
+  - Katherinne I. Requejo
+  - Cristhian Cañari-Chumpitaz
+  - Vida Jamali
+  - Ricardo Ruiz
+  - A. Paul Alivisatos
+  - Carlos Bustamante
+  status: draft
+- doi: 10.1021/acs.chemmater.5c01154
+  title: Design Principles in Engineering of Multigrain Nanocatalysts via Multiscale Electronic Structure Characterization
+  publication_date: '2025-09-25'
+  journal: Chemistry of Materials
+  authors:
+  - Min Gee Cho
+  - Colin Ophus
+  - Jung-Hoon Lee
+  - Inchul Park
+  - Dong Young Chung
+  - Jeong Hyun Kim
+  - Dokyoon Kim
+  - Yung‐Eun Sung
+  - Kisuk Kang
+  - Mary Cooper Scott
+  - A. Paul Alivisatos
+  - Taeghwan Hyeon
+  - Myoung Hwan Oh
+  status: draft
+- doi: 10.1093/mam/ozaf048.692
+  title: Imaging Degradation of III-V Quantum Dots Using Liquid-Phase TEM
+  publication_date: '2025-07-01'
+  journal: Microscopy and Microanalysis
+  authors:
+  - Chang Liu
+  - Woonhyuk Baek
+  - Arashdeep Singh Thind
+  - Robert F. Klie
+  - A. Paul Alivisatos
+  status: draft
+- doi: 10.1021/acs.chemmater.5c02301
+  title: Tailoring Morphology and Composition of Colloidal Metal Phosphide Nanocrystals with Prenucleation Complexes
+  publication_date: '2025-12-18'
+  journal: Chemistry of Materials
+  authors:
+  - Woonhyuk Baek
+  - Arashdeep Singh Thind
+  - Yasin R. Badawy
+  - Daqian Bian
+  - Binyu Wu
+  - Xingzhi Wang
+  - Abdullah Saud Abbas
+  - Neunghee Han
+  - Minseok Cha
+  - Sungjun Park
+  - Robert F. Klie
+  - A. Paul Alivisatos
+  status: draft
+- doi: 10.1021/jacs.6c03474
+  title: Emissive Colloidal GaAs Quantum Dots
+  publication_date: '2026-05-29'
+  journal: Journal of the American Chemical Society
+  authors:
+  - Jun Hyuk Chang
+  - Danial Zangeneh
+  - Heng‐Chi Chu
+  - Justin C. Ondry
+  - Kailai Lin
+  - Yuan Liu
+  - Zirui Zhou
+  - Ahhyun Jeong
+  - James Cassidy
+  - Sungsu Kang
+  - Scott A. Crooker
+  - Alexander S. Filatov
+  - A. Paul Alivisatos
+  - Eran Rabani
+  - Robert F. Klie
+  - Richard D. Schaller
+  - Alexander L. Efros
+  - Dmitri V. Talapin
+  status: draft
+- doi: 10.1021/acs.nanolett.6c02198
+  title: Tracking Thermal Transport in Colloidal Quantum Dot Films Using in Situ Time-Resolved X-ray Diffraction
+  publication_date: '2026-07-30'
+  journal: Nano Letters
+  authors:
+  - Eliza Wieman
+  - Nejc Nagelj
+  - Ethan B. Curling
+  - Larry Chen
+  - Jin Yu
+  - A. Paul Alivisatos
+  - Aaron M. Lindenberg
+  - Benjamin T. Diroll
+  - Jacob H. Olshansky
+  - Jihong A. Ma
+  - Burak Güzeltürk
+  - Benjamin L. Cotts
+  status: draft
+- doi: 10.1021/jacs.6c10386
+  title: Redox Reactions in Molten Indium Halide Salts Enable the Synthesis and Shape Control of In-Pnictide Nanocrystals
+  publication_date: '2026-09-29'
+  journal: Journal of the American Chemical Society
+  authors:
+  - Justin C. Ondry
+  - Zirui Zhou
+  - Luca Giordano
+  - Y. Chen
+  - Jun Hyuk Chang
+  - Yuan Liu
+  - Rebecca C. Hotton
+  - Shengsong Yang
+  - Zeger Hens
+  - A. Paul Alivisatos
+  - Dmitri V. Talapin
+  status: draft
