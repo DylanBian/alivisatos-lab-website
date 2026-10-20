@@ -116,6 +116,7 @@ def load():
             rec['type'] = 'article'
         rec['oa'] = bool((oa.get('open_access') or {}).get('is_oa'))
         rec['journal_group'] = next((slug for slug, _, names in JOURNAL_GROUPS if rec['journal'] in names), '')
+        rec['crossref_authors'] = [' '.join(x for x in (a.get('given', ''), a.get('family', '')) if x) for a in (cr.get('author') or [])] if rec['source'] == 'crossref' else []
         t = tags.get(row['id']) or {}
         for facet in ('areas', 'materials', 'approaches', 'applications'):
             rec[facet] = [x['tag'] if isinstance(x, dict) else x for x in (t.get(facet) or [])]

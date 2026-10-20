@@ -45,15 +45,6 @@ for m in members:
         continue
     for name in m.get('publication_names', []) + [m['name']]:
         member_aliases[norm(name)] = m['name']
-member_surnames = {}  # "Kang, S." style names on the full list
-for m in members:
-    if m['group'] == 'pi':
-        continue
-    for name in m.get('publication_names', []) + [m['name']]:
-        parts = re.sub(r'\(.*?\)', '', name).split()
-        if len(parts) >= 2:
-            member_surnames[f"{parts[-1]}, {' '.join(p[0] + '.' for p in parts[:-1])}"] = m['name']
-
 
 # ---------------------------------------------------------------- shared pieces
 def contact_block(heading_id):
@@ -340,11 +331,13 @@ def selected_block():
             '</section><!-- AUTO:selected:END -->')
 
 
-def bold_members(authors_html):
-    out = authors_html
-    for short in sorted(member_surnames, key=len, reverse=True):
-        out = re.sub(r'(?<![\w>])' + re.escape(short) + r'(?![\w])', f'<strong>{short}</strong>', out)
-    return out
+def bold_members(rec):
+    """Bold current members by full-name match on the Crossref author list (never by initials alone), 2022 onward."""
+    authors = rec['authors_html'].split('; ')
+    names = rec.get('crossref_authors') or []
+    if rec['group'] == '1980s' or int(rec['group']) < 2022 or len(names) != len(authors):
+        return rec['authors_html']
+    return '; '.join(f'<strong>{a}</strong>' if norm(n) in member_aliases else a for a, n in zip(authors, names))
 
 
 def build_publications():
@@ -432,7 +425,7 @@ def build_publications():
             tags_html = f'<p class="ag-site-pub-tags">{"".join(pills)}</p>' if pills else ''
             items.append(f'<li class="{" ".join(classes)}" id="{esc(r["id"])}"><span class="ag-site-pub-num">{number}</span>'
                          f'<div class="ag-site-pub-body"><h3 class="ag-site-pub-title">{title_html}</h3>'
-                         f'<p class="ag-site-pub-authors">{bold_members(r["authors_html"])}</p>'
+                         f'<p class="ag-site-pub-authors">{bold_members(r)}</p>'
                          f'<p class="ag-site-pub-cite">{cite}</p>{tags_html}</div></li>')
             number -= 1
         year_html.append(f'<section class="ag-site-year" id="pub-{year}" aria-labelledby="pub-heading-{year}">'
