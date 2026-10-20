@@ -37,5 +37,9 @@ jobs:
       - name: Content test (task F)
         if: ${{ inputs.content_test }}
         run: python scripts/content_test.py
+      - name: Round-trip report (what WordPress changed on save)
+        run: |
+          python site/build.py
+          python scripts/roundtrip_report.py members alumni news home publications
       - name: Public check
         run: python scripts/verify_public.py --no-fail

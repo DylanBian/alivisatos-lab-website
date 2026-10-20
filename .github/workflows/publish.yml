@@ -48,22 +48,26 @@ jobs:
       - name: Diff and push
         run: |
           PAGES="${{ inputs.page }}"
-          if [ "$PAGES" = "all" ]; then PAGES="publications members alumni news home research"; fi
+          if [ "$PAGES" = "all" ]; then PAGES="research news home members alumni publications"; fi
           FLAG=""
           if [ "${{ inputs.mode }}" = "publish" ]; then FLAG="--apply"; fi
           FAILED=""
+          DONE=""
           for p in $PAGES; do
             if python site/push.py "$p" $FLAG; then
               python scripts/review_diff.py "$p"
+              DONE="$DONE $p"
             else
-              FAILED="$FAILED $p"
-              echo "**$p: push.py stopped; see the error annotation.**" >> "$GITHUB_STEP_SUMMARY"
+              FAILED="$p"
+              echo "**$p: push.py stopped; later pages were not touched.**" >> "$GITHUB_STEP_SUMMARY"
+              break
             fi
           done
+          echo "DONE=$DONE" >> "$GITHUB_ENV"
           if [ -z "$FLAG" ]; then
             echo "Dry run only. Re-run with mode = publish to write." >> "$GITHUB_STEP_SUMMARY"
           fi
-          if [ -n "$FAILED" ]; then echo "::error title=Pages not processed::$FAILED"; exit 1; fi
+          if [ -n "$FAILED" ]; then echo "::error title=Stopped at::$FAILED (done before it:$DONE)"; exit 1; fi
       - uses: actions/upload-artifact@v4
         if: always()
         with:
@@ -73,6 +77,12 @@ jobs:
             site/backup/
             site/reports/*.diff
           retention-days: 90
+      - name: Round-trip report
+        if: ${{ always() && inputs.mode == 'publish' }}
+        run: |
+          PAGES="${{ inputs.page }}"
+          if [ "$PAGES" = "all" ]; then PAGES="news home members alumni publications"; fi
+          if [ "$PAGES" != "research" ]; then python scripts/roundtrip_report.py $PAGES; fi
       - name: Public check (cache may lag up to an hour)
         if: ${{ inputs.mode == 'publish' }}
         run: |

@@ -1,0 +1,55 @@
+name: Restore page from revision
+
+# Puts back the newest WordPress revision of one page saved before a given UTC time.
+# dry-run lists the revisions and names the one it would restore; restore writes it.
+on:
+  workflow_dispatch:
+    inputs:
+      page:
+        description: "Page to restore"
+        type: choice
+        options: [publications, members, alumni, news, home, research]
+      before:
+        description: "Restore the newest revision saved before this UTC time"
+        type: string
+        default: "2026-10-20T10:47:00"
+      mode:
+        description: "dry-run lists revisions only; restore writes"
+        type: choice
+        options: [dry-run, restore]
+        default: dry-run
+
+permissions:
+  contents: read
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  restore:
+    runs-on: ubuntu-latest
+    env:
+      WP_USER: ${{ secrets.WP_USER }}
+      WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+    defaults:
+      run:
+        shell: bash
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Backup all pages
+        run: python scripts/backup.py --out backup
+      - uses: actions/upload-artifact@v4
+        with:
+          name: backup-${{ github.run_id }}
+          path: backup/
+          retention-days: 90
+      - name: Restore
+        run: |
+          FLAG=""
+          if [ "${{ inputs.mode }}" = "restore" ]; then FLAG="--apply"; fi
+          python scripts/restore_revision.py "${{ inputs.page }}" --before "${{ inputs.before }}" $FLAG

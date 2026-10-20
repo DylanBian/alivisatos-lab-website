@@ -10,6 +10,7 @@ from urllib.request import Request, urlopen
 ROOT=Path(__file__).resolve().parent
 PAGE_IDS={'publications':1147,'members':1153,'alumni':1120,'news':1179,'home':2,'research':1198}
 BLOCK=re.compile(r'<!-- wp:(divi/[\w-]+) (\{[\s\S]*?\}) (/?)-->')
+MAX_RAW_CHARS=850_000
 
 def replace_module(raw, fragment, marker):
     start=f'<!-- AUTO:{marker}:START -->';end=f'<!-- AUTO:{marker}:END -->'
@@ -138,12 +139,23 @@ def main():
     (ROOT/'reports'/f'{page}.diff').write_text(diff)
     print('Saved backup and diff. Current SHA256:',hashlib.sha256(raw.encode()).hexdigest())
     if os.environ.get('GITHUB_ACTIONS'): print(f'::notice title=push {page}::live modified {saved.get("modified_gmt","?")}; raw {len(raw)} chars -> {len(updated)} chars; apply={args.apply}')
+    # 2026-10-20: a 1,074,426-char save came back empty (PHP regex backtrack limit is 1,000,000); 879,405 chars saved fine.
+    if len(updated)>MAX_RAW_CHARS:
+        message=f'{page}: generated page is {len(updated)} chars, above the {MAX_RAW_CHARS} limit; WordPress may save it empty. Nothing written.'
+        if os.environ.get('GITHUB_ACTIONS'): print(f'::error title=push {page} too large::{message}')
+        sys.exit(message)
     if not args.apply:
         print('Dry run only. Review reports/'+page+'.diff before using --apply.');return
     if request(endpoint+'?context=edit')['content']['raw']!=raw:
         raise RuntimeError('Page changed after the backup; no write performed')
     request(endpoint,{'content':updated})
     actual=request(endpoint+'?context=edit')['content']['raw']
+    if page!='research' and (f'AUTO:{marker}:START' not in actual or len(actual)<0.5*len(updated)):
+        # The save lost the module (seen 2026-10-20: page saved empty). Put the previous content back at once.
+        request(endpoint,{'content':raw})
+        back=request(endpoint+'?context=edit')['content']['raw']
+        raise RuntimeError(f'Saved page lost the AUTO module ({len(actual)} chars saved). Previous content written back: '
+                           f'{"identical" if back==raw else "DIFFERS, restore from revisions"}.')
     # Read the saved module back. WordPress may strip unsupported markup.
     roundtrip=actual if page=='research' else replace_module(actual,fragment,marker)
     if roundtrip!=actual:
