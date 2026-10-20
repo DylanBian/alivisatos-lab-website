@@ -3,6 +3,25 @@
 Record every publish: date (UTC), page, Actions run link, public-check result.
 
 ## 2026-10-20
+
+### 10:47 UTC publish run 39410422524 (page all, publish): partial, one page restored
+- Research: published (three journal labels).
+- Publications: the 1,074,426-character save came back **empty**. Restored at 10:55 UTC from revision 2079
+  (07:34 UTC, 449,942 chars) through the REST API in Dylan's signed-in browser; read-back identical.
+- Members, Alumni, News, Home: new content written; WordPress normalized inline styles and dropped `box-shadow` and
+  `overflow-wrap` (read-back check failed, pages displayed correctly).
+- Fixes: 850,000-character limit in push.py, immediate write-back when a save loses the module, publish stops at the
+  first failure, round-trip report, restore workflow.
+
+### Rebuild (built and staged on the private test page; not yet published)
+- Styles moved from inline attributes into Divi module Free-Form CSS (tested: kept on save, printed on that page only).
+  Publications module drops from about 1.07 M to 0.51 M characters.
+- Members: structured data, larger photos, PI feature card, group-visit banner removed, contact block (GCIS E247H).
+- Publications: 484 numbered papers; Crossref citation fields; AI tags from abstracts with evidence and confidence;
+  JS-free filters by area, journal, type, open access, material, approach, application, each with its own URL.
+- Alumni: JS-free sector and role filters. News: three people items from Gallery captions, newest first.
+- Home: research area cards with a featured paper and links to the filtered publication list; contact block.
+- All five modules staged on page 2081 and read back identical (module and CSS).
 - Repository created. Imported task lists, data (alumni, selected publications), prototypes, scripts and workflows.
 - State before this repository: P0, most of P1, and B (Selected Publications, 11 papers; 484-entry list) were written
   to WordPress between about 23:00 UTC on 2026-10-19 and 07:40 UTC on 2026-10-20 through a browser session.

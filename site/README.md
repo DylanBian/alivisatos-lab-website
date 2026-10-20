@@ -1,25 +1,38 @@
 # Page generator (site/)
 
-Built by Codex on 2026-10-20 (sections C and D) and connected to GitHub Actions here.
-Details of each data file and template: `README-generator.md`.
+Renders the code-managed sections of Members, Alumni, News, Publications and Home from `site/data/`.
+Older notes on individual data files: `README-generator.md`.
 
 ## How a publish runs (`.github/workflows/publish.yml`)
 1. `scripts/auth_check.py` and `scripts/backup.py` (repo root): confirm the Application Password, back up every page.
-2. `site/build.py`: renders page fragments from `site/data/` and `site/templates/` into `site/build/<page>.html`.
-   CSS from `site/assets/site.css` is inlined into each element, because page content cannot keep `<style>` blocks.
-3. `site/validate.py`: checks counts, markers, sources and links.
+2. `site/build.py`: writes, for each page, `build/<page>.html` (the AUTO module content) and `build/<page>.css`
+   (`assets/site.css` plus generated filter rules, minified). Page content on Voices cannot keep `<style>`, so the CSS is
+   stored as the Divi Code module's Free-Form CSS, which Divi prints on that page only.
+3. `site/validate.py`: counts, markers, sources, forbidden text, filter targets, CSS without `>`, size.
 4. `site/push.py <page>` (dry run) or `--apply`: fetches the live page, replaces only the module between
-   `<!-- AUTO:<page>:START -->` and `<!-- AUTO:<page>:END -->`, saves a backup and a raw diff, checks the page did not
-   change in the meantime, writes, and reads it back. For `members` it also removes empty Divi sections above the list.
-   `research` uses the reviewed baseline `build/research-content.before-c.raw` and refuses if the live page differs.
-5. `scripts/review_diff.py <page>`: readable diff (one HTML tag per line) in the run summary.
+   `<!-- AUTO:<page>:START -->` and `<!-- AUTO:<page>:END -->` and its Free-Form CSS, refuses pages over 850,000
+   characters, checks the page did not change in the meantime, writes, and reads it back. If the save lost the module,
+   it writes the previous content back immediately. `research` applies three journal-label fixes to the live text.
+5. `scripts/review_diff.py <page>`: readable diff in the run summary. `scripts/roundtrip_report.py`: what WordPress
+   changed on save (expected: nothing).
 6. `scripts/verify_public.py`: plain-URL check after a publish.
 
-## Editing content
-Change files in `site/data/` (members, alumni, news, home, selected_publications, publications.csv), run
-`python site/build.py && python site/validate.py` locally if you can, open a pull request, then publish.
+## Filters without scripts
+Each filter chip is a link to `#<target>` with class `et_smooth_scroll_disabled`; empty `<span class="ag-site-target">`
+elements carry the ids. CSS rules of the form `.ag-site-root.ag-site-publications:has(#f-lctem:target) .ag-site-pub:not(.t-lctem){display:none}`
+do the filtering. Every filter therefore has a shareable URL, for example `/publications/#f-lctem` or
+`/alumni/#alumni-sector-industry`.
 
-## Not active yet
-- `assets/site-integration.html` (search boxes and filter buttons). Page content cannot hold scripts and the only
-  site-wide place is Divi Theme Options > Integration, a global setting. Decide after the content test (task F).
-  Until then the controls render but do nothing; consider hiding them in the templates.
+## Publications data
+- `data/publications.csv`: the list as it appears on the site (id, year group, title, authors, URL).
+- `data/metadata/works.json`: Crossref and OpenAlex records per DOI (refresh with the "Fetch publication metadata"
+  workflow). Journal abbreviation, volume, issue and pages come from Crossref when the titles match;
+  `reports/publication_metadata.md` lists the exceptions.
+- `data/tags.yaml`: the controlled vocabulary with a definition for every tag.
+- `data/publication_tags.yaml`: tags per paper, suggested by AI from the title and abstract, each with evidence and
+  confidence. `reports/tag_review.csv` lists them, lowest confidence first, for review. Set `tag_source: human` after
+  correcting an entry.
+
+## Editing content
+Change files in `site/data/`, run `python site/build.py && python site/validate.py`, commit, then publish (dry run first).
+To preview without publishing, open `site/build/<page>-preview.html` in a browser.
