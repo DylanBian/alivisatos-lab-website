@@ -137,6 +137,15 @@
 .ag-site-root .ag-site-paper-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 12px; color: var(--ag-text); font-size: .85rem; }
 .ag-site-root .ag-site-paper-doi { padding: 1px 8px; border: 1px solid var(--ag-line); border-radius: 6px; color: var(--ag-maroon); font-size: .8rem; text-decoration: none; }
 .ag-site-root .ag-site-open-access { color: #2f6b4f; font-size: .72rem; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; }
+.ag-site-root .ag-site-paper-has-figure { grid-template-columns: 52px minmax(0, 1fr) 210px; }
+.ag-site-root .ag-site-paper-title a { color: inherit; text-decoration: none; }
+.ag-site-root .ag-site-paper-title a:hover { color: var(--ag-maroon); }
+.ag-site-root .ag-site-paper-figure { margin: 0 0 0 18px; }
+.ag-site-root .ag-site-paper-figure img { display: block; width: 100%; max-height: 150px; border: 1px solid var(--ag-line); border-radius: 6px; background: #fff; object-fit: contain; }
+.ag-site-root .ag-site-paper-figure figcaption, .ag-site-root .ag-site-home-paper-figure figcaption { margin-top: 4px; color: #8a8083; font-size: .66rem; line-height: 1.35; }
+.ag-site-root .ag-site-home-paper-figure { margin: -18px -20px 14px; }
+.ag-site-root .ag-site-home-paper-figure img { display: block; width: 100%; height: 170px; border-bottom: 1px solid var(--ag-line); background: #fff; object-fit: contain; }
+.ag-site-root .ag-site-home-paper-figure figcaption { padding: 0 20px; }
 .ag-site-root .ag-site-foot { margin: 0; padding-top: 10px; color: var(--ag-muted); font-size: .85rem; line-height: 1.5; }
 
 /* Publications: full list with filters */
@@ -173,5 +182,6 @@
   .ag-site-root .ag-site-member-body { padding: 12px 14px 14px; border-top: 0; }
   .ag-site-root .ag-site-pub { grid-template-columns: 2.4rem minmax(0, 1fr); }
   .ag-site-root .ag-site-selected { padding: 18px 16px; }
-  .ag-site-root .ag-site-paper { grid-template-columns: 1fr; }
+  .ag-site-root .ag-site-paper, .ag-site-root .ag-site-paper-has-figure { grid-template-columns: 1fr; }
+  .ag-site-root .ag-site-paper-figure { margin: 10px 0 0; max-width: 320px; }
 }

@@ -316,10 +316,22 @@ def render_selected_paper(paper):
     meta.append(f'<a class="ag-site-paper-doi" href="{esc(doi_url)}" target="_blank" rel="noopener noreferrer">DOI</a>')
     if paper['doi'].lower() in OA_JOURNAL_DOIS:
         meta.append('<span class="ag-site-open-access">Open access journal</span>')
-    return (f'<li class="ag-site-paper"><span class="ag-site-paper-year">{int(paper["year"])}</span>'
+    figure = paper_figure(paper)
+    return (f'<li class="ag-site-paper{" ag-site-paper-has-figure" if figure else ""}"><span class="ag-site-paper-year">{int(paper["year"])}</span>'
             f'<div class="ag-site-paper-body"><span class="ag-site-paper-journal">{esc(paper["journal"])}</span>'
-            f'<h3 class="ag-site-paper-title">{paper["title"]}</h3><p class="ag-site-paper-authors">{"; ".join(authors)}</p>'
-            f'<div class="ag-site-paper-meta">{" ".join(meta)}</div></div></li>')
+            f'<h3 class="ag-site-paper-title"><a href="{esc(doi_url)}" target="_blank" rel="noopener noreferrer">{paper["title"]}</a></h3><p class="ag-site-paper-authors">{"; ".join(authors)}</p>'
+            f'<div class="ag-site-paper-meta">{" ".join(meta)}</div></div>{figure}</li>')
+
+
+def paper_figure(paper, cls='ag-site-paper-figure'):
+    """TOC graphic or Figure 1 with its credit line (image, image_alt, image_credit in selected_publications.yaml)."""
+    if not paper.get('image'):
+        return ''
+    if not paper.get('image_credit'):
+        raise ValueError(f'Image without credit line: {paper["doi"]}')
+    return (f'<figure class="{cls}"><a href="https://doi.org/{esc(paper["doi"])}" target="_blank" rel="noopener noreferrer">'
+            f'<img src="{esc(paper["image"])}" alt="{esc(paper.get("image_alt", ""))}" loading="lazy"></a>'
+            f'<figcaption>{esc(paper["image_credit"])}</figcaption></figure>')
 
 
 def selected_block():
@@ -467,7 +479,7 @@ def write_metadata_report(recs, report):
 def home_publication_card(paper):
     d = date.fromisoformat(paper['publication_date'])
     summary = paper.get('homepage_summary', '')
-    return ('<article class="ag-site-home-paper">'
+    return ('<article class="ag-site-home-paper">' + paper_figure(paper, 'ag-site-home-paper-figure') +
             f'<p class="ag-site-home-paper-date">{esc(paper["journal"])} · {d:%B} {d.day}, {d.year}</p>'
             f'<h3 class="ag-site-home-paper-title"><a href="https://doi.org/{esc(paper["doi"])}" target="_blank" rel="noopener noreferrer">{paper["title"]}</a></h3>'
             + (f'<p class="ag-site-home-copy">{esc(summary)}</p>' if summary else '') + '</article>')

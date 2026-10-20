@@ -28,7 +28,10 @@ website edits, which can lag the actual departure.
 Abdullah S. Abbas and Minhal Hasham also stayed in a hidden (disabled) legacy section of the page until 2026-10-19;
 the dates above use the visible list.
 
-## Not yet on the site (needs Dylan)
-1. Years on the Alumni cards: show start years only as listed ("Postdoc, 2022–"), or start and end years using
-   "Removed in" as the end year? Nothing is published until this rule is confirmed.
-2. Add Yifan (Miller) Liao and Nadia Ceaser to the Alumni page (both were listed as undergraduates for a few weeks)?
+## Rule used on the site (Dylan, 2026-10-20: "补上")
+- Start year: the year in the role line when the Members page gives one ("Postdoctoral Researcher (2022–)");
+  otherwise the year the person first appeared on the page, except for people already listed in the oldest available
+  revision (2023-05-16), whose start year is unknown ("until 2024").
+- End year: the year of the last revision that still listed the person.
+- Shown on the Alumni card next to the role, for example "Postdoc, 2022–2025".
+- Yifan (Miller) Liao and Nadia Ceaser are not added (listed for a few weeks only; no decision yet).
