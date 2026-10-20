@@ -24,6 +24,12 @@ Current tasks live in `tasks/`. The newest task file is the one to follow.
     (`site/build/<page>.css`), so never use the child combinator `>` in `site/assets/site.css`.
   - Divi intercepts clicks on in-page `#links` for smooth scrolling unless the link has class
     `et_smooth_scroll_disabled`. Filters use `:target`, so every filter link carries that class.
+- An `<img>` element inside the large Publications module makes WordPress render that page **empty** (saved content
+  is fine; tested 2026-10-20). Use background images (`style="background-image:url(...)"` with `role="img"` and
+  `aria-label`) in that module. Smaller modules (Members, Home) render `<img>` normally. `push.py` writes the previous
+  content back if a saved page renders under 1,000 characters.
+- After publishing, the caching proxy may serve the previous version (or a broken one) for up to an hour.
+  `scripts/refresh_cache.py` (run by the publish workflow) asks it to revalidate each page.
 - A saved page larger than about 1,000,000 characters comes back **empty** (PHP regex backtrack limit). 879,405 chars
   saved fine; 1,074,426 did not (2026-10-20 incident, restored from revision 2079). `push.py` refuses anything over
   850,000 characters, and writes the previous content back at once if a save loses the AUTO module.

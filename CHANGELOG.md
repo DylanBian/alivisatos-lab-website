@@ -4,6 +4,17 @@ Record every publish: date (UTC), page, Actions run link, public-check result.
 
 ## 2026-10-20
 
+### 14:31-14:41 UTC publish runs 39439892128, 39440789261, 39441466289 (approved by Dylan)
+- Content: open access counted by journal (20 papers); six new 2025-2026 papers; three new Selected Publications;
+  13 tag corrections from an independent AI review; alumni years and 16 updated positions; no "Not listed" category;
+  home slider headings; figures for Selected Publications.
+- Incident: at 14:31 the Publications page rendered empty although the saved content was complete. Cause: an `<img>`
+  inside the large Publications module (bisected on the private test page: one `<img>` is enough). Restored at 14:33
+  from revision 2109. Figures are now background images; push.py writes the previous content back when a saved page
+  renders under 1,000 characters. The proxy had cached the empty page; publish runs now send no-cache requests to
+  refresh the cache.
+- 14:37 run: all pages read back identical and render; 14:41: Alumni years for Abbas, Wang, Crook (2018-2024).
+
 ### 13:52 UTC publish run 39434123477 (page all, publish, approved by Dylan): all pages published
 - Research (links to each area's publication list), News, Home, Members, Alumni, Publications. Every page read back
   identical to the build (round-trip report). Public check: all pages pass, `/positions/` 404.
