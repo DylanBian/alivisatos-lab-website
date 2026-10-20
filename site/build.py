@@ -358,7 +358,7 @@ def build_publications():
         targets.append(tid)
         css.append(filter_css('ag-site-publications', tid, f'.ag-site-pub:not(.{cls})', f'#{tid}'))
         css.append(f'.ag-site-root.ag-site-publications:has(#{tid}:target) .ag-site-year:not(:has(.{cls})){{display:none}}')
-        statuses.append(f'<p class="ag-site-filter-status ag-site-status-{tid}">Showing {n} of {total} papers: {esc(label)}.'
+        statuses.append(f'<p class="ag-site-filter-status ag-site-status-{tid}">Showing {n} of {total} papers: {esc(label.rstrip("."))}.'
                         f'<a class="{NOSCROLL}" href="#pubs-all">Show all</a></p>')
 
     if tagged:
