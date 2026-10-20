@@ -8,7 +8,7 @@ on:
       page:
         description: "Page to publish"
         type: choice
-        options: [members, alumni, research, publications, news, gallery, home, all]
+        options: [members, alumni, publications, research, news, home, all]
       mode:
         description: "dry-run shows the diff only; publish writes to WordPress"
         type: choice
@@ -28,6 +28,9 @@ jobs:
     env:
       WP_USER: ${{ secrets.WP_USER }}
       WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+    defaults:
+      run:
+        shell: bash
     steps:
       - uses: actions/checkout@v4
       - uses: actions/setup-python@v5
@@ -38,25 +41,32 @@ jobs:
         run: python scripts/auth_check.py
       - name: Backup all pages
         run: python scripts/backup.py --out backup
-      - uses: actions/upload-artifact@v4
-        with:
-          name: backup-${{ github.run_id }}
-          path: backup/
-          retention-days: 90
-      - name: Build pages
+      - name: Build and validate
         run: |
-          if [ ! -f site/build.py ]; then
-            echo "site/build.py is missing. Add the page generator first (see site/README.md)." >> "$GITHUB_STEP_SUMMARY"
-            exit 1
-          fi
           python site/build.py
+          python site/validate.py
       - name: Diff and push
         run: |
-          if [ "${{ inputs.mode }}" = "publish" ]; then
-            python scripts/push_page.py --page "${{ inputs.page }}" --publish
-          else
-            python scripts/push_page.py --page "${{ inputs.page }}"
+          PAGES="${{ inputs.page }}"
+          if [ "$PAGES" = "all" ]; then PAGES="publications members alumni news home research"; fi
+          FLAG=""
+          if [ "${{ inputs.mode }}" = "publish" ]; then FLAG="--apply"; fi
+          for p in $PAGES; do
+            python site/push.py "$p" $FLAG
+            python scripts/review_diff.py "$p"
+          done
+          if [ -z "$FLAG" ]; then
+            echo "Dry run only. Re-run with mode = publish to write." >> "$GITHUB_STEP_SUMMARY"
           fi
+      - uses: actions/upload-artifact@v4
+        if: always()
+        with:
+          name: backup-and-diffs-${{ github.run_id }}
+          path: |
+            backup/
+            site/backup/
+            site/reports/*.diff
+          retention-days: 90
       - name: Public check (cache may lag up to an hour)
         if: ${{ inputs.mode == 'publish' }}
         run: |

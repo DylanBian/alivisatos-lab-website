@@ -1,0 +1,155 @@
+- id: news-001
+  title_html: Alumnus Prof. Uri Banin visits the group
+  image_url: https://alivisatoslab.uchicago.edu/files/2026/08/c480579104b02f71a27de467f3918cd8.jpg
+  image_alt: Alivisatos Group members with alumnus Prof. Uri Banin during his August 2026 visit
+  template_html: '<article aria-labelledby="news-item-1" style="border:1px solid #e7e2e2;border-top:4px solid #800000;background:#fff;display:flex;flex-direction:column"
+    class="img"><img src="@@IMAGE_URL@@" alt="@@IMAGE_ALT@@" loading="lazy" style="display:block;width:100%;height:220px;object-fit:cover"><div
+    style="padding:20px 22px 22px;display:flex;flex:1;flex-direction:column"><p style="margin:0 0 9px;color:#800000;font-size:.88rem;font-weight:600;letter-spacing:.035em;text-transform:uppercase"><time
+    datetime="2026-08">August 2026</time></p><h2 id="news-item-1" style="margin:0 0 11px;color:#333;font-size:1.28rem;line-height:1.3">@@TITLE_HTML@@</h2><p
+    style="margin:0 0 17px;line-height:1.65">We welcomed our alumnus Prof. Uri Banin back to the group for a visit.</p><p
+    style="margin:auto 0 0"><a href="https://alivisatoslab.uchicago.edu/gallery/" style="color:#800000;font-weight:600;text-decoration:underline">See
+    photos in the Gallery</a></p></div></article>'
+  source_url: https://alivisatoslab.uchicago.edu/gallery/
+  verified: true
+  publish: true
+- id: news-002
+  title_html: <a href="https://doi.org/10.1021/jacs.6c08238" style="color:inherit;text-decoration:none">Visualizing Millisecond
+    Atomic Dynamics of Nanocrystals in Liquid</a>
+  template_html: '<article aria-labelledby="news-item-2" style="border:1px solid #e7e2e2;border-top:4px solid #800000;background:#fff;display:flex;flex-direction:column"><div
+    aria-hidden="true" style="height:220px;display:flex;align-items:center;justify-content:center;background:#f7f5f5;color:#800000;font-size:2.4rem;font-weight:300">JACS</div><div
+    style="padding:20px 22px 22px;display:flex;flex:1;flex-direction:column"><p style="margin:0 0 9px;color:#800000;font-size:.88rem;font-weight:600;letter-spacing:.035em;text-transform:uppercase"><time
+    datetime="2026-06-18">June 18, 2026</time></p><h2 id="news-item-2" style="margin:0 0 11px;color:#333;font-size:1.28rem;line-height:1.3">@@TITLE_HTML@@</h2><p
+    style="margin:0 0 17px;line-height:1.65">Our new <em>Journal of the American Chemical Society</em> paper uses millisecond-speed
+    liquid-cell electron microscopy and deep-learning denoising to observe atomic-scale dynamics in gold nanocrystals in reactive
+    liquids. The study reveals reversible changes in local crystallinity and how nanocrystal–liquid interactions affect dissolution
+    and grain-boundary relaxation.</p><p style="margin:auto 0 0"><a href="https://doi.org/10.1021/jacs.6c08238" style="color:#800000;font-weight:600;text-decoration:underline">Read
+    the paper</a></p></div></article>'
+  source_url: https://doi.org/10.1021/jacs.6c08238
+  verified: true
+  publish: true
+- id: news-003
+  title_html: Article featured on the cover of <em>Nature Synthesis</em>
+  image_url: https://alivisatoslab.uchicago.edu/files/2026/05/3110.jpg
+  image_alt: Cover image for the May 2026 issue of Nature Synthesis featuring group-III arsenide nanocube research
+  template_html: '<article aria-labelledby="news-item-3" style="border:1px solid #e7e2e2;border-top:4px solid #800000;background:#fff;display:flex;flex-direction:column"
+    class="img"><img src="@@IMAGE_URL@@" alt="@@IMAGE_ALT@@" loading="lazy" style="display:block;width:100%;height:220px;object-fit:cover"><div
+    style="padding:20px 22px 22px;display:flex;flex:1;flex-direction:column"><p style="margin:0 0 9px;color:#800000;font-size:.88rem;font-weight:600;letter-spacing:.035em;text-transform:uppercase"><time
+    datetime="2026-03-11">Published March 11, 2026; featured on the cover of the May 2026 issue</time></p><h2 id="news-item-3"
+    style="margin:0 0 11px;color:#333;font-size:1.28rem;line-height:1.3">@@TITLE_HTML@@</h2><p style="margin:0 0 17px;line-height:1.65">Our
+    article, “Kinetic-controlled transformations of group-III arsenide nanocubes,” reports the cation-exchange transformation
+    of Cu<sub>3</sub>As nanocubes into InAs and GaAs. The work shows how reaction kinetics guide nucleation, phase propagation,
+    symmetry changes, and the formation of crystalline, multidomain, amorphous, or hollow structures.</p><p style="margin:auto
+    0 0"><a href="https://www.nature.com/articles/s44160-026-01015-6" style="color:#800000;font-weight:600;text-decoration:underline">Read
+    the paper</a> <span aria-hidden="true">·</span> <a href="https://www.nature.com/natsynth/volumes/5/issues/5" style="color:#800000;font-weight:600;text-decoration:underline">View
+    the May issue</a></p></div></article>'
+  source_url: https://www.nature.com/natsynth/volumes/5/issues/5
+  verified: true
+  publish: true
+- id: news-004
+  title_html: Alumnus Prof. Yadong Yin visits and gives a group talk
+  image_url: https://alivisatoslab.uchicago.edu/files/2026/02/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20260204112317_125_182.jpg
+  image_alt: Prof. Yadong Yin visiting the Alivisatos Group and giving a talk in February 2026
+  template_html: '<article aria-labelledby="news-item-4" style="border:1px solid #e7e2e2;border-top:4px solid #800000;background:#fff;display:flex;flex-direction:column"
+    class="img"><img src="@@IMAGE_URL@@" alt="@@IMAGE_ALT@@" loading="lazy" style="display:block;width:100%;height:220px;object-fit:cover"><div
+    style="padding:20px 22px 22px;display:flex;flex:1;flex-direction:column"><p style="margin:0 0 9px;color:#800000;font-size:.88rem;font-weight:600;letter-spacing:.035em;text-transform:uppercase"><time
+    datetime="2026-02">February 2026</time></p><h2 id="news-item-4" style="margin:0 0 11px;color:#333;font-size:1.28rem;line-height:1.3">@@TITLE_HTML@@</h2><p
+    style="margin:0 0 17px;line-height:1.65">We welcomed Prof. Yadong Yin, a group alumnus, for a visit and talk.</p><p style="margin:auto
+    0 0"><a href="https://alivisatoslab.uchicago.edu/gallery/" style="color:#800000;font-weight:600;text-decoration:underline">See
+    photos in the Gallery</a></p></div></article>'
+  source_url: https://alivisatoslab.uchicago.edu/gallery/
+  verified: true
+  publish: true
+- id: news-005
+  title_html: Paper selected for the <em>MRS Bulletin</em> 50th Anniversary Collection
+  image_url: https://alivisatoslab.uchicago.edu/files/2026/01/43577_2025_958_Figk_HTML.jpg
+  image_alt: Illustration accompanying the MRS Bulletin article on multimodal observations in nanoscience
+  template_html: '<article aria-labelledby="news-item-5" style="border:1px solid #e7e2e2;border-top:4px solid #800000;background:#fff;display:flex;flex-direction:column"
+    class="img"><img src="@@IMAGE_URL@@" alt="@@IMAGE_ALT@@" loading="lazy" style="display:block;width:100%;height:220px;object-fit:cover"><div
+    style="padding:20px 22px 22px;display:flex;flex:1;flex-direction:column"><p style="margin:0 0 9px;color:#800000;font-size:.88rem;font-weight:600;letter-spacing:.035em;text-transform:uppercase"><time
+    datetime="2025-10-23">October 23, 2025</time></p><h2 id="news-item-5" style="margin:0 0 11px;color:#333;font-size:1.28rem;line-height:1.3">@@TITLE_HTML@@</h2><p
+    style="margin:0 0 17px;line-height:1.65">“<a href="https://link.springer.com/article/10.1557/s43577-025-00958-z" style="color:#800000">Precision
+    nanoscience aided by multimodal observations</a>” was selected for the collection, which brings together invited articles
+    on future directions in materials research.</p><p style="margin:auto 0 0"><a href="https://link.springer.com/collections/dacbdieefi"
+    style="color:#800000;font-weight:600;text-decoration:underline">Explore the collection</a></p></div></article>'
+  source_url: https://link.springer.com/collections/dacbdieefi
+  verified: true
+  publish: true
+- id: news-006
+  title_html: South Side Science Festival
+  image_url: https://alivisatoslab.uchicago.edu/files/2025/10/IMG_5671.jpg
+  image_alt: Alivisatos Group members at UChicago’s South Side Science Festival in October 2025
+  template_html: '<article aria-labelledby="news-item-7" style="border:1px solid #e7e2e2;border-top:4px solid #800000;background:#fff;display:flex;flex-direction:column"
+    class="img"><img src="@@IMAGE_URL@@" alt="@@IMAGE_ALT@@" loading="lazy" style="display:block;width:100%;height:220px;object-fit:cover"><div
+    style="padding:20px 22px 22px;display:flex;flex:1;flex-direction:column"><p style="margin:0 0 9px;color:#800000;font-size:.88rem;font-weight:600;letter-spacing:.035em;text-transform:uppercase"><time
+    datetime="2025-10-04">October 4, 2025</time></p><h2 id="news-item-7" style="margin:0 0 11px;color:#333;font-size:1.28rem;line-height:1.3">@@TITLE_HTML@@</h2><p
+    style="margin:0 0 17px;line-height:1.65">Group members joined UChicago’s free, all-ages celebration of hands-on science,
+    bringing together researchers and South Side families on campus.</p><p style="margin:auto 0 0"><a href="https://events.uchicago.edu/event/251647-south-side-science-festival"
+    style="color:#800000;font-weight:600;text-decoration:underline">Event details</a> <span aria-hidden="true">·</span> <a
+    href="https://alivisatoslab.uchicago.edu/gallery/" style="color:#800000;font-weight:600;text-decoration:underline">Group
+    photos</a></p></div></article>'
+  source_url: https://events.uchicago.edu/event/251647-south-side-science-festival
+  verified: true
+  publish: true
+- id: news-007
+  title_html: Selected for <em>Nature Communications</em> Editors’ Highlights <span style="display:inline-block;margin-left:4px;padding:3px
+    8px;border-radius:12px;background:#800000;color:#fff;font-size:.68rem;vertical-align:middle">Highlighted</span>
+  image_url: https://alivisatoslab.uchicago.edu/files/2025/09/41467_2025_60848_Fig1_HTML.png
+  image_alt: Figure from the study of size-dependent exciton radiative lifetime in CsPbBr₃ nanocrystals
+  template_html: '<article aria-labelledby="news-item-6" style="border:1px solid #e7e2e2;border-top:4px solid #800000;background:#fff;display:flex;flex-direction:column"
+    class="img"><img src="@@IMAGE_URL@@" alt="@@IMAGE_ALT@@" loading="lazy" style="display:block;width:100%;height:220px;object-fit:cover"><div
+    style="padding:20px 22px 22px;display:flex;flex:1;flex-direction:column"><p style="margin:0 0 9px;color:#800000;font-size:.88rem;font-weight:600;letter-spacing:.035em;text-transform:uppercase"><time
+    datetime="2025-07-11">Paper published July 11, 2025</time></p><h2 id="news-item-6" style="margin:0 0 11px;color:#333;font-size:1.28rem;line-height:1.3">@@TITLE_HTML@@</h2><p
+    style="margin:0 0 17px;line-height:1.65">The editors selected “Non-monotonic size-dependent exciton radiative lifetime
+    in CsPbBr<sub>3</sub> nanocrystals” for Editors’ Highlights in inorganic and physical chemistry. The collection showcases
+    selected recent papers published in the journal.</p><p style="margin:auto 0 0"><a href="https://www.nature.com/articles/s41467-025-60848-5"
+    style="color:#800000;font-weight:600;text-decoration:underline">Read the paper</a> <span aria-hidden="true">·</span> <a
+    href="https://www.nature.com/collections/wtpqpqpgwd" style="color:#800000;font-weight:600;text-decoration:underline">View
+    Editors’ Highlights</a></p></div></article>'
+  source_url: https://www.nature.com/articles/s41467-025-60848-5
+  verified: false
+  publish: false
+  verification_note: Publication date confirmed; Editors’ Highlights selection not confirmed. Keep unpublished until Dylan
+    approves.
+- id: news-008
+  title_html: Recreating George Washington Carver’s blue pigment
+  template_html: '<article aria-labelledby="news-item-8" style="border:1px solid #e7e2e2;border-top:4px solid #800000;background:#fff;display:flex;flex-direction:column"><div
+    aria-hidden="true" style="height:220px;display:flex;align-items:center;justify-content:center;background:#f0f3fb;color:#244b9b;font-size:2.4rem;font-weight:300">Carver
+    Blue</div><div style="padding:20px 22px 22px;display:flex;flex:1;flex-direction:column"><p style="margin:0 0 9px;color:#800000;font-size:.88rem;font-weight:600;letter-spacing:.035em;text-transform:uppercase"><time
+    datetime="2025-06-27">June 27, 2025</time></p><h2 id="news-item-8" style="margin:0 0 11px;color:#333;font-size:1.28rem;line-height:1.3">@@TITLE_HTML@@</h2><p
+    style="margin:0 0 17px;line-height:1.65">In collaboration with artist Amanda Williams, our team adapted a century-old
+    pigment recipe patented by George Washington Carver. Safer acids and modern equipment helped make the Prussian blue pigment
+    reproducibly in hours.</p><p style="margin:auto 0 0"><a href="https://news.uchicago.edu/story/chemistry-students-partner-artist-recreate-pigment-patented-george-washington-carver"
+    style="color:#800000;font-weight:600;text-decoration:underline">Read the UChicago story</a></p></div></article>'
+  source_url: https://news.uchicago.edu/story/chemistry-students-partner-artist-recreate-pigment-patented-george-washington-carver
+  verified: true
+  publish: true
+- id: news-009
+  title_html: CCI-MOSAIC Workshop at UChicago
+  image_url: https://alivisatoslab.uchicago.edu/files/2025/04/1744239792861.png
+  image_alt: Event graphic for the CCI-MOSAIC Strategic Planning Workshop at UChicago, June 2–4, 2025
+  template_html: '<article aria-labelledby="news-item-9" style="border:1px solid #e7e2e2;border-top:4px solid #800000;background:#fff;display:flex;flex-direction:column"
+    class="img"><img src="@@IMAGE_URL@@" alt="@@IMAGE_ALT@@" loading="lazy" style="display:block;width:100%;height:220px;object-fit:cover"><div
+    style="padding:20px 22px 22px;display:flex;flex:1;flex-direction:column"><p style="margin:0 0 9px;color:#800000;font-size:.88rem;font-weight:600;letter-spacing:.035em;text-transform:uppercase"><time
+    datetime="2025-06-02">June 2–4, 2025</time></p><h2 id="news-item-9" style="margin:0 0 11px;color:#333;font-size:1.28rem;line-height:1.3">@@TITLE_HTML@@</h2><p
+    style="margin:0 0 17px;line-height:1.65">The NSF-sponsored strategic planning workshop at the William Eckhardt Research
+    Center brought researchers together to explore catalysis, soft materials, self-assembly, AI, in situ techniques, and 2D
+    materials.</p><p style="margin:auto 0 0"><a href="https://mosaic.uchicago.edu/news/" style="color:#800000;font-weight:600;text-decoration:underline">Learn
+    about the CCI-MOSAIC program</a></p></div></article>'
+  source_url: https://mosaic.uchicago.edu/events/
+  verified: true
+  publish: true
+- id: news-010
+  title_html: Celebrating the 2024 Kavli Prize in Nanoscience
+  image_url: https://alivisatoslab.uchicago.edu/files/2024/06/Celebrating-President-PaulAlivisatoss-2024-KavliPrize-in-Nanoscience.jpg
+  image_alt: Alivisatos Group celebration of Paul Alivisatos receiving the 2024 Kavli Prize in Nanoscience
+  template_html: '<article aria-labelledby="news-item-10" style="border:1px solid #e7e2e2;border-top:4px solid #800000;background:#fff;display:flex;flex-direction:column"
+    class="img"><img src="@@IMAGE_URL@@" alt="@@IMAGE_ALT@@" loading="lazy" style="display:block;width:100%;height:220px;object-fit:cover"><div
+    style="padding:20px 22px 22px;display:flex;flex:1;flex-direction:column"><p style="margin:0 0 9px;color:#800000;font-size:.88rem;font-weight:600;letter-spacing:.035em;text-transform:uppercase"><time
+    datetime="2024-06">June 2024</time></p><h2 id="news-item-10" style="margin:0 0 11px;color:#333;font-size:1.28rem;line-height:1.3">@@TITLE_HTML@@</h2><p
+    style="margin:0 0 17px;line-height:1.65">Paul Alivisatos shared the 2024 Kavli Prize in Nanoscience with Robert Langer
+    and Chad Mirkin for pioneering work that advanced nanomaterials for biomedical applications.</p><p style="margin:auto
+    0 0"><a href="https://news.uchicago.edu/story/uchicago-president-paul-alivisatos-shares-2024-kavli-prize-nanoscience"
+    style="color:#800000;font-weight:600;text-decoration:underline">Read the UChicago announcement</a></p></div></article>'
+  source_url: https://news.uchicago.edu/story/uchicago-president-paul-alivisatos-shares-2024-kavli-prize-nanoscience
+  verified: true
+  publish: true

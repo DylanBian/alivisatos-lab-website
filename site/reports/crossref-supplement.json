@@ -1,0 +1,4055 @@
+[
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          6
+        ]
+      ],
+      "date-time": "2026-10-06T23:41:22Z",
+      "timestamp": 1791330082667,
+      "version": "4.3.1"
+    },
+    "reference-count": 68,
+    "publisher": "American Chemical Society (ACS)",
+    "issue": "5",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              2,
+              17
+            ]
+          ],
+          "date-time": "2022-02-17T00:00:00Z",
+          "timestamp": 1645056000000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-029"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              2,
+              17
+            ]
+          ],
+          "date-time": "2022-02-17T00:00:00Z",
+          "timestamp": 1645056000000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-037"
+      },
+      {
+        "start": {
+          "date-parts": [
+            [
+              2022,
+              2,
+              17
+            ]
+          ],
+          "date-time": "2022-02-17T00:00:00Z",
+          "timestamp": 1645056000000
+        },
+        "content-version": "stm-asf",
+        "delay-in-days": 0,
+        "URL": "https://doi.org/10.15223/policy-045"
+      }
+    ],
+    "funder": [
+      {
+        "DOI": "10.13039/100000165",
+        "name": "Division of Chemistry",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "CHE-1900541"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "CHE-1900541"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100000165",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      },
+      {
+        "DOI": "10.13039/100006132",
+        "name": "Office of Science",
+        "doi-asserted-by": "publisher",
+        "award": [
+          "DE-SC0016872"
+        ],
+        "award-info": [
+          {
+            "award-number": [
+              "DE-SC0016872"
+            ]
+          }
+        ],
+        "id": [
+          {
+            "id": "10.13039/100006132",
+            "id-type": "DOI",
+            "asserted-by": "publisher"
+          }
+        ]
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Chem. Mater."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2022,
+          3,
+          8
+        ]
+      ]
+    },
+    "DOI": "10.1021/acs.chemmater.2c00265",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2022,
+          2,
+          17
+        ]
+      ],
+      "date-time": "2022-02-17T21:25:51Z",
+      "timestamp": 1645133151000
+    },
+    "page": "2484-2494",
+    "source": "Crossref",
+    "is-referenced-by-count": 19,
+    "title": [
+      "Shape Control of Colloidal Semiconductor Nanocrystals through Thermodynamically Driven Aggregative Growth"
+    ],
+    "prefix": "10.1021",
+    "volume": "34",
+    "author": [
+      {
+        "given": "James",
+        "family": "Cassidy",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Dulanjan",
+        "family": "Harankahage",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Jack",
+        "family": "Ojile",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Chemistry and Biochemistry, St. Mary’s University, San Antonio, Texas 78228, United states"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Dmitry",
+        "family": "Porotnikov",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Lexie",
+        "family": "Walker",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Michael",
+        "family": "Montemurri",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Bianca S. L.",
+        "family": "Narvaez",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Dmitriy",
+        "family": "Khon",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Chemistry and Biochemistry, St. Mary’s University, San Antonio, Texas 78228, United states"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0003-4040-386X",
+        "authenticated-orcid": true,
+        "given": "Malcolm D. E.",
+        "family": "Forbes",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "ORCID": "https://orcid.org/0000-0002-8638-2972",
+        "authenticated-orcid": true,
+        "given": "Mikhail",
+        "family": "Zamkov",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "316",
+    "published-online": {
+      "date-parts": [
+        [
+          2022,
+          2,
+          17
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "ref1/cit1",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/nn506223h"
+      },
+      {
+        "key": "ref2/cit2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nature01217"
+      },
+      {
+        "key": "ref3/cit3",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nphoton.2012.328"
+      },
+      {
+        "key": "ref4/cit4",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/adma.201607022"
+      },
+      {
+        "key": "ref5/cit5",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41578-020-00274-9"
+      },
+      {
+        "key": "ref6/cit6",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41467-017-00198-z"
+      },
+      {
+        "key": "ref7/cit7",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/ja037088b"
+      },
+      {
+        "key": "ref8/cit8",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/acsenergylett.6b00204"
+      },
+      {
+        "key": "ref9/cit9",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/acs.jpcc.0c06868"
+      },
+      {
+        "key": "ref10/cit10",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/s41467-017-01362-1"
+      },
+      {
+        "key": "ref11/cit11",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.aad6378"
+      },
+      {
+        "key": "ref12/cit12",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/acsnano.1c01399"
+      },
+      {
+        "key": "ref13/cit13",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/acsnano.9b03864"
+      },
+      {
+        "key": "ref14/cit14",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/nl0155126"
+      },
+      {
+        "key": "ref15/cit15",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/nl0155126"
+      },
+      {
+        "key": "ref16/cit16",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/ja036683a"
+      },
+      {
+        "key": "ref17/cit17",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/jacs.8b01296"
+      },
+      {
+        "key": "ref18/cit18",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/jacs.6b00674"
+      },
+      {
+        "key": "ref19/cit19",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/acs.chemmater.6b00772"
+      },
+      {
+        "key": "ref20/cit20",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/anie.200603148"
+      },
+      {
+        "key": "ref21/cit21",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/nn9001616"
+      },
+      {
+        "key": "ref22/cit22",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/jz100224q"
+      },
+      {
+        "key": "ref23/cit23",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/nn102878u"
+      },
+      {
+        "key": "ref24/cit24",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/35003535"
+      },
+      {
+        "key": "ref25/cit25",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/nn3000466"
+      },
+      {
+        "key": "ref26/cit26",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/jacs.9b07836"
+      },
+      {
+        "key": "ref27/cit27",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/jacs.0c06914"
+      },
+      {
+        "key": "ref28/cit28",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/adfm.202000594"
+      },
+      {
+        "key": "ref29/cit29",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0001-8686(87)80009-X"
+      },
+      {
+        "key": "ref30/cit30",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/acsnano.7b05534"
+      },
+      {
+        "key": "ref31/cit31",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0022-3697(61)90054-3"
+      },
+      {
+        "key": "ref32/cit32",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.281.5379.969"
+      },
+      {
+        "key": "ref33/cit33",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/cm402139r"
+      },
+      {
+        "key": "ref34/cit34",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/jp0677445"
+      },
+      {
+        "key": "ref35/cit35",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/smll.201100457"
+      },
+      {
+        "key": "ref36/cit36",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/acs.chemmater.7b05165"
+      },
+      {
+        "key": "ref37/cit37",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/jacs.8b07086"
+      },
+      {
+        "key": "ref38/cit38",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1039/C8CE02041H"
+      },
+      {
+        "key": "ref39/cit39",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/acsami.9b19584"
+      },
+      {
+        "key": "ref40/cit40",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.5126423"
+      },
+      {
+        "key": "ref41/cit41",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/acs.jpcc.8b09215"
+      },
+      {
+        "key": "ref42/cit42",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/acs.langmuir.7b00193"
+      },
+      {
+        "key": "ref43/cit43",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/acs.jpcc.0c07933"
+      },
+      {
+        "key": "ref44/cit44",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/anie.202014275"
+      },
+      {
+        "key": "ref45/cit45",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.1172104"
+      },
+      {
+        "key": "ref46/cit46",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.1217654"
+      },
+      {
+        "key": "ref47/cit47",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/cm402139r"
+      },
+      {
+        "key": "ref48/cit48",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/ja906506j"
+      },
+      {
+        "key": "ref49/cit49",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/acs.chemmater.0c02874"
+      },
+      {
+        "key": "ref50/cit50",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/cr030063a"
+      },
+      {
+        "key": "ref51/cit51",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRev.82.87"
+      },
+      {
+        "key": "ref52/cit52",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/jp064051f"
+      },
+      {
+        "key": "ref53/cit53",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/acs.chemmater.1c01014"
+      },
+      {
+        "key": "ref54/cit54",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevE.76.051302"
+      },
+      {
+        "key": "ref55/cit55",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.256.5062.1425"
+      },
+      {
+        "key": "ref56/cit56",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/cm034081k"
+      },
+      {
+        "key": "ref57/cit57",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1515/zpch-1900-3431"
+      },
+      {
+        "key": "ref58/cit58",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/jacs.6b13234"
+      },
+      {
+        "key": "ref59/cit59",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/adfm.200800151"
+      },
+      {
+        "key": "ref60/cit60",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/acs.nanolett.1c02540"
+      },
+      {
+        "key": "ref61/cit61",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.pmatsci.2007.01.001"
+      },
+      {
+        "key": "ref62/cit62",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0039-6028(94)90635-1"
+      },
+      {
+        "key": "ref63/cit63",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.51.1119"
+      },
+      {
+        "key": "ref64/cit64",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevLett.54.1416"
+      },
+      {
+        "key": "ref65/cit65",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/1521-3757(20020703)114:13<2474::AID-ANGE2474>3.0.CO;2-#"
+      },
+      {
+        "key": "ref66/cit66",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1103/PhysRevA.13.2287"
+      },
+      {
+        "key": "ref67/cit67",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/1521-3757(20020703)114:13<2474::AID-ANGE2474>3.0.CO;2-#"
+      },
+      {
+        "key": "ref68/cit68",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1007/s12274-013-0341-7"
+      }
+    ],
+    "container-title": [
+      "Chemistry of Materials"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://pubs.acs.org/doi/pdf/10.1021/acs.chemmater.2c00265",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          4,
+          27
+        ]
+      ],
+      "date-time": "2023-04-27T18:40:24Z",
+      "timestamp": 1682620824000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://pubs.acs.org/doi/10.1021/acs.chemmater.2c00265"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2022,
+          2,
+          17
+        ]
+      ]
+    },
+    "references-count": 68,
+    "journal-issue": {
+      "issue": "5",
+      "published-print": {
+        "date-parts": [
+          [
+            2022,
+            3,
+            8
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1021/acs.chemmater.2c00265"
+    ],
+    "URL": "https://doi.org/10.1021/acs.chemmater.2c00265",
+    "relation": {},
+    "ISSN": [
+      "0897-4756",
+      "1520-5002"
+    ],
+    "issn-type": [
+      {
+        "value": "0897-4756",
+        "type": "print"
+      },
+      {
+        "value": "1520-5002",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2022,
+          2,
+          17
+        ]
+      ]
+    }
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          22
+        ]
+      ],
+      "date-time": "2026-09-22T06:05:26Z",
+      "timestamp": 1790057126107,
+      "version": "4.0.1"
+    },
+    "reference-count": 36,
+    "publisher": "American Chemical Society (ACS)",
+    "issue": "51",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "J. Am. Chem. Soc."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2000,
+          12,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1021/ja003055+",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2002,
+          7,
+          26
+        ]
+      ],
+      "date-time": "2002-07-26T05:57:48Z",
+      "timestamp": 1027663068000
+    },
+    "page": "12700-12706",
+    "source": "Crossref",
+    "is-referenced-by-count": 1954,
+    "title": [
+      "Synthesis of Soluble and Processable Rod-, Arrow-, Teardrop-, and Tetrapod-Shaped CdSe Nanocrystals"
+    ],
+    "prefix": "10.1021",
+    "volume": "122",
+    "author": [
+      {
+        "given": "Liberato",
+        "family": "Manna",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Contribution from the Department of Chemistry, University of California, Berkeley, California 94720, and Materials Sciences Division, Lawrence Berkeley National Laboratory, University of California, Berkeley, California 94720"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Erik C.",
+        "family": "Scher",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Contribution from the Department of Chemistry, University of California, Berkeley, California 94720, and Materials Sciences Division, Lawrence Berkeley National Laboratory, University of California, Berkeley, California 94720"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "A. Paul",
+        "family": "Alivisatos",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Contribution from the Department of Chemistry, University of California, Berkeley, California 94720, and Materials Sciences Division, Lawrence Berkeley National Laboratory, University of California, Berkeley, California 94720"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "316",
+    "published-online": {
+      "date-parts": [
+        [
+          2000,
+          12,
+          1
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "ja0030551b00001/ja0030551b00001_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "616",
+        "DOI": "10.1016/S0038-1098(98)00209-9",
+        "volume": "107",
+        "author": "Lieber C. M.",
+        "year": "1998",
+        "journal-title": "Solid State Commun."
+      },
+      {
+        "key": "ja0030551b00002/ja0030551b00002_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "606",
+        "DOI": "10.1016/S0038-1098(98)00210-5",
+        "volume": "107",
+        "author": "Smalley R. E.",
+        "year": "1998",
+        "journal-title": "Solid State Commun."
+      },
+      {
+        "key": "ja0030551b00003/ja0030551b00003_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "937",
+        "DOI": "10.1126/science.271.5251.933",
+        "volume": "271",
+        "author": "Alivisatos A. P.",
+        "year": "1996",
+        "journal-title": "Science"
+      },
+      {
+        "key": "ja0030551b00004/ja0030551b00004_1",
+        "first-page": "7",
+        "volume": "202",
+        "author": "Cho A. Y.",
+        "year": "1999",
+        "journal-title": "J. Cryst. Growth"
+      },
+      {
+        "key": "ja0030551b00005/ja0030551b00005_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "1968",
+        "DOI": "10.1126/science.267.5206.1966",
+        "volume": "267",
+        "author": "Leon R.",
+        "year": "1995",
+        "journal-title": "Science"
+      },
+      {
+        "key": "ja0030551b00006/ja0030551b00006_1",
+        "first-page": "1961",
+        "volume": "84",
+        "author": "Liu C. P.",
+        "year": "2000",
+        "journal-title": "Phys. Rev. Lett."
+      },
+      {
+        "key": "ja0030551b00007/ja0030551b00007_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "191",
+        "DOI": "10.1002/(SICI)1521-4095(199903)11:3<191::AID-ADMA191>3.0.CO;2-3",
+        "volume": "11",
+        "author": "Paul D.",
+        "year": "1999",
+        "journal-title": "J. Adv. Mater."
+      },
+      {
+        "key": "ja0030551b00008/ja0030551b00008_1",
+        "first-page": "36",
+        "volume": "20",
+        "author": "Campbell S. A.",
+        "year": "1997",
+        "journal-title": "Mater. Sci. Eng. R−Rep."
+      },
+      {
+        "key": "ja0030551b00009/ja0030551b00009_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "518",
+        "DOI": "10.1126/science.269.5223.515",
+        "volume": "269",
+        "author": "Berman A.",
+        "year": "1995",
+        "journal-title": "Science"
+      },
+      {
+        "key": "ja0030551b00010/ja0030551b00010_1",
+        "first-page": "445",
+        "volume": "32",
+        "author": "Hu J. T.",
+        "year": "1999",
+        "journal-title": "Acc. Chem. Res."
+      },
+      {
+        "key": "ja0030551b00011/ja0030551b00011_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "1794",
+        "DOI": "10.1126/science.270.5243.1791",
+        "volume": "270",
+        "author": "Trentler T. J.",
+        "year": "1995",
+        "journal-title": "Science"
+      },
+      {
+        "key": "ja0030551b00012/ja0030551b00012_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "1473",
+        "DOI": "10.1126/science.287.5457.1471",
+        "volume": "287",
+        "author": "Holmes J. D.",
+        "year": "2000",
+        "journal-title": "Science"
+      },
+      {
+        "key": "ja0030551b00013/ja0030551b00013_1",
+        "first-page": "395",
+        "volume": "402",
+        "author": "Li M.",
+        "year": "1999",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "ja0030551b00014/ja0030551b00014_1",
+        "first-page": "3463",
+        "volume": "101",
+        "author": "Qi L. M.",
+        "year": "1997",
+        "journal-title": "J. Phys. Chem. B"
+      },
+      {
+        "key": "ja0030551b00015/ja0030551b00015_1",
+        "first-page": "2002",
+        "volume": "15",
+        "author": "Rees G. D.",
+        "year": "1999",
+        "journal-title": "Langmuir"
+      },
+      {
+        "key": "ja0030551b00016/ja0030551b00016_1",
+        "first-page": "646",
+        "volume": "13",
+        "author": "Tanori J.",
+        "year": "1997",
+        "journal-title": "Langmuir"
+      },
+      {
+        "key": "ja0030551b00017/ja0030551b00017_1",
+        "first-page": "1518",
+        "volume": "12",
+        "author": "Chen C. C.",
+        "year": "2000",
+        "journal-title": "Chem. Mater."
+      },
+      {
+        "key": "ja0030551b00018/ja0030551b00018_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "709",
+        "DOI": "10.1021/la980929l",
+        "volume": "15",
+        "author": "Chang S. S.",
+        "year": "1999",
+        "journal-title": "Langmuir"
+      },
+      {
+        "key": "ja0030551b00019/ja0030551b00019_1",
+        "first-page": "6664",
+        "volume": "101",
+        "author": "Yu Y. Y.",
+        "year": "1997",
+        "journal-title": "J. Phys. Chem. B"
+      },
+      {
+        "key": "ja0030551b00020/ja0030551b00020_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "1926",
+        "DOI": "10.1126/science.272.5270.1924",
+        "volume": "272",
+        "author": "Ahmadi T. S.",
+        "year": "1996",
+        "journal-title": "Science"
+      },
+      {
+        "key": "ja0030551b00021/ja0030551b00021_1",
+        "first-page": "1082",
+        "volume": "83",
+        "author": "Penn R. L.",
+        "year": "1998",
+        "journal-title": "Am. Mineral."
+      },
+      {
+        "key": "ja0030551b00022/ja0030551b00022_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "737",
+        "DOI": "10.1126/science.289.5480.736",
+        "volume": "289",
+        "author": "Alivisatos A. P.",
+        "year": "2000",
+        "journal-title": "Science"
+      },
+      {
+        "key": "ja0030551b00023/ja0030551b00023_1",
+        "first-page": "245",
+        "volume": "235",
+        "author": "Chemseddine A.",
+        "year": "1999",
+        "journal-title": "Eur. J. Inorg. Chem."
+      },
+      {
+        "key": "ja0030551b00024/ja0030551b00024_1",
+        "first-page": "8582",
+        "volume": "122",
+        "author": "Park S. J.",
+        "year": "2000",
+        "journal-title": "J. Am. Chem. Soc."
+      },
+      {
+        "key": "ja0030551b00025/ja0030551b00025_1",
+        "volume-title": "personal communication",
+        "author": "Weller H.",
+        "year": "2000"
+      },
+      {
+        "key": "ja0030551b00026/ja0030551b00026_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "61",
+        "DOI": "10.1038/35003541",
+        "volume": "404",
+        "author": "Peng X. G.",
+        "year": "2000",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "ja0030551b00027/ja0030551b00027_1",
+        "first-page": "8715",
+        "volume": "115",
+        "author": "Murray C. B.",
+        "year": "1993",
+        "journal-title": "J. Am. Chem. Soc."
+      },
+      {
+        "key": "ja0030551b00028/ja0030551b00028_1",
+        "first-page": "5344",
+        "volume": "120",
+        "author": "Peng X. G.",
+        "year": "1998",
+        "journal-title": "J. Am. Chem. Soc."
+      },
+      {
+        "key": "ja0030551b00029/ja0030551b00029_1",
+        "first-page": "1565",
+        "volume": "40",
+        "author": "Andriano",
+        "year": "1970",
+        "journal-title": "Zh. Obshch. Khim."
+      },
+      {
+        "key": "ja0030551b00031/ja0030551b00031_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "13239",
+        "DOI": "10.1021/jp9535506",
+        "volume": "100",
+        "author": "Alivisatos A. P.",
+        "year": "1996",
+        "journal-title": "J. Phys. Chem."
+      },
+      {
+        "key": "ja0030551b00032/ja0030551b00032_1",
+        "volume-title": "Imperfect Crystals, and Amorphous Bodies",
+        "author": "Guinier A.",
+        "year": "1994"
+      },
+      {
+        "key": "ja0030551b00033/ja0030551b00033_1",
+        "volume-title": "The Growth of Crystals from Liquids",
+        "author": "Brice J. C.",
+        "year": "1973"
+      },
+      {
+        "key": "ja0030551b00034/ja0030551b00034_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Mews, A.; Kadavanich, A. V.; Banin, U.; Alivisatos, A. P.Phys. Rev. B: Condens, Matter Mater. Phys.1996,53, 13242−13245.",
+        "DOI": "10.1103/PhysRevB.53.R13242"
+      },
+      {
+        "key": "ja0030551b00035/ja0030551b00035_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "843",
+        "DOI": "10.1134/1.1261904",
+        "volume": "23",
+        "author": "Ataev B. M.",
+        "year": "1997",
+        "journal-title": "Tech. Phys. Lett."
+      },
+      {
+        "key": "ja0030551b00036/ja0030551b00036_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "L589",
+        "DOI": "10.1143/JJAP.38.589",
+        "volume": "38",
+        "author": "Satoh M.",
+        "year": "1999",
+        "journal-title": "Jpn. J. Appl. Phys. Part 2."
+      },
+      {
+        "key": "ja0030551b00037/ja0030551b00037_1",
+        "first-page": "1567",
+        "volume": "34",
+        "author": "Zhou Z. W.",
+        "year": "1999",
+        "journal-title": "Mater. Res. Bull."
+      }
+    ],
+    "container-title": [
+      "Journal of the American Chemical Society"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://pubs.acs.org/doi/pdf/10.1021/ja003055%2B",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2022,
+          2,
+          3
+        ]
+      ],
+      "date-time": "2022-02-03T00:54:24Z",
+      "timestamp": 1643849664000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://pubs.acs.org/doi/10.1021/ja003055%2B"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2000,
+          12,
+          1
+        ]
+      ]
+    },
+    "references-count": 36,
+    "aliases": [
+      "10.1021/ja003055",
+      "10.1021/ja003055"
+    ],
+    "journal-issue": {
+      "issue": "51",
+      "published-print": {
+        "date-parts": [
+          [
+            2000,
+            12,
+            1
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1021/ja003055+"
+    ],
+    "URL": "https://doi.org/10.1021/ja003055+",
+    "relation": {},
+    "ISSN": [
+      "0002-7863",
+      "1520-5126"
+    ],
+    "issn-type": [
+      {
+        "value": "0002-7863",
+        "type": "print"
+      },
+      {
+        "value": "1520-5126",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2000,
+          12,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2023,
+          3,
+          8
+        ]
+      ],
+      "date-time": "2023-03-08T19:10:13Z",
+      "timestamp": 1678302613382
+    },
+    "reference-count": 0,
+    "publisher": "American Chemical Society (ACS)",
+    "issue": "1",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Nano Lett."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2002,
+          1,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1021/nl010098v",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2002,
+          7,
+          26
+        ]
+      ],
+      "date-time": "2002-07-26T04:45:54Z",
+      "timestamp": 1027658754000
+    },
+    "page": "1-1",
+    "source": "Crossref",
+    "is-referenced-by-count": 1,
+    "title": [
+      "<i>Nano Letters</i> after One Year"
+    ],
+    "prefix": "10.1021",
+    "volume": "2",
+    "member": "316",
+    "published-online": {
+      "date-parts": [
+        [
+          2002,
+          1,
+          9
+        ]
+      ]
+    },
+    "container-title": [
+      "Nano Letters"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://pubs.acs.org/doi/pdf/10.1021/nl010098v",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          3,
+          8
+        ]
+      ],
+      "date-time": "2023-03-08T18:30:58Z",
+      "timestamp": 1678300258000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://pubs.acs.org/doi/10.1021/nl010098v"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2002,
+          1,
+          1
+        ]
+      ]
+    },
+    "references-count": 0,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            2002,
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1021/nl010098v"
+    ],
+    "URL": "https://doi.org/10.1021/nl010098v",
+    "relation": {},
+    "ISSN": [
+      "1530-6984",
+      "1530-6992"
+    ],
+    "issn-type": [
+      {
+        "value": "1530-6984",
+        "type": "print"
+      },
+      {
+        "value": "1530-6992",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2002,
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2023,
+          4,
+          5
+        ]
+      ],
+      "date-time": "2023-04-05T11:10:26Z",
+      "timestamp": 1680693026090
+    },
+    "reference-count": 0,
+    "publisher": "American Chemical Society (ACS)",
+    "issue": "1",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Nano Lett."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2003,
+          1,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1021/nl020238g",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2003,
+          1,
+          8
+        ]
+      ],
+      "date-time": "2003-01-08T06:22:20Z",
+      "timestamp": 1042006940000
+    },
+    "page": "1-1",
+    "source": "Crossref",
+    "is-referenced-by-count": 1,
+    "title": [
+      "<i>Nano Letters</i> After Two Years"
+    ],
+    "prefix": "10.1021",
+    "volume": "3",
+    "member": "316",
+    "published-online": {
+      "date-parts": [
+        [
+          2003,
+          1,
+          8
+        ]
+      ]
+    },
+    "container-title": [
+      "Nano Letters"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://pubs.acs.org/doi/pdf/10.1021/nl020238g",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          4,
+          5
+        ]
+      ],
+      "date-time": "2023-04-05T10:30:29Z",
+      "timestamp": 1680690629000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://pubs.acs.org/doi/10.1021/nl020238g"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2003,
+          1,
+          1
+        ]
+      ]
+    },
+    "references-count": 0,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            2003,
+            1,
+            1
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1021/nl020238g"
+    ],
+    "URL": "https://doi.org/10.1021/nl020238g",
+    "relation": {},
+    "ISSN": [
+      "1530-6984",
+      "1530-6992"
+    ],
+    "issn-type": [
+      {
+        "value": "1530-6984",
+        "type": "print"
+      },
+      {
+        "value": "1530-6992",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2003,
+          1,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2023,
+          9,
+          13
+        ]
+      ],
+      "date-time": "2023-09-13T16:06:23Z",
+      "timestamp": 1694621183128
+    },
+    "reference-count": 0,
+    "publisher": "American Chemical Society (ACS)",
+    "issue": "2",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Nano Lett."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2003,
+          2,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1021/nl0300010",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2003,
+          2,
+          12
+        ]
+      ],
+      "date-time": "2003-02-12T12:48:42Z",
+      "timestamp": 1045054122000
+    },
+    "page": "111-111",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "Correcting the Record"
+    ],
+    "prefix": "10.1021",
+    "volume": "3",
+    "member": "316",
+    "published-online": {
+      "date-parts": [
+        [
+          2003,
+          2,
+          12
+        ]
+      ]
+    },
+    "container-title": [
+      "Nano Letters"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://pubs.acs.org/doi/pdf/10.1021/nl0300010",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2021,
+          9,
+          21
+        ]
+      ],
+      "date-time": "2021-09-21T03:36:41Z",
+      "timestamp": 1632195401000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://pubs.acs.org/doi/10.1021/nl0300010"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2003,
+          2,
+          1
+        ]
+      ]
+    },
+    "references-count": 0,
+    "journal-issue": {
+      "issue": "2",
+      "published-print": {
+        "date-parts": [
+          [
+            2003,
+            2,
+            1
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1021/nl0300010"
+    ],
+    "URL": "https://doi.org/10.1021/nl0300010",
+    "relation": {},
+    "ISSN": [
+      "1530-6984",
+      "1530-6992"
+    ],
+    "issn-type": [
+      {
+        "value": "1530-6984",
+        "type": "print"
+      },
+      {
+        "value": "1530-6992",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2003,
+          2,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          3,
+          16
+        ]
+      ],
+      "date-time": "2026-03-16T15:54:48Z",
+      "timestamp": 1773676488823,
+      "version": "3.50.1"
+    },
+    "reference-count": 10,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "6",
+    "license": [
+      {
+        "start": {
+          "date-parts": [
+            [
+              2005,
+              6,
+              1
+            ]
+          ],
+          "date-time": "2005-06-01T00:00:00Z",
+          "timestamp": 1117584000000
+        },
+        "content-version": "tdm",
+        "delay-in-days": 0,
+        "URL": "http://www.springer.com/tdm"
+      }
+    ],
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Nat Biotechnol"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2005,
+          6
+        ]
+      ]
+    },
+    "DOI": "10.1038/nbt0605-681",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2005,
+          6,
+          7
+        ]
+      ],
+      "date-time": "2005-06-07T01:30:31Z",
+      "timestamp": 1118107831000
+    },
+    "page": "681-682",
+    "source": "Crossref",
+    "is-referenced-by-count": 28,
+    "title": [
+      "Plasmon coupling measures up"
+    ],
+    "prefix": "10.1038",
+    "volume": "23",
+    "author": [
+      {
+        "given": "C Shad",
+        "family": "Thaxton",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      },
+      {
+        "given": "Chad A",
+        "family": "Mirkin",
+        "sequence": "additional",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "297",
+    "reference": [
+      {
+        "key": "BFnbt0605681_CR1",
+        "doi-asserted-by": "publisher",
+        "first-page": "741",
+        "DOI": "10.1038/nbt1100",
+        "volume": "23",
+        "author": "C Sönnichsen",
+        "year": "2005",
+        "unstructured": "Sönnichsen, C., Reinhard, B.M., Liphardt, J. & Alivisatos, A.P. Nat. Biotechnol. 23, 741–745 (2005).",
+        "journal-title": "Nat. Biotechnol."
+      },
+      {
+        "key": "BFnbt0605681_CR2",
+        "doi-asserted-by": "publisher",
+        "first-page": "1676",
+        "DOI": "10.1126/science.283.5408.1676",
+        "volume": "283",
+        "author": "S Weiss",
+        "year": "1999",
+        "unstructured": "Weiss, S. Science 283, 1676 (1999).",
+        "journal-title": "Science"
+      },
+      {
+        "key": "BFnbt0605681_CR3",
+        "doi-asserted-by": "publisher",
+        "first-page": "377",
+        "DOI": "10.1002/andp.19083300302",
+        "volume": "25",
+        "author": "G Mie",
+        "year": "1908",
+        "unstructured": "Mie, G. Annalen der Physik 25, 377 (1908).",
+        "journal-title": "Annalen der Physik"
+      },
+      {
+        "key": "BFnbt0605681_CR4",
+        "doi-asserted-by": "publisher",
+        "first-page": "1901",
+        "DOI": "10.1126/science.1066541",
+        "volume": "294",
+        "author": "RC Jin",
+        "year": "2001",
+        "unstructured": "Jin, R.C. et al. Science, 294, 1901 (2001).",
+        "journal-title": "Science"
+      },
+      {
+        "key": "BFnbt0605681_CR5",
+        "doi-asserted-by": "publisher",
+        "first-page": "157",
+        "DOI": "10.1006/abio.1998.2760",
+        "volume": "262",
+        "author": "J Yguerabide",
+        "year": "1998",
+        "unstructured": "Yguerabide, J. & Yguerabide, E.E. Anal. Biochem. 262, 157 (1998).",
+        "journal-title": "Anal. Biochem."
+      },
+      {
+        "key": "BFnbt0605681_CR6",
+        "doi-asserted-by": "publisher",
+        "first-page": "607",
+        "DOI": "10.1038/382607a0",
+        "volume": "382",
+        "author": "CA Mirkin",
+        "year": "1996",
+        "unstructured": "Mirkin, C.A., Letsinger, R.L., Mucic, R.C. & Storhoff, J.J. Nature 382, 607 (1996).",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "BFnbt0605681_CR7",
+        "doi-asserted-by": "publisher",
+        "first-page": "1078",
+        "DOI": "10.1126/science.277.5329.1078",
+        "volume": "277",
+        "author": "R Elghanian",
+        "year": "1997",
+        "unstructured": "Elghanian, R., Storhoff, J.J., Mucic, R.C., Letsinger, R.L. & Mirkin, C.A. Science 277, 1078 (1997).",
+        "journal-title": "Science"
+      },
+      {
+        "key": "BFnbt0605681_CR8",
+        "doi-asserted-by": "publisher",
+        "first-page": "1057",
+        "DOI": "10.1021/nl034372s",
+        "volume": "3",
+        "author": "AD McFarland",
+        "year": "2003",
+        "unstructured": "McFarland, A.D. & Van Duyne, R.P. Nano Letters 3, 1057 (2003).",
+        "journal-title": "Nano Letters"
+      },
+      {
+        "key": "BFnbt0605681_CR9",
+        "doi-asserted-by": "publisher",
+        "first-page": "935",
+        "DOI": "10.1021/nl034223+",
+        "volume": "3",
+        "author": "G Raschke",
+        "year": "2003",
+        "unstructured": "Raschke, G. et al. Nano Letters 3, 935 (2003).",
+        "journal-title": "Nano Letters"
+      },
+      {
+        "key": "BFnbt0605681_CR10",
+        "doi-asserted-by": "publisher",
+        "first-page": "400",
+        "DOI": "10.1016/0968-0004(89)90287-9",
+        "volume": "14",
+        "author": "SJ Anthony-Cahill",
+        "year": "1989",
+        "unstructured": "Anthony-Cahill, S.J., Griffith, M.C., Noren, C.J., Suich, D.J. & Schultz, P.G. Trends Biochem. Sci. 14, 400 (1989).",
+        "journal-title": "Trends Biochem. Sci."
+      }
+    ],
+    "container-title": [
+      "Nature Biotechnology"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "http://www.nature.com/articles/nbt0605-681.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://www.nature.com/articles/nbt0605-681",
+        "content-type": "text/html",
+        "content-version": "vor",
+        "intended-application": "text-mining"
+      },
+      {
+        "URL": "http://www.nature.com/articles/nbt0605-681.pdf",
+        "content-type": "application/pdf",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2023,
+          5,
+          18
+        ]
+      ],
+      "date-time": "2023-05-18T19:56:28Z",
+      "timestamp": 1684439788000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.nature.com/articles/nbt0605-681"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2005,
+          6
+        ]
+      ]
+    },
+    "references-count": 10,
+    "journal-issue": {
+      "issue": "6",
+      "published-print": {
+        "date-parts": [
+          [
+            2005,
+            6
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "BFnbt0605681"
+    ],
+    "URL": "https://doi.org/10.1038/nbt0605-681",
+    "relation": {},
+    "ISSN": [
+      "1087-0156",
+      "1546-1696"
+    ],
+    "issn-type": [
+      {
+        "value": "1087-0156",
+        "type": "print"
+      },
+      {
+        "value": "1546-1696",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2005,
+          6
+        ]
+      ]
+    }
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          10,
+          17
+        ]
+      ],
+      "date-time": "2026-10-17T19:31:51Z",
+      "timestamp": 1792265511128,
+      "version": "4.4.0"
+    },
+    "reference-count": 23,
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "issue": "5506",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Science"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2001,
+          2,
+          9
+        ]
+      ]
+    },
+    "abstract": "<jats:p>A method of constructing &lt;30-nanometer structures in close proximity with precise spacings is presented that uses the step-by-step application of organic molecules and metal ions as size-controlled resists on predetermined patterns, such as those formed by electron-beam lithography. The organic molecules serve as a ruler for scaling down a larger “parent” structure. After metal deposition and lift-off of the organic multilayer resist, an isolated smaller structure remains on the surface. This approach is used to form thin parallel wires (15 to 70 nanometers in width and 1 micrometer long) of controlled thickness and spacing. The structures obtained were imaged with field emission scanning electron microscopy. A variety of nanostructures could be scaled down, including structures with hollow patterns.</jats:p>",
+    "DOI": "10.1126/science.1057553",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2002,
+          7,
+          27
+        ]
+      ],
+      "date-time": "2002-07-27T05:47:44Z",
+      "timestamp": 1027748864000
+    },
+    "page": "1019-1020",
+    "source": "Crossref",
+    "is-referenced-by-count": 1546,
+    "title": [
+      "Molecular Rulers for Scaling Down Nanostructures"
+    ],
+    "prefix": "10.1126",
+    "volume": "291",
+    "author": [
+      {
+        "given": "A.",
+        "family": "Hatzor",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Chemistry, Penn State University, University Park, PA, 16802–6300, USA."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "P. S.",
+        "family": "Weiss",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Department of Chemistry, Penn State University, University Park, PA, 16802–6300, USA."
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "221",
+    "reference": [
+      {
+        "key": "e_1_3_1_2_2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "P. Rai-Choudhury Ed. SPIE Handbook of Microlithography Micromachining and Microfabrication (SPIE Bellingham WA 1997) vol. 1 pp. 139–250.",
+        "DOI": "10.1117/3.2265070"
+      },
+      {
+        "key": "e_1_3_1_3_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "1991",
+        "DOI": "10.1063/1.1312256",
+        "volume": "77",
+        "author": "Natelson D.",
+        "year": "2000",
+        "unstructured": "Natelson D., Willet R. L., West K. W., Pfeiffer L. N., Appl. Phys. Lett. 77, 1991 (2000).",
+        "journal-title": "Appl. Phys. Lett."
+      },
+      {
+        "key": "e_1_3_1_4_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "2897",
+        "DOI": "10.1116/1.589752",
+        "volume": "15",
+        "author": "Chou S. Y.",
+        "year": "1997",
+        "unstructured": "Chou S. Y., Krauss P. R., Zhang W., Guo L., Zhuang L., J. Vac. Sci. Technol. B 15, 2897 (1997).",
+        "journal-title": "J. Vac. Sci. Technol. B"
+      },
+      {
+        "key": "e_1_3_1_5_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "9226",
+        "DOI": "10.1021/ja971027u",
+        "volume": "119",
+        "author": "Sugimura H.",
+        "year": "1997",
+        "unstructured": "Sugimura H., Nakagiri N., J. Am. Chem. Soc. 119, 9226 (1997).",
+        "journal-title": "J. Am. Chem. Soc."
+      },
+      {
+        "key": "e_1_3_1_6_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "624",
+        "DOI": "10.1063/1.124461",
+        "volume": "75",
+        "author": "Reed M. A.",
+        "year": "1999",
+        "unstructured": "Reed M. A., et al., Appl. Phys. Lett. 75, 624 (1999).",
+        "journal-title": "Appl. Phys. Lett."
+      },
+      {
+        "key": "e_1_3_1_7_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.286.5439.523"
+      },
+      {
+        "key": "e_1_3_1_8_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/29954"
+      },
+      {
+        "key": "e_1_3_1_9_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.277.5334.1971"
+      },
+      {
+        "key": "e_1_3_1_10_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "54",
+        "DOI": "10.1038/382054a0",
+        "volume": "382",
+        "author": "Ebbesen T. W.",
+        "year": "1996",
+        "unstructured": "Ebbesen T. W., et al., Nature 382, 54 (1996).",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "e_1_3_1_11_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "1021",
+        "DOI": "10.1002/(SICI)1521-4095(199908)11:12<1021::AID-ADMA1021>3.0.CO;2-S",
+        "volume": "11",
+        "author": "Martin B. R.",
+        "year": "1999",
+        "unstructured": "Martin B. R., et al., Adv. Mater. 11, 1021 (1999).",
+        "journal-title": "Adv. Mater."
+      },
+      {
+        "key": "e_1_3_1_12_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.273.5277.933"
+      },
+      {
+        "key": "e_1_3_1_13_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/35826"
+      },
+      {
+        "key": "e_1_3_1_14_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "2962",
+        "DOI": "10.1116/1.585952",
+        "volume": "10",
+        "author": "Wang Y.",
+        "year": "1992",
+        "unstructured": "Wang Y., Chou S. Y., J. Vac. Sci. Technol. B 10, 2962 (1992).",
+        "journal-title": "J. Vac. Sci. Technol. B"
+      },
+      {
+        "key": "e_1_3_1_15_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "1515",
+        "DOI": "10.1002/(SICI)1521-4095(199812)10:18<1515::AID-ADMA1515>3.0.CO;2-E",
+        "volume": "10",
+        "author": "Clark S. L.",
+        "year": "1998",
+        "unstructured": "Clark S. L., Hammond P. T., Adv. Mater. 10, 1515 (1998).",
+        "journal-title": "Adv. Mater."
+      },
+      {
+        "key": "e_1_3_1_16_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "5866",
+        "DOI": "10.1021/ja00015a053",
+        "volume": "113",
+        "author": "Evans S. D.",
+        "year": "1991",
+        "unstructured": "Evans S. D., Ulman A., Goppert-Berarducci K. E., Gerenser J. L., J. Am. Chem. Soc. 113, 5866 (1991).",
+        "journal-title": "J. Am. Chem. Soc."
+      },
+      {
+        "key": "e_1_3_1_17_2",
+        "unstructured": "The XPS data are available as Web tables 1 and 2 and Web fig. 1 available at Science Online www.sciencemag.org/cgi/content/full/291/5506/1019/DC1."
+      },
+      {
+        "key": "e_1_3_1_18_2",
+        "unstructured": "T. van der Boom-Moav personal communication."
+      },
+      {
+        "key": "e_1_3_1_19_2",
+        "doi-asserted-by": "crossref",
+        "unstructured": "J. I. Goldstein et al. Scanning Electron Microscopy and X-Ray Microanalysis (Plenum New York 1981) pp. 461–494.",
+        "DOI": "10.1007/978-1-4613-3273-2_10"
+      },
+      {
+        "key": "e_1_3_1_20_2",
+        "unstructured": "As shown in the bottom row of Table 1 the gap in this 20-layer sample is smaller than expected (∼32 nm instead of an expected ∼40 nm). This difference might be due to changes in packing of the layers after several adsorptions or to a tilt of the structure."
+      },
+      {
+        "key": "e_1_3_1_21_2",
+        "doi-asserted-by": "crossref",
+        "first-page": "964",
+        "DOI": "10.1116/1.585504",
+        "volume": "9",
+        "author": "Trevor D. J.",
+        "year": "1991",
+        "unstructured": "Trevor D. J., Chidsey C. E. D., J. Vac. Sci. Technol. B 9, 964 (1991).",
+        "journal-title": "J. Vac. Sci. Technol. B"
+      },
+      {
+        "key": "e_1_3_1_22_2",
+        "unstructured": "A. Hatzor P. S. Weiss in preparation."
+      },
+      {
+        "key": "e_1_3_1_23_2",
+        "unstructured": "In some samples after the lift-off process the gap was wider than expected from the multilayer borderline. This phenomenon might be the result of annealing of the newly formed metal wire into a more stable thinner form caused by the lift-off process. These samples were excluded from the calculation."
+      },
+      {
+        "key": "e_1_3_1_24_2",
+        "unstructured": "We thank E. Basgall T. Kuzma J. Lonjin and A. Mieckowski for technical assistance and R. Hengstebeck for XPS measurements. We also thank T. Mallouk and R. Davis for helpful discussions and D. Allara for the use of his ellipsometer. Supported by the Army Research Office the Defense Advanced Research Projects Agency the National Science Foundation and the Office of Naval Research."
+      }
+    ],
+    "container-title": [
+      "Science"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.science.org/doi/pdf/10.1126/science.1057553",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          1,
+          9
+        ]
+      ],
+      "date-time": "2024-01-09T18:02:31Z",
+      "timestamp": 1704823351000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.science.org/doi/10.1126/science.1057553"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2001,
+          2,
+          9
+        ]
+      ]
+    },
+    "references-count": 23,
+    "journal-issue": {
+      "issue": "5506",
+      "published-print": {
+        "date-parts": [
+          [
+            2001,
+            2,
+            9
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1126/science.1057553"
+    ],
+    "URL": "https://doi.org/10.1126/science.1057553",
+    "relation": {},
+    "ISSN": [
+      "0036-8075",
+      "1095-9203"
+    ],
+    "issn-type": [
+      {
+        "value": "0036-8075",
+        "type": "print"
+      },
+      {
+        "value": "1095-9203",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2001,
+          2,
+          9
+        ]
+      ]
+    }
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          4,
+          12
+        ]
+      ],
+      "date-time": "2026-04-12T02:03:08Z",
+      "timestamp": 1775959388288,
+      "version": "3.50.1"
+    },
+    "reference-count": 9,
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "issue": "5671",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Science"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2004,
+          4,
+          30
+        ]
+      ]
+    },
+    "DOI": "10.1126/science.1097604",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2004,
+          4,
+          29
+        ]
+      ],
+      "date-time": "2004-04-29T20:08:04Z",
+      "timestamp": 1083269284000
+    },
+    "page": "692-693",
+    "source": "Crossref",
+    "is-referenced-by-count": 25,
+    "title": [
+      "Chemistry with Nanoscale Perfection"
+    ],
+    "prefix": "10.1126",
+    "volume": "304",
+    "author": [
+      {
+        "given": "Jillian M.",
+        "family": "Buriak",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "The author is in the Department of Chemistry, University of Alberta, and National Institute for Nanotechnology, Edmonton, Alberta T6G 2G2, Canada."
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "221",
+    "reference": [
+      {
+        "key": "e_1_3_1_2_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1023/A:1021175612112"
+      },
+      {
+        "key": "e_1_3_1_3_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.1092356"
+      },
+      {
+        "key": "e_1_3_1_4_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.1096566"
+      },
+      {
+        "key": "e_1_3_1_5_2",
+        "first-page": "130",
+        "volume": "171",
+        "author": "Smigelskas A. D.",
+        "year": "1947",
+        "unstructured": "Smigelskas A. D., Kirkendall E. O., Trans. AIME171, 130 (1947).",
+        "journal-title": "Trans. AIME"
+      },
+      {
+        "key": "e_1_3_1_6_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/0001-6160(74)90059-5"
+      },
+      {
+        "key": "e_1_3_1_7_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1149/1.2430174"
+      },
+      {
+        "key": "e_1_3_1_8_2",
+        "first-page": "283",
+        "volume-title": "Proceedings of the 7th International Symposium on the Reactivity of Solids",
+        "author": "Colson J. C.",
+        "year": "1972",
+        "unstructured": "Colson J. C., Lambertin M., Barret P., in Proceedings of the 7th International Symposium on the Reactivity of Solids, , Anderson J. S., Stone F. S., Roberts M. W., Eds. (Chapman and Hall, London, 1972), pp. 283-293."
+      },
+      {
+        "key": "e_1_3_1_9_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nature00785"
+      },
+      {
+        "key": "e_1_3_1_10_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.1089171"
+      }
+    ],
+    "container-title": [
+      "Science"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.science.org/doi/pdf/10.1126/science.1097604",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          1,
+          10
+        ]
+      ],
+      "date-time": "2024-01-10T03:36:16Z",
+      "timestamp": 1704857776000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.science.org/doi/10.1126/science.1097604"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2004,
+          4,
+          30
+        ]
+      ]
+    },
+    "references-count": 9,
+    "journal-issue": {
+      "issue": "5671",
+      "published-print": {
+        "date-parts": [
+          [
+            2004,
+            4,
+            30
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1126/science.1097604"
+    ],
+    "URL": "https://doi.org/10.1126/science.1097604",
+    "relation": {},
+    "ISSN": [
+      "0036-8075",
+      "1095-9203"
+    ],
+    "issn-type": [
+      {
+        "value": "0036-8075",
+        "type": "print"
+      },
+      {
+        "value": "1095-9203",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2004,
+          4,
+          30
+        ]
+      ]
+    }
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          2,
+          9
+        ]
+      ],
+      "date-time": "2026-02-09T21:35:47Z",
+      "timestamp": 1770672947652,
+      "version": "3.49.0"
+    },
+    "reference-count": 14,
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "issue": "5932",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Science"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2009,
+          6,
+          5
+        ]
+      ]
+    },
+    "abstract": "<jats:p>In situ transmission electron microscopy has revealed unprecedented detail in the growth of platinum nanocrystals.</jats:p>",
+    "DOI": "10.1126/science.1174666",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2009,
+          6,
+          4
+        ]
+      ],
+      "date-time": "2009-06-04T21:03:14Z",
+      "timestamp": 1244149394000
+    },
+    "page": "1276-1277",
+    "source": "Crossref",
+    "is-referenced-by-count": 44,
+    "title": [
+      "Watching Nanocrystals Grow"
+    ],
+    "prefix": "10.1126",
+    "volume": "324",
+    "author": [
+      {
+        "given": "Christopher B.",
+        "family": "Murray",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Department of Chemistry and Department of Materials Science and Engineering, University of Pennsylvania, Philadelphia, PA 19104, USA."
+          }
+        ],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "221",
+    "reference": [
+      {
+        "key": "e_1_3_1_2_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1063/1.1589587"
+      },
+      {
+        "key": "e_1_3_1_3_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.1172104"
+      },
+      {
+        "key": "e_1_3_1_4_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1557/mrs2008.20"
+      },
+      {
+        "key": "e_1_3_1_6_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nmat944"
+      },
+      {
+        "key": "e_1_3_1_7_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1146/annurev.matsci.30.1.545"
+      },
+      {
+        "key": "e_1_3_1_8_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.jcis.2007.05.092"
+      },
+      {
+        "key": "e_1_3_1_9_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1016/j.cattod.2005.11.082"
+      },
+      {
+        "key": "e_1_3_1_10_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/nl0707149"
+      },
+      {
+        "key": "e_1_3_1_11_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1088/0953-8984/14/49/304"
+      },
+      {
+        "key": "e_1_3_1_12_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1126/science.281.5379.969"
+      },
+      {
+        "key": "e_1_3_1_13_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1021/ja050107s"
+      },
+      {
+        "key": "e_1_3_1_14_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1038/nmat1949"
+      },
+      {
+        "key": "e_1_3_1_15_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1002/adma.200305162"
+      },
+      {
+        "key": "e_1_3_1_16_2",
+        "doi-asserted-by": "publisher",
+        "DOI": "10.1039/b403378g"
+      }
+    ],
+    "container-title": [
+      "Science"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.science.org/doi/pdf/10.1126/science.1174666",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          1,
+          10
+        ]
+      ],
+      "date-time": "2024-01-10T09:33:35Z",
+      "timestamp": 1704879215000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.science.org/doi/10.1126/science.1174666"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2009,
+          6,
+          5
+        ]
+      ]
+    },
+    "references-count": 14,
+    "journal-issue": {
+      "issue": "5932",
+      "published-print": {
+        "date-parts": [
+          [
+            2009,
+            6,
+            5
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1126/science.1174666"
+    ],
+    "URL": "https://doi.org/10.1126/science.1174666",
+    "relation": {},
+    "ISSN": [
+      "0036-8075",
+      "1095-9203"
+    ],
+    "issn-type": [
+      {
+        "value": "0036-8075",
+        "type": "print"
+      },
+      {
+        "value": "1095-9203",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2009,
+          6,
+          5
+        ]
+      ]
+    }
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2024,
+          1,
+          13
+        ]
+      ],
+      "date-time": "2024-01-13T05:01:40Z",
+      "timestamp": 1705122100113
+    },
+    "reference-count": 0,
+    "publisher": "American Association for the Advancement of Science (AAAS)",
+    "issue": "5385",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Science"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          1998,
+          9,
+          25
+        ]
+      ]
+    },
+    "DOI": "10.1126/science.281.5385.1930b",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2002,
+          7,
+          27
+        ]
+      ],
+      "date-time": "2002-07-27T09:43:20Z",
+      "timestamp": 1027763000000
+    },
+    "page": "1930-1931",
+    "source": "Crossref",
+    "is-referenced-by-count": 2,
+    "title": [
+      "Semiconductor Beacons Light Up Cell Structures"
+    ],
+    "prefix": "10.1126",
+    "volume": "281",
+    "author": [
+      {
+        "given": "Robert F.",
+        "family": "Service",
+        "sequence": "first",
+        "affiliation": [],
+        "role": [
+          {
+            "role": "author",
+            "vocabulary": "crossref"
+          }
+        ]
+      }
+    ],
+    "member": "221",
+    "container-title": [
+      "Science"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://www.science.org/doi/full/10.1126/science.281.5385.1930b",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2024,
+          1,
+          13
+        ]
+      ],
+      "date-time": "2024-01-13T02:50:46Z",
+      "timestamp": 1705114246000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.science.org/doi/10.1126/science.281.5385.1930b"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          1998,
+          9,
+          25
+        ]
+      ]
+    },
+    "references-count": 0,
+    "journal-issue": {
+      "issue": "5385",
+      "published-print": {
+        "date-parts": [
+          [
+            1998,
+            9,
+            25
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1126/science.281.5385.1930b"
+    ],
+    "URL": "https://doi.org/10.1126/science.281.5385.1930b",
+    "relation": {},
+    "ISSN": [
+      "0036-8075",
+      "1095-9203"
+    ],
+    "issn-type": [
+      {
+        "value": "0036-8075",
+        "type": "print"
+      },
+      {
+        "value": "1095-9203",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          1998,
+          9,
+          25
+        ]
+      ]
+    }
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          22
+        ]
+      ],
+      "date-time": "2026-09-22T06:05:26Z",
+      "timestamp": 1790057126107,
+      "version": "4.0.1"
+    },
+    "reference-count": 36,
+    "publisher": "American Chemical Society (ACS)",
+    "issue": "51",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "J. Am. Chem. Soc."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2000,
+          12,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1021/ja003055+",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2002,
+          7,
+          26
+        ]
+      ],
+      "date-time": "2002-07-26T05:57:48Z",
+      "timestamp": 1027663068000
+    },
+    "page": "12700-12706",
+    "source": "Crossref",
+    "is-referenced-by-count": 1954,
+    "title": [
+      "Synthesis of Soluble and Processable Rod-, Arrow-, Teardrop-, and Tetrapod-Shaped CdSe Nanocrystals"
+    ],
+    "prefix": "10.1021",
+    "volume": "122",
+    "author": [
+      {
+        "given": "Liberato",
+        "family": "Manna",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Contribution from the Department of Chemistry, University of California, Berkeley, California 94720, and Materials Sciences Division, Lawrence Berkeley National Laboratory, University of California, Berkeley, California 94720"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Erik C.",
+        "family": "Scher",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Contribution from the Department of Chemistry, University of California, Berkeley, California 94720, and Materials Sciences Division, Lawrence Berkeley National Laboratory, University of California, Berkeley, California 94720"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "A. Paul",
+        "family": "Alivisatos",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Contribution from the Department of Chemistry, University of California, Berkeley, California 94720, and Materials Sciences Division, Lawrence Berkeley National Laboratory, University of California, Berkeley, California 94720"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "316",
+    "published-online": {
+      "date-parts": [
+        [
+          2000,
+          12,
+          1
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "ja0030551b00001/ja0030551b00001_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "616",
+        "DOI": "10.1016/S0038-1098(98)00209-9",
+        "volume": "107",
+        "author": "Lieber C. M.",
+        "year": "1998",
+        "journal-title": "Solid State Commun."
+      },
+      {
+        "key": "ja0030551b00002/ja0030551b00002_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "606",
+        "DOI": "10.1016/S0038-1098(98)00210-5",
+        "volume": "107",
+        "author": "Smalley R. E.",
+        "year": "1998",
+        "journal-title": "Solid State Commun."
+      },
+      {
+        "key": "ja0030551b00003/ja0030551b00003_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "937",
+        "DOI": "10.1126/science.271.5251.933",
+        "volume": "271",
+        "author": "Alivisatos A. P.",
+        "year": "1996",
+        "journal-title": "Science"
+      },
+      {
+        "key": "ja0030551b00004/ja0030551b00004_1",
+        "first-page": "7",
+        "volume": "202",
+        "author": "Cho A. Y.",
+        "year": "1999",
+        "journal-title": "J. Cryst. Growth"
+      },
+      {
+        "key": "ja0030551b00005/ja0030551b00005_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "1968",
+        "DOI": "10.1126/science.267.5206.1966",
+        "volume": "267",
+        "author": "Leon R.",
+        "year": "1995",
+        "journal-title": "Science"
+      },
+      {
+        "key": "ja0030551b00006/ja0030551b00006_1",
+        "first-page": "1961",
+        "volume": "84",
+        "author": "Liu C. P.",
+        "year": "2000",
+        "journal-title": "Phys. Rev. Lett."
+      },
+      {
+        "key": "ja0030551b00007/ja0030551b00007_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "191",
+        "DOI": "10.1002/(SICI)1521-4095(199903)11:3<191::AID-ADMA191>3.0.CO;2-3",
+        "volume": "11",
+        "author": "Paul D.",
+        "year": "1999",
+        "journal-title": "J. Adv. Mater."
+      },
+      {
+        "key": "ja0030551b00008/ja0030551b00008_1",
+        "first-page": "36",
+        "volume": "20",
+        "author": "Campbell S. A.",
+        "year": "1997",
+        "journal-title": "Mater. Sci. Eng. R−Rep."
+      },
+      {
+        "key": "ja0030551b00009/ja0030551b00009_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "518",
+        "DOI": "10.1126/science.269.5223.515",
+        "volume": "269",
+        "author": "Berman A.",
+        "year": "1995",
+        "journal-title": "Science"
+      },
+      {
+        "key": "ja0030551b00010/ja0030551b00010_1",
+        "first-page": "445",
+        "volume": "32",
+        "author": "Hu J. T.",
+        "year": "1999",
+        "journal-title": "Acc. Chem. Res."
+      },
+      {
+        "key": "ja0030551b00011/ja0030551b00011_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "1794",
+        "DOI": "10.1126/science.270.5243.1791",
+        "volume": "270",
+        "author": "Trentler T. J.",
+        "year": "1995",
+        "journal-title": "Science"
+      },
+      {
+        "key": "ja0030551b00012/ja0030551b00012_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "1473",
+        "DOI": "10.1126/science.287.5457.1471",
+        "volume": "287",
+        "author": "Holmes J. D.",
+        "year": "2000",
+        "journal-title": "Science"
+      },
+      {
+        "key": "ja0030551b00013/ja0030551b00013_1",
+        "first-page": "395",
+        "volume": "402",
+        "author": "Li M.",
+        "year": "1999",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "ja0030551b00014/ja0030551b00014_1",
+        "first-page": "3463",
+        "volume": "101",
+        "author": "Qi L. M.",
+        "year": "1997",
+        "journal-title": "J. Phys. Chem. B"
+      },
+      {
+        "key": "ja0030551b00015/ja0030551b00015_1",
+        "first-page": "2002",
+        "volume": "15",
+        "author": "Rees G. D.",
+        "year": "1999",
+        "journal-title": "Langmuir"
+      },
+      {
+        "key": "ja0030551b00016/ja0030551b00016_1",
+        "first-page": "646",
+        "volume": "13",
+        "author": "Tanori J.",
+        "year": "1997",
+        "journal-title": "Langmuir"
+      },
+      {
+        "key": "ja0030551b00017/ja0030551b00017_1",
+        "first-page": "1518",
+        "volume": "12",
+        "author": "Chen C. C.",
+        "year": "2000",
+        "journal-title": "Chem. Mater."
+      },
+      {
+        "key": "ja0030551b00018/ja0030551b00018_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "709",
+        "DOI": "10.1021/la980929l",
+        "volume": "15",
+        "author": "Chang S. S.",
+        "year": "1999",
+        "journal-title": "Langmuir"
+      },
+      {
+        "key": "ja0030551b00019/ja0030551b00019_1",
+        "first-page": "6664",
+        "volume": "101",
+        "author": "Yu Y. Y.",
+        "year": "1997",
+        "journal-title": "J. Phys. Chem. B"
+      },
+      {
+        "key": "ja0030551b00020/ja0030551b00020_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "1926",
+        "DOI": "10.1126/science.272.5270.1924",
+        "volume": "272",
+        "author": "Ahmadi T. S.",
+        "year": "1996",
+        "journal-title": "Science"
+      },
+      {
+        "key": "ja0030551b00021/ja0030551b00021_1",
+        "first-page": "1082",
+        "volume": "83",
+        "author": "Penn R. L.",
+        "year": "1998",
+        "journal-title": "Am. Mineral."
+      },
+      {
+        "key": "ja0030551b00022/ja0030551b00022_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "737",
+        "DOI": "10.1126/science.289.5480.736",
+        "volume": "289",
+        "author": "Alivisatos A. P.",
+        "year": "2000",
+        "journal-title": "Science"
+      },
+      {
+        "key": "ja0030551b00023/ja0030551b00023_1",
+        "first-page": "245",
+        "volume": "235",
+        "author": "Chemseddine A.",
+        "year": "1999",
+        "journal-title": "Eur. J. Inorg. Chem."
+      },
+      {
+        "key": "ja0030551b00024/ja0030551b00024_1",
+        "first-page": "8582",
+        "volume": "122",
+        "author": "Park S. J.",
+        "year": "2000",
+        "journal-title": "J. Am. Chem. Soc."
+      },
+      {
+        "key": "ja0030551b00025/ja0030551b00025_1",
+        "volume-title": "personal communication",
+        "author": "Weller H.",
+        "year": "2000"
+      },
+      {
+        "key": "ja0030551b00026/ja0030551b00026_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "61",
+        "DOI": "10.1038/35003541",
+        "volume": "404",
+        "author": "Peng X. G.",
+        "year": "2000",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "ja0030551b00027/ja0030551b00027_1",
+        "first-page": "8715",
+        "volume": "115",
+        "author": "Murray C. B.",
+        "year": "1993",
+        "journal-title": "J. Am. Chem. Soc."
+      },
+      {
+        "key": "ja0030551b00028/ja0030551b00028_1",
+        "first-page": "5344",
+        "volume": "120",
+        "author": "Peng X. G.",
+        "year": "1998",
+        "journal-title": "J. Am. Chem. Soc."
+      },
+      {
+        "key": "ja0030551b00029/ja0030551b00029_1",
+        "first-page": "1565",
+        "volume": "40",
+        "author": "Andriano",
+        "year": "1970",
+        "journal-title": "Zh. Obshch. Khim."
+      },
+      {
+        "key": "ja0030551b00031/ja0030551b00031_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "13239",
+        "DOI": "10.1021/jp9535506",
+        "volume": "100",
+        "author": "Alivisatos A. P.",
+        "year": "1996",
+        "journal-title": "J. Phys. Chem."
+      },
+      {
+        "key": "ja0030551b00032/ja0030551b00032_1",
+        "volume-title": "Imperfect Crystals, and Amorphous Bodies",
+        "author": "Guinier A.",
+        "year": "1994"
+      },
+      {
+        "key": "ja0030551b00033/ja0030551b00033_1",
+        "volume-title": "The Growth of Crystals from Liquids",
+        "author": "Brice J. C.",
+        "year": "1973"
+      },
+      {
+        "key": "ja0030551b00034/ja0030551b00034_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Mews, A.; Kadavanich, A. V.; Banin, U.; Alivisatos, A. P.Phys. Rev. B: Condens, Matter Mater. Phys.1996,53, 13242−13245.",
+        "DOI": "10.1103/PhysRevB.53.R13242"
+      },
+      {
+        "key": "ja0030551b00035/ja0030551b00035_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "843",
+        "DOI": "10.1134/1.1261904",
+        "volume": "23",
+        "author": "Ataev B. M.",
+        "year": "1997",
+        "journal-title": "Tech. Phys. Lett."
+      },
+      {
+        "key": "ja0030551b00036/ja0030551b00036_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "L589",
+        "DOI": "10.1143/JJAP.38.589",
+        "volume": "38",
+        "author": "Satoh M.",
+        "year": "1999",
+        "journal-title": "Jpn. J. Appl. Phys. Part 2."
+      },
+      {
+        "key": "ja0030551b00037/ja0030551b00037_1",
+        "first-page": "1567",
+        "volume": "34",
+        "author": "Zhou Z. W.",
+        "year": "1999",
+        "journal-title": "Mater. Res. Bull."
+      }
+    ],
+    "container-title": [
+      "Journal of the American Chemical Society"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://pubs.acs.org/doi/pdf/10.1021/ja003055%2B",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2022,
+          2,
+          3
+        ]
+      ],
+      "date-time": "2022-02-03T00:54:24Z",
+      "timestamp": 1643849664000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://pubs.acs.org/doi/10.1021/ja003055%2B"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2000,
+          12,
+          1
+        ]
+      ]
+    },
+    "references-count": 36,
+    "aliases": [
+      "10.1021/ja003055",
+      "10.1021/ja003055"
+    ],
+    "journal-issue": {
+      "issue": "51",
+      "published-print": {
+        "date-parts": [
+          [
+            2000,
+            12,
+            1
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1021/ja003055+"
+    ],
+    "URL": "https://doi.org/10.1021/ja003055+",
+    "relation": {},
+    "ISSN": [
+      "0002-7863",
+      "1520-5126"
+    ],
+    "issn-type": [
+      {
+        "value": "0002-7863",
+        "type": "print"
+      },
+      {
+        "value": "1520-5126",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2000,
+          12,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2022,
+          4,
+          4
+        ]
+      ],
+      "date-time": "2022-04-04T14:21:53Z",
+      "timestamp": 1649082113350
+    },
+    "reference-count": 0,
+    "publisher": "Springer Science and Business Media LLC",
+    "issue": "1",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "Sci Am"
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2009,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1038/scientificamerican0109-108",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2009,
+          10,
+          27
+        ]
+      ],
+      "date-time": "2009-10-27T17:27:48Z",
+      "timestamp": 1256664468000
+    },
+    "page": "108-108",
+    "source": "Crossref",
+    "is-referenced-by-count": 0,
+    "title": [
+      "Ask The Experts"
+    ],
+    "prefix": "10.1038",
+    "volume": "300",
+    "member": "297",
+    "container-title": [
+      "Scientific American"
+    ],
+    "original-title": [],
+    "deposited": {
+      "date-parts": [
+        [
+          2021,
+          1,
+          12
+        ]
+      ],
+      "date-time": "2021-01-12T20:45:06Z",
+      "timestamp": 1610484306000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://www.scientificamerican.com/article/ask-the-experts-2009-01"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2009,
+          1
+        ]
+      ]
+    },
+    "references-count": 0,
+    "journal-issue": {
+      "issue": "1",
+      "published-print": {
+        "date-parts": [
+          [
+            2009,
+            1
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "scientificamerican0109-108"
+    ],
+    "URL": "https://doi.org/10.1038/scientificamerican0109-108",
+    "relation": {},
+    "ISSN": [
+      "0036-8733"
+    ],
+    "issn-type": [
+      {
+        "value": "0036-8733",
+        "type": "print"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2009,
+          1
+        ]
+      ]
+    }
+  },
+  {
+    "indexed": {
+      "date-parts": [
+        [
+          2026,
+          9,
+          22
+        ]
+      ],
+      "date-time": "2026-09-22T06:05:26Z",
+      "timestamp": 1790057126107,
+      "version": "4.0.1"
+    },
+    "reference-count": 36,
+    "publisher": "American Chemical Society (ACS)",
+    "issue": "51",
+    "content-domain": {
+      "domain": [],
+      "crossmark-restriction": false
+    },
+    "short-container-title": [
+      "J. Am. Chem. Soc."
+    ],
+    "published-print": {
+      "date-parts": [
+        [
+          2000,
+          12,
+          1
+        ]
+      ]
+    },
+    "DOI": "10.1021/ja003055+",
+    "type": "journal-article",
+    "created": {
+      "date-parts": [
+        [
+          2002,
+          7,
+          26
+        ]
+      ],
+      "date-time": "2002-07-26T05:57:48Z",
+      "timestamp": 1027663068000
+    },
+    "page": "12700-12706",
+    "source": "Crossref",
+    "is-referenced-by-count": 1954,
+    "title": [
+      "Synthesis of Soluble and Processable Rod-, Arrow-, Teardrop-, and Tetrapod-Shaped CdSe Nanocrystals"
+    ],
+    "prefix": "10.1021",
+    "volume": "122",
+    "author": [
+      {
+        "given": "Liberato",
+        "family": "Manna",
+        "sequence": "first",
+        "affiliation": [
+          {
+            "name": "Contribution from the Department of Chemistry, University of California, Berkeley, California 94720, and Materials Sciences Division, Lawrence Berkeley National Laboratory, University of California, Berkeley, California 94720"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "Erik C.",
+        "family": "Scher",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Contribution from the Department of Chemistry, University of California, Berkeley, California 94720, and Materials Sciences Division, Lawrence Berkeley National Laboratory, University of California, Berkeley, California 94720"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      },
+      {
+        "given": "A. Paul",
+        "family": "Alivisatos",
+        "sequence": "additional",
+        "affiliation": [
+          {
+            "name": "Contribution from the Department of Chemistry, University of California, Berkeley, California 94720, and Materials Sciences Division, Lawrence Berkeley National Laboratory, University of California, Berkeley, California 94720"
+          }
+        ],
+        "role": [
+          {
+            "vocabulary": "crossref",
+            "role": "author"
+          }
+        ]
+      }
+    ],
+    "member": "316",
+    "published-online": {
+      "date-parts": [
+        [
+          2000,
+          12,
+          1
+        ]
+      ]
+    },
+    "reference": [
+      {
+        "key": "ja0030551b00001/ja0030551b00001_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "616",
+        "DOI": "10.1016/S0038-1098(98)00209-9",
+        "volume": "107",
+        "author": "Lieber C. M.",
+        "year": "1998",
+        "journal-title": "Solid State Commun."
+      },
+      {
+        "key": "ja0030551b00002/ja0030551b00002_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "606",
+        "DOI": "10.1016/S0038-1098(98)00210-5",
+        "volume": "107",
+        "author": "Smalley R. E.",
+        "year": "1998",
+        "journal-title": "Solid State Commun."
+      },
+      {
+        "key": "ja0030551b00003/ja0030551b00003_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "937",
+        "DOI": "10.1126/science.271.5251.933",
+        "volume": "271",
+        "author": "Alivisatos A. P.",
+        "year": "1996",
+        "journal-title": "Science"
+      },
+      {
+        "key": "ja0030551b00004/ja0030551b00004_1",
+        "first-page": "7",
+        "volume": "202",
+        "author": "Cho A. Y.",
+        "year": "1999",
+        "journal-title": "J. Cryst. Growth"
+      },
+      {
+        "key": "ja0030551b00005/ja0030551b00005_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "1968",
+        "DOI": "10.1126/science.267.5206.1966",
+        "volume": "267",
+        "author": "Leon R.",
+        "year": "1995",
+        "journal-title": "Science"
+      },
+      {
+        "key": "ja0030551b00006/ja0030551b00006_1",
+        "first-page": "1961",
+        "volume": "84",
+        "author": "Liu C. P.",
+        "year": "2000",
+        "journal-title": "Phys. Rev. Lett."
+      },
+      {
+        "key": "ja0030551b00007/ja0030551b00007_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "191",
+        "DOI": "10.1002/(SICI)1521-4095(199903)11:3<191::AID-ADMA191>3.0.CO;2-3",
+        "volume": "11",
+        "author": "Paul D.",
+        "year": "1999",
+        "journal-title": "J. Adv. Mater."
+      },
+      {
+        "key": "ja0030551b00008/ja0030551b00008_1",
+        "first-page": "36",
+        "volume": "20",
+        "author": "Campbell S. A.",
+        "year": "1997",
+        "journal-title": "Mater. Sci. Eng. R−Rep."
+      },
+      {
+        "key": "ja0030551b00009/ja0030551b00009_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "518",
+        "DOI": "10.1126/science.269.5223.515",
+        "volume": "269",
+        "author": "Berman A.",
+        "year": "1995",
+        "journal-title": "Science"
+      },
+      {
+        "key": "ja0030551b00010/ja0030551b00010_1",
+        "first-page": "445",
+        "volume": "32",
+        "author": "Hu J. T.",
+        "year": "1999",
+        "journal-title": "Acc. Chem. Res."
+      },
+      {
+        "key": "ja0030551b00011/ja0030551b00011_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "1794",
+        "DOI": "10.1126/science.270.5243.1791",
+        "volume": "270",
+        "author": "Trentler T. J.",
+        "year": "1995",
+        "journal-title": "Science"
+      },
+      {
+        "key": "ja0030551b00012/ja0030551b00012_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "1473",
+        "DOI": "10.1126/science.287.5457.1471",
+        "volume": "287",
+        "author": "Holmes J. D.",
+        "year": "2000",
+        "journal-title": "Science"
+      },
+      {
+        "key": "ja0030551b00013/ja0030551b00013_1",
+        "first-page": "395",
+        "volume": "402",
+        "author": "Li M.",
+        "year": "1999",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "ja0030551b00014/ja0030551b00014_1",
+        "first-page": "3463",
+        "volume": "101",
+        "author": "Qi L. M.",
+        "year": "1997",
+        "journal-title": "J. Phys. Chem. B"
+      },
+      {
+        "key": "ja0030551b00015/ja0030551b00015_1",
+        "first-page": "2002",
+        "volume": "15",
+        "author": "Rees G. D.",
+        "year": "1999",
+        "journal-title": "Langmuir"
+      },
+      {
+        "key": "ja0030551b00016/ja0030551b00016_1",
+        "first-page": "646",
+        "volume": "13",
+        "author": "Tanori J.",
+        "year": "1997",
+        "journal-title": "Langmuir"
+      },
+      {
+        "key": "ja0030551b00017/ja0030551b00017_1",
+        "first-page": "1518",
+        "volume": "12",
+        "author": "Chen C. C.",
+        "year": "2000",
+        "journal-title": "Chem. Mater."
+      },
+      {
+        "key": "ja0030551b00018/ja0030551b00018_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "709",
+        "DOI": "10.1021/la980929l",
+        "volume": "15",
+        "author": "Chang S. S.",
+        "year": "1999",
+        "journal-title": "Langmuir"
+      },
+      {
+        "key": "ja0030551b00019/ja0030551b00019_1",
+        "first-page": "6664",
+        "volume": "101",
+        "author": "Yu Y. Y.",
+        "year": "1997",
+        "journal-title": "J. Phys. Chem. B"
+      },
+      {
+        "key": "ja0030551b00020/ja0030551b00020_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "1926",
+        "DOI": "10.1126/science.272.5270.1924",
+        "volume": "272",
+        "author": "Ahmadi T. S.",
+        "year": "1996",
+        "journal-title": "Science"
+      },
+      {
+        "key": "ja0030551b00021/ja0030551b00021_1",
+        "first-page": "1082",
+        "volume": "83",
+        "author": "Penn R. L.",
+        "year": "1998",
+        "journal-title": "Am. Mineral."
+      },
+      {
+        "key": "ja0030551b00022/ja0030551b00022_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "737",
+        "DOI": "10.1126/science.289.5480.736",
+        "volume": "289",
+        "author": "Alivisatos A. P.",
+        "year": "2000",
+        "journal-title": "Science"
+      },
+      {
+        "key": "ja0030551b00023/ja0030551b00023_1",
+        "first-page": "245",
+        "volume": "235",
+        "author": "Chemseddine A.",
+        "year": "1999",
+        "journal-title": "Eur. J. Inorg. Chem."
+      },
+      {
+        "key": "ja0030551b00024/ja0030551b00024_1",
+        "first-page": "8582",
+        "volume": "122",
+        "author": "Park S. J.",
+        "year": "2000",
+        "journal-title": "J. Am. Chem. Soc."
+      },
+      {
+        "key": "ja0030551b00025/ja0030551b00025_1",
+        "volume-title": "personal communication",
+        "author": "Weller H.",
+        "year": "2000"
+      },
+      {
+        "key": "ja0030551b00026/ja0030551b00026_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "61",
+        "DOI": "10.1038/35003541",
+        "volume": "404",
+        "author": "Peng X. G.",
+        "year": "2000",
+        "journal-title": "Nature"
+      },
+      {
+        "key": "ja0030551b00027/ja0030551b00027_1",
+        "first-page": "8715",
+        "volume": "115",
+        "author": "Murray C. B.",
+        "year": "1993",
+        "journal-title": "J. Am. Chem. Soc."
+      },
+      {
+        "key": "ja0030551b00028/ja0030551b00028_1",
+        "first-page": "5344",
+        "volume": "120",
+        "author": "Peng X. G.",
+        "year": "1998",
+        "journal-title": "J. Am. Chem. Soc."
+      },
+      {
+        "key": "ja0030551b00029/ja0030551b00029_1",
+        "first-page": "1565",
+        "volume": "40",
+        "author": "Andriano",
+        "year": "1970",
+        "journal-title": "Zh. Obshch. Khim."
+      },
+      {
+        "key": "ja0030551b00031/ja0030551b00031_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "13239",
+        "DOI": "10.1021/jp9535506",
+        "volume": "100",
+        "author": "Alivisatos A. P.",
+        "year": "1996",
+        "journal-title": "J. Phys. Chem."
+      },
+      {
+        "key": "ja0030551b00032/ja0030551b00032_1",
+        "volume-title": "Imperfect Crystals, and Amorphous Bodies",
+        "author": "Guinier A.",
+        "year": "1994"
+      },
+      {
+        "key": "ja0030551b00033/ja0030551b00033_1",
+        "volume-title": "The Growth of Crystals from Liquids",
+        "author": "Brice J. C.",
+        "year": "1973"
+      },
+      {
+        "key": "ja0030551b00034/ja0030551b00034_1",
+        "doi-asserted-by": "crossref",
+        "unstructured": "Mews, A.; Kadavanich, A. V.; Banin, U.; Alivisatos, A. P.Phys. Rev. B: Condens, Matter Mater. Phys.1996,53, 13242−13245.",
+        "DOI": "10.1103/PhysRevB.53.R13242"
+      },
+      {
+        "key": "ja0030551b00035/ja0030551b00035_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "843",
+        "DOI": "10.1134/1.1261904",
+        "volume": "23",
+        "author": "Ataev B. M.",
+        "year": "1997",
+        "journal-title": "Tech. Phys. Lett."
+      },
+      {
+        "key": "ja0030551b00036/ja0030551b00036_1",
+        "doi-asserted-by": "crossref",
+        "first-page": "L589",
+        "DOI": "10.1143/JJAP.38.589",
+        "volume": "38",
+        "author": "Satoh M.",
+        "year": "1999",
+        "journal-title": "Jpn. J. Appl. Phys. Part 2."
+      },
+      {
+        "key": "ja0030551b00037/ja0030551b00037_1",
+        "first-page": "1567",
+        "volume": "34",
+        "author": "Zhou Z. W.",
+        "year": "1999",
+        "journal-title": "Mater. Res. Bull."
+      }
+    ],
+    "container-title": [
+      "Journal of the American Chemical Society"
+    ],
+    "original-title": [],
+    "language": "en",
+    "link": [
+      {
+        "URL": "https://pubs.acs.org/doi/pdf/10.1021/ja003055%2B",
+        "content-type": "unspecified",
+        "content-version": "vor",
+        "intended-application": "similarity-checking"
+      }
+    ],
+    "deposited": {
+      "date-parts": [
+        [
+          2022,
+          2,
+          3
+        ]
+      ],
+      "date-time": "2022-02-03T00:54:24Z",
+      "timestamp": 1643849664000
+    },
+    "score": 1,
+    "resource": {
+      "primary": {
+        "URL": "https://pubs.acs.org/doi/10.1021/ja003055%2B"
+      }
+    },
+    "subtitle": [],
+    "short-title": [],
+    "issued": {
+      "date-parts": [
+        [
+          2000,
+          12,
+          1
+        ]
+      ]
+    },
+    "references-count": 36,
+    "aliases": [
+      "10.1021/ja003055",
+      "10.1021/ja003055"
+    ],
+    "journal-issue": {
+      "issue": "51",
+      "published-print": {
+        "date-parts": [
+          [
+            2000,
+            12,
+            1
+          ]
+        ]
+      }
+    },
+    "alternative-id": [
+      "10.1021/ja003055+"
+    ],
+    "URL": "https://doi.org/10.1021/ja003055+",
+    "relation": {},
+    "ISSN": [
+      "0002-7863",
+      "1520-5126"
+    ],
+    "issn-type": [
+      {
+        "value": "0002-7863",
+        "type": "print"
+      },
+      {
+        "value": "1520-5126",
+        "type": "electronic"
+      }
+    ],
+    "subject": [],
+    "published": {
+      "date-parts": [
+        [
+          2000,
+          12,
+          1
+        ]
+      ]
+    }
+  }
+]

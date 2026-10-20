@@ -1,21 +1,25 @@
 # Page generator (site/)
 
-Put the generator that produced the B, C and D builds here (`build.py`, templates, shared CSS).
-The publish workflow runs `python site/build.py` and then `scripts/push_page.py`.
+Built by Codex on 2026-10-20 (sections C and D) and connected to GitHub Actions here.
+Details of each data file and template: `README-generator.md`.
 
-## Contract
-`site/build.py` must:
-1. Read data from `data/` (members, alumni, publications, selected_publications, news).
-2. For each page it changes, start from the **live** `content.raw` (use `scripts/wp.py: resolve_page`), replace only
-   the content between `<!-- AUTO:<name>:START -->` and `<!-- AUTO:<name>:END -->` (respecting how Divi stores it:
-   plain markup or JSON-escaped inside block attributes), and write the complete new `content.raw` to
-   `site/out/<page>.raw.html`.
-3. Write `site/out/manifest.json`:
-   ```json
-   {"members": {"file": "members.raw.html", "base_sha256": "<sha256 of the live content.raw it started from>"}}
-   ```
-   Page keys are the keys in `config.yaml` (`home`, `research`, `members`, `alumni`, `publications`, `news`, `gallery`).
-4. Never include credentials, `<script>` (unless task F shows scripts survive), Sci-Hub links, or forbidden text from
-   `config.yaml`.
+## How a publish runs (`.github/workflows/publish.yml`)
+1. `scripts/auth_check.py` and `scripts/backup.py` (repo root): confirm the Application Password, back up every page.
+2. `site/build.py`: renders page fragments from `site/data/` and `site/templates/` into `site/build/<page>.html`.
+   CSS from `site/assets/site.css` is inlined into each element, because page content cannot keep `<style>` blocks.
+3. `site/validate.py`: checks counts, markers, sources and links.
+4. `site/push.py <page>` (dry run) or `--apply`: fetches the live page, replaces only the module between
+   `<!-- AUTO:<page>:START -->` and `<!-- AUTO:<page>:END -->`, saves a backup and a raw diff, checks the page did not
+   change in the meantime, writes, and reads it back. For `members` it also removes empty Divi sections above the list.
+   `research` uses the reviewed baseline `build/research-content.before-c.raw` and refuses if the live page differs.
+5. `scripts/review_diff.py <page>`: readable diff (one HTML tag per line) in the run summary.
+6. `scripts/verify_public.py`: plain-URL check after a publish.
 
-Run locally: `python site/build.py && python scripts/push_page.py --page members` (dry run).
+## Editing content
+Change files in `site/data/` (members, alumni, news, home, selected_publications, publications.csv), run
+`python site/build.py && python site/validate.py` locally if you can, open a pull request, then publish.
+
+## Not active yet
+- `assets/site-integration.html` (search boxes and filter buttons). Page content cannot hold scripts and the only
+  site-wide place is Divi Theme Options > Integration, a global setting. Decide after the content test (task F).
+  Until then the controls render but do nothing; consider hiding them in the templates.

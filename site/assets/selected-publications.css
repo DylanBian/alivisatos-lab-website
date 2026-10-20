@@ -1,0 +1,40 @@
+/* Selected Publications component. Scoped to .ag-pubs so page-wide styles remain untouched. */
+.ag-pubs {
+  max-width: 980px;
+  margin: 1.5rem auto 2rem;
+  padding: 26px 16px 30px;
+  display: grid;
+  gap: 22px;
+  color: #1f1a1b;
+  border-bottom: 1px solid #800000;
+}
+.ag-pubs .ag-pubs-intro { display: grid; gap: 8px; max-width: 66ch; }
+.ag-pubs .ag-pubs-eyebrow { color: #800000; font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; }
+.ag-pubs .ag-pubs-heading { margin: 0; color: #800000; font-size: clamp(30px, 5vw, 42px); font-weight: 400; line-height: 1.12; }
+.ag-pubs .ag-pubs-lede { margin: 0; color: #6b6264; font-size: 16px; line-height: 1.55; }
+.ag-pubs .ag-pubs-jump-label { margin: 0 0 8px; color: #6b6264; font-size: 13px; }
+.ag-pubs .ag-pubs-jumps { display: flex; flex-wrap: wrap; gap: 8px; }
+.ag-pubs .ag-pubs-chip { display: inline-flex; align-items: center; border: 1px solid #e5dfe0; border-radius: 999px; padding: 6px 12px; color: #333; background: #fff; font-size: 13px; text-decoration: none; }
+.ag-pubs .ag-pubs-chip:hover { border-color: #800000; color: #800000; }
+.ag-pubs .ag-pubs-areas { display: grid; gap: 30px; }
+.ag-pubs .ag-pubs-area { display: grid; gap: 4px; scroll-margin-top: 18px; }
+.ag-pubs .ag-pubs-area-heading { margin: 0; color: #222; font-size: 21px; font-weight: 500; line-height: 1.25; }
+.ag-pubs .ag-pubs-area-link { justify-self: start; color: #800000; font-size: 13px; text-decoration: none; }
+.ag-pubs .ag-pubs-area-link:hover { text-decoration: underline; }
+.ag-pubs .ag-pubs-list { list-style: none; margin: 0; padding: 0; }
+.ag-pubs .ag-pubs-paper { display: grid; grid-template-columns: 52px minmax(0, 1fr); column-gap: 16px; padding: 15px 0; border-bottom: 1px solid #e5dfe0; }
+.ag-pubs .ag-pubs-year { color: #6b6264; font-size: 19px; font-variant-numeric: tabular-nums; line-height: 1.25; }
+.ag-pubs .ag-pubs-body { display: grid; gap: 5px; min-width: 0; }
+.ag-pubs .ag-pubs-journal { color: #800000; font-size: 12px; font-weight: 600; letter-spacing: .06em; text-transform: uppercase; }
+.ag-pubs .ag-pubs-title { margin: 0; color: #222; font-size: 16px; font-weight: 600; line-height: 1.38; }
+.ag-pubs .ag-pubs-authors { margin: 0; color: #6b6264; font-size: 13px; line-height: 1.55; }
+.ag-pubs .ag-pubs-authors strong { color: #222; font-weight: 600; }
+.ag-pubs .ag-pubs-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 6px 10px; color: #555; font-size: 13px; }
+.ag-pubs .ag-pubs-doi { border: 1px solid #e5dfe0; border-radius: 6px; padding: 2px 8px; color: #800000; font-size: 12px; text-decoration: none; }
+.ag-pubs .ag-pubs-doi:hover { border-color: #800000; }
+.ag-pubs .ag-pubs-open-access { color: #2f6b4f; font-size: 11px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; }
+.ag-pubs .ag-pubs-foot { margin: 0; border-top: 1px solid #e5dfe0; padding-top: 14px; color: #6b6264; font-size: 13px; }
+@media (max-width: 480px) {
+  .ag-pubs .ag-pubs-paper { grid-template-columns: 1fr; row-gap: 3px; }
+  .ag-pubs .ag-pubs-year { font-size: 14px; }
+}

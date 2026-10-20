@@ -1,0 +1,329 @@
+- id: members-001
+  areas: []
+  title_html: Paul Alivisatos
+  image_url: https://alivisatoslab.uchicago.edu/files/2023/04/Alivisatos.jpg
+  image_alt: Paul Alivisatos
+  template_html: '<article class="alivisatos-member-card" style="display:flex;align-items:flex-start;gap:1rem;padding:1.1rem;background:#fff;border:1px
+    solid #e4e4e4;border-top:3px solid #800000;border-radius:5px"><img src="@@IMAGE_URL@@" alt="@@IMAGE_ALT@@" loading="lazy"
+    style="display:block;width:92px;height:92px;object-fit:cover;border-radius:50%;border:1px solid #eee"><div style="flex:1;min-width:0"><h3
+    style="margin:0 0 .45rem;color:#800000;font-size:1.2rem">@@TITLE_HTML@@</h3><div style="color:#555;font-size:.95rem"><p><em>President
+    of the University of Chicago<br>John D. MacArthur Distinguished Service Professor in the Department of Chemistry</em></p><p><strong>Affiliations:
+    </strong>Pritzker School of Molecular Engineering and the College</p></div><div style="margin:.45rem 0;color:#555;font-size:.95rem"><p><strong>Email:
+    </strong><a href="mailto:president@uchicago.edu">president@uchicago.edu</a></p></div><details style="margin-top:.8rem;border-top:1px
+    solid #eee;padding-top:.6rem"><summary style="color:#800000;cursor:pointer;font-weight:600">Education &amp;
+    links</summary><div style="padding-top:.55rem;font-size:.92rem"><p>B.A. in Chemistry, The University of Chicago,
+    1981<br>Ph.D. in Physical Chemistry, University of California, Berkeley, 1986<br>Assistant Professor, University
+    of California, Berkeley, 1988-1993<br>Associate Professor, University of California, Berkeley, 1993-1995<br>Professor,
+    University of California, Berkeley, 1995-1998<br>Chancellor''s Professor, University of California, Berkeley,
+    1995-1998<br>Associate Laboratory Director, Lawrence Berkeley National Lab, 2005-2007<br>Deputy Lab Director,
+    Lawrence Berkeley National Lab, 2008<br>Director, Lawrence Berkeley National Lab, 2009-2015<br>President, University
+    of Chicago, 2021-Present</p></div></details></div></article>'
+- id: members-002
+  areas: [lctem]
+  publication_names:
+    - 'Chang Liu'
+  title_html: Dr. Chang Liu
+  image_url: https://alivisatoslab.uchicago.edu/files/2025/03/1742780987004.png
+  image_alt: Chang Liu
+  template_html: '<article class="alivisatos-member-card" style="display:flex;align-items:flex-start;gap:1rem;padding:1.1rem;background:#fff;border:1px
+    solid #e4e4e4;border-top:3px solid #800000;border-radius:5px"><img src="@@IMAGE_URL@@" alt="@@IMAGE_ALT@@" loading="lazy"
+    style="display:block;width:92px;height:92px;object-fit:cover;border-radius:50%;border:1px solid #eee"><div style="flex:1;min-width:0"><h3
+    style="margin:0 0 .45rem;color:#800000;font-size:1.2rem">@@TITLE_HTML@@</h3><div style="color:#555;font-size:.95rem"><p><em>Postdoctoral
+    Researcher (2023–)</em></p></div><div style="margin:.45rem 0;color:#555;font-size:.95rem"><p><strong>Email:</strong>
+    <a href="mailto:liuchang@uchicago.edu">liuchang@uchicago.edu</a></p></div><div style="margin:.6rem 0 0;padding:.38rem
+    .65rem;background:#f6f2f2;border-radius:99px;font-size:.83rem"><p>Research Area:&nbsp; <a href="https://alivisatoslab.uchicago.edu/research/#lctem">Liquid-Phase
+    Transmission Electron Microscopy</a></p></div><details style="margin-top:.8rem;border-top:1px solid #eee;padding-top:.6rem"><summary
+    style="color:#800000;cursor:pointer;font-weight:600">Education &amp; links</summary><div style="padding-top:.55rem;font-size:.92rem"><blockquote>
+
+    <p><a title="Google Scholar" href="https://scholar.google.com/citations?hl=en&amp;user=ificGS8AAAAJ"><strong>Google
+    Scholar</strong></a> (Publications&nbsp;are&nbsp;provided)</p>
+
+    </blockquote><p>B.S. Nanjing University<br>Ph.D. University of Illinois Urbana-Champaign</p></div></details></div></article>'
+- id: members-003
+  areas: [synthesis, lctem]
+  publication_names:
+    - 'Shengsong Yang'
+  title_html: Dr. Shengsong Yang
+  image_url: https://alivisatoslab.uchicago.edu/files/2026/02/shengsong_20260223220154_564_396.jpg
+  image_alt: Dr. Shengsong Yang
+  template_html: '<article class="alivisatos-member-card" style="display:flex;align-items:flex-start;gap:1rem;padding:1.1rem;background:#fff;border:1px
+    solid #e4e4e4;border-top:3px solid #800000;border-radius:5px"><img src="@@IMAGE_URL@@" alt="@@IMAGE_ALT@@" loading="lazy"
+    style="display:block;width:92px;height:92px;object-fit:cover;border-radius:50%;border:1px solid #eee"><div style="flex:1;min-width:0"><h3
+    style="margin:0 0 .45rem;color:#800000;font-size:1.2rem">@@TITLE_HTML@@</h3><div style="color:#555;font-size:.95rem"><p><em>Postdoctoral
+    Researcher (2024–)</em></p></div><div style="margin:.45rem 0;color:#555;font-size:.95rem"><p><strong>Email:</strong>
+    <a href="mailto:yeson@uchicago.edu">yeson@uchicago.edu</a></p></div><div style="margin:.6rem 0 0;padding:.38rem
+    .65rem;background:#f6f2f2;border-radius:99px;font-size:.83rem"><p>Research Area:&nbsp; <a href="https://alivisatoslab.uchicago.edu/research/#synthesis">Self-Assembly
+    of Nanocrystals &amp; Liquid Cell TEM</a></p></div><details style="margin-top:.8rem;border-top:1px solid #eee;padding-top:.6rem"><summary
+    style="color:#800000;cursor:pointer;font-weight:600">Education &amp; links</summary><div style="padding-top:.55rem;font-size:.92rem"><blockquote>
+
+    <p><a title="Google Scholar Shengsong Yang" href="https://scholar.google.com/citations?hl=en&amp;user=5ZE6dP0AAAAJ"><strong>Google
+    Scholar</strong></a> (Publications&nbsp;are&nbsp;provided)</p>
+
+    </blockquote><p>B.S. Peking University<br>Ph.D. University of Pennsylvania</p></div></details></div></article>'
+- id: members-004
+  areas: [lctem]
+  publication_names:
+    - 'Sungsu Kang'
+  title_html: Dr. Sungsu Kang
+  image_url: https://alivisatoslab.uchicago.edu/files/2024/10/IMG_6592.jpg
+  image_alt: Dr. Sungsu Kang
+  template_html: '<article class="alivisatos-member-card" style="display:flex;align-items:flex-start;gap:1rem;padding:1.1rem;background:#fff;border:1px
+    solid #e4e4e4;border-top:3px solid #800000;border-radius:5px"><img src="@@IMAGE_URL@@" alt="@@IMAGE_ALT@@" loading="lazy"
+    style="display:block;width:92px;height:92px;object-fit:cover;border-radius:50%;border:1px solid #eee"><div style="flex:1;min-width:0"><h3
+    style="margin:0 0 .45rem;color:#800000;font-size:1.2rem">@@TITLE_HTML@@</h3><div style="color:#555;font-size:.95rem"><p><em>Postdoctoral
+    Researcher (2024–)</em></p></div><div style="margin:.45rem 0;color:#555;font-size:.95rem"><p><strong>Email:
+    </strong><a href="mailto:sungsukang@uchicago.edu">sungsukang@uchicago.edu</a></p></div><div style="margin:.6rem
+    0 0;padding:.38rem .65rem;background:#f6f2f2;border-radius:99px;font-size:.83rem"><p>Research Area: <a href="https://alivisatoslab.uchicago.edu/research/#lctem">Liquid
+    Cell TEM</a></p></div><details style="margin-top:.8rem;border-top:1px solid #eee;padding-top:.6rem"><summary
+    style="color:#800000;cursor:pointer;font-weight:600">Education &amp; links</summary><div style="padding-top:.55rem;font-size:.92rem"><blockquote>
+
+    <p><a title="Google Scholar Kang" href="https://scholar.google.com/citations?user=wanQUbIAAAAJ&amp;hl=en"><strong>Google
+    Scholar</strong></a> (Publications are provided)</p>
+
+    </blockquote><p>B.S. Seoul National University</p><p>Ph.D. Seoul National University</p><p>__</p></div></details></div></article>'
+- id: members-005
+  areas: [synthesis]
+  publication_names:
+    - 'Amanda S. Brewer'
+    - 'Amanda Brewer'
+  title_html: Dr. Amanda Brewer
+  image_url: https://alivisatoslab.uchicago.edu/files/2023/07/Brewer21.jpeg
+  image_alt: Amanda Brewer
+  template_html: '<article class="alivisatos-member-card" style="display:flex;align-items:flex-start;gap:1rem;padding:1.1rem;background:#fff;border:1px
+    solid #e4e4e4;border-top:3px solid #800000;border-radius:5px"><img src="@@IMAGE_URL@@" alt="@@IMAGE_ALT@@" loading="lazy"
+    style="display:block;width:92px;height:92px;object-fit:cover;border-radius:50%;border:1px solid #eee"><div style="flex:1;min-width:0"><h3
+    style="margin:0 0 .45rem;color:#800000;font-size:1.2rem">@@TITLE_HTML@@</h3><div style="color:#555;font-size:.95rem"><p><em>Postdoctoral
+    Researcher (2025–)</em></p></div><div style="margin:.45rem 0;color:#555;font-size:.95rem"><p><strong>Email:</strong>&nbsp;<a
+    href="mailto:asbrewer@uchicago.edu">asbrewer@uchicago.edu</a></p></div><div style="margin:.6rem 0 0;padding:.38rem
+    .65rem;background:#f6f2f2;border-radius:99px;font-size:.83rem"><p>Research Area:&nbsp; <a href="https://alivisatoslab.uchicago.edu/research/#synthesis">Nanocrystal
+    Ligands and </a><a href="https://alivisatoslab.uchicago.edu/research/#synthesis">Thermodynamics </a></p></div><details
+    style="margin-top:.8rem;border-top:1px solid #eee;padding-top:.6rem"><summary style="color:#800000;cursor:pointer;font-weight:600">Education
+    &amp; links</summary><div style="padding-top:.55rem;font-size:.92rem"><p><a href="https://scholar.google.com/citations?user=LuGXX_0AAAAJ&amp;hl=en"><strong>Google
+    Scholar</strong></a> (Publications are provided)</p><p>Ph.D. in Chemistry, University of California Berkeley</p><p>B.S.
+    in Biochemistry, University of California Santa Cruz</p></div></details></div></article>'
+- id: members-006
+  areas: [lctem]
+  title_html: Dr. Yi Cui
+  image_url: https://alivisatoslab.uchicago.edu/files/2026/01/Yi-2.jpg
+  image_alt: Dr. Yi Cui
+  template_html: '<article class="alivisatos-member-card" style="display:flex;align-items:flex-start;gap:1rem;padding:1.1rem;background:#fff;border:1px
+    solid #e4e4e4;border-top:3px solid #800000;border-radius:5px"><img src="@@IMAGE_URL@@" alt="@@IMAGE_ALT@@" loading="lazy"
+    style="display:block;width:92px;height:92px;object-fit:cover;border-radius:50%;border:1px solid #eee"><div style="flex:1;min-width:0"><h3
+    style="margin:0 0 .45rem;color:#800000;font-size:1.2rem">@@TITLE_HTML@@</h3><div style="color:#555;font-size:.95rem"><p><em>Postdoctoral
+    Researcher (2026–)</em></p></div><div style="margin:.45rem 0;color:#555;font-size:.95rem"><p><strong>Email:</strong>
+    <a href="mailto:cuiy@uchicago.edu">cuiy@uchicago.edu</a></p></div><div style="margin:.6rem 0 0;padding:.38rem
+    .65rem;background:#f6f2f2;border-radius:99px;font-size:.83rem"><p>Research Area:&nbsp; <a href="https://alivisatoslab.uchicago.edu/research/#lctem">Quantum
+    Information Science, Electron Microscopy</a></p></div><details style="margin-top:.8rem;border-top:1px solid
+    #eee;padding-top:.6rem"><summary style="color:#800000;cursor:pointer;font-weight:600">Education &amp; links</summary><div
+    style="padding-top:.55rem;font-size:.92rem"><p><strong><a href="https://scholar.google.com/citations?user=rD1iZ9cAAAAJ&amp;hl=en">Google
+    Scholar</a> </strong>(Publications are provided)</p><p>Schmidt AI in Science Fellow</p><p>Ph.D. in Materials
+    Science, Stanford University</p><p>B.S. in Chemistry, University of Science and Technology of China</p></div></details></div></article>'
+- id: members-007
+  areas: []
+  title_html: Dr. Joe Veglak
+  image_url: https://alivisatoslab.uchicago.edu/files/2026/07/IMG_0083.jpg
+  image_alt: Dr. Joe Veglak
+  template_html: '<article class="alivisatos-member-card" style="display:flex;align-items:flex-start;gap:1rem;padding:1.1rem;background:#fff;border:1px
+    solid #e4e4e4;border-top:3px solid #800000;border-radius:5px"><img src="@@IMAGE_URL@@" alt="@@IMAGE_ALT@@" loading="lazy"
+    style="display:block;width:92px;height:92px;object-fit:cover;border-radius:50%;border:1px solid #eee"><div style="flex:1;min-width:0"><h3
+    style="margin:0 0 .45rem;color:#800000;font-size:1.2rem">@@TITLE_HTML@@</h3><div style="color:#555;font-size:.95rem"><p><em>Postdoctoral
+    Researcher (2026–)</em></p></div><div style="margin:.45rem 0;color:#555;font-size:.95rem"><p><strong>Email:</strong>
+    <a href="mailto:jveglak@uchicago.edu">jveglak@uchicago.edu</a></p></div><details style="margin-top:.8rem;border-top:1px
+    solid #eee;padding-top:.6rem"><summary style="color:#800000;cursor:pointer;font-weight:600">Education &amp;
+    links</summary><div style="padding-top:.55rem;font-size:.92rem"><p><strong><a href="https://scholar.google.com/citations?user=xGl9U-kAAAAJ&amp;hl=en">Google
+    Scholar</a> </strong>(Publications are provided)</p><p>Ph.D. in Chemistry, Penn State University</p><p>BS, Chemical
+    Engineering, Rose-Hulman Institute of Technology</p></div></details></div></article>'
+- id: members-008
+  areas: [quantum]
+  publication_names:
+    - 'Yuxuan Zhang'
+  title_html: Yuxuan Zhang
+  image_url: https://alivisatoslab.uchicago.edu/files/2023/05/f2a523e6307b849dbfd761b84f5a287.jpg
+  image_alt: Yuxuan Zhang
+  template_html: '<article class="alivisatos-member-card" style="display:flex;align-items:flex-start;gap:1rem;padding:1.1rem;background:#fff;border:1px
+    solid #e4e4e4;border-top:3px solid #800000;border-radius:5px"><img src="@@IMAGE_URL@@" alt="@@IMAGE_ALT@@" loading="lazy"
+    style="display:block;width:92px;height:92px;object-fit:cover;border-radius:50%;border:1px solid #eee"><div style="flex:1;min-width:0"><h3
+    style="margin:0 0 .45rem;color:#800000;font-size:1.2rem">@@TITLE_HTML@@</h3><div style="color:#555;font-size:.95rem"><p><em>Ph.D.
+    Candidate at UChicago PME (2022-)</em></p></div><div style="margin:.45rem 0;color:#555;font-size:.95rem"><p><strong>Email:</strong>&nbsp;<a
+    href="mailto:yuxuanz1@uchicago.edu">yuxuanz1@uchicago.edu</a></p></div><div style="margin:.6rem 0 0;padding:.38rem
+    .65rem;background:#f6f2f2;border-radius:99px;font-size:.83rem"><p>Research Area:&nbsp; <a href="https://alivisatoslab.uchicago.edu/research/#quantum">Quantum
+    information science and technology&nbsp;</a></p></div><details style="margin-top:.8rem;border-top:1px solid
+    #eee;padding-top:.6rem"><summary style="color:#800000;cursor:pointer;font-weight:600">Education &amp; links</summary><div
+    style="padding-top:.55rem;font-size:.92rem"><blockquote>
+
+    <p><a title="Google Scholar Yuxuan" href="https://scholar.google.com/citations?user=saEIO6cAAAAJ&amp;hl=en-us"><strong>Google
+    Scholar</strong></a> (Publications&nbsp;are&nbsp;provided)</p>
+
+    </blockquote><p>M.Sc. in Chemistry, University of Montreal</p></div></details></div></article>'
+- id: members-009
+  areas: [spectroscopy]
+  publication_names:
+    - 'Dylan Bian'
+    - 'Daqian Bian'
+  title_html: Dylan Bian
+  image_url: https://alivisatoslab.uchicago.edu/files/2023/05/2b99db1c71ab09de7eddc3e2bcfc735.jpg
+  image_alt: Dylan Bian
+  template_html: '<article class="alivisatos-member-card" style="display:flex;align-items:flex-start;gap:1rem;padding:1.1rem;background:#fff;border:1px
+    solid #e4e4e4;border-top:3px solid #800000;border-radius:5px"><img src="@@IMAGE_URL@@" alt="@@IMAGE_ALT@@" loading="lazy"
+    style="display:block;width:92px;height:92px;object-fit:cover;border-radius:50%;border:1px solid #eee"><div style="flex:1;min-width:0"><h3
+    style="margin:0 0 .45rem;color:#800000;font-size:1.2rem">@@TITLE_HTML@@</h3><div style="color:#555;font-size:.95rem"><p><em>Ph.D.
+    Candidate at UChicago Chemistry (2022-)</em></p></div><div style="margin:.45rem 0;color:#555;font-size:.95rem"><p><strong>Email:</strong>&nbsp;<a
+    href="mailto:dbian@uchicago.edu">dbian@uchicago.edu</a></p></div><div style="margin:.6rem 0 0;padding:.38rem
+    .65rem;background:#f6f2f2;border-radius:99px;font-size:.83rem"><p>Research Area:&nbsp; <a href="https://alivisatoslab.uchicago.edu/research/#spectroscopy">Nanomaterial
+    Synthesis and Optical studies </a></p></div><details style="margin-top:.8rem;border-top:1px solid #eee;padding-top:.6rem"><summary
+    style="color:#800000;cursor:pointer;font-weight:600">Education &amp; links</summary><div style="padding-top:.55rem;font-size:.92rem"><p>Honour
+    B.S. in Chemistry and Biochemistry, UCSB College of Creative Studies<br>Minor in East Asian Languages &amp;
+    Cultural Studies (Japanese)</p></div></details></div></article>'
+- id: members-010
+  areas: [synthesis]
+  publication_names:
+    - 'Binyu Wu'
+    - 'Binyu (Barry) Wu'
+  title_html: Binyu (Barry) Wu
+  image_url: https://alivisatoslab.uchicago.edu/files/2023/12/微信图片_20231219030844.jpg
+  image_alt: Binyu (Barry) Wu
+  template_html: '<article class="alivisatos-member-card" style="display:flex;align-items:flex-start;gap:1rem;padding:1.1rem;background:#fff;border:1px
+    solid #e4e4e4;border-top:3px solid #800000;border-radius:5px"><img src="@@IMAGE_URL@@" alt="@@IMAGE_ALT@@" loading="lazy"
+    style="display:block;width:92px;height:92px;object-fit:cover;border-radius:50%;border:1px solid #eee"><div style="flex:1;min-width:0"><h3
+    style="margin:0 0 .45rem;color:#800000;font-size:1.2rem">@@TITLE_HTML@@</h3><div style="color:#555;font-size:.95rem"><p><em>Ph.D.
+    Candidate at UChicago PME (2023-)</em></p></div><div style="margin:.45rem 0;color:#555;font-size:.95rem"><p><strong>Email:</strong>
+    <a href="mailto:binyuwu@uchicago.edu">binyuwu@uchicago.edu</a></p></div><div style="margin:.6rem 0 0;padding:.38rem
+    .65rem;background:#f6f2f2;border-radius:99px;font-size:.83rem"><p>Research Area:&nbsp; <a href="https://alivisatoslab.uchicago.edu/research/#synthesis"><span>Nanocrystal
+    Synthesis and Structural Architecture</span></a></p></div><details style="margin-top:.8rem;border-top:1px solid
+    #eee;padding-top:.6rem"><summary style="color:#800000;cursor:pointer;font-weight:600">Education &amp; links</summary><div
+    style="padding-top:.55rem;font-size:.92rem"><p>B.S. in Chemistry, Shenzhen University<br>Minor in Physics</p></div></details></div></article>'
+- id: members-011
+  areas: [synthesis]
+  publication_names:
+    - 'Chenqi Fan'
+  title_html: Chenqi Fan
+  image_url: https://alivisatoslab.uchicago.edu/files/2023/12/Chenqi-fan-231220.jpg
+  image_alt: Chenqi Fan
+  template_html: '<article class="alivisatos-member-card" style="display:flex;align-items:flex-start;gap:1rem;padding:1.1rem;background:#fff;border:1px
+    solid #e4e4e4;border-top:3px solid #800000;border-radius:5px"><img src="@@IMAGE_URL@@" alt="@@IMAGE_ALT@@" loading="lazy"
+    style="display:block;width:92px;height:92px;object-fit:cover;border-radius:50%;border:1px solid #eee"><div style="flex:1;min-width:0"><h3
+    style="margin:0 0 .45rem;color:#800000;font-size:1.2rem">@@TITLE_HTML@@</h3><div style="color:#555;font-size:.95rem"><p><em>Ph.D.
+    Candidate at UChicago Chemistry (2023-)</em></p></div><div style="margin:.45rem 0;color:#555;font-size:.95rem"><p><strong>Email:</strong>
+    <a href="mailto:chenqifan@uchicago.edu">chenqifan@uchicago.edu</a></p></div><div style="margin:.6rem 0 0;padding:.38rem
+    .65rem;background:#f6f2f2;border-radius:99px;font-size:.83rem"><p>Research Area:&nbsp; <a href="https://alivisatoslab.uchicago.edu/research/#synthesis">Nanocrystal
+    Ligands </a></p></div><details style="margin-top:.8rem;border-top:1px solid #eee;padding-top:.6rem"><summary
+    style="color:#800000;cursor:pointer;font-weight:600">Education &amp; links</summary><div style="padding-top:.55rem;font-size:.92rem"><p>High
+    Honor B.S. in Chemistry, University of California, Berkeley</p></div></details></div></article>'
+- id: members-012
+  areas: [synthesis, spectroscopy]
+  title_html: Ida Vaghefi
+  image_url: https://alivisatoslab.uchicago.edu/files/2026/01/Photo-not-yet-available.jpg
+  image_alt: Ida Vaghefi
+  template_html: '<article class="alivisatos-member-card" style="display:flex;align-items:flex-start;gap:1rem;padding:1.1rem;background:#fff;border:1px
+    solid #e4e4e4;border-top:3px solid #800000;border-radius:5px"><img src="@@IMAGE_URL@@" alt="@@IMAGE_ALT@@" loading="lazy"
+    style="display:block;width:92px;height:92px;object-fit:cover;border-radius:50%;border:1px solid #eee"><div style="flex:1;min-width:0"><h3
+    style="margin:0 0 .45rem;color:#800000;font-size:1.2rem">@@TITLE_HTML@@</h3><div style="color:#555;font-size:.95rem"><p><em>Ph.D.
+    student at UChicago PME (2023-)</em></p></div><div style="margin:.45rem 0;color:#555;font-size:.95rem"><p><strong>Email:</strong>
+    <a href="mailto:ivaghefi@uchicago.edu">ivaghefi@uchicago.edu</a></p></div><div style="margin:.6rem 0 0;padding:.38rem
+    .65rem;background:#f6f2f2;border-radius:99px;font-size:.83rem"><p>Research Area:&nbsp; <a href="https://alivisatoslab.uchicago.edu/research/#synthesis">Nanomaterial Synthesis</a> and <a href="https://alivisatoslab.uchicago.edu/research/#spectroscopy">Optical studies</a></p></div><details style="margin-top:.8rem;border-top:1px solid #eee;padding-top:.6rem"><summary
+    style="color:#800000;cursor:pointer;font-weight:600">Education &amp; links</summary><div style="padding-top:.55rem;font-size:.92rem"><p>High
+    honor B.S. in Chemical and Biomolecular Engineering, Georgia Institute of Technology</p><p>Minor in French</p></div></details></div></article>'
+- id: members-013
+  areas: [quantum]
+  title_html: Qian Lin
+  image_url: https://alivisatoslab.uchicago.edu/files/2025/05/Qian-Lin-Graduation.jpg
+  image_alt: Qian Lin
+  template_html: '<article class="alivisatos-member-card" style="display:flex;align-items:flex-start;gap:1rem;padding:1.1rem;background:#fff;border:1px
+    solid #e4e4e4;border-top:3px solid #800000;border-radius:5px"><img src="@@IMAGE_URL@@" alt="@@IMAGE_ALT@@" loading="lazy"
+    style="display:block;width:92px;height:92px;object-fit:cover;border-radius:50%;border:1px solid #eee"><div style="flex:1;min-width:0"><h3
+    style="margin:0 0 .45rem;color:#800000;font-size:1.2rem">@@TITLE_HTML@@</h3><div style="color:#555;font-size:.95rem"><p><em>Ph.D.
+    student at UChicago PME (2024-)</em></p></div><div style="margin:.45rem 0;color:#555;font-size:.95rem"><p><strong>Email:</strong>
+    <a href="mailto:qlin@uchicago.edu">qlin@uchicago.edu</a></p></div><div style="margin:.6rem 0 0;padding:.38rem
+    .65rem;background:#f6f2f2;border-radius:99px;font-size:.83rem"><p>Research Area: <a href="https://alivisatoslab.uchicago.edu/research/#quantum">Quantum
+    information science and technology&nbsp;</a></p></div><details style="margin-top:.8rem;border-top:1px solid
+    #eee;padding-top:.6rem"><summary style="color:#800000;cursor:pointer;font-weight:600">Education &amp; links</summary><div
+    style="padding-top:.55rem;font-size:.92rem"><p><span>First Class Bachelor of Arts in Physics, University of
+    Oxford</span></p></div></details></div></article>'
+- id: members-014
+  areas: []
+  title_html: Michelle Bishka
+  image_url: https://alivisatoslab.uchicago.edu/files/2026/01/Photo-not-yet-available.jpg
+  image_alt: Michelle Bishka
+  template_html: '<article class="alivisatos-member-card" style="display:flex;align-items:flex-start;gap:1rem;padding:1.1rem;background:#fff;border:1px
+    solid #e4e4e4;border-top:3px solid #800000;border-radius:5px"><img src="@@IMAGE_URL@@" alt="@@IMAGE_ALT@@" loading="lazy"
+    style="display:block;width:92px;height:92px;object-fit:cover;border-radius:50%;border:1px solid #eee"><div style="flex:1;min-width:0"><h3
+    style="margin:0 0 .45rem;color:#800000;font-size:1.2rem">@@TITLE_HTML@@</h3><div style="color:#555;font-size:.95rem"><p><em>Ph.D.
+    student at UChicago Chemistry (2025-)</em></p></div><div style="margin:.45rem 0;color:#555;font-size:.95rem"><p><strong>Email:</strong>
+    <a href="mailto:michelleb1@uchicago.edu">michelleb1@uchicago.edu</a></p></div><details style="margin-top:.8rem;border-top:1px
+    solid #eee;padding-top:.6rem"><summary style="color:#800000;cursor:pointer;font-weight:600">Education &amp;
+    links</summary><div style="padding-top:.55rem;font-size:.92rem"><p>Bachelor of Science in Chemistry, University
+    of Illinois Urbana-Champaign</p></div></details></div></article>'
+- id: members-015
+  areas: []
+  title_html: William Zheng
+  image_url: https://alivisatoslab.uchicago.edu/files/2024/04/Yichen-Zheng-b791712e44c9a920.jpg
+  image_alt: William Zheng
+  template_html: '<article class="alivisatos-member-card" style="display:flex;align-items:flex-start;gap:1rem;padding:1.1rem;background:#fff;border:1px
+    solid #e4e4e4;border-top:3px solid #800000;border-radius:5px"><img src="@@IMAGE_URL@@" alt="@@IMAGE_ALT@@" loading="lazy"
+    style="display:block;width:92px;height:92px;object-fit:cover;border-radius:50%;border:1px solid #eee"><div style="flex:1;min-width:0"><h3
+    style="margin:0 0 .45rem;color:#800000;font-size:1.2rem">@@TITLE_HTML@@</h3><div style="color:#555;font-size:.95rem"><p><em>Undergraduate
+    Student at UChicago PME</em></p></div><div style="margin:.45rem 0;color:#555;font-size:.95rem"><p><strong>Email:</strong>
+    <a href="mailto:yichen0830@uchicago.edu">yichen0830@uchicago.edu</a></p></div><details style="margin-top:.8rem;border-top:1px
+    solid #eee;padding-top:.6rem"><summary style="color:#800000;cursor:pointer;font-weight:600">Education &amp;
+    links</summary><div style="padding-top:.55rem;font-size:.92rem"><ol></ol><p><span>Major in Molecular Engineering,
+    Chemical Track</span><span><br></span></p></div></details></div></article>'
+- id: members-016
+  areas: []
+  title_html: Ivan Shapkarov
+  image_url: https://alivisatoslab.uchicago.edu/files/2024/04/Ivan-Shapkarov_934-f1170be7c0a53d21.jpg
+  image_alt: Ivan Shapkarov
+  template_html: '<article class="alivisatos-member-card" style="display:flex;align-items:flex-start;gap:1rem;padding:1.1rem;background:#fff;border:1px
+    solid #e4e4e4;border-top:3px solid #800000;border-radius:5px"><img src="@@IMAGE_URL@@" alt="@@IMAGE_ALT@@" loading="lazy"
+    style="display:block;width:92px;height:92px;object-fit:cover;border-radius:50%;border:1px solid #eee"><div style="flex:1;min-width:0"><h3
+    style="margin:0 0 .45rem;color:#800000;font-size:1.2rem">@@TITLE_HTML@@</h3><div style="color:#555;font-size:.95rem"><p><em>Undergraduate
+    Student at UChicago PME</em></p></div><div style="margin:.45rem 0;color:#555;font-size:.95rem"><p><strong>Email:</strong>
+    <a href="mailto:ishapkarov@uchicago.edu">ishapkarov@uchicago.edu</a></p></div><details style="margin-top:.8rem;border-top:1px
+    solid #eee;padding-top:.6rem"><summary style="color:#800000;cursor:pointer;font-weight:600">Education &amp;
+    links</summary><div style="padding-top:.55rem;font-size:.92rem"><ol></ol><p><span>Major in Molecular Engineering,<em>&nbsp;Quantum
+    Track</em></span><span><br></span></p></div></details></div></article>'
+- id: members-017
+  areas: []
+  title_html: Julien Perce
+  image_url: https://alivisatoslab.uchicago.edu/files/2024/11/headshot.jpeg
+  image_alt: Julien Perce
+  template_html: '<article class="alivisatos-member-card" style="display:flex;align-items:flex-start;gap:1rem;padding:1.1rem;background:#fff;border:1px
+    solid #e4e4e4;border-top:3px solid #800000;border-radius:5px"><img src="@@IMAGE_URL@@" alt="@@IMAGE_ALT@@" loading="lazy"
+    style="display:block;width:92px;height:92px;object-fit:cover;border-radius:50%;border:1px solid #eee"><div style="flex:1;min-width:0"><h3
+    style="margin:0 0 .45rem;color:#800000;font-size:1.2rem">@@TITLE_HTML@@</h3><div style="color:#555;font-size:.95rem"><p><em>Undergraduate
+    Student at UChicago Physical Sciences Division</em></p></div><div style="margin:.45rem 0;color:#555;font-size:.95rem"><p><strong>Email:</strong>
+    <a href="mailto:jperce@uchicago.edu">jperce@uchicago.edu</a></p></div><details style="margin-top:.8rem;border-top:1px
+    solid #eee;padding-top:.6rem"><summary style="color:#800000;cursor:pointer;font-weight:600">Education &amp;
+    links</summary><div style="padding-top:.55rem;font-size:.92rem"><ol></ol><p><span>Major in Pure Mathematics</span><span><br></span></p></div></details></div></article>'
+- id: members-018
+  areas: []
+  title_html: Davit Moreno
+  image_url: https://alivisatoslab.uchicago.edu/files/2026/02/Davit-Moreno.jpeg
+  image_alt: Davit Moreno
+  template_html: '<article class="alivisatos-member-card" style="display:flex;align-items:flex-start;gap:1rem;padding:1.1rem;background:#fff;border:1px
+    solid #e4e4e4;border-top:3px solid #800000;border-radius:5px"><img src="@@IMAGE_URL@@" alt="@@IMAGE_ALT@@" loading="lazy"
+    style="display:block;width:92px;height:92px;object-fit:cover;border-radius:50%;border:1px solid #eee"><div style="flex:1;min-width:0"><h3
+    style="margin:0 0 .45rem;color:#800000;font-size:1.2rem">@@TITLE_HTML@@</h3><div style="color:#555;font-size:.95rem"><p><em>Undergraduate
+    Student at UChicago PME</em></p></div><div style="margin:.45rem 0;color:#555;font-size:.95rem"><p><strong>Email:
+    </strong><a href="mailto:mdavit@uchicago.edu">mdavit@uchicago.edu</a></p></div><details style="margin-top:.8rem;border-top:1px
+    solid #eee;padding-top:.6rem"><summary style="color:#800000;cursor:pointer;font-weight:600">Education &amp;
+    links</summary><div style="padding-top:.55rem;font-size:.92rem"><p>Major in Molecular Engineering, Quantum Track</p></div></details></div></article>'
+- id: members-019
+  areas: []
+  title_html: Isaac Spiller
+  image_url: https://alivisatoslab.uchicago.edu/files/2026/07/IMG_0085.jpg
+  image_alt: Isaac Spiller
+  template_html: '<article class="alivisatos-member-card" style="display:flex;align-items:flex-start;gap:1rem;padding:1.1rem;background:#fff;border:1px
+    solid #e4e4e4;border-top:3px solid #800000;border-radius:5px"><img src="@@IMAGE_URL@@" alt="@@IMAGE_ALT@@" loading="lazy"
+    style="display:block;width:92px;height:92px;object-fit:cover;border-radius:50%;border:1px solid #eee"><div style="flex:1;min-width:0"><h3
+    style="margin:0 0 .45rem;color:#800000;font-size:1.2rem">@@TITLE_HTML@@</h3><div style="color:#555;font-size:.95rem"><p><em>Undergraduate
+    Student at UChicago Physical Sciences Division</em></p></div></div></article>'
+- id: members-020
+  areas: []
+  title_html: Jamie Sims
+  image_url: https://alivisatoslab.uchicago.edu/files/2026/01/Photo-not-yet-available.jpg
+  image_alt: Jamie Sims
+  template_html: '<article class="alivisatos-member-card" style="display:flex;align-items:flex-start;gap:1rem;padding:1.1rem;background:#fff;border:1px
+    solid #e4e4e4;border-top:3px solid #800000;border-radius:5px"><img src="@@IMAGE_URL@@" alt="@@IMAGE_ALT@@" loading="lazy"
+    style="display:block;width:92px;height:92px;object-fit:cover;border-radius:50%;border:1px solid #eee"><div style="flex:1;min-width:0"><h3
+    style="margin:0 0 .45rem;color:#800000;font-size:1.2rem">@@TITLE_HTML@@</h3><div style="color:#555;font-size:.95rem"><p><em>Undergraduate
+    Student at UChicago Physical Sciences Division</em></p></div></div></article>'

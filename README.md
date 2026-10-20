@@ -8,9 +8,9 @@ that publish to WordPress and check what visitors see. Agents start with `AGENTS
 |---|---|
 | `AGENTS.md` | Rules for AI agents |
 | `tasks/` | Task lists; the newest file is current |
-| `data/` | Structured data (alumni, selected publications; members, publications, news to follow) |
-| `site/` | Page generator (`build.py`), see `site/README.md` |
-| `scripts/` | WordPress REST client, backup, push with diff, public check, content test |
+| `site/data/` | Page data: members, alumni, news, home, selected publications, 484 publications |
+| `site/` | Page generator (`build.py`, `validate.py`, `push.py`), see `site/README.md` |
+| `scripts/` | Auth check, backup, readable diff, public check, content test |
 | `prototypes/` | Design prototypes (open the HTML files in a browser) |
 | `.github/workflows/` | Check site access, Publish page, Daily public check |
 
@@ -25,7 +25,7 @@ that publish to WordPress and check what visitors see. Agents start with `AGENTS
 3. **试运行**：Actions → Check site access → Run workflow。成功会显示认证结果、账户权限
    （`unfiltered_html` 决定页面能否保留 `<style>` 和 `<script>`）、所有页面的备份和公开页面检查表。
    勾选 content_test 会建一个私密测试页，直接告诉你哪些代码会被网站删掉（任务 F）。
-4. **接入生成器**：把 Codex 之前做好的生成器放进 `site/`（按 `site/README.md` 的约定）。
+4. **改内容**：改 `site/data/` 里的数据文件（或让 AI 改），提交后再发布。
 5. **发布**：Actions → Publish page，选页面，先用 `dry-run` 看差异，确认后同一页面再选 `publish`。
 6. 每天早上 8:17 自动检查一次公开页面，出问题 GitHub 会发邮件给你。
 
