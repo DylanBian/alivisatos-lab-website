@@ -111,6 +111,13 @@ def check_block_json(raw):
     return count, errors
 
 
+def annotate(level, title, message):
+    """Emit a GitHub Actions annotation (readable through the check-runs API). Never pass secrets."""
+    if os.environ.get("GITHUB_ACTIONS"):
+        msg = str(message).replace("%", "%25").replace("\r", "").replace("\n", "%0A")
+        print(f"::{level} title={title}::{msg}")
+
+
 def summary(markdown):
     """Append markdown to the GitHub Actions job summary when running in Actions; always print."""
     print(markdown)

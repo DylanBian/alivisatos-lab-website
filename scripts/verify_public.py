@@ -9,7 +9,7 @@ import argparse
 import os
 import sys
 
-from wp import api, base_url, config, load_dotenv, request, session, summary
+from wp import annotate, api, base_url, config, load_dotenv, request, session, summary
 
 CACHE_HEADERS = ["cache-control", "age", "x-cache", "server"]
 
@@ -57,6 +57,7 @@ def main():
         else:
             verdict = "pass"
         hdr = " · ".join(f"{h}: {r.headers.get(h, '-')}" for h in CACHE_HEADERS)
+        annotate("notice" if verdict == "pass" else "warning", f"Public {path}", f"HTTP {r.status_code}; {verdict}; db={', '.join(db_hits) or '-'}; served={', '.join(page_hits) or '-'}; {hdr}")
         rows.append(f"| {path} | {r.status_code} | {verdict} | {', '.join(db_hits) or '-'} | "
                     f"{', '.join(page_hits) or '-'} | {hdr} |")
 
@@ -71,6 +72,7 @@ def main():
         else:
             verdict = "pass (404)"
         hdr = " · ".join(f"{h}: {r.headers.get(h, '-')}" for h in CACHE_HEADERS)
+        annotate("notice" if verdict.startswith("pass") else "warning", f"Public {path}", f"HTTP {r.status_code}; {verdict}; {hdr}")
         rows.append(f"| {path} | {r.status_code} | {verdict} | - | - | {hdr} |")
 
     summary(f"### Public check (plain URLs, anonymous; database via {db_note})\n\n"

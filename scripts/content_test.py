@@ -3,7 +3,7 @@
 Creates (or reuses) a PRIVATE page with slug zz-content-test, saves a small sample, reads it back,
 reports what survived, then sets the page to draft. The page is never deleted.
 """
-from wp import api, request, session, summary
+from wp import annotate, api, request, session, summary
 
 SLUG = "zz-content-test"
 SAMPLE = """<style>#zz-test:has(p){outline:2px solid red}</style>
@@ -35,6 +35,7 @@ def main():
     page_id = r.json()["id"]
     saved = request(s, "GET", f"{api()}/pages/{page_id}", params={"context": "edit"}).json()["content"]["raw"]
     rows = "\n".join(f"| {name} | {'kept' if needle in saved else 'REMOVED'} |" for name, needle in CHECKS.items())
+    annotate("notice", "Content test", "; ".join(f"{n}: {'kept' if needle in saved else 'REMOVED'}" for n, needle in CHECKS.items()))
     request(s, "POST", f"{api()}/pages/{page_id}", json={"status": "draft"})
     summary(f"### Content test (page {page_id}, now draft)\n\n| Element | After save |\n|---|---|\n{rows}\n")
 
