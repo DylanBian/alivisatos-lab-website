@@ -51,13 +51,19 @@ jobs:
           if [ "$PAGES" = "all" ]; then PAGES="publications members alumni news home research"; fi
           FLAG=""
           if [ "${{ inputs.mode }}" = "publish" ]; then FLAG="--apply"; fi
+          FAILED=""
           for p in $PAGES; do
-            python site/push.py "$p" $FLAG
-            python scripts/review_diff.py "$p"
+            if python site/push.py "$p" $FLAG; then
+              python scripts/review_diff.py "$p"
+            else
+              FAILED="$FAILED $p"
+              echo "**$p: push.py stopped; see the error annotation.**" >> "$GITHUB_STEP_SUMMARY"
+            fi
           done
           if [ -z "$FLAG" ]; then
             echo "Dry run only. Re-run with mode = publish to write." >> "$GITHUB_STEP_SUMMARY"
           fi
+          if [ -n "$FAILED" ]; then echo "::error title=Pages not processed::$FAILED"; exit 1; fi
       - uses: actions/upload-artifact@v4
         if: always()
         with:
