@@ -4,7 +4,7 @@ import json
 from datetime import datetime, timezone
 from pathlib import Path
 
-from wp import config, resolve_page, session, sha256, summary
+from wp import annotate, config, resolve_page, session, sha256, summary
 
 
 def main():
@@ -29,6 +29,7 @@ def main():
             "id": p["id"], "slug": p["slug"], "status": p["status"], "modified_gmt": p["modified_gmt"],
             "title": p["title"]["raw"], "content_raw": raw, "sha256": sha256(raw)}, ensure_ascii=False, indent=1))
         rows.append(f"| {key} | {p['id']} | {p['status']} | {p['modified_gmt']} |")
+    annotate("notice", "Backup", f"{len(rows)} pages: " + " ".join(r.split('|')[1].strip()+'='+r.split('|')[3].strip() for r in rows))
     summary(f"### Backup {stamp}\n\n| Page | ID | Status | Modified (GMT) |\n|---|---|---|---|\n" + "\n".join(rows))
 
 
