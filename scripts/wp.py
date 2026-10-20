@@ -51,6 +51,8 @@ def session(auth=True):
         user = os.environ.get("WP_USER")
         password = os.environ.get("WP_APP_PASSWORD")
         if not user or not password:
+            annotate("error", "Secrets", f"Missing in this run: {'WP_USER ' if not user else ''}{'WP_APP_PASSWORD' if not password else ''}. "
+                     "Add them under Settings > Secrets and variables > Actions > Repository secrets.")
             sys.exit("WP_USER and WP_APP_PASSWORD are not set (GitHub secret or local .env).")
         s.auth = (user, password)
     return s
