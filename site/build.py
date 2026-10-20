@@ -527,6 +527,9 @@ def build_home():
 def build_research_corrections():
     raw = (ROOT / 'build/research-content.before-c.raw').read_text()
     (ROOT / 'build/research-content.raw').write_text(replace_research_citations(raw))
+    recs, _ = pubdata.load()
+    counts = Counter(t for r in recs for t in r['areas'])
+    (ROOT / 'build/research-links.json').write_text(json.dumps({a: counts[a] for a in AREA_ORDER}, indent=1))
 
 
 # ---------------------------------------------------------------- output
