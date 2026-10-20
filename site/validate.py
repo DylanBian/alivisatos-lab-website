@@ -86,10 +86,10 @@ print('alumni: 187 cards (12 with two roles shown once); sector bar; sector and 
 news = yaml.safe_load((ROOT / 'data/news.yaml').read_text())
 published = [n for n in news if n.get('publish', True)]
 ncards = roots['news'].xpath('.//article')
-assert len(published) == len(ncards) == 10
+assert len(published) == len(ncards) == 13
 assert all(n.get('verified') and n.get('source_url', '').startswith('https://') for n in published)
 assert 'Editors’ Highlights' in fragments['news']
-print('news: 10 verified items, each with a source link')
+print('news: 13 verified items, each with a source link')
 
 # Publications
 selected = yaml.safe_load((ROOT / 'data/selected_publications.yaml').read_text())

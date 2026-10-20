@@ -153,3 +153,30 @@
   source_url: https://news.uchicago.edu/story/uchicago-president-paul-alivisatos-shares-2024-kavli-prize-nanoscience
   verified: true
   publish: true
+- id: news-011
+  title_html: Barry Wu becomes a Ph.D. candidate
+  image_url: https://alivisatoslab.uchicago.edu/files/2025/03/IMG_8223.png
+  image_alt: Group photo, February 2025, celebrating Binyu (Barry) Wu becoming a Ph.D. candidate
+  template_html: '<article aria-labelledby="news-item-11"><img src="@@IMAGE_URL@@" alt="@@IMAGE_ALT@@" loading="lazy"><div><p><time datetime="2025-02">February 2025 · People</time></p><h2 id="news-item-11">@@TITLE_HTML@@</h2><p>Congratulations to Binyu (Barry) Wu on becoming a Ph.D. candidate.</p><p><a href="https://alivisatoslab.uchicago.edu/gallery/">See photos in the Gallery</a></p></div></article>'
+  source_url: https://alivisatoslab.uchicago.edu/gallery/
+  verified: true
+  publish: true
+  note: People news; fact and date from the Gallery photo caption (checked 2026-10-20).
+- id: news-012
+  title_html: Chenqi Fan becomes a Ph.D. candidate
+  image_url: https://alivisatoslab.uchicago.edu/files/2024/11/IMG_5551.jpg
+  image_alt: Group photo, October 2024, celebrating Chenqi Fan becoming a Ph.D. candidate
+  template_html: '<article aria-labelledby="news-item-12"><img src="@@IMAGE_URL@@" alt="@@IMAGE_ALT@@" loading="lazy"><div><p><time datetime="2024-10">October 2024 · People</time></p><h2 id="news-item-12">@@TITLE_HTML@@</h2><p>Congratulations to Chenqi Fan on becoming a Ph.D. candidate.</p><p><a href="https://alivisatoslab.uchicago.edu/gallery/">See photos in the Gallery</a></p></div></article>'
+  source_url: https://alivisatoslab.uchicago.edu/gallery/
+  verified: true
+  publish: true
+  note: People news; fact and date from the Gallery photo caption (checked 2026-10-20).
+- id: news-013
+  title_html: Welcome, Sungsu Kang
+  image_url: https://alivisatoslab.uchicago.edu/files/2024/11/IMG_5460.jpg
+  image_alt: Group photo, October 2024, welcoming Sungsu Kang to the group
+  template_html: '<article aria-labelledby="news-item-13"><img src="@@IMAGE_URL@@" alt="@@IMAGE_ALT@@" loading="lazy"><div><p><time datetime="2024-10">October 2024 · People</time></p><h2 id="news-item-13">@@TITLE_HTML@@</h2><p>Dr. Sungsu Kang joined the group as a postdoctoral researcher.</p><p><a href="https://alivisatoslab.uchicago.edu/gallery/">See photos in the Gallery</a></p></div></article>'
+  source_url: https://alivisatoslab.uchicago.edu/gallery/
+  verified: true
+  publish: true
+  note: People news; fact and date from the Gallery photo caption (checked 2026-10-20).

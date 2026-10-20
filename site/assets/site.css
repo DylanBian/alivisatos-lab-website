@@ -70,6 +70,7 @@
 .ag-site-root .ag-site-sector-industry { background: #4d6f8f; }
 .ag-site-root .ag-site-sector-institute { background: #6a8a74; }
 .ag-site-root .ag-site-sector-unlisted { background: #d7d1cf; }
+.ag-site-root .ag-site-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; }
 .ag-site-root .ag-site-alumni-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 14px; }
 .ag-site-root .ag-site-alumni-card { padding: 14px 16px; border: 1px solid var(--ag-line); border-left: 3px solid var(--ag-maroon); border-radius: 6px; background: #fff; }
 .ag-site-root .ag-site-alumni-name { margin: 0 0 .25rem; color: var(--ag-ink); font-size: 1.02rem; font-weight: 600; line-height: 1.3; }
@@ -90,6 +91,7 @@
 .ag-site-root .ag-site-card-title { margin: 0 0 10px; color: var(--ag-ink); font-size: 1.18rem; font-weight: 600; line-height: 1.32; }
 .ag-site-root .ag-site-card-title a { color: inherit; text-decoration: none; }
 .ag-site-root .ag-site-card-title a:hover { color: var(--ag-maroon); }
+.ag-site-root .ag-site-badge { display: inline-block; margin-left: 6px; padding: 2px 8px; border-radius: 12px; background: var(--ag-maroon); color: #fff; font-size: .66rem; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; vertical-align: middle; }
 .ag-site-root .ag-site-card-copy { margin: 0 0 14px; color: var(--ag-text); line-height: 1.62; }
 .ag-site-root .ag-site-source { margin: auto 0 0; padding-top: 6px; font-size: .9rem; }
 .ag-site-root .ag-site-news-placeholder { display: flex; height: 150px; align-items: center; justify-content: center; background: var(--ag-soft); color: var(--ag-maroon); font-size: 2rem; font-weight: 300; }
@@ -166,8 +168,10 @@
   .ag-site-root .ag-site-pi { grid-template-columns: 1fr; }
   .ag-site-root .ag-site-pi-photo { max-width: 240px; }
   .ag-site-root .ag-site-filter-label { min-width: 100%; }
-  .ag-site-root .ag-site-member-grid { grid-template-columns: repeat(auto-fill, minmax(min(100%, 150px), 1fr)); gap: 14px; }
-  .ag-site-root .ag-site-member-body { padding: 10px 12px 12px; }
+  .ag-site-root .ag-site-member-grid { grid-template-columns: 1fr; gap: 12px; }
+  .ag-site-root .ag-site-member-card { flex-direction: row; align-items: flex-start; border-top: 3px solid var(--ag-maroon); }
+  .ag-site-root .ag-site-member-photo { flex: 0 0 104px; width: 104px; height: 104px; margin: 12px 0 12px 12px; border-radius: 6px; }
+  .ag-site-root .ag-site-member-body { padding: 12px 14px 14px; border-top: 0; }
   .ag-site-root .ag-site-pub { grid-template-columns: 2.4rem minmax(0, 1fr); }
   .ag-site-root .ag-site-selected { padding: 18px 16px; }
   .ag-site-root .ag-site-paper { grid-template-columns: 1fr; }

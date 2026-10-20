@@ -1,0 +1,22 @@
+# Featured paper per research area on the home page ("Explore Our Research").
+# Default: the first paper listed under that area on the Research page (group-curated). Replace freely.
+- area: synthesis
+  doi: 10.1021/acs.accounts.4c00708
+  title: Thermodynamics and Modeling of Collective Effects in the Organic Ligand Shell of Colloidal Quantum Dots
+  journal: Acc. Chem. Res.
+  year: 2025
+- area: lctem
+  doi: 10.1021/acsnano.5c07437
+  title: Chemically Tailorable Dissolution Pathways of Individual Cu<sub>3</sub>As Nanocrystals
+  journal: ACS Nano
+  year: 2025
+- area: spectroscopy
+  doi: 10.1038/s41467-025-60848-5
+  title: Non-monotonic Size-Dependent Exciton Radiative Lifetime in CsPbBr<sub>3</sub> Nanocrystals
+  journal: Nat. Commun.
+  year: 2025
+- area: quantum
+  doi: 10.1021/acsnano.4c04083
+  title: Coherent Erbium Spin Defects in Colloidal Nanocrystal Hosts
+  journal: ACS Nano
+  year: 2024

@@ -155,7 +155,7 @@ def build_alumni():
     for s in sectors:
         tid = f'alumni-sector-{s}'
         targets.append(tid)
-        sector_chips.append(chip(f'#{tid}', sector_labels[s], counts[s]))
+        sector_chips.append(chip(f'#{tid}', sector_labels[s], counts[s]).replace('">', f'"><span class="ag-site-dot ag-site-sector-{s}" aria-hidden="true"></span>', 1))
         css.append(filter_css('ag-site-alumni', tid, f'.ag-site-alumni-card:not([data-sector="{s}"])', f'#{tid}'))
         statuses.append(f'<p class="ag-site-filter-status ag-site-status-{tid}">Showing {counts[s]} alumni: {esc(sector_labels[s])}.<a class="{NOSCROLL}" href="#alumni-all">Show all</a></p>')
     role_chips = []
@@ -225,6 +225,8 @@ def news_card(record):
             p.set('class', 'ag-site-kicker')
     for h in art.xpath('.//h2'):
         h.set('class', 'ag-site-card-title')
+        for span in h.xpath('.//span'):
+            span.set('class', 'ag-site-badge')
     for p in art.xpath('./div//p'):
         if not p.get('class'):
             p.set('class', 'ag-site-card-copy')
@@ -235,6 +237,8 @@ def news_card(record):
     if not source.startswith('https://'):
         raise ValueError('HTTPS source link required')
     container = content[0] if content else art
+    if source in art.xpath('.//a/@href'):
+        return tree.tostring(art, encoding='unicode', method='html')  # the card already links to its source
     p = tree.fragment_fromstring(f'<p class="ag-site-source"><a class="ag-site-link" href="{esc(source)}" target="_blank" rel="noopener noreferrer">Source</a></p>')
     container.append(p)
     return tree.tostring(art, encoding='unicode', method='html')
@@ -248,7 +252,9 @@ def build_news():
             continue
         if not r.get('source_url') or not r.get('verified'):
             raise ValueError(f'Published News item lacks a verified source: {r["id"]}')
-        cards.append(news_card(r))
+        when = re.search(r'datetime="([0-9-]+)"', r['template_html'])
+        cards.append((when.group(1) if when else '0000', news_card(r)))
+    cards = [c for _, c in sorted(cards, key=lambda x: x[0], reverse=True)]  # newest first
     module = ('<!-- AUTO:news:START -->\n<div class="ag-site-root ag-site-news">'
               '<h1 class="ag-site-title">News</h1><p class="ag-site-lede">Research highlights, people, group visits and community events.</p>'
               '<div class="ag-site-news-grid">' + ''.join(cards) + '</div></div>\n<!-- AUTO:news:END -->')
@@ -478,6 +484,8 @@ def build_home():
         rendered = item['template_html'].replace('@@TITLE_HTML@@', item['title_html'])
         root = strip_styles(rendered)
         art = root.xpath('.//article')[0]
+        for span in art.xpath('.//h3//span'):
+            span.set('class', 'ag-site-badge')
         art.set('class', 'ag-site-home-paper')
         ps = art.xpath('./p')
         if ps:
@@ -497,7 +505,7 @@ def build_home():
         key = key_papers.get(area)
         key_html = ''
         if key:
-            key_html = (f'<p class="ag-site-area-key"><span class="ag-site-area-key-label">Key paper</span>'
+            key_html = (f'<p class="ag-site-area-key"><span class="ag-site-area-key-label">Featured paper</span>'
                         f'<a href="https://doi.org/{esc(key["doi"])}" target="_blank" rel="noopener noreferrer">{key["title"]}</a> '
                         f'<i>{esc(key["journal"])}</i> {key["year"]}</p>')
         areas.append(f'<div class="ag-site-area-card"><h3><a href="{SITE}/research/#{area}">{esc(label)}</a></h3>{key_html}'
