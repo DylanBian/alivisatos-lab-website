@@ -62,10 +62,12 @@
   - Sungsu Kang
   open_access: false
   status: verified
-  image: ''
+  image: https://alivisatoslab.uchicago.edu/files/2026/10/fig1-s44160-026-01015-6.png
   highlight: ''
   publication_date: '2026-03-11'
   homepage_summary: A kinetic framework explains cation-exchange transformations from Cu3As into InAs and GaAs nanocubes.
+  image_alt: 'Figure 1: kinetic-controlled transformations of group-III arsenide nanocubes'
+  image_credit: Figure 1 from Wu, B. et al. Nat. Synth. 2026, 5, 660–668. Copyright Springer Nature.
 - doi: 10.1557/s43577-025-00958-z
   year: 2025
   area: lctem
@@ -92,10 +94,12 @@
   - Amanda S. Brewer
   open_access: true
   status: verified
-  image: ''
+  image: https://alivisatoslab.uchicago.edu/files/2026/01/43577_2025_958_Figk_HTML.jpg
   highlight: ''
   publication_date: '2025-10-23'
   homepage_summary: A perspective on using multimodal observations to advance nanoscience.
+  image_alt: 'Graphical abstract: precision nanoscience aided by multimodal observations'
+  image_credit: Graphical abstract from Yang, S. et al. MRS Bull. 2025, 50, 1325–1340, licensed under CC BY 4.0.
 - doi: 10.1021/acsnano.5c07437
   year: 2025
   area: lctem
@@ -141,10 +145,12 @@
   - Daqian Bian
   open_access: true
   status: verified
-  image: ''
+  image: https://alivisatoslab.uchicago.edu/files/2026/10/fig1-s41467-025-60992-y.png
   highlight: ''
   article_number: '5803'
   publication_date: '2025-07-01'
+  image_alt: 'Figure 1: up-conversion in CsPbBr3 nanocrystals'
+  image_credit: Figure 1 from Abbas, A. S. et al. Nat. Commun. 2025, 16, 5803, licensed under CC BY-NC-ND 4.0.
 - doi: 10.1021/acs.accounts.4c00708
   year: 2025
   area: synthesis
@@ -275,9 +281,11 @@
   - Amanda S. Brewer
   open_access: false
   status: verified
-  image: ''
+  image: https://alivisatoslab.uchicago.edu/files/2026/10/fig1-s44160-022-00025-4.jpg
   highlight: ''
   publication_date: '2022-02-10'
+  image_alt: 'Figure 1: organic ligand shell structures in colloidal nanocrystal synthesis'
+  image_credit: Figure 1 from Calvin, J. J.; Brewer, A. S.; Alivisatos, A. P. Nat. Synth. 2022, 1, 127–137, licensed under CC BY-NC 4.0.
 - doi: 10.1021/acs.chemmater.5c02301
   year: 2025
   area: synthesis
