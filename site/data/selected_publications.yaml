@@ -29,10 +29,12 @@
   - Binyu Wu
   open_access: false
   status: verified
-  image: ''
+  image: https://alivisatoslab.uchicago.edu/files/2026/10/toc-jacs-6c08238.jpg
   highlight: ''
   publication_date: '2026-06-18'
   homepage_summary: Liquid-cell electron microscopy reveals atomic-scale changes in gold nanocrystals in reactive liquids.
+  image_alt: 'Table of contents graphic: millisecond atomic dynamics of gold nanocrystals in liquid'
+  image_credit: Reprinted with permission from Kang, S. et al. J. Am. Chem. Soc. 2026, 148, 26845–26853. Copyright 2026 American Chemical Society.
 - doi: 10.1038/s44160-026-01015-6
   year: 2026
   area: synthesis
@@ -121,9 +123,12 @@
   - Sungsu Kang
   open_access: false
   status: verified
-  image: ''
+  image: https://alivisatoslab.uchicago.edu/files/2026/10/toc-acsnano-5c07437.jpg
   highlight: ''
   publication_date: '2025-09-03'
+  image_alt: 'Table of contents graphic: dissolution pathways of individual Cu3As nanocrystals followed by liquid cell TEM'
+  image_credit: Reprinted with permission from Yang, S.; Wu, B.; Liu, C.; Kang, S.; Alivisatos, A. P. ACS Nano 2025, 19, 32291–32298. Copyright 2025 American Chemical
+    Society.
 - doi: 10.1038/s41467-025-60992-y
   year: 2025
   area: spectroscopy
@@ -167,9 +172,12 @@
   - Amanda S. Brewer
   open_access: false
   status: verified
-  image: ''
+  image: https://alivisatoslab.uchicago.edu/files/2026/10/toc-accounts-4c00708.jpg
   highlight: ''
   publication_date: '2024-12-31'
+  image_alt: 'Table of contents graphic: collective effects in the organic ligand shell of colloidal quantum dots'
+  image_credit: Reprinted with permission from Calvin, J. J.; Brewer, A. S.; Alivisatos, A. P. Acc. Chem. Res. 2025, 58, 271–280. Copyright 2025 American Chemical
+    Society.
 - doi: 10.1021/acsnano.4c04083
   year: 2024
   area: quantum
@@ -199,9 +207,11 @@
   - Yuxuan Zhang
   open_access: false
   status: verified
-  image: ''
+  image: https://alivisatoslab.uchicago.edu/files/2026/10/toc-acsnano-4c04083.png
   highlight: ''
   publication_date: '2024-07-09'
+  image_alt: 'Table of contents graphic: coherent erbium spin defects in cerium dioxide nanocrystals'
+  image_credit: Reprinted with permission from Wong, J. et al. ACS Nano 2024, 18, 19110–19123. Copyright 2024 American Chemical Society.
 - doi: 10.1073/pnas.2307633121
   year: 2024
   area: synthesis
