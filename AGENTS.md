@@ -12,8 +12,21 @@ Current tasks live in `tasks/`. The newest task file is the one to follow.
 - A caching proxy (`envoy`, `max-age` about 3600 s) sits in front of the site. Plain URLs, and anonymous REST
   responses too, can show old versions for a while after a change, and different networks can get different versions.
   The source of truth for "published" is an **authenticated** REST read (`context=edit`); plain URLs show what visitors see.
-- Site administrators on Voices probably lack `unfiltered_html`; `<script>` and likely `<style>` are removed on save.
-  `scripts/auth_check.py` reports this; `scripts/content_test.py` confirms it (task F).
+- REST with the Application Password works on `https://voices.uchicago.edu/alivisatosgroup/wp-json/`; the
+  `alivisatoslab.uchicago.edu/wp-json/` host drops the Authorization header.
+- What survives saving page content (tested 2026-10-20 on the private test page `zz-content-test`, id 2081):
+  - Removed: `<style>`, `<script>`, `<input>`, `<svg>`; inline CSS properties outside WordPress's safe list
+    (for example `box-shadow`, `overflow-wrap`, `transform`, `transition`, `filter`, `inset`).
+  - Kept: `<details name>`, `<time>`, `<nav>`, `<wbr>`, `data-*`, `aria-*`; inline `clamp()`, `min()`, `var()`,
+    `aspect-ratio`, grid and flex properties (spaces after `:` and `;` are normalized away).
+  - **Divi module Free-Form CSS** (`css.desktop.value.freeForm` on the Code module) is kept as written, except that
+    `>` becomes `&gt;`; Divi prints it in a `<style>` element on that page only. All generated styles live there
+    (`site/build/<page>.css`), so never use the child combinator `>` in `site/assets/site.css`.
+  - Divi intercepts clicks on in-page `#links` for smooth scrolling unless the link has class
+    `et_smooth_scroll_disabled`. Filters use `:target`, so every filter link carries that class.
+- A saved page larger than about 1,000,000 characters comes back **empty** (PHP regex backtrack limit). 879,405 chars
+  saved fine; 1,074,426 did not (2026-10-20 incident, restored from revision 2079). `push.py` refuses anything over
+  850,000 characters, and writes the previous content back at once if a save loses the AUTO module.
 - Maintainer: Dylan Bian. Lab administrator: Freddie Sharmini. Lab address: GCIS E247H, 929 E 57th Street, Chicago, IL 60637.
 - The only public contact for inquiries and applications is **alivisatos-lab@uchicago.edu**. Students and postdocs are
   never listed as recipients of inquiries, applications or CVs (HR and privacy policy).
@@ -22,7 +35,14 @@ Current tasks live in `tasks/`. The newest task file is the one to follow.
 1. Agents change files in this repository (data, generator, tasks) on a branch and open a pull request.
 2. Dylan reviews and merges.
 3. Publishing happens only through GitHub Actions: **Publish page** with `mode = dry-run` (diff in the run summary),
-   then the same page with `mode = publish`. Each run backs up every page first (artifact, 90 days) and runs the public check.
+   then the same page with `mode = publish`, and only after Dylan says so. Each run backs up every page first
+   (artifact, 90 days), stops at the first page that fails, reports what WordPress changed (round-trip report) and runs
+   the public check.
+   - Before publishing a new kind of markup, stage it on the private test page (`zz-content-test`) and compare the
+     saved module with the build.
+   - **Restore page from revision** puts back the newest WordPress revision saved before a given UTC time.
+   - **Fetch publication metadata** refreshes Crossref and OpenAlex data in `site/data/metadata/` (abstracts are
+     stored encrypted; they are used for tagging only and never published).
 4. **Daily public check** runs every morning and fails loudly if forbidden text or the Positions page becomes visible.
 5. Record every publish in `CHANGELOG.md` (page, date, run link, result of the public check).
 
@@ -36,6 +56,11 @@ Current tasks live in `tasks/`. The newest task file is the one to follow.
 - Minimal, targeted edits. Never rebuild a page from rendered HTML. Preserve Divi attributes, classes and IDs.
 - `site/push.py` replaces content only between AUTO markers in the live `content.raw` (see `site/README.md`).
 - Page data lives in `site/data/`; edit data and templates, never the generated files in `site/build/` by hand.
+  - `members.yaml`: structured people records. When someone leaves, move the entry to `alumni.yaml` with `end: <year>`.
+  - `publications.csv` (the list), `metadata/works.json` (Crossref/OpenAlex), `publication_tags.yaml` (tags; set
+    `tag_source: human` on any entry you correct so AI runs never overwrite it), `tags.yaml` (allowed tags and their
+    definitions), `selected_publications.yaml`, `key_papers.yaml` (featured paper per research area on the home page).
+  - Current members are bolded in author lists only by full-name match on Crossref authors, never by initials.
 - Never delete pages, media, menus or users. To take a page offline, set it to private.
 - Do not install plugins, change themes, change global Divi settings (including Theme Options > Integration),
   or edit other sites on the network.
