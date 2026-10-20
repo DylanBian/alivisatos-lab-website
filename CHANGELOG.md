@@ -4,6 +4,13 @@ Record every publish: date (UTC), page, Actions run link, public-check result.
 
 ## 2026-10-20
 
+### 13:52 UTC publish run 39434123477 (page all, publish, approved by Dylan): all pages published
+- Research (links to each area's publication list), News, Home, Members, Alumni, Publications. Every page read back
+  identical to the build (round-trip report). Public check: all pages pass, `/positions/` 404.
+- Checked as a logged-out visitor in Chrome: Members 20 people, 262 px photos, no banner, contact block; Publications
+  484 papers, filters work by link and by click; Alumni filters; Home featured papers and contact; News 13 items.
+- 13:55 UTC run 39434619172: Publications filter status text punctuation; read-back identical.
+
 ### 10:47 UTC publish run 39410422524 (page all, publish): partial, one page restored
 - Research: published (three journal labels).
 - Publications: the 1,074,426-character save came back **empty**. Restored at 10:55 UTC from revision 2079
