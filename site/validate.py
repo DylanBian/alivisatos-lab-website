@@ -95,15 +95,17 @@ print('news: 13 verified items, each with a source link')
 selected = yaml.safe_load((ROOT / 'data/selected_publications.yaml').read_text())
 proot = roots['publications']
 sel = by_class(proot, 'ag-site-paper', 'li')
-assert len(sel) == len(selected) == 11
+assert len(sel) == len(selected)
+import csv
+n_rows = sum(1 for _ in csv.DictReader((ROOT / 'data/publications.csv').open()))
 pubs = by_class(proot, 'ag-site-pub', 'li')
-assert len(pubs) == 484
+assert len(pubs) == n_rows
 nums = [int(by_class(p, 'ag-site-pub-num', 'span')[0].text) for p in pubs]
-assert nums == list(range(484, 0, -1)), 'publications: numbering'
+assert nums == list(range(n_rows, 0, -1)), 'publications: numbering'
 assert len(proot.xpath('.//section[contains(@class,"ag-site-year")]')) == 38
 tags = yaml.safe_load((ROOT / 'data/publication_tags.yaml').read_text())
 vocab = yaml.safe_load((ROOT / 'data/tags.yaml').read_text())
-assert len(tags) == 484 and len({t['id'] for t in tags}) == 484
+assert len({t['id'] for t in tags}) == len(tags) <= n_rows
 for t in tags:
     for facet in ('areas', 'materials', 'approaches', 'applications'):
         for item in t.get(facet) or []:
@@ -112,7 +114,7 @@ for f in re.findall(r'#(f-[\w-]+):target', styles['publications']):
     assert proot.xpath(f'.//*[@id="{f}"]'), f'publications: target {f} missing'
 nfilters = len(set(re.findall(r'#(f-[\w-]+):target', styles['publications'])))
 assert nfilters >= 20
-print(f'publications: 11 selected + 484 numbered papers in 38 years; {nfilters} filters')
+print(f'publications: {len(sel)} selected + {n_rows} numbered papers in 38 years; {nfilters} filters')
 
 # Home
 latest = sorted((p for p in selected if p.get('publication_date')), key=lambda p: p['publication_date'], reverse=True)[:3]

@@ -114,7 +114,9 @@ def load():
             rec['type'] = 'perspective'
         else:
             rec['type'] = 'article'
-        rec['oa'] = bool((oa.get('open_access') or {}).get('is_oa'))
+        # Open access by journal: only papers in fully open-access journals (OpenAlex source.is_oa; gold or diamond).
+        # Free copies in repositories (green), free-to-read (bronze) and hybrid articles do not count (Dylan, 2026-10-20).
+        rec['oa'] = bool(((oa.get('primary_location') or {}).get('source') or {}).get('is_oa'))
         rec['journal_group'] = next((slug for slug, _, names in JOURNAL_GROUPS if rec['journal'] in names), '')
         rec['crossref_authors'] = [' '.join(x for x in (a.get('given', ''), a.get('family', '')) if x) for a in (cr.get('author') or [])] if rec['source'] == 'crossref' else []
         t = tags.get(row['id']) or {}

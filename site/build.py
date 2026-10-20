@@ -290,6 +290,7 @@ def current_matches(paper):
     return [a for a in paper.get('authors', []) if norm(a) in member_aliases]
 
 
+OA_JOURNAL_DOIS = {r['doi'] for r in pubdata.load()[0] if r['oa']}
 eligible = []
 seen = set()
 for paper in selected_source:
@@ -313,8 +314,8 @@ def render_selected_paper(paper):
     doi_url = 'https://doi.org/' + paper['doi']
     meta = [f'<span class="ag-site-citation">{esc(citation_details(paper))}</span>'] if citation_details(paper) else []
     meta.append(f'<a class="ag-site-paper-doi" href="{esc(doi_url)}" target="_blank" rel="noopener noreferrer">DOI</a>')
-    if paper.get('open_access'):
-        meta.append('<span class="ag-site-open-access">Open access</span>')
+    if paper['doi'].lower() in OA_JOURNAL_DOIS:
+        meta.append('<span class="ag-site-open-access">Open access journal</span>')
     return (f'<li class="ag-site-paper"><span class="ag-site-paper-year">{int(paper["year"])}</span>'
             f'<div class="ag-site-paper-body"><span class="ag-site-paper-journal">{esc(paper["journal"])}</span>'
             f'<h3 class="ag-site-paper-title">{paper["title"]}</h3><p class="ag-site-paper-authors">{"; ".join(authors)}</p>'
@@ -385,8 +386,8 @@ def build_publications():
             add_filter(tid, f't-type-{slug}', label, type_counts[slug])
             type_chips.append(chip(f'#{tid}', label, type_counts[slug]))
     oa_count = sum(r['oa'] for r in recs)
-    add_filter('f-oa', 't-oa', 'Open access', oa_count)
-    type_chips.append(chip('#f-oa', 'Open access', oa_count))
+    add_filter('f-oa', 't-oa', 'Open access journal', oa_count)
+    type_chips.append(chip('#f-oa', 'Open access journal', oa_count))
     groups.append(('type', f'<div class="ag-site-filter-group"><span class="ag-site-filter-label">Type</span>{"".join(type_chips)}</div>'))
     jcounts = Counter(r['journal_group'] for r in recs if r['journal_group'])
     jchips = []
@@ -430,7 +431,7 @@ def build_publications():
             if r['type'] != 'article':
                 pills.append(f'<span class="ag-site-pt-type">{esc(TAGS["types"][r["type"]]["label"])}</span>')
             if r['oa']:
-                pills.append('<span class="ag-site-pt-oa">Open access</span>')
+                pills.append('<span class="ag-site-pt-oa">Open access journal</span>')
             tags_html = f'<p class="ag-site-pub-tags">{"".join(pills)}</p>' if pills else ''
             items.append(f'<li class="{" ".join(classes)}" id="{esc(r["id"])}"><span class="ag-site-pub-num">{number}</span>'
                          f'<div class="ag-site-pub-body"><h3 class="ag-site-pub-title">{title_html}</h3>'
