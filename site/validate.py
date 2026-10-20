@@ -76,14 +76,14 @@ print(f'members: {len(cards)} people; research links; emails; contact block; no 
 alumni = yaml.safe_load((ROOT / 'data/alumni.yaml').read_text())
 acards = by_class(roots['alumni'], 'ag-site-alumni-card', 'article')
 assert len(alumni) == len(acards) == 187 and len({r['name'] for r in alumni}) == 187
-assert sum(1 for c in acards if sum(x.startswith('ag-site-r-') for x in classes(c)) > 1) == 12
+assert sum(1 for c in acards if sum(x.startswith('ag-site-r-') for x in classes(c)) > 1) == 11  # Ophir Klein: undergraduate (Dylan, 2026-10-20)
 segments = by_class(roots['alumni'], 'ag-site-sector-segment', 'span')
 assert len(segments) == 3 and all(re.fullmatch(r'width:\d+\.\d\d%', s.get('style', '')) for s in segments)
 assert ':target' in styles['alumni']
 for r in alumni:
     if r.get('verified'):  # a confirmed position needs both the position page and the identity tie to the group
         assert str(r.get('source', '')).startswith('http') and str(r.get('identity', '')).startswith('http'), f'alumni: {r["name"]} verified without source and identity'
-print('alumni: 187 cards (12 with two roles shown once); sector bar; sector and role filters; verified entries carry identity ties')
+print('alumni: 187 cards (11 with two roles shown once); sector bar; sector and role filters; verified entries carry identity ties')
 
 # News
 news = yaml.safe_load((ROOT / 'data/news.yaml').read_text())
