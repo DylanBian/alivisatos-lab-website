@@ -39,8 +39,12 @@ def base_url():
     return os.environ.get("WP_BASE", config()["base_url"]).rstrip("/")
 
 
+def api_base_url():
+    return os.environ.get("WP_API_BASE", config().get("api_base_url", config()["base_url"])).rstrip("/")
+
+
 def api():
-    return base_url() + "/wp-json/wp/v2"
+    return api_base_url() + "/wp-json/wp/v2"
 
 
 def session(auth=True):

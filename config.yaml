@@ -1,5 +1,10 @@
 # Site configuration shared by all scripts.
 base_url: https://alivisatoslab.uchicago.edu
+# REST base for authenticated calls. Set after the auth check shows which host passes the login through.
+api_base_url: https://alivisatoslab.uchicago.edu
+api_base_candidates:
+  - https://alivisatoslab.uchicago.edu
+  - https://voices.uchicago.edu/alivisatosgroup
 
 # Public pages: key -> WordPress page id (int) or slug (str, resolved at run time).
 pages:
