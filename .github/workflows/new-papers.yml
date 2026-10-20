@@ -1,0 +1,38 @@
+name: Check for new papers
+
+# Finds group papers not yet on the Publications page and opens a pull request with drafts.
+# Never writes to WordPress. To run it weekly, uncomment the schedule below.
+on:
+  workflow_dispatch:
+  # schedule:
+  #   - cron: "23 14 * * 1"
+
+permissions:
+  contents: write
+  pull-requests: write
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests pyyaml
+      - run: python scripts/find_new_papers.py
+      - name: Open a pull request when there are candidates
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          if git diff --quiet -- site/drafts && [ -z "$(git ls-files --others --exclude-standard site/drafts)" ]; then
+            echo "No change in drafts"; exit 0
+          fi
+          BRANCH="new-papers-$(date +%Y%m%d)"
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git checkout -b "$BRANCH"
+          git add site/drafts
+          git commit -m "New-paper candidates from OpenAlex"
+          git push origin "$BRANCH"
+          gh pr create --title "New-paper candidates" --body "Drafts from scripts/find_new_papers.py. Review before adding to publications.csv." --base main --head "$BRANCH"
