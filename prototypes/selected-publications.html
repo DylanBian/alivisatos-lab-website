@@ -1,0 +1,258 @@
+<title>Alivisatos Group Selected Publications</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap">
+<style>
+/* Layout: same system as the Alumni prototype. Intro, research-area filter, then one section per area with a year column beside each paper. */
+:root {
+  --bg: #fcfbfb;
+  --surface: #f4f0f0;
+  --fg: #1f1a1b;
+  --muted: #6b6264;
+  --line: #e5dfe0;
+  --accent: #800000;
+  --accent-soft: #f4e7e7;
+  --oa: #2f6b4f;
+  --font-display: "Source Serif 4", "Iowan Old Style", Georgia, serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #161314; --surface: #211c1d; --fg: #eeeaea; --muted: #a59c9e; --line: #342d2f;
+    --accent: #e8908f; --accent-soft: #3a2324; --oa: #7cc6a0;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #161314; --surface: #211c1d; --fg: #eeeaea; --muted: #a59c9e; --line: #342d2f;
+  --accent: #e8908f; --accent-soft: #3a2324; --oa: #7cc6a0;
+  color-scheme: dark;
+}
+
+body { background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 15px; line-height: 1.5; }
+.ag-pubs {
+  max-width: 980px; margin: 0 auto;
+  padding-block: 32px 56px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid; gap: 28px;
+}
+.proto { justify-self: start; font-size: 12px; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 3px 10px; }
+
+.intro { display: grid; gap: 10px; max-width: 66ch; }
+.eyebrow { font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
+h1 { font-family: var(--font-display); font-weight: 600; font-size: clamp(32px, 6vw, 46px); line-height: 1.05; margin: 0; text-wrap: balance; }
+.lede { margin: 0; font-size: 17px; color: var(--muted); }
+
+.toolbar { display: grid; gap: 12px; padding-bottom: 14px; border-bottom: 2px solid var(--fg); }
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip {
+  font: inherit; font-size: 14px; display: inline-flex; align-items: center; gap: 8px;
+  padding: 6px 12px; border: 1px solid var(--line); border-radius: 999px;
+  background: var(--bg); color: var(--fg); cursor: pointer;
+}
+.chip:hover { border-color: var(--muted); }
+.chip[aria-pressed="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+.chip .n { font-variant-numeric: tabular-nums; color: var(--muted); }
+.chip[aria-pressed="true"] .n { color: inherit; opacity: .75; }
+.member-row { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; font-size: 14px; color: var(--muted); }
+.member-row select {
+  font: inherit; font-size: 14px; color: var(--fg); background: var(--bg);
+  border: 1px solid var(--line); border-radius: 8px; padding: 6px 10px; max-width: 100%;
+}
+
+.area { display: grid; gap: 6px; scroll-margin-top: 16px; }
+.area-head { display: grid; gap: 4px; padding-top: 6px; }
+.area-head h2 { font-family: var(--font-display); font-weight: 600; font-size: 24px; margin: 0; text-wrap: balance; }
+.area-head p { margin: 0; color: var(--muted); max-width: 66ch; }
+.area-head a { color: var(--accent); font-size: 14px; text-decoration: none; justify-self: start; }
+.area-head a:hover { text-decoration: underline; }
+
+.papers { list-style: none; margin: 0; padding: 0; }
+.paper {
+  display: grid; grid-template-columns: 52px minmax(0, 1fr); column-gap: 16px;
+  padding: 16px 0; border-bottom: 1px solid var(--line);
+}
+.year {
+  font-family: var(--font-display); font-weight: 500; font-size: 20px; line-height: 1.2;
+  font-variant-numeric: tabular-nums lining-nums; color: var(--muted);
+}
+.body { display: grid; gap: 4px; min-width: 0; }
+.journal { font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.title { font-weight: 600; font-size: 16px; line-height: 1.35; text-wrap: pretty; }
+.authors { font-size: 13.5px; color: var(--muted); }
+.authors b { color: var(--fg); font-weight: 600; }
+.meta { display: flex; flex-wrap: wrap; gap: 6px 12px; align-items: center; font-size: 13.5px; margin-top: 2px; }
+.cite i { font-style: italic; }
+.doi {
+  font-size: 12.5px; font-weight: 500; color: var(--accent); text-decoration: none;
+  border: 1px solid var(--line); border-radius: 6px; padding: 2px 8px;
+}
+.doi:hover { border-color: var(--accent); }
+.oa { font-size: 11px; font-weight: 600; letter-spacing: .05em; text-transform: uppercase; color: var(--oa); }
+
+.empty { color: var(--muted); padding: 20px 0; }
+.foot { font-size: 14px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 16px; }
+
+button:focus-visible, select:focus-visible, a:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+@media (max-width: 480px) {
+  .paper { grid-template-columns: 1fr; row-gap: 2px; }
+  .year { font-size: 15px; }
+}
+</style>
+
+<section class="ag-pubs">
+  <span class="proto">Prototype · top of the Publications page · citations from Crossref</span>
+
+  <header class="intro">
+    <span class="eyebrow">Publications</span>
+    <h1>Selected Publications</h1>
+    <p class="lede">Recent work by current members of the group, organized by research area. The complete list from 1983 onward follows below.</p>
+  </header>
+
+  <div class="toolbar">
+    <div class="chips" id="area-chips" role="group" aria-label="Filter by research area"></div>
+    <div class="member-row">
+      <label for="member">Group member</label>
+      <select id="member"></select>
+    </div>
+  </div>
+
+  <div id="areas" style="display:grid;gap:32px"></div>
+  <p class="empty" id="empty" hidden>No selected publications match this filter.</p>
+
+  <p class="foot">Names in bold are current group members. Full publication list by year continues below.</p>
+</section>
+
+<script>
+const AREAS = [
+  { id: "synthesis", name: "Synthesis and Properties", blurb: "Nucleation, chemical transformation and the thermodynamics of the organic ligand shell in colloidal nanocrystals." },
+  { id: "lctem", name: "Electron Microscopy in Liquid", blurb: "Atomic-resolution imaging of nanocrystal reactions in liquid, developed with the NSF MOSAIC center." },
+  { id: "spectroscopy", name: "Spectroscopy and Structure", blurb: "How lattice structure and dynamics set the optical response of semiconductor nanocrystals." },
+  { id: "quantum", name: "Quantum Information Science", blurb: "Colloidal nanocrystals as scalable hosts for coherent, optically addressable spin defects." }
+];
+
+// Current members (Members page, October 2026), matched by full name.
+const MEMBERS = ["Chang Liu","Shengsong Yang","Sungsu Kang","Amanda S. Brewer","Yi Cui","Joe Veglak","Yuxuan Zhang","Daqian Bian","Binyu Wu","Chenqi Fan","Ida Vaghefi","Qian Lin","Michelle Bishka"];
+const DISPLAY = { "Daqian Bian": "Dylan Bian", "Amanda S. Brewer": "Amanda Brewer" };
+
+const PUBS = [
+  { doi: "10.1021/jacs.6c08238", area: "lctem", year: 2026, journal: "J. Am. Chem. Soc.", vol: "148", issue: "25", pages: "26845–26853",
+    title: "Visualizing Millisecond Atomic Dynamics of Nanocrystals in Liquid",
+    authors: ["Sungsu Kang","Jinho Rhee","Joodeok Kim","Sam Oaks-Leaf","Minwoo Kim","Shengsong Yang","Chang Liu","Dongsu Kim","Sungin Kim","Binyu Wu","Won Bo Lee","David T. Limmer","A. Paul Alivisatos","Peter Ercius","Jungwon Park"] },
+  { doi: "10.1038/s44160-026-01015-6", area: "synthesis", year: 2026, journal: "Nat. Synth.", vol: "5", issue: "5", pages: "660–668",
+    title: "Kinetic-controlled transformations of group-III arsenide nanocubes",
+    authors: ["Binyu Wu","Shengsong Yang","Dai-Bei Yang","Yu Jin","Chang Liu","Zhiying Yi","Chenqi Fan","Sungsu Kang","Yugang Zhang","Giulia Galli","Joseph S. Francisco","A. Paul Alivisatos"] },
+  { doi: "10.1557/s43577-025-00958-z", area: "lctem", year: 2025, journal: "MRS Bull.", vol: "50", issue: "11", pages: "1325–1340", oa: true,
+    title: "Precision nanoscience aided by multimodal observations",
+    authors: ["Shengsong Yang","Chang Liu","Sungsu Kang","Amanda S. Brewer","Gregory S. Girolami","Maria K. Y. Chan","Robert F. Klie","Qian Chen","Jiwoong Park","A. Paul Alivisatos"] },
+  { doi: "10.1021/acsnano.5c07437", area: "lctem", year: 2025, journal: "ACS Nano", vol: "", issue: "", pages: "",
+    title: "Chemically Tailorable Dissolution Pathways of Individual Cu<sub>3</sub>As Nanocrystals",
+    authors: ["Shengsong Yang","Binyu Wu","Chang Liu","Sungsu Kang","A. Paul Alivisatos"] },
+  { doi: "10.1038/s41467-025-60992-y", area: "spectroscopy", year: 2025, journal: "Nat. Commun.", vol: "16", issue: "", pages: "", oa: true,
+    title: "Efficient up-conversion in CsPbBr<sub>3</sub> nanocrystals via phonon-driven exciton-polaron formation",
+    authors: ["Abdullah S. Abbas","Beiye C. Li","Richard D. Schaller","Vitali B. Prakapenka","Stella Chariton","Daqian Bian","Gregory S. Engel","A. Paul Alivisatos"] },
+  { doi: "10.1021/acs.accounts.4c00708", area: "synthesis", year: 2025, journal: "Acc. Chem. Res.", vol: "58", issue: "2", pages: "271–280",
+    title: "Thermodynamics and Modeling of Collective Effects in the Organic Ligand Shell of Colloidal Quantum Dots",
+    authors: ["Jason J. Calvin","Amanda S. Brewer","A. Paul Alivisatos"] },
+  { doi: "10.1021/acsnano.4c04083", area: "quantum", year: 2024, journal: "ACS Nano", vol: "18", issue: "29", pages: "19110–19123",
+    title: "Coherent Erbium Spin Defects in Colloidal Nanocrystal Hosts",
+    authors: ["Joeson Wong","Mykyta Onizhuk","Jonah Nagura","Arashdeep Singh Thind","Jasleen K. Bindra","Christina Wicker","Gregory D. Grant","Yuxuan Zhang","Jens Niklas","Oleg G. Poluektov","Robert F. Klie","Jiefei Zhang","Giulia Galli","F. Joseph Heremans","David D. Awschalom","A. Paul Alivisatos"] },
+  { doi: "10.1073/pnas.2307633121", area: "synthesis", year: 2024, journal: "Proc. Natl. Acad. Sci. U.S.A.", vol: "121", issue: "18", pages: "e2307633121", oa: true,
+    title: "Observation of negative surface and interface energies of quantum dots",
+    authors: ["Jason J. Calvin","Amanda S. Brewer","Michelle F. Crook","Tierni M. Kaufman","A. Paul Alivisatos"] },
+  { doi: "10.1021/acs.jpcc.3c00187", area: "synthesis", year: 2023, journal: "J. Phys. Chem. C", vol: "127", issue: "21", pages: "10270–10281",
+    title: "Impact of Uniform Facets on the Thermodynamics of Ligand Exchanges on Colloidal Quantum Dots",
+    authors: ["Amanda S. Brewer","Jason J. Calvin","A. Paul Alivisatos"] },
+  { doi: "10.1021/acs.jpcc.2c04223", area: "synthesis", year: 2022, journal: "J. Phys. Chem. C", vol: "126", issue: "30", pages: "12958–12971",
+    title: "Thermodynamics of the Adsorption of Cadmium Oleate to Cadmium Sulfide Quantum Dots and Implications of a Dynamic Ligand Shell",
+    authors: ["Jason J. Calvin","Assaf Ben-Moshe","Ethan B. Curling","Amanda S. Brewer","Adam B. Sedlak","Tierni M. Kaufman","A. Paul Alivisatos"] },
+  { doi: "10.1038/s44160-022-00025-4", area: "synthesis", year: 2022, journal: "Nat. Synth.", vol: "", issue: "", pages: "",
+    title: "The role of organic ligand shell structures in colloidal nanocrystal synthesis",
+    authors: ["Jason J. Calvin","Amanda S. Brewer","A. Paul Alivisatos"] }
+];
+
+const state = { area: "all", member: "all" };
+const $ = id => document.getElementById(id);
+
+function acs(full) {
+  const parts = full.trim().split(/\s+/);
+  const family = parts.pop();
+  const initials = parts.map(p => p.split("-").map(s => s.replace(/\./g, "")[0] + ".").join("-")).join(" ");
+  return `${family}, ${initials}`;
+}
+function authorLine(list) {
+  return list.map(a => MEMBERS.includes(a) ? `<b>${acs(a)}</b>` : acs(a)).join("; ");
+}
+function cite(p) {
+  let s = `<i>${p.journal}</i> <b>${p.year}</b>`;
+  if (p.vol) s += `, <i>${p.vol}</i>`;
+  if (p.issue) s += ` (${p.issue})`;
+  if (p.pages) s += `, ${p.pages}`;
+  return s + ".";
+}
+const matches = p => (state.area === "all" || p.area === state.area) &&
+                     (state.member === "all" || p.authors.includes(state.member));
+
+function renderChips() {
+  const base = PUBS.filter(p => state.member === "all" || p.authors.includes(state.member));
+  $("area-chips").innerHTML =
+    `<button type="button" class="chip" data-area="all" aria-pressed="${state.area === "all"}">All areas <span class="n">${base.length}</span></button>` +
+    AREAS.map(a => `<button type="button" class="chip" data-area="${a.id}" aria-pressed="${state.area === a.id}">${a.name} <span class="n">${base.filter(p => p.area === a.id).length}</span></button>`).join("");
+}
+
+function renderMemberSelect() {
+  const present = MEMBERS.filter(m => PUBS.some(p => p.authors.includes(m)));
+  const name = m => DISPLAY[m] || m;
+  present.sort((a, b) => name(a).split(" ").pop().localeCompare(name(b).split(" ").pop()));
+  $("member").innerHTML = `<option value="all">Everyone</option>` +
+    present.map(m => `<option value="${m}">${name(m)} (${PUBS.filter(p => p.authors.includes(m)).length})</option>`).join("");
+  $("member").value = state.member;
+}
+
+function renderAreas() {
+  let shown = 0;
+  $("areas").innerHTML = AREAS.map(a => {
+    const list = PUBS.filter(p => p.area === a.id && matches(p)).sort((x, y) => y.year - x.year);
+    if (!list.length) return "";
+    shown += list.length;
+    return `<section class="area" id="${a.id}">
+      <div class="area-head">
+        <h2>${a.name}</h2>
+        <p>${a.blurb}</p>
+        <a href="https://alivisatoslab.uchicago.edu/research/#${a.id}">About this research area</a>
+      </div>
+      <ol class="papers">${list.map(p => `
+        <li class="paper">
+          <span class="year">${p.year}</span>
+          <div class="body">
+            <span class="journal">${p.journal}</span>
+            <span class="title">${p.title}</span>
+            <span class="authors">${authorLine(p.authors)}</span>
+            <span class="meta">
+              <span class="cite">${cite(p)}</span>
+              <a class="doi" href="https://doi.org/${p.doi}" target="_blank" rel="noopener">DOI ${p.doi}</a>
+              ${p.oa ? `<span class="oa">Open access</span>` : ""}
+            </span>
+          </div>
+        </li>`).join("")}
+      </ol>
+    </section>`;
+  }).join("");
+  $("empty").hidden = shown > 0;
+}
+
+function render() { renderChips(); renderAreas(); }
+
+document.addEventListener("click", e => {
+  const c = e.target.closest("[data-area]");
+  if (!c) return;
+  state.area = c.dataset.area;
+  render();
+});
+$("member").addEventListener("change", e => { state.member = e.target.value; render(); });
+
+renderMemberSelect();
+render();
+</script>

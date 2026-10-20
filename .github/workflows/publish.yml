@@ -1,0 +1,64 @@
+name: Publish page
+
+# Always run with mode = dry-run first and read the diff in the run summary.
+# Then run again with mode = publish to write the same page.
+on:
+  workflow_dispatch:
+    inputs:
+      page:
+        description: "Page to publish"
+        type: choice
+        options: [members, alumni, research, publications, news, gallery, home, all]
+      mode:
+        description: "dry-run shows the diff only; publish writes to WordPress"
+        type: choice
+        options: [dry-run, publish]
+        default: dry-run
+
+permissions:
+  contents: read
+
+concurrency:
+  group: publish
+  cancel-in-progress: false
+
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    env:
+      WP_USER: ${{ secrets.WP_USER }}
+      WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Auth check
+        run: python scripts/auth_check.py
+      - name: Backup all pages
+        run: python scripts/backup.py --out backup
+      - uses: actions/upload-artifact@v4
+        with:
+          name: backup-${{ github.run_id }}
+          path: backup/
+          retention-days: 90
+      - name: Build pages
+        run: |
+          if [ ! -f site/build.py ]; then
+            echo "site/build.py is missing. Add the page generator first (see site/README.md)." >> "$GITHUB_STEP_SUMMARY"
+            exit 1
+          fi
+          python site/build.py
+      - name: Diff and push
+        run: |
+          if [ "${{ inputs.mode }}" = "publish" ]; then
+            python scripts/push_page.py --page "${{ inputs.page }}" --publish
+          else
+            python scripts/push_page.py --page "${{ inputs.page }}"
+          fi
+      - name: Public check (cache may lag up to an hour)
+        if: ${{ inputs.mode == 'publish' }}
+        run: |
+          sleep 30
+          python scripts/verify_public.py --no-fail

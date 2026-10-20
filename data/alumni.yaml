@@ -1,0 +1,1499 @@
+# Alivisatos Group alumni. Source of truth for the Alumni page.
+# Fields: name, roles [phd|postdoc|undergrad], title, org, sector [university|industry|institute|unlisted],
+# years (e.g. "2015-2020", optional), link (profile URL, optional), verified (date the position was last checked, optional)
+- name: "Abdullah S. Abbas"
+  roles: [phd]
+  title: "Engineer"
+  org: "Intel Corp."
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Aihua Fu"
+  roles: [phd]
+  title: "President and CEO"
+  org: "NVIGEN Inc."
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Alexandra Courtis"
+  roles: [phd]
+  title: ""
+  org: ""
+  sector: unlisted
+  years: ""
+  link: ""
+  verified: ""
+- name: "Amy Bowen Herhold"
+  roles: [phd]
+  title: "Section Head"
+  org: "Exxon Research and Engineering Co."
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Andreas Virin Kadavanich"
+  roles: [phd]
+  title: "Staff Systems Engineer"
+  org: "Labcyte Inc."
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Andrew Guzelian"
+  roles: [phd]
+  title: "Product Development Manager"
+  org: "Nyacol Nano Technologies Inc."
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Andrew Lim"
+  roles: [phd]
+  title: "Managing Director"
+  org: "Kirribilli Associates"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Andrew Olson"
+  roles: [phd]
+  title: "Corporate Development Consultant"
+  org: "ALX Oncology"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Arunima Balan"
+  roles: [phd]
+  title: "Research Scientist"
+  org: "Lam Research Corporation"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Avery Goldstein"
+  roles: [phd]
+  title: "Patent Attorney"
+  org: "Blue Filament Law PLLC"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Brandon Beberwyck"
+  roles: [phd]
+  title: "Business Consultant"
+  org: "Applied Predictive Technologies"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Brent Koscher"
+  roles: [phd]
+  title: "Postdoctoral Researcher"
+  org: "Massachusetts Institute of Technology"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Bryce Sadtler"
+  roles: [phd]
+  title: "Assistant Professor"
+  org: "Washington University in St. Louis"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Can Kerem Erdonmez"
+  roles: [phd]
+  title: "Assistant Editor"
+  org: "Springer Nature"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Charina L. Chou"
+  roles: [phd]
+  title: "Global Policy Lead for Emerging Technologies"
+  org: "Google"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Christine M. Micheel"
+  roles: [phd]
+  title: "Research Assistant Professor of Medicine"
+  org: "Vanderbilt University Medical Center"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Cyrus Wadia"
+  roles: [phd]
+  title: "Vice President, Sustainable Business"
+  org: "Nike, Portland"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Daniel Mittleman"
+  roles: [phd, postdoc]
+  title: "Professor of Engineering"
+  org: "Brown University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Danny Hellebusch"
+  roles: [phd]
+  title: "Senior Scientist"
+  org: "Imprint Energy"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "David Grauer"
+  roles: [phd]
+  title: "Senior Process Engineer"
+  org: "Intrexon Corporation, San Francisco"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "David Klein"
+  roles: [phd, postdoc]
+  title: ""
+  org: "HDI Instrumentation"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "David Litt"
+  roles: [phd]
+  title: "Process Engineer"
+  org: "Intel Corporation"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "David Nenon"
+  roles: [phd]
+  title: "Global Supply Manager"
+  org: "Tesla"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "David Zaziski"
+  roles: [phd]
+  title: "Director, Government Affairs & Business Development"
+  org: "Siluria Technologies, Inc."
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Deborah Aruguete"
+  roles: [phd]
+  title: "Associate Professor of Environmental Science and Chemistry"
+  org: "Penn State Behrend"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Delia Milliron"
+  roles: [phd]
+  title: "Professor"
+  org: "University of Texas, Austin"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Emory Chan"
+  roles: [phd]
+  title: "Career Staff Scientist"
+  org: "Lawrence Berkeley National Laboratory"
+  sector: institute
+  years: ""
+  link: ""
+  verified: ""
+- name: "Erik C. Scher"
+  roles: [phd]
+  title: "Chief Operating Officer"
+  org: "Siluria Technologies, Inc."
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Erin O'Brien"
+  roles: [phd]
+  title: ""
+  org: ""
+  sector: unlisted
+  years: ""
+  link: ""
+  verified: ""
+- name: "Haitao Liu"
+  roles: [phd]
+  title: "Professor and Department Chair"
+  org: "University of Pittsburgh"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Han Le"
+  roles: [phd]
+  title: ""
+  org: ""
+  sector: unlisted
+  years: ""
+  link: ""
+  verified: ""
+- name: "Hoduk Cho"
+  roles: [phd]
+  title: "Research Fellow"
+  org: "Institute for Basic Science"
+  sector: institute
+  years: ""
+  link: ""
+  verified: ""
+- name: "Hyun Dong \"Kenneth\" Ha"
+  roles: [phd]
+  title: ""
+  org: ""
+  sector: unlisted
+  years: ""
+  link: ""
+  verified: ""
+- name: "Ilan Gur"
+  roles: [phd]
+  title: "Chief Executive Officer"
+  org: "Activate"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Ilan Jen La-Plante"
+  roles: [phd]
+  title: "Senior Scientist"
+  org: "Nanosys"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Jakob Chayes Dahl"
+  roles: [phd]
+  title: "A. O. Beckman Postdoctoral Fellow"
+  org: "Massachusetts Institute of Technology"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Jacob Olshansky"
+  roles: [phd]
+  title: "Postdoctoral Researcher"
+  org: "Northwestern University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "James Matthew Lucas"
+  roles: [phd]
+  title: "Associate Director"
+  org: "Carbon1804"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "James Henry Nelson"
+  roles: [phd]
+  title: "Consultant"
+  org: "Energy & Environmental Economics"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Janet Katari"
+  roles: [phd]
+  title: "President"
+  org: "altSpirit"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Jesse Engel"
+  roles: [phd]
+  title: "Senior Research Scientist"
+  org: "Google"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Jessica Smith"
+  roles: [phd]
+  title: "Director of Bioinformatics"
+  org: "seqWell"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Jessy Baker Rivest"
+  roles: [phd]
+  title: "Research Staff"
+  org: "Xerox PARC"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Jennifer Lee"
+  roles: [phd, postdoc]
+  title: ""
+  org: ""
+  sector: unlisted
+  years: ""
+  link: ""
+  verified: ""
+- name: "Jia Zhu"
+  roles: [phd]
+  title: "Professor"
+  org: "Nanjing University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Joseph R. Sachleben"
+  roles: [phd, postdoc]
+  title: "Technical Director, Biomolecular NMR Facility"
+  org: "University of Chicago"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Joseph Shiang"
+  roles: [phd, postdoc]
+  title: ""
+  org: "Department of Chemistry, University of Michigan"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Joseph Swabeck"
+  roles: [phd]
+  title: "Patent Agent"
+  org: "Wilson Sonsini Goodrich & Rosati"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Joshua Wittenberg"
+  roles: [phd]
+  title: "Product Development Engineer"
+  org: "KLA Tencor"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Judy Chang"
+  roles: [phd, postdoc]
+  title: ""
+  org: "Division of Neurology, UCSD Medical Center"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Juanita Wickham Kurtin"
+  roles: [phd]
+  title: "Director, Materials Research"
+  org: "Osram Opto Semiconductors, Inc."
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Jungwon Park"
+  roles: [phd]
+  title: "Associate Professor"
+  org: "Seoul National University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Justin Ondry"
+  roles: [phd]
+  title: "Postdoctoral Researcher"
+  org: "University of Chicago"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Justine Shaw"
+  roles: [phd]
+  title: "Chemistry Instructor"
+  org: "Northwestern University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Karthish Manthiram"
+  roles: [phd]
+  title: "Professor"
+  org: "California Institute of Technology"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Katherine Katie Nichols"
+  roles: [phd]
+  title: "Teaching Fellow"
+  org: "San Francisco Art Institute"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Katie Lutker"
+  roles: [phd]
+  title: "BEOL Senior Process Engineer"
+  org: "Tokyo Electron"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Kimberly Hamad-Schifferli"
+  roles: [phd]
+  title: "Associate Professor"
+  org: "University of Massachusetts, Boston"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Kristie Koski"
+  roles: [phd]
+  title: "Associate Professor"
+  org: "University of California, Davis"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Kwanghee Kim"
+  roles: [phd, postdoc]
+  title: ""
+  org: "Samsung Advanced Institute of Technology"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Liang-Shi Li"
+  roles: [phd]
+  title: "Professor"
+  org: "Indiana University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Marcel Pierre Bruchez"
+  roles: [phd]
+  title: "Director, Molecular Biosensors and Imaging Center"
+  org: "Carnegie Mellon University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Marco Tomaselli"
+  roles: [phd, postdoc]
+  title: ""
+  org: "Laboratory of Physical Chemistry"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Mark Joseph Polking"
+  roles: [phd]
+  title: "Technical Staff"
+  org: "Massachusetts Institute of Technology"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Matthew Koc"
+  roles: [phd]
+  title: "Product Engineer"
+  org: "Lam Research Corporation"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Matt Hauwiller"
+  roles: [phd]
+  title: "Senior Engineer"
+  org: "Seagate"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Matthew Sheldon"
+  roles: [phd]
+  title: "Associate Professor"
+  org: "Texas A&M University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Max Merkle"
+  roles: [phd]
+  title: "Senior Process Development Engineer"
+  org: "Intel Corporation"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Meredith McMurdo Doyle"
+  roles: [phd]
+  title: "Senior Technical Supervisor"
+  org: "3M"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Michael Schlamp"
+  roles: [phd]
+  title: "Principal"
+  org: "Aquest Consulting, Inc."
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Michelle Crook"
+  roles: [phd]
+  title: "Process Engineer"
+  org: "Intel"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Neil Greenham"
+  roles: [phd, postdoc]
+  title: ""
+  org: "Cavendish Laboratory"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Noah Bronstein"
+  roles: [phd]
+  title: "Scientist"
+  org: "Exponent, Inc."
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Noelle Marie Drugan Kamp"
+  roles: [phd]
+  title: ""
+  org: ""
+  sector: unlisted
+  years: ""
+  link: ""
+  verified: ""
+- name: "Ophir Klein"
+  roles: [phd, postdoc]
+  title: "Distinguished Professor"
+  org: "University of California, San Francisco"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Richard Roth"
+  roles: [phd]
+  title: "Quality Manager"
+  org: "Qimonda"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Robert Kimes Grubbs"
+  roles: [phd]
+  title: "Principal Member"
+  org: "Sandia National Laboratories"
+  sector: institute
+  years: ""
+  link: ""
+  verified: ""
+- name: "Sandy Rosenthal"
+  roles: [phd, postdoc]
+  title: "Professor"
+  org: "Vanderbilt University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Sarah Swisher"
+  roles: [phd]
+  title: "Assistant Professor"
+  org: "University of Minnesota"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Sarah Helen Tolbert"
+  roles: [phd]
+  title: "Professor"
+  org: "University of California, Los Angeles"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Sassan Sheikholeslami"
+  roles: [phd]
+  title: "Senior Staff Scientist"
+  org: "Pacific Biosciences"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Scot Kellar"
+  roles: [phd]
+  title: "Silicon Architect"
+  org: "Intel Corporation"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Shara Carol Williams"
+  roles: [phd]
+  title: "Scientist"
+  org: "NIWC Pacific"
+  sector: institute
+  years: ""
+  link: ""
+  verified: ""
+- name: "Shilpa Raja"
+  roles: [phd]
+  title: "Scientist, Materials Science"
+  org: "Zymergen"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Shelley Claridge"
+  roles: [phd]
+  title: "Assistant Professor"
+  org: "Purdue University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Stephen Gerald Prilliman"
+  roles: [phd]
+  title: "Associate Professor"
+  org: "Oklahoma City University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Steven Hughes"
+  roles: [phd]
+  title: "Assistant Professor"
+  org: "Roanoke College"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Tina Ding"
+  roles: [phd]
+  title: "Researcher"
+  org: "Invenio Imaging"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Trevor Ewers"
+  roles: [phd]
+  title: "R&D Manager"
+  org: "Dow Chemical Co."
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Vicki Leigh Colvin"
+  roles: [phd]
+  title: "Director of the Center for Biomedical Engineering"
+  org: "Brown University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Victor Puntes"
+  roles: [phd, postdoc]
+  title: "Professor"
+  org: "Catalan Institute of Technology"
+  sector: institute
+  years: ""
+  link: ""
+  verified: ""
+- name: "Wendy Uyen Huynh"
+  roles: [phd]
+  title: ""
+  org: "Ludwig Maximilian University of Munich"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Wojciech Osowiecki"
+  roles: [phd]
+  title: "Rotational Program Process Engineer"
+  org: "Lam Research Corporation"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Xingzhi Wang"
+  roles: [phd]
+  title: "Postdoctoral Researcher"
+  org: "University of Illinois Urbana-Champaign"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Yingjie Zhang"
+  roles: [phd]
+  title: "Assistant Professor"
+  org: "University of Illinois Urbana-Champaign"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Alexander Mastroianni"
+  roles: [postdoc]
+  title: "Staff Scientist, Surface Chemistry"
+  org: "Berkeley Lights, Inc."
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Alf Mews"
+  roles: [postdoc]
+  title: "Professor of Physical Chemistry"
+  org: "University of Hamburg"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Andreas Meisel"
+  roles: [postdoc]
+  title: "Manager"
+  org: "Tesla"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Andreu Cabot"
+  roles: [postdoc]
+  title: "Group Leader"
+  org: "University of Barcelona"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Antonios Kanaras"
+  roles: [postdoc]
+  title: "Professor"
+  org: "University of Southampton"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Assaf Ben-Moshe"
+  roles: [postdoc]
+  title: ""
+  org: ""
+  sector: unlisted
+  years: ""
+  link: ""
+  verified: ""
+- name: "Carissa Eisler"
+  roles: [postdoc]
+  title: "Assistant Professor"
+  org: "University of California, Los Angeles"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Carsten Soennichsen"
+  roles: [postdoc]
+  title: "Professor"
+  org: "University of Mainz"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Chang Yan"
+  roles: [postdoc]
+  title: "Associate Professor, Department of Chemistry"
+  org: "Shanghai Jiao Tong University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Chia-Chun Chen"
+  roles: [postdoc]
+  title: "Professor"
+  org: "National Taiwan Normal University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Christian Laube"
+  roles: [postdoc]
+  title: ""
+  org: ""
+  sector: unlisted
+  years: ""
+  link: ""
+  verified: ""
+- name: "Christina W. Li"
+  roles: [postdoc]
+  title: "Professor"
+  org: "Purdue University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Daeha Seo"
+  roles: [postdoc]
+  title: "Assistant Professor"
+  org: "Daegu Gyeongbuk Institute of Science and Technology"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Daniela Zanchet"
+  roles: [postdoc]
+  title: "Associate Professor"
+  org: "University of Campinas, Institute of Chemistry"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Daniele Gerion"
+  roles: [postdoc]
+  title: "Director of Technology"
+  org: "LamdaGen Corp."
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "David Britt"
+  roles: [postdoc]
+  title: "Director of Research & Development"
+  org: "Matrix Sensors"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Debraj Ghosh"
+  roles: [postdoc]
+  title: "Sr. Product Marketing Manager"
+  org: "Microsoft"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Dong-Hee Son"
+  roles: [postdoc]
+  title: "Associate Professor"
+  org: "Texas A&M University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Fabio Zurcher"
+  roles: [postdoc]
+  title: "Senior Director"
+  org: "Siluria Technologies, Inc."
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Farnaz Niroui"
+  roles: [postdoc]
+  title: "Assistant Professor"
+  org: "Massachusetts Institute of Technology"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Gordana Dukovic"
+  roles: [postdoc]
+  title: "Assistant Professor"
+  org: "University of Colorado Boulder"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Haimei Zheng"
+  roles: [postdoc]
+  title: "Staff Scientist, Materials Sciences Division"
+  org: "Lawrence Berkeley National Laboratory"
+  sector: institute
+  years: ""
+  link: ""
+  verified: ""
+- name: "Hongkun Park"
+  roles: [postdoc]
+  title: "Professor"
+  org: "Harvard University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Ivan A. Moreno-Hernandez"
+  roles: [postdoc]
+  title: "Assistant Professor"
+  org: "Duke University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Jacob Kanady"
+  roles: [postdoc]
+  title: "Scientist"
+  org: "Irvine Ranch Water District"
+  sector: institute
+  years: ""
+  link: ""
+  verified: ""
+- name: "Jeffrey Long"
+  roles: [postdoc]
+  title: "Professor"
+  org: "University of California, Berkeley"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Jennifer Cha"
+  roles: [postdoc]
+  title: "Norviel Associate Professor"
+  org: "University of Colorado Boulder"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Jen Dionne"
+  roles: [postdoc]
+  title: "Assistant Professor"
+  org: "Stanford University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Jianbo Gao"
+  roles: [postdoc]
+  title: "Associate Professor"
+  org: "Clemson University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Jill Millstone"
+  roles: [postdoc]
+  title: "Associate Professor"
+  org: "University of Pittsburgh"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Jing Tang"
+  roles: [postdoc]
+  title: "Senior Scientist"
+  org: "Agilent Labs"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Joerg Rockenberger"
+  roles: [postdoc]
+  title: "VP Product Development"
+  org: "Ensor"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Jonathan Owen"
+  roles: [postdoc]
+  title: "Associate Professor"
+  org: "Columbia University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Joseph Joey Luther"
+  roles: [postdoc]
+  title: "Senior Scientist"
+  org: "National Renewable Energy Laboratory"
+  sector: institute
+  years: ""
+  link: ""
+  verified: ""
+- name: "Joeson Wong"
+  roles: [postdoc]
+  title: "Engineer"
+  org: ""
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Kevin Ryan"
+  roles: [postdoc]
+  title: "Professor"
+  org: "University of Limerick"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Kimani A Stancil"
+  roles: [postdoc]
+  title: "Professor"
+  org: "Howard University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Liberato Manna"
+  roles: [postdoc]
+  title: "Department Director"
+  org: "Italian Institute of Technology"
+  sector: institute
+  years: ""
+  link: ""
+  verified: ""
+- name: "Lilac Amirav"
+  roles: [postdoc]
+  title: "Assistant Professor"
+  org: "Technion, Israel Institute of Technology"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Lindsey Hanson"
+  roles: [postdoc]
+  title: "Assistant Professor"
+  org: "Trinity College"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Linyou Cao"
+  roles: [postdoc]
+  title: "Assistant Professor"
+  org: "North Carolina State University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Laura Na Liu"
+  roles: [postdoc]
+  title: "Assistant Professor"
+  org: "Max Planck Institute"
+  sector: institute
+  years: ""
+  link: ""
+  verified: ""
+- name: "Marcus Scheele"
+  roles: [postdoc]
+  title: "Jr. Research Leader"
+  org: "University of Tuebingen"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Maria Francesca Casula"
+  roles: [postdoc]
+  title: "Associate Professor"
+  org: "University of Cagliari"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Mario Hentschel"
+  roles: [postdoc]
+  title: "Director of Nanofabrication"
+  org: "University of Stuttgart"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Markus Haase"
+  roles: [postdoc]
+  title: "Professor"
+  org: "University of Osnabrück"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Matthew Jones"
+  roles: [postdoc]
+  title: "Assistant Professor"
+  org: "Rice University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Ming Lee Tang"
+  roles: [postdoc]
+  title: "Assistant Professor"
+  org: "University of California, Riverside"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Min Gee Cho"
+  roles: [postdoc]
+  title: "Scientist"
+  org: "Lawrence Berkeley National Laboratory"
+  sector: institute
+  years: ""
+  link: ""
+  verified: ""
+- name: "Myoung Hwan Oh"
+  roles: [postdoc]
+  title: "Associate Professor"
+  org: "Korea Institute of Energy Technology"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Minhal Hasham"
+  roles: [postdoc]
+  title: "Founding Scientist"
+  org: "Optigon, Inc."
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Neil Fromer"
+  roles: [postdoc]
+  title: "Executive Director, Resnick Institute"
+  org: "California Institute of Technology"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Paul-Emile Trudeau"
+  roles: [postdoc]
+  title: "Senior Research Professional"
+  org: "Quantium Technologies, Inc."
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Peter Allen"
+  roles: [postdoc]
+  title: "MBA Student"
+  org: "Harvard University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Prashant Jain"
+  roles: [postdoc]
+  title: "Assistant Professor"
+  org: "University of Illinois Urbana-Champaign"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Qian Chen"
+  roles: [postdoc]
+  title: "Assistant Professor"
+  org: "University of Illinois Urbana-Champaign"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Qiao Joe Zhang"
+  roles: [postdoc]
+  title: "Professor"
+  org: "Soochow University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Rachel Smith"
+  roles: [postdoc]
+  title: "Quality Assurance Manager"
+  org: "Thermo Fisher Scientific"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Richard Robinson"
+  roles: [postdoc]
+  title: "Associate Professor"
+  org: "Cornell University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Somin Eunice Lee"
+  roles: [postdoc]
+  title: "Assistant Professor"
+  org: "University of Michigan"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Sophia Betzler"
+  roles: [postdoc]
+  title: ""
+  org: ""
+  sector: unlisted
+  years: ""
+  link: ""
+  verified: ""
+- name: "Son Nguyen"
+  roles: [postdoc]
+  title: "Assistant Professor"
+  org: "University of California, Merced"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Steven Hawks"
+  roles: [postdoc]
+  title: "Staff Scientist"
+  org: "Lawrence Livermore National Laboratory"
+  sector: institute
+  years: ""
+  link: ""
+  verified: ""
+- name: "Terefe Habteyes"
+  roles: [postdoc]
+  title: "Associate Professor"
+  org: "University of New Mexico"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Udo Bach"
+  roles: [postdoc]
+  title: "Professor"
+  org: "Monash University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Uri Banin"
+  roles: [postdoc]
+  title: "Professor"
+  org: "Hebrew University of Jerusalem"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Vida Jamali"
+  roles: [postdoc]
+  title: "Assistant Professor, School of Chemical and Biomolecular Engineering"
+  org: "Georgia Tech"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Vivian Ferry"
+  roles: [postdoc]
+  title: "Associate Professor"
+  org: "University of Minnesota"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Wanli Ma"
+  roles: [postdoc]
+  title: "Professor"
+  org: "Soochow University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Waqas Khalid"
+  roles: [postdoc]
+  title: "Program Manager Scientist"
+  org: "University of California, Berkeley"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Wei Wei Gu"
+  roles: [postdoc]
+  title: "Lab Manager"
+  org: "NVIGEN, Inc."
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Weidong Yang"
+  roles: [postdoc]
+  title: "CEO"
+  org: "Kineviz"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Weilin Xu"
+  roles: [postdoc]
+  title: "Professor"
+  org: "Changchun Institute of Applied Chemistry"
+  sector: institute
+  years: ""
+  link: ""
+  verified: ""
+- name: "Wendy Gu"
+  roles: [postdoc]
+  title: "Assistant Professor"
+  org: "Stanford University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Werner Hoheisel"
+  roles: [postdoc]
+  title: "Group Lead"
+  org: "INVITE GmbH"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Wolfgang Parak"
+  roles: [postdoc]
+  title: "Professor"
+  org: "Philipps University Marburg"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Woonhyuk Baek"
+  roles: [postdoc]
+  title: "Assistant Professor"
+  org: "Jeonbuk National University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Xiaogang Peng"
+  roles: [postdoc]
+  title: "Professor"
+  org: "Zhejiang University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Xingchen Ye"
+  roles: [postdoc]
+  title: "Assistant Professor"
+  org: "Indiana University Bloomington"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Yadong Yin"
+  roles: [postdoc]
+  title: "Professor"
+  org: "University of California, Riverside"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Yi Cui"
+  roles: [postdoc]
+  title: "Professor"
+  org: "Stanford University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Yogesh Surendranath"
+  roles: [postdoc]
+  title: "Professor"
+  org: "Massachusetts Institute of Technology"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Young-Wook Jun"
+  roles: [postdoc]
+  title: "Associate Professor"
+  org: "University of California, San Francisco"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Yue Wu"
+  roles: [postdoc]
+  title: "Associate Professor"
+  org: "Iowa State University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Jiaqi Sun"
+  roles: [undergrad]
+  title: "Undergraduate Student"
+  org: "Hong Kong University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Yasin Badawy"
+  roles: [undergrad]
+  title: "Ph.D. Student, Peidong Yang Lab"
+  org: "UC Berkeley"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Alex Powers"
+  roles: [undergrad]
+  title: "Ph.D. Student, Dror Lab"
+  org: "Stanford University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Amy McKeown-Green"
+  roles: [undergrad]
+  title: "Ph.D. Student, Liu Research Group"
+  org: "Stanford University"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Xiao Huang"
+  roles: [undergrad]
+  title: "Ph.D. Student, Kulik Research Group"
+  org: "Massachusetts Institute of Technology"
+  sector: university
+  years: ""
+  link: ""
+  verified: ""
+- name: "Viraj Bodiwala"
+  roles: [undergrad]
+  title: "AI Engineer"
+  org: "Theta Neurotech"
+  sector: industry
+  years: ""
+  link: ""
+  verified: ""
+- name: "Harrison Burke"
+  roles: [undergrad]
+  title: ""
+  org: ""
+  sector: unlisted
+  years: ""
+  link: ""
+  verified: ""
+- name: "Sarah Thau"
+  roles: [undergrad]
+  title: ""
+  org: ""
+  sector: unlisted
+  years: ""
+  link: ""
+  verified: ""

@@ -1,0 +1,38 @@
+# Site configuration shared by all scripts.
+base_url: https://alivisatoslab.uchicago.edu
+
+# Public pages: key -> WordPress page id (int) or slug (str, resolved at run time).
+pages:
+  home: 2
+  research: research
+  members: members
+  alumni: alumni
+  publications: 1147
+  news: news
+  gallery: 1269
+
+# Public URL path for each page key (plain URLs, no query string).
+paths:
+  home: /
+  research: /research/
+  members: /members/
+  alumni: /alumni/
+  publications: /publications/
+  news: /news/
+  gallery: /gallery/
+
+# Pages that must not be public. Plain URL must return 404; anonymous REST must not list them.
+private_pages:
+  positions: /positions/
+
+# Text that must never appear on any public page (case-insensitive).
+forbidden_strings:
+  - Kamran
+  - Forghani
+  - kforghani
+  - Join the Group
+  - Open Positions
+  - /positions
+  - website is new
+  - binyuwu AT
+  - sci-hub

@@ -1,0 +1,335 @@
+<title>Alivisatos Group Publication Explorer</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:ital,wght@0,400;0,500;0,600;1,400&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap">
+<style>
+/* Layout: filter column on the left (stacks on phones), results on the right; same tokens as the Alumni and Selected Publications prototypes. */
+:root {
+  --bg: #fcfbfb;
+  --surface: #f4f0f0;
+  --fg: #1f1a1b;
+  --muted: #6b6264;
+  --line: #e5dfe0;
+  --accent: #800000;
+  --accent-soft: #f4e7e7;
+  --oa: #2f6b4f;
+  --font-display: "Source Serif 4", "Iowan Old Style", Georgia, serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #161314; --surface: #211c1d; --fg: #eeeaea; --muted: #a59c9e; --line: #342d2f;
+    --accent: #e8908f; --accent-soft: #3a2324; --oa: #7cc6a0;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #161314; --surface: #211c1d; --fg: #eeeaea; --muted: #a59c9e; --line: #342d2f;
+  --accent: #e8908f; --accent-soft: #3a2324; --oa: #7cc6a0;
+  color-scheme: dark;
+}
+body { background: var(--bg); color: var(--fg); font-family: var(--font-body); font-size: 15px; line-height: 1.5; }
+
+.ag-explore {
+  max-width: 1120px; margin: 0 auto;
+  padding-block: 28px 56px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid; gap: 24px;
+}
+.proto { justify-self: start; font-size: 12px; color: var(--muted); border: 1px solid var(--line); border-radius: 999px; padding: 3px 10px; }
+.intro { display: grid; gap: 8px; max-width: 66ch; }
+.eyebrow { font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--accent); }
+h1 { font-family: var(--font-display); font-weight: 600; font-size: clamp(30px, 5.5vw, 42px); line-height: 1.05; margin: 0; }
+.lede { margin: 0; color: var(--muted); font-size: 16px; }
+
+.layout { display: grid; grid-template-columns: 260px minmax(0, 1fr); gap: 32px; align-items: start; }
+@media (max-width: 820px) { .layout { grid-template-columns: minmax(0, 1fr); gap: 16px; } }
+
+.filters { border: 1px solid var(--line); border-radius: 10px; background: var(--surface); }
+.filters > summary {
+  list-style: none; cursor: pointer; padding: 12px 14px; font-weight: 600;
+  display: flex; justify-content: space-between; align-items: center;
+}
+.filters > summary::-webkit-details-marker { display: none; }
+.filters > summary::after { content: "+"; color: var(--muted); font-weight: 400; }
+.filters[open] > summary::after { content: "−"; }
+.fbody { padding: 0 14px 14px; display: grid; gap: 18px; }
+.facet { display: grid; gap: 8px; }
+.facet h3 { margin: 0; font-size: 12px; font-weight: 600; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); }
+.opts { display: flex; flex-wrap: wrap; gap: 6px; }
+.opt {
+  font: inherit; font-size: 13px; display: inline-flex; gap: 6px; align-items: center;
+  padding: 4px 10px; border: 1px solid var(--line); border-radius: 999px;
+  background: var(--bg); color: var(--fg); cursor: pointer;
+}
+.opt:hover { border-color: var(--muted); }
+.opt[aria-pressed="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+.opt .n { color: var(--muted); font-variant-numeric: tabular-nums; }
+.opt[aria-pressed="true"] .n { color: inherit; opacity: .75; }
+.opt:disabled { opacity: .4; cursor: default; }
+.fsel, .search {
+  font: inherit; font-size: 14px; width: 100%;
+  padding: 7px 10px; border: 1px solid var(--line); border-radius: 8px;
+  background: var(--bg); color: var(--fg);
+}
+.search::placeholder { color: var(--muted); }
+
+.results { display: grid; gap: 10px; min-width: 0; }
+.rhead { display: flex; flex-wrap: wrap; gap: 8px 16px; align-items: center; justify-content: space-between; padding-bottom: 10px; border-bottom: 2px solid var(--fg); }
+.count { font-size: 14px; color: var(--muted); font-variant-numeric: tabular-nums; }
+.active { display: flex; flex-wrap: wrap; gap: 6px; align-items: center; }
+.pill {
+  font: inherit; font-size: 12.5px; display: inline-flex; gap: 6px; align-items: center;
+  padding: 3px 8px 3px 10px; border-radius: 999px; border: 0;
+  background: var(--accent-soft); color: var(--accent); cursor: pointer;
+}
+.pill::after { content: "×"; font-size: 14px; line-height: 1; }
+.link-btn { font: inherit; font-size: 13px; background: none; border: 0; padding: 0; color: var(--accent); text-decoration: underline; cursor: pointer; }
+
+.list { list-style: none; margin: 0; padding: 0; }
+.paper { display: grid; grid-template-columns: 48px minmax(0, 1fr); column-gap: 14px; padding: 14px 0; border-bottom: 1px solid var(--line); }
+.year { font-family: var(--font-display); font-size: 18px; color: var(--muted); font-variant-numeric: tabular-nums lining-nums; line-height: 1.3; }
+.body { display: grid; gap: 4px; min-width: 0; }
+.jline { display: flex; flex-wrap: wrap; gap: 8px; align-items: baseline; }
+.journal { font-size: 12px; font-weight: 600; letter-spacing: .08em; text-transform: uppercase; color: var(--accent); }
+.flag { font-size: 11px; font-weight: 600; letter-spacing: .04em; text-transform: uppercase; color: var(--muted); }
+.flag.oa { color: var(--oa); }
+.title { font-weight: 600; font-size: 15.5px; line-height: 1.35; text-wrap: pretty; }
+.authors { font-size: 13px; color: var(--muted); }
+.authors b { color: var(--fg); font-weight: 600; }
+.meta { display: flex; flex-wrap: wrap; gap: 6px 10px; align-items: center; font-size: 13px; }
+.doi { font-size: 12px; font-weight: 500; color: var(--accent); text-decoration: none; border: 1px solid var(--line); border-radius: 6px; padding: 1px 7px; }
+.doi:hover { border-color: var(--accent); }
+.tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: 4px; }
+.tag {
+  font: inherit; font-size: 12px; padding: 1px 8px; border-radius: 4px;
+  border: 1px solid var(--line); background: var(--bg); color: var(--muted); cursor: pointer;
+}
+.tag:hover { color: var(--fg); border-color: var(--muted); }
+.tag.on { color: var(--accent); border-color: var(--accent); }
+.empty { color: var(--muted); padding: 24px 0; display: grid; gap: 8px; justify-items: start; }
+@media (max-width: 480px) { .paper { grid-template-columns: 1fr; } .year { font-size: 14px; } }
+
+button:focus-visible, select:focus-visible, input:focus-visible, a:focus-visible, summary:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+</style>
+
+<section class="ag-explore">
+  <span class="proto">Prototype · 2022–2026 papers from the current Publications page · topic tags are suggestions</span>
+  <header class="intro">
+    <span class="eyebrow">Publications</span>
+    <h1>Publication Explorer</h1>
+    <p class="lede">Filter the group's papers by research area, material, approach, journal, year, article type and group member. Tap any tag on a paper to filter by it.</p>
+  </header>
+
+  <div class="layout">
+    <details class="filters" id="filters" open>
+      <summary>Filters <span id="fcount" style="font-weight:400;color:var(--muted)"></span></summary>
+      <div class="fbody">
+        <div class="facet">
+          <label for="q" class="sr" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Search</label>
+          <input id="q" class="search" type="search" placeholder="Search title or author" autocomplete="off">
+        </div>
+        <div class="facet"><h3>Research area</h3><div class="opts" data-facet="area"></div></div>
+        <div class="facet"><h3>Material</h3><div class="opts" data-facet="mat"></div></div>
+        <div class="facet"><h3>Approach</h3><div class="opts" data-facet="app"></div></div>
+        <div class="facet"><h3>Article</h3><div class="opts" data-facet="kind"></div></div>
+        <div class="facet"><h3>Year</h3><div class="opts" data-facet="year"></div></div>
+        <div class="facet"><h3><label for="journal">Journal</label></h3><select id="journal" class="fsel" data-select="journal"></select></div>
+        <div class="facet"><h3><label for="member">Current group member</label></h3><select id="member" class="fsel" data-select="member"></select></div>
+      </div>
+    </details>
+
+    <div class="results">
+      <div class="rhead">
+        <span class="count" id="count" aria-live="polite"></span>
+        <div class="active" id="active"></div>
+      </div>
+      <ol class="list" id="list"></ol>
+      <div class="empty" id="empty" hidden><span>No papers match these filters.</span><button class="link-btn" type="button" data-clear>Clear all filters</button></div>
+    </div>
+  </div>
+</section>
+
+<script>
+const VOCAB = {
+  area: { synthesis: "Synthesis and Properties", lctem: "Electron Microscopy in Liquid", spectroscopy: "Spectroscopy and Structure", quantum: "Quantum Information Science" },
+  mat: { qd: "Quantum dots", perov: "Perovskites", pnict: "III–V and arsenides", metal: "Metals and plasmonics", oxide: "Oxides and rare earths", poly: "Polymer nanocomposites" },
+  app: { em: "Electron microscopy", spec: "Optical spectroscopy", thermo: "Thermodynamics", ligand: "Surface and ligand chemistry", assembly: "Self-assembly and superlattices", ml: "Machine learning and automation", devices: "Energy and devices" },
+  kind: { group: "Group-led", collab: "Collaboration", review: "Review or account", oa: "Open access" }
+};
+const PI = "Alivisatos, A. P.";
+
+// y, journal, vol, issue, pages, title, authors (ACS), current-member authors, doi, area, materials, approaches, review, open access
+const P = [
+[2026,"J. Am. Chem. Soc.","148","25","26845–26853","Visualizing Millisecond Atomic Dynamics of Nanocrystals in Liquid",["Kang, S.","Rhee, J.","Kim, J.","Oaks-Leaf, S.","Kim, M.","Yang, S.","Liu, C.","Kim, D.","Kim, S.","Wu, B.","Lee, W. B.","Limmer, D. T.","Alivisatos, A. P.","Ercius, P.","Park, J."],["Kang, S.","Yang, S.","Liu, C.","Wu, B."],"10.1021/jacs.6c08238","lctem",[],["em"],0,0],
+[2026,"Nat. Synth.","5","5","660–668","Kinetic-controlled transformations of group-III arsenide nanocubes",["Wu, B.","Yang, S.","Yang, D.-B.","Jin, Y.","Liu, C.","Yi, Z.","Fan, C.","Kang, S.","Zhang, Y.","Galli, G.","Francisco, J. S.","Alivisatos, A. P."],["Wu, B.","Yang, S.","Liu, C.","Fan, C.","Kang, S."],"10.1038/s44160-026-01015-6","synthesis",["pnict"],[],0,0],
+[2025,"MRS Bull.","50","11","1325–1340","Precision nanoscience aided by multimodal observations",["Yang, S.","Liu, C.","Kang, S.","Brewer, A. S.","Girolami, G. S.","Chan, M. K. Y.","Klie, R. F.","Chen, Q.","Park, J.","Alivisatos, A. P."],["Yang, S.","Liu, C.","Kang, S.","Brewer, A. S."],"10.1557/s43577-025-00958-z","lctem",[],["em"],1,1],
+[2025,"ACS Nano","","","","Chemically Tailorable Dissolution Pathways of Individual Cu<sub>3</sub>As Nanocrystals",["Yang, S.","Wu, B.","Liu, C.","Kang, S.","Alivisatos, A. P."],["Yang, S.","Wu, B.","Liu, C.","Kang, S."],"10.1021/acsnano.5c07437","lctem",["pnict"],["em"],0,0],
+[2025,"Nat. Commun.","16","","6401","Non-monotonic Size-Dependent Exciton Radiative Lifetime in CsPbBr<sub>3</sub> Nanocrystals",["Abbas, A. S.","Chabeda, D.","Weinberg, D.","Limmer, D. T.","Rabani, E.","Alivisatos, A. P."],[],"10.1038/s41467-025-60848-5","spectroscopy",["perov"],["spec"],0,1],
+[2025,"Nat. Commun.","16","","","Efficient up-conversion in CsPbBr<sub>3</sub> nanocrystals via phonon-driven exciton-polaron formation",["Abbas, A. S.","Li, B. C.","Schaller, R. D.","Prakapenka, V. B.","Chariton, S.","Bian, D.","Engel, G. S.","Alivisatos, A. P."],["Bian, D."],"10.1038/s41467-025-60992-y","spectroscopy",["perov"],["spec"],0,1],
+[2025,"Acc. Chem. Res.","58","2","271–280","Thermodynamics and Modeling of Collective Effects in the Organic Ligand Shell of Colloidal Quantum Dots",["Calvin, J. J.","Brewer, A. S.","Alivisatos, A. P."],["Brewer, A. S."],"10.1021/acs.accounts.4c00708","synthesis",["qd"],["ligand","thermo"],1,0],
+[2025,"Digital Discovery","4","1","93–104","Data-Driven Analysis of Text-Mined Seed-Mediated Syntheses of Gold Nanoparticles",["Lee, S.","Cruse, K.","Gleason, S. P.","Alivisatos, A. P.","Ceder, G.","Jain, A."],[],"10.1039/d4dd00158c","synthesis",["metal"],["ml"],0,1],
+[2024,"Adv. Mater.","36","28","e2401954","Multilaminate Energy Storage Films from Entropy-Driven Self-Assembled Supramolecular Nanocomposites",["Li, H.","Vargo, E.","Xie, Z.","Ma, L.","Pieters, P. F.","Shelton, S. W.","Alivisatos, A. P.","Xu, T.","Liu, Y."],[],"10.1002/adma.202401954","",["poly"],["assembly","devices"],0,0],
+[2024,"Nano Lett.","24","4","1168–1175","Unveiling Corrosion Pathways of Sn Nanocrystals through High-Resolution Liquid Cell Electron Microscopy",["Peng, X.","Shangguan, J.","Zhang, Q.","Hauwiller, M.","Yu, H.","Nie, Y.","Bustillo, K. C.","Alivisatos, A. P.","Asta, M.","Zheng, H."],[],"10.1021/acs.nanolett.3c03913","lctem",["metal"],["em"],0,0],
+[2024,"ACS Nano","18","29","19110–19123","Coherent Erbium Spin Defects in Colloidal Nanocrystal Hosts",["Wong, J.","Onizhuk, M.","Nagura, J.","Thind, A. S.","Bindra, J. K.","Wicker, C.","Grant, G. D.","Zhang, Y.","Niklas, J.","Poluektov, O. G.","Klie, R. F.","Zhang, J.","Galli, G.","Heremans, F. J.","Awschalom, D. D.","Alivisatos, A. P."],["Zhang, Y."],"10.1021/acsnano.4c04083","quantum",["oxide"],[],0,0],
+[2024,"J. Phys. Chem. C","128","29","12131–12140","Quantitative Comparison of Recombination Rates of Core/Shell Quantum Dots in Colloidal Solutions and Self-Assembled Monolayer Superlattices",["Brinn, R. M.","Yan, C.","Abbas, A. S.","Ondry, J.","Alivisatos, A. P."],[],"10.1021/acs.jpcc.4c01434","spectroscopy",["qd"],["spec","assembly"],0,0],
+[2024,"Proc. Natl. Acad. Sci. U.S.A.","121","18","e2307633121","Observation of negative surface and interface energies of quantum dots",["Calvin, J. J.","Brewer, A. S.","Crook, M. F.","Kaufman, T. M.","Alivisatos, A. P."],["Brewer, A. S."],"10.1073/pnas.2307633121","synthesis",["qd"],["ligand","thermo"],0,1],
+[2024,"Matter","7","1","175–190","An Artificial Intelligence’s Interpretation of Complex High-Resolution in Situ Transmission Electron Microscopy Data",["Wang, X.","Yan, C.","Ondry, J. C.","Bodiwala, V.","Ercius, P.","Alivisatos, A. P."],[],"10.1016/j.matt.2023.10.023","lctem",[],["em","ml"],0,0],
+[2024,"Nanotechnology","35","1","015710","Advanced Techniques in Automated High-Resolution Scanning Transmission Electron Microscopy",["Pattison, A. J.","Pedroso, C. C. S.","Cohen, B. E.","Ondry, J. C.","Alivisatos, A. P.","Theis, W.","Ercius, P."],[],"10.1088/1361-6528/acf938","lctem",[],["em","ml"],0,0],
+[2024,"ACS Nano","18","51","34646–34655","Automated Gold Nanorod Spectral Morphology Analysis Pipeline",["Gleason, S. P.","Dahl, J. C.","Elzouka, M.","Wang, X.","Byrne, D. O.","Cho, H.","Gababa, M.","Prasher, R. S.","Lubner, S.","Chan, E. M.","Alivisatos, A. P."],[],"10.1021/acsnano.4c09753","synthesis",["metal"],["ml"],0,0],
+[2024,"ACS Nano","18","33","22208–22219","Precursor Chemistry of Lead Bromide Perovskite Nanocrystals",["Dahl, J. C.","Curling, E. B.","Loipersberger, M.","Calvin, J. J.","Head-Gordon, M.","Chan, E. M.","Alivisatos, A. P."],[],"10.1021/acsnano.4c05761","synthesis",["perov"],[],0,0],
+[2023,"Sci. Adv.","9","42","","A Composite Electrodynamic Mechanism to Reconcile Spatiotemporally Resolved Exciton Transport in Quantum Dot Superlattices",["Yuan, R.","Roberts, T. D.","Brinn, R. M.","Choi, A. A.","Park, H. H.","Yan, C.","Ondry, J. C.","Khorasani, S.","Masiello, D. J.","Xu, K.","Alivisatos, A. P.","Ginsberg, N. S."],[],"10.1126/sciadv.adh2410","spectroscopy",["qd"],["spec","assembly"],0,1],
+[2023,"J. Phys. Chem. C","127","16","7740–7751","Examining the Role of Chloride Ligands on Defect Removal in Imperfectly Attached Semiconductor Nanocrystals for 1D and 2D Attachment Cases",["McKeown-Green, A. S.","Ondry, J. C.","Crook, M. F.","Calvin, J. J.","Alivisatos, A. P."],[],"10.1021/acs.jpcc.3c00506","synthesis",[],["ligand","assembly"],0,0],
+[2023,"J. Phys. Chem. C","127","21","10270–10281","Impact of Uniform Facets on the Thermodynamics of Ligand Exchanges on Colloidal Quantum Dots",["Brewer, A. S.","Calvin, J. J.","Alivisatos, A. P."],["Brewer, A. S."],"10.1021/acs.jpcc.3c00187","synthesis",["qd"],["ligand","thermo"],0,0],
+[2023,"J. Phys. Chem. C","127","31","15512–15522","Quantifying Aqueous Radiolytic Products in Liquid Phase Electron Microscopy",["Robberstad Møller-Nilsen, R. E.","Canepa, S.","Jensen, E.","Sun, H.","Moreno-Hernandez, I. A.","Yesibolati, M. N.","Alivisatos, A. P.","Mølhave, K. S."],[],"10.1021/acs.jpcc.3c02359","lctem",[],["em"],0,0],
+[2023,"Digital Discovery","2","6","1768–1782","Extracting Structured Seed-Mediated Gold Nanorod Growth Procedures from Scientific Text with LLMs",["Walker, N.","Lee, S.","Dagdelen, J.","Cruse, K.","Gleason, S.","Dunn, A.","Ceder, G.","Alivisatos, A. P.","Persson, K. A.","Jain, A."],[],"10.1039/d3dd00019b","synthesis",["metal"],["ml"],0,1],
+[2023,"Nat. Photonics","17","10","872–877","Luminescent Concentrator Design for Displays with High Ambient Contrast and Efficiency",["Cifci, O. S.","Yoder, M. A.","Xu, L.","Chen, H.","Beck, C. J.","He, J.","Koscher, B. A.","Nett, Z.","Swabeck, J. K.","Alivisatos, A. P.","Nuzzo, R. G.","Braun, P. V."],[],"10.1038/s41566-023-01281-2","",[],["devices"],0,0],
+[2023,"J. Am. Chem. Soc.","145","12","6648–6657","EELS Studies of Cerium Electrolyte Reveal Substantial Solute Concentration Effects in Graphene Liquid Cells",["Crook, M. F.","Moreno-Hernandez, I. A.","Ondry, J. C.","Ciston, J.","Bustillo, K. C.","Vargas, A.","Alivisatos, A. P."],[],"10.1021/jacs.2c07778","lctem",[],["em"],0,0],
+[2023,"J. Am. Chem. Soc.","145","42","23076–23087","Scientific Machine Learning of 2D Perovskite Nanosheet Formation",["Dahl, J. C.","Niblett, S.","Cho, Y.","Wang, X.","Zhang, Y.","Chan, E. M.","Alivisatos, A. P."],[],"10.1021/jacs.3c05984","synthesis",["perov"],["ml"],0,0],
+[2022,"Sci. Adv.","","","","Facet-selective etching trajectories of individual semiconductor nanocrystals",["Yan, C.","Byrne, D.","Ondry, J. C.","Kahnt, A.","Moreno-Hernandez, I. A.","Kamat, G. A.","Liu, Z.-J.","Laube, C.","Crook, M. F.","Zhang, Y.","Ercius, P.","Alivisatos, A. P."],[],"10.1126/sciadv.abq1700","lctem",[],["em"],0,1],
+[2022,"J. Phys. Chem. C","126","30","12958–12971","Thermodynamics of the Adsorption of Cadmium Oleate to Cadmium Sulfide Quantum Dots and Implications of a Dynamic Ligand Shell",["Calvin, J. J.","Ben-Moshe, A.","Curling, E. B.","Brewer, A. S.","Sedlak, A. B.","Kaufman, T. M.","Alivisatos, A. P."],["Brewer, A. S."],"10.1021/acs.jpcc.2c04223","synthesis",["qd"],["ligand","thermo"],0,0],
+[2022,"Adv. Mater.","","","","Using Machine Learning to Predict and Understand Complex Self-Assembly Behaviors of a Multicomponent Nanocomposite",["Vargo, E.","Dahl, J. C.","Evans, K. M.","Khan, T.","Alivisatos, A. P.","Xu, T."],[],"10.1002/adma.202203168","",["poly"],["ml","assembly"],0,0],
+[2022,"npj Comput. Mater.","","","","Classifying handedness in chiral nanomaterials using label error robust deep learning",["Groschner, K.","Pattison, A. J.","Ben-Moshe, A.","Alivisatos, A. P.","Theis, W.","Scott, M. C."],[],"10.1038/s41524-022-00822-7","",[],["em","ml"],0,1],
+[2022,"Front. Photonics","","","","Photonic Luminescent Solar Concentrator Design for High Efficiency, Low Cost Multijunction Photovoltaics",["Eisler, C. N.","Parson, L. E.","Nett, Z.","Love, C.","Schwartzberg, A. M.","Alivisatos, A. P."],[],"10.3389/fphot.2022.932913","",[],["devices"],0,1],
+[2022,"MRS Bull.","","","","Recent advances in the study of colloidal nanocrystals enabled by in situ liquid-phase transmission electron microscopy",["Moreno-Hernandez, I. A.","Crook, M. F.","Jamali, V.","Alivisatos, A. P."],[],"10.1557/s43577-022-00287-5","lctem",[],["em"],1,0],
+[2022,"Commun. Chem.","","","","Engineering gold-platinum core-shell nanoparticles by self-limitation in solution",["Ledendecker, M.","Paciok, P.","Osowiecki, W. T.","Pander, M.","Heggen, M.","Gohl, D.","Kamat, G. A.","Erbe, A.","Mayrhofer, K. J. J.","Alivisatos, A. P."],[],"10.1038/s42004-022-00680-w","synthesis",["metal"],[],0,1],
+[2022,"ACS Nano","","","","Observation of an Orientational Glass in a Superlattice of Elliptically-Faceted CdSe Nanocrystals",["Abbas, A. S.","Vargo, E.","Jamali, V.","Ercius, P.","Pieters, P. F.","Brinn, R. M.","Ben-Moshe, A.","Cho, M. G.","Xu, T.","Alivisatos, A. P."],[],"10.1021/acsnano.2c02014","spectroscopy",["qd"],["assembly"],0,0],
+[2022,"ACS Nano","","","","Multiscale Characterization of the Influence of the Organic-Inorganic Interface on the Dielectric Breakdown of Nanocomposites",["Pieters, P. F.","Laine, A.","Li, H.","Lu, Y.-H.","Singh, Y.","Wang, L.-W.","Liu, Y.","Xu, T.","Alivisatos, A. P.","Salmeron, M."],[],"10.1021/acsnano.2c01558","",["poly"],["devices"],0,0],
+[2022,"Nat. Synth.","","","","The role of organic ligand shell structures in colloidal nanocrystal synthesis",["Calvin, J. J.","Brewer, A. S.","Alivisatos, A. P."],["Brewer, A. S."],"10.1038/s44160-022-00025-4","synthesis",[],["ligand"],0,0]
+];
+
+const MEMBER_NAMES = { "Kang, S.": "Sungsu Kang", "Yang, S.": "Shengsong Yang", "Liu, C.": "Chang Liu", "Wu, B.": "Binyu Wu", "Fan, C.": "Chenqi Fan", "Brewer, A. S.": "Amanda Brewer", "Bian, D.": "Dylan Bian", "Zhang, Y.": "Yuxuan Zhang" };
+
+const papers = P.map(([year, journal, vol, issue, pages, title, authors, members, doi, area, mat, app, review, oa], i) => {
+  const kind = [authors[authors.length - 1] === PI ? "group" : "collab"];
+  if (review) kind.push("review");
+  if (oa) kind.push("oa");
+  return { i, year, journal, vol, issue, pages, title, authors, members, doi, area: area ? [area] : [], mat, app, kind,
+           member: members.map(m => MEMBER_NAMES[m]), text: (title + " " + authors.join(" ")).replace(/<[^>]+>/g, "").toLowerCase() };
+});
+
+const FACETS = ["area", "mat", "app", "kind", "year"];
+const state = { area: new Set(), mat: new Set(), app: new Set(), kind: new Set(), year: new Set(), journal: "", member: "", q: "" };
+const $ = id => document.getElementById(id);
+
+function valuesOf(p, f) {
+  if (f === "year") return [String(p.year)];
+  if (f === "journal") return [p.journal];
+  if (f === "member") return p.member;
+  return p[f];
+}
+function passes(p, skip) {
+  for (const f of FACETS) {
+    if (f === skip || !state[f].size) continue;
+    if (!valuesOf(p, f).some(v => state[f].has(v))) return false;
+  }
+  if (skip !== "journal" && state.journal && p.journal !== state.journal) return false;
+  if (skip !== "member" && state.member && !p.member.includes(state.member)) return false;
+  if (state.q && !state.q.toLowerCase().split(/\s+/).every(t => p.text.includes(t))) return false;
+  return true;
+}
+function counts(f) {
+  const c = {};
+  papers.filter(p => passes(p, f)).forEach(p => valuesOf(p, f).forEach(v => c[v] = (c[v] || 0) + 1));
+  return c;
+}
+function labelOf(f, v) {
+  if (f === "year" || f === "journal" || f === "member") return v;
+  return VOCAB[f][v];
+}
+
+function renderFacets() {
+  FACETS.forEach(f => {
+    const c = counts(f);
+    const keys = f === "year" ? [...new Set(papers.map(p => String(p.year)))].sort().reverse() : Object.keys(VOCAB[f]);
+    document.querySelector(`[data-facet="${f}"]`).innerHTML = keys.map(k => {
+      const n = c[k] || 0, on = state[f].has(k);
+      return `<button type="button" class="opt" data-f="${f}" data-v="${k}" aria-pressed="${on}" ${!n && !on ? "disabled" : ""}>${labelOf(f, k)} <span class="n">${n}</span></button>`;
+    }).join("");
+  });
+  [["journal", "All journals"], ["member", "Everyone"]].forEach(([f, all]) => {
+    const c = counts(f);
+    const keys = Object.keys(c).sort((a, b) => f === "journal" ? (c[b] - c[a]) || a.localeCompare(b) : a.split(" ").pop().localeCompare(b.split(" ").pop()));
+    if (state[f] && !keys.includes(state[f])) keys.unshift(state[f]);
+    const sel = $(f);
+    sel.innerHTML = `<option value="">${all}</option>` + keys.map(k => `<option value="${k}">${k} (${c[k] || 0})</option>`).join("");
+    sel.value = state[f];
+  });
+}
+
+function activeList() {
+  const out = [];
+  FACETS.forEach(f => state[f].forEach(v => out.push([f, v, labelOf(f, v)])));
+  if (state.journal) out.push(["journal", state.journal, state.journal]);
+  if (state.member) out.push(["member", state.member, state.member]);
+  if (state.q) out.push(["q", state.q, `“${state.q}”`]);
+  return out;
+}
+
+function cite(p) {
+  let s = `<i>${p.journal}</i> <b>${p.year}</b>`;
+  if (p.vol) s += `, <i>${p.vol}</i>`;
+  if (p.issue) s += ` (${p.issue})`;
+  if (p.pages) s += `, ${p.pages}`;
+  return s + ".";
+}
+function tagBtn(f, v) {
+  const on = f === "journal" ? state.journal === v : state[f].has(v);
+  return `<button type="button" class="tag${on ? " on" : ""}" data-f="${f}" data-v="${v}">${labelOf(f, v)}</button>`;
+}
+
+function renderList() {
+  const list = papers.filter(p => passes(p)).sort((a, b) => b.year - a.year || a.i - b.i);
+  $("list").innerHTML = list.map(p => `
+    <li class="paper">
+      <span class="year">${p.year}</span>
+      <div class="body">
+        <div class="jline"><span class="journal">${p.journal}</span>
+          ${p.kind.includes("review") ? `<span class="flag">Review</span>` : ""}
+          ${p.kind.includes("collab") ? `<span class="flag">Collaboration</span>` : ""}
+          ${p.kind.includes("oa") ? `<span class="flag oa">Open access</span>` : ""}</div>
+        <span class="title">${p.title}</span>
+        <span class="authors">${p.authors.map(a => p.members.includes(a) ? `<b>${a}</b>` : a).join("; ")}</span>
+        <span class="meta"><span>${cite(p)}</span><a class="doi" href="https://doi.org/${p.doi}" target="_blank" rel="noopener">DOI</a></span>
+        <div class="tags">${[...p.area.map(v => tagBtn("area", v)), ...p.mat.map(v => tagBtn("mat", v)), ...p.app.map(v => tagBtn("app", v))].join("")}</div>
+      </div>
+    </li>`).join("");
+  $("empty").hidden = list.length > 0;
+  $("count").textContent = `${list.length} of ${papers.length} papers`;
+  const act = activeList();
+  $("active").innerHTML = act.map(([f, v, l]) => `<button type="button" class="pill" data-remove="${f}" data-v="${v}" aria-label="Remove filter ${l.replace(/"/g, "")}">${l}</button>`).join("") +
+    (act.length ? `<button type="button" class="link-btn" data-clear>Clear all</button>` : "");
+  $("fcount").textContent = act.length ? `(${act.length} active)` : "";
+}
+
+function render() { renderFacets(); renderList(); }
+function toggle(f, v) {
+  if (f === "journal" || f === "member") state[f] = state[f] === v ? "" : v;
+  else state[f].has(v) ? state[f].delete(v) : state[f].add(v);
+  render();
+}
+
+document.addEventListener("click", e => {
+  const t = e.target.closest("[data-f]");
+  if (t && !t.disabled) { toggle(t.dataset.f, t.dataset.v); return; }
+  const r = e.target.closest("[data-remove]");
+  if (r) {
+    const f = r.dataset.remove;
+    if (f === "q") { state.q = ""; $("q").value = ""; }
+    else if (f === "journal" || f === "member") state[f] = "";
+    else state[f].delete(r.dataset.v);
+    render(); return;
+  }
+  if (e.target.closest("[data-clear]")) {
+    FACETS.forEach(f => state[f].clear()); state.journal = ""; state.member = ""; state.q = ""; $("q").value = "";
+    render();
+  }
+});
+document.querySelectorAll("[data-select]").forEach(s => s.addEventListener("change", e => { state[s.dataset.select] = e.target.value; render(); }));
+$("q").addEventListener("input", e => { state.q = e.target.value.trim(); renderList(); renderFacets(); });
+if (window.matchMedia("(max-width: 820px)").matches) $("filters").open = false;
+
+render();
+</script>
