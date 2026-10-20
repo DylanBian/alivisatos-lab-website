@@ -123,12 +123,14 @@ def main():
         if page=='members':
             updated,removed=remove_empty_sections(updated)
             print(f'Empty Divi sections removed: {len(removed)}',removed)
+            if os.environ.get('GITHUB_ACTIONS'): print(f'::notice title=members sections::Empty Divi sections removed: {len(removed)} {removed}')
     stamp=datetime.datetime.now(datetime.timezone.utc).strftime('%Y%m%dT%H%M%SZ')
     backup=ROOT/'backup'/stamp;backup.mkdir(parents=True)
     (backup/f'{page}.json').write_text(json.dumps(saved,ensure_ascii=False,indent=2))
     diff=''.join(difflib.unified_diff(raw.splitlines(True),updated.splitlines(True),fromfile='current',tofile='generated'))
     (ROOT/'reports'/f'{page}.diff').write_text(diff)
     print('Saved backup and diff. Current SHA256:',hashlib.sha256(raw.encode()).hexdigest())
+    if os.environ.get('GITHUB_ACTIONS'): print(f'::notice title=push {page}::live modified {saved.get("modified_gmt","?")}; raw {len(raw)} chars -> {len(updated)} chars; apply={args.apply}')
     if not args.apply:
         print('Dry run only. Review reports/'+page+'.diff before using --apply.');return
     if request(endpoint+'?context=edit')['content']['raw']!=raw:

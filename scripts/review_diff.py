@@ -81,6 +81,12 @@ def main():
     removed = sum(1 for d in diff if d.startswith("-") and not d.startswith("---"))
     shown = [d if len(d) <= 400 else d[:400] + " …" for d in diff[:MAX_LINES]]
     out(f"### {page}: {added} lines added, {removed} lines removed (one HTML tag per line)")
+    if os.environ.get("GITHUB_ACTIONS"):
+        def plain(line):
+            return re.sub(r"<[^>]+>", " ", line[1:]).strip()
+        changes = [d[0] + " " + plain(d)[:150] for d in diff if d[:1] in "+-" and d[:3] not in ("+++", "---") and plain(d)]
+        sample = "%0A".join(c.replace("%", "%25") for c in changes[:25])
+        print(f"::notice title=Diff {page}::+{added} / -{removed} lines; text changes (first 25):%0A{sample}")
     out("```diff\n" + ("\n".join(shown) or "(no change)") + ("\n… diff truncated" if len(diff) > MAX_LINES else "") + "\n```")
 
 
