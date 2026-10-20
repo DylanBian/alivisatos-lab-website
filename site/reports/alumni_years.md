@@ -34,4 +34,6 @@ the dates above use the visible list.
   revision (2023-05-16), whose start year is unknown ("until 2024").
 - End year: the year of the last revision that still listed the person.
 - Shown on the Alumni card next to the role, for example "Postdoc, 2022–2025".
+- Abdullah S. Abbas, Xingzhi Wang and Michelle Crook started their Ph.D. in 2018 at Berkeley and joined UChicago in 2021
+  as visiting Ph.D. candidates (Dylan, 2026-10-20); shown as "Ph.D., 2018–2024".
 - Yifan (Miller) Liao and Nadia Ceaser are not added (listed for a few weeks only; no decision yet).
