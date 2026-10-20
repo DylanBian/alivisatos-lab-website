@@ -1,422 +1,580 @@
-"""Render code-managed fragments from the publication and page data."""
+"""Render the code-managed page sections (AUTO modules) and their stylesheet from the data files.
+
+For each page, writes build/<page>.html (the AUTO module content) and build/<page>.css (the Free-Form CSS that
+push.py stores on the same Divi Code module). Saving page content on Voices removes <style> and <script> and filters
+inline style properties; Divi module CSS is kept and printed on that page only (tested 2026-10-20).
+Filters work without scripts: chips link to #targets and CSS rules use :target.
+"""
 from pathlib import Path
 from datetime import date
-import csv, json, html, os, re
+from collections import Counter
+import html, json, re
 from lxml import html as tree
-from lxml import etree
 import yaml
-from push import BLOCK
+from push import BLOCK, replace_research_citations
+import pubdata
 
-ROOT=Path(__file__).resolve().parent
-# Search boxes and filter buttons need a script. Page content on Voices drops <script>, so they are left out
-# unless AG_INTERACTIVE=1 (set it only once the script can actually run on the live site).
-INTERACTIVE=os.environ.get('AG_INTERACTIVE','0')=='1'
-OUT=ROOT/'build'; OUT.mkdir(exist_ok=True)
-records=list(csv.DictReader((ROOT/'data/publications.csv').open()))
-if any(r['kind']!='publication' for r in records):
-    raise ValueError('publications.csv must contain regular year-list records only')
+ROOT = Path(__file__).resolve().parent
+OUT = ROOT / 'build'
+OUT.mkdir(exist_ok=True)
+SITE = 'https://alivisatoslab.uchicago.edu'
+LAB_EMAIL = 'alivisatos-lab@uchicago.edu'
+ADDRESS_LINES = ['Gordon Center for Integrative Science, Room E247H', '929 E 57th Street', 'Chicago, IL 60637']
+MAP_URL = 'https://www.google.com/maps/search/?api=1&query=929+E+57th+Street+Chicago+IL+60637'
+NOSCROLL = 'et_smooth_scroll_disabled'  # Divi intercepts in-page links for smooth scrolling unless this class is set
 
-AREA={
-    'synthesis':('Synthesis and Properties','synthesis'),
-    'lctem':('Electron Microscopy in Liquid','lctem'),
-    'spectroscopy':('Spectroscopy and Structure','spectroscopy'),
-    'quantum':('Quantum Information Science','quantum'),
+TAGS = yaml.safe_load((ROOT / 'data/tags.yaml').read_text())
+AREA_ORDER = ['synthesis', 'lctem', 'spectroscopy', 'quantum']
+AREA_PAGE_LABEL = {
+    'synthesis': 'Synthesis and Properties of Nanoparticles',
+    'lctem': 'Advancing Electron Microscopy in Liquid',
+    'spectroscopy': 'Spectroscopy and Structural Studies',
+    'quantum': 'Quantum Information Science',
 }
+esc = lambda s: html.escape(str(s), quote=True)
 
-def normalize_name(value):
-    return re.sub(r'\s+',' ',re.sub(r'[^\w]+',' ',value.casefold())).strip()
 
-selected_source=yaml.safe_load((ROOT/'data/selected_publications.yaml').read_text())
-member_records=yaml.safe_load((ROOT/'data/members.yaml').read_text())
-member_aliases={}
-for member in member_records:
-    for name in member.get('publication_names',[]):
-        member_aliases[normalize_name(name)]=member.get('title_html',name)
+def norm(value):
+    return re.sub(r'\s+', ' ', re.sub(r'[^\w]+', ' ', value.casefold())).strip()
 
-def current_author_matches(paper):
-    if int(paper.get('year',0))<2022:
-        return []
-    return [author for author in paper.get('authors',[]) if normalize_name(author) in member_aliases]
 
-def card(r):
-    attrs=json.loads(r['attributes'])
-    attrs={k:(re.sub(r'\b(?:ap-|ag-pubs-|alivisatos-)','ag-site-',v) if k=='class' else v) for k,v in attrs.items()}
-    attributes=' '.join(f'{k}="{html.escape(v,quote=True)}"' for k,v in attrs.items())
-    journal_class=re.sub(r'\b(?:ap-|ag-pubs-|alivisatos-)','ag-site-',r['journal_class'])
-    meta=f'<span class="{journal_class}">{r["journal_html"]}</span>'
-    for cls,key in [('ag-site-year-tag','year'),('ag-site-citation-details','details_html')]:
-        if r[key]: meta+=f'<span class="{cls}">{r[key]}</span>'
-    if r['url']:
-        if not r['url'].startswith('https://'): raise ValueError('HTTPS source link required')
-        meta+=f'<a class="ag-site-doi" href="{html.escape(r["url"],quote=True)}" target="_blank" rel="noopener noreferrer">{html.escape(r["link_label"])}</a>'
-    meta+=r['extra_meta_html']
-    return f'<article {attributes}><h3 class="ag-site-card-title">{r["title_html"]}</h3><p class="ag-site-authors">{r["authors_html"]}</p><div class="ag-site-card-meta">{meta}</div></article>'
+members = yaml.safe_load((ROOT / 'data/members.yaml').read_text())
+member_aliases = {}
+for m in members:
+    if m['group'] == 'pi':
+        continue
+    for name in m.get('publication_names', []) + [m['name']]:
+        member_aliases[norm(name)] = m['name']
+member_surnames = {}  # "Kang, S." style names on the full list
+for m in members:
+    if m['group'] == 'pi':
+        continue
+    for name in m.get('publication_names', []) + [m['name']]:
+        parts = re.sub(r'\(.*?\)', '', name).split()
+        if len(parts) >= 2:
+            member_surnames[f"{parts[-1]}, {' '.join(p[0] + '.' for p in parts[:-1])}"] = m['name']
 
-def initials_name(full_name):
-    parts=full_name.split()
-    if len(parts)<2: return full_name
-    surname=parts[-1]
-    initials=' '.join((part[0].upper()+'.') for part in parts[:-1])
-    return f'{surname}, {initials}'
 
-def citation_details(paper):
-    volume=str(paper.get('volume') or '').strip()
-    issue=str(paper.get('issue') or '').strip()
-    number=str(paper.get('article_number') or paper.get('pages') or '').strip()
-    if issue and volume: volume+=f' ({issue})'
-    return f'{volume}, {number}' if volume and number else (volume or number)
-
-def render_selected_paper(paper, matches):
-    authors=[]
-    for author in paper['authors']:
-        label=html.escape(initials_name(author))
-        if normalize_name(author) in member_aliases:
-            label=f'<strong>{label}</strong>'
-        authors.append(label)
-    doi=paper['doi']
-    slug=re.sub(r'[^a-z0-9]+','-',doi.casefold()).strip('-')
-    doi_url='https://doi.org/'+doi
-    if not doi.startswith('10.'):
-        raise ValueError(f'Invalid DOI: {doi}')
-    meta=[f'<span class="ag-site-citation">{html.escape(citation_details(paper))}</span>'] if citation_details(paper) else []
-    meta.append(f'<a class="ag-site-paper-doi" href="{html.escape(doi_url,quote=True)}" target="_blank" rel="noopener noreferrer">DOI</a>')
-    if paper.get('open_access'):
-        meta.append('<span class="ag-site-open-access">Open access</span>')
-    data_members='|'.join(matches)
+# ---------------------------------------------------------------- shared pieces
+def contact_block(heading_id):
+    address = '<br>'.join(esc(x) for x in ADDRESS_LINES)
     return (
-        f'<li id="ag-pub-{slug}" class="ag-site-paper" data-area="{html.escape(paper["area"],quote=True)}" data-members="{html.escape(data_members,quote=True)}">'
-        f'<span class="ag-site-paper-year">{int(paper["year"])}</span>'
-        f'<div class="ag-site-paper-body"><span class="ag-site-paper-journal">{html.escape(paper["journal"])}</span>'
-        f'<h3 class="ag-site-paper-title">{paper["title"]}</h3>'
-        f'<p class="ag-site-paper-authors">{"; ".join(authors)}</p>'
-        f'<div class="ag-site-paper-meta">{" ".join(meta)}</div></div></li>'
+        f'<section class="ag-site-section" aria-labelledby="{heading_id}">'
+        f'<h2 class="ag-site-section-title" id="{heading_id}">Contact</h2>'
+        '<div class="ag-site-contact">'
+        f'<div><h3>Address</h3><p>Alivisatos Group<br>{address}</p></div>'
+        f'<div><h3>Inquiries</h3><p><a href="mailto:{LAB_EMAIL}">{LAB_EMAIL}</a></p></div>'
+        f'<div><h3>Directions</h3><p><a href="{esc(MAP_URL)}" target="_blank" rel="noopener noreferrer">Open in Google Maps</a></p></div>'
+        '</div></section>'
     )
 
-eligible=[]
-seen_dois=set()
-for paper in selected_source:
-    if paper['doi'] in seen_dois: raise ValueError(f'Duplicate selected DOI: {paper["doi"]}')
-    seen_dois.add(paper['doi'])
-    if paper.get('area') not in AREA: raise ValueError(f'Unknown research area: {paper.get("area")}')
-    if paper.get('status')!='verified': raise ValueError(f'Unverified selected citation: {paper["doi"]}')
-    matches=current_author_matches(paper)
-    if matches: eligible.append((paper,matches))
 
-area_html=[]
-for area,(label,anchor) in AREA.items():
-    papers=[(p,m) for p,m in eligible if p['area']==area]
-    if not papers: continue
-    papers.sort(key=lambda pair:pair[0].get('publication_date',''),reverse=True)
-    cards='\n'.join(render_selected_paper(p,m) for p,m in papers)
-    area_html.append(
-        f'<section class="ag-site-area" id="ag-site-area-{area}" aria-labelledby="ag-site-area-heading-{area}">'
-        f'<h3 class="ag-site-area-heading" id="ag-site-area-heading-{area}">{label}</h3>'
-        f'<a class="ag-site-area-link" href="https://alivisatoslab.uchicago.edu/research/#{anchor}">About this research area</a>'
-        f'<ul class="ag-site-list">{cards}</ul></section>'
-    )
-jumps=''.join(f'<a class="ag-site-chip" href="#ag-site-area-{area}">{AREA[area][0]}</a>' for area in AREA if any(p['area']==area for p,_ in eligible))
-selected_html=(
-    '<section class="ag-site-selected" aria-labelledby="ag-site-selected-heading">'
-    '<header class="ag-site-selected-intro"><span class="ag-site-eyebrow">Alivisatos Group</span>'
-    '<h2 class="ag-site-selected-heading" id="ag-site-selected-heading">Selected Publications</h2>'
-    '<p class="ag-site-lede">Recent work by current group members, organized by research area. The complete publication list follows below.</p></header>'
-    '<div><p class="ag-site-jump-label">Explore by research area</p><nav class="ag-site-jumps" aria-label="Jump to a research area">'+jumps+'</nav></div>'
-    '<div class="ag-site-areas">'+'\n'.join(area_html)+'</div>'
-    '<p class="ag-site-foot">Names in bold are current group members. DOI links open the publisher record.</p></section>'
-)
+def chip(href, label, count=None, extra=''):
+    count_html = f' <span class="ag-site-chip-count">{count}</span>' if count is not None else ''
+    return f'<a class="ag-site-chip {NOSCROLL}{extra}" href="{href}">{esc(label)}{count_html}</a>'
 
-def home_publication_card(paper):
-    pub_date=date.fromisoformat(paper['publication_date'])
-    date_text=f'{pub_date:%B} {pub_date.day}, {pub_date.year}'
-    doi_url='https://doi.org/'+paper['doi']
-    summary=paper.get('homepage_summary','')
-    summary_html=f'<p class="ag-site-home-copy">{html.escape(summary)}</p>' if summary else ''
+
+def filter_css(root_class, target_id, hide_selector, chip_href):
+    """CSS for one :target filter: hide non-matching items, mark the chip, show the status line."""
+    return (f'.ag-site-root.{root_class}:has(#{target_id}:target) {hide_selector}{{display:none}}'
+            f'.ag-site-root.{root_class}:has(#{target_id}:target) .ag-site-chip[href="{chip_href}"]{{border-color:#800000;background:#800000;color:#fff}}'
+            f'.ag-site-root.{root_class}:has(#{target_id}:target) .ag-site-chip[href="{chip_href}"] .ag-site-chip-count{{color:#f3dede}}'
+            f'.ag-site-root.{root_class}:has(#{target_id}:target) .ag-site-status-{target_id}{{display:block}}'
+            f'.ag-site-root.{root_class}:has(#{target_id}:target) .ag-site-chip-all{{border-color:#e6dfdf;background:#fff;color:#2b2324}}')
+
+
+# ---------------------------------------------------------------- members
+GROUPS = [('pi', 'Principal Investigator'), ('postdoc', 'Postdoctoral Researchers'),
+          ('phd', 'Graduate Students'), ('undergrad', 'Undergraduate Students')]
+
+
+def member_links(m):
+    links = []
+    if m.get('email'):
+        links.append(f'<a href="mailto:{esc(m["email"])}">{esc(m["email"])}</a>')
+    if m.get('scholar'):
+        links.append(f'<a href="{esc(m["scholar"])}" target="_blank" rel="noopener noreferrer">Google Scholar ↗</a>')
+    return f'<div class="ag-site-member-links">{"".join(links)}</div>' if links else ''
+
+
+def render_member(m):
+    research = ''
+    if m.get('research'):
+        tags = ''.join(f'<a class="ag-site-tag" href="{SITE}/research/#{esc(r["area"])}">{esc(r["text"])}</a>' for r in m['research'])
+        research = f'<div class="ag-site-member-research" aria-label="Research">{tags}</div>'
+    details = ''
+    if m.get('education'):
+        items = ''.join(f'<li>{esc(x)}</li>' for x in m['education'])
+        details = f'<details class="ag-site-member-details"><summary>Education</summary><ul>{items}</ul></details>'
+    start = f' data-start="{m["start"]}"' if m.get('start') else ''
     return (
-        '<article class="ag-site-home-paper">'
-        f'<p class="ag-site-home-paper-date">{html.escape(paper["journal"])} · {html.escape(date_text)}</p>'
-        f'<h3 class="ag-site-home-paper-title"><a href="{html.escape(doi_url,quote=True)}">{paper["title"]}</a></h3>'
-        f'{summary_html}</article>'
+        f'<article class="ag-site-member-card" id="{esc(m["id"])}" data-group="{m["group"]}"{start}>'
+        f'<img class="ag-site-member-photo" src="{esc(m["photo"])}" alt="{esc(m["photo_alt"])}" loading="lazy">'
+        f'<div class="ag-site-member-body"><h3 class="ag-site-member-name">{esc(m["display_name"])}</h3>'
+        f'<p class="ag-site-member-role">{esc(m["role"])}</p>{research}{member_links(m)}{details}</div></article>'
     )
 
-def area_label(slug):
-    return {'synthesis':'Nanomaterial Synthesis','lctem':'Electron Microscopy in Liquid','spectroscopy':'Optical studies','quantum':'Quantum Information Science'}.get(slug,slug)
 
-def render_member(record):
-    rendered=record['template_html']
-    for field in ('title_html','image_url','image_alt'):
-        value=record.get(field,'')
-        rendered=rendered.replace('@@'+field.upper()+'@@',value if field=='title_html' else html.escape(value,quote=True))
-    root=tree.fragment_fromstring(rendered,create_parent='div')
-    article=root.xpath('.//article')[0]
-    article.set('class','ag-site-member-card')
-    article.set('data-member-id',record['id'])
-    content=article.xpath('./div')[0]
-    content.set('class','ag-site-member-content')
-    photo=article.xpath('./img')
-    if photo:
-        photo[0].set('class','ag-site-member-photo')
-        photo[0].set('loading','lazy')
-    name=content.xpath('./h3')[0]
-    name.set('class','ag-site-member-name')
-    # Personal emails stay on member cards (Dylan, 2026-10-20). Remove only the generic Research block.
-    for block in content.xpath('.//div'):
-        if 'Research Area:' in ' '.join(block.itertext()):
-            parent=block.getparent()
-            if parent is not None: parent.remove(block)
-    role_text=''
-    for block in content.xpath('./div'):
-        text=' '.join(' '.join(block.itertext()).split())
-        if text and 'Google Scholar' not in text and 'Education & links' not in text:
-            role_text=text
-            block.set('class','ag-site-member-role')
-            break
-    if not role_text:
-        role_text='Principal Investigator' if record['id']=='members-001' else ''
-    role_slug='postdoc' if 'postdoctoral' in role_text.casefold() else ('phd' if 'ph.d' in role_text.casefold() else ('undergraduate' if 'undergraduate' in role_text.casefold() else 'pi'))
-    article.set('data-role',role_slug)
-    match=re.search(r'(20\d{2})',role_text)
-    if match: article.set('data-start-year',match.group(1))
-    areas=record.get('areas',[])
-    if areas:
-        tags=tree.Element('div',attrib={'class':'ag-site-member-tags','aria-label':'Research areas'})
-        for area in areas:
-            label=area_label(area)
-            if record['id']=='members-006': label='AI for Science, Electron Microscopy'
-            if record['id']=='members-012': label={'synthesis':'Nanomaterial Synthesis','spectroscopy':'Optical studies'}[area]
-            tag=etree.SubElement(tags,'a',attrib={'class':'ag-site-tag','href':f'https://alivisatoslab.uchicago.edu/research/#{area}'})
-            tag.text=label
-        pos=content.index(role_block:=next((e for e in content if e.tag=='div' and e.get('class')=='ag-site-member-role'),name))
-        content.insert(pos+1,tags)
-    scholar=article.xpath('.//a[contains(@href,"scholar.google.com")]')
-    if scholar:
-        actions=tree.Element('div',attrib={'class':'ag-site-member-actions','aria-label':'Profiles'})
-        scholar_action=etree.SubElement(actions,'a',attrib={'class':'ag-site-member-action','href':scholar[0].get('href'),'target':'_blank','rel':'noopener noreferrer','aria-label':'Google Scholar profile'})
-        scholar_action.text='Scholar ↗'
-        content.insert(2 if len(content)>1 else len(content),actions)
-    for details in content.xpath('.//details'):
-        details.set('class','ag-site-member-details')
-        for child in details.xpath('./div'):
-            child.set('class','ag-site-details-body')
-    for link in article.xpath('.//a'):
-        if link.get('href','').startswith('https://alivisatoslab.uchicago.edu/research/'):
-            link.set('class','ag-site-tag')
-    return ''.join(tree.tostring(child,encoding='unicode',method='html') for child in root)
+def render_pi(m):
+    roles = ''.join(f'<p class="ag-site-pi-role">{esc(x)}</p>' for x in m.get('role_lines', []))
+    career = ''
+    if m.get('career'):
+        items = ''.join(f'<li>{esc(x)}</li>' for x in m['career'])
+        career = f'<details class="ag-site-member-details"><summary>Education and career</summary><ul>{items}</ul></details>'
+    return (
+        f'<article class="ag-site-pi" id="{esc(m["id"])}" data-group="pi">'
+        f'<img class="ag-site-pi-photo" src="{esc(m["photo"])}" alt="{esc(m["photo_alt"])}" loading="lazy">'
+        f'<div><h3 class="ag-site-pi-name">{esc(m["display_name"])}</h3>{roles}{member_links(m)}{career}</div></article>'
+    )
 
-def render_alumni(records):
-    labels={'phd':'Ph.D.','postdoc':'Postdoc','undergrad':'Undergraduate'}
-    sectors=['university','industry','institute','unlisted']
-    sector_labels={'university':'University','industry':'Industry','institute':'Institutes & national labs','unlisted':'Not listed'}
-    counts={sector:sum(1 for r in records if r.get('sector')==sector) for sector in sectors}
-    profs=sum(1 for r in records if 'professor' in r.get('title','').casefold())
-    tmpl=(ROOT/'templates/alumni.html').read_text()
-    tmpl=tmpl.replace('@@TOTAL@@',str(len(records))).replace('@@PROFESSORS@@',str(profs)).replace('@@INDUSTRY@@',str(counts['industry'])).replace('@@INSTITUTE@@',str(counts['institute']))
-    bar=''.join(f'<span class="ag-site-sector-segment ag-site-sector-{sector}" data-sector-segment data-count="{counts[sector]}" data-total="{len(records)}" title="{html.escape(sector_labels[sector])}: {counts[sector]}"></span>' for sector in sectors)
-    sector_buttons=['<button type="button" class="ag-site-filter-button" data-sector-filter data-value="all" aria-pressed="true">All sectors</button>']
-    for sector in sectors:
-        sector_buttons.append(f'<button type="button" class="ag-site-filter-button" data-sector-filter data-value="{sector}" aria-pressed="false">{html.escape(sector_labels[sector])} ({counts[sector]})</button>')
-    role_buttons=['<button type="button" class="ag-site-filter-button" data-role-filter data-value="all" aria-pressed="true">All roles</button>']
-    for role in ('phd','postdoc','undergrad'):
-        count=sum(1 for r in records if role in r.get('roles',[]))
-        role_buttons.append(f'<button type="button" class="ag-site-filter-button" data-role-filter data-value="{role}" aria-pressed="false">{labels[role]} ({count})</button>')
-    cards=[]
-    for record in sorted(records,key=lambda r:(r['name'].split()[-1].casefold(),r['name'].casefold())):
-        roles=record.get('roles',[])
-        name=html.escape(record['name'])
-        title=html.escape(record.get('title',''))
-        org=html.escape(record.get('org',''))
-        haystack=' '.join([record['name'],record.get('title',''),record.get('org','')]).casefold()
-        meta=' · '.join(x for x in (title,org,html.escape(record.get('years',''))) if x)
-        name_html=f'<a href="{html.escape(record["link"],quote=True)}" target="_blank" rel="noopener noreferrer">{name}</a>' if record.get('link') else name
-        tags=''.join(f'<span class="ag-site-role-tag">{labels[role]}</span>' for role in roles)
-        cards.append(f'<article class="ag-site-alumni-card" data-alumni-card data-name="{html.escape(record["name"],quote=True)}" data-title="{html.escape(record.get("title",""),quote=True)}" data-org="{html.escape(record.get("org",""),quote=True)}" data-sector="{html.escape(record.get("sector","unlisted"),quote=True)}" data-roles="{html.escape("|".join(roles),quote=True)}" data-search="{html.escape(haystack,quote=True)}"><h2 class="ag-site-alumni-name">{name_html}</h2>{f"<p class=\"ag-site-alumni-meta\">{meta}</p>" if meta else ""}<div class="ag-site-role-tags">{tags}</div></article>')
-    return tmpl.replace('@@SECTOR-BAR@@',bar).replace('@@SECTOR-FILTERS@@',''.join(sector_buttons)).replace('@@ROLE-FILTERS@@',''.join(role_buttons)).replace('@@ALUMNI-CARDS@@','\n'.join(cards))
 
-def source_link(url,label='Source'):
-    if not url.startswith('https://'): raise ValueError('HTTPS source link required')
-    return f'<p class="ag-site-source"><a class="ag-site-link" href="{html.escape(url,quote=True)}" target="_blank" rel="noopener noreferrer">{html.escape(label)}</a></p>'
+def build_members():
+    sections = []
+    for key, label in GROUPS:
+        people = [m for m in members if m['group'] == key]
+        if not people:
+            continue
+        hid = 'members-' + re.sub(r'[^a-z]+', '-', label.casefold()).strip('-')
+        body = render_pi(people[0]) if key == 'pi' else '<div class="ag-site-member-grid">' + ''.join(render_member(m) for m in people) + '</div>'
+        sections.append(f'<section class="ag-site-section" aria-labelledby="{hid}"><h2 class="ag-site-section-title" id="{hid}">{label}</h2>{body}</section>')
+    alumni_note = (f'<p class="ag-site-view-all"><a href="{SITE}/alumni/">Former members: see Alumni →</a></p>')
+    return ('<!-- AUTO:members:START -->\n<div id="alivisatos-members" class="ag-site-root ag-site-members">'
+            '<h1 class="ag-site-title">Current Members</h1>' + ''.join(sections) + alumni_note
+            + contact_block('members-contact') + '</div>\n<!-- AUTO:members:END -->'), ''
 
-def render_news(record):
-    if not record.get('publish',True): return ''
-    if not record.get('source_url') or not record.get('verified'): raise ValueError(f'Published News item lacks verified source: {record["id"]}')
-    rendered=record['template_html']
-    for field in ('title_html','image_url','image_alt'):
-        value=record.get(field,'')
-        rendered=rendered.replace('@@'+field.upper()+'@@',value if field=='title_html' else html.escape(value,quote=True))
-    return rendered.replace('</article>',source_link(record['source_url'])+'</article>')
 
-def prefix_classes(root):
+# ---------------------------------------------------------------- alumni
+def build_alumni():
+    records = yaml.safe_load((ROOT / 'data/alumni.yaml').read_text())
+    labels = {'phd': 'Ph.D.', 'postdoc': 'Postdoc', 'undergrad': 'Undergraduate'}
+    sectors = ['university', 'industry', 'institute', 'unlisted']
+    sector_labels = {'university': 'University', 'industry': 'Industry', 'institute': 'Institutes and national labs', 'unlisted': 'Not listed'}
+    counts = Counter(r.get('sector', 'unlisted') for r in records)
+    profs = sum(1 for r in records if 'professor' in r.get('title', '').casefold())
+    total = len(records)
+    stats = (f'<section class="ag-site-alumni-summary" aria-label="Alumni summary">'
+             f'<div class="ag-site-stat"><strong class="ag-site-stat-value">{total}</strong><span class="ag-site-stat-label">Alumni listed</span></div>'
+             f'<div class="ag-site-stat"><strong class="ag-site-stat-value">{profs}</strong><span class="ag-site-stat-label">Professors</span></div>'
+             f'<div class="ag-site-stat"><strong class="ag-site-stat-value">{counts["industry"]}</strong><span class="ag-site-stat-label">In industry</span></div>'
+             f'<div class="ag-site-stat"><strong class="ag-site-stat-value">{counts["institute"]}</strong><span class="ag-site-stat-label">At institutes and national labs</span></div></section>')
+    bar = ''.join(f'<span class="ag-site-sector-segment ag-site-sector-{s}" style="width:{100 * counts[s] / total:.2f}%" title="{esc(sector_labels[s])}: {counts[s]}"></span>' for s in sectors)
+    filters, css, statuses = [], [], []
+    targets = []
+    sector_chips = [chip('#alumni-all', 'All', total, ' ag-site-chip-all')]
+    for s in sectors:
+        tid = f'alumni-sector-{s}'
+        targets.append(tid)
+        sector_chips.append(chip(f'#{tid}', sector_labels[s], counts[s]))
+        css.append(filter_css('ag-site-alumni', tid, f'.ag-site-alumni-card:not([data-sector="{s}"])', f'#{tid}'))
+        statuses.append(f'<p class="ag-site-filter-status ag-site-status-{tid}">Showing {counts[s]} alumni: {esc(sector_labels[s])}.<a class="{NOSCROLL}" href="#alumni-all">Show all</a></p>')
+    role_chips = []
+    for role in ('phd', 'postdoc', 'undergrad'):
+        n = sum(1 for r in records if role in r.get('roles', []))
+        tid = f'alumni-role-{role}'
+        targets.append(tid)
+        role_chips.append(chip(f'#{tid}', labels[role], n))
+        css.append(filter_css('ag-site-alumni', tid, f'.ag-site-alumni-card:not(.ag-site-r-{role})', f'#{tid}'))
+        statuses.append(f'<p class="ag-site-filter-status ag-site-status-{tid}">Showing {n} alumni: {labels[role]}.<a class="{NOSCROLL}" href="#alumni-all">Show all</a></p>')
+    filters.append(f'<div class="ag-site-filter-group"><span class="ag-site-filter-label">Sector</span>{"".join(sector_chips)}</div>')
+    filters.append(f'<div class="ag-site-filter-group"><span class="ag-site-filter-label">Role in group</span>{"".join(role_chips)}</div>')
+    cards = []
+    for r in sorted(records, key=lambda r: (r['name'].split()[-1].casefold(), r['name'].casefold())):
+        roles = r.get('roles', [])
+        name = esc(r['name'])
+        meta = ' · '.join(x for x in (esc(r.get('title', '')), esc(r.get('org', '')), esc(r.get('years', ''))) if x)
+        name_html = f'<a href="{esc(r["link"])}" target="_blank" rel="noopener noreferrer">{name}</a>' if r.get('link') else name
+        tags = ''.join(f'<span class="ag-site-role-tag">{labels[x]}</span>' for x in roles)
+        role_classes = ''.join(f' ag-site-r-{x}' for x in roles)
+        meta_html = f'<p class="ag-site-alumni-meta">{meta}</p>' if meta else ''
+        cards.append(f'<article class="ag-site-alumni-card{role_classes}" data-sector="{esc(r.get("sector", "unlisted"))}">'
+                     f'<h3 class="ag-site-alumni-name">{name_html}</h3>{meta_html}<div class="ag-site-role-tags">{tags}</div></article>')
+    target_html = '<span class="ag-site-target" id="alumni-all"></span>' + ''.join(f'<span class="ag-site-target" id="{t}"></span>' for t in targets)
+    module = ('<!-- AUTO:alumni:START -->\n<div id="alivisatos-alumni" class="ag-site-root ag-site-alumni">'
+              '<h1 class="ag-site-title">Alumni</h1>'
+              '<p class="ag-site-lede">Former Ph.D. students, postdoctoral researchers and undergraduates of the Alivisatos Group, with their current positions where known.</p>'
+              + stats +
+              '<section class="ag-site-section" aria-labelledby="alumni-sector-heading">'
+              '<h2 class="ag-site-section-title" id="alumni-sector-heading">Where they are now</h2>'
+              f'<div class="ag-site-sector-bar" role="img" aria-label="Alumni by sector">{bar}</div>'
+              + target_html + '<div class="ag-site-filters">' + ''.join(filters) + '</div>' + ''.join(statuses) +
+              '<div class="ag-site-alumni-grid">' + '\n'.join(cards) + '</div></section>'
+              f'<p class="ag-site-corrections">For corrections or updates to this page, please email <a href="mailto:{LAB_EMAIL}">{LAB_EMAIL}</a>.</p>'
+              '</div>\n<!-- AUTO:alumni:END -->')
+    return module, ''.join(css)
+
+
+# ---------------------------------------------------------------- news
+def strip_styles(fragment):
+    root = tree.fragment_fromstring(fragment, create_parent='div')
     for node in root.iter():
-        if not isinstance(node.tag,str): continue
-        node.attrib.pop('style',None)
-        classes=node.get('class','').split()
-        renamed=[]
-        for cls in classes:
-            if cls=='img': continue
-            if cls.startswith(('ap-','ag-pubs-','alivisatos-')): cls='ag-site-'+cls.split('-',1)[1]
-            renamed.append(cls)
-        if renamed: node.set('class',' '.join(dict.fromkeys(renamed)))
-        elif node.get('class') is not None: node.attrib.pop('class',None)
-    for article in root.xpath('.//article'):
-        if 'ag-site-card' not in article.get('class','').split() and 'ag-site-member-card' not in article.get('class','').split() and 'ag-site-alumni-card' not in article.get('class','').split() and 'ag-site-home-paper' not in article.get('class','').split():
-            article.set('class',(article.get('class','')+' ag-site-card').strip())
-        for img in article.xpath('./img'):
-            # Member photos keep their own size rule; only other cards get the full-width card image.
-            if 'ag-site-member-photo' not in img.get('class','').split():
-                img.set('class','ag-site-card-image')
-        for time_node in article.xpath('.//time'):
-            p=time_node.getparent()
-            if p is not None and p.tag=='p': p.set('class','ag-site-kicker')
-        for h in article.xpath('.//h2'):
-            if not h.get('class'): h.set('class','ag-site-card-title')
-        for h in article.xpath('.//h3'):
-            if not h.get('class'): h.set('class','ag-site-home-news-title')
-        for p in article.xpath('./div//p'):
-            if not p.get('class') and not p.xpath('.//time'): p.set('class','ag-site-card-copy')
-        content=article.xpath('./div[not(@aria-hidden="true")]')
-        if content and not content[0].get('class'): content[0].set('class','ag-site-card-content')
-        placeholder=article.xpath('./div[@aria-hidden="true"]')
-        if placeholder: placeholder[0].set('class','ag-site-news-placeholder')
-    # Divi's Code module can strip stylesheet blocks; inline matching rules from the shared CSS source.
-    css=re.sub(r'/\*[\s\S]*?\*/','',(ROOT/'assets/site.css').read_text())
-    rules=[(selector.strip(),re.sub(r'\s+',' ',body.strip())) for group,body in re.findall(r'([^{}]+)\{([^{}]+)\}',css) if not group.strip().startswith('@') for selector in group.split(',')]
-    def matches_simple(node,selector,extra_classes=()):
-        required=re.findall(r'\.([\w-]+)',selector)
-        present=set(node.get('class','').split())|set(extra_classes)
-        if any(c not in present for c in required): return False
-        tag=selector.split('.',1)[0].strip()
-        return not tag or tag==node.tag
-    def matches_selector(node,selector,extra_classes=()):
-        parts=selector.split()
-        if not parts or not matches_simple(node,parts[-1],extra_classes): return False
-        ancestor=node.getparent()
-        for part in reversed(parts[:-1]):
-            while ancestor is not None and (not isinstance(ancestor.tag,str) or not matches_simple(ancestor,part)):
-                ancestor=ancestor.getparent()
-            if ancestor is None: return False
-            ancestor=ancestor.getparent()
-        return True
-    def style_for(node,extra_classes=()):
-        return ' '.join(body for selector,body in rules if matches_selector(node,selector,extra_classes))
-    for node in root.iter():
-        if not isinstance(node.tag,str): continue
-        declarations=style_for(node)
-        if declarations: node.set('style',declarations)
-        if 'data-sector-segment' in node.attrib:
-            # Width set at build time so the bar renders without a script.
-            share=100*int(node.get('data-count','0'))/max(int(node.get('data-total','1')),1)
-            node.set('style',((declarations+' ') if declarations else '')+f'width: {share:.2f}%;')
-        if 'ag-site-filter-button' in node.get('class','').split():
-            node.set('data-base-style',declarations)
-            node.set('data-active-style',style_for(node,('ag-site-active',)))
+        if isinstance(node.tag, str):
+            node.attrib.pop('style', None)
     return root
 
-def strip_controls(root):
-    """Remove script-dependent controls (search boxes, filter buttons) so no dead UI is published."""
-    for cls in ('ag-site-publication-tools','ag-site-alumni-tools','ag-site-filter-row'):
-        for el in root.xpath(f'.//*[contains(concat(" ",normalize-space(@class)," ")," {cls} ")]'):
-            el.getparent().remove(el)
 
+def news_card(record):
+    rendered = record['template_html']
+    for field in ('title_html', 'image_url', 'image_alt'):
+        value = record.get(field, '')
+        rendered = rendered.replace('@@' + field.upper() + '@@', value if field == 'title_html' else esc(value))
+    root = strip_styles(rendered)
+    art = root.xpath('.//article')[0]
+    art.set('class', 'ag-site-card')
+    for img in art.xpath('./img'):
+        img.set('class', 'ag-site-card-image')
+    content = art.xpath('./div[not(@aria-hidden="true")]')
+    if content:
+        content[0].set('class', 'ag-site-card-content')
+    ph = art.xpath('./div[@aria-hidden="true"]')
+    if ph:
+        ph[0].set('class', 'ag-site-news-placeholder')
+    for t in art.xpath('.//time'):
+        p = t.getparent()
+        if p is not None and p.tag == 'p':
+            p.set('class', 'ag-site-kicker')
+    for h in art.xpath('.//h2'):
+        h.set('class', 'ag-site-card-title')
+    for p in art.xpath('./div//p'):
+        if not p.get('class'):
+            p.set('class', 'ag-site-card-copy')
+    for a in art.xpath('.//a'):
+        if not a.get('class') and not a.xpath('ancestor::h2'):
+            a.set('class', 'ag-site-link')
+    source = record['source_url']
+    if not source.startswith('https://'):
+        raise ValueError('HTTPS source link required')
+    container = content[0] if content else art
+    p = tree.fragment_fromstring(f'<p class="ag-site-source"><a class="ag-site-link" href="{esc(source)}" target="_blank" rel="noopener noreferrer">Source</a></p>')
+    container.append(p)
+    return tree.tostring(art, encoding='unicode', method='html')
+
+
+def build_news():
+    items = yaml.safe_load((ROOT / 'data/news.yaml').read_text())
+    cards = []
+    for r in items:
+        if not r.get('publish', True):
+            continue
+        if not r.get('source_url') or not r.get('verified'):
+            raise ValueError(f'Published News item lacks a verified source: {r["id"]}')
+        cards.append(news_card(r))
+    module = ('<!-- AUTO:news:START -->\n<div class="ag-site-root ag-site-news">'
+              '<h1 class="ag-site-title">News</h1><p class="ag-site-lede">Research highlights, people, group visits and community events.</p>'
+              '<div class="ag-site-news-grid">' + ''.join(cards) + '</div></div>\n<!-- AUTO:news:END -->')
+    return module, ''
+
+
+# ---------------------------------------------------------------- publications
+selected_source = yaml.safe_load((ROOT / 'data/selected_publications.yaml').read_text())
+
+
+def initials_name(full_name):
+    parts = full_name.split()
+    if len(parts) < 2:
+        return full_name
+    return f'{parts[-1]}, ' + ' '.join(p[0].upper() + '.' for p in parts[:-1])
+
+
+def citation_details(paper):
+    volume = str(paper.get('volume') or '').strip()
+    issue = str(paper.get('issue') or '').strip()
+    number = str(paper.get('article_number') or paper.get('pages') or '').strip()
+    if issue and volume:
+        volume += f' ({issue})'
+    return f'{volume}, {number}' if volume and number else (volume or number)
+
+
+def current_matches(paper):
+    if int(paper.get('year', 0)) < 2022:
+        return []
+    return [a for a in paper.get('authors', []) if norm(a) in member_aliases]
+
+
+eligible = []
+seen = set()
+for paper in selected_source:
+    if paper['doi'] in seen:
+        raise ValueError(f'Duplicate selected DOI: {paper["doi"]}')
+    seen.add(paper['doi'])
+    if paper.get('area') not in AREA_ORDER:
+        raise ValueError(f'Unknown research area: {paper.get("area")}')
+    if paper.get('status') != 'verified':
+        raise ValueError(f'Unverified selected citation: {paper["doi"]}')
+    matches = current_matches(paper)
+    if matches:
+        eligible.append((paper, matches))
+
+
+def render_selected_paper(paper):
+    authors = []
+    for author in paper['authors']:
+        label = esc(initials_name(author))
+        authors.append(f'<strong>{label}</strong>' if norm(author) in member_aliases else label)
+    doi_url = 'https://doi.org/' + paper['doi']
+    meta = [f'<span class="ag-site-citation">{esc(citation_details(paper))}</span>'] if citation_details(paper) else []
+    meta.append(f'<a class="ag-site-paper-doi" href="{esc(doi_url)}" target="_blank" rel="noopener noreferrer">DOI</a>')
+    if paper.get('open_access'):
+        meta.append('<span class="ag-site-open-access">Open access</span>')
+    return (f'<li class="ag-site-paper"><span class="ag-site-paper-year">{int(paper["year"])}</span>'
+            f'<div class="ag-site-paper-body"><span class="ag-site-paper-journal">{esc(paper["journal"])}</span>'
+            f'<h3 class="ag-site-paper-title">{paper["title"]}</h3><p class="ag-site-paper-authors">{"; ".join(authors)}</p>'
+            f'<div class="ag-site-paper-meta">{" ".join(meta)}</div></div></li>')
+
+
+def selected_block():
+    area_html, jumps = [], []
+    for area in AREA_ORDER:
+        papers = sorted([p for p, _ in eligible if p['area'] == area], key=lambda p: p.get('publication_date', ''), reverse=True)
+        if not papers:
+            continue
+        label = TAGS['areas'][area]['label']
+        jumps.append(chip(f'#selected-{area}', label))
+        area_html.append(f'<section class="ag-site-area" id="selected-{area}" aria-labelledby="selected-heading-{area}">'
+                         f'<h3 class="ag-site-area-heading" id="selected-heading-{area}">{esc(label)}</h3>'
+                         f'<a class="ag-site-area-link" href="{SITE}/research/#{area}">About this research area →</a>'
+                         f'<ul>{"".join(render_selected_paper(p) for p in papers)}</ul></section>')
+    return ('<!-- AUTO:selected:START --><section class="ag-site-selected" aria-labelledby="selected-heading">'
+            '<header><span class="ag-site-eyebrow">Since 2022</span><h2 class="ag-site-selected-heading" id="selected-heading">Selected Publications</h2>'
+            '<p class="ag-site-selected-lede">Recent work by current group members, organized by research area. Names in bold are current group members.</p></header>'
+            f'<nav class="ag-site-jumps" aria-label="Research areas">{"".join(jumps)}</nav>' + ''.join(area_html) +
+            '</section><!-- AUTO:selected:END -->')
+
+
+def bold_members(authors_html):
+    out = authors_html
+    for short in sorted(member_surnames, key=len, reverse=True):
+        out = re.sub(r'(?<![\w>])' + re.escape(short) + r'(?![\w])', f'<strong>{short}</strong>', out)
+    return out
+
+
+def build_publications():
+    recs, report = pubdata.load()
+    tagged = any(r['areas'] or r['materials'] or r['approaches'] for r in recs)
+    facets = [('areas', 'Research area', TAGS['areas']), ('materials', 'Material', TAGS['materials']),
+              ('approaches', 'Approach', TAGS['approaches']), ('applications', 'Application', TAGS['applications'])]
+    css, targets, statuses, groups = [], [], [], []
+    total = len(recs)
+
+    def add_filter(tid, cls, label, n):
+        targets.append(tid)
+        css.append(filter_css('ag-site-publications', tid, f'.ag-site-pub:not(.{cls})', f'#{tid}'))
+        css.append(f'.ag-site-root.ag-site-publications:has(#{tid}:target) .ag-site-year:not(:has(.{cls})){{display:none}}')
+        statuses.append(f'<p class="ag-site-filter-status ag-site-status-{tid}">Showing {n} of {total} papers: {esc(label)}.'
+                        f'<a class="{NOSCROLL}" href="#pubs-all">Show all</a></p>')
+
+    if tagged:
+        for facet, title, vocab in facets:
+            counts = Counter(t for r in recs for t in r[facet])
+            chips = []
+            for slug, spec in vocab.items():
+                if counts[slug] < 3:
+                    continue
+                tid = f'f-{slug}'
+                add_filter(tid, f't-{slug}', spec['label'], counts[slug])
+                chips.append(chip(f'#{tid}', spec['label'], counts[slug]))
+            if chips:
+                groups.append((facet, f'<div class="ag-site-filter-group"><span class="ag-site-filter-label">{title}</span>{"".join(chips)}</div>'))
+    type_counts = Counter(r['type'] for r in recs)
+    type_chips = []
+    for slug in ('review', 'perspective'):
+        if type_counts[slug] >= 1:
+            tid = f'f-type-{slug}'
+            label = TAGS['types'][slug]['label']
+            add_filter(tid, f't-type-{slug}', label, type_counts[slug])
+            type_chips.append(chip(f'#{tid}', label, type_counts[slug]))
+    oa_count = sum(r['oa'] for r in recs)
+    add_filter('f-oa', 't-oa', 'Open access', oa_count)
+    type_chips.append(chip('#f-oa', 'Open access', oa_count))
+    groups.append(('type', f'<div class="ag-site-filter-group"><span class="ag-site-filter-label">Type</span>{"".join(type_chips)}</div>'))
+    jcounts = Counter(r['journal_group'] for r in recs if r['journal_group'])
+    jchips = []
+    for slug, label, _ in pubdata.JOURNAL_GROUPS:
+        if jcounts[slug]:
+            tid = f'f-j-{slug}'
+            add_filter(tid, f't-j-{slug}', label, jcounts[slug])
+            jchips.append(chip(f'#{tid}', label, jcounts[slug]))
+    groups.append(('journal', f'<div class="ag-site-filter-group"><span class="ag-site-filter-label">Journal</span>{"".join(jchips)}</div>'))
+
+    main_groups = [g for k, g in groups if k in ('areas', 'journal', 'type')]
+    more_groups = [g for k, g in groups if k in ('materials', 'approaches', 'applications')]
+    filters_html = ('<div class="ag-site-filters">'
+                    f'<div class="ag-site-filter-group"><span class="ag-site-filter-label">Showing</span>{chip("#pubs-all", "All papers", total, " ag-site-chip-all")}</div>'
+                    + ''.join(main_groups) +
+                    (f'<details class="ag-site-filters-more"><summary>More filters: material, approach, application</summary>{"".join(more_groups)}</details>' if more_groups else '')
+                    + '</div>')
+
+    years = sorted({r['group'] for r in recs}, key=lambda y: 1980 if y == '1980s' else int(y), reverse=True)
+    number = total
+    year_html = []
+    tag_label = {(f, s): spec['label'] for f, _, vocab in facets for s, spec in vocab.items()}
+    for year in years:
+        items = []
+        for r in [x for x in recs if x['group'] == year]:
+            classes = ['ag-site-pub'] + [f't-{t}' for f in ('areas', 'materials', 'approaches', 'applications') for t in r[f]]
+            classes.append(f't-type-{r["type"]}')
+            if r['oa']:
+                classes.append('t-oa')
+            if r['journal_group']:
+                classes.append(f't-j-{r["journal_group"]}')
+            title = r['title_html']
+            title_html = f'<a href="{esc(r["url"])}" target="_blank" rel="noopener noreferrer">{title}</a>' if r['url'] else title
+            cite = f'<i>{esc(r["journal"])}</i> <b>{esc(r["year"])}</b>' + (f', {esc(r["details"])}' if r['details'] else '') + '.'
+            pills = []
+            for t in r['areas']:
+                pills.append(f'<a class="{NOSCROLL}" href="#f-{t}">{esc(tag_label[("areas", t)])}</a>')
+            for f in ('materials', 'approaches'):
+                for t in r[f]:
+                    pills.append(f'<span>{esc(tag_label[(f, t)])}</span>')
+            if r['type'] != 'article':
+                pills.append(f'<span class="ag-site-pt-type">{esc(TAGS["types"][r["type"]]["label"])}</span>')
+            if r['oa']:
+                pills.append('<span class="ag-site-pt-oa">Open access</span>')
+            tags_html = f'<p class="ag-site-pub-tags">{"".join(pills)}</p>' if pills else ''
+            items.append(f'<li class="{" ".join(classes)}" id="{esc(r["id"])}"><span class="ag-site-pub-num">{number}</span>'
+                         f'<div class="ag-site-pub-body"><h3 class="ag-site-pub-title">{title_html}</h3>'
+                         f'<p class="ag-site-pub-authors">{bold_members(r["authors_html"])}</p>'
+                         f'<p class="ag-site-pub-cite">{cite}</p>{tags_html}</div></li>')
+            number -= 1
+        year_html.append(f'<section class="ag-site-year" id="pub-{year}" aria-labelledby="pub-heading-{year}">'
+                         f'<h2 class="ag-site-year-heading" id="pub-heading-{year}">{year}</h2><ol>{"".join(items)}</ol></section>')
+    nav = '<nav class="ag-site-year-nav" aria-label="Publication years">' + ''.join(f'<a class="{NOSCROLL}" href="#pub-{y}">{y}</a>' for y in years) + '</nav>'
+    target_html = '<span class="ag-site-target" id="pubs-all"></span>' + ''.join(f'<span class="ag-site-target" id="{t}"></span>' for t in targets)
+    module = ('<!-- AUTO:publications:START -->\n<div id="alivisatos-publications" class="ag-site-root ag-site-publications">'
+              '<h1 class="ag-site-title">Publications</h1>' + selected_block() +
+              '<section aria-labelledby="all-publications"><h2 class="ag-site-section-title" id="all-publications">All publications</h2>'
+              f'<p class="ag-site-lede">{total} papers since 1983, newest first. Choose a filter to narrow the list; each filter has its own link to share.</p>'
+              + target_html + filters_html + ''.join(statuses) + nav + ''.join(year_html) + '</section>'
+              '<p class="ag-site-back-top"><a class="et_smooth_scroll_disabled" href="#pubs-all">Back to filters ↑</a></p>'
+              '</div>\n<!-- AUTO:publications:END -->')
+    write_metadata_report(recs, report)
+    return module, ''.join(css)
+
+
+def write_metadata_report(recs, report):
+    lines = ['# Publication metadata check', '',
+             f'{len(recs)} papers. Citation fields from Crossref: {sum(r["source"] == "crossref" for r in recs)}. '
+             f'Kept from the page text: {sum(r["source"] == "page" for r in recs)}.', '',
+             '| id | year | DOI | issue | page title | Crossref title |', '|---|---|---|---|---|---|']
+    for row in report:
+        lines.append('| ' + ' | '.join(str(x).replace('|', '/') for x in row) + ' |')
+    (ROOT / 'reports/publication_metadata.md').write_text('\n'.join(lines) + '\n')
+
+
+# ---------------------------------------------------------------- home
+def home_publication_card(paper):
+    d = date.fromisoformat(paper['publication_date'])
+    summary = paper.get('homepage_summary', '')
+    return ('<article class="ag-site-home-paper">'
+            f'<p class="ag-site-home-paper-date">{esc(paper["journal"])} · {d:%B} {d.day}, {d.year}</p>'
+            f'<h3 class="ag-site-home-paper-title"><a href="https://doi.org/{esc(paper["doi"])}" target="_blank" rel="noopener noreferrer">{paper["title"]}</a></h3>'
+            + (f'<p class="ag-site-home-copy">{esc(summary)}</p>' if summary else '') + '</article>')
+
+
+def build_home():
+    home_news = yaml.safe_load((ROOT / 'data/home.yaml').read_text())
+    key_papers = {k['area']: k for k in (yaml.safe_load((ROOT / 'data/key_papers.yaml').read_text()) or [])} if (ROOT / 'data/key_papers.yaml').exists() else {}
+    recs, _ = pubdata.load()
+    counts = Counter(t for r in recs for t in r['areas'])
+    latest = sorted((p for p, _ in eligible if p.get('publication_date')), key=lambda p: p['publication_date'], reverse=True)[:3]
+    if len(latest) != 3:
+        raise ValueError('Home Latest Publications requires three dated selected records')
+    news_cards = []
+    for item in home_news:
+        if not item.get('source_url'):
+            raise ValueError(f'Home Latest News item lacks a source: {item["id"]}')
+        rendered = item['template_html'].replace('@@TITLE_HTML@@', item['title_html'])
+        root = strip_styles(rendered)
+        art = root.xpath('.//article')[0]
+        art.set('class', 'ag-site-home-paper')
+        ps = art.xpath('./p')
+        if ps:
+            ps[0].set('class', 'ag-site-home-paper-date')
+        for p in ps[1:]:
+            p.set('class', 'ag-site-home-copy')
+        for h in art.xpath('./h3'):
+            h.set('class', 'ag-site-home-news-title')
+        art.append(tree.fragment_fromstring(f'<p class="ag-site-source"><a class="ag-site-link" href="{esc(item["source_url"])}" target="_blank" rel="noopener noreferrer">Source</a></p>'))
+        news_cards.append(tree.tostring(art, encoding='unicode', method='html'))
+    areas = []
+    for area in AREA_ORDER + ['art']:
+        label = AREA_PAGE_LABEL.get(area, 'Art with Nanoparticles')
+        links = [f'<a href="{SITE}/research/#{area}">Read more</a>']
+        if counts.get(area, 0) >= 3:
+            links.append(f'<a href="{SITE}/publications/#f-{area}">{counts[area]} papers →</a>')
+        key = key_papers.get(area)
+        key_html = ''
+        if key:
+            key_html = (f'<p class="ag-site-area-key"><span class="ag-site-area-key-label">Key paper</span>'
+                        f'<a href="https://doi.org/{esc(key["doi"])}" target="_blank" rel="noopener noreferrer">{key["title"]}</a> '
+                        f'<i>{esc(key["journal"])}</i> {key["year"]}</p>')
+        areas.append(f'<div class="ag-site-area-card"><h3><a href="{SITE}/research/#{area}">{esc(label)}</a></h3>{key_html}'
+                     f'<p class="ag-site-area-links">{"".join(links)}</p></div>')
+    module = ('<!-- AUTO:home-updates:START -->\n<div class="ag-site-root ag-site-home">'
+              '<section class="ag-site-section" aria-labelledby="home-latest-publications"><h2 class="ag-site-section-title" id="home-latest-publications">Latest Publications</h2>'
+              '<!-- AUTO:latest-publications:START --><div class="ag-site-home-grid">' + ''.join(home_publication_card(p) for p in latest) + '</div><!-- AUTO:latest-publications:END -->'
+              f'<p class="ag-site-view-all"><a href="{SITE}/publications/">View all publications →</a></p></section>'
+              '<section class="ag-site-section" aria-labelledby="home-research-areas"><h2 class="ag-site-section-title" id="home-research-areas">Explore Our Research</h2>'
+              '<div class="ag-site-research-grid">' + ''.join(areas) + '</div></section>'
+              '<section class="ag-site-section" aria-labelledby="home-latest-news"><h2 class="ag-site-section-title" id="home-latest-news">Latest News</h2>'
+              '<div class="ag-site-home-grid">' + ''.join(news_cards) + '</div>'
+              f'<p class="ag-site-view-all"><a href="{SITE}/news/">View all news →</a></p></section>'
+              + contact_block('home-contact') + '</div>\n<!-- AUTO:home-updates:END -->')
+    return module, ''
+
+
+# ---------------------------------------------------------------- research (label corrections only)
 def build_research_corrections():
-    source=ROOT/'build/research-content.before-c.raw'
-    raw=source.read_text()
-    counts={'Synth':0,'Adv':0,'JACS':0}
-    def walk(value):
-        if isinstance(value,str):
-            replacements=[(' Synth</em>',' Nat. Synth</em>'),('Adv.</em>','Sci. Adv.</em>'),('J. Am. Chem. Soc</em>. 2023','J. Am. Chem. Soc.</em> 2023')]
-            for before,after in replacements:
-                n=value.count(before)
-                if before.startswith(' Synth'): counts['Synth']+=n
-                elif before.startswith('Adv.'): counts['Adv']+=n
-                else: counts['JACS']+=n
-                value=value.replace(before,after)
-            return value
-        if isinstance(value,dict): return {k:walk(v) for k,v in value.items()}
-        if isinstance(value,list): return [walk(v) for v in value]
-        return value
-    def replace(m):
-        before=json.loads(m.group(2));after=walk(before)
-        if before==after: return m.group(0)
-        encoded=json.dumps(after,ensure_ascii=False,separators=(',',':'))
-        for char,escaped in [('--',r'\u002d\u002d'),('<',r'\u003c'),('>',r'\u003e'),('&',r'\u0026')]: encoded=encoded.replace(char,escaped)
-        return '<!-- wp:'+m.group(1)+' '+encoded+' '+m.group(3)+'-->'
-    updated=BLOCK.sub(replace,raw)
-    found={'Synth':0,'Adv':0,'JACS':0}
-    for match in BLOCK.finditer(updated):
-        block=json.loads(match.group(2))
-        def inspect(value):
-            if isinstance(value,str):
-                found['Synth']+=value.count('Nat. Synth</em>')
-                found['Adv']+=value.count('Sci. Adv.</em>')
-                found['JACS']+=value.count('J. Am. Chem. Soc.</em> 2023')
-            elif isinstance(value,dict):
-                for item in value.values(): inspect(item)
-            elif isinstance(value,list):
-                for item in value: inspect(item)
-        inspect(block)
-    if found!={'Synth':1,'Adv':1,'JACS':1}: raise ValueError(f'Unexpected corrected Research citation counts: {found}')
-    (ROOT/'build/research-content.raw').write_text(updated)
-    import difflib
-    diff=''.join(difflib.unified_diff(raw.splitlines(True),updated.splitlines(True),fromfile='research-before.raw',tofile='research-corrected.raw'))
-    (ROOT/'reports/research-c.diff').write_text(diff)
-    return counts
+    raw = (ROOT / 'build/research-content.before-c.raw').read_text()
+    (ROOT / 'build/research-content.raw').write_text(replace_research_citations(raw))
 
-# C: make the three Research citation fixes while retaining every Divi block and attribute.
-research_counts=build_research_corrections()
 
-years=sorted({r['group'] for r in records},key=lambda y:1980 if y=='1980s' else int(y),reverse=True)
-year_template=(ROOT/'templates/publication-year.html').read_text()
-current_year=date.today().year
-years_html='\n'.join(year_template.replace('@@YEAR@@',year).replace('@@CARDS@@','\n'.join(card(r) for r in records if r['group']==year)).replace('@@DEFAULT_OPEN@@','true' if year!='1980s' and int(year)>=current_year-3 else 'false').replace('@@OPEN@@',' open' if year!='1980s' and int(year)>=current_year-3 else '') for year in years)
-nav='<nav class="ag-site-year-nav" aria-label="Publication years">'+'\n'.join(f'<a href="#pub-{year}">{year}</a>' for year in years)+'</nav>'
-module=(ROOT/'templates/publications.html').read_text().replace('@@YEARS@@',years_html).replace('@@NAV@@',nav).replace('@@SELECTED@@',selected_html)
-fragments={'publications':module}
-home_records=yaml.safe_load((ROOT/'data/home.yaml').read_text())
-members=yaml.safe_load((ROOT/'data/members.yaml').read_text())
-for name in ('members','alumni','news'):
-    module=(ROOT/'templates'/f'{name}.html').read_text()
-    if name=='members':
-        for i,record in enumerate(members,1): module=module.replace(f'@@MEMBERS-{i}@@',render_member(record))
-    elif name=='alumni':
-        module=render_alumni(yaml.safe_load((ROOT/'data/alumni.yaml').read_text()))
-    else:
-        items=yaml.safe_load((ROOT/'data/news.yaml').read_text())
-        for i,record in enumerate(items,1): module=module.replace(f'@@NEWS-{i}@@',render_news(record))
-    fragments[name]=module
+# ---------------------------------------------------------------- output
+def minify_css(css):
+    css = re.sub(r'/\*[\s\S]*?\*/', '', css)
+    css = re.sub(r'\s+', ' ', css)
+    css = re.sub(r'\s*([{};,])\s*', r'\1', css)
+    return css.replace(';}', '}').strip()
 
-home_module=(ROOT/'templates/home.html').read_text()
-latest=sorted((p for p,_ in eligible if p.get('publication_date')),key=lambda p:p['publication_date'],reverse=True)[:3]
-if len(latest)!=3: raise ValueError('Home Latest Publications requires three dated selected records')
-home_module=home_module.replace('@@HOME-PUBLICATIONS@@','\n'.join(home_publication_card(p) for p in latest))
-for i,record in enumerate(home_records,1):
-    rendered=record['template_html'].replace('@@TITLE_HTML@@',record['title_html'])
-    if not record.get('source_url'): raise ValueError(f'Home Latest News item lacks a source: {record["id"]}')
-    home_module=home_module.replace(f'@@HOME-NEWS-{i}@@',rendered.replace('</article>',source_link(record['source_url'])+'</article>'))
-fragments['home']=home_module
 
-def validate_markers(fragment,name):
-    stack=[]
-    for marker,kind in re.findall(r'<!--\s*AUTO:([^:]+):(START|END)\s*-->',fragment):
-        if kind=='START': stack.append(marker)
-        elif not stack or stack.pop()!=marker: raise ValueError(f'Unbalanced AUTO markers in {name}: {marker}')
-    if stack: raise ValueError(f'Unclosed AUTO markers in {name}: {stack}')
+def validate_markers(fragment, name):
+    stack = []
+    for marker, kind in re.findall(r'<!--\s*AUTO:([^:]+):(START|END)\s*-->', fragment):
+        if kind == 'START':
+            stack.append(marker)
+        elif not stack or stack.pop() != marker:
+            raise ValueError(f'Unbalanced AUTO markers in {name}: {marker}')
+    if stack:
+        raise ValueError(f'Unclosed AUTO markers in {name}: {stack}')
 
-css=(ROOT/'assets/site.css').read_text()
-integration=(ROOT/'assets/site-integration.html').read_text()
-for name,fragment in fragments.items():
-    assert not re.search(r'sci[-.]?hub',fragment,re.I),'Unexpected non-publisher link'
-    assert '@@' not in fragment,'Unresolved template variable'
-    validate_markers(fragment,name)
-    main_marker='home-updates' if name=='home' else name
-    if fragment.count(f'<!-- AUTO:{main_marker}:START -->')!=1 or fragment.count(f'<!-- AUTO:{main_marker}:END -->')!=1:
-        raise ValueError(f'Missing main AUTO marker in {name}')
-    root=prefix_classes(tree.fragment_fromstring(fragment,create_parent='div'))
-    if not INTERACTIVE: strip_controls(root)
-    rendered=''.join(tree.tostring(child,encoding='unicode',method='html') for child in root)
-    if re.search(r'class="[^"]*(?:ap-|ag-pubs-|alivisatos-)',''.join(root.itertext())):
-        raise ValueError(f'Legacy class prefix remains in {name}')
-    if root.xpath('.//style'): raise ValueError(f'Style blocks cannot be used in Divi Code modules ({name})')
-    if root.xpath('.//script'): raise ValueError(f'Interactive scripts belong in Divi Integration, not the sanitized page module ({name})')
-    (OUT/f'{name}.html').write_text(rendered)
-    (OUT/f'{name}-preview.html').write_text('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>'+name+'</title>'+integration+'</head><body><main>'+rendered+'</main></body></html>')
 
-print(f'Built {len(fragments)} fragments; {len(records)} regular publication cards, {len(eligible)} selected papers; Research fixes {research_counts}.')
+def main():
+    build_research_corrections()
+    base_css = (ROOT / 'assets/site.css').read_text()
+    pages = {'members': build_members(), 'alumni': build_alumni(), 'news': build_news(),
+             'publications': build_publications(), 'home': build_home()}
+    for name, (fragment, extra_css) in pages.items():
+        validate_markers(fragment, name)
+        marker = 'home-updates' if name == 'home' else name
+        if fragment.count(f'<!-- AUTO:{marker}:START -->') != 1 or fragment.count(f'<!-- AUTO:{marker}:END -->') != 1:
+            raise ValueError(f'Missing main AUTO marker in {name}')
+        if re.search(r'sci[-.]?hub', fragment, re.I):
+            raise ValueError('Unexpected non-publisher link')
+        if '@@' in fragment:
+            raise ValueError(f'Unresolved template variable in {name}')
+        root = tree.fragment_fromstring(fragment, create_parent='div')
+        if root.xpath('.//style|.//script|.//input'):
+            raise ValueError(f'{name}: style, script and input elements are removed on save')
+        css = minify_css(base_css + extra_css)
+        if '>' in css or '</' in css:
+            raise ValueError(f'{name}: CSS must not contain ">" (escaped on save)')
+        (OUT / f'{name}.html').write_text(fragment)
+        (OUT / f'{name}.css').write_text(css)
+        preview = ('<!doctype html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">'
+                   f'<title>{name}</title><style>body{{margin:0;padding:24px 16px;font-family:"Open Sans",Arial,sans-serif;background:#fff}}{css}</style></head>'
+                   f'<body>{fragment}</body></html>')
+        (OUT / f'{name}-preview.html').write_text(preview)
+        print(f'{name}: {len(fragment):,} chars HTML, {len(css):,} chars CSS')
+
+
+if __name__ == '__main__':
+    main()
