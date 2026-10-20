@@ -4,6 +4,17 @@ Record every publish: date (UTC), page, Actions run link, public-check result.
 
 ## 2026-10-20
 
+### Alumni positions with identity ties (built; dry run 39454736956 passed; publish waits for Dylan)
+- Rule from Dylan: a found person must be proven to be the Alivisatos group member. Each changed entry records the
+  page that shows the position (`source`) and the page or ORCID/OpenAlex record that ties the person to the group
+  (`identity`); `validate.py` requires both whenever `verified` is set.
+- Starting data: OpenAlex co-author records on the group's own papers and public ORCID records
+  (`scripts/alumni_sources.py`, run 39446015067; 154 of 187 alumni matched; output encrypted).
+- 58 positions updated (including the 14 kept from this morning's 16), 2 reverted to blank (Sophia Betzler,
+  Sarah Thau), 48 confirmed unchanged, 5 not found. Report: `site/reports/alumni_positions_2026-10-20.md`.
+- The four research sub-agents started at 15:15 UTC were stopped by an interruption at 15:21 UTC after 4 results;
+  the check was finished by hand in the main session.
+
 ### 14:52 UTC publish run 39443098268: figures for all 14 Selected Publications
 - 14 images in the media library with alt text and credit lines: 9 ACS TOC graphics ("Reprinted with permission ...
   Copyright American Chemical Society"), 3 Springer Nature Figure 1 (licence named where CC), PNAS Figure 1
