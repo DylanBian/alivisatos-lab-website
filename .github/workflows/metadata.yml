@@ -1,0 +1,28 @@
+name: Fetch publication metadata
+
+# Reads Crossref and OpenAlex for every DOI and commits site/data/metadata/ (abstracts encrypted).
+# Changes nothing on the website.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests pyyaml cryptography
+      - run: python scripts/fetch_metadata.py
+      - name: Commit metadata
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/data/metadata
+          git commit -m "Update publication metadata from Crossref and OpenAlex" || echo "No changes"
+          git pull --rebase origin main
+          git push origin HEAD:main
