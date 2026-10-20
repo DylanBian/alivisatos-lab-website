@@ -215,7 +215,8 @@ def news_card(record):
     art = root.xpath('.//article')[0]
     art.set('class', 'ag-site-card')
     for img in art.xpath('./img'):
-        img.set('class', 'ag-site-card-image')
+        # image_fit: contain shows the whole graphic (TOC images carry text that cover-cropping would cut)
+        img.set('class', 'ag-site-card-image' + (' ag-site-card-image-contain' if record.get('image_fit') == 'contain' else ''))
     content = art.xpath('./div[not(@aria-hidden="true")]')
     if content:
         content[0].set('class', 'ag-site-card-content')
