@@ -4,6 +4,23 @@ Record every publish: date (UTC), page, Actions run link, public-check result.
 
 ## 2026-10-20
 
+### 17:26-17:52 UTC: fixes from the external site review (Dylan asked for them; edits in Dylan's signed-in Chrome via REST)
+- Placeholder posts hello-world (1), welcome-to-your-blog-news-feed (209), blank-post (240): set to private with comments
+  closed (not deleted). Their URLs return 404; the posts sitemap is gone; category and author archives are empty.
+- Home (page 2, outside the AUTO module): first slide heading is the page H1; the group-photo slide (slider6.jpg) is titled
+  "Our Team" (also in push.py SLIDE_TITLES); "Our current Research Interests/Projects are (but not limited to)" replaced
+  by one result per research direction, each linked to its paper (PNAS 2024, JACS 2026, Nat. Commun. 2025, ACS Nano 2024).
+- Research (page 1198): Quantum section shows the ACS Nano 2024 TOC graphic (media 2136) with the ACS credit line;
+  image titles "44160_2022_25_Figa_HTML" and "图片2" replaced by descriptive titles (page and media 1881, 1890).
+  The two Kate Nichols artworks still load from her Squarespace site; uploading them needs her permission.
+- Gallery (page 1269): wrong duplicates fixed with the files already in the media library (Team Excited State now shows
+  Excited_State16.jpg; Alivisluggers Softball 2017 shows Alivisluggers-Softball-2017.png); all 55 image titles come from
+  their alt text (no hash or timestamp names); year headings 2026-2013 with anchors (#year-2026 ...) and a Jump-to line.
+- Every save read back identical to what was sent; checked as a visitor.
+- News (publish run 39468001277): JACS millisecond-dynamics item shows its TOC graphic (whole image, ACS credit line);
+  Carver blue pigment item shows the photo Dylan supplied (media 2154, carver-blue-pigment-fecl3.jpg).
+- Alumni (publish run 39469207908): Joeson Wong's placeholder title "Engineer" (no employer, no source) removed.
+
 ### 16:22 UTC publish run 39456774253 (alumni, approved by Dylan): positions with identity ties
 - Read back identical to the build; cache refreshed; public check passed. Checked as a visitor: 187 cards, Ophir Klein under Undergraduate, Colvin, Scheele, Seo, Luther, Ha and Chou show the new entries; Betzler and Thau show no position.
 - Ophir Klein's role changed from Ph.D./postdoc to undergraduate (Dylan).

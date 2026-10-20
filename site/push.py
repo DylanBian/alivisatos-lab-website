@@ -130,7 +130,7 @@ def research_update(raw):
 SLIDE_TITLES={  # home slider: three group photos all carried "Alivisatos Group Members" (decided 2026-10-20)
     'FA687D98BA9E-cover1-1.jpeg':'The Alivisatos Group',
     'Celebrating-President-PaulAlivisatoss-2024-KavliPrize-in-Nanoscience-1.jpg':'Celebrating the 2024 Kavli Prize in Nanoscience',
-    'slider6.jpg':'',
+    'slider6.jpg':'Our Team',  # group photo; empty heading replaced 2026-10-20
 }
 
 def update_slider_titles(raw):
