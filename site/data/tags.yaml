@@ -1,0 +1,119 @@
+# Controlled vocabulary for publication tags. Tags outside this file are not allowed.
+# Each tag: slug -> label and a one-line definition with inclusion criteria.
+# Assigned from title + abstract (see TASKS-P2-publication-tags.md). tag_source: human entries are never overwritten.
+
+areas:  # 0 to 2 per paper; the Research page areas (anchors on /research/)
+  synthesis:
+    label: Synthesis and Properties
+    definition: Making nanocrystals and controlling size, shape, composition or phase; growth and transformation mechanisms
+      (cation exchange, etching, galvanic reactions); ligand and surface chemistry; thermodynamics of nanocrystal formation;
+      assembly into superlattices; the resulting physical properties when the paper's focus is the material made.
+  lctem:
+    label: Electron Microscopy in Liquid
+    definition: Liquid-cell or other in situ transmission electron microscopy that follows nanocrystals in liquid
+      (growth, etching, diffusion, attachment, 3D structure from liquid-phase imaging), and analysis methods built for
+      these movies (AI or machine learning on in situ TEM). Ex situ TEM characterization alone does not qualify.
+  spectroscopy:
+    label: Spectroscopy and Structure
+    definition: Optical, ultrafast, single-particle, X-ray or vibrational spectroscopy and structural studies (diffraction,
+      high pressure, phase transitions, electronic structure, carrier and exciton dynamics) where measuring the physics or
+      structure is the main contribution.
+  quantum:
+    label: Quantum Information Science
+    definition: Nanocrystals or molecules as quantum systems for information science (spin qubits, rare-earth or defect
+      emitters with coherence, single-photon sources, optically addressable spins, decoherence studies).
+
+materials:  # 0 to 2 per paper
+  quantum-dots:
+    label: Quantum dots
+    definition: Spherical or near-spherical semiconductor nanocrystals (II-VI, IV-VI such as CdSe, CdS, PbS, ZnS) studied as quantum dots.
+  rods-heterostructures:
+    label: Nanorods, tetrapods and heterostructures
+    definition: Anisotropic or multi-component semiconductor nanocrystals (rods, tetrapods, branched, core/shell, dot-in-rod, Janus).
+  perovskites:
+    label: Perovskites
+    definition: Halide or oxide perovskite nanocrystals (CsPbX3, related lead or lead-free halides).
+  iii-v:
+    label: III-V and arsenides
+    definition: InP, InAs, GaAs and other III-V or arsenide, phosphide nanocrystals (for example Cu3As, group-III arsenides).
+  metals-plasmonics:
+    label: Metals and plasmonics
+    definition: Gold, silver, platinum, palladium, cobalt or other metal nanoparticles, plasmonic structures and plasmon rulers.
+  oxides-rare-earths:
+    label: Oxides and rare earths
+    definition: Metal oxide nanocrystals (CeO2, iron oxide, TiO2, ZnO) and lanthanide-doped or rare-earth nanocrystals (upconversion, Er, Eu).
+  silicon-germanium:
+    label: Silicon and germanium
+    definition: Si or Ge nanocrystals and nanowires.
+  carbon-2d:
+    label: Carbon and 2D materials
+    definition: Carbon nanotubes, graphene (including graphene liquid cells when the graphene itself is studied), and other layered 2D materials.
+  bio-conjugates:
+    label: DNA and biomolecule conjugates
+    definition: Nanocrystals linked to DNA, proteins, peptides or other biomolecules, or nanocrystal-biomolecule assemblies.
+  polymer-composites:
+    label: Polymer nanocomposites
+    definition: Nanocrystals blended with or grown in polymers, hybrid organic-inorganic films and composites.
+
+approaches:  # 0 to 3 per paper
+  electron-microscopy:
+    label: Electron microscopy
+    definition: TEM, STEM, EELS, electron tomography, or liquid-cell TEM is a primary method.
+  optical-spectroscopy:
+    label: Optical and ultrafast spectroscopy
+    definition: Absorption, photoluminescence, transient absorption, Raman, or other optical spectroscopy is a primary method.
+  single-particle:
+    label: Single-particle methods
+    definition: Measurements on individual nanocrystals (single-particle fluorescence and blinking, single-particle imaging or tracking).
+  xray-pressure:
+    label: X-ray and high pressure
+    definition: X-ray diffraction, scattering, absorption or photoemission, synchrotron methods, or high-pressure studies.
+  thermodynamics:
+    label: Thermodynamics
+    definition: Calorimetry, phase diagrams, free energies, stability, or equilibrium studies of nanocrystals and their ligands.
+  surface-ligands:
+    label: Surface and ligand chemistry
+    definition: The nanocrystal surface or its ligand shell is a main subject (binding, exchange, passivation, NMR of ligands).
+  chemical-transformation:
+    label: Chemical transformation
+    definition: Cation or anion exchange, galvanic replacement, Kirkendall effect, etching or dissolution as a route or subject.
+  self-assembly:
+    label: Self-assembly and superlattices
+    definition: Ordered assemblies, superlattices, oriented attachment, or programmed nanocrystal assembly.
+  ml-automation:
+    label: Machine learning and automation
+    definition: Machine learning, AI, computer vision, or automated or high-throughput synthesis and analysis.
+  theory-modeling:
+    label: Theory and modeling
+    definition: Electronic-structure calculations, molecular dynamics, or analytical models are a main part of the paper.
+  device-fabrication:
+    label: Devices and fabrication
+    definition: Fabrication of devices or patterned structures (solar cells, LEDs, transistors, sensors, lithography).
+
+applications:  # 0 to 2 per paper
+  solar-energy:
+    label: Solar energy and photovoltaics
+    definition: Photovoltaics, solar fuels, photocatalysis or light harvesting as the stated application.
+  catalysis:
+    label: Catalysis
+    definition: Thermal or electrochemical catalysis, or catalytic activity of nanocrystals.
+  bio-imaging:
+    label: Biological imaging and sensing
+    definition: Fluorescent labels, bioimaging, biosensing, or cellular studies.
+  quantum-tech:
+    label: Quantum technologies
+    definition: Qubits, quantum sensing, single-photon sources or quantum communication as the stated application.
+  displays-leds:
+    label: Displays, LEDs and lasers
+    definition: Light-emitting devices, displays, lasing, or optical gain.
+  mechanics-sensing:
+    label: Mechanics and stress sensing
+    definition: Nanocrystals as stress or strain sensors, or mechanical properties of nanocrystal materials.
+  energy-storage:
+    label: Batteries and energy storage
+    definition: Battery electrodes, hydrogen storage, or other energy storage.
+
+types:  # exactly one per paper; from journal and Crossref/OpenAlex type, not from AI
+  article: {label: Article}
+  review: {label: Review or account}
+  perspective: {label: Perspective or commentary}
