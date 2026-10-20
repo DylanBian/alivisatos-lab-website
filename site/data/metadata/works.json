@@ -1,37 +1,3056 @@
 {
- "10.1002/(sici)1521-3773(19990614)38%3a12%3c1808%3a%3aaid-anie1808%3e3.0.co%3b2-c": {
+ "10.1002/(sici)1521-3773(19990614)38:12<1808::aid-anie1808>3.0.co;2-c": {
   "crossref": {
-   "error": 404
+   "ISSN": [
+    "1433-7851",
+    "1521-3773"
+   ],
+   "author": [
+    {
+     "affiliation": [],
+     "family": "Loweth",
+     "given": "Colin J.",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "first"
+    },
+    {
+     "affiliation": [],
+     "family": "Caldwell",
+     "given": "W. Brett",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Peng",
+     "given": "Xiaogang",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Alivisatos",
+     "given": "A. Paul",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Schultz",
+     "given": "Peter G.",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    }
+   ],
+   "container-title": [
+    "Angewandte Chemie International Edition"
+   ],
+   "is-referenced-by-count": 484,
+   "issue": "12",
+   "issued": {
+    "date-parts": [
+     [
+      1999,
+      6,
+      14
+     ]
+    ]
+   },
+   "license": [
+    {
+     "URL": "http://doi.wiley.com/10.1002/tdm_license_1.1",
+     "content-version": "tdm",
+     "delay-in-days": 5923,
+     "start": {
+      "date-parts": [
+       [
+        2015,
+        9,
+        1
+       ]
+      ],
+      "date-time": "2015-09-01T00:00:00Z",
+      "timestamp": 1441065600000
+     }
+    }
+   ],
+   "page": "1808-1812",
+   "published-print": {
+    "date-parts": [
+     [
+      1999,
+      6,
+      14
+     ]
+    ]
+   },
+   "publisher": "Wiley",
+   "relation": {},
+   "short-container-title": [
+    "Angew. Chem. Int. Ed."
+   ],
+   "title": [
+    "DNA-Based Assembly of Gold Nanocrystals"
+   ],
+   "type": "journal-article",
+   "volume": "38"
   },
-  "openalex": null,
+  "openalex": {
+   "authorships": [
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I1344073410",
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Howard Hughes Medical Institute, Department of Chemistry, University of California at Berkeley, Berkeley, CA 94720 (USA), Fax: (+1) 510-643-6890"
+      },
+      {
+       "institution_ids": [
+        "https://openalex.org/I1344073410",
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Howard Hughes Medical Institute, Department of Chemistry, University of California at Berkeley, Berkeley, CA 94720, USA, Fax: (+ 1) 510-643-6890"
+      }
+     ],
+     "author": {
+      "display_name": "Colin J. Loweth",
+      "id": "https://openalex.org/A5074868381",
+      "observed_orcids": [],
+      "orcid": null
+     },
+     "author_position": "first",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "Howard Hughes Medical Institute",
+       "id": "https://openalex.org/I1344073410",
+       "lineage": [
+        "https://openalex.org/I1344073410"
+       ],
+       "ror": "https://ror.org/006w34k90",
+       "type": "facility"
+      },
+      {
+       "country_code": "US",
+       "display_name": "University of California, Berkeley",
+       "id": "https://openalex.org/I95457486",
+       "lineage": [
+        "https://openalex.org/I95457486"
+       ],
+       "ror": "https://ror.org/01an7q238",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Howard Hughes Medical Institute, Department of Chemistry, University of California at Berkeley, Berkeley, CA 94720 (USA), Fax: (+1) 510-643-6890",
+      "Howard Hughes Medical Institute, Department of Chemistry, University of California at Berkeley, Berkeley, CA 94720, USA, Fax: (+ 1) 510-643-6890"
+     ],
+     "raw_author_name": "Colin J. Loweth",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I1344073410",
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Howard Hughes Medical Institute, Department of Chemistry, University of California at Berkeley, Berkeley, CA 94720 (USA), Fax: (+1) 510-643-6890"
+      },
+      {
+       "institution_ids": [
+        "https://openalex.org/I1344073410",
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Howard Hughes Medical Institute, Department of Chemistry, University of California at Berkeley, Berkeley, CA 94720, USA, Fax: (+ 1) 510-643-6890"
+      }
+     ],
+     "author": {
+      "display_name": "W. Brett Caldwell",
+      "id": "https://openalex.org/A5004095326",
+      "observed_orcids": [],
+      "orcid": null
+     },
+     "author_position": "middle",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "Howard Hughes Medical Institute",
+       "id": "https://openalex.org/I1344073410",
+       "lineage": [
+        "https://openalex.org/I1344073410"
+       ],
+       "ror": "https://ror.org/006w34k90",
+       "type": "facility"
+      },
+      {
+       "country_code": "US",
+       "display_name": "University of California, Berkeley",
+       "id": "https://openalex.org/I95457486",
+       "lineage": [
+        "https://openalex.org/I95457486"
+       ],
+       "ror": "https://ror.org/01an7q238",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Howard Hughes Medical Institute, Department of Chemistry, University of California at Berkeley, Berkeley, CA 94720 (USA), Fax: (+1) 510-643-6890",
+      "Howard Hughes Medical Institute, Department of Chemistry, University of California at Berkeley, Berkeley, CA 94720, USA, Fax: (+ 1) 510-643-6890"
+     ],
+     "raw_author_name": "W. Brett Caldwell",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of California at Berkeley (and) Materials Science Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720 (USA), Fax: (+1) 510-642-6911"
+      },
+      {
+       "institution_ids": [
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of California at Berkeley (and) Materials Science Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720, USA, Fax: (+ 1) 510‐642‐6911"
+      }
+     ],
+     "author": {
+      "display_name": "Xiaogang Peng",
+      "id": "https://openalex.org/A5013868523",
+      "observed_orcids": [
+       "https://orcid.org/0000-0002-5606-8472"
+      ],
+      "orcid": "https://orcid.org/0000-0002-5606-8472"
+     },
+     "author_position": "middle",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "Lawrence Berkeley National Laboratory",
+       "id": "https://openalex.org/I148283060",
+       "lineage": [
+        "https://openalex.org/I1330989302",
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I39565521"
+       ],
+       "ror": "https://ror.org/02jbv0t02",
+       "type": "facility"
+      },
+      {
+       "country_code": "US",
+       "display_name": "University of California, Berkeley",
+       "id": "https://openalex.org/I95457486",
+       "lineage": [
+        "https://openalex.org/I95457486"
+       ],
+       "ror": "https://ror.org/01an7q238",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Department of Chemistry, University of California at Berkeley (and) Materials Science Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720 (USA), Fax: (+1) 510-642-6911",
+      "Department of Chemistry, University of California at Berkeley (and) Materials Science Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720, USA, Fax: (+ 1) 510‐642‐6911"
+     ],
+     "raw_author_name": "Xiaogang Peng",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of California at Berkeley (and) Materials Science Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720 (USA), Fax: (+1) 510-642-6911"
+      },
+      {
+       "institution_ids": [
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of California at Berkeley (and) Materials Science Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720, USA, Fax: (+ 1) 510‐642‐6911"
+      }
+     ],
+     "author": {
+      "display_name": "A. Paul Alivisatos",
+      "id": "https://openalex.org/A5009848674",
+      "observed_orcids": [
+       "https://orcid.org/0000-0001-6895-9048"
+      ],
+      "orcid": "https://orcid.org/0000-0001-6895-9048"
+     },
+     "author_position": "middle",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "Lawrence Berkeley National Laboratory",
+       "id": "https://openalex.org/I148283060",
+       "lineage": [
+        "https://openalex.org/I1330989302",
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I39565521"
+       ],
+       "ror": "https://ror.org/02jbv0t02",
+       "type": "facility"
+      },
+      {
+       "country_code": "US",
+       "display_name": "University of California, Berkeley",
+       "id": "https://openalex.org/I95457486",
+       "lineage": [
+        "https://openalex.org/I95457486"
+       ],
+       "ror": "https://ror.org/01an7q238",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": true,
+     "raw_affiliation_strings": [
+      "Department of Chemistry, University of California at Berkeley (and) Materials Science Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720 (USA), Fax: (+1) 510-642-6911",
+      "Department of Chemistry, University of California at Berkeley (and) Materials Science Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720, USA, Fax: (+ 1) 510‐642‐6911"
+     ],
+     "raw_author_name": "A. Paul Alivisatos",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I1344073410",
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Howard Hughes Medical Institute, Department of Chemistry, University of California at Berkeley, Berkeley, CA 94720 (USA), Fax: (+1) 510-643-6890"
+      },
+      {
+       "institution_ids": [
+        "https://openalex.org/I1344073410",
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Howard Hughes Medical Institute, Department of Chemistry, University of California at Berkeley, Berkeley, CA 94720, USA, Fax: (+ 1) 510-643-6890"
+      }
+     ],
+     "author": {
+      "display_name": "Peter G. Schultz",
+      "id": "https://openalex.org/A5066008654",
+      "observed_orcids": [
+       "https://orcid.org/0000-0003-3188-1202"
+      ],
+      "orcid": "https://orcid.org/0000-0003-3188-1202"
+     },
+     "author_position": "last",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "Howard Hughes Medical Institute",
+       "id": "https://openalex.org/I1344073410",
+       "lineage": [
+        "https://openalex.org/I1344073410"
+       ],
+       "ror": "https://ror.org/006w34k90",
+       "type": "facility"
+      },
+      {
+       "country_code": "US",
+       "display_name": "University of California, Berkeley",
+       "id": "https://openalex.org/I95457486",
+       "lineage": [
+        "https://openalex.org/I95457486"
+       ],
+       "ror": "https://ror.org/01an7q238",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": true,
+     "raw_affiliation_strings": [
+      "Howard Hughes Medical Institute, Department of Chemistry, University of California at Berkeley, Berkeley, CA 94720 (USA), Fax: (+1) 510-643-6890",
+      "Howard Hughes Medical Institute, Department of Chemistry, University of California at Berkeley, Berkeley, CA 94720, USA, Fax: (+ 1) 510-643-6890"
+     ],
+     "raw_author_name": "Peter G. Schultz",
+     "raw_orcid": null
+    }
+   ],
+   "best_oa_location": null,
+   "biblio": {
+    "first_page": "1808",
+    "issue": "12",
+    "last_page": "1812",
+    "volume": "38"
+   },
+   "cited_by_count": 676,
+   "doi": "https://doi.org/10.1002/(sici)1521-3773(19990614)38:12<1808::aid-anie1808>3.0.co;2-c",
+   "id": "https://openalex.org/W2020437858",
+   "is_retracted": false,
+   "keywords": [
+    {
+     "display_name": "gold nanocrystals",
+     "id": "https://openalex.org/keywords/gold-nanocrystals",
+     "score": 0.9739999771118164
+    },
+    {
+     "display_name": "DNA templating",
+     "id": "https://openalex.org/keywords/dna-templating",
+     "score": 0.8029999732971191
+    },
+    {
+     "display_name": "DNA-directed assembly",
+     "id": "https://openalex.org/keywords/dna-directed-assembly",
+     "score": 0.4569999873638153
+    },
+    {
+     "display_name": "oligonucleotide sequences",
+     "id": "https://openalex.org/keywords/oligonucleotide-sequences",
+     "score": 0.8550000190734863
+    },
+    {
+     "display_name": "nanoparticle self-assembly",
+     "id": "https://openalex.org/keywords/nanoparticle-self-assembly",
+     "score": 0.7419999837875366
+    },
+    {
+     "display_name": "nanocrystal size control",
+     "id": "https://openalex.org/keywords/nanocrystal-size-control",
+     "score": 0.5609999895095825
+    }
+   ],
+   "open_access": {
+    "any_repository_has_fulltext": false,
+    "is_oa": false,
+    "oa_status": "closed",
+    "oa_url": null
+   },
+   "primary_location": {
+    "doi": "https://doi.org/10.1002/(sici)1521-3773(19990614)38:12<1808::aid-anie1808>3.0.co;2-c",
+    "id": "doi:10.1002/(sici)1521-3773(19990614)38:12<1808::aid-anie1808>3.0.co;2-c",
+    "is_accepted": true,
+    "is_oa": false,
+    "is_published": true,
+    "landing_page_url": "https://doi.org/10.1002/(sici)1521-3773(19990614)38:12<1808::aid-anie1808>3.0.co;2-c",
+    "license": null,
+    "license_id": null,
+    "pdf_url": null,
+    "raw_source_name": "Angewandte Chemie International Edition",
+    "raw_type": "journal-article",
+    "source": {
+     "display_name": "Angewandte Chemie International Edition",
+     "host_organization": "https://openalex.org/P4310320595",
+     "host_organization_lineage": [
+      "https://openalex.org/P4310320595"
+     ],
+     "host_organization_lineage_names": [
+      "Wiley"
+     ],
+     "host_organization_name": "Wiley",
+     "id": "https://openalex.org/S67393510",
+     "is_core": true,
+     "is_in_doaj": false,
+     "is_oa": false,
+     "issn": [
+      "1433-7851",
+      "1521-3773"
+     ],
+     "issn_l": "1433-7851",
+     "listed_in": [
+      "cwts-core",
+      "dongbi-a",
+      "jufo-3",
+      "ki-jl-2",
+      "medline",
+      "norway-2",
+      "poland-200",
+      "russia-white-list-1",
+      "vabb-shw"
+     ],
+     "type": "journal"
+    },
+    "version": "publishedVersion"
+   },
+   "primary_topic": {
+    "display_name": "Advanced biosensing and bioanalysis techniques",
+    "domain": {
+     "display_name": "Life Sciences",
+     "id": "https://openalex.org/domains/1"
+    },
+    "field": {
+     "display_name": "Biochemistry, Genetics and Molecular Biology",
+     "id": "https://openalex.org/fields/13"
+    },
+    "id": "https://openalex.org/T10207",
+    "score": 0.7645999789237976,
+    "subfield": {
+     "display_name": "Molecular Biology",
+     "id": "https://openalex.org/subfields/1312"
+    }
+   },
+   "publication_date": "1999-06-14",
+   "publication_year": 1999,
+   "title": "DNA-Based Assembly of Gold Nanocrystals",
+   "type": "article"
+  },
   "row_id": "p0424"
  },
- "10.1002/(sici)1521-4095(199811)10%3a16%3c1297%3a%3aaid-adma1297%3e3.0.co%3b2-7": {
+ "10.1002/(sici)1521-4095(199811)10:16<1297::aid-adma1297>3.0.co;2-7": {
   "crossref": {
-   "error": 404
+   "ISSN": [
+    "0935-9648",
+    "1521-4095"
+   ],
+   "author": [
+    {
+     "affiliation": [],
+     "family": "Alivisatos",
+     "given": "Paul",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "first"
+    },
+    {
+     "affiliation": [],
+     "family": "Barbara",
+     "given": "Paul F.",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Castleman",
+     "given": "A. Welford",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Chang",
+     "given": "Jack",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Dixon",
+     "given": "David A.",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Klein",
+     "given": "Michael L.",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "McLendon",
+     "given": "George L.",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Miller",
+     "given": "Joel S.",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Ratner",
+     "given": "Mark A.",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Rossky",
+     "given": "Peter J.",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Stupp",
+     "given": "Samuel I.",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Thompson",
+     "given": "Mark E.",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    }
+   ],
+   "container-title": [
+    "Advanced Materials"
+   ],
+   "is-referenced-by-count": 292,
+   "issue": "16",
+   "issued": {
+    "date-parts": [
+     [
+      1998,
+      11
+     ]
+    ]
+   },
+   "license": [
+    {
+     "URL": "http://doi.wiley.com/10.1002/tdm_license_1.1",
+     "content-version": "tdm",
+     "delay-in-days": 6148,
+     "start": {
+      "date-parts": [
+       [
+        2015,
+        9,
+        1
+       ]
+      ],
+      "date-time": "2015-09-01T00:00:00Z",
+      "timestamp": 1441065600000
+     }
+    }
+   ],
+   "page": "1297-1336",
+   "published-print": {
+    "date-parts": [
+     [
+      1998,
+      11
+     ]
+    ]
+   },
+   "publisher": "Wiley",
+   "relation": {},
+   "short-container-title": [
+    "Adv. Mater."
+   ],
+   "title": [
+    "From Molecules to Materials: Current Trends and Future Directions"
+   ],
+   "type": "journal-article",
+   "volume": "10"
   },
-  "openalex": null,
+  "openalex": {
+   "authorships": [
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "University of California at Berkeley"
+      }
+     ],
+     "author": {
+      "display_name": "A. Paul Alivisatos",
+      "id": "https://openalex.org/A5009848674",
+      "observed_orcids": [
+       "https://orcid.org/0000-0001-6895-9048"
+      ],
+      "orcid": "https://orcid.org/0000-0001-6895-9048"
+     },
+     "author_position": "first",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "University of California, Berkeley",
+       "id": "https://openalex.org/I95457486",
+       "lineage": [
+        "https://openalex.org/I95457486"
+       ],
+       "ror": "https://ror.org/01an7q238",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "University of California at Berkeley"
+     ],
+     "raw_author_name": "Paul Alivisatos",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I130238516"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of Minnesota, 207 Pleasant St. SE, Minneapolis, MN 55455 (USA)"
+      },
+      {
+       "institution_ids": [
+        "https://openalex.org/I130238516"
+       ],
+       "raw_affiliation_string": "University of Minnesota"
+      }
+     ],
+     "author": {
+      "display_name": "Paul F. Barbara",
+      "id": "https://openalex.org/A5111666757",
+      "observed_orcids": [],
+      "orcid": null
+     },
+     "author_position": "middle",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "University of Minnesota",
+       "id": "https://openalex.org/I130238516",
+       "lineage": [
+        "https://openalex.org/I130238516"
+       ],
+       "ror": "https://ror.org/017zqws13",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Department of Chemistry, University of Minnesota, 207 Pleasant St. SE, Minneapolis, MN 55455 (USA)",
+      "University of Minnesota"
+     ],
+     "raw_author_name": "Paul F. Barbara",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I130769515"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, 152 Davey Laboratory, Pennsylvania State University, University Park, PA 16802 (USA)"
+      },
+      {
+       "institution_ids": [
+        "https://openalex.org/I130769515"
+       ],
+       "raw_affiliation_string": "Pennsylvania State Univ#TAB#"
+      }
+     ],
+     "author": {
+      "display_name": "A. Welford Castleman",
+      "id": "https://openalex.org/A5068663845",
+      "observed_orcids": [],
+      "orcid": null
+     },
+     "author_position": "middle",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "Pennsylvania State University",
+       "id": "https://openalex.org/I130769515",
+       "lineage": [
+        "https://openalex.org/I130769515"
+       ],
+       "ror": "https://ror.org/04p491231",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Department of Chemistry, 152 Davey Laboratory, Pennsylvania State University, University Park, PA 16802 (USA)",
+      "Pennsylvania State Univ#TAB#"
+     ],
+     "raw_author_name": "A. Welford Castleman",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I175669267",
+        "https://openalex.org/I4210159451"
+       ],
+       "raw_affiliation_string": "Eastman Kodak Company, Bldg. 83, Floor 7, Rochester, NY 14650-2210 (USA)"
+      },
+      {
+       "institution_ids": [
+        "https://openalex.org/I4210159451"
+       ],
+       "raw_affiliation_string": "Eastman Kodak#TAB#"
+      }
+     ],
+     "author": {
+      "display_name": "Jack C. Chang",
+      "id": "https://openalex.org/A5102180413",
+      "observed_orcids": [],
+      "orcid": null
+     },
+     "author_position": "middle",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "Carestream (United States)",
+       "id": "https://openalex.org/I175669267",
+       "lineage": [
+        "https://openalex.org/I175669267"
+       ],
+       "ror": "https://ror.org/048m16q57",
+       "type": "company"
+      },
+      {
+       "country_code": "US",
+       "display_name": "Kodak (United States)",
+       "id": "https://openalex.org/I4210159451",
+       "lineage": [
+        "https://openalex.org/I4210159451"
+       ],
+       "ror": "https://ror.org/04rn3ph18",
+       "type": "company"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Eastman Kodak Company, Bldg. 83, Floor 7, Rochester, NY 14650-2210 (USA)",
+      "Eastman Kodak#TAB#"
+     ],
+     "raw_author_name": "Jack Chang",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I142606810",
+        "https://openalex.org/I2801280572"
+       ],
+       "raw_affiliation_string": "Environmental Molecular Science Laboratory, Pacific Northwest National Laboratory, PO Box 999, K1-83, Richland, WA 99352 (USA)"
+      },
+      {
+       "institution_ids": [
+        "https://openalex.org/I142606810"
+       ],
+       "raw_affiliation_string": "Pacific Northwest National Laboratory"
+      }
+     ],
+     "author": {
+      "display_name": "David A. Dixon",
+      "id": "https://openalex.org/A5089126712",
+      "observed_orcids": [
+       "https://orcid.org/0000-0002-9492-0056"
+      ],
+      "orcid": "https://orcid.org/0000-0002-9492-0056"
+     },
+     "author_position": "middle",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "Pacific Northwest National Laboratory",
+       "id": "https://openalex.org/I142606810",
+       "lineage": [
+        "https://openalex.org/I1325736334",
+        "https://openalex.org/I1330989302",
+        "https://openalex.org/I142606810",
+        "https://openalex.org/I39565521"
+       ],
+       "ror": "https://ror.org/05h992307",
+       "type": "facility"
+      },
+      {
+       "country_code": "US",
+       "display_name": "Environmental Molecular Sciences Laboratory",
+       "id": "https://openalex.org/I2801280572",
+       "lineage": [
+        "https://openalex.org/I1325736334",
+        "https://openalex.org/I1330989302",
+        "https://openalex.org/I142606810",
+        "https://openalex.org/I2801280572",
+        "https://openalex.org/I39565521"
+       ],
+       "ror": "https://ror.org/04rc0xn13",
+       "type": "facility"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Environmental Molecular Science Laboratory, Pacific Northwest National Laboratory, PO Box 999, K1-83, Richland, WA 99352 (USA)",
+      "Pacific Northwest National Laboratory"
+     ],
+     "raw_author_name": "David A. Dixon",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I79576946"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of Pennsylvania, 231 South 34th St., Philadelphia, PA 19104-6323 (USA)"
+      },
+      {
+       "institution_ids": [
+        "https://openalex.org/I79576946"
+       ],
+       "raw_affiliation_string": "#N#               * University of Pennsylvania"
+      }
+     ],
+     "author": {
+      "display_name": "Michael Lawrence Klein",
+      "id": "https://openalex.org/A5068247471",
+      "observed_orcids": [
+       "https://orcid.org/0000-0002-0027-9262"
+      ],
+      "orcid": "https://orcid.org/0000-0002-0027-9262"
+     },
+     "author_position": "middle",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "University of Pennsylvania",
+       "id": "https://openalex.org/I79576946",
+       "lineage": [
+        "https://openalex.org/I79576946"
+       ],
+       "ror": "https://ror.org/00b30xv10",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Department of Chemistry, University of Pennsylvania, 231 South 34th St., Philadelphia, PA 19104-6323 (USA)",
+      "#N#               * University of Pennsylvania"
+     ],
+     "raw_author_name": "Michael L. Klein",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I20089843"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, Princeton University, 121 Frick Laboratory, Washington Rd and William St., Princeton, NJ 08544-1009 (USA)"
+      },
+      {
+       "institution_ids": [
+        "https://openalex.org/I20089843"
+       ],
+       "raw_affiliation_string": "Princeton University#TAB#"
+      }
+     ],
+     "author": {
+      "display_name": "George L McLendon",
+      "id": "https://openalex.org/A5072963758",
+      "observed_orcids": [
+       "https://orcid.org/0009-0007-5450-7199"
+      ],
+      "orcid": "https://orcid.org/0009-0007-5450-7199"
+     },
+     "author_position": "middle",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "Princeton University",
+       "id": "https://openalex.org/I20089843",
+       "lineage": [
+        "https://openalex.org/I20089843"
+       ],
+       "ror": "https://ror.org/00hx57361",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Department of Chemistry, Princeton University, 121 Frick Laboratory, Washington Rd and William St., Princeton, NJ 08544-1009 (USA)",
+      "Princeton University#TAB#"
+     ],
+     "raw_author_name": "George L. McLendon",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I223532165"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of Utah, 315 S 1400 E. RM Dock, Salt Lake City, UT 84112-0850 (USA)"
+      },
+      {
+       "institution_ids": [
+        "https://openalex.org/I223532165"
+       ],
+       "raw_affiliation_string": "University of Utah,"
+      }
+     ],
+     "author": {
+      "display_name": "Joel S. Miller",
+      "id": "https://openalex.org/A5079379110",
+      "observed_orcids": [
+       "https://orcid.org/0000-0001-5743-8327"
+      ],
+      "orcid": "https://orcid.org/0000-0001-5743-8327"
+     },
+     "author_position": "middle",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "University of Utah",
+       "id": "https://openalex.org/I223532165",
+       "lineage": [
+        "https://openalex.org/I223532165"
+       ],
+       "ror": "https://ror.org/03r0ha626",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Department of Chemistry, University of Utah, 315 S 1400 E. RM Dock, Salt Lake City, UT 84112-0850 (USA)",
+      "University of Utah,"
+     ],
+     "raw_author_name": "Joel S. Miller",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I111979921"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, Northwestern University, 2145 Sheridan Rd, Evanston, IL 60208-3113 (USA)"
+      },
+      {
+       "institution_ids": [
+        "https://openalex.org/I111979921"
+       ],
+       "raw_affiliation_string": "Northwestern University****"
+      }
+     ],
+     "author": {
+      "display_name": "Mark A. Ratner",
+      "id": "https://openalex.org/A5026490818",
+      "observed_orcids": [
+       "https://orcid.org/0000-0001-7983-3387"
+      ],
+      "orcid": "https://orcid.org/0000-0001-7983-3387"
+     },
+     "author_position": "middle",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "Northwestern University",
+       "id": "https://openalex.org/I111979921",
+       "lineage": [
+        "https://openalex.org/I111979921"
+       ],
+       "ror": "https://ror.org/000e0be47",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Department of Chemistry, Northwestern University, 2145 Sheridan Rd, Evanston, IL 60208-3113 (USA)",
+      "Northwestern University****"
+     ],
+     "raw_author_name": "Mark A. Ratner",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I86519309"
+       ],
+       "raw_affiliation_string": "Department of Chemistry and Biochemistry, University of Texas at Austin, Austin, TX 78712-1167 (USA)"
+      },
+      {
+       "institution_ids": [
+        "https://openalex.org/I86519309"
+       ],
+       "raw_affiliation_string": "University of Texas at Austin#TAB#"
+      }
+     ],
+     "author": {
+      "display_name": "Peter J. Rossky",
+      "id": "https://openalex.org/A5000410825",
+      "observed_orcids": [
+       "https://orcid.org/0000-0002-0461-4179"
+      ],
+      "orcid": "https://orcid.org/0000-0002-0461-4179"
+     },
+     "author_position": "middle",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "The University of Texas at Austin",
+       "id": "https://openalex.org/I86519309",
+       "lineage": [
+        "https://openalex.org/I86519309"
+       ],
+       "ror": "https://ror.org/00hj54h04",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Department of Chemistry and Biochemistry, University of Texas at Austin, Austin, TX 78712-1167 (USA)",
+      "University of Texas at Austin#TAB#"
+     ],
+     "raw_author_name": "Peter J. Rossky",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I157725225"
+       ],
+       "raw_affiliation_string": "Department of Materials Science and Engineering, University of Illinois at Urbana-Champaign, 1304 W. Green St, Urbana, IL 61801 (USA)"
+      },
+      {
+       "institution_ids": [
+        "https://openalex.org/I157725225"
+       ],
+       "raw_affiliation_string": "University of Illinois at Urbana Champaign"
+      }
+     ],
+     "author": {
+      "display_name": "Samuel Isaac Stupp",
+      "id": "https://openalex.org/A5079222349",
+      "observed_orcids": [
+       "https://orcid.org/0000-0002-5491-7442"
+      ],
+      "orcid": "https://orcid.org/0000-0002-5491-7442"
+     },
+     "author_position": "middle",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "University of Illinois Urbana-Champaign",
+       "id": "https://openalex.org/I157725225",
+       "lineage": [
+        "https://openalex.org/I157725225"
+       ],
+       "ror": "https://ror.org/047426m28",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Department of Materials Science and Engineering, University of Illinois at Urbana-Champaign, 1304 W. Green St, Urbana, IL 61801 (USA)",
+      "University of Illinois at Urbana Champaign"
+     ],
+     "raw_author_name": "Samuel I. Stupp",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I1174212"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of Southern California, Los Angeles, CA 90089 (USA)"
+      },
+      {
+       "institution_ids": [
+        "https://openalex.org/I1174212"
+       ],
+       "raw_affiliation_string": "University of Southern California"
+      }
+     ],
+     "author": {
+      "display_name": "Mark E. Thompson",
+      "id": "https://openalex.org/A5035687175",
+      "observed_orcids": [
+       "https://orcid.org/0000-0002-7764-4096"
+      ],
+      "orcid": "https://orcid.org/0000-0002-7764-4096"
+     },
+     "author_position": "last",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "University of Southern California",
+       "id": "https://openalex.org/I1174212",
+       "lineage": [
+        "https://openalex.org/I1174212"
+       ],
+       "ror": "https://ror.org/03taz7m60",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Department of Chemistry, University of Southern California, Los Angeles, CA 90089 (USA)",
+      "University of Southern California"
+     ],
+     "raw_author_name": "Mark E. Thompson",
+     "raw_orcid": null
+    }
+   ],
+   "best_oa_location": null,
+   "biblio": {
+    "first_page": "1297",
+    "issue": "16",
+    "last_page": "1336",
+    "volume": "10"
+   },
+   "cited_by_count": 466,
+   "doi": "https://doi.org/10.1002/(sici)1521-4095(199811)10:16<1297::aid-adma1297>3.0.co;2-7",
+   "id": "https://openalex.org/W2112255801",
+   "is_retracted": false,
+   "keywords": [
+    {
+     "display_name": "supramolecular self-assembly",
+     "id": "https://openalex.org/keywords/supramolecular-self-assembly",
+     "score": 0.8309999704360962
+    },
+    {
+     "display_name": "molecular clusters",
+     "id": "https://openalex.org/keywords/molecular-clusters",
+     "score": 0.871999979019165
+    },
+    {
+     "display_name": "structural control",
+     "id": "https://openalex.org/keywords/structural-control",
+     "score": 0.6869999766349792
+    },
+    {
+     "display_name": "materials synthesis",
+     "id": "https://openalex.org/keywords/materials-synthesis",
+     "score": 0.7870000004768372
+    },
+    {
+     "display_name": "electronic properties",
+     "id": "https://openalex.org/keywords/electronic-properties",
+     "score": 0.5490000247955322
+    },
+    {
+     "display_name": "magnetic properties",
+     "id": "https://openalex.org/keywords/magnetic-properties",
+     "score": 0.9890000224113464
+    },
+    {
+     "display_name": "optical properties",
+     "id": "https://openalex.org/keywords/optical-properties",
+     "score": 0.7910000085830688
+    },
+    {
+     "display_name": "mechanical properties",
+     "id": "https://openalex.org/keywords/mechanical-properties",
+     "score": 0.6510000228881836
+    },
+    {
+     "display_name": "superconductivity",
+     "id": "https://openalex.org/keywords/superconductivity",
+     "score": 0.7020000219345093
+    },
+    {
+     "display_name": "ferromagnetism",
+     "id": "https://openalex.org/keywords/ferromagnetism",
+     "score": 0.796999990940094
+    },
+    {
+     "display_name": "molecular interactions",
+     "id": "https://openalex.org/keywords/molecular-interactions",
+     "score": 0.3930000066757202
+    },
+    {
+     "display_name": "interdisciplinary collaboration",
+     "id": "https://openalex.org/keywords/interdisciplinary-collaboration",
+     "score": 0.35499998927116394
+    }
+   ],
+   "open_access": {
+    "any_repository_has_fulltext": false,
+    "is_oa": false,
+    "oa_status": "closed",
+    "oa_url": null
+   },
+   "primary_location": {
+    "doi": "https://doi.org/10.1002/(sici)1521-4095(199811)10:16<1297::aid-adma1297>3.0.co;2-7",
+    "id": "doi:10.1002/(sici)1521-4095(199811)10:16<1297::aid-adma1297>3.0.co;2-7",
+    "is_accepted": true,
+    "is_oa": false,
+    "is_published": true,
+    "landing_page_url": "https://doi.org/10.1002/(sici)1521-4095(199811)10:16<1297::aid-adma1297>3.0.co;2-7",
+    "license": null,
+    "license_id": null,
+    "pdf_url": null,
+    "raw_source_name": "Advanced Materials",
+    "raw_type": "journal-article",
+    "source": {
+     "display_name": "Advanced Materials",
+     "host_organization": null,
+     "host_organization_lineage": [],
+     "host_organization_lineage_names": [],
+     "host_organization_name": null,
+     "id": "https://openalex.org/S99352657",
+     "is_core": true,
+     "is_in_doaj": false,
+     "is_oa": false,
+     "issn": [
+      "0935-9648",
+      "1521-4095"
+     ],
+     "issn_l": "0935-9648",
+     "listed_in": [
+      "anvur-scientific",
+      "cwts-core",
+      "dongbi-a",
+      "jufo-3",
+      "ki-jl-3",
+      "medline",
+      "norway-2",
+      "poland-200",
+      "russia-white-list-1",
+      "vabb-shw"
+     ],
+     "type": "journal"
+    },
+    "version": "publishedVersion"
+   },
+   "primary_topic": {
+    "display_name": "Magnetism in coordination complexes",
+    "domain": {
+     "display_name": "Physical Sciences",
+     "id": "https://openalex.org/domains/3"
+    },
+    "field": {
+     "display_name": "Materials Science",
+     "id": "https://openalex.org/fields/25"
+    },
+    "id": "https://openalex.org/T10612",
+    "score": 0.415800005197525,
+    "subfield": {
+     "display_name": "Electronic, Optical and Magnetic Materials",
+     "id": "https://openalex.org/subfields/2504"
+    }
+   },
+   "publication_date": "1998-11-01",
+   "publication_year": 1998,
+   "title": "From Molecules to Materials: Current Trends and Future Directions",
+   "type": "article"
+  },
   "row_id": "p0435"
  },
- "10.1002/(sici)1521-4095(199908)11%3a11%3c923%3a%3aaid-adma923%3e3.0.co%3b2-t": {
+ "10.1002/(sici)1521-4095(199908)11:11<923::aid-adma923>3.0.co;2-t": {
   "crossref": {
-   "error": 404
+   "ISSN": [
+    "0935-9648",
+    "1521-4095"
+   ],
+   "author": [
+    {
+     "affiliation": [],
+     "family": "Huynh",
+     "given": "Wendy U.",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "first"
+    },
+    {
+     "affiliation": [],
+     "family": "Peng",
+     "given": "Xiaogang",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Alivisatos",
+     "given": "A. Paul",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    }
+   ],
+   "container-title": [
+    "Advanced Materials"
+   ],
+   "is-referenced-by-count": 403,
+   "issue": "11",
+   "issued": {
+    "date-parts": [
+     [
+      1999,
+      8
+     ]
+    ]
+   },
+   "license": [
+    {
+     "URL": "http://doi.wiley.com/10.1002/tdm_license_1.1",
+     "content-version": "tdm",
+     "delay-in-days": 5875,
+     "start": {
+      "date-parts": [
+       [
+        2015,
+        9,
+        1
+       ]
+      ],
+      "date-time": "2015-09-01T00:00:00Z",
+      "timestamp": 1441065600000
+     }
+    }
+   ],
+   "page": "923-927",
+   "published-print": {
+    "date-parts": [
+     [
+      1999,
+      8
+     ]
+    ]
+   },
+   "publisher": "Wiley",
+   "relation": {},
+   "short-container-title": [
+    "Adv. Mater."
+   ],
+   "title": [
+    "CdSe Nanocrystal Rods/Poly(3-hexylthiophene) Composite Photovoltaic Devices"
+   ],
+   "type": "journal-article",
+   "volume": "11"
   },
-  "openalex": null,
+  "openalex": {
+   "authorships": [
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of California and Material Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720 (USA)"
+      }
+     ],
+     "author": {
+      "display_name": "Wendy U. Huynh",
+      "id": "https://openalex.org/A5033293514",
+      "observed_orcids": [],
+      "orcid": null
+     },
+     "author_position": "first",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "Lawrence Berkeley National Laboratory",
+       "id": "https://openalex.org/I148283060",
+       "lineage": [
+        "https://openalex.org/I1330989302",
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I39565521"
+       ],
+       "ror": "https://ror.org/02jbv0t02",
+       "type": "facility"
+      },
+      {
+       "country_code": "US",
+       "display_name": "University of California, Berkeley",
+       "id": "https://openalex.org/I95457486",
+       "lineage": [
+        "https://openalex.org/I95457486"
+       ],
+       "ror": "https://ror.org/01an7q238",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Department of Chemistry, University of California and Material Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720 (USA)"
+     ],
+     "raw_author_name": "Wendy U. Huynh",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of California and Material Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720 (USA)"
+      }
+     ],
+     "author": {
+      "display_name": "Xiaogang Peng",
+      "id": "https://openalex.org/A5013868523",
+      "observed_orcids": [
+       "https://orcid.org/0000-0002-5606-8472"
+      ],
+      "orcid": "https://orcid.org/0000-0002-5606-8472"
+     },
+     "author_position": "middle",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "Lawrence Berkeley National Laboratory",
+       "id": "https://openalex.org/I148283060",
+       "lineage": [
+        "https://openalex.org/I1330989302",
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I39565521"
+       ],
+       "ror": "https://ror.org/02jbv0t02",
+       "type": "facility"
+      },
+      {
+       "country_code": "US",
+       "display_name": "University of California, Berkeley",
+       "id": "https://openalex.org/I95457486",
+       "lineage": [
+        "https://openalex.org/I95457486"
+       ],
+       "ror": "https://ror.org/01an7q238",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Department of Chemistry, University of California and Material Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, CA 94720 (USA)"
+     ],
+     "raw_author_name": "Xiaogang Peng",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [],
+     "author": {
+      "display_name": "A. Paul Alivisatos",
+      "id": "https://openalex.org/A5009848674",
+      "observed_orcids": [
+       "https://orcid.org/0000-0001-6895-9048"
+      ],
+      "orcid": "https://orcid.org/0000-0001-6895-9048"
+     },
+     "author_position": "last",
+     "countries": [],
+     "institutions": [],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [],
+     "raw_author_name": "A. Paul Alivisatos",
+     "raw_orcid": null
+    }
+   ],
+   "best_oa_location": null,
+   "biblio": {
+    "first_page": "923",
+    "issue": "11",
+    "last_page": "927",
+    "volume": "11"
+   },
+   "cited_by_count": 580,
+   "doi": "https://doi.org/10.1002/(sici)1521-4095(199908)11:11<923::aid-adma923>3.0.co;2-t",
+   "id": "https://openalex.org/W2158013294",
+   "is_retracted": false,
+   "keywords": [
+    {
+     "display_name": "CdSe nanocrystals",
+     "id": "https://openalex.org/keywords/cdse-nanocrystals",
+     "score": 0.9819999933242798
+    },
+    {
+     "display_name": "poly(3-hexylthiophene)",
+     "id": "https://openalex.org/keywords/poly-3-hexylthiophene",
+     "score": 0.9409999847412109
+    },
+    {
+     "display_name": "polymer nanocomposites",
+     "id": "https://openalex.org/keywords/polymer-nanocomposites",
+     "score": 0.7390000224113464
+    },
+    {
+     "display_name": "organic photovoltaic devices",
+     "id": "https://openalex.org/keywords/organic-photovoltaic-devices",
+     "score": 0.8050000071525574
+    },
+    {
+     "display_name": "conjugated polymers",
+     "id": "https://openalex.org/keywords/conjugated-polymers",
+     "score": 0.8519999980926514
+    },
+    {
+     "display_name": "charge transport",
+     "id": "https://openalex.org/keywords/charge-transport",
+     "score": 0.7289999723434448
+    },
+    {
+     "display_name": "nanocrystal aggregation",
+     "id": "https://openalex.org/keywords/nanocrystal-aggregation",
+     "score": 0.8169999718666077
+    },
+    {
+     "display_name": "energy conversion efficiency",
+     "id": "https://openalex.org/keywords/energy-conversion-efficiency",
+     "score": 0.8600000143051147
+    }
+   ],
+   "open_access": {
+    "any_repository_has_fulltext": false,
+    "is_oa": false,
+    "oa_status": "closed",
+    "oa_url": null
+   },
+   "primary_location": {
+    "doi": "https://doi.org/10.1002/(sici)1521-4095(199908)11:11<923::aid-adma923>3.0.co;2-t",
+    "id": "doi:10.1002/(sici)1521-4095(199908)11:11<923::aid-adma923>3.0.co;2-t",
+    "is_accepted": true,
+    "is_oa": false,
+    "is_published": true,
+    "landing_page_url": "https://doi.org/10.1002/(sici)1521-4095(199908)11:11<923::aid-adma923>3.0.co;2-t",
+    "license": null,
+    "license_id": null,
+    "pdf_url": null,
+    "raw_source_name": "Advanced Materials",
+    "raw_type": "journal-article",
+    "source": {
+     "display_name": "Advanced Materials",
+     "host_organization": null,
+     "host_organization_lineage": [],
+     "host_organization_lineage_names": [],
+     "host_organization_name": null,
+     "id": "https://openalex.org/S99352657",
+     "is_core": true,
+     "is_in_doaj": false,
+     "is_oa": false,
+     "issn": [
+      "0935-9648",
+      "1521-4095"
+     ],
+     "issn_l": "0935-9648",
+     "listed_in": [
+      "anvur-scientific",
+      "cwts-core",
+      "dongbi-a",
+      "jufo-3",
+      "ki-jl-3",
+      "medline",
+      "norway-2",
+      "poland-200",
+      "russia-white-list-1",
+      "vabb-shw"
+     ],
+     "type": "journal"
+    },
+    "version": "publishedVersion"
+   },
+   "primary_topic": {
+    "display_name": "Organic Electronics and Photovoltaics",
+    "domain": {
+     "display_name": "Physical Sciences",
+     "id": "https://openalex.org/domains/3"
+    },
+    "field": {
+     "display_name": "Engineering",
+     "id": "https://openalex.org/fields/22"
+    },
+    "id": "https://openalex.org/T10045",
+    "score": 0.9980000257492065,
+    "subfield": {
+     "display_name": "Electrical and Electronic Engineering",
+     "id": "https://openalex.org/subfields/2208"
+    }
+   },
+   "publication_date": "1999-08-01",
+   "publication_year": 1999,
+   "title": "CdSe Nanocrystal Rods/Poly(3-hexylthiophene) Composite Photovoltaic Devices",
+   "type": "article"
+  },
   "row_id": "p0425"
  },
- "10.1002/1438-5171(200112)2%3a4%3c261%3a%3aaid-simo261%3e3.0.co%3b2-p": {
+ "10.1002/1438-5171(200112)2:4<261::aid-simo261>3.0.co;2-p": {
   "crossref": {
-   "error": 404
+   "ISSN": [
+    "1438-5163",
+    "1438-5171"
+   ],
+   "author": [
+    {
+     "affiliation": [],
+     "family": "Michalet",
+     "given": "Xavier",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "first"
+    },
+    {
+     "affiliation": [],
+     "family": "Pinaud",
+     "given": "Fabien",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Lacoste",
+     "given": "Thilo D.",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Dahan",
+     "given": "Maxime",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Bruchez",
+     "given": "Marcel P.",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Alivisatos",
+     "given": "A. Paul",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Weiss",
+     "given": "Shimon",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    }
+   ],
+   "container-title": [
+    "Single Molecules"
+   ],
+   "is-referenced-by-count": 252,
+   "issue": "4",
+   "issued": {
+    "date-parts": [
+     [
+      2001,
+      12
+     ]
+    ]
+   },
+   "license": [
+    {
+     "URL": "http://doi.wiley.com/10.1002/tdm_license_1.1",
+     "content-version": "tdm",
+     "delay-in-days": 5022,
+     "start": {
+      "date-parts": [
+       [
+        2015,
+        9,
+        1
+       ]
+      ],
+      "date-time": "2015-09-01T00:00:00Z",
+      "timestamp": 1441065600000
+     }
+    }
+   ],
+   "page": "261-276",
+   "published-print": {
+    "date-parts": [
+     [
+      2001,
+      12
+     ]
+    ]
+   },
+   "publisher": "Wiley",
+   "relation": {},
+   "short-container-title": [
+    "Single Mol."
+   ],
+   "title": [
+    "Properties of Fluorescent Semiconductor Nanocrystals and their Application to Biological Labeling"
+   ],
+   "type": "journal-article",
+   "volume": "2"
   },
-  "openalex": null,
+  "openalex": {
+   "authorships": [
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I148283060"
+       ],
+       "raw_affiliation_string": "Material Sciences Division , Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720, USA"
+      }
+     ],
+     "author": {
+      "display_name": "Xavier Michalet",
+      "id": "https://openalex.org/A5041130874",
+      "observed_orcids": [
+       "https://orcid.org/0000-0001-6602-7693"
+      ],
+      "orcid": "https://orcid.org/0000-0001-6602-7693"
+     },
+     "author_position": "first",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "Lawrence Berkeley National Laboratory",
+       "id": "https://openalex.org/I148283060",
+       "lineage": [
+        "https://openalex.org/I1330989302",
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I39565521"
+       ],
+       "ror": "https://ror.org/02jbv0t02",
+       "type": "facility"
+      }
+     ],
+     "is_corresponding": true,
+     "raw_affiliation_strings": [
+      "Material Sciences Division , Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720, USA"
+     ],
+     "raw_author_name": "Xavier Michalet",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I148283060"
+       ],
+       "raw_affiliation_string": "Material Sciences Division , Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720, USA"
+      }
+     ],
+     "author": {
+      "display_name": "Fabien F. Pinaud",
+      "id": "https://openalex.org/A5060214768",
+      "observed_orcids": [
+       "https://orcid.org/0000-0002-4272-3616"
+      ],
+      "orcid": "https://orcid.org/0000-0002-4272-3616"
+     },
+     "author_position": "middle",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "Lawrence Berkeley National Laboratory",
+       "id": "https://openalex.org/I148283060",
+       "lineage": [
+        "https://openalex.org/I1330989302",
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I39565521"
+       ],
+       "ror": "https://ror.org/02jbv0t02",
+       "type": "facility"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Material Sciences Division , Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720, USA"
+     ],
+     "raw_author_name": "Fabien Pinaud",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I148283060"
+       ],
+       "raw_affiliation_string": "Material Sciences Division , Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720, USA"
+      }
+     ],
+     "author": {
+      "display_name": "Thilo D. Lacoste",
+      "id": "https://openalex.org/A5025209661",
+      "observed_orcids": [],
+      "orcid": null
+     },
+     "author_position": "middle",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "Lawrence Berkeley National Laboratory",
+       "id": "https://openalex.org/I148283060",
+       "lineage": [
+        "https://openalex.org/I1330989302",
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I39565521"
+       ],
+       "ror": "https://ror.org/02jbv0t02",
+       "type": "facility"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Material Sciences Division , Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720, USA"
+     ],
+     "raw_author_name": "Thilo D. Lacoste",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I148283060"
+       ],
+       "raw_affiliation_string": "Material Sciences Division , Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720, USA"
+      }
+     ],
+     "author": {
+      "display_name": "Maxime Dahan",
+      "id": "https://openalex.org/A5039124056",
+      "observed_orcids": [
+       "https://orcid.org/0000-0002-4943-2491"
+      ],
+      "orcid": "https://orcid.org/0000-0002-4943-2491"
+     },
+     "author_position": "middle",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "Lawrence Berkeley National Laboratory",
+       "id": "https://openalex.org/I148283060",
+       "lineage": [
+        "https://openalex.org/I1330989302",
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I39565521"
+       ],
+       "ror": "https://ror.org/02jbv0t02",
+       "type": "facility"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Material Sciences Division , Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720, USA"
+     ],
+     "raw_author_name": "Maxime Dahan",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of California, Berkeley, CA 94720, USA"
+      },
+      {
+       "institution_ids": [
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of California - Berkeley, CA 94720, USA"
+      }
+     ],
+     "author": {
+      "display_name": "Marcel P. Bruchez",
+      "id": "https://openalex.org/A5028325980",
+      "observed_orcids": [
+       "https://orcid.org/0000-0002-7370-4848"
+      ],
+      "orcid": "https://orcid.org/0000-0002-7370-4848"
+     },
+     "author_position": "middle",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "University of California, Berkeley",
+       "id": "https://openalex.org/I95457486",
+       "lineage": [
+        "https://openalex.org/I95457486"
+       ],
+       "ror": "https://ror.org/01an7q238",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Department of Chemistry, University of California, Berkeley, CA 94720, USA",
+      "Department of Chemistry, University of California - Berkeley, CA 94720, USA"
+     ],
+     "raw_author_name": "Marcel P. Bruchez",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I148283060"
+       ],
+       "raw_affiliation_string": "Material Sciences Division , Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720, USA"
+      }
+     ],
+     "author": {
+      "display_name": "A. Paul Alivisatos",
+      "id": "https://openalex.org/A5009848674",
+      "observed_orcids": [
+       "https://orcid.org/0000-0001-6895-9048"
+      ],
+      "orcid": "https://orcid.org/0000-0001-6895-9048"
+     },
+     "author_position": "middle",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "Lawrence Berkeley National Laboratory",
+       "id": "https://openalex.org/I148283060",
+       "lineage": [
+        "https://openalex.org/I1330989302",
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I39565521"
+       ],
+       "ror": "https://ror.org/02jbv0t02",
+       "type": "facility"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Material Sciences Division , Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720, USA"
+     ],
+     "raw_author_name": "A. Paul Alivisatos",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I148283060"
+       ],
+       "raw_affiliation_string": "Material Sciences Division , Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720, USA"
+      }
+     ],
+     "author": {
+      "display_name": "Shimon Weiss",
+      "id": "https://openalex.org/A5060401840",
+      "observed_orcids": [
+       "https://orcid.org/0000-0002-0720-5426"
+      ],
+      "orcid": "https://orcid.org/0000-0002-0720-5426"
+     },
+     "author_position": "last",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "Lawrence Berkeley National Laboratory",
+       "id": "https://openalex.org/I148283060",
+       "lineage": [
+        "https://openalex.org/I1330989302",
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I39565521"
+       ],
+       "ror": "https://ror.org/02jbv0t02",
+       "type": "facility"
+      }
+     ],
+     "is_corresponding": true,
+     "raw_affiliation_strings": [
+      "Material Sciences Division , Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720, USA"
+     ],
+     "raw_author_name": "Shimon Weiss",
+     "raw_orcid": null
+    }
+   ],
+   "best_oa_location": null,
+   "biblio": {
+    "first_page": "261",
+    "issue": "4",
+    "last_page": "276",
+    "volume": "2"
+   },
+   "cited_by_count": 369,
+   "doi": "https://doi.org/10.1002/1438-5171(200112)2:4<261::aid-simo261>3.0.co;2-p",
+   "id": "https://openalex.org/W2009960309",
+   "is_retracted": false,
+   "keywords": [
+    {
+     "display_name": "quantum dots",
+     "id": "https://openalex.org/keywords/quantum-dots",
+     "score": 0.8830000162124634
+    },
+    {
+     "display_name": "biological labeling",
+     "id": "https://openalex.org/keywords/biological-labeling",
+     "score": 0.8240000009536743
+    },
+    {
+     "display_name": "bioconjugation",
+     "id": "https://openalex.org/keywords/bioconjugation",
+     "score": 0.9580000042915344
+    },
+    {
+     "display_name": "fluorescence microscopy",
+     "id": "https://openalex.org/keywords/fluorescence-microscopy",
+     "score": 0.6389999985694885
+    },
+    {
+     "display_name": "single-molecule detection",
+     "id": "https://openalex.org/keywords/single-molecule-detection",
+     "score": 0.7009999752044678
+    },
+    {
+     "display_name": "fluorescence lifetime",
+     "id": "https://openalex.org/keywords/fluorescence-lifetime",
+     "score": 0.7080000042915344
+    },
+    {
+     "display_name": "blinking",
+     "id": "https://openalex.org/keywords/eye-blinking",
+     "score": 0.6729999780654907
+    },
+    {
+     "display_name": "photobleaching",
+     "id": "https://openalex.org/keywords/photobleaching",
+     "score": 0.7839999794960022
+    },
+    {
+     "display_name": "multicolor labeling",
+     "id": "https://openalex.org/keywords/multicolor-labeling",
+     "score": 0.621999979019165
+    },
+    {
+     "display_name": "live-cell imaging",
+     "id": "https://openalex.org/keywords/live-cell-imaging",
+     "score": 0.6579999923706055
+    },
+    {
+     "display_name": "autofluorescence",
+     "id": "https://openalex.org/keywords/autofluorescence",
+     "score": 0.7400000095367432
+    }
+   ],
+   "open_access": {
+    "any_repository_has_fulltext": false,
+    "is_oa": false,
+    "oa_status": "closed",
+    "oa_url": null
+   },
+   "primary_location": {
+    "doi": "https://doi.org/10.1002/1438-5171(200112)2:4<261::aid-simo261>3.0.co;2-p",
+    "id": "doi:10.1002/1438-5171(200112)2:4<261::aid-simo261>3.0.co;2-p",
+    "is_accepted": true,
+    "is_oa": false,
+    "is_published": true,
+    "landing_page_url": "https://doi.org/10.1002/1438-5171(200112)2:4<261::aid-simo261>3.0.co;2-p",
+    "license": null,
+    "license_id": null,
+    "pdf_url": null,
+    "raw_source_name": "Single Molecules",
+    "raw_type": "journal-article",
+    "source": {
+     "display_name": "Single Molecules",
+     "host_organization": "https://openalex.org/P4310320595",
+     "host_organization_lineage": [
+      "https://openalex.org/P4310320595"
+     ],
+     "host_organization_lineage_names": [
+      "Wiley"
+     ],
+     "host_organization_name": "Wiley",
+     "id": "https://openalex.org/S143035200",
+     "is_core": true,
+     "is_in_doaj": false,
+     "is_oa": false,
+     "issn": [
+      "1438-5163",
+      "1438-5171"
+     ],
+     "issn_l": "1438-5163",
+     "listed_in": [
+      "cwts-core"
+     ],
+     "type": "journal"
+    },
+    "version": "publishedVersion"
+   },
+   "primary_topic": {
+    "display_name": "Quantum Dots Synthesis And Properties",
+    "domain": {
+     "display_name": "Physical Sciences",
+     "id": "https://openalex.org/domains/3"
+    },
+    "field": {
+     "display_name": "Materials Science",
+     "id": "https://openalex.org/fields/25"
+    },
+    "id": "https://openalex.org/T10321",
+    "score": 0.9984999895095825,
+    "subfield": {
+     "display_name": "Materials Chemistry",
+     "id": "https://openalex.org/subfields/2505"
+    }
+   },
+   "publication_date": "2001-12-01",
+   "publication_year": 2001,
+   "title": "Properties of Fluorescent Semiconductor Nanocrystals and their Application to Biological Labeling",
+   "type": "article"
+  },
   "row_id": "p0400"
  },
- "10.1002/1521-4095(20020618)14%3a12%3c882%3a%3aaid-adma882%3e3.0.co%3b2-y": {
+ "10.1002/1521-4095(20020618)14:12<882::aid-adma882>3.0.co;2-y": {
   "crossref": {
-   "error": 404
+   "ISSN": [
+    "0935-9648",
+    "1521-4095"
+   ],
+   "author": [
+    {
+     "affiliation": [],
+     "family": "Parak",
+     "given": "W.J.",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "first"
+    },
+    {
+     "affiliation": [],
+     "family": "Boudreau",
+     "given": "R.",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Le Gros",
+     "given": "M.",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Gerion",
+     "given": "D.",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Zanchet",
+     "given": "D.",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Micheel",
+     "given": "C.M.",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Williams",
+     "given": "S.C.",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Alivisatos",
+     "given": "A.P.",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Larabell",
+     "given": "C.",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    }
+   ],
+   "container-title": [
+    "Advanced Materials"
+   ],
+   "is-referenced-by-count": 256,
+   "issue": "12",
+   "issued": {
+    "date-parts": [
+     [
+      2002,
+      6,
+      18
+     ]
+    ]
+   },
+   "license": [
+    {
+     "URL": "http://doi.wiley.com/10.1002/tdm_license_1.1",
+     "content-version": "tdm",
+     "delay-in-days": 4823,
+     "start": {
+      "date-parts": [
+       [
+        2015,
+        9,
+        1
+       ]
+      ],
+      "date-time": "2015-09-01T00:00:00Z",
+      "timestamp": 1441065600000
+     }
+    }
+   ],
+   "page": "882",
+   "published-print": {
+    "date-parts": [
+     [
+      2002,
+      6,
+      18
+     ]
+    ]
+   },
+   "publisher": "Wiley",
+   "relation": {},
+   "short-container-title": [
+    "Adv. Mater."
+   ],
+   "title": [
+    "Cell Motility and Metastatic Potential Studies Based on Quantum Dot Imaging of Phagokinetic Tracks"
+   ],
+   "type": "journal-article",
+   "volume": "14"
   },
-  "openalex": null,
+  "openalex": {
+   "authorships": [
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I148283060"
+       ],
+       "raw_affiliation_string": "Materials Science Division, Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720 (USA)"
+      }
+     ],
+     "author": {
+      "display_name": "Wolfgang Johann Parak",
+      "id": "https://openalex.org/A5082376678",
+      "observed_orcids": [
+       "https://orcid.org/0000-0003-1672-6650"
+      ],
+      "orcid": "https://orcid.org/0000-0003-1672-6650"
+     },
+     "author_position": "first",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "Lawrence Berkeley National Laboratory",
+       "id": "https://openalex.org/I148283060",
+       "lineage": [
+        "https://openalex.org/I1330989302",
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I39565521"
+       ],
+       "ror": "https://ror.org/02jbv0t02",
+       "type": "facility"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Materials Science Division, Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720 (USA)"
+     ],
+     "raw_author_name": "W.J. Parak",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I148283060"
+       ],
+       "raw_affiliation_string": "Life Science Division, Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720 (USA)"
+      }
+     ],
+     "author": {
+      "display_name": "Rosanne Boudreau",
+      "id": "https://openalex.org/A5017854220",
+      "observed_orcids": [],
+      "orcid": null
+     },
+     "author_position": "middle",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "Lawrence Berkeley National Laboratory",
+       "id": "https://openalex.org/I148283060",
+       "lineage": [
+        "https://openalex.org/I1330989302",
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I39565521"
+       ],
+       "ror": "https://ror.org/02jbv0t02",
+       "type": "facility"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Life Science Division, Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720 (USA)"
+     ],
+     "raw_author_name": "R. Boudreau",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I148283060"
+       ],
+       "raw_affiliation_string": "Genomics Division, Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720 (USA)"
+      }
+     ],
+     "author": {
+      "display_name": "Mark A. Le Gros",
+      "id": "https://openalex.org/A5066761746",
+      "observed_orcids": [
+       "https://orcid.org/0000-0001-9804-9803"
+      ],
+      "orcid": "https://orcid.org/0000-0001-9804-9803"
+     },
+     "author_position": "middle",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "Lawrence Berkeley National Laboratory",
+       "id": "https://openalex.org/I148283060",
+       "lineage": [
+        "https://openalex.org/I1330989302",
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I39565521"
+       ],
+       "ror": "https://ror.org/02jbv0t02",
+       "type": "facility"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Genomics Division, Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720 (USA)"
+     ],
+     "raw_author_name": "M. Le Gros",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I148283060"
+       ],
+       "raw_affiliation_string": "Materials Science Division, Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720 (USA)"
+      }
+     ],
+     "author": {
+      "display_name": "Daniele Gerion",
+      "id": "https://openalex.org/A5006355517",
+      "observed_orcids": [],
+      "orcid": null
+     },
+     "author_position": "middle",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "Lawrence Berkeley National Laboratory",
+       "id": "https://openalex.org/I148283060",
+       "lineage": [
+        "https://openalex.org/I1330989302",
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I39565521"
+       ],
+       "ror": "https://ror.org/02jbv0t02",
+       "type": "facility"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Materials Science Division, Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720 (USA)"
+     ],
+     "raw_author_name": "D. Gerion",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of California at Berkeley, Hildebrand Hall B62, Berkeley, CA 94720 (USA)"
+      }
+     ],
+     "author": {
+      "display_name": "Daniela Zanchet",
+      "id": "https://openalex.org/A5089166061",
+      "observed_orcids": [
+       "https://orcid.org/0000-0003-1475-2548"
+      ],
+      "orcid": "https://orcid.org/0000-0003-1475-2548"
+     },
+     "author_position": "middle",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "University of California, Berkeley",
+       "id": "https://openalex.org/I95457486",
+       "lineage": [
+        "https://openalex.org/I95457486"
+       ],
+       "ror": "https://ror.org/01an7q238",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Department of Chemistry, University of California at Berkeley, Hildebrand Hall B62, Berkeley, CA 94720 (USA)"
+     ],
+     "raw_author_name": "D. Zanchet",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of California at Berkeley, Hildebrand Hall B62, Berkeley, CA 94720 (USA)"
+      }
+     ],
+     "author": {
+      "display_name": "Christine Micheel",
+      "id": "https://openalex.org/A5063641807",
+      "observed_orcids": [
+       "https://orcid.org/0000-0002-7744-9039"
+      ],
+      "orcid": "https://orcid.org/0000-0002-7744-9039"
+     },
+     "author_position": "middle",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "University of California, Berkeley",
+       "id": "https://openalex.org/I95457486",
+       "lineage": [
+        "https://openalex.org/I95457486"
+       ],
+       "ror": "https://ror.org/01an7q238",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Department of Chemistry, University of California at Berkeley, Hildebrand Hall B62, Berkeley, CA 94720 (USA)"
+     ],
+     "raw_author_name": "C.M. Micheel",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of California at Berkeley, Hildebrand Hall B62, Berkeley, CA 94720 (USA)"
+      }
+     ],
+     "author": {
+      "display_name": "Shara C. Williams",
+      "id": "https://openalex.org/A5080332800",
+      "observed_orcids": [],
+      "orcid": null
+     },
+     "author_position": "middle",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "University of California, Berkeley",
+       "id": "https://openalex.org/I95457486",
+       "lineage": [
+        "https://openalex.org/I95457486"
+       ],
+       "ror": "https://ror.org/01an7q238",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Department of Chemistry, University of California at Berkeley, Hildebrand Hall B62, Berkeley, CA 94720 (USA)"
+     ],
+     "raw_author_name": "S.C. Williams",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I148283060"
+       ],
+       "raw_affiliation_string": "Materials Science Division, Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720 (USA)"
+      }
+     ],
+     "author": {
+      "display_name": "A. Paul Alivisatos",
+      "id": "https://openalex.org/A5009848674",
+      "observed_orcids": [
+       "https://orcid.org/0000-0001-6895-9048"
+      ],
+      "orcid": "https://orcid.org/0000-0001-6895-9048"
+     },
+     "author_position": "middle",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "Lawrence Berkeley National Laboratory",
+       "id": "https://openalex.org/I148283060",
+       "lineage": [
+        "https://openalex.org/I1330989302",
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I39565521"
+       ],
+       "ror": "https://ror.org/02jbv0t02",
+       "type": "facility"
+      }
+     ],
+     "is_corresponding": true,
+     "raw_affiliation_strings": [
+      "Materials Science Division, Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720 (USA)"
+     ],
+     "raw_author_name": "A.P. Alivisatos",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I148283060"
+       ],
+       "raw_affiliation_string": "Life Science Division, Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720 (USA)"
+      }
+     ],
+     "author": {
+      "display_name": "Carolyn A. Larabell",
+      "id": "https://openalex.org/A5071521360",
+      "observed_orcids": [
+       "https://orcid.org/0000-0002-6262-4789"
+      ],
+      "orcid": "https://orcid.org/0000-0002-6262-4789"
+     },
+     "author_position": "last",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "Lawrence Berkeley National Laboratory",
+       "id": "https://openalex.org/I148283060",
+       "lineage": [
+        "https://openalex.org/I1330989302",
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I39565521"
+       ],
+       "ror": "https://ror.org/02jbv0t02",
+       "type": "facility"
+      }
+     ],
+     "is_corresponding": true,
+     "raw_affiliation_strings": [
+      "Life Science Division, Lawrence Berkeley National Laboratory, 1 Cyclotron Road, Berkeley, CA 94720 (USA)"
+     ],
+     "raw_author_name": "C. Larabell",
+     "raw_orcid": null
+    }
+   ],
+   "best_oa_location": null,
+   "biblio": {
+    "first_page": "882",
+    "issue": "12",
+    "last_page": "882",
+    "volume": "14"
+   },
+   "cited_by_count": 410,
+   "doi": "https://doi.org/10.1002/1521-4095(20020618)14:12<882::aid-adma882>3.0.co;2-y",
+   "id": "https://openalex.org/W2164930985",
+   "is_retracted": false,
+   "keywords": [
+    {
+     "display_name": "cell motility",
+     "id": "https://openalex.org/keywords/cell-motility",
+     "score": 0.8619999885559082
+    },
+    {
+     "display_name": "metastasis",
+     "id": "https://openalex.org/keywords/metastasis",
+     "score": 0.734000027179718
+    },
+    {
+     "display_name": "quantum dots",
+     "id": "https://openalex.org/keywords/quantum-dots",
+     "score": 0.8650000095367432
+    },
+    {
+     "display_name": "tumor cell migration",
+     "id": "https://openalex.org/keywords/tumor-cell-migration",
+     "score": 0.6890000104904175
+    },
+    {
+     "display_name": "breast cancer cells",
+     "id": "https://openalex.org/keywords/breast-cancer-cells",
+     "score": 0.9369999766349792
+    },
+    {
+     "display_name": "cellular uptake",
+     "id": "https://openalex.org/keywords/cellular-uptake",
+     "score": 0.5789999961853027
+    },
+    {
+     "display_name": "photostability",
+     "id": "https://openalex.org/keywords/photostability",
+     "score": 0.5770000219345093
+    }
+   ],
+   "open_access": {
+    "any_repository_has_fulltext": false,
+    "is_oa": false,
+    "oa_status": "closed",
+    "oa_url": null
+   },
+   "primary_location": {
+    "doi": "https://doi.org/10.1002/1521-4095(20020618)14:12<882::aid-adma882>3.0.co;2-y",
+    "id": "doi:10.1002/1521-4095(20020618)14:12<882::aid-adma882>3.0.co;2-y",
+    "is_accepted": true,
+    "is_oa": false,
+    "is_published": true,
+    "landing_page_url": "https://doi.org/10.1002/1521-4095(20020618)14:12<882::aid-adma882>3.0.co;2-y",
+    "license": null,
+    "license_id": null,
+    "pdf_url": null,
+    "raw_source_name": "Advanced Materials",
+    "raw_type": "journal-article",
+    "source": {
+     "display_name": "Advanced Materials",
+     "host_organization": null,
+     "host_organization_lineage": [],
+     "host_organization_lineage_names": [],
+     "host_organization_name": null,
+     "id": "https://openalex.org/S99352657",
+     "is_core": true,
+     "is_in_doaj": false,
+     "is_oa": false,
+     "issn": [
+      "0935-9648",
+      "1521-4095"
+     ],
+     "issn_l": "0935-9648",
+     "listed_in": [
+      "anvur-scientific",
+      "cwts-core",
+      "dongbi-a",
+      "jufo-3",
+      "ki-jl-3",
+      "medline",
+      "norway-2",
+      "poland-200",
+      "russia-white-list-1",
+      "vabb-shw"
+     ],
+     "type": "journal"
+    },
+    "version": "publishedVersion"
+   },
+   "primary_topic": {
+    "display_name": "Quantum Dots Synthesis And Properties",
+    "domain": {
+     "display_name": "Physical Sciences",
+     "id": "https://openalex.org/domains/3"
+    },
+    "field": {
+     "display_name": "Materials Science",
+     "id": "https://openalex.org/fields/25"
+    },
+    "id": "https://openalex.org/T10321",
+    "score": 0.9883000254631042,
+    "subfield": {
+     "display_name": "Materials Chemistry",
+     "id": "https://openalex.org/subfields/2505"
+    }
+   },
+   "publication_date": "2002-06-18",
+   "publication_year": 2002,
+   "title": "Cell Motility and Metastatic Potential Studies Based on Quantum Dot Imaging of Phagokinetic Tracks",
+   "type": "article"
+  },
   "row_id": "p0383"
  },
  "10.1002/9783527807215.ch1": {
@@ -161081,11 +164100,603 @@
   },
   "row_id": "p0375"
  },
- "10.1021/nl047947%2b": {
+ "10.1021/nl047947+": {
   "crossref": {
-   "error": 404
+   "ISSN": [
+    "1530-6984",
+    "1530-6992"
+   ],
+   "author": [
+    {
+     "affiliation": [],
+     "family": "Madhukar",
+     "given": "Anupam",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "first"
+    },
+    {
+     "affiliation": [],
+     "family": "Lu",
+     "given": "Siyuan",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Konkar",
+     "given": "Atul",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Zhang",
+     "given": "Yi",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Ho",
+     "given": "Max",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Hughes",
+     "given": "Steven M.",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Alivisatos",
+     "given": "A. Paul",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    }
+   ],
+   "container-title": [
+    "Nano Letters"
+   ],
+   "is-referenced-by-count": 22,
+   "issue": "3",
+   "issued": {
+    "date-parts": [
+     [
+      2005,
+      1,
+      25
+     ]
+    ]
+   },
+   "license": [
+    {
+     "URL": "https://doi.org/10.15223/policy-029",
+     "content-version": "stm-asf",
+     "delay-in-days": 0,
+     "start": {
+      "date-parts": [
+       [
+        2005,
+        1,
+        25
+       ]
+      ],
+      "date-time": "2005-01-25T00:00:00Z",
+      "timestamp": 1106611200000
+     }
+    },
+    {
+     "URL": "https://doi.org/10.15223/policy-037",
+     "content-version": "stm-asf",
+     "delay-in-days": 0,
+     "start": {
+      "date-parts": [
+       [
+        2005,
+        1,
+        25
+       ]
+      ],
+      "date-time": "2005-01-25T00:00:00Z",
+      "timestamp": 1106611200000
+     }
+    },
+    {
+     "URL": "https://doi.org/10.15223/policy-045",
+     "content-version": "stm-asf",
+     "delay-in-days": 0,
+     "start": {
+      "date-parts": [
+       [
+        2005,
+        1,
+        25
+       ]
+      ],
+      "date-time": "2005-01-25T00:00:00Z",
+      "timestamp": 1106611200000
+     }
+    }
+   ],
+   "page": "479-482",
+   "published-online": {
+    "date-parts": [
+     [
+      2005,
+      1,
+      25
+     ]
+    ]
+   },
+   "published-print": {
+    "date-parts": [
+     [
+      2005,
+      3,
+      1
+     ]
+    ]
+   },
+   "publisher": "American Chemical Society (ACS)",
+   "relation": {},
+   "short-container-title": [
+    "Nano Lett."
+   ],
+   "title": [
+    "Integrated Semiconductor Nanocrystal and Epitaxical Nanostructure Systems:  Structural and Optical Behavior"
+   ],
+   "type": "journal-article",
+   "volume": "5"
   },
-  "openalex": null,
+  "openalex": {
+   "authorships": [
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I1174212"
+       ],
+       "raw_affiliation_string": "Nanostructure Materials & Devices Laboratory, University of Southern California, Los Angeles, California 90089-0241, USA. Madhukar@usc.edu"
+      },
+      {
+       "institution_ids": [
+        "https://openalex.org/I1174212"
+       ],
+       "raw_affiliation_string": "Nanostructure Materials & Devices Laboratory, University of Southern California, Los Angeles, California 90089-0241, USA"
+      }
+     ],
+     "author": {
+      "display_name": "Anupam Madhukar",
+      "id": "https://openalex.org/A5063645064",
+      "observed_orcids": [
+       "https://orcid.org/0000-0002-1044-1681"
+      ],
+      "orcid": "https://orcid.org/0000-0002-1044-1681"
+     },
+     "author_position": "first",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "University of Southern California",
+       "id": "https://openalex.org/I1174212",
+       "lineage": [
+        "https://openalex.org/I1174212"
+       ],
+       "ror": "https://ror.org/03taz7m60",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": true,
+     "raw_affiliation_strings": [
+      "Nanostructure Materials & Devices Laboratory, University of Southern California, Los Angeles, California 90089-0241, USA. Madhukar@usc.edu",
+      "Nanostructure Materials & Devices Laboratory, University of Southern California, Los Angeles, California 90089-0241, USA"
+     ],
+     "raw_author_name": "Anupam Madhukar",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I1174212"
+       ],
+       "raw_affiliation_string": "Nanostructure Materials & Devices Laboratory, University of Southern California, Los Angeles, California 90089-0241"
+      }
+     ],
+     "author": {
+      "display_name": "Siyuan Lu",
+      "id": "https://openalex.org/A5101974235",
+      "observed_orcids": [
+       "https://orcid.org/0000-0002-3510-3101"
+      ],
+      "orcid": "https://orcid.org/0000-0002-3510-3101"
+     },
+     "author_position": "middle",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "University of Southern California",
+       "id": "https://openalex.org/I1174212",
+       "lineage": [
+        "https://openalex.org/I1174212"
+       ],
+       "ror": "https://ror.org/03taz7m60",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Nanostructure Materials & Devices Laboratory, University of Southern California, Los Angeles, California 90089-0241"
+     ],
+     "raw_author_name": "Siyuan Lu",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I1174212"
+       ],
+       "raw_affiliation_string": "Nanostructure Materials & Devices Laboratory, University of Southern California, Los Angeles, California 90089-0241"
+      }
+     ],
+     "author": {
+      "display_name": "A. Konkar",
+      "id": "https://openalex.org/A5044273826",
+      "observed_orcids": [],
+      "orcid": null
+     },
+     "author_position": "middle",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "University of Southern California",
+       "id": "https://openalex.org/I1174212",
+       "lineage": [
+        "https://openalex.org/I1174212"
+       ],
+       "ror": "https://ror.org/03taz7m60",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Nanostructure Materials & Devices Laboratory, University of Southern California, Los Angeles, California 90089-0241"
+     ],
+     "raw_author_name": "Atul Konkar",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I1174212"
+       ],
+       "raw_affiliation_string": "Nanostructure Materials & Devices Laboratory, University of Southern California, Los Angeles, California 90089-0241"
+      }
+     ],
+     "author": {
+      "display_name": "Yi Zhang",
+      "id": "https://openalex.org/A5100388042",
+      "observed_orcids": [
+       "https://orcid.org/0000-0001-6652-2619"
+      ],
+      "orcid": "https://orcid.org/0000-0001-6652-2619"
+     },
+     "author_position": "middle",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "University of Southern California",
+       "id": "https://openalex.org/I1174212",
+       "lineage": [
+        "https://openalex.org/I1174212"
+       ],
+       "ror": "https://ror.org/03taz7m60",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Nanostructure Materials & Devices Laboratory, University of Southern California, Los Angeles, California 90089-0241"
+     ],
+     "raw_author_name": "Yi Zhang",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I1174212"
+       ],
+       "raw_affiliation_string": "Nanostructure Materials & Devices Laboratory, University of Southern California, Los Angeles, California 90089-0241"
+      }
+     ],
+     "author": {
+      "display_name": "Max Ho",
+      "id": "https://openalex.org/A5011397453",
+      "observed_orcids": [
+       "https://orcid.org/0000-0002-1078-7105"
+      ],
+      "orcid": "https://orcid.org/0000-0002-1078-7105"
+     },
+     "author_position": "middle",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "University of Southern California",
+       "id": "https://openalex.org/I1174212",
+       "lineage": [
+        "https://openalex.org/I1174212"
+       ],
+       "ror": "https://ror.org/03taz7m60",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Nanostructure Materials & Devices Laboratory, University of Southern California, Los Angeles, California 90089-0241"
+     ],
+     "raw_author_name": "Max Ho",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of California, Berkeley, California 94720"
+      }
+     ],
+     "author": {
+      "display_name": "Steven M. Hughes",
+      "id": "https://openalex.org/A5076811379",
+      "observed_orcids": [
+       "https://orcid.org/0000-0002-1704-2739"
+      ],
+      "orcid": "https://orcid.org/0000-0002-1704-2739"
+     },
+     "author_position": "middle",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "University of California, Berkeley",
+       "id": "https://openalex.org/I95457486",
+       "lineage": [
+        "https://openalex.org/I95457486"
+       ],
+       "ror": "https://ror.org/01an7q238",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Department of Chemistry, University of California, Berkeley, California 94720"
+     ],
+     "raw_author_name": "Steven M. Hughes",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of California, Berkeley, California 94720"
+      }
+     ],
+     "author": {
+      "display_name": "A. Paul Alivisatos",
+      "id": "https://openalex.org/A5009848674",
+      "observed_orcids": [
+       "https://orcid.org/0000-0001-6895-9048"
+      ],
+      "orcid": "https://orcid.org/0000-0001-6895-9048"
+     },
+     "author_position": "last",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "University of California, Berkeley",
+       "id": "https://openalex.org/I95457486",
+       "lineage": [
+        "https://openalex.org/I95457486"
+       ],
+       "ror": "https://ror.org/01an7q238",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Department of Chemistry, University of California, Berkeley, California 94720"
+     ],
+     "raw_author_name": "A. Paul Alivisatos",
+     "raw_orcid": null
+    }
+   ],
+   "best_oa_location": null,
+   "biblio": {
+    "first_page": "479",
+    "issue": "3",
+    "last_page": "482",
+    "volume": "5"
+   },
+   "cited_by_count": 26,
+   "doi": "https://doi.org/10.1021/nl047947+",
+   "id": "https://openalex.org/W2047740654",
+   "is_retracted": false,
+   "keywords": [
+    {
+     "display_name": "quantum dots",
+     "id": "https://openalex.org/keywords/quantum-dots",
+     "score": 0.984000027179718
+    },
+    {
+     "display_name": "InAs nanocrystals",
+     "id": "https://openalex.org/keywords/inas-nanocrystals",
+     "score": 0.8199999928474426
+    },
+    {
+     "display_name": "epitaxial overgrowth",
+     "id": "https://openalex.org/keywords/epitaxial-overgrowth",
+     "score": 0.9369999766349792
+    },
+    {
+     "display_name": "quantum structures",
+     "id": "https://openalex.org/keywords/quantum-structures",
+     "score": 0.5410000085830688
+    },
+    {
+     "display_name": "structural properties",
+     "id": "https://openalex.org/keywords/structural-properties",
+     "score": 0.5529999732971191
+    },
+    {
+     "display_name": "optical properties",
+     "id": "https://openalex.org/keywords/optical-properties",
+     "score": 0.9959999918937683
+    },
+    {
+     "display_name": "bioimaging",
+     "id": "https://openalex.org/keywords/bioimaging",
+     "score": 0.593999981880188
+    },
+    {
+     "display_name": "biomedical applications",
+     "id": "https://openalex.org/keywords/biomedical-applications",
+     "score": 0.6269999742507935
+    }
+   ],
+   "open_access": {
+    "any_repository_has_fulltext": false,
+    "is_oa": false,
+    "oa_status": "closed",
+    "oa_url": null
+   },
+   "primary_location": {
+    "doi": "https://doi.org/10.1021/nl047947+",
+    "id": "doi:10.1021/nl047947+",
+    "is_accepted": true,
+    "is_oa": false,
+    "is_published": true,
+    "landing_page_url": "https://doi.org/10.1021/nl047947+",
+    "license": null,
+    "license_id": null,
+    "pdf_url": null,
+    "raw_source_name": "Nano Letters",
+    "raw_type": "journal-article",
+    "source": {
+     "display_name": "Nano Letters",
+     "host_organization": "https://openalex.org/P4310320006",
+     "host_organization_lineage": [
+      "https://openalex.org/P4310320006"
+     ],
+     "host_organization_lineage_names": [
+      "American Chemical Society"
+     ],
+     "host_organization_name": "American Chemical Society",
+     "id": "https://openalex.org/S143846845",
+     "is_core": true,
+     "is_in_doaj": false,
+     "is_oa": false,
+     "issn": [
+      "1530-6984",
+      "1530-6992"
+     ],
+     "issn_l": "1530-6984",
+     "listed_in": [
+      "cwts-core",
+      "jufo-3",
+      "ki-jl-2",
+      "medline",
+      "norway-2"
+     ],
+     "type": "journal"
+    },
+    "version": "publishedVersion"
+   },
+   "primary_topic": {
+    "display_name": "Quantum Dots Synthesis And Properties",
+    "domain": {
+     "display_name": "Physical Sciences",
+     "id": "https://openalex.org/domains/3"
+    },
+    "field": {
+     "display_name": "Materials Science",
+     "id": "https://openalex.org/fields/25"
+    },
+    "id": "https://openalex.org/T10321",
+    "score": 0.760699987411499,
+    "subfield": {
+     "display_name": "Materials Chemistry",
+     "id": "https://openalex.org/subfields/2505"
+    }
+   },
+   "publication_date": "2005-01-25",
+   "publication_year": 2005,
+   "title": "Integrated Semiconductor Nanocrystal and Epitaxical Nanostructure Systems: Structural and Optical Behavior",
+   "type": "article"
+  },
   "row_id": "p0337"
  },
  "10.1021/nl048089k": {
@@ -200677,25 +204288,1478 @@
   },
   "row_id": "p0186"
  },
- "10.1023/a%3a1015252904412": {
+ "10.1023/a:1015252904412": {
   "crossref": {
-   "error": 404
+   "ISSN": [
+    "1022-5528",
+    "1572-9028"
+   ],
+   "author": [
+    {
+     "affiliation": [],
+     "family": "Puntes",
+     "given": "Victor F.",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "first"
+    },
+    {
+     "affiliation": [],
+     "family": "Krishnan",
+     "given": "Kannan",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Alivisatos",
+     "given": "A. Paul",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    }
+   ],
+   "container-title": [
+    "Topics in Catalysis"
+   ],
+   "is-referenced-by-count": 89,
+   "issue": "2",
+   "issued": {
+    "date-parts": [
+     [
+      2002,
+      4
+     ]
+    ]
+   },
+   "license": [
+    {
+     "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining",
+     "content-version": "tdm",
+     "delay-in-days": 0,
+     "start": {
+      "date-parts": [
+       [
+        2002,
+        4,
+        1
+       ]
+      ],
+      "date-time": "2002-04-01T00:00:00Z",
+      "timestamp": 1017619200000
+     }
+    },
+    {
+     "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining",
+     "content-version": "vor",
+     "delay-in-days": 0,
+     "start": {
+      "date-parts": [
+       [
+        2002,
+        4,
+        1
+       ]
+      ],
+      "date-time": "2002-04-01T00:00:00Z",
+      "timestamp": 1017619200000
+     }
+    }
+   ],
+   "page": "145-148",
+   "published-print": {
+    "date-parts": [
+     [
+      2002,
+      4
+     ]
+    ]
+   },
+   "publisher": "Springer Science and Business Media LLC",
+   "relation": {},
+   "short-container-title": [
+    "Topics in Catalysis"
+   ],
+   "title": [
+    "Synthesis of Colloidal Cobalt Nanoparticles with Controlled Size and Shapes"
+   ],
+   "type": "journal-article",
+   "volume": "19"
   },
-  "openalex": null,
+  "openalex": {
+   "authorships": [
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of California at Berkeley, CA, 94720, USA"
+      },
+      {
+       "institution_ids": [
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Department of Chemistry University of California at Berkeley, USA"
+      }
+     ],
+     "author": {
+      "display_name": "Víctor Puntes",
+      "id": "https://openalex.org/A5057933145",
+      "observed_orcids": [
+       "https://orcid.org/0000-0001-8996-9499"
+      ],
+      "orcid": "https://orcid.org/0000-0001-8996-9499"
+     },
+     "author_position": "first",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "University of California, Berkeley",
+       "id": "https://openalex.org/I95457486",
+       "lineage": [
+        "https://openalex.org/I95457486"
+       ],
+       "ror": "https://ror.org/01an7q238",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": true,
+     "raw_affiliation_strings": [
+      "Department of Chemistry, University of California at Berkeley, CA, 94720, USA",
+      "Department of Chemistry University of California at Berkeley, USA"
+     ],
+     "raw_author_name": "Victor F. Puntes",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I201448701"
+       ],
+       "raw_affiliation_string": "Material Science and Engineering, University of Washington, WA, 98195"
+      },
+      {
+       "institution_ids": [
+        "https://openalex.org/I201448701"
+       ],
+       "raw_affiliation_string": "Material Science and Engineering, University of Washington"
+      }
+     ],
+     "author": {
+      "display_name": "Kannan M. Krishnan",
+      "id": "https://openalex.org/A5066598683",
+      "observed_orcids": [
+       "https://orcid.org/0000-0001-5010-7664"
+      ],
+      "orcid": "https://orcid.org/0000-0001-5010-7664"
+     },
+     "author_position": "middle",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "University of Washington",
+       "id": "https://openalex.org/I201448701",
+       "lineage": [
+        "https://openalex.org/I201448701"
+       ],
+       "ror": "https://ror.org/00cvxb145",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Material Science and Engineering, University of Washington, WA, 98195",
+      "Material Science and Engineering, University of Washington"
+     ],
+     "raw_author_name": "Kannan Krishnan",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of California at Berkeley, CA, 94720, USA"
+      },
+      {
+       "institution_ids": [
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Department of Chemistry University of California at Berkeley, USA"
+      }
+     ],
+     "author": {
+      "display_name": "A. Paul Alivisatos",
+      "id": "https://openalex.org/A5009848674",
+      "observed_orcids": [
+       "https://orcid.org/0000-0001-6895-9048"
+      ],
+      "orcid": "https://orcid.org/0000-0001-6895-9048"
+     },
+     "author_position": "last",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "University of California, Berkeley",
+       "id": "https://openalex.org/I95457486",
+       "lineage": [
+        "https://openalex.org/I95457486"
+       ],
+       "ror": "https://ror.org/01an7q238",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Department of Chemistry, University of California at Berkeley, CA, 94720, USA",
+      "Department of Chemistry University of California at Berkeley, USA"
+     ],
+     "raw_author_name": "A. Paul Alivisatos",
+     "raw_orcid": null
+    }
+   ],
+   "best_oa_location": null,
+   "biblio": {
+    "first_page": "145",
+    "issue": "2",
+    "last_page": "148",
+    "volume": "19"
+   },
+   "cited_by_count": 93,
+   "doi": "https://doi.org/10.1023/a:1015252904412",
+   "id": "https://openalex.org/W1535991983",
+   "is_retracted": false,
+   "keywords": [
+    {
+     "display_name": "cobalt nanoparticles",
+     "id": "https://openalex.org/keywords/cobalt-nanoparticles",
+     "score": 0.9919999837875366
+    },
+    {
+     "display_name": "colloidal nanocrystals",
+     "id": "https://openalex.org/keywords/colloidal-nanocrystals",
+     "score": 0.7070000171661377
+    },
+    {
+     "display_name": "monodisperse particles",
+     "id": "https://openalex.org/keywords/monodisperse-particles",
+     "score": 0.6079999804496765
+    },
+    {
+     "display_name": "particle size control",
+     "id": "https://openalex.org/keywords/particle-size-control",
+     "score": 0.6209999918937683
+    },
+    {
+     "display_name": "particle shape control",
+     "id": "https://openalex.org/keywords/particle-shape-control",
+     "score": 0.8199999928474426
+    },
+    {
+     "display_name": "surfactant-assisted synthesis",
+     "id": "https://openalex.org/keywords/surfactant-assisted-synthesis",
+     "score": 0.7319999933242798
+    },
+    {
+     "display_name": "oleic acid",
+     "id": "https://openalex.org/keywords/oleic-acid",
+     "score": 0.9860000014305115
+    },
+    {
+     "display_name": "phosphonic acid",
+     "id": "https://openalex.org/keywords/phosphonic-acid",
+     "score": 0.9309999942779541
+    },
+    {
+     "display_name": "self-assembly",
+     "id": "https://openalex.org/keywords/self-assembly",
+     "score": 0.6639999747276306
+    },
+    {
+     "display_name": "2D superlattices",
+     "id": "https://openalex.org/keywords/2d-superlattices",
+     "score": 0.843999981880188
+    }
+   ],
+   "open_access": {
+    "any_repository_has_fulltext": false,
+    "is_oa": false,
+    "oa_status": "closed",
+    "oa_url": null
+   },
+   "primary_location": {
+    "doi": "https://doi.org/10.1023/a:1015252904412",
+    "id": "doi:10.1023/a:1015252904412",
+    "is_accepted": true,
+    "is_oa": false,
+    "is_published": true,
+    "landing_page_url": "https://doi.org/10.1023/a:1015252904412",
+    "license": null,
+    "license_id": null,
+    "pdf_url": null,
+    "raw_source_name": "Topics in Catalysis",
+    "raw_type": "journal-article",
+    "source": {
+     "display_name": "Topics in Catalysis",
+     "host_organization": "https://openalex.org/P4310319900",
+     "host_organization_lineage": [
+      "https://openalex.org/P4310319900",
+      "https://openalex.org/P4310319965"
+     ],
+     "host_organization_lineage_names": [
+      "Springer Science+Business Media",
+      "Springer Nature"
+     ],
+     "host_organization_name": "Springer Science+Business Media",
+     "id": "https://openalex.org/S176313377",
+     "is_core": true,
+     "is_in_doaj": false,
+     "is_oa": false,
+     "issn": [
+      "1022-5528",
+      "1572-9028"
+     ],
+     "issn_l": "1022-5528",
+     "listed_in": [
+      "cwts-core",
+      "jufo-1",
+      "norway-1"
+     ],
+     "type": "journal"
+    },
+    "version": "publishedVersion"
+   },
+   "primary_topic": {
+    "display_name": "Chemical and Physical Properties of Materials",
+    "domain": {
+     "display_name": "Physical Sciences",
+     "id": "https://openalex.org/domains/3"
+    },
+    "field": {
+     "display_name": "Materials Science",
+     "id": "https://openalex.org/fields/25"
+    },
+    "id": "https://openalex.org/T13104",
+    "score": 0.8467000126838684,
+    "subfield": {
+     "display_name": "Materials Chemistry",
+     "id": "https://openalex.org/subfields/2505"
+    }
+   },
+   "publication_date": "2002-04-01",
+   "publication_year": 2002,
+   "title": "Synthesis of Colloidal Cobalt Nanoparticles with Controlled Size and Shapes",
+   "type": "article"
+  },
   "row_id": "p0381"
  },
- "10.1023/a%3a1016505912884": {
+ "10.1023/a:1016505912884": {
   "crossref": {
-   "error": 404
+   "ISSN": [
+    "1011-372X",
+    "1572-879X"
+   ],
+   "author": [
+    {
+     "affiliation": [],
+     "family": "Kónya",
+     "given": "Zoltán",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "first"
+    },
+    {
+     "affiliation": [],
+     "family": "Puntes",
+     "given": "Victor F.",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Kiricsi",
+     "given": "Imre",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Zhu",
+     "given": "Ji",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Alivisatos",
+     "given": "Paul",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Somorjai",
+     "given": "Gabor A.",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    }
+   ],
+   "container-title": [
+    "Catalysis Letters"
+   ],
+   "is-referenced-by-count": 74,
+   "issue": "3-4",
+   "issued": {
+    "date-parts": [
+     [
+      2002,
+      8
+     ]
+    ]
+   },
+   "license": [
+    {
+     "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining",
+     "content-version": "tdm",
+     "delay-in-days": 0,
+     "start": {
+      "date-parts": [
+       [
+        2002,
+        8,
+        1
+       ]
+      ],
+      "date-time": "2002-08-01T00:00:00Z",
+      "timestamp": 1028160000000
+     }
+    },
+    {
+     "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining",
+     "content-version": "vor",
+     "delay-in-days": 0,
+     "start": {
+      "date-parts": [
+       [
+        2002,
+        8,
+        1
+       ]
+      ],
+      "date-time": "2002-08-01T00:00:00Z",
+      "timestamp": 1028160000000
+     }
+    }
+   ],
+   "page": "137-140",
+   "published-print": {
+    "date-parts": [
+     [
+      2002,
+      8
+     ]
+    ]
+   },
+   "publisher": "Springer Science and Business Media LLC",
+   "relation": {},
+   "short-container-title": [
+    "Catalysis Letters"
+   ],
+   "title": [
+    "Novel Two-Step Synthesis of Controlled Size and Shape Platinum Nanoparticles Encapsulated in Mesoporous Silica"
+   ],
+   "type": "journal-article",
+   "volume": "81"
   },
-  "openalex": null,
+  "openalex": {
+   "authorships": [
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of Berkeley California, Lawrence Berkeley National Laboratory, Berkeley, California, 94720, USA"
+      },
+      {
+       "institution_ids": [
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of Berkeley California, Lawrence Berkeley National Laboratory,Berkeley,USA"
+      }
+     ],
+     "author": {
+      "display_name": "Zoltán Kónya",
+      "id": "https://openalex.org/A5086462876",
+      "observed_orcids": [
+       "https://orcid.org/0000-0002-9406-8596"
+      ],
+      "orcid": "https://orcid.org/0000-0002-9406-8596"
+     },
+     "author_position": "first",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "Lawrence Berkeley National Laboratory",
+       "id": "https://openalex.org/I148283060",
+       "lineage": [
+        "https://openalex.org/I1330989302",
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I39565521"
+       ],
+       "ror": "https://ror.org/02jbv0t02",
+       "type": "facility"
+      },
+      {
+       "country_code": "US",
+       "display_name": "University of California, Berkeley",
+       "id": "https://openalex.org/I95457486",
+       "lineage": [
+        "https://openalex.org/I95457486"
+       ],
+       "ror": "https://ror.org/01an7q238",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Department of Chemistry, University of Berkeley California, Lawrence Berkeley National Laboratory, Berkeley, California, 94720, USA",
+      "Department of Chemistry, University of Berkeley California, Lawrence Berkeley National Laboratory,Berkeley,USA"
+     ],
+     "raw_author_name": "Zoltán Kónya",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of Berkeley California, Lawrence Berkeley National Laboratory, Berkeley, California, 94720, USA"
+      },
+      {
+       "institution_ids": [
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of Berkeley California, Lawrence Berkeley National Laboratory,Berkeley,USA"
+      }
+     ],
+     "author": {
+      "display_name": "Víctor Puntes",
+      "id": "https://openalex.org/A5057933145",
+      "observed_orcids": [
+       "https://orcid.org/0000-0001-8996-9499"
+      ],
+      "orcid": "https://orcid.org/0000-0001-8996-9499"
+     },
+     "author_position": "middle",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "Lawrence Berkeley National Laboratory",
+       "id": "https://openalex.org/I148283060",
+       "lineage": [
+        "https://openalex.org/I1330989302",
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I39565521"
+       ],
+       "ror": "https://ror.org/02jbv0t02",
+       "type": "facility"
+      },
+      {
+       "country_code": "US",
+       "display_name": "University of California, Berkeley",
+       "id": "https://openalex.org/I95457486",
+       "lineage": [
+        "https://openalex.org/I95457486"
+       ],
+       "ror": "https://ror.org/01an7q238",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Department of Chemistry, University of Berkeley California, Lawrence Berkeley National Laboratory, Berkeley, California, 94720, USA",
+      "Department of Chemistry, University of Berkeley California, Lawrence Berkeley National Laboratory,Berkeley,USA"
+     ],
+     "raw_author_name": "Victor F. Puntes",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I227486990"
+       ],
+       "raw_affiliation_string": "Department of Applied and Environmental Chemistry, University of Szeged, Szeged, 6720, Hungary"
+      },
+      {
+       "institution_ids": [
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of Berkeley California, Lawrence Berkeley National Laboratory, Berkeley, California, 94720, USA"
+      },
+      {
+       "institution_ids": [
+        "https://openalex.org/I227486990"
+       ],
+       "raw_affiliation_string": "Department of Applied and Environmental Chemistry, University of Szeged, Szeged, Hungary"
+      },
+      {
+       "institution_ids": [
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of Berkeley California, Lawrence Berkeley National Laboratory, Berkeley, USA"
+      }
+     ],
+     "author": {
+      "display_name": "Imre Kiricsi",
+      "id": "https://openalex.org/A5039524511",
+      "observed_orcids": [],
+      "orcid": null
+     },
+     "author_position": "middle",
+     "countries": [
+      "HU",
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "Lawrence Berkeley National Laboratory",
+       "id": "https://openalex.org/I148283060",
+       "lineage": [
+        "https://openalex.org/I1330989302",
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I39565521"
+       ],
+       "ror": "https://ror.org/02jbv0t02",
+       "type": "facility"
+      },
+      {
+       "country_code": "HU",
+       "display_name": "University of Szeged",
+       "id": "https://openalex.org/I227486990",
+       "lineage": [
+        "https://openalex.org/I227486990"
+       ],
+       "ror": "https://ror.org/01pnej532",
+       "type": "education"
+      },
+      {
+       "country_code": "US",
+       "display_name": "University of California, Berkeley",
+       "id": "https://openalex.org/I95457486",
+       "lineage": [
+        "https://openalex.org/I95457486"
+       ],
+       "ror": "https://ror.org/01an7q238",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Department of Applied and Environmental Chemistry, University of Szeged, Szeged, 6720, Hungary",
+      "Department of Chemistry, University of Berkeley California, Lawrence Berkeley National Laboratory, Berkeley, California, 94720, USA",
+      "Department of Applied and Environmental Chemistry, University of Szeged, Szeged, Hungary",
+      "Department of Chemistry, University of Berkeley California, Lawrence Berkeley National Laboratory, Berkeley, USA"
+     ],
+     "raw_author_name": "Imre Kiricsi",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of Berkeley California, Lawrence Berkeley National Laboratory, Berkeley, California, 94720, USA"
+      },
+      {
+       "institution_ids": [
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of Berkeley California, Lawrence Berkeley National Laboratory,Berkeley,USA"
+      }
+     ],
+     "author": {
+      "display_name": "Ji Hua Zhu",
+      "id": "https://openalex.org/A5103763039",
+      "observed_orcids": [
+       "https://orcid.org/0009-0004-1893-7050"
+      ],
+      "orcid": "https://orcid.org/0009-0004-1893-7050"
+     },
+     "author_position": "middle",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "Lawrence Berkeley National Laboratory",
+       "id": "https://openalex.org/I148283060",
+       "lineage": [
+        "https://openalex.org/I1330989302",
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I39565521"
+       ],
+       "ror": "https://ror.org/02jbv0t02",
+       "type": "facility"
+      },
+      {
+       "country_code": "US",
+       "display_name": "University of California, Berkeley",
+       "id": "https://openalex.org/I95457486",
+       "lineage": [
+        "https://openalex.org/I95457486"
+       ],
+       "ror": "https://ror.org/01an7q238",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Department of Chemistry, University of Berkeley California, Lawrence Berkeley National Laboratory, Berkeley, California, 94720, USA",
+      "Department of Chemistry, University of Berkeley California, Lawrence Berkeley National Laboratory,Berkeley,USA"
+     ],
+     "raw_author_name": "Ji Zhu",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of Berkeley California, Lawrence Berkeley National Laboratory, Berkeley, California, 94720, USA"
+      },
+      {
+       "institution_ids": [
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of Berkeley California, Lawrence Berkeley National Laboratory,Berkeley,USA"
+      }
+     ],
+     "author": {
+      "display_name": "A. Paul Alivisatos",
+      "id": "https://openalex.org/A5009848674",
+      "observed_orcids": [
+       "https://orcid.org/0000-0001-6895-9048"
+      ],
+      "orcid": "https://orcid.org/0000-0001-6895-9048"
+     },
+     "author_position": "middle",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "Lawrence Berkeley National Laboratory",
+       "id": "https://openalex.org/I148283060",
+       "lineage": [
+        "https://openalex.org/I1330989302",
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I39565521"
+       ],
+       "ror": "https://ror.org/02jbv0t02",
+       "type": "facility"
+      },
+      {
+       "country_code": "US",
+       "display_name": "University of California, Berkeley",
+       "id": "https://openalex.org/I95457486",
+       "lineage": [
+        "https://openalex.org/I95457486"
+       ],
+       "ror": "https://ror.org/01an7q238",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Department of Chemistry, University of Berkeley California, Lawrence Berkeley National Laboratory, Berkeley, California, 94720, USA",
+      "Department of Chemistry, University of Berkeley California, Lawrence Berkeley National Laboratory,Berkeley,USA"
+     ],
+     "raw_author_name": "Paul Alivisatos",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of Berkeley California, Lawrence Berkeley National Laboratory, Berkeley, California, 94720, USA"
+      },
+      {
+       "institution_ids": [
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of Berkeley California, Lawrence Berkeley National Laboratory,Berkeley,USA"
+      }
+     ],
+     "author": {
+      "display_name": "Gábor A. Somorjai",
+      "id": "https://openalex.org/A5058666235",
+      "observed_orcids": [
+       "https://orcid.org/0000-0002-8478-2761"
+      ],
+      "orcid": "https://orcid.org/0000-0002-8478-2761"
+     },
+     "author_position": "last",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "Lawrence Berkeley National Laboratory",
+       "id": "https://openalex.org/I148283060",
+       "lineage": [
+        "https://openalex.org/I1330989302",
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I39565521"
+       ],
+       "ror": "https://ror.org/02jbv0t02",
+       "type": "facility"
+      },
+      {
+       "country_code": "US",
+       "display_name": "University of California, Berkeley",
+       "id": "https://openalex.org/I95457486",
+       "lineage": [
+        "https://openalex.org/I95457486"
+       ],
+       "ror": "https://ror.org/01an7q238",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": true,
+     "raw_affiliation_strings": [
+      "Department of Chemistry, University of Berkeley California, Lawrence Berkeley National Laboratory, Berkeley, California, 94720, USA",
+      "Department of Chemistry, University of Berkeley California, Lawrence Berkeley National Laboratory,Berkeley,USA"
+     ],
+     "raw_author_name": "Gabor A. Somorjai",
+     "raw_orcid": null
+    }
+   ],
+   "best_oa_location": null,
+   "biblio": {
+    "first_page": "137",
+    "issue": "3-4",
+    "last_page": "140",
+    "volume": "81"
+   },
+   "cited_by_count": 78,
+   "doi": "https://doi.org/10.1023/a:1016505912884",
+   "id": "https://openalex.org/W1480969592",
+   "is_retracted": false,
+   "keywords": [
+    {
+     "display_name": "platinum nanoparticles",
+     "id": "https://openalex.org/keywords/platinum-nanoparticles",
+     "score": 1.0
+    },
+    {
+     "display_name": "mesoporous silica",
+     "id": "https://openalex.org/keywords/mesoporous-silica",
+     "score": 0.9850000143051147
+    },
+    {
+     "display_name": "SBA-15",
+     "id": "https://openalex.org/keywords/sba-15",
+     "score": 0.9980000257492065
+    },
+    {
+     "display_name": "two-step synthesis",
+     "id": "https://openalex.org/keywords/two-step-synthesis",
+     "score": 0.9120000004768372
+    },
+    {
+     "display_name": "nanoparticle encapsulation",
+     "id": "https://openalex.org/keywords/nanoparticle-encapsulation",
+     "score": 0.6970000267028809
+    },
+    {
+     "display_name": "hydrogen reduction",
+     "id": "https://openalex.org/keywords/hydrogen-reduction",
+     "score": 0.6309999823570251
+    },
+    {
+     "display_name": "tetraethoxysilane",
+     "id": "https://openalex.org/keywords/tetraethyl-orthosilicate",
+     "score": 0.7990000247955322
+    },
+    {
+     "display_name": "hydrolysis",
+     "id": "https://openalex.org/keywords/hydrolysis",
+     "score": 0.36800000071525574
+    },
+    {
+     "display_name": "high surface area catalysts",
+     "id": "https://openalex.org/keywords/high-surface-area-catalysts",
+     "score": 0.699999988079071
+    },
+    {
+     "display_name": "selective catalysis",
+     "id": "https://openalex.org/keywords/selective-catalysis",
+     "score": 0.5740000009536743
+    }
+   ],
+   "open_access": {
+    "any_repository_has_fulltext": false,
+    "is_oa": false,
+    "oa_status": "closed",
+    "oa_url": null
+   },
+   "primary_location": {
+    "doi": "https://doi.org/10.1023/a:1016505912884",
+    "id": "doi:10.1023/a:1016505912884",
+    "is_accepted": true,
+    "is_oa": false,
+    "is_published": true,
+    "landing_page_url": "https://doi.org/10.1023/a:1016505912884",
+    "license": null,
+    "license_id": null,
+    "pdf_url": null,
+    "raw_source_name": "Catalysis Letters",
+    "raw_type": "journal-article",
+    "source": {
+     "display_name": "Catalysis Letters",
+     "host_organization": "https://openalex.org/P4310319900",
+     "host_organization_lineage": [
+      "https://openalex.org/P4310319900",
+      "https://openalex.org/P4310319965"
+     ],
+     "host_organization_lineage_names": [
+      "Springer Science+Business Media",
+      "Springer Nature"
+     ],
+     "host_organization_name": "Springer Science+Business Media",
+     "id": "https://openalex.org/S7359802",
+     "is_core": true,
+     "is_in_doaj": false,
+     "is_oa": false,
+     "issn": [
+      "1011-372X",
+      "1572-879X"
+     ],
+     "issn_l": "1011-372X",
+     "listed_in": [
+      "cwts-core",
+      "jufo-1",
+      "norway-1"
+     ],
+     "type": "journal"
+    },
+    "version": "publishedVersion"
+   },
+   "primary_topic": {
+    "display_name": "Mesoporous Materials and Catalysis",
+    "domain": {
+     "display_name": "Physical Sciences",
+     "id": "https://openalex.org/domains/3"
+    },
+    "field": {
+     "display_name": "Materials Science",
+     "id": "https://openalex.org/fields/25"
+    },
+    "id": "https://openalex.org/T10735",
+    "score": 0.9990000128746033,
+    "subfield": {
+     "display_name": "Materials Chemistry",
+     "id": "https://openalex.org/subfields/2505"
+    }
+   },
+   "publication_date": "2002-08-01",
+   "publication_year": 2002,
+   "title": "Novel Two-Step Synthesis of Controlled Size and Shape Platinum Nanoparticles Encapsulated in Mesoporous Silica",
+   "type": "article"
+  },
   "row_id": "p0388"
  },
- "10.1023/a%3a1021175612112": {
+ "10.1023/a:1021175612112": {
   "crossref": {
-   "error": 404
+   "ISSN": [
+    "1040-7278",
+    "1572-8862"
+   ],
+   "author": [
+    {
+     "affiliation": [],
+     "family": "Manna",
+     "given": "Liberato",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "first"
+    },
+    {
+     "affiliation": [],
+     "family": "Scher",
+     "given": "Erik C.",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    },
+    {
+     "affiliation": [],
+     "family": "Alivisatos",
+     "given": "A. Paul",
+     "role": [
+      {
+       "role": "author",
+       "vocabulary": "crossref"
+      }
+     ],
+     "sequence": "additional"
+    }
+   ],
+   "container-title": [
+    "Journal of Cluster Science"
+   ],
+   "is-referenced-by-count": 142,
+   "issue": "4",
+   "issued": {
+    "date-parts": [
+     [
+      2002,
+      12
+     ]
+    ]
+   },
+   "license": [
+    {
+     "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining",
+     "content-version": "tdm",
+     "delay-in-days": 0,
+     "start": {
+      "date-parts": [
+       [
+        2002,
+        12,
+        1
+       ]
+      ],
+      "date-time": "2002-12-01T00:00:00Z",
+      "timestamp": 1038700800000
+     }
+    },
+    {
+     "URL": "https://www.springernature.com/gp/researchers/text-and-data-mining",
+     "content-version": "vor",
+     "delay-in-days": 0,
+     "start": {
+      "date-parts": [
+       [
+        2002,
+        12,
+        1
+       ]
+      ],
+      "date-time": "2002-12-01T00:00:00Z",
+      "timestamp": 1038700800000
+     }
+    }
+   ],
+   "page": "521-532",
+   "published-print": {
+    "date-parts": [
+     [
+      2002,
+      12
+     ]
+    ]
+   },
+   "publisher": "Springer Science and Business Media LLC",
+   "relation": {},
+   "short-container-title": [
+    "Journal of Cluster Science"
+   ],
+   "title": [
+    "Shape Control of Colloidal Semiconductor Nanocrystals"
+   ],
+   "type": "journal-article",
+   "volume": "13"
   },
-  "openalex": null,
+  "openalex": {
+   "authorships": [
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of California, Berkeley. Materials Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, California, 94720"
+      },
+      {
+       "institution_ids": [
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of California, Berkeley. Materials Sciences Division, Lawrence Berkeley National Laboratory, Berkeley"
+      }
+     ],
+     "author": {
+      "display_name": "Liberato Manna",
+      "id": "https://openalex.org/A5025956413",
+      "observed_orcids": [
+       "https://orcid.org/0000-0003-4386-7985"
+      ],
+      "orcid": "https://orcid.org/0000-0003-4386-7985"
+     },
+     "author_position": "first",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "Lawrence Berkeley National Laboratory",
+       "id": "https://openalex.org/I148283060",
+       "lineage": [
+        "https://openalex.org/I1330989302",
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I39565521"
+       ],
+       "ror": "https://ror.org/02jbv0t02",
+       "type": "facility"
+      },
+      {
+       "country_code": "US",
+       "display_name": "University of California, Berkeley",
+       "id": "https://openalex.org/I95457486",
+       "lineage": [
+        "https://openalex.org/I95457486"
+       ],
+       "ror": "https://ror.org/01an7q238",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": true,
+     "raw_affiliation_strings": [
+      "Department of Chemistry, University of California, Berkeley. Materials Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, California, 94720",
+      "Department of Chemistry, University of California, Berkeley. Materials Sciences Division, Lawrence Berkeley National Laboratory, Berkeley"
+     ],
+     "raw_author_name": "Liberato Manna",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of California, Berkeley. Materials Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, California, 94720"
+      },
+      {
+       "institution_ids": [
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of California, Berkeley. Materials Sciences Division, Lawrence Berkeley National Laboratory, Berkeley"
+      }
+     ],
+     "author": {
+      "display_name": "Erik C. Scher",
+      "id": "https://openalex.org/A5016780392",
+      "observed_orcids": [],
+      "orcid": null
+     },
+     "author_position": "middle",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "Lawrence Berkeley National Laboratory",
+       "id": "https://openalex.org/I148283060",
+       "lineage": [
+        "https://openalex.org/I1330989302",
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I39565521"
+       ],
+       "ror": "https://ror.org/02jbv0t02",
+       "type": "facility"
+      },
+      {
+       "country_code": "US",
+       "display_name": "University of California, Berkeley",
+       "id": "https://openalex.org/I95457486",
+       "lineage": [
+        "https://openalex.org/I95457486"
+       ],
+       "ror": "https://ror.org/01an7q238",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Department of Chemistry, University of California, Berkeley. Materials Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, California, 94720",
+      "Department of Chemistry, University of California, Berkeley. Materials Sciences Division, Lawrence Berkeley National Laboratory, Berkeley"
+     ],
+     "raw_author_name": "Erik C. Scher",
+     "raw_orcid": null
+    },
+    {
+     "affiliations": [
+      {
+       "institution_ids": [
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of California, Berkeley. Materials Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, California, 94720"
+      },
+      {
+       "institution_ids": [
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I95457486"
+       ],
+       "raw_affiliation_string": "Department of Chemistry, University of California, Berkeley. Materials Sciences Division, Lawrence Berkeley National Laboratory, Berkeley"
+      }
+     ],
+     "author": {
+      "display_name": "A. Paul Alivisatos",
+      "id": "https://openalex.org/A5009848674",
+      "observed_orcids": [
+       "https://orcid.org/0000-0001-6895-9048"
+      ],
+      "orcid": "https://orcid.org/0000-0001-6895-9048"
+     },
+     "author_position": "last",
+     "countries": [
+      "US"
+     ],
+     "institutions": [
+      {
+       "country_code": "US",
+       "display_name": "Lawrence Berkeley National Laboratory",
+       "id": "https://openalex.org/I148283060",
+       "lineage": [
+        "https://openalex.org/I1330989302",
+        "https://openalex.org/I148283060",
+        "https://openalex.org/I39565521"
+       ],
+       "ror": "https://ror.org/02jbv0t02",
+       "type": "facility"
+      },
+      {
+       "country_code": "US",
+       "display_name": "University of California, Berkeley",
+       "id": "https://openalex.org/I95457486",
+       "lineage": [
+        "https://openalex.org/I95457486"
+       ],
+       "ror": "https://ror.org/01an7q238",
+       "type": "education"
+      }
+     ],
+     "is_corresponding": false,
+     "raw_affiliation_strings": [
+      "Department of Chemistry, University of California, Berkeley. Materials Sciences Division, Lawrence Berkeley National Laboratory, Berkeley, California, 94720",
+      "Department of Chemistry, University of California, Berkeley. Materials Sciences Division, Lawrence Berkeley National Laboratory, Berkeley"
+     ],
+     "raw_author_name": "A. Paul Alivisatos",
+     "raw_orcid": null
+    }
+   ],
+   "best_oa_location": null,
+   "biblio": {
+    "first_page": "521",
+    "issue": "4",
+    "last_page": "532",
+    "volume": "13"
+   },
+   "cited_by_count": 154,
+   "doi": "https://doi.org/10.1023/a:1021175612112",
+   "id": "https://openalex.org/W1560776043",
+   "is_retracted": false,
+   "keywords": [
+    {
+     "display_name": "shape control",
+     "id": "https://openalex.org/keywords/shape-control",
+     "score": 0.9580000042915344
+    },
+    {
+     "display_name": "colloidal nanocrystals",
+     "id": "https://openalex.org/keywords/colloidal-nanocrystals",
+     "score": 0.8140000104904175
+    },
+    {
+     "display_name": "quantum dots",
+     "id": "https://openalex.org/keywords/quantum-dots",
+     "score": 0.996999979019165
+    },
+    {
+     "display_name": "CdSe",
+     "id": "https://openalex.org/keywords/cadmium-selenide",
+     "score": 0.8659999966621399
+    },
+    {
+     "display_name": "inorganic nanocrystals",
+     "id": "https://openalex.org/keywords/inorganic-nanocrystals",
+     "score": 0.7300000190734863
+    },
+    {
+     "display_name": "nanocrystal synthesis",
+     "id": "https://openalex.org/keywords/nanocrystal-synthesis",
+     "score": 0.6209999918937683
+    }
+   ],
+   "open_access": {
+    "any_repository_has_fulltext": false,
+    "is_oa": false,
+    "oa_status": "closed",
+    "oa_url": null
+   },
+   "primary_location": {
+    "doi": "https://doi.org/10.1023/a:1021175612112",
+    "id": "doi:10.1023/a:1021175612112",
+    "is_accepted": true,
+    "is_oa": false,
+    "is_published": true,
+    "landing_page_url": "https://doi.org/10.1023/a:1021175612112",
+    "license": null,
+    "license_id": null,
+    "pdf_url": null,
+    "raw_source_name": "Journal of Cluster Science",
+    "raw_type": "journal-article",
+    "source": {
+     "display_name": "Journal of Cluster Science",
+     "host_organization": "https://openalex.org/P4310319900",
+     "host_organization_lineage": [
+      "https://openalex.org/P4310319900",
+      "https://openalex.org/P4310319965"
+     ],
+     "host_organization_lineage_names": [
+      "Springer Science+Business Media",
+      "Springer Nature"
+     ],
+     "host_organization_name": "Springer Science+Business Media",
+     "id": "https://openalex.org/S107691304",
+     "is_core": true,
+     "is_in_doaj": false,
+     "is_oa": false,
+     "issn": [
+      "1040-7278",
+      "1572-8862"
+     ],
+     "issn_l": "1040-7278",
+     "listed_in": [
+      "cwts-core",
+      "jufo-1",
+      "norway-1"
+     ],
+     "type": "journal"
+    },
+    "version": "publishedVersion"
+   },
+   "primary_topic": {
+    "display_name": "Quantum Dots Synthesis And Properties",
+    "domain": {
+     "display_name": "Physical Sciences",
+     "id": "https://openalex.org/domains/3"
+    },
+    "field": {
+     "display_name": "Materials Science",
+     "id": "https://openalex.org/fields/25"
+    },
+    "id": "https://openalex.org/T10321",
+    "score": 1.0,
+    "subfield": {
+     "display_name": "Materials Chemistry",
+     "id": "https://openalex.org/subfields/2505"
+    }
+   },
+   "publication_date": "2002-12-01",
+   "publication_year": 2002,
+   "title": "Shape Control of Colloidal Semiconductor Nanocrystals",
+   "type": "article"
+  },
   "row_id": "p0386"
  },
  "10.1038/35003535": {
