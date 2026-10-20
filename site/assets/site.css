@@ -26,7 +26,8 @@
 .ag-site-member-grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(min(100%, 340px), 1fr)); gap: 1rem; }
 .ag-site-member-card { display: flex; align-items: flex-start; gap: 1rem; min-width: 0; padding: 1.1rem; border: 1px solid #e4e4e4; border-top: 3px solid #800000; border-radius: 5px; background: #fff; }
 .ag-site-member-photo { width: clamp(96px, 10vw, 128px); height: clamp(96px, 10vw, 128px); flex: 0 0 auto; border: 1px solid #eee; border-radius: 4px; object-fit: cover; }
-.ag-site-member-content { flex: 1; min-width: 0; }
+.ag-site-member-content { flex: 1; min-width: 0; overflow-wrap: anywhere; }
+.ag-site-member-content a { color: #800000; }
 .ag-site-member-name { margin: 0 0 .4rem; color: #800000; font-size: 1.2rem; line-height: 1.25; }
 .ag-site-member-role { margin: 0 0 .5rem; color: #555; font-size: .95rem; }
 .ag-site-member-bio { margin: .25rem 0; color: #555; font-size: .93rem; line-height: 1.55; }

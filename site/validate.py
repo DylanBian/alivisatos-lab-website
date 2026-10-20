@@ -75,7 +75,8 @@ member_cards=member_root.xpath('.//article[contains(@class,"ag-site-member-card"
 assert len(members)==len(member_cards)==20
 assert all(isinstance(item.get('areas'),list) for item in members)
 assert member_root.xpath('.//figure[contains(@class,"ag-site-group-photo")]//img')
-assert set(member_root.xpath('.//a[starts-with(@href,"mailto:")]/@href'))=={'mailto:alivisatos-lab@uchicago.edu'}
+member_mails=set(member_root.xpath('.//a[starts-with(@href,"mailto:")]/@href'))
+assert len(member_mails)>=18 and not any('kforghani' in m for m in member_mails),'members: personal emails kept, no former manager'
 assert not member_root.xpath('.//a[starts-with(@href,"https://alivisatoslab.uchicago.edu/research") and not(contains(@href,"#"))]')
 area_targets={item['id']:item.get('areas',[]) for item in members}
 for item in members:
@@ -87,7 +88,7 @@ assert 'AI for Science, Electron Microscopy' in yi.text_content() and 'research/
 assert 'Nanomaterial Synthesis' in ida.text_content() and 'Optical studies' in ida.text_content()
 assert 'research/#synthesis' in ' '.join(ida.xpath('.//a/@href')) and 'research/#spectroscopy' in ' '.join(ida.xpath('.//a/@href'))
 assert len(member_root.xpath('.//a[contains(@href,"scholar.google.com")]'))==14
-print('members: 20 cards; confirmed area anchors; group photo; public contact and Scholar links')
+print('members: 20 cards; confirmed area anchors; group photo; personal emails and Scholar links')
 
 # Alumni: one card per unique person, including the 12 multi-role alumni.
 alumni=yaml.safe_load((ROOT/'data/alumni.yaml').read_text())
@@ -115,17 +116,17 @@ news=yaml.safe_load((ROOT/'data/news.yaml').read_text())
 news_root=roots['news']
 published=[item for item in news if item.get('publish',True)]
 news_cards=news_root.xpath('.//article')
-assert len(published)==len(news_cards)==9
+assert len(published)==len(news_cards)==10
 assert all(item.get('verified') and item.get('source_url','').startswith('https://') for item in published)
 assert all(card.xpath('.//a[contains(@class,"ag-site-link")]/@href') for card in news_cards)
 withheld=[item for item in news if not item.get('publish')]
-assert len(withheld)==1 and withheld[0]['id']=='news-007' and not withheld[0]['verified']
-assert 'Editors’ Highlights' not in fragments['news']
+assert not withheld
+assert 'Editors’ Highlights' in fragments['news']
 assert 'https://mosaic.uchicago.edu/events/' in fragments['news']
 source_report=(ROOT/'reports/news_sources.md').read_text()
 report_rows=re.findall(r'^\|\s*(News|Home Latest News)\s*\|',source_report,re.M)
 assert len(report_rows)==13
-print('news: 9 verified items published; 1 unverified promotional claim withheld; 13 source rows documented')
+print('news: 10 verified items published; 13 source rows documented')
 
 # Research: only one Divi text block differs from the saved baseline, and JSON remains parseable.
 baseline_path=ROOT/'build/research-content.before-c.raw'
