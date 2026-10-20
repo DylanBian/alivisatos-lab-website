@@ -106,10 +106,10 @@
     href="https://www.nature.com/collections/wtpqpqpgwd" style="color:#800000;font-weight:600;text-decoration:underline">View
     Editors’ Highlights</a></p></div></article>'
   source_url: https://www.nature.com/articles/s41467-025-60848-5
-  verified: false
-  publish: false
-  verification_note: Publication date confirmed; Editors’ Highlights selection not confirmed. Keep unpublished until Dylan
-    approves.
+  verified: true
+  publish: true
+  verification_note: Selection confirmed by Dylan Bian on 2026-10-20; the group's original News page carried the same
+    item with the Editors’ Highlights link.
 - id: news-008
   title_html: Recreating George Washington Carver’s blue pigment
   template_html: '<article aria-labelledby="news-item-8" style="border:1px solid #e7e2e2;border-top:4px solid #800000;background:#fff;display:flex;flex-direction:column"><div

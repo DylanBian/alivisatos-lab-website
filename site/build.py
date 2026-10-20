@@ -151,18 +151,14 @@ def render_member(record):
     article.set('class','ag-site-member-card')
     article.set('data-member-id',record['id'])
     content=article.xpath('./div')[0]
+    content.set('class','ag-site-member-content')
     photo=article.xpath('./img')
     if photo:
         photo[0].set('class','ag-site-member-photo')
         photo[0].set('loading','lazy')
     name=content.xpath('./h3')[0]
     name.set('class','ag-site-member-name')
-    # Remove personal email destinations and any generic Research block; public inquiries go to the lab address.
-    for anchor in article.xpath('.//a[starts-with(@href,"mailto:")]'):
-        node=anchor
-        while node.getparent() is not None and node.getparent() is not content:
-            node=node.getparent()
-        if node.getparent() is content: content.remove(node)
+    # Personal emails stay on member cards (Dylan, 2026-10-20). Remove only the generic Research block.
     for block in content.xpath('.//div'):
         if 'Research Area:' in ' '.join(block.itertext()):
             parent=block.getparent()
@@ -191,13 +187,12 @@ def render_member(record):
             tag.text=label
         pos=content.index(role_block:=next((e for e in content if e.tag=='div' and e.get('class')=='ag-site-member-role'),name))
         content.insert(pos+1,tags)
-    actions=tree.Element('div',attrib={'class':'ag-site-member-actions','aria-label':'Contact and profiles'})
-    contact=etree.SubElement(actions,'a',attrib={'class':'ag-site-member-action','href':'mailto:alivisatos-lab@uchicago.edu','aria-label':'Email Alivisatos Group'}); contact.text='✉ Contact the lab'
     scholar=article.xpath('.//a[contains(@href,"scholar.google.com")]')
     if scholar:
+        actions=tree.Element('div',attrib={'class':'ag-site-member-actions','aria-label':'Profiles'})
         scholar_action=etree.SubElement(actions,'a',attrib={'class':'ag-site-member-action','href':scholar[0].get('href'),'target':'_blank','rel':'noopener noreferrer','aria-label':'Google Scholar profile'})
         scholar_action.text='Scholar ↗'
-    content.insert(2 if len(content)>1 else len(content),actions)
+        content.insert(2 if len(content)>1 else len(content),actions)
     for details in content.xpath('.//details'):
         details.set('class','ag-site-member-details')
         for child in details.xpath('./div'):
