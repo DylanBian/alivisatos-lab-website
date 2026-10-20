@@ -21,6 +21,7 @@
     confidence: high
     evidence: deep-learning denoising
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0014
   doi: 10.1038/s44160-026-01015-6
   tag_source: ai
@@ -39,6 +40,7 @@
     evidence: Kinetic-Controlled Transformations
   applications: []
   note: Title-only; transformation type (likely cation exchange per OpenAlex keywords) not confirmed.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0015
   doi: 10.1557/s43577-025-00958-z
   tag_source: ai
@@ -54,6 +56,7 @@
     evidence: utilizing or advancing LPTEM
   applications: []
   note: Perspective on precision nanoscience; broad scope.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0016
   doi: 10.1021/acsnano.5c07437
   tag_source: ai
@@ -77,6 +80,7 @@
     confidence: medium
     evidence: Dissolution Pathways of Individual Cu3As Nanocrystals
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0017
   doi: 10.1038/s41467-025-60848-5
   tag_source: ai
@@ -100,6 +104,7 @@
     confidence: medium
     evidence: XRD and MD simulations
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0018
   doi: 10.1038/s41467-025-60992-y
   tag_source: ai
@@ -117,6 +122,7 @@
     confidence: high
     evidence: above- and below-gap photoluminescence measurements
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0019
   doi: 10.1021/acs.accounts.4c00708
   tag_source: ai
@@ -141,6 +147,7 @@
     evidence: implementation of a modified Ising model
   applications: []
   note: Account article.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0020
   doi: 10.1039/d4dd00158c
   tag_source: ai
@@ -158,6 +165,7 @@
     confidence: high
     evidence: Data-Driven Analysis of Text-Mined
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0021
   doi: 10.1002/adma.202401954
   tag_source: ai
@@ -184,6 +192,7 @@
   - tag: energy-storage
     confidence: high
     evidence: Multilaminate Energy Storage Films
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0022
   doi: 10.1021/acs.nanolett.3c03913
   tag_source: ai
@@ -204,6 +213,7 @@
     confidence: high
     evidence: isotropic etching transforms into facet-dependent etching
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0023
   doi: 10.1021/acsnano.4c04083
   tag_source: ai
@@ -222,6 +232,7 @@
     confidence: medium
     evidence: promise for quantum sensing and quantum communication applications
   note: Main method is spin coherence (EPR), which has no approach tag; EELS only supporting.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0024
   doi: 10.1021/acs.jpcc.4c01434
   tag_source: ai
@@ -242,6 +253,7 @@
     confidence: medium
     evidence: self-assembled quantum dot monolayer thin films
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0025
   doi: 10.1073/pnas.2307633121
   tag_source: ai
@@ -265,6 +277,7 @@
     confidence: medium
     evidence: strong bonds between these atoms and surfactant molecules
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0026
   doi: 10.1016/j.matt.2023.10.023
   tag_source: ai
@@ -283,6 +296,7 @@
     evidence: in Situ Transmission Electron Microscopy Data
   applications: []
   note: Title-only; lctem assumed from AI-on-in-situ-TEM scope; material (PbS per keywords) not tagged.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0027
   doi: 10.1088/1361-6528/acf938
   tag_source: ai
@@ -298,6 +312,7 @@
     evidence: high-throughput acquisition of atomic-resolution structural data
   applications: []
   note: Automated ex situ STEM instrumentation; none of the four areas fits.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0028
   doi: 10.1021/acsnano.4c09753
   tag_source: ai
@@ -318,6 +333,7 @@
     confidence: high
     evidence: colloidal AuNR absorption spectra
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0029
   doi: 10.1021/acsnano.4c05761
   tag_source: ai
@@ -342,6 +358,7 @@
     evidence: combined with theoretical calculations
   applications: []
   note: Calorimetric titrations also used (thermodynamics) but left out to respect the 3-approach cap.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0030
   doi: 10.1126/sciadv.adh2410
   tag_source: ai
@@ -365,6 +382,7 @@
     confidence: high
     evidence: kinetic Monte Carlo simulation of exciton transport
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0031
   doi: 10.1021/acs.jpcc.3c00506
   tag_source: ai
@@ -389,6 +407,7 @@
     evidence: Role of Chloride Ligands on Defect Removal
   applications: []
   note: In situ HRTEM not stated to be in liquid, so lctem not assigned.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0032
   doi: 10.1021/acs.jpcc.3c00187
   tag_source: ai
@@ -412,6 +431,7 @@
     confidence: medium
     evidence: a modified Ising model was used
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0033
   doi: 10.1021/acs.jpcc.3c02359
   tag_source: ai
@@ -427,6 +447,7 @@
     evidence: radiolytic products during in situ LPEM
   applications: []
   note: LPEM radiolysis methods paper (in an SEM); no nanocrystals studied.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0034
   doi: 10.1039/d3dd00019b
   tag_source: ai
@@ -444,6 +465,7 @@
     confidence: high
     evidence: from Scientific Text with LLMs
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0035
   doi: 10.1038/s41566-023-01281-2
   tag_source: ai
@@ -459,6 +481,7 @@
     confidence: medium
     evidence: Design for Displays with High Ambient Contrast and Efficiency
   note: Title-only optical device paper; no area fits; QD material (per keywords) not tagged.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0036
   doi: 10.1021/jacs.2c07778
   tag_source: ai
@@ -474,6 +497,7 @@
     evidence: electron energy loss spectroscopy (EELS) was used
   applications: []
   note: Graphene is the cell, not the subject; gold etching is only a validation experiment.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0037
   doi: 10.1021/jacs.3c05984
   tag_source: ai
@@ -497,6 +521,7 @@
     confidence: medium
     evidence: joint spectral-kinetic model
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0038
   doi: 10.1126/sciadv.abq1700
   tag_source: ai
@@ -523,6 +548,7 @@
     confidence: medium
     evidence: single-particle etching trajectories
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0039
   doi: 10.1021/acs.jpcc.2c04223
   tag_source: ai
@@ -546,6 +572,7 @@
     confidence: high
     evidence: Quantum chemical calculations were performed
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0040
   doi: 10.1002/adma.202203168
   tag_source: ai
@@ -566,6 +593,7 @@
     confidence: high
     evidence: Complex Self-Assembly Behaviors
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0041
   doi: 10.1038/s41524-022-00822-7
   tag_source: ai
@@ -578,6 +606,7 @@
     evidence: classification using neural networks
   applications: []
   note: Deep-learning SEM classification of Te particles; no area, material (Te) or EM tag (SEM) fits.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0042
   doi: 10.3389/fphot.2022.932913
   tag_source: ai
@@ -599,6 +628,7 @@
     confidence: high
     evidence: High Efficiency, Low Cost Multijunction Photovoltaics
   note: Photonic solar-concentrator device paper; none of the four areas fits.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0043
   doi: 10.1557/s43577-022-00287-5
   tag_source: ai
@@ -614,6 +644,7 @@
     evidence: in situ liquid-phase transmission electron microscopy
   applications: []
   note: Title-only review.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0044
   doi: 10.1038/s42004-022-00680-w
   tag_source: ai
@@ -631,6 +662,7 @@
     confidence: high
     evidence: exchange of low binding citrate ligands on gold
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0045
   doi: 10.1021/acsnano.2c02014
   tag_source: ai
@@ -648,6 +680,7 @@
     confidence: high
     evidence: Orientational Glass in a Superlattice
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0046
   doi: 10.1021/acsnano.2c01558
   tag_source: ai
@@ -672,6 +705,7 @@
     evidence: a single chemically designed organic/inorganic interface
   applications: []
   note: Dielectric-property study of nanocomposites; area fit is loose (material properties).
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0047
   doi: 10.1038/s44160-022-00025-4
   tag_source: ai
@@ -690,6 +724,7 @@
     evidence: Ligand–ligand interactions influence the thermodynamic and kinetic properties
   applications: []
   note: Review.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0048
   doi: 10.1021/acs.nanolett.0c04198
   tag_source: ai
@@ -713,6 +748,7 @@
     confidence: medium
     evidence: self-assembly behavior following lift-off is tuned
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0049
   doi: 10.1021/acsphotonics.1c00235
   tag_source: ai
@@ -739,6 +775,7 @@
   - tag: bio-imaging
     confidence: medium
     evidence: single molecules within the context of cellular ultrastructure
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0050
   doi: 10.1021/acs.jchemed.1c01065
   tag_source: ai
@@ -748,6 +785,7 @@
   approaches: []
   applications: []
   note: Science-education paper (undergraduate research program); no tags apply.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0051
   doi: 10.1021/acs.nanolett.1c04058
   tag_source: ai
@@ -771,6 +809,7 @@
     confidence: medium
     evidence: combined experimental and simulation techniques
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0052
   doi: 10.1002/ijch.202100058
   tag_source: ai
@@ -786,6 +825,7 @@
     evidence: relationship between chiral ligands and inorganic nanocrystals
   applications: []
   note: Review.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0053
   doi: 10.1016/j.solmat.2020.110945
   tag_source: ai
@@ -801,6 +841,7 @@
     confidence: medium
     evidence: Outdoor performance of a tandem InGaP/Si photovoltaic
   note: Title-only solar-concentrator device paper; no area fits.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0054
   doi: 10.1021/jacs.1c03906
   tag_source: ai
@@ -818,6 +859,7 @@
     confidence: medium
     evidence: Analysis of nanocrystal etching trajectories
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0055
   doi: 10.1021/jacs.1c05099
   tag_source: ai
@@ -841,6 +883,7 @@
     confidence: medium
     evidence: Complete active space self-consistent field (CASSCF) calculations
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0056
   doi: 10.1021/acs.jpcc.1c02101
   tag_source: ai
@@ -859,6 +902,7 @@
     evidence: extreme ultraviolet transient absorption spectroscopy is used
   applications: []
   note: PV mentioned only as a promise, so no application; XUV transient absorption tagged as ultrafast, not X-ray.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0057
   doi: 10.1126/science.abf9645
   tag_source: ai
@@ -871,6 +915,7 @@
   approaches: []
   applications: []
   note: Tellurium has no matching material tag.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0058
   doi: 10.1038/s41467-021-22947-x
   tag_source: ai
@@ -894,6 +939,7 @@
     confidence: high
     evidence: well-ordered aliphatic ligands bound to and capping the nanocrystals
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0059
   doi: 10.1038/s41467-021-22116-0
   tag_source: ai
@@ -915,6 +961,7 @@
     evidence: corroborated by atomistic simulations
   applications: []
   note: Main method is ultrafast electron diffraction, which no approach tag covers.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0060
   doi: 10.1073/pnas.2017616118
   tag_source: ai
@@ -938,6 +985,7 @@
     confidence: medium
     evidence: single nanoparticle and macromolecule tracking
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0061
   doi: 10.1021/jacsau.0c00030
   tag_source: ai
@@ -956,6 +1004,7 @@
     evidence: automated analysis of TEM images
   applications: []
   note: ML image-analysis tool for ex situ TEM; no area fits cleanly (synthesis possible).
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0062
   doi: 10.1021/acsnano.0c08890
   tag_source: ai
@@ -977,6 +1026,7 @@
     confidence: high
     evidence: demanded for use as in situ stress sensors
   note: ZnS:Mn microparticles fit no material tag (not quantum dots).
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0063
   doi: 10.1021/acs.accounts.0c00719
   tag_source: ai
@@ -998,6 +1048,7 @@
     evidence: bulk crystal dislocation theory provides an invaluable guide
   applications: []
   note: Account article.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0064
   doi: 10.1021/acsnano.0c08929
   tag_source: ai
@@ -1021,6 +1072,7 @@
     confidence: high
     evidence: Colloidal superlattices are fascinating materials made of ordered nanocrystals
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0065
   doi: 10.1021/acsnano.0c08683
   tag_source: ai
@@ -1047,6 +1099,7 @@
     confidence: medium
     evidence: A modified Ising model was used
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0066
   doi: 10.1557/mrs.2020.229
   tag_source: ai
@@ -1065,6 +1118,7 @@
     evidence: superlattice formation of nanocrystals
   applications: []
   note: Abstract field holds only the placeholder "Abstract"; tagged from title.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0067
   doi: 10.1021/acsnano.0c07202
   tag_source: ai
@@ -1091,6 +1145,7 @@
     confidence: medium
     evidence: atomistic electronic structure calculations
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0068
   doi: 10.1021/acsnano.0c08158
   tag_source: ai
@@ -1114,6 +1169,7 @@
     confidence: medium
     evidence: Theoretical modeling of the kinetics
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0069
   doi: 10.1002/anie.202007683
   tag_source: ai
@@ -1132,6 +1188,7 @@
     evidence: upconversion quantum yield (UCQY) and UV emission
   applications: []
   note: Dye-degradation demo and biomedical uses not tagged as applications (demo/speculative).
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0070
   doi: 10.1021/acs.nanolett.0c03431
   tag_source: ai
@@ -1156,6 +1213,7 @@
     confidence: medium
     evidence: activity of oxygen evolution from water
   note: Photodeposition route has no matching approach tag.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0071
   doi: 10.1021/acsnano.0c03601
   tag_source: ai
@@ -1179,6 +1237,7 @@
     confidence: high
     evidence: Exchanging CTAB ligands for PEG-alkanethiol ligands
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0072
   doi: 10.1021/jacs.0c08954
   tag_source: ai
@@ -1204,10 +1263,9 @@
   - tag: theory-modeling
     confidence: medium
     evidence: An Ising model was used
-  applications:
-  - tag: displays-leds
-    confidence: low
-    evidence: particularly for use in consumer displays
+  applications: []
+  reviewed: 'ai-review 2026-10-20: remove applications:displays-leds (Displays mentioned only as motivation in opening sentence; paper studies surface chemistry thermodynamics,
+    no device or emission work.)'
 - id: p0073
   doi: 10.1021/acs.jpcc.0c04746
   tag_source: ai
@@ -1229,6 +1287,7 @@
     evidence: atomistic, semiempirical pseudopotential calculations
   applications: []
   note: Purely computational interpretation of transient-absorption features.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0074
   doi: 10.1021/jacs.0c04997
   tag_source: ai
@@ -1252,6 +1311,7 @@
     confidence: medium
     evidence: test potential transformation routes between perovskite nanocrystals
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0075
   doi: 10.1038/s41598-020-65274-9
   tag_source: ai
@@ -1267,6 +1327,7 @@
     evidence: imaged and videoed by TEM
   applications: []
   note: Liquid-cell TEM of a sodium liquid-vapor interface, not a nanocrystal study; lctem assigned for the method.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0076
   doi: 10.1021/acs.jpclett.0c01551
   tag_source: ai
@@ -1290,6 +1351,7 @@
     confidence: medium
     evidence: spatially resolved elemental mapping with electron microscopy
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0077
   doi: 10.1021/acs.nanolett.9b05225
   tag_source: ai
@@ -1311,6 +1373,7 @@
     confidence: high
     evidence: Light-Emitting Fibers
   note: Device paper (light-emitting fiber); none of the four research areas fits well.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0078
   doi: 10.1021/jacs.0c02000
   tag_source: ai
@@ -1331,6 +1394,7 @@
     confidence: medium
     evidence: our model system and theoretical formulation
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0079
   doi: 10.1126/science.aax3233
   tag_source: ai
@@ -1351,6 +1415,7 @@
     confidence: high
     evidence: 3D atomic structure of individual ligand-protected nanocrystals
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0080
   doi: 10.1007/s12274-020-2717-9
   tag_source: ai
@@ -1377,6 +1442,7 @@
     confidence: medium
     evidence: studied their anisotropic optical properties
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0081
   doi: 10.1038/s41586-019-1899-3
   tag_source: ai
@@ -1389,6 +1455,7 @@
   approaches: []
   applications: []
   note: No abstract; OpenAlex keywords suggest Co3O4 nanocubes (oxides) but the title does not name the material.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0082
   doi: 10.1021/acsnano.9b03054
   tag_source: ai
@@ -1415,6 +1482,7 @@
     confidence: medium
     evidence: ligand order to disorder phase transition
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0083
   doi: 10.1007/s12274-019-2531-4
   tag_source: ai
@@ -1435,6 +1503,7 @@
     confidence: medium
     evidence: A growth model is further established
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0084
   doi: 10.1021/acsaem.9b01714
   tag_source: ai
@@ -1455,6 +1524,7 @@
   - tag: catalysis
     confidence: high
     evidence: catalysts for CO 2 reduction
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0085
   doi: 10.1021/jacs.9b09571
   tag_source: ai
@@ -1478,6 +1548,7 @@
   - tag: bio-imaging
     confidence: medium
     evidence: optical probes for bioimaging
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0086
   doi: 10.1021/acsnano.9b05782
   tag_source: ai
@@ -1498,6 +1569,7 @@
     confidence: medium
     evidence: observe optical absorption and luminescence trajectories
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0087
   doi: 10.1021/acs.chemmater.8b04202
   tag_source: ai
@@ -1515,6 +1587,7 @@
     confidence: high
     evidence: provides a quantifiable stability metric
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0088
   doi: 10.1021/acs.jchemed.9b00159
   tag_source: ai
@@ -1524,6 +1597,7 @@
   approaches: []
   applications: []
   note: Science-education paper (undergraduate research program); no scientific tags apply.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0089
   doi: 10.1021/acsnano.9b03052
   tag_source: ai
@@ -1548,6 +1622,7 @@
     evidence: electronic structure calculations
   applications: []
   note: In situ HRTEM is not described as liquid-phase, so lctem was not assigned.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0090
   doi: 10.1021/acs.nanolett.9b02374
   tag_source: ai
@@ -1568,6 +1643,7 @@
     confidence: medium
     evidence: high speed photoconductive switch
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0091
   doi: 10.1021/acs.nanolett.9b01057
   tag_source: ai
@@ -1584,10 +1660,9 @@
   - tag: optical-spectroscopy
     confidence: high
     evidence: upconversion quantum yield (UCQY) is measured
-  applications:
-  - tag: bio-imaging
-    confidence: medium
-    evidence: applications spanning biological imaging and optical sensing
+  applications: []
+  reviewed: 'ai-review 2026-10-20: remove applications:bio-imaging (Bioimaging appears only in closing outlook sentence; no biological or imaging work (cf. untagged
+    sister paper p0069).)'
 - id: p0092
   doi: 10.1126/sciadv.aav8141
   tag_source: ai
@@ -1612,6 +1687,7 @@
     confidence: medium
     evidence: full-color displays
   note: Abstract is truncated at the start.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0093
   doi: 10.1038/s41565-019-0395-0
   tag_source: ai
@@ -1628,6 +1704,7 @@
   applications: []
   note: No abstract; keywords suggest lanthanide-doped nanoprobes for protein localization (possible oxides-rare-earths, bio-imaging) but the title does not state
     them.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0094
   doi: 10.1021/acs.nanolett.9b00122
   tag_source: ai
@@ -1648,6 +1725,7 @@
   - tag: displays-leds
     confidence: medium
     evidence: improve the emission properties for light emitting applications
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0095
   doi: 10.1126/science.aat3803
   tag_source: ai
@@ -1665,6 +1743,7 @@
     confidence: high
     evidence: Photothermal threshold quantum yield
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0096
   doi: 10.1021/jacs.9b00082
   tag_source: ai
@@ -1685,6 +1764,7 @@
     confidence: high
     evidence: etching trajectories of nanocrystals were used as a probe
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0097
   doi: 10.1021/jacs.8b11035
   tag_source: ai
@@ -1708,6 +1788,7 @@
     confidence: medium
     evidence: A variety of spectroscopic methods are employed
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0098
   doi: 10.1109/jphotov.2018.2861751
   tag_source: ai
@@ -1732,6 +1813,7 @@
     confidence: high
     evidence: Luminescent solar concentrators
   note: Device design and modeling paper (luminescent solar concentrator); none of the four research areas fits.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0099
   doi: 10.1021/acsnano.8b06692
   tag_source: ai
@@ -1755,6 +1837,7 @@
     confidence: medium
     evidence: fabricated fluorinated InAs QD-based electrical devices
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0100
   doi: 10.1021/acs.nanolett.8b02819
   tag_source: ai
@@ -1772,6 +1855,7 @@
     confidence: high
     evidence: liquid cell transmission electron microscopy (TEM)
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0101
   doi: 10.1002/9783527807215.ch1
   tag_source: ai
@@ -1781,6 +1865,7 @@
   approaches: []
   applications: []
   note: Book chapter introduction on electrochemical engineering; no nanocrystal content to tag.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0102
   doi: 10.1021/acs.nanolett.8b02337
   tag_source: ai
@@ -1804,6 +1889,7 @@
     confidence: medium
     evidence: Monte Carlo simulations show
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0103
   doi: 10.1103/physrevlett.121.056102
   tag_source: ai
@@ -1830,6 +1916,7 @@
   - tag: mechanics-sensing
     confidence: high
     evidence: pseudoelastic shape recovery after deformation to large uniaxial strains
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0104
   doi: 10.1021/acs.jpclett.8b01525
   tag_source: ai
@@ -1847,6 +1934,7 @@
     confidence: high
     evidence: Extreme ultraviolet transient absorption spectroscopy
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0105
   doi: 10.1021/acs.nanolett.8b01535
   tag_source: ai
@@ -1870,6 +1958,7 @@
   - tag: mechanics-sensing
     confidence: high
     evidence: ratiometric color response to stress
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0106
   doi: 10.1021/jacs.8b02612
   tag_source: ai
@@ -1896,6 +1985,7 @@
     confidence: medium
     evidence: variety of electron microscopy and X-ray techniques
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0107
   doi: 10.1021/jacs.8b04558
   tag_source: ai
@@ -1919,6 +2009,7 @@
     confidence: medium
     evidence: simple yet versatile thermodynamic model
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0108
   doi: 10.1021/acs.jpcc.8b03206
   tag_source: ai
@@ -1939,6 +2030,7 @@
     confidence: high
     evidence: Photoluminescence Blinking
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0109
   doi: 10.3791/57665
   tag_source: ai
@@ -1959,6 +2051,7 @@
     confidence: high
     evidence: Study in Situ Nanocrystal Etching
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0110
   doi: 10.1021/acs.nanolett.8b00560
   tag_source: ai
@@ -1982,6 +2075,7 @@
     confidence: medium
     evidence: absorption spectrum of the nanocrystals presents a sharp peak
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0111
   doi: 10.1021/acs.nanolett.8b00634
   tag_source: ai
@@ -2005,6 +2099,7 @@
   - tag: bio-imaging
     confidence: medium
     evidence: especially attractive for biological imaging applications
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0112
   doi: 10.1021/jacs.8b01458
   tag_source: ai
@@ -2028,6 +2123,7 @@
   - tag: bio-imaging
     confidence: medium
     evidence: combined imaging in the visible and near-infrared
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0113
   doi: 10.1021/jacs.8b00271
   tag_source: ai
@@ -2054,6 +2150,7 @@
   - tag: solar-energy
     confidence: medium
     evidence: photocatalyzed CO 2 reduction at aqueous CdSe nanoparticles
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0114
   doi: 10.1021/acs.nanolett.8b00077
   tag_source: ai
@@ -2071,6 +2168,7 @@
     confidence: high
     evidence: Ab initio calculations employing the generalized gradient approximation
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0115
   doi: 10.1021/acsnano.8b00638
   tag_source: ai
@@ -2092,6 +2190,7 @@
     evidence: defect-free attachment of preformed nanocrystals into epitaxial assemblies
   applications: []
   note: In situ HRTEM is not described as liquid-phase, so lctem was not assigned; PbTe tagged as quantum dots (IV-VI).
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0116
   doi: 10.1038/s41563-017-0006-0
   tag_source: ai
@@ -2110,6 +2209,7 @@
     confidence: medium
     evidence: Thermochromic halide perovskite solar cells
   note: No abstract; device paper, likely perovskite thin films rather than nanocrystals; no area assigned.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0117
   doi: 10.1021/acs.nanolett.7b04116
   tag_source: ai
@@ -2137,6 +2237,7 @@
     evidence: Dark-field spectra of individual assemblies
   applications: []
   note: Area could also be read as spectroscopy (single-assembly dark-field spectra); synthesis chosen for the assembly focus.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0118
   doi: 10.1021/acs.chemmater.7b04336
   tag_source: ai
@@ -2149,6 +2250,7 @@
   approaches: []
   applications: []
   note: Editorial for a virtual issue; the abstract field holds publisher page text, not an abstract, so tagged title-only.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0119
   doi: 10.1073/pnas.1702760114
   tag_source: ai
@@ -2167,6 +2269,7 @@
     evidence: our computer simulations reveal
   applications: []
   note: Abstract truncated; ion adsorption at the graphene/water interface, not a nanocrystal study, so no area.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0120
   doi: 10.1021/jacs.7b07496
   tag_source: ai
@@ -2184,6 +2287,7 @@
     confidence: medium
     evidence: upconversion quantum yield and lifetime measurements
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0121
   doi: 10.1021/acsnano.7b03580
   tag_source: ai
@@ -2201,6 +2305,7 @@
     confidence: high
     evidence: Time-resolved photoluminescence measurements
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0122
   doi: 10.1038/nmat4936
   tag_source: ai
@@ -2219,6 +2324,7 @@
     evidence: Excitation-wavelength-dependent small polaron trapping
   applications: []
   note: No abstract; probably ultrafast spectroscopy on hematite, which may not be nanocrystalline.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0123
   doi: 10.1021/acs.nanolett.7b02147
   tag_source: ai
@@ -2243,6 +2349,7 @@
     evidence: control the packing density
   applications: []
   note: Abstract is truncated at the start.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0124
   doi: 10.1142/s2529732517400077
   tag_source: ai
@@ -2252,6 +2359,7 @@
   approaches: []
   applications: []
   note: General essay on nanoscience and energy; no specific tags apply.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0125
   doi: 10.1021/acscentsci.7b00122
   tag_source: ai
@@ -2276,6 +2384,7 @@
     confidence: medium
     evidence: generate hot carriers for photocatalysis
   note: Hot-carrier photocatalysis study; area is a weak fit (synthesis via etching as transformation); could be none.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0126
   doi: 10.1021/acs.nanolett.7b00232
   tag_source: ai
@@ -2293,6 +2402,7 @@
     confidence: high
     evidence: assemble colloidal nanorods in situ
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0127
   doi: 10.1021/jacs.7b02817
   tag_source: ai
@@ -2313,6 +2423,7 @@
     confidence: medium
     evidence: luminescence decay kinetics transform from multiexponential decays
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0128
   doi: 10.1021/jacs.7b01409
   tag_source: ai
@@ -2333,6 +2444,7 @@
     confidence: high
     evidence: Ligand Mediated Transformation
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0129
   doi: 10.1021/jacs.7b01366
   tag_source: ai
@@ -2346,10 +2458,9 @@
     confidence: high
     evidence: Early-Late Intermetallic Nanoparticles
   approaches: []
-  applications:
-  - tag: catalysis
-    confidence: medium
-    evidence: garnered increased attention recently for their catalytic properties
+  applications: []
+  reviewed: 'ai-review 2026-10-20: remove applications:catalysis (Catalysis is only the motivation for Pt3Y; paper reports synthesis and characterization, no catalytic
+    testing.)'
 - id: p0130
   doi: 10.1073/pnas.1618508114
   tag_source: ai
@@ -2373,6 +2484,7 @@
   - tag: mechanics-sensing
     confidence: high
     evidence: tunable mechanical behavior
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0131
   doi: 10.1021/acs.nanolett.6b04816
   tag_source: ai
@@ -2396,6 +2508,7 @@
     confidence: high
     evidence: atomistic simulations
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0132
   doi: 10.1007/s10562-016-1915-2
   tag_source: ai
@@ -2411,6 +2524,7 @@
     confidence: medium
     evidence: High Catalytic Activity and Selectivity
   note: No abstract; heterogeneous catalysis paper, unclear whether nanocrystals are involved; no area assigned.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0133
   doi: 10.1021/acsnano.6b08277
   tag_source: ai
@@ -2440,6 +2554,7 @@
   - tag: bio-imaging
     confidence: medium
     evidence: easily attached to biological samples
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0134
   doi: 10.1021/acs.nanolett.6b04383
   tag_source: ai
@@ -2466,6 +2581,7 @@
   - tag: bio-imaging
     confidence: medium
     evidence: studying biological specimens using liquid-phase TEM
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0135
   doi: 10.1021/acs.jpcc.6b09780
   tag_source: ai
@@ -2487,6 +2603,7 @@
     evidence: Quantum Dot Blinking
   applications: []
   note: Mainly a statistical analysis method (change point analysis) for blinking traces.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0136
   doi: 10.1021/acsami.6b09443
   tag_source: ai
@@ -2508,6 +2625,7 @@
     evidence: monitor the photoluminescence quantum yield
   applications: []
   note: Photonic applications mentioned only as potential; none tagged.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0137
   doi: 10.1073/pnas.1617391113
   tag_source: ai
@@ -2523,6 +2641,7 @@
     confidence: high
     evidence: converting sunlight to electricity
   note: Solar module engineering without nanocrystals; no area or material applies.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0138
   doi: 10.1021/acs.nanolett.6b02972
   tag_source: ai
@@ -2546,6 +2665,7 @@
     confidence: medium
     evidence: track the trajectories of nanoparticle movement
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0139
   doi: 10.1021/acs.nanolett.6b03331
   tag_source: ai
@@ -2564,6 +2684,7 @@
     evidence: aberration-corrected high-resolution transmission electron microscopy
   applications: []
   note: Ex situ HRTEM structure study, so spectroscopy (structure) rather than lctem.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0140
   doi: 10.1126/science.aah4434
   tag_source: ai
@@ -2588,6 +2709,7 @@
     evidence: Single-particle mapping of nonequilibrium nanocrystal transformations
   applications: []
   note: Monte Carlo simulations also used; theory-modeling left out due to the 3-approach limit.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0141
   doi: 10.1021/acs.nanolett.6b03683
   tag_source: ai
@@ -2611,6 +2733,7 @@
     confidence: medium
     evidence: luminescence is typically suppressed by surface quenching
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0142
   doi: 10.1073/pnas.1610554113
   tag_source: ai
@@ -2632,6 +2755,7 @@
     confidence: high
     evidence: for solar-to-chemical production
   note: Nanoparticle-bacterium hybrid; bio-conjugates is the closest material slug.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0143
   doi: 10.1021/jacs.6b08178
   tag_source: ai
@@ -2652,6 +2776,7 @@
     confidence: medium
     evidence: optical properties to be observed in real time, in situ
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0144
   doi: 10.1021/jacs.6b08373
   tag_source: ai
@@ -2672,6 +2797,7 @@
     confidence: medium
     evidence: readily tuned by an anion-exchange reaction
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0145
   doi: 10.1021/acsnano.6b03863
   tag_source: ai
@@ -2689,6 +2815,7 @@
     confidence: high
     evidence: confirmed the presence of both carboxylate and alkylammonium ligands
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0146
   doi: 10.1021/acsphotonics.6b00166
   tag_source: ai
@@ -2713,6 +2840,7 @@
     evidence: upconversion emission at the single-particle level
   applications: []
   note: Solar and bioimaging uses are only motivation; no application tagged.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0147
   doi: 10.1021/acs.nanolett.6b01907
   tag_source: ai
@@ -2740,6 +2868,7 @@
     confidence: high
     evidence: act as sensors of tensile/compressive stress
   note: Area could also be spectroscopy (PL-shift stress-sensing mechanism); synthesis chosen for consistency with the nanocomposite mechanics papers p0155 and p0176.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0148
   doi: 10.1021/acs.jpclett.6b00964
   tag_source: ai
@@ -2760,6 +2889,7 @@
     confidence: high
     evidence: most sensitive of any absorption microscopy technique
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0149
   doi: 10.1021/acsphotonics.6b00211
   tag_source: ai
@@ -2775,6 +2905,7 @@
     evidence: sandwich microstrip transmission line photodetector
   applications: []
   note: Photodetector device paper; no area fits well and photodetection has no application slug.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0150
   doi: 10.1088/2040-8978/18/7/073004
   tag_source: ai
@@ -2787,6 +2918,7 @@
     confidence: high
     evidence: solar energy-conversion technologies
   note: Multi-author roadmap/review on optical energy conversion; no specific nanocrystal area or material.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0151
   doi: 10.1038/ncomms11924
   tag_source: ai
@@ -2802,6 +2934,7 @@
     evidence: Ultrasensitive photodetectors exploiting electrostatic trapping and percolation transport
   applications: []
   note: Photodetector from sintered CdTe nanocrystal films; NCs are not studied as quantum dots (low). No area fits.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0152
   doi: 10.1021/jacs.6b03134
   tag_source: ai
@@ -2819,6 +2952,7 @@
     confidence: high
     evidence: controlled through anion-exchange reactions
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0153
   doi: 10.1016/j.cell.2016.04.045
   tag_source: ai
@@ -2831,6 +2965,7 @@
     confidence: low
     evidence: Interrogating Cell Signaling in Space and Time
   note: No abstract; cell-biology tool paper. OpenAlex keywords suggest magnetoplasmonic nanoparticles but the title does not say so, so no material tagged.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0154
   doi: 10.1038/ncomms11083
   tag_source: ai
@@ -2858,6 +2993,7 @@
     evidence: derive 14 conformations of dsDNA by molecular dynamics simulations
   applications: []
   note: Cryo and negative-stain tomography, not liquid cell, so area is structure (spectroscopy) rather than lctem.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0155
   doi: 10.1021/acs.chemmater.5b04165
   tag_source: ai
@@ -2881,6 +3017,7 @@
   - tag: mechanics-sensing
     confidence: high
     evidence: Cavitation-Induced Stiffness Reductions
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0156
   doi: 10.1021/acsnano.5b06623
   tag_source: ai
@@ -2898,6 +3035,7 @@
     confidence: high
     evidence: time-resolved infrared spectroscopy
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0157
   doi: 10.1021/acsphotonics.5b00630
   tag_source: ai
@@ -2919,6 +3057,7 @@
     confidence: high
     evidence: large-area luminescent solar concentrators (LSCs)
   note: Solar optics device paper; oxide nanoparticles only serve as DBR building blocks. No area fits.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0158
   doi: 10.1021/jacs.5b11199
   tag_source: ai
@@ -2936,6 +3075,7 @@
     confidence: high
     evidence: controllable self-assembly of nanoplates
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0159
   doi: 10.1021/acsnano.5b04064
   tag_source: ai
@@ -2951,6 +3091,7 @@
     evidence: In Situ High-Resolution Electron Microscopy
   applications: []
   note: Subject is a water-soluble mineral (Na2SO4); no material slug fits.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0160
   doi: 10.1038/ncomms10052
   tag_source: ai
@@ -2972,6 +3113,7 @@
     evidence: densely grafted polystyrene ligands
   applications: []
   note: Core nanocrystal composition not given in abstract.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0161
   doi: 10.1021/jacs.5b10856
   tag_source: ai
@@ -2995,6 +3137,7 @@
     confidence: medium
     evidence: not well modeled by the standard two-state Marcus model
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0162
   doi: 10.1126/science.aac8480
   tag_source: ai
@@ -3004,6 +3147,7 @@
   approaches: []
   applications: []
   note: Science policy perspective on microbiome research; no tags apply.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0163
   doi: 10.1016/j.neuron.2015.10.015
   tag_source: ai
@@ -3013,6 +3157,7 @@
   approaches: []
   applications: []
   note: Neuron policy perspective on BRAIN Initiative neurotechnology centers; no tags apply.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0164
   doi: 10.1021/acs.nanolett.5b03970
   tag_source: ai
@@ -3033,6 +3178,7 @@
     confidence: medium
     evidence: We show in experiment and simulation
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0165
   doi: 10.1126/science.aac7660
   tag_source: ai
@@ -3050,6 +3196,7 @@
     evidence: atomically thin two-dimensional (2D) sheets
   approaches: []
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0166
   doi: 10.1021/acsnano.5b04677
   tag_source: ai
@@ -3068,6 +3215,7 @@
     evidence: density functional theory calculations
   applications: []
   note: Main experimental method is scanning tunneling spectroscopy, which has no approach slug.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0167
   doi: 10.1021/acsphotonics.5b00354
   tag_source: ai
@@ -3091,6 +3239,7 @@
     confidence: medium
     evidence: lithographically patterned samples
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0168
   doi: 10.1021/acsphotonics.5b00334
   tag_source: ai
@@ -3109,6 +3258,7 @@
     confidence: high
     evidence: Luminescent solar concentrators doped with CdSe/CdS quantum dots
   note: Solar concentrator device paper; no area fits.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0169
   doi: 10.1126/science.aab1343
   tag_source: ai
@@ -3129,6 +3279,7 @@
     confidence: high
     evidence: algorithm for single-particle 3D reconstruction
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0170
   doi: 10.1002/adma.201502218
   tag_source: ai
@@ -3147,6 +3298,7 @@
   approaches: []
   applications: []
   note: Review; plasmonic metal chalcogenides have no dedicated material slug.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0171
   doi: 10.1073/pnas.1502005112
   tag_source: ai
@@ -3173,6 +3325,7 @@
   - tag: catalysis
     confidence: high
     evidence: spatiotemporal fluctuations of nanocatalytic activity
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0172
   doi: 10.1039/c5fd90056e
   tag_source: ai
@@ -3188,6 +3341,7 @@
     evidence: use of liquid cells to study colloidal inorganic nanocrystals
   applications: []
   note: Lecture overview; no specific material named.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0173
   doi: 10.1021/acs.nanolett.5b01429
   tag_source: ai
@@ -3206,6 +3360,7 @@
     evidence: Quantum Dot Field Effect Transistors
   applications: []
   note: Main method is Kelvin probe force microscopy (no approach slug); area is carrier dynamics.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0174
   doi: 10.1021/acs.nanolett.5b01161
   tag_source: ai
@@ -3227,6 +3382,7 @@
     confidence: medium
     evidence: binding individual secreted molecules with high specificity
   note: Biosensing tool paper; none of the four areas fits.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0175
   doi: 10.1021/jacs.5b04294
   tag_source: ai
@@ -3239,6 +3395,7 @@
     confidence: high
     evidence: Heterogeneous Catalysts for Regio- and Enantioselective Lactonization Reactions
   note: Silica-supported molecular gold(I) complexes, not nanocrystals; only catalysis tagged.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0176
   doi: 10.1073/pnas.1421644112
   tag_source: ai
@@ -3262,6 +3419,7 @@
   - tag: mechanics-sensing
     confidence: high
     evidence: mechanical properties of polymer/nanoparticle blends
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0177
   doi: 10.1002/anie.201411461
   tag_source: ai
@@ -3280,6 +3438,7 @@
   approaches: []
   applications: []
   note: Photoelectrochemical/catalytic use stated only as potential; no application tagged.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0178
   doi: 10.1021/acs.nanolett.5b00454
   tag_source: ai
@@ -3298,6 +3457,7 @@
     evidence: electronic structure and energy level alignment of the individual QDs
   applications: []
   note: Main methods are KPFM and STS, which have no approach slug.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0179
   doi: 10.1021/acscentsci.5b00001
   tag_source: ai
@@ -3321,6 +3481,7 @@
     confidence: medium
     evidence: relative trajectories of pairs and groups of nanocrystals
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0180
   doi: 10.1557/mrc.2015.8
   tag_source: ai
@@ -3333,6 +3494,7 @@
   approaches: []
   applications: []
   note: No abstract; likely a review of ferroelectric (nano)materials; material class not clear from title.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0181
   doi: 10.1021/jz502566m
   tag_source: ai
@@ -3351,6 +3513,7 @@
     evidence: In situ electron microscopy is used
   applications: []
   note: In situ TEM heating in vacuum, not in liquid, so lctem not assigned; area could also be spectroscopy (phase change).
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0182
   doi: 10.1021/ja512278a
   tag_source: ai
@@ -3371,6 +3534,7 @@
     confidence: high
     evidence: donate holes to surface-bound molecular acceptors
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0183
   doi: 10.1016/j.mtcomm.2014.11.002
   tag_source: ai
@@ -3380,6 +3544,7 @@
   approaches: []
   applications: []
   note: No abstract; Kevlar fiber mechanics, not a nanocrystal material, so mechanics-sensing not applied under the strict definition.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0184
   doi: 10.1021/jp5071133
   tag_source: ai
@@ -3404,6 +3569,7 @@
     evidence: confirmed by a charge transfer multiplet spectral simulation
   applications: []
   note: Thin-film Co3O4 rather than colloidal nanocrystals (material medium); XUV core-level absorption counted as X-ray method.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0185
   doi: 10.1021/nl502817a
   tag_source: ai
@@ -3425,6 +3591,7 @@
     evidence: at the Co M2,3 edge
   applications: []
   note: Thin-film Co3O4 rather than colloidal nanocrystals (material medium); XUV core-level absorption counted as X-ray method.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0186
   doi: 10.1021/ph5002632
   tag_source: ai
@@ -3446,6 +3613,7 @@
     evidence: Self-assembled plasmonic structures combine the specificity
   applications: []
   note: Simulation-only design study.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0187
   doi: 10.1021/ja511010q
   tag_source: ai
@@ -3466,6 +3634,7 @@
     confidence: medium
     evidence: dependent on both kinetic and thermodynamic factors
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0188
   doi: 10.1021/ja5065284
   tag_source: ai
@@ -3484,6 +3653,7 @@
     confidence: high
     evidence: Enhanced electrochemical methanation of carbon dioxide
   note: Electrocatalysis paper; area fit is weak.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0189
   doi: 10.1126/science.1252727
   tag_source: ai
@@ -3505,6 +3675,7 @@
     evidence: combination of theoretical calculations and spectroscopic methods
   applications: []
   note: Abstract is a Science editor summary covering two papers; tags follow the PbS surface paper.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0190
   doi: 10.1021/ja502628r
   tag_source: ai
@@ -3529,6 +3700,7 @@
     confidence: high
     evidence: Fuel-Forming Electrocatalysis
   note: Electrocatalyst aggregation study; area fit is weak.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0191
   doi: 10.1021/ja500936n
   tag_source: ai
@@ -3552,6 +3724,7 @@
     confidence: medium
     evidence: surface-ligated alkyl ferrocene
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0192
   doi: 10.1021/nl500043c
   tag_source: ai
@@ -3569,6 +3742,7 @@
     confidence: high
     evidence: femtosecond single-shot X-ray diffraction techniques
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0193
   doi: 10.1021/nl4045372
   tag_source: ai
@@ -3584,6 +3758,7 @@
     confidence: high
     evidence: high catalytic efficiency and great recyclability
   note: Inorganic composition not stated in abstract; no material tagged.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0194
   doi: 10.1021/nn406127s
   tag_source: ai
@@ -3608,6 +3783,7 @@
     evidence: ambient-pressure X-ray photoelectron spectroscopy
   applications: []
   note: Area could also be spectroscopy (energy-level alignment and transport).
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0195
   doi: 10.1021/la404019v
   tag_source: ai
@@ -3626,6 +3802,7 @@
     evidence: Ligand Dissociation Mediated Charge Transfer
   applications: []
   note: Photocatalysis mentioned only as an implication; no application tagged.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0196
   doi: 10.1002/anie.201303707
   tag_source: ai
@@ -3650,6 +3827,7 @@
     evidence: redox processes and ligand chemistry can induce changes
   applications: []
   note: Short highlight on doped-semiconductor plasmonics; metals-plasmonics used for LSPR in Cu2-xS.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0197
   doi: 10.3791/50731
   tag_source: ai
@@ -3664,6 +3842,7 @@
     evidence: multicomponent nanostructures consisting of CdS and CdSe
   approaches: []
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0198
   doi: 10.1073/pnas.1308595110
   tag_source: ai
@@ -3688,6 +3867,7 @@
     confidence: low
     evidence: examine protein-induced DNA distortions key to the DNA repair
   note: Mostly biology (DNA mismatch repair) using Au-label SAXS; area could arguably be none.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0199
   doi: 10.1021/nn404418h
   tag_source: ai
@@ -3712,6 +3892,7 @@
     confidence: high
     evidence: Luminescent Solar Concentration with Semiconductor Nanorods
   note: Device and ray-tracing paper; no area fits clearly (spectroscopy possible).
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0200
   doi: 10.1021/nl4035362
   tag_source: ai
@@ -3732,6 +3913,7 @@
     confidence: high
     evidence: Bismuth Oxide Hollow Nanoparticle Formation by the Kirkendall Effect
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0201
   doi: 10.1021/nl403524a
   tag_source: ai
@@ -3755,6 +3937,7 @@
   - tag: solar-energy
     confidence: low
     evidence: an efficient quantum dot solar cell design
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0202
   doi: 10.1021/jz401997d
   tag_source: ai
@@ -3776,6 +3959,7 @@
     evidence: Semiempirical ligand field multiplet calculations of the spectra
   applications: []
   note: Hematite thin films, not nanocrystals; oxide tag given at medium confidence.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0203
   doi: 10.1021/jp405989z
   tag_source: ai
@@ -3793,6 +3977,7 @@
     confidence: medium
     evidence: fundamental thermodynamic and kinetic basis for cation exchange
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0204
   doi: 10.1021/nl402862b
   tag_source: ai
@@ -3814,6 +3999,7 @@
     evidence: End-to-End Alignment of Nanorods in Thin Films
   applications: []
   note: Nanorod composition not stated in abstract.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0205
   doi: 10.1021/cm402383r
   tag_source: ai
@@ -3831,6 +4017,7 @@
   - tag: solar-energy
     confidence: high
     evidence: Balancing Space Charge to Improve Photovoltaic Efficiency
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0206
   doi: 10.1103/physrevlett.111.037401
   tag_source: ai
@@ -3849,6 +4036,7 @@
     evidence: Infrared absorption measurements
   applications: []
   note: GeTe has no specific material tag.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0207
   doi: 10.1021/nl3007165
   tag_source: ai
@@ -3872,6 +4060,7 @@
     confidence: high
     evidence: structural transformations under pressure depend strongly on particle size
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0208
   doi: 10.1021/jp4000297
   tag_source: ai
@@ -3898,6 +4087,7 @@
   - tag: catalysis
     confidence: high
     evidence: Co and Cu can each individually contribute to syngas conversion
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0209
   doi: 10.1021/nl3036417
   tag_source: ai
@@ -3912,6 +4102,7 @@
     evidence: wurtzite nanorods of cadmium selenide
   approaches: []
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0210
   doi: 10.1021/nn401657n
   tag_source: ai
@@ -3930,6 +4121,7 @@
     evidence: partial ligand exchange of oleate-capped PbSe quantum dots
   applications: []
   note: Charge transport in QD solids; area could also be spectroscopy (electronic coupling).
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0211
   doi: 10.1021/ja404918z
   tag_source: ai
@@ -3953,6 +4145,7 @@
   - tag: solar-energy
     confidence: high
     evidence: renewable direct solar-to-fuel energy conversion
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0212
   doi: 10.1021/nl402694n
   tag_source: ai
@@ -3973,6 +4166,7 @@
     confidence: high
     evidence: Liquid-phase transmission electron microscopy (TEM)
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0213
   doi: 10.4161/sysb.22834
   tag_source: ai
@@ -3988,6 +4182,7 @@
     confidence: high
     evidence: imaging activity patterns in three-dimensional culture models
   note: Short review with biology focus; no area fits.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0214
   doi: 10.1109/jphotov.2013.2240764
   tag_source: ai
@@ -4003,6 +4198,7 @@
     confidence: high
     evidence: Optoelectronic Design of Thin-Film Solar Cells
   note: a-Si:H thin-film device modeling; no nanocrystals, no area.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0215
   doi: 10.1016/j.ultramic.2013.05.004
   tag_source: ai
@@ -4024,6 +4220,7 @@
     evidence: cation exchange in cadmium sulfide-copper sulfide heterostructured nanorods
   applications: []
   note: Title only (Ultramicroscopy); beam-induced TEM study, not liquid cell.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0216
   doi: 10.1021/cm401083g
   tag_source: ai
@@ -4044,6 +4241,7 @@
     confidence: medium
     evidence: single-crystal to single-crystal cation exchange to CdSe
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0217
   doi: 10.1021/nl401999t
   tag_source: ai
@@ -4065,6 +4263,7 @@
     confidence: high
     evidence: luminescent stress probe for the mechanical properties
   note: Stress-sensor application paper; no area fits clearly (synthesis/properties possible).
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0218
   doi: 10.1002/anie.201205958
   tag_source: ai
@@ -4083,6 +4282,7 @@
   approaches: []
   applications: []
   note: Photocatalysis mentioned only as a possibility; no application tagged.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0219
   doi: 10.1021/cm304152b
   tag_source: ai
@@ -4102,11 +4302,10 @@
   - tag: xray-pressure
     confidence: high
     evidence: characterized via synchrotron X-ray spectroscopy
-  applications:
-  - tag: solar-energy
-    confidence: low
-    evidence: promising photovoltaic absorber
+  applications: []
   note: FeS2 has no specific material tag.
+  reviewed: 'ai-review 2026-10-20: remove applications:solar-energy (Photovoltaics only motivates the work; paper reports synthesis and electronic structure, no PV
+    application.)'
 - id: p0220
   doi: 10.1021/ja3107912
   tag_source: ai
@@ -4124,6 +4323,7 @@
     confidence: high
     evidence: Size-Dependent Assemblies of Nanoparticle Mixtures in Thin Films
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0221
   doi: 10.1021/nn4012847
   tag_source: ai
@@ -4136,6 +4336,7 @@
     confidence: medium
     evidence: methods that can readily be adapted for use in neuroscience
   note: Neuroscience perspective (Brain Activity Map); no area.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0222
   doi: 10.1126/science.1236939
   tag_source: ai
@@ -4148,6 +4349,7 @@
     confidence: low
     evidence: comprehensive mapping of neural circuit activity
   note: Neuroscience policy piece (Brain Activity Map); no area.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0223
   doi: 10.1021/ja3105889
   tag_source: ai
@@ -4171,6 +4373,7 @@
   - tag: catalysis
     confidence: high
     evidence: reactivity of cobalt nanoparticles in Fischer-Tropsch synthesis
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0224
   doi: 10.1021/nl300973b
   tag_source: ai
@@ -4191,6 +4394,7 @@
   - tag: catalysis
     confidence: high
     evidence: Size-Controlled Model Co Nanoparticle Catalysts for CO2 Hydrogenation
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0225
   doi: 10.1016/j.neuron.2012.06.006
   tag_source: ai
@@ -4203,6 +4407,7 @@
     confidence: low
     evidence: reconstructing the full record of neural activity
   note: Neuroscience policy piece (Brain Activity Map); no area.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0226
   doi: 10.1021/ja309416c
   tag_source: ai
@@ -4220,6 +4425,7 @@
     confidence: high
     evidence: cation exchange of cadmium pnictide nanocrystals with group 13 ions
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0227
   doi: 10.1021/nn301885u
   tag_source: ai
@@ -4243,6 +4449,7 @@
     confidence: medium
     evidence: lithographic fabrication of plasmonic nanostructures
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0228
   doi: 10.1021/ja3071732
   tag_source: ai
@@ -4269,6 +4476,7 @@
     confidence: medium
     evidence: Time-Resolved Fluorescence from CdSe-CdS Quantum Dots
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0229
   doi: 10.1021/nn303130d
   tag_source: ai
@@ -4289,6 +4497,7 @@
     confidence: medium
     evidence: transmission electron microscopical (TEM) image analysis
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0230
   doi: 10.1038/nmat3371
   tag_source: ai
@@ -4304,6 +4513,7 @@
     evidence: Ferroelectric order in individual nanometre-scale crystals
   applications: []
   note: Title only; material and method not stated.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0231
   doi: 10.1021/nl300483y
   tag_source: ai
@@ -4319,6 +4529,7 @@
     confidence: high
     evidence: Design of Nanostructured Solar Cells
   note: a-Si:H thin-film device modeling; no nanocrystals, no area.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0232
   doi: 10.1021/nl301435r
   tag_source: ai
@@ -4334,6 +4545,7 @@
     confidence: high
     evidence: Strong Solar Absorption Enhancement
   note: Photonic light-trapping in a-Si:H; no nanocrystals, no area.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0233
   doi: 10.1021/ja305293e
   tag_source: ai
@@ -4351,6 +4563,7 @@
     confidence: low
     evidence: controlled doping of nanocrystal solids under equilibrium conditions
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0234
   doi: 10.1073/pnas.1121319109
   tag_source: ai
@@ -4374,6 +4587,7 @@
     confidence: high
     evidence: Atomistic simulations analyzed by an effective mass model
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0235
   doi: 10.1002/adfm.201102455
   tag_source: ai
@@ -4386,6 +4600,7 @@
     evidence: decal transfer lithography technique to fabricate elastomeric stamps
   applications: []
   note: Lithography/PDMS stamp paper with no nanocrystals; SERS sensing not in vocabulary.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0236
   doi: 10.1021/nn203837m
   tag_source: ai
@@ -4407,6 +4622,7 @@
     evidence: simulations based on a coarse-grained lattice gas model
   applications: []
   note: Nanoparticle composition not stated in abstract.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0237
   doi: 10.1126/science.1217654
   tag_source: ai
@@ -4419,15 +4635,13 @@
   - tag: metals-plasmonics
     confidence: high
     evidence: formation of platinum nanocrystals with atomic resolution
-  - tag: carbon-2d
-    confidence: low
-    evidence: liquids can be encapsulated in graphene sheets
   approaches:
   - tag: electron-microscopy
     confidence: high
     evidence: high-resolution transmission electron microscopy
   applications: []
   note: 'carbon-2d low: graphene liquid cell is introduced here, but graphene is a tool.'
+  reviewed: 'ai-review 2026-10-20: remove materials:carbon-2d (Graphene only encapsulates the liquid; platinum growth is studied, not graphene itself, per definition.)'
 - id: p0238
   doi: 10.1002/anie.201107452
   tag_source: ai
@@ -4446,6 +4660,7 @@
     evidence: removal of impurity atoms residual from ion exchange synthesis
   applications: []
   note: Specific semiconductor not named in abstract.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0239
   doi: 10.1021/ja210010k
   tag_source: ai
@@ -4472,6 +4687,7 @@
   - tag: catalysis
     confidence: medium
     evidence: active sites around trapped holes show higher activity
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0240
   doi: ''
   tag_source: ai
@@ -4487,6 +4703,7 @@
     confidence: low
     evidence: Detection of Cellular Forces
   note: Title only, no DOI (eScholarship); nanocrystal type unknown.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0241
   doi: 10.1021/ja211363w
   tag_source: ai
@@ -4507,6 +4724,7 @@
     confidence: medium
     evidence: intense visible and near-IR absorption
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0242
   doi: 10.1021/nn202786g
   tag_source: ai
@@ -4527,6 +4745,7 @@
   - tag: solar-energy
     confidence: high
     evidence: champion device efficiency of 4.57%
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0243
   doi: 10.1002/anie.201104412
   tag_source: ai
@@ -4548,6 +4767,7 @@
     confidence: high
     evidence: photocatalytically active for hydrogen generation
   note: Nanocrystal photosensitizer type not specified in abstract.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0244
   doi: 10.1021/jz2010144
   tag_source: ai
@@ -4565,6 +4785,7 @@
     confidence: high
     evidence: Determination of the phase diagrams for the nanocrystalline forms
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0245
   doi: 10.1021/ja203215b
   tag_source: ai
@@ -4584,11 +4805,9 @@
   - tag: optical-spectroscopy
     confidence: medium
     evidence: Dark-field microscopy was used to monitor the changing optical properties
-  applications:
-  - tag: catalysis
-    confidence: medium
-    evidence: single-particle experiments in catalytically active systems
+  applications: []
   note: Hydrogen uptake in Pd; storage not stated, so energy-storage not tagged.
+  reviewed: 'ai-review 2026-10-20: remove applications:catalysis (Measures hydrogen uptake by Pd shells; catalysis appears only as future motivation in last sentence.)'
 - id: p0246
   doi: 10.1038/nmat3029
   tag_source: ai
@@ -4607,6 +4826,7 @@
     evidence: a single tailored nanofocus
   applications: []
   note: Title only; gas sensing has no application tag.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0247
   doi: 10.1021/nl201647p
   tag_source: ai
@@ -4621,6 +4841,7 @@
     evidence: stacks of graphene (or other two-dimensional sheets)
   approaches: []
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0248
   doi: 10.1126/science.1204713
   tag_source: ai
@@ -4642,6 +4863,7 @@
     evidence: structural fluctuations within a single nanocrystal
   applications: []
   note: In situ TEM of a solid nanorod (not in liquid), so not lctem.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0249
   doi: 10.1021/nl2007032
   tag_source: ai
@@ -4662,6 +4884,7 @@
     confidence: high
     evidence: Using single particle photoluminescence spectroscopy
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0250
   doi: 10.1126/science.1199958
   tag_source: ai
@@ -4682,6 +4905,7 @@
   - tag: bio-imaging
     confidence: medium
     evidence: complex macromolecular and biological processes
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0251
   doi: 10.1021/nn2001454
   tag_source: ai
@@ -4705,6 +4929,7 @@
     confidence: medium
     evidence: rectification is induced, quenched, and reversed
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0252
   doi: 10.1038/nmat3004
   tag_source: ai
@@ -4723,6 +4948,7 @@
   approaches: []
   applications: []
   note: Title only.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0253
   doi: 10.1021/ja108309s
   tag_source: ai
@@ -4738,6 +4964,7 @@
   approaches: []
   applications: []
   note: GeTe has no specific material tag.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0254
   doi: 10.1021/nl104075v
   tag_source: ai
@@ -4756,6 +4983,7 @@
     evidence: room-temperature polar ordering in individual nanocrystals
   applications: []
   note: GeTe has no specific material tag.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0255
   doi: 10.1021/ja106777j
   tag_source: ai
@@ -4776,6 +5004,7 @@
     confidence: medium
     evidence: UV-visible absorption spectroscopy
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0256
   doi: 10.1103/physrevb.82.155311
   tag_source: ai
@@ -4796,6 +5025,7 @@
     confidence: medium
     evidence: combine transmission electron microscopy with electrostatic force microscopy
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0257
   doi: 10.1073/pnas.1016022107
   tag_source: ai
@@ -4820,6 +5050,7 @@
     confidence: high
     evidence: a local stress sensor with bright luminescence readout
   note: Stress-sensor paper; area set to spectroscopy (luminescence vs stress), consistent with p0275.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0258
   doi: 10.1021/ja104126u
   tag_source: ai
@@ -4840,6 +5071,7 @@
     confidence: medium
     evidence: Z-contrast imaging, and elemental line scans
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0259
   doi: 10.1021/nl101380f
   tag_source: ai
@@ -4860,6 +5092,7 @@
     confidence: medium
     evidence: the coupling in a pair of nonequivalent particles
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0260
   doi: 10.1021/jp9116722
   tag_source: ai
@@ -4880,6 +5113,7 @@
     confidence: medium
     evidence: tuned via cation exchange between Cd 2+ and Ag +
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0261
   doi: 10.1021/nl101938p
   tag_source: ai
@@ -4897,6 +5131,7 @@
     confidence: medium
     evidence: A pronounced Fano resonance is observed
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0262
   doi: 10.1146/annurev.physchem.012809.103311
   tag_source: ai
@@ -4915,6 +5150,7 @@
     evidence: well-defined groupings of plasmonically or electronically coupled
   applications: []
   note: Review; covers both plasmonic (metal) and electronically coupled (semiconductor) nanocrystal molecules; quantum-dots not tagged.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0263
   doi: 10.1021/jz100075c
   tag_source: ai
@@ -4932,6 +5168,7 @@
   - tag: solar-energy
     confidence: high
     evidence: photocatalytic production of hydrogen
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0264
   doi: 10.1021/la904840q
   tag_source: ai
@@ -4947,6 +5184,7 @@
     evidence: Quantification of thin film crystallographic orientation using X-ray diffraction
   applications: []
   note: Methods paper (XRD pole figures for thin films); sample types too varied to assign a material.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0265
   doi: 10.1002/anie.200906642
   tag_source: ai
@@ -4964,6 +5202,7 @@
     confidence: medium
     evidence: replacing the organic ligands with precursors
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0266
   doi: 10.1109/jstqe.2009.2034983
   tag_source: ai
@@ -4979,6 +5218,7 @@
     evidence: subwavelength interconnects, modulators, and emission sources
   applications: []
   note: Review of Si-based plasmonic photonics; no research area fits; Si is the platform, not Si nanocrystals.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0267
   doi: 10.1021/nl903187v
   tag_source: ai
@@ -5002,6 +5242,7 @@
     confidence: low
     evidence: a combination of diffraction and theoretical modeling
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0268
   doi: 10.1103/physrevlett.103.125701
   tag_source: ai
@@ -5022,6 +5263,7 @@
     confidence: medium
     evidence: disappearance of the first excitonic feature
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0269
   doi: 10.1073/pnas.0907367106
   tag_source: ai
@@ -5043,6 +5285,7 @@
     confidence: high
     evidence: monitor trajectories of caspase-3 activity in live cells
   note: Plasmon-ruler biology application; no area assigned (could arguably be spectroscopy).
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0270
   doi: 10.1021/ja906503w
   tag_source: ai
@@ -5060,6 +5303,7 @@
     confidence: high
     evidence: Sequential Cation Exchange Reactions
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0271
   doi: 10.1021/ja905732q
   tag_source: ai
@@ -5077,6 +5321,7 @@
     confidence: high
     evidence: Anion exchange with S was performed
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0272
   doi: 10.1038/nmat2565
   tag_source: ai
@@ -5095,6 +5340,7 @@
     evidence: Small-molecule-directed nanoparticle assembly
   applications: []
   note: Title only; polymer matrix inferred from 'nanocomposites'.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0273
   doi: 10.1016/j.bpj.2009.06.031
   tag_source: ai
@@ -5107,6 +5353,7 @@
   approaches: []
   applications: []
   note: Title only; keywords suggest gold nanoparticle-DNA dimers studied by SAXS, but title does not say so.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0274
   doi: 10.1021/nl902186v
   tag_source: ai
@@ -5128,6 +5375,7 @@
     evidence: electrically contacted via direct solution phase growth
   applications: []
   note: Electrical transport paper; area synthesis chosen because contacts are grown in solution.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0275
   doi: 10.1021/nl9017572
   tag_source: ai
@@ -5154,6 +5402,7 @@
   - tag: mechanics-sensing
     confidence: high
     evidence: Seeded tetrapods can thereby serve as an optical strain gauge
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0276
   doi: 10.1021/ja903751p
   tag_source: ai
@@ -5171,6 +5420,7 @@
     confidence: high
     evidence: a kinetic model of the oxidation process
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0277
   doi: 10.1021/cm901273v
   tag_source: ai
@@ -5181,11 +5431,9 @@
     evidence: Surfactant-Assisted Hydrothermal Synthesis of Single phase Pyrite FeS2 Nanocrystals
   materials: []
   approaches: []
-  applications:
-  - tag: solar-energy
-    confidence: low
-    evidence: for high-performance photovoltaic solar cells
+  applications: []
   note: FeS2 fits no materials tag; solar use is stated as motivation only, no devices.
+  reviewed: 'ai-review 2026-10-20: remove applications:solar-energy (Synthesis-only paper; photovoltaics mentioned only as motivation, no devices or solar measurements.)'
 - id: p0278
   doi: 10.1021/ja808570g
   tag_source: ai
@@ -5209,6 +5457,7 @@
     confidence: medium
     evidence: small-angle X-ray scattering measurements
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0279
   doi: 10.1021/nl9012369
   tag_source: ai
@@ -5229,6 +5478,7 @@
     confidence: medium
     evidence: Tracking real-time diffusion
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0280
   doi: 10.1126/science.1172104
   tag_source: ai
@@ -5252,6 +5502,7 @@
     confidence: medium
     evidence: single colloidal platinum nanocrystal growth trajectories
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0281
   doi: 10.1016/j.cattod.2008.09.023
   tag_source: ai
@@ -5273,6 +5524,7 @@
     confidence: low
     evidence: Reactivity of Au nanoparticles supported over SiO2
   note: Title only (Catalysis Today); catalysis inferred from 'reactivity' and journal.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0282
   doi: 10.1021/ja809854q
   tag_source: ai
@@ -5293,6 +5545,7 @@
     confidence: medium
     evidence: interface formation energies calculated
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0283
   doi: 10.1021/nl900388a
   tag_source: ai
@@ -5313,6 +5566,7 @@
   - tag: solar-energy
     confidence: high
     evidence: We report solar cells
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0284
   doi: 10.1103/physrevb.79.094419
   tag_source: ai
@@ -5331,6 +5585,7 @@
     evidence: atomistic Monte Carlo simulations of an individual spherical shell
   applications: []
   note: Magnetic properties of hollow oxide particles; placed under synthesis-and-properties.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0285
   doi: 10.1021/es8019534
   tag_source: ai
@@ -5343,6 +5598,7 @@
     confidence: high
     evidence: Materials Availability Expands the Opportunity for Large-Scale Photovoltaics
   note: Materials-supply and cost analysis for photovoltaics; no nanocrystal research area fits.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0286
   doi: 10.1038/scientificamerican0109-108
   tag_source: ai
@@ -5355,6 +5611,7 @@
     confidence: medium
     evidence: How does solar power work?
   note: Title only; popular-science piece.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0287
   doi: 10.1021/la801101k
   tag_source: ai
@@ -5379,6 +5636,7 @@
     evidence: Computer programs were developed to quantify TEM images
   applications: []
   note: Image-analysis methods paper for ex situ TEM of DNA-linked assemblies; area fit is weak.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0288
   doi: 10.1002/adma.200800384
   tag_source: ai
@@ -5391,8 +5649,12 @@
   - tag: rods-heterostructures
     confidence: high
     evidence: colloidal CdS nanorods and CdSe/CdS nanoheterostructures
+  - tag: metals-plasmonics
+    confidence: medium
+    evidence: Pt nanoparticles are deposited photochemically
   approaches: []
   applications: []
+  reviewed: 'ai-review 2026-10-20: add materials:metals-plasmonics (Pt nanoparticles are named in the title and their deposition sites are the main subject.)'
 - id: p0289
   doi: 10.1021/nn700381y
   tag_source: ai
@@ -5410,6 +5672,7 @@
     confidence: high
     evidence: classical valence force field (VFF) model
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0290
   doi: 10.1002/adma.200702994
   tag_source: ai
@@ -5430,6 +5693,7 @@
     confidence: medium
     evidence: different outward and inward diffusion rates of Fe and O
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0291
   doi: 10.1038/nmat2295
   tag_source: ai
@@ -5442,6 +5706,7 @@
     confidence: medium
     evidence: Ultrahigh stress and strain
   note: Title only; keywords suggest in situ compression of hollow CdS particles, not used for tagging.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0292
   doi: 10.1074/jbc.m803833200
   tag_source: ai
@@ -5460,6 +5725,7 @@
     confidence: low
     evidence: Protein-nanocrystal conjugates support a single filamentpolymerization model
   note: Biology paper using gold-DNA conjugates as plasmid mimics; no area fits.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0293
   doi: 10.1021/ja804414f
   tag_source: ai
@@ -5477,6 +5743,7 @@
     confidence: high
     evidence: Ligand Exchangeat Cadmium Selenide Nanocrystal Surfaces
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0294
   doi: 10.1103/physrevb.78.165410
   tag_source: ai
@@ -5494,6 +5761,7 @@
     confidence: high
     evidence: x-ray diffraction with a synchrotron light source
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0295
   doi: 10.1021/nl0802032
   tag_source: ai
@@ -5511,6 +5779,7 @@
     evidence: Discrete DNA-gold nanoparticle conjugates
   approaches: []
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0296
   doi: 10.1021/ja8026746
   tag_source: ai
@@ -5528,6 +5797,7 @@
     confidence: high
     evidence: multiparticle building blocks for nanoscale self-assembly
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0297
   doi: 10.1021/nl801817d
   tag_source: ai
@@ -5546,6 +5816,7 @@
     confidence: high
     evidence: solution-processed solar cell with 1.6% power conversion efficiency
   note: Cu2S fits no materials tag.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0298
   doi: 10.1155/2007/26796
   tag_source: ai
@@ -5566,6 +5837,7 @@
     confidence: medium
     evidence: specific attachment of DNA via gold-thiol bonds
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0299
   doi: 10.1021/nl080678t
   tag_source: ai
@@ -5584,6 +5856,7 @@
     evidence: contacted via evaporated Pd electrodes
   applications: []
   note: Single-nanocrystal electrical transport and contact reactivity; no area fits cleanly.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0300
   doi: 10.1039/b801392f
   tag_source: ai
@@ -5605,6 +5878,7 @@
     confidence: high
     evidence: a new biological label for X-ray bio-imaging applications
   note: Biological labeling paper; no area assigned.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0301
   doi: 10.1021/nn800270m
   tag_source: ai
@@ -5613,12 +5887,17 @@
   - tag: synthesis
     confidence: high
     evidence: Sulfidation of Cadmium at the Nanoscale
-  materials: []
+  materials:
+  - tag: metals-plasmonics
+    confidence: medium
+    evidence: spherical Cd nanoparticles of a few hundred nanometers
   approaches:
   - tag: chemical-transformation
     confidence: high
     evidence: the nanoscale Kirkendall effect
   applications: []
+  reviewed: 'ai-review 2026-10-20: add materials:metals-plasmonics (Title names cadmium; the subject is reaction of Cd metal nanoparticles, as tagged for Co Kirkendall
+    papers.)'
 - id: p0302
   doi: 10.1021/nl072003g
   tag_source: ai
@@ -5633,6 +5912,7 @@
     evidence: CdSe/CdS heterostructure nanorods and nanotetrapods
   approaches: []
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0303
   doi: 10.1002/adma.200701470
   tag_source: ai
@@ -5647,6 +5927,7 @@
     confidence: high
     evidence: Self-assembly of multicomponent nanoparticles
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0304
   doi: 10.1126/science.1142593
   tag_source: ai
@@ -5667,6 +5948,7 @@
     confidence: medium
     evidence: Ab initio calculations of the interfacial energy
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0305
   doi: 10.1021/nl071027k
   tag_source: ai
@@ -5691,6 +5973,7 @@
     confidence: medium
     evidence: ZnO/ZnS core/shell nanowires can be used as photovoltaic devices
   note: Purely computational; area spectroscopy chosen for electronic structure.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0306
   doi: 10.1073/pnas.0607826104
   tag_source: ai
@@ -5712,6 +5995,7 @@
     confidence: medium
     evidence: measure dynamical biophysical processes
   note: Plasmon-ruler biology application; no area assigned (consistent with p0269).
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0307
   doi: 10.1021/ja0656696
   tag_source: ai
@@ -5726,6 +6010,7 @@
     evidence: colloidal group II-VI semiconductor nanocrystals
   approaches: []
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0308
   doi: 10.1021/nl070586o
   tag_source: ai
@@ -5746,6 +6031,7 @@
     confidence: medium
     evidence: dynamic interaction between Co nanocrystals and surfactant + solvent molecules
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0309
   doi: 10.1021/ja074481z
   tag_source: ai
@@ -5760,6 +6046,7 @@
     evidence: narrow-gap semiconductor quantum dots
   approaches: []
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0310
   doi: 10.1021/ja072588g
   tag_source: ai
@@ -5783,14 +6070,12 @@
     confidence: medium
     evidence: an activated surface diffusion process
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0311
   doi: 10.1021/nl062660t
   tag_source: ai
   basis: abstract
-  areas:
-  - tag: synthesis
-    confidence: low
-    evidence: hyperbranched colloidal semiconductor nanocrystals
+  areas: []
   materials:
   - tag: rods-heterostructures
     confidence: high
@@ -5807,6 +6092,7 @@
     confidence: high
     evidence: Hybrid solar cells
   note: Device paper; area synthesis is a weak fit.
+  reviewed: 'ai-review 2026-10-20: remove areas:synthesis (Solar-cell device paper; no nanocrystal synthesis or material-focused property study in abstract.)'
 - id: p0312
   doi: 10.1021/nl0626434
   tag_source: ai
@@ -5828,6 +6114,7 @@
     confidence: high
     evidence: as fluorescent biological labels
   note: Biological labeling paper; no area assigned.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0313
   doi: 10.1063/1.2786993
   tag_source: ai
@@ -5852,6 +6139,7 @@
     confidence: high
     evidence: Mechanical and electrical properties of CdTe tetrapods
   note: AFM mechanics and I-V on single tetrapods; area fit is weak.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0314
   doi: 10.1021/jp073474u
   tag_source: ai
@@ -5875,6 +6163,7 @@
     confidence: high
     evidence: microfluidic X-ray absorption spectroscopy
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0315
   doi: 10.1021/ja072574a
   tag_source: ai
@@ -5895,6 +6184,7 @@
     confidence: high
     evidence: vacancies, which coalesce at the metal/oxide interface
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0316
   doi: 10.1021/jp065986z
   tag_source: ai
@@ -5918,6 +6208,7 @@
     confidence: medium
     evidence: they have reconstructed Cd-rich surfaces
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0317
   doi: 10.1021/nl060994c
   tag_source: ai
@@ -5938,6 +6229,7 @@
     confidence: high
     evidence: Two-dimensional nanoparticle arrays
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0318
   doi: 10.1021/nl0603350
   tag_source: ai
@@ -5953,6 +6245,7 @@
     confidence: high
     evidence: examined the molecular and cellular response of cells treated
   note: Cytotoxicity and gene-expression study of PEG-silane QDs; no research area fits.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0319
   doi: 10.1021/nl060483q
   tag_source: ai
@@ -5973,6 +6266,7 @@
     confidence: high
     evidence: Autocorrelation analysis of lifetime and intensity fluctuations
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0320
   doi: 10.1002/adfm.200600256
   tag_source: ai
@@ -5994,6 +6288,7 @@
     evidence: An idealized model of the diffusional process
   applications: []
   note: Product is cobalt sulfide (no matching material tag); metals tag reflects the Co nanocrystal precursor.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0321
   doi: 10.1021/ja0646038
   tag_source: ai
@@ -6011,6 +6306,7 @@
     confidence: high
     evidence: performing a replacement reaction on single crystalline Ag nanospheres
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0322
   doi: 10.1021/nl0615930
   tag_source: ai
@@ -6023,6 +6319,7 @@
   approaches: []
   applications: []
   note: Bi2S3 has no matching material tag.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0323
   doi: 10.1021/jp062028o
   tag_source: ai
@@ -6044,6 +6341,7 @@
     evidence: time-resolved scattering and absorption measurements
   applications: []
   note: Semiconductor composition not named in abstract.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0324
   doi: 10.1021/nl060866o
   tag_source: ai
@@ -6061,6 +6359,7 @@
     confidence: high
     evidence: Electric-field-assisted assembly
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0325
   doi: 10.1016/j.msea.2006.07.126
   tag_source: ai
@@ -6079,6 +6378,7 @@
     confidence: medium
     evidence: Strain and deformation in ultra-hard nanocomposites
   note: TiN/BN nanocomposite; no matching material tag.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0326
   doi: 10.1038/nnano.2006.51
   tag_source: ai
@@ -6100,6 +6400,7 @@
     confidence: medium
     evidence: measuring nuclease activity and DNA footprinting
   note: Plasmon-ruler bioassay; area assigned for consistency with other plasmon-ruler papers.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0327
   doi: 10.1021/jp0652852
   tag_source: ai
@@ -6121,6 +6422,7 @@
     confidence: high
     evidence: hybrid bulk-heterojunction solar cells
   note: Solar-cell device paper; none of the four areas fits well.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0328
   doi: 10.1021/ja056139x
   tag_source: ai
@@ -6138,6 +6440,7 @@
     confidence: medium
     evidence: monitored via in situ UV-vis spectroscopy
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0329
   doi: 10.1038/nature04165
   tag_source: ai
@@ -6153,6 +6456,7 @@
     evidence: the organic-inorganic interface
   applications: []
   note: Review article (title-only).
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0330
   doi: 10.1126/science.1117908
   tag_source: ai
@@ -6168,6 +6472,7 @@
     confidence: high
     evidence: ultrathin donor-acceptor solar cell
   note: Solar-cell device paper; nanocrystal composition not given in abstract; no area fits well.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0331
   doi: 10.1038/nbt1100
   tag_source: ai
@@ -6185,6 +6490,7 @@
     confidence: medium
     evidence: single gold and silver nanoparticles
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0332
   doi: 10.1021/nl048089k
   tag_source: ai
@@ -6203,6 +6509,7 @@
     evidence: monitoring the polarized light scattering from individual gold nanorods
   applications: []
   note: Biology use is only suggested, so no application tag.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0333
   doi: 10.1021/nl051592s
   tag_source: ai
@@ -6220,6 +6527,7 @@
     confidence: medium
     evidence: plasmon peak versus separation calibration curves
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0334
   doi: 10.1021/nl0511667
   tag_source: ai
@@ -6237,6 +6545,7 @@
     confidence: high
     evidence: femtosecond pump-probe spectroscopy
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0335
   doi: 10.1557/mrs2005.8
   tag_source: ai
@@ -6258,6 +6567,7 @@
     confidence: high
     evidence: scalable solar power conversion
   note: Review of hybrid solar cells; no area fits well.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0336
   doi: 10.1021/jp0445573
   tag_source: ai
@@ -6278,6 +6588,7 @@
     confidence: high
     evidence: surfactant binding energies are calculated
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0337
   doi: 10.1021/nl047947%2b
   tag_source: ai
@@ -6293,6 +6604,7 @@
     evidence: optical behavior
   applications: []
   note: Title-only and vague; material and focus unclear.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0338
   doi: 10.1107/s0909049505020959
   tag_source: ai
@@ -6308,6 +6620,7 @@
     evidence: A beamline for high-pressure studies at the Advanced Light Source
   applications: []
   note: Beamline instrumentation paper; no nanocrystal material.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0339
   doi: 10.1021/nl0518728
   tag_source: ai
@@ -6325,6 +6638,7 @@
     confidence: medium
     evidence: characterized with TEM tomography
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0340
   doi: 10.1016/j.conb.2005.08.004
   tag_source: ai
@@ -6340,6 +6654,7 @@
     confidence: medium
     evidence: Semiconductor nanocrystals for biological imaging
   note: Review (title-only); biology application, no area.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0341
   doi: 10.1021/nl051064g
   tag_source: ai
@@ -6361,6 +6676,7 @@
     evidence: We employ the single-electron transistor approach
   applications: []
   note: Electrical transport physics; area fit uncertain (spectroscopy chosen as closest).
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0342
   doi: 10.1088/0957-4484/16/12/013
   tag_source: ai
@@ -6378,6 +6694,7 @@
     confidence: high
     evidence: pressure-induced gamma to alpha structural phase transition
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0343
   doi: 10.1021/cm0484089
   tag_source: ai
@@ -6401,6 +6718,7 @@
     confidence: medium
     evidence: analyzed by transmission electron microscopy
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0344
   doi: 10.1021/ja051381p
   tag_source: ai
@@ -6419,6 +6737,7 @@
     evidence: four different residence times in the span of 4 h
   applications: []
   note: Microfluidic reactor tagged as automated/high-throughput synthesis.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0345
   doi: 10.1146/annurev.bioeng.7.060804.100432
   tag_source: ai
@@ -6434,6 +6753,7 @@
     confidence: high
     evidence: quantum dot usage at the cellular level
   note: Review; biology application, no area.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0346
   doi: 10.1021/nl049537r
   tag_source: ai
@@ -6454,6 +6774,7 @@
   - tag: mechanics-sensing
     confidence: medium
     evidence: Critical size for fracture
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0347
   doi: 10.1126/science.1096566
   tag_source: ai
@@ -6475,6 +6796,7 @@
     evidence: nanoscale Kirkendall Effect
   applications: []
   note: Catalysis only suggested ("may serve"), so no application tag.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0348
   doi: 10.1103/physrevlett.92.127406
   tag_source: ai
@@ -6492,6 +6814,7 @@
     confidence: high
     evidence: directly probing the absorption from the ionized electron
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0349
   doi: 10.1126/science.1103755
   tag_source: ai
@@ -6507,6 +6830,7 @@
     evidence: Complete and fully reversible exchange occurs
   applications: []
   note: Materials not named in abstract (various compositions and shapes).
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0350
   doi: 10.1021/nl0485861
   tag_source: ai
@@ -6527,6 +6851,7 @@
     confidence: high
     evidence: binding energy of phosphine oxide, phosphonic and carboxylic acids
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0351
   doi: 10.1038/nature02695
   tag_source: ai
@@ -6541,6 +6866,7 @@
     evidence: heterostructures with linear and branched topology
   approaches: []
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0352
   doi: 10.1021/ja0489184
   tag_source: ai
@@ -6559,6 +6885,7 @@
     confidence: high
     evidence: hybrid solar cells
   note: Solar-cell device paper; no area fits well.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0353
   doi: 10.1021/nl048523i
   tag_source: ai
@@ -6576,6 +6903,7 @@
     evidence: decorated with Au nanoparticles in a site selective fashion
   approaches: []
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0354
   doi: 10.1116/1.1821572
   tag_source: ai
@@ -6597,6 +6925,7 @@
     evidence: lithographically produced topographic features
   applications: []
   note: Directed assembly on lithographic templates; synthesis area is a loose fit.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0355
   doi: 10.1063/1.1640331
   tag_source: ai
@@ -6617,6 +6946,7 @@
     confidence: medium
     evidence: formation of the liquid crystalline phase
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0356
   doi: 10.1021/ja046747x
   tag_source: ai
@@ -6641,6 +6971,7 @@
     evidence: Statistics from TEM analysis showed a high yield
   applications: []
   note: Au nanoparticles are also central; metals tag omitted only because of the 2-material limit.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0357
   doi: 10.1021/nl049488i
   tag_source: ai
@@ -6659,6 +6990,7 @@
     evidence: fabricating large-scale device arrays
   applications: []
   note: Directed assembly into devices; synthesis area is a loose fit.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0358
   doi: 10.1038/nbt927
   tag_source: ai
@@ -6671,6 +7003,7 @@
     confidence: medium
     evidence: nanocrystals in biological detection
   note: Review (title-only); biology application, no area.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0359
   doi: 10.1021/la0207421
   tag_source: ai
@@ -6685,6 +7018,7 @@
     evidence: Encapsulation of metal (Au, Ag, Pt) nanoparticles
   approaches: []
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0360
   doi: 10.1098/rsta.2002.1126
   tag_source: ai
@@ -6703,6 +7037,7 @@
   approaches: []
   applications: []
   note: Review/overview; applications only described briefly.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0361
   doi: 10.1111/j.1432-0436.2003.07109006.x
   tag_source: ai
@@ -6718,6 +7053,7 @@
     confidence: medium
     evidence: cell motility assay
   note: Biology application, no area.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0362
   doi: 10.1021/nl025888z
   tag_source: ai
@@ -6738,6 +7074,7 @@
     confidence: high
     evidence: conformation of the oligonucleotides adsorbed on the Au surface
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0363
   doi: 10.1088/0957-4484/14/7/201
   tag_source: ai
@@ -6753,6 +7090,7 @@
     confidence: high
     evidence: fluorescent probes for cellular imaging
   note: Review; biology application, no area.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0364
   doi: 10.1002/adma.200390011
   tag_source: ai
@@ -6772,11 +7110,9 @@
   - tag: surface-ligands
     confidence: high
     evidence: strong binding to the surface of a CdSe nanocrystal
-  applications:
-  - tag: solar-energy
-    confidence: low
-    evidence: organic–inorganic heterojunction solar cells
+  applications: []
   note: Solar cells stated as target but phrased as "could improve".
+  reviewed: 'ai-review 2026-10-20: remove applications:solar-energy (No solar devices made; solar cells are only a possible future use (motivation).)'
 - id: p0365
   doi: 10.1038/nmat902
   tag_source: ai
@@ -6791,6 +7127,7 @@
     evidence: tetrapod-branched inorganic nanocrystals
   approaches: []
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0366
   doi: 10.1002/adma.200390093
   tag_source: ai
@@ -6808,6 +7145,7 @@
     confidence: high
     evidence: superlattice structures of CdSe nanorods
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0367
   doi: 10.1103/physrevlett.90.097402
   tag_source: ai
@@ -6825,6 +7163,7 @@
     confidence: medium
     evidence: Transient electric birefringence measurements
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0368
   doi: 10.1039/b210053c
   tag_source: ai
@@ -6837,6 +7176,7 @@
   approaches: []
   applications: []
   note: Mesoporous silica, not nanocrystals; no material tag fits.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0369
   doi: 10.1021/cm020824a
   tag_source: ai
@@ -6857,6 +7197,7 @@
   - tag: catalysis
     confidence: medium
     evidence: new synthetic route for the production of catalyst materials
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0370
   doi: 10.1021/ja0369515
   tag_source: ai
@@ -6874,6 +7215,7 @@
     confidence: medium
     evidence: surface selective surfactant is the key parameter
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0371
   doi: 10.1103/physrevb.67.115326
   tag_source: ai
@@ -6898,6 +7240,7 @@
     confidence: high
     evidence: hybrid nanorod-polymer composite photovoltaic cells
   note: Device charge-transport physics; no area fits well.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0372
   doi: 10.1002/adfm.200390009
   tag_source: ai
@@ -6925,6 +7268,7 @@
     confidence: high
     evidence: nanocrystal-polymer composites for solar cells
   note: Solar-cell morphology paper; synthesis area only for its ligand chemistry.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0373
   doi: 10.1021/ac034482j
   tag_source: ai
@@ -6943,6 +7287,7 @@
     confidence: high
     evidence: detect both SNP and single-base deletion at room temperature
   note: Biosensing application, no area.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0374
   doi: 10.1021/nl0259481
   tag_source: ai
@@ -6961,6 +7306,7 @@
     evidence: test wide ranges of conditions precisely and rapidly
   applications: []
   note: Microfluidic reactor tagged as automated/high-throughput synthesis.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0375
   doi: 10.1021/nl0300010
   tag_source: ai
@@ -6970,6 +7316,7 @@
   approaches: []
   applications: []
   note: Editorial; abstract field is publisher page boilerplate, so treated as title-only; no tags.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0376
   doi: 10.1021/nl020238g
   tag_source: ai
@@ -6979,6 +7326,7 @@
   approaches: []
   applications: []
   note: Editorial; abstract field is publisher page boilerplate, so treated as title-only; no tags.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0377
   doi: 10.1021/jp026144c
   tag_source: ai
@@ -7002,6 +7350,7 @@
     confidence: high
     evidence: Detailed characterization by transmission electron microscopy (TEM)
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0378
   doi: 10.1021/jp020170t
   tag_source: ai
@@ -7025,6 +7374,7 @@
     confidence: medium
     evidence: extinction coefficients and oscillator strengths are also obtained
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0379
   doi: 10.1063/1.1460856
   tag_source: ai
@@ -7045,6 +7395,7 @@
     confidence: high
     evidence: spectrum of a single nanocrystal and the ensemble
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0380
   doi: 10.1021/ja027262g
   tag_source: ai
@@ -7062,6 +7413,7 @@
     confidence: medium
     evidence: spontaneously self-assemble into long ribbons
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0381
   doi: 10.1023/a%3a1015252904412
   tag_source: ai
@@ -7077,6 +7429,7 @@
   approaches: []
   applications: []
   note: Journal is Topics in Catalysis but the title states no catalytic application; catalysis not tagged.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0382
   doi: 10.1021/cm0107878
   tag_source: ai
@@ -7100,6 +7453,7 @@
   - tag: bio-imaging
     confidence: medium
     evidence: tool for fluorescence imaging and probing of biological systems
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0383
   doi: 10.1002/1521-4095(20020618)14%3a12%3c882%3a%3aaid-adma882%3e3.0.co%3b2-y
   tag_source: ai
@@ -7115,6 +7469,7 @@
     confidence: medium
     evidence: Cell motility and metastatic potential studies
   note: Cell-biology application of quantum dot imaging; no research area fits.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0384
   doi: 10.1142/s0218625x02002439
   tag_source: ai
@@ -7133,6 +7488,7 @@
     evidence: Spatially resolved soft X-ray absorption spectra
   applications: []
   note: Measured islands of 4-30 particles rather than single nanocrystals, so single-particle not tagged.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0385
   doi: 10.1021/ja025946i
   tag_source: ai
@@ -7147,6 +7503,7 @@
     evidence: core/shell CdSe/CdS/ZnS nanorods
   approaches: []
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0386
   doi: 10.1023/a%3a1021175612112
   tag_source: ai
@@ -7162,6 +7519,7 @@
   approaches: []
   applications: []
   note: Title-only; rods/tetrapods inferred from "shape control", not stated.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0387
   doi: 10.1021/nl0255146
   tag_source: ai
@@ -7179,6 +7537,7 @@
     confidence: high
     evidence: formation of liquid crystalline phases of CdSe semiconductor nanorods
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0388
   doi: 10.1023/a%3a1016505912884
   tag_source: ai
@@ -7194,6 +7553,7 @@
   approaches: []
   applications: []
   note: Journal is Catalysis Letters but the title states no catalytic application; catalysis not tagged.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0389
   doi: 10.1021/nl0256661
   tag_source: ai
@@ -7209,6 +7569,7 @@
   approaches: []
   applications: []
   note: X-ray scattering and TEM used as characterization only; not tagged as approaches.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0390
   doi: 10.1021/jp015563r
   tag_source: ai
@@ -7229,6 +7590,7 @@
     confidence: medium
     evidence: Threshold size for ambient metastability
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0391
   doi: 10.1126/science.1069156
   tag_source: ai
@@ -7250,6 +7612,7 @@
     confidence: high
     evidence: Hybrid nanorod-polymer solar cells
   note: Device paper; none of the four areas clearly fits (synthesis possible via nanorod length/radius control).
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0392
   doi: ''
   tag_source: ai
@@ -7265,6 +7628,7 @@
   approaches: []
   applications: []
   note: Title-only; "biomedical applications" of magnetic particles does not map clearly to bio-imaging, so no application tagged.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0393
   doi: 10.1021/jp013204q
   tag_source: ai
@@ -7283,6 +7647,7 @@
     evidence: semiempirical pseudopotential calculations
   applications: []
   note: Pure theory of electronic structure; placed under spectroscopy and structure.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0394
   doi: 10.1063/1.1491407
   tag_source: ai
@@ -7300,6 +7665,7 @@
     confidence: high
     evidence: A theoretical model based on the proposed mechanism
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0395
   doi: 10.1021/ja017822w
   tag_source: ai
@@ -7318,6 +7684,7 @@
     confidence: medium
     evidence: improved biolabeling experiments, such as gene mapping
   note: DNA-coded nanocrystals sorted by hybridization for biolabeling; no area clearly fits (synthesis/assembly possible).
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0396
   doi: 10.1021/nl010098v
   tag_source: ai
@@ -7327,6 +7694,7 @@
   approaches: []
   applications: []
   note: Editorial; abstract field holds publisher page boilerplate, not an abstract; tagged from title. No content tags.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0397
   doi: 10.1021/nl005508e
   tag_source: ai
@@ -7344,6 +7712,7 @@
     evidence: discrete Au nanocrystal/DNA conjugates
   approaches: []
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0398
   doi: 10.1063/1.1362333
   tag_source: ai
@@ -7361,6 +7730,7 @@
     confidence: high
     evidence: two-dimensional superlattice of single-crystal ε-Co nanoparticles
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0399
   doi: 10.1126/science.1058495
   tag_source: ai
@@ -7379,6 +7749,7 @@
     evidence: two- and three-dimensional superstructures, including ribbons of nanorods
   applications: []
   note: Cobalt nanorods are metal, so rods-heterostructures (semiconductor) not tagged.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0400
   doi: 10.1002/1438-5171(200112)2%3a4%3c261%3a%3aaid-simo261%3e3.0.co%3b2-p
   tag_source: ai
@@ -7394,6 +7765,7 @@
     confidence: medium
     evidence: application to biological labeling
   note: Title-only; "properties" too vague to assign an area.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0401
   doi: 10.1021/nl015559r
   tag_source: ai
@@ -7409,6 +7781,7 @@
   approaches: []
   applications: []
   note: Could also be synthesis (size- and shape-controlled rods); measurement method not stated.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0402
   doi: 10.1103/physrevb.63.205309
   tag_source: ai
@@ -7429,6 +7802,7 @@
     confidence: medium
     evidence: A simple model incorporating the angle-dependent Zeeman splitting
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0403
   doi: 10.1126/science.1063581
   tag_source: ai
@@ -7446,6 +7820,7 @@
     confidence: high
     evidence: pressure dependence of the relaxation times
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0404
   doi: 10.2138/rmg.2001.44.02
   tag_source: ai
@@ -7461,6 +7836,7 @@
     evidence: pressure-induced structural phase transitions
   applications: []
   note: Title-only review chapter; material not named.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0405
   doi: 10.1126/science.1060810
   tag_source: ai
@@ -7484,6 +7860,7 @@
     confidence: medium
     evidence: Empirical pseudopotential calculations predict
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0406
   doi: 10.1021/jp0105488
   tag_source: ai
@@ -7505,6 +7882,7 @@
     confidence: low
     evidence: would permit the conjugation of the nanocrystals to biological entities
   note: Biological use is prospective ("biocompatible", "would permit"), hence low.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0407
   doi: 10.1364/ol.26.000825
   tag_source: ai
@@ -7523,6 +7901,7 @@
     confidence: high
     evidence: Time-gated biological imaging by use of colloidal quantum dots
   note: Bio-imaging method paper; no area clearly fits.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0408
   doi: 10.1021/nl0001914
   tag_source: ai
@@ -7532,6 +7911,7 @@
   approaches: []
   applications: []
   note: Editorial; abstract field holds publisher page boilerplate, not an abstract; tagged from title. No content tags.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0409
   doi: 10.1021/nl010012y
   tag_source: ai
@@ -7542,6 +7922,7 @@
   applications: []
   note: Editorial on nanothermodynamics; abstract field holds publisher page boilerplate, not an abstract; tagged from title. Thermodynamics approach not tagged because
     it is not a study.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0410
   doi: 10.1038/scientificamerican0901-66
   tag_source: ai
@@ -7554,6 +7935,7 @@
     confidence: low
     evidence: applications in biomedical research, disease diagnosis
   note: Title-only popular article (Scientific American).
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0411
   doi: 10.1103/physrevlett.84.923
   tag_source: ai
@@ -7574,6 +7956,7 @@
     confidence: medium
     evidence: Simulations of the diffraction patterns reveal that a shape change
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0412
   doi: 10.1038/35003535
   tag_source: ai
@@ -7589,6 +7972,7 @@
   approaches: []
   applications: []
   note: Title-only; rods inferred from "shape control", not stated.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0413
   doi: 10.1038/35024031
   tag_source: ai
@@ -7604,6 +7988,7 @@
     evidence: single-C-60 transistor
   applications: []
   note: Title-only; single-molecule C60 transistor fits no area; C60 is not strictly a nanotube/graphene/2D material.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0414
   doi: 10.1021/ja003055
   tag_source: ai
@@ -7618,6 +8003,7 @@
     evidence: rod-, arrow-, teardrop-, and tetrapod-shaped CdSe nanocrystals
   approaches: []
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0415
   doi: 10.1016/s0009-2614(00)01042-3
   tag_source: ai
@@ -7642,6 +8028,7 @@
     evidence: We observe strong photon antibunching
   applications: []
   note: Quantum area for antibunching (single-photon emission); quantum-tech application not stated.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0416
   doi: 10.1063/1.482008
   tag_source: ai
@@ -7662,6 +8049,7 @@
     confidence: high
     evidence: photoluminescence (PL) and fluorescence line narrowing (FLN) techniques
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0417
   doi: 10.1073/pnas.170286097
   tag_source: ai
@@ -7680,6 +8068,7 @@
     evidence: Ultrahigh-resolution multicolor colocalization of single fluorescent probes
   applications: []
   note: Optical microscopy method paper; spectroscopy area is a loose fit.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0418
   doi: 10.1351/pac200072010003
   tag_source: ai
@@ -7698,6 +8087,7 @@
     confidence: medium
     evidence: From scaling laws to biological applications
   note: Overview article; area is a loose fit.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0419
   doi: 10.1126/science.289.5480.736
   tag_source: ai
@@ -7713,6 +8103,7 @@
     evidence: nanocrystals may also form oriented assemblies
   applications: []
   note: Perspective on natural oriented attachment.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0420
   doi: 10.1103/physrevb.59.4973
   tag_source: ai
@@ -7733,6 +8124,7 @@
     confidence: high
     evidence: Femtosecond pump-probe spectroscopy of these QDQW
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0421
   doi: 10.1063/1.478858
   tag_source: ai
@@ -7751,6 +8143,7 @@
     evidence: manifold of crystal–ligand bonding configurations
   applications: []
   note: NMR surface-structure study; area could also be spectroscopy.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0422
   doi: 10.1021/ja993280v
   tag_source: ai
@@ -7766,6 +8159,7 @@
   approaches: []
   applications: []
   note: abstract field holds publisher page boilerplate, not an abstract; tagged from title.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0423
   doi: 10.1063/1.124354
   tag_source: ai
@@ -7781,6 +8175,7 @@
     evidence: fabricate metallic electrodes with nanometer separation
   applications: []
   note: Device fabrication method; no area fits.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0424
   doi: 10.1002/(sici)1521-3773(19990614)38%3a12%3c1808%3a%3aaid-anie1808%3e3.0.co%3b2-c
   tag_source: ai
@@ -7801,6 +8196,7 @@
     confidence: medium
     evidence: DNA-based assembly of gold nanocrystals
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0425
   doi: 10.1002/(sici)1521-4095(199908)11%3a11%3c923%3a%3aaid-adma923%3e3.0.co%3b2-t
   tag_source: ai
@@ -7822,6 +8218,7 @@
     confidence: medium
     evidence: composite photovoltaic devices
   note: Title-only device paper; no area fits.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0426
   doi: 10.1080/01411599908224513
   tag_source: ai
@@ -7843,6 +8240,7 @@
     evidence: kinetic and thermodynamic stability of the transformed nanocrystal
   applications: []
   note: Also covers InP (iii-v) and Si (silicon-germanium); only the main II-VI material tagged.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0427
   doi: 10.1103/physrevlett.83.3474
   tag_source: ai
@@ -7866,6 +8264,7 @@
     confidence: medium
     evidence: FEFF7 multiple-scattering simulations reproduce the size dependent broadening
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0428
   doi: 10.1103/physrevb.59.r10421
   tag_source: ai
@@ -7887,6 +8286,7 @@
     evidence: Femtosecond-resolved Faraday rotation is used to probe spin dynamics
   applications: []
   note: Quantum area for spin coherence/dephasing study; QIS application not stated.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0429
   doi: 10.1063/1.478161
   tag_source: ai
@@ -7910,6 +8310,7 @@
     confidence: medium
     evidence: on–off intermittent behavior of emission
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0430
   doi: 10.1063/1.368542
   tag_source: ai
@@ -7934,6 +8335,7 @@
     evidence: production of binary, tertiary, and quatemary patterns of nanocrystals
   applications: []
   note: Patterning/assembly on substrates; area and generic materials are loose fits.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0431
   doi: 10.1021/jp9820121
   tag_source: ai
@@ -7955,6 +8357,7 @@
     evidence: Theoretical expressions for relaxation due to anisotropic motion are developed
   applications: []
   note: NMR ligand study; area could also be spectroscopy.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0432
   doi: 10.1021/ja9805425
   tag_source: ai
@@ -7973,6 +8376,7 @@
   approaches: []
   applications: []
   note: abstract field holds publisher page boilerplate, not an abstract; tagged from title.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0433
   doi: 10.1126/science.281.5385.2013
   tag_source: ai
@@ -7988,6 +8392,7 @@
     confidence: high
     evidence: fluorescent probes in biological staining and diagnostics
   note: Biological labeling paper; no area fits.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0434
   doi: 10.1063/1.476797
   tag_source: ai
@@ -8008,6 +8413,7 @@
     confidence: high
     evidence: An eight-band effective mass theory of the quantum size levels
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0435
   doi: 10.1002/(sici)1521-4095(199811)10%3a16%3c1297%3a%3aaid-adma1297%3e3.0.co%3b2-7
   tag_source: ai
@@ -8017,6 +8423,7 @@
   approaches: []
   applications: []
   note: Title-only general perspective; no tags.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0436
   doi: 10.1557/s0883769400031225
   tag_source: ai
@@ -8038,6 +8445,7 @@
     evidence: strategies for obtaining electrical access to such dots
   applications: []
   note: Review on electrical studies; no area clearly fits electrical transport.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0437
   doi: 10.1063/1.366452
   tag_source: ai
@@ -8047,9 +8455,9 @@
   - tag: quantum-dots
     confidence: high
     evidence: organically capped CdSe(CdS) core/shell type semiconductor nanocrystals
-  - tag: rods-heterostructures
+  - tag: polymer-composites
     confidence: medium
-    evidence: CdSe(CdS) core/shell type nanocrystals
+    evidence: core/shell type nanocrystals and a semiconducting polymer
   approaches:
   - tag: device-fabrication
     confidence: high
@@ -8059,6 +8467,8 @@
     confidence: high
     evidence: Improved efficiencies in light emitting diodes
   note: Device paper; no area fits. Bilayer with PPV polymer (polymer-composites possible but max 2 materials).
+  reviewed: 'ai-review 2026-10-20: remove materials:rods-heterostructures (Frees the second slot for the polymer named in title; core/shell dots stay tagged quantum-dots.);
+    add materials:polymer-composites (Semiconducting polymer (PPV) named in title; hybrid nanocrystal/polymer bilayer LED, as in sister paper p0471.)'
 - id: p0438
   doi: 10.1002/anie.199701451
   tag_source: ai
@@ -8076,6 +8486,7 @@
     confidence: medium
     evidence: linked by the bifunctional organic ligand, bis(acyl hydrazide)
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0439
   doi: 10.1021/ja970754m
   tag_source: ai
@@ -8094,6 +8505,7 @@
   approaches: []
   applications: []
   note: XPS, XRD, HRTEM used as characterization; not tagged as approaches.
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0440
   doi: 10.1002/bbpc.19971011111
   tag_source: ai
@@ -8117,6 +8529,7 @@
     confidence: high
     evidence: Hole Burning (HB) and Fluorescence Line Narrowing (FLN)
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0441
   doi: 10.1038/39535
   tag_source: ai
@@ -8138,6 +8551,7 @@
     evidence: A single-electron transistor
   applications: []
   note: single-nanocrystal electrical transport; spectroscopy area is a loose fit
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0442
   doi: 10.1016/s0379-6779(97)80852-1
   tag_source: ai
@@ -8159,6 +8573,7 @@
     evidence: photoluminescence quenching
   applications: []
   note: companion to p0455; photovoltaic use not stated in title
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0443
   doi: 10.1126/science.276.5311.398
   tag_source: ai
@@ -8174,6 +8589,7 @@
   approaches: []
   applications: []
   note: measurement method (high pressure) not stated in abstract, so no approach tag
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0444
   doi: 10.1006/spmi.1997.0504
   tag_source: ai
@@ -8188,6 +8604,7 @@
     evidence: InAs nanocrystal quantum dots
   approaches: []
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0445
   doi: 10.1103/physrevb.55.7059
   tag_source: ai
@@ -8208,6 +8625,7 @@
     confidence: medium
     evidence: calculated and assigned using a model which includes valence-band mixing
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0446
   doi: 10.1002/bbpc.19971011104
   tag_source: ai
@@ -8223,6 +8641,7 @@
   approaches: []
   applications: []
   note: no specific material or method named in abstract
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0447
   doi: 10.1016/s0160-9327(97)01018-1
   tag_source: ai
@@ -8235,6 +8654,7 @@
   approaches: []
   applications: []
   note: general overview; title only
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0448
   doi: 10.1103/physrevlett.76.4384
   tag_source: ai
@@ -8252,6 +8672,7 @@
     confidence: high
     evidence: high pressure x-ray diffraction peak widths
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0449
   doi: 10.1016/0022-3093(96)00144-5
   tag_source: ai
@@ -8267,6 +8688,7 @@
   approaches: []
   applications: []
   note: solid-state NMR; no approach tag covers NMR of the inorganic core
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0450
   doi: 10.1103/physrevb.53.r13242
   tag_source: ai
@@ -8290,6 +8712,7 @@
     confidence: high
     evidence: transient hole burning and fluorescence line-narrowing spectroscopy
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0451
   doi: 10.1063/1.116188
   tag_source: ai
@@ -8314,6 +8737,7 @@
     evidence: devices are fabricated using a hybrid scheme
   applications: []
   note: single-nanocrystal electrical transport; spectroscopy area is a loose fit
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0452
   doi: 10.1088/0957-4484/7/4/016
   tag_source: ai
@@ -8332,6 +8756,7 @@
     evidence: scanning probe microscopy of CdSe and Au nanocrystals
   applications: []
   note: conducting-tip AFM method paper; no area fits
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0453
   doi: 10.1021/jp953719f
   tag_source: ai
@@ -8355,6 +8780,7 @@
     confidence: medium
     evidence: Raman spectroscopy reveals TO and LO modes
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0454
   doi: 10.1063/1.117605
   tag_source: ai
@@ -8369,6 +8795,7 @@
     evidence: InAs nanocrystal quantum dots
   approaches: []
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0455
   doi: 10.1103/physrevb.54.17628
   tag_source: ai
@@ -8396,6 +8823,7 @@
     confidence: high
     evidence: Thin-film photovoltaic devices
   note: area could also be synthesis (composite properties)
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0456
   doi: 10.1080/10587259608037856
   tag_source: ai
@@ -8419,6 +8847,7 @@
     confidence: medium
     evidence: transmission electron microscopy study
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0457
   doi: 10.1038/382609a0
   tag_source: ai
@@ -8437,6 +8866,7 @@
     evidence: Organization of 'nanocrystal molecules' using DNA
   applications: []
   note: metal (gold) not named in title, so no metals tag
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0458
   doi: 10.1021/jp9535506
   tag_source: ai
@@ -8452,6 +8882,7 @@
   approaches: []
   applications: []
   note: broad perspective/review
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0459
   doi: 10.1126/science.271.5251.933
   tag_source: ai
@@ -8467,6 +8898,7 @@
   approaches: []
   applications: []
   note: broad review
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0460
   doi: 10.1146/annurev.pc.46.100195.003115
   tag_source: ai
@@ -8490,6 +8922,7 @@
     confidence: medium
     evidence: High-pressure Raman spectroscopy
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0461
   doi: 10.1063/1.469512
   tag_source: ai
@@ -8513,6 +8946,7 @@
     confidence: medium
     evidence: high pressure optical absorption
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0462
   doi: 10.1021/j100048a017
   tag_source: ai
@@ -8528,6 +8962,7 @@
   approaches: []
   applications: []
   note: abstract field holds only publisher page boilerplate; tagged from title
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0463
   doi: 10.1063/1.470618
   tag_source: ai
@@ -8546,6 +8981,7 @@
     evidence: as well as x-ray diffraction
   applications: []
   note: main method is 71Ga/75As NMR, which no approach tag covers
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0464
   doi: 10.1557/s0883769400045073
   tag_source: ai
@@ -8561,6 +8997,7 @@
   approaches: []
   applications: []
   note: edited transcript of an award lecture
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0465
   doi: 10.1103/physrevlett.73.3266
   tag_source: ai
@@ -8581,6 +9018,7 @@
     confidence: high
     evidence: measured in a diamond anvil cell
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0466
   doi: 10.1126/science.265.5170.373
   tag_source: ai
@@ -8604,6 +9042,7 @@
     confidence: medium
     evidence: High-pressure x-ray diffraction and optical absorption
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0467
   doi: 10.1103/physrevb.49.14435
   tag_source: ai
@@ -8621,6 +9060,7 @@
     confidence: high
     evidence: Femtosecond photon-echo techniques are used
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0468
   doi: 10.1021/j100066a034
   tag_source: ai
@@ -8642,6 +9082,7 @@
     evidence: Applications to Studies of the Nanocrystal Surface
   applications: []
   note: abstract field holds only publisher page boilerplate; tagged from title
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0469
   doi: 10.1063/1.468107
   tag_source: ai
@@ -8659,6 +9100,7 @@
     confidence: high
     evidence: Luminescence excitation spectra are employed
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0470
   doi: 10.1063/1.467781
   tag_source: ai
@@ -8682,6 +9124,7 @@
     confidence: medium
     evidence: correlated with a Mie theory extinction calculation
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0471
   doi: 10.1038/370354a0
   tag_source: ai
@@ -8703,6 +9146,7 @@
     confidence: medium
     evidence: Light-Emitting-Diodes
   note: device paper; none of the four areas fits
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0472
   doi: 10.1063/1.468338
   tag_source: ai
@@ -8720,6 +9164,7 @@
     confidence: high
     evidence: Stark effect on the electronic absorption spectrum
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0473
   doi: 10.1021/j100089a008
   tag_source: ai
@@ -8738,6 +9183,7 @@
     evidence: Probing Cds Nanocrystal Surfaces
   applications: []
   note: abstract field holds only publisher page boilerplate; tagged from title
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0474
   doi: 10.1007/bf01429106
   tag_source: ai
@@ -8753,6 +9199,7 @@
   approaches: []
   applications: []
   note: method not stated in title
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0475
   doi: 10.1063/1.464501
   tag_source: ai
@@ -8770,6 +9217,7 @@
     confidence: high
     evidence: size dependence of the resonance Raman spectrum
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0476
   doi: 10.1007/bf01429194
   tag_source: ai
@@ -8787,6 +9235,7 @@
     confidence: medium
     evidence: Resonance Raman Depolarization
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0477
   doi: 10.1103/physrevlett.70.1014
   tag_source: ai
@@ -8804,6 +9253,7 @@
     confidence: high
     evidence: three-pulse photon echoes
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0478
   doi: 10.1016/0009-2614(92)90002-5
   tag_source: ai
@@ -8825,6 +9275,7 @@
     evidence: at High-Pressures and Low-Temperatures
   applications: []
   note: C60 fullerene, not a nanocrystal; carbon-2d is the closest material tag
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0479
   doi: 10.1016/0009-2614(92)80023-5
   tag_source: ai
@@ -8842,6 +9293,7 @@
     confidence: medium
     evidence: Surface-Structure and Dynamics of Semiconductor Nanocrystals
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0480
   doi: 10.1021/j100195a042
   tag_source: ai
@@ -8857,6 +9309,7 @@
   approaches: []
   applications: []
   note: abstract field holds only publisher page boilerplate; tagged from title; method not stated
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0481
   doi: 10.1126/science.256.5062.1425
   tag_source: ai
@@ -8877,6 +9330,7 @@
     confidence: medium
     evidence: Temperature-dependent electron diffraction studies
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0482
   doi: 10.1021/ja00039a038
   tag_source: ai
@@ -8895,6 +9349,7 @@
     evidence: Covalently Bound to Metal-Surfaces with Self-Assembled Monolayers
   applications: []
   note: abstract field holds only publisher page boilerplate; tagged from title
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0483
   doi: 10.1063/1.463573
   tag_source: ai
@@ -8912,6 +9367,7 @@
     confidence: high
     evidence: Stark effect modulation of the optical absorption spectrum
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0484
   doi: 10.1116/1.577328
   tag_source: ai
@@ -8929,6 +9385,7 @@
     confidence: high
     evidence: synchrotron radiation photoemission
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0485
   doi: 10.1103/physrevlett.66.2786
   tag_source: ai
@@ -8946,6 +9403,7 @@
     confidence: high
     evidence: Photoemission spectra of cadmium sulfide quantum dots
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0486
   doi: 10.1063/1.457874
   tag_source: ai
@@ -8960,6 +9418,7 @@
     evidence: Semiconductor Clusters
   approaches: []
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0487
   doi: 10.1021/ja00181a080
   tag_source: ai
@@ -8975,6 +9434,7 @@
   approaches: []
   applications: []
   note: abstract field is the opening text of the communication
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0488
   doi: ''
   tag_source: ai
@@ -8984,6 +9444,7 @@
   approaches: []
   applications: []
   note: generic title, no abstract or DOI; not enough information to tag
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0489
   doi: 10.1063/1.455855
   tag_source: ai
@@ -9001,6 +9462,7 @@
     confidence: high
     evidence: resonance Raman spectrum
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0490
   doi: 10.1021/ja00218a008
   tag_source: ai
@@ -9018,6 +9480,7 @@
     confidence: high
     evidence: terminated and passivated by the addition of organoselenides
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0491
   doi: 10.1063/1.455466
   tag_source: ai
@@ -9038,6 +9501,7 @@
     confidence: high
     evidence: Cdse Microclusters at High-Pressure
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0492
   doi: 10.1063/1.454833
   tag_source: ai
@@ -9055,6 +9519,7 @@
     confidence: high
     evidence: transient photophysical hole burning
   applications: []
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0493
   doi: 10.1063/1.452396
   tag_source: ai
@@ -9073,6 +9538,7 @@
     evidence: modeled using the classical image dipole theory
   applications: []
   note: molecule-to-bulk Si(111) energy transfer; no nanocrystal material
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0494
   doi: 10.1016/0039-6028(85)90290-0
   tag_source: ai
@@ -9085,6 +9551,7 @@
   approaches: []
   applications: []
   note: molecules on bulk metal surfaces; no nanocrystal material
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0495
   doi: 10.1063/1.448778
   tag_source: ai
@@ -9103,6 +9570,7 @@
     evidence: described inadequately by the classical theory
   applications: []
   note: molecule on bulk Ag(111); no nanocrystal material
+  reviewed: 'ai-review 2026-10-20: no change'
 - id: p0496
   doi: 10.1103/physrevlett.50.1092
   tag_source: ai
@@ -9121,3 +9589,136 @@
     evidence: classical dielectric model quantitatively reproduces measurements
   applications: []
   note: molecule on bulk GaAs(110); no nanocrystal material
+  reviewed: 'ai-review 2026-10-20: no change'
+- id: p0501
+  doi: 10.1021/jacs.6c10386
+  tag_source: ai
+  basis: abstract
+  areas:
+  - tag: synthesis
+    confidence: medium
+    evidence: Synthesis and Shape Control of In-Pnictide Nanocrystals
+  materials:
+  - tag: iii-v
+    confidence: medium
+    evidence: stabilize InP and InAs nanocrystals
+  approaches:
+  - tag: xray-pressure
+    confidence: medium
+    evidence: powder XRD of recovered solids
+  - tag: self-assembly
+    confidence: medium
+    evidence: promotes atomically aligned self-assembly
+  applications: []
+  reviewed: tagged 2026-10-20 (new paper)
+- id: p0502
+  doi: 10.1021/acs.nanolett.6c02198
+  tag_source: ai
+  basis: abstract
+  areas:
+  - tag: spectroscopy
+    confidence: medium
+    evidence: Tracking Thermal Transport in Colloidal Quantum Dot Films
+  materials:
+  - tag: quantum-dots
+    confidence: medium
+    evidence: core/shell CdSe/CdS QDs
+  approaches:
+  - tag: xray-pressure
+    confidence: medium
+    evidence: time-resolved X-ray diffraction
+  applications:
+  - tag: displays-leds
+    confidence: medium
+    evidence: QD thin film that actively provides optical gain
+  reviewed: tagged 2026-10-20 (new paper)
+- id: p0503
+  doi: 10.1021/jacs.6c03474
+  tag_source: ai
+  basis: abstract
+  areas:
+  - tag: synthesis
+    confidence: medium
+    evidence: large-scale synthesis of colloidal GaAs QDs in molten salts
+  - tag: spectroscopy
+    confidence: medium
+    evidence: Low-temperature spectroscopy reveals a well-resolved exciton fine structure
+  materials:
+  - tag: iii-v
+    confidence: medium
+    evidence: Emissive Colloidal GaAs Quantum Dots
+  - tag: quantum-dots
+    confidence: medium
+    evidence: Emissive Colloidal GaAs Quantum Dots
+  approaches:
+  - tag: optical-spectroscopy
+    confidence: medium
+    evidence: bright band-edge photoluminescence
+  - tag: surface-ligands
+    confidence: medium
+    evidence: high-temperature surface treatment with K 2 S
+  - tag: device-fabrication
+    confidence: medium
+    evidence: electroluminescence in QD LED devices
+  applications:
+  - tag: displays-leds
+    confidence: medium
+    evidence: electroluminescence in QD LED devices
+  reviewed: tagged 2026-10-20 (new paper)
+- id: p0504
+  doi: 10.1021/acsnano.6c00377
+  tag_source: ai
+  basis: abstract
+  areas: []
+  materials:
+  - tag: metals-plasmonics
+    confidence: medium
+    evidence: light-activated Au-TiO 2 Janus particles
+  - tag: oxides-rare-earths
+    confidence: medium
+    evidence: light-activated Au-TiO 2 Janus particles
+  approaches:
+  - tag: single-particle
+    confidence: medium
+    evidence: Optical tweezers measurements on single Au-PS@TiO 2 Janus particles
+  - tag: theory-modeling
+    confidence: medium
+    evidence: Simulations incorporating these transient forces
+  applications: []
+  reviewed: tagged 2026-10-20 (new paper)
+- id: p0505
+  doi: 10.1021/acs.chemmater.5c02301
+  tag_source: ai
+  basis: abstract
+  areas:
+  - tag: synthesis
+    confidence: medium
+    evidence: highly tunable synthesis of colloidal metal phosphide nanomaterials
+  materials:
+  - tag: iii-v
+    confidence: medium
+    evidence: Colloidal metal phosphide nanocrystals
+  approaches: []
+  applications: []
+  reviewed: tagged 2026-10-20 (new paper)
+- id: p0506
+  doi: 10.1021/acs.chemmater.5c01154
+  tag_source: ai
+  basis: abstract
+  areas:
+  - tag: synthesis
+    confidence: medium
+    evidence: precise subnanometer-level control over grain morphology
+  materials:
+  - tag: oxides-rare-earths
+    confidence: medium
+    evidence: multigrain Co 3 O 4 /Mn 3 O 4 core/shell nanocrystal
+  approaches:
+  - tag: electron-microscopy
+    confidence: medium
+    evidence: multiscale electronic structure characterization
+  applications:
+  - tag: catalysis
+    confidence: medium
+    evidence: catalytically active sites for the oxygen reduction reaction
+  reviewed: tagged 2026-10-20 (new paper)

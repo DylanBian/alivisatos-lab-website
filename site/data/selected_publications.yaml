@@ -243,8 +243,7 @@
   volume: '126'
   issue: '30'
   pages: 12958–12971
-  title: Thermodynamics of the Adsorption of Cadmium Oleate to Cadmium Sulfide Quantum Dots and Implications of a Dynamic
-    Ligand Shell
+  title: Thermodynamics of the Adsorption of Cadmium Oleate to Cadmium Sulfide Quantum Dots and Implications of a Dynamic Ligand Shell
   authors:
   - Jason J. Calvin
   - Assaf Ben-Moshe
@@ -279,3 +278,91 @@
   image: ''
   highlight: ''
   publication_date: '2022-02-10'
+- doi: 10.1021/acs.chemmater.5c02301
+  year: 2025
+  area: synthesis
+  journal: Chem. Mater.
+  volume: '38'
+  issue: '2'
+  pages: 761–772
+  title: Tailoring Morphology and Composition of Colloidal Metal Phosphide Nanocrystals with Prenucleation Complexes
+  authors:
+  - Woonhyuk Baek
+  - Arashdeep S. Thind
+  - Yasin R. Badawy
+  - Daqian Bian
+  - Binyu Wu
+  - Xingzhi Wang
+  - Abdullah S. Abbas
+  - Neunghee Han
+  - Minseok Cha
+  - Sungjun Park
+  - Robert F. Klie
+  - A. Paul Alivisatos
+  members: []
+  open_access: false
+  status: verified
+  image: ''
+  highlight: ''
+  publication_date: '2025-12-18'
+- doi: 10.1021/jacs.6c03474
+  year: 2026
+  area: synthesis
+  journal: J. Am. Chem. Soc.
+  volume: '148'
+  issue: '22'
+  pages: 22804–22816
+  title: Emissive Colloidal GaAs Quantum Dots
+  authors:
+  - Jun Hyuk Chang
+  - Danial Zangeneh
+  - Heng-Chi Chu
+  - Justin C. Ondry
+  - Kailai Lin
+  - Yuan Liu
+  - Zirui Zhou
+  - Ahhyun Jeong
+  - James Cassidy
+  - Sungsu Kang
+  - Scott A. Crooker
+  - Alexander S. Filatov
+  - A. Paul Alivisatos
+  - Eran Rabani
+  - Robert F. Klie
+  - Richard D. Schaller
+  - Alexander L. Efros
+  - Dmitri V. Talapin
+  members: []
+  open_access: false
+  status: verified
+  image: ''
+  highlight: ''
+  publication_date: '2026-05-29'
+  homepage_summary: Molten-salt synthesis and a K2S surface treatment give GaAs quantum dots with bright band-edge emission and working LEDs.
+- doi: 10.1021/jacs.6c10386
+  year: 2026
+  area: synthesis
+  journal: J. Am. Chem. Soc.
+  volume: '148'
+  issue: '40'
+  pages: 43123–43138
+  title: Redox Reactions in Molten Indium Halide Salts Enable the Synthesis and Shape Control of In-Pnictide Nanocrystals
+  authors:
+  - Justin C. Ondry
+  - Zirui Zhou
+  - Luca Giordano
+  - Yi-Chen Chen
+  - Jun Hyuk Chang
+  - Yuan Liu
+  - Rebecca C. Hotton
+  - Shengsong Yang
+  - Zeger Hens
+  - A. Paul Alivisatos
+  - Dmitri V. Talapin
+  members: []
+  open_access: false
+  status: verified
+  image: ''
+  highlight: ''
+  publication_date: '2026-09-29'
+  homepage_summary: Bromide salt melts keep InP and InAs nanocrystals intact, so annealing turns them into faceted tetrahedra that self-assemble.
