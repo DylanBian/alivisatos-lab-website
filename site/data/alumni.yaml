@@ -1,5 +1,5 @@
 # Alivisatos Group alumni. Source of truth for the Alumni page.
-# Fields: name, roles [phd|postdoc|undergrad], title, org, sector [university|industry|institute|unlisted],
+# Fields: name, roles [phd|postdoc|undergrad], title, org, sector [university|industry|institute|unlisted = unknown, not shown],
 # years (e.g. "2015-2020", optional), link (profile URL, optional), verified (date the position was last checked, optional)
 - name: "Abdullah S. Abbas"
   roles: [phd]
@@ -16,7 +16,8 @@
   sector: industry
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://www.cbinsights.com/company/nvigen/people"
 - name: "Alexandra Courtis"
   roles: [phd]
   title: ""
@@ -80,7 +81,8 @@
   sector: industry
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://www.avvo.com/attorneys/48009-mi-avery-goldstein-741857.html"
 - name: "Brandon Beberwyck"
   roles: [phd]
   title: "Business Consultant"
@@ -96,15 +98,17 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://jensenlab.mit.edu/brent-koscher/"
 - name: "Bryce Sadtler"
   roles: [phd]
-  title: "Assistant Professor"
+  title: "Associate Professor"
   org: "Washington University in St. Louis"
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://sites.wustl.edu/sadtlerlab/lab-members/"
 - name: "Can Kerem Erdonmez"
   roles: [phd]
   title: "Assistant Editor"
@@ -115,12 +119,13 @@
   verified: ""
 - name: "Charina L. Chou"
   roles: [phd]
-  title: "Global Policy Lead for Emerging Technologies"
+  title: "Director and COO, Quantum AI"
   org: "Google"
   sector: industry
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://io.google/2024/speakers/charina-chou/"
 - name: "Christine M. Micheel"
   roles: [phd]
   title: "Research Assistant Professor of Medicine"
@@ -128,15 +133,17 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://www.vicc.org/node/12588"
 - name: "Cyrus Wadia"
   roles: [phd]
-  title: "Vice President, Sustainable Business"
-  org: "Nike, Portland"
+  title: "CEO"
+  org: "Activate"
   sector: industry
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://www.activate.org/news/activate-updates-september2023"
 - name: "Daniel Mittleman"
   roles: [phd, postdoc]
   title: "Professor of Engineering"
@@ -144,7 +151,8 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://vivo.brown.edu/display/dmittlem"
 - name: "Danny Hellebusch"
   roles: [phd]
   title: "Senior Scientist"
@@ -179,12 +187,13 @@
   verified: ""
 - name: "David Nenon"
   roles: [phd]
-  title: "Global Supply Manager"
-  org: "Tesla"
+  title: "EV Supply Chain Strategy Manager"
+  org: "Ford Motor Company"
   sector: industry
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://ie.unc.edu/speaker/david-nenon"
 - name: "David Zaziski"
   roles: [phd]
   title: "Director, Government Affairs & Business Development"
@@ -200,15 +209,17 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://behrend.psu.edu/campus-directory/results?page=1"
 - name: "Delia Milliron"
   roles: [phd]
-  title: "Professor"
-  org: "University of Texas, Austin"
+  title: "Anthony C. Lembke Department Chair of Chemical Engineering"
+  org: "University of Michigan"
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://che.engin.umich.edu/?p=11509"
 - name: "Emory Chan"
   roles: [phd]
   title: "Career Staff Scientist"
@@ -216,7 +227,8 @@
   sector: institute
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://foundry.lbl.gov/staff"
 - name: "Erik C. Scher"
   roles: [phd]
   title: "Chief Operating Officer"
@@ -235,20 +247,22 @@
   verified: ""
 - name: "Haitao Liu"
   roles: [phd]
-  title: "Professor and Department Chair"
+  title: "Professor and Director of Graduate Studies"
   org: "University of Pittsburgh"
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://www.chem.pitt.edu/person/haitao-liu"
 - name: "Han Le"
   roles: [phd]
-  title: ""
-  org: ""
-  sector: unlisted
+  title: "Patent Agent"
+  org: "Choate, Hall & Stewart LLP"
+  sector: industry
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://www.choate.com/team-member/han-le-phd/"
 - name: "Hoduk Cho"
   roles: [phd]
   title: "Research Fellow"
@@ -267,36 +281,40 @@
   verified: ""
 - name: "Ilan Gur"
   roles: [phd]
-  title: "Chief Executive Officer"
-  org: "Activate"
+  title: "Senior Fellow"
+  org: "Renaissance Philanthropy"
   sector: industry
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://en.wikipedia.org/wiki/Ilan_Gur"
 - name: "Ilan Jen La-Plante"
   roles: [phd]
-  title: "Senior Scientist"
+  title: "Senior Staff Scientist"
   org: "Nanosys"
   sector: industry
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://www.nanosys.com/blog-newsroom/nanosys-quantum-dot-technology-at-display-week-2024"
 - name: "Jakob Chayes Dahl"
   roles: [phd]
-  title: "A. O. Beckman Postdoctoral Fellow"
-  org: "Massachusetts Institute of Technology"
+  title: "Assistant Professor"
+  org: "Technical University of Denmark (DTU)"
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://www.kemi.dtu.dk/english/Research/Inorganic-Chemistry/Jakob-Dahl-group"
 - name: "Jacob Olshansky"
   roles: [phd]
-  title: "Postdoctoral Researcher"
-  org: "Northwestern University"
+  title: "Assistant Professor of Chemistry"
+  org: "Amherst College"
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://www.amherst.edu/people/facstaff/jolshansky"
 - name: "James Matthew Lucas"
   roles: [phd]
   title: "Associate Director"
@@ -307,12 +325,13 @@
   verified: ""
 - name: "James Henry Nelson"
   roles: [phd]
-  title: "Consultant"
-  org: "Energy & Environmental Economics"
+  title: "Director"
+  org: "Energy & Environmental Economics (E3)"
   sector: industry
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "http://www.ethree.com/people/jimmy-nelson/"
 - name: "Janet Katari"
   roles: [phd]
   title: "President"
@@ -328,7 +347,8 @@
   sector: industry
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://musichackspace.org/events/magenta-rt-workshop-june-2026"
 - name: "Jessica Smith"
   roles: [phd]
   title: "Director of Bioinformatics"
@@ -360,7 +380,8 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://iapme.um.edu.mo/?p=27542"
 - name: "Joseph R. Sachleben"
   roles: [phd, postdoc]
   title: "Technical Director, Biomolecular NMR Facility"
@@ -368,7 +389,8 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://voices.uchicago.edu/bnmr/staff"
 - name: "Joseph Shiang"
   roles: [phd, postdoc]
   title: ""
@@ -384,7 +406,8 @@
   sector: industry
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://www.wsgr.com/en/people/joseph-swabeck.html"
 - name: "Joshua Wittenberg"
   roles: [phd]
   title: "Product Development Engineer"
@@ -803,12 +826,13 @@
   verified: ""
 - name: "Assaf Ben-Moshe"
   roles: [postdoc]
-  title: ""
-  org: ""
-  sector: unlisted
+  title: "Senior Lecturer"
+  org: "Bar-Ilan University"
+  sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://cris.biu.ac.il/en/persons/assaf-ben-moshe/"
 - name: "Carissa Eisler"
   roles: [postdoc]
   title: "Assistant Professor"
@@ -843,12 +867,13 @@
   verified: ""
 - name: "Christian Laube"
   roles: [postdoc]
-  title: ""
-  org: ""
-  sector: unlisted
+  title: "Research Scientist"
+  org: "Leibniz Institute of Surface Engineering (IOM), Leipzig"
+  sector: institute
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://www.iom-leipzig.de/en/translate-to-english-christian-laube.html"
 - name: "Christina W. Li"
   roles: [postdoc]
   title: "Professor"
@@ -1243,12 +1268,13 @@
   verified: ""
 - name: "Sophia Betzler"
   roles: [postdoc]
-  title: ""
-  org: ""
-  sector: unlisted
+  title: "Engineer"
+  org: "Applied Materials Inc."
+  sector: industry
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://haimeizheng.lbl.gov/scientists/"
 - name: "Son Nguyen"
   roles: [postdoc]
   title: "Assistant Professor"
@@ -1491,9 +1517,10 @@
   verified: ""
 - name: "Sarah Thau"
   roles: [undergrad]
-  title: ""
-  org: ""
-  sector: unlisted
+  title: "Undergraduate student"
+  org: "The College, University of Chicago"
+  sector: university
   years: "2024–2025"
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://cha.uchicago.edu/winners"
