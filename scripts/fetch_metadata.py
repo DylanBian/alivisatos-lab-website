@@ -10,6 +10,7 @@ import json
 import re
 import sys
 import time
+import urllib.parse
 from pathlib import Path
 
 import requests
@@ -32,7 +33,7 @@ def dois():
     for row in csv.DictReader((ROOT / "site/data/publications.csv").open()):
         m = re.search(r"doi\.org/(10\.[^\s?#]+)", row["url"])
         if m:
-            out.append((row["id"], m.group(1).lower()))
+            out.append((row["id"], urllib.parse.unquote(m.group(1)).lower()))
     return out
 
 
@@ -65,8 +66,19 @@ def main():
     print(f"{len(items)} DOIs")
     openalex, crossref, abstracts = {}, {}, {}
     doi_list = [d for _, d in items]
-    for i in range(0, len(doi_list), 40):
-        batch = doi_list[i:i + 40]
+    simple = [d for d in doi_list if re.fullmatch(r"[a-z0-9./_()-]+", d)]
+    for doi in doi_list:
+        if doi in simple:
+            continue
+        r = get("https://api.openalex.org/works/doi:" + urllib.parse.quote(doi, safe=""), params={"select": OA_SELECT})
+        if r is not None and r.status_code == 200:
+            w = r.json()
+            text = abstract_from_index(w.pop("abstract_inverted_index", None))
+            if text:
+                abstracts.setdefault(doi, {})["openalex"] = text
+            openalex[doi] = w
+    for i in range(0, len(simple), 40):
+        batch = simple[i:i + 40]
         r = get("https://api.openalex.org/works", params={"filter": "doi:" + "|".join(batch), "per-page": 50, "select": OA_SELECT})
         if r is None or r.status_code != 200:
             print("OpenAlex batch failed", i, r.status_code if r else None)
@@ -79,7 +91,7 @@ def main():
             openalex[doi] = w
         time.sleep(0.2)
     for n, doi in enumerate(doi_list, 1):
-        r = get(f"https://api.crossref.org/works/{requests.utils.quote(doi, safe='/')}")
+        r = get("https://api.crossref.org/works/" + urllib.parse.quote(doi, safe="/()"))
         if r is None or r.status_code != 200:
             crossref[doi] = {"error": r.status_code if r is not None else "no response"}
             continue
