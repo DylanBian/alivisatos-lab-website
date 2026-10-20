@@ -4,6 +4,13 @@ Record every publish: date (UTC), page, Actions run link, public-check result.
 
 ## 2026-10-20
 
+### 14:52 UTC publish run 39443098268: figures for all 14 Selected Publications
+- 14 images in the media library with alt text and credit lines: 9 ACS TOC graphics ("Reprinted with permission ...
+  Copyright American Chemical Society"), 3 Springer Nature Figure 1 (licence named where CC), PNAS Figure 1
+  (CC BY-NC-ND 4.0), MRS Bulletin graphical abstract (CC BY 4.0). Captured in Dylan's signed-in Chrome
+  (publisher sites block automated downloads); one ACS SVG converted to PNG.
+- All pages read back identical; cache refreshed; checked as a visitor (14 figures, 490 papers).
+
 ### 14:31-14:41 UTC publish runs 39439892128, 39440789261, 39441466289 (approved by Dylan)
 - Content: open access counted by journal (20 papers); six new 2025-2026 papers; three new Selected Publications;
   13 tag corrections from an independent AI review; alumni years and 16 updated positions; no "Not listed" category;
