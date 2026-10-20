@@ -55,7 +55,8 @@ jobs:
           DONE=""
           for p in $PAGES; do
             if python site/push.py "$p" $FLAG; then
-              python scripts/review_diff.py "$p"
+              # readable diff in dry runs; publish runs keep their annotations for push and round-trip results
+              if [ -z "$FLAG" ]; then python scripts/review_diff.py "$p"; fi
               DONE="$DONE $p"
             else
               FAILED="$p"
