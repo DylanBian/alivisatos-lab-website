@@ -41,5 +41,7 @@ jobs:
         run: |
           python site/build.py
           python scripts/roundtrip_report.py members alumni news home publications
+      - name: Refresh the page cache
+        run: python scripts/refresh_cache.py
       - name: Public check
         run: python scripts/verify_public.py --no-fail

@@ -84,6 +84,9 @@ jobs:
           PAGES="${{ inputs.page }}"
           if [ "$PAGES" = "all" ]; then PAGES="news home members alumni publications"; fi
           if [ "$PAGES" != "research" ]; then python scripts/roundtrip_report.py $PAGES; fi
+      - name: Refresh the page cache
+        if: ${{ inputs.mode == 'publish' }}
+        run: python scripts/refresh_cache.py
       - name: Public check (cache may lag up to an hour)
         if: ${{ inputs.mode == 'publish' }}
         run: |
