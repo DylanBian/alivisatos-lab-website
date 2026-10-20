@@ -1,6 +1,8 @@
 # Alivisatos Group alumni. Source of truth for the Alumni page.
 # Fields: name, roles [phd|postdoc|undergrad], title, org, sector [university|industry|institute|unlisted = unknown, not shown],
-# years (e.g. "2015-2020", optional), link (profile URL, optional), verified (date the position was last checked, optional)
+# years (e.g. "2015-2020", optional), link (profile URL, optional), verified (date the position was last confirmed, optional),
+# source (page showing the current position), identity (page tying the person to the Alivisatos group; required with verified).
+# See site/reports/alumni_positions_*.md for the rule.
 - name: "Abdullah S. Abbas"
   roles: [phd]
   title: "Engineer"
@@ -17,7 +19,8 @@
   years: ""
   link: ""
   verified: "2026-10-20"
-  source: "https://www.cbinsights.com/company/nvigen/people"
+  source: "https://doi.org/10.1158/1557-3265.sabcs25-ps3-04-18"
+  identity: "https://openalex.org/A5064606090"
 - name: "Alexandra Courtis"
   roles: [phd]
   title: ""
@@ -81,8 +84,7 @@
   sector: industry
   years: ""
   link: ""
-  verified: "2026-10-20"
-  source: "https://www.avvo.com/attorneys/48009-mi-avery-goldstein-741857.html"
+  verified: ""
 - name: "Brandon Beberwyck"
   roles: [phd]
   title: "Business Consultant"
@@ -100,6 +102,7 @@
   link: ""
   verified: "2026-10-20"
   source: "https://jensenlab.mit.edu/brent-koscher/"
+  identity: "https://openalex.org/A5079049661"
 - name: "Bryce Sadtler"
   roles: [phd]
   title: "Associate Professor"
@@ -109,6 +112,7 @@
   link: ""
   verified: "2026-10-20"
   source: "https://sites.wustl.edu/sadtlerlab/lab-members/"
+  identity: "https://orcid.org/0000-0003-4860-501X"
 - name: "Can Kerem Erdonmez"
   roles: [phd]
   title: "Assistant Editor"
@@ -126,15 +130,17 @@
   link: ""
   verified: "2026-10-20"
   source: "https://io.google/2024/speakers/charina-chou/"
+  identity: "https://www.cnas.org/people/dr-charina-chou"
 - name: "Christine M. Micheel"
   roles: [phd]
-  title: "Research Assistant Professor of Medicine"
+  title: "Research Associate Professor of Medicine"
   org: "Vanderbilt University Medical Center"
   sector: university
   years: ""
   link: ""
   verified: "2026-10-20"
-  source: "https://www.vicc.org/node/12588"
+  source: "https://orcid.org/0000-0002-7744-9039"
+  identity: "https://orcid.org/0000-0002-7744-9039"
 - name: "Cyrus Wadia"
   roles: [phd]
   title: "CEO"
@@ -143,7 +149,8 @@
   years: ""
   link: ""
   verified: "2026-10-20"
-  source: "https://www.activate.org/news/activate-updates-september2023"
+  source: "https://www.businesswire.com/news/home/20230918474271/en"
+  identity: "https://www.businesswire.com/news/home/20230918474271/en"
 - name: "Daniel Mittleman"
   roles: [phd, postdoc]
   title: "Professor of Engineering"
@@ -152,7 +159,8 @@
   years: ""
   link: ""
   verified: "2026-10-20"
-  source: "https://vivo.brown.edu/display/dmittlem"
+  source: "https://doi.org/10.1038/s41377-026-02468-2"
+  identity: "https://orcid.org/0000-0003-4277-7419"
 - name: "Danny Hellebusch"
   roles: [phd]
   title: "Senior Scientist"
@@ -187,13 +195,14 @@
   verified: ""
 - name: "David Nenon"
   roles: [phd]
-  title: "EV Supply Chain Strategy Manager"
+  title: "Anode Sourcing & Battery Strategy Manager"
   org: "Ford Motor Company"
   sector: industry
   years: ""
   link: ""
   verified: "2026-10-20"
-  source: "https://ie.unc.edu/speaker/david-nenon"
+  source: "https://aps.unc.edu/event/aps-career-panel/"
+  identity: "https://ie.unc.edu/cleantech-story/paving-a-path-in-clean-energy-with-mr-david-nenon-supply-chain-manager-for-ford-motor-company"
 - name: "David Zaziski"
   roles: [phd]
   title: "Director, Government Affairs & Business Development"
@@ -209,8 +218,7 @@
   sector: university
   years: ""
   link: ""
-  verified: "2026-10-20"
-  source: "https://behrend.psu.edu/campus-directory/results?page=1"
+  verified: ""
 - name: "Delia Milliron"
   roles: [phd]
   title: "Anthony C. Lembke Department Chair of Chemical Engineering"
@@ -220,6 +228,7 @@
   link: ""
   verified: "2026-10-20"
   source: "https://che.engin.umich.edu/?p=11509"
+  identity: "https://openalex.org/A5077085087"
 - name: "Emory Chan"
   roles: [phd]
   title: "Career Staff Scientist"
@@ -228,15 +237,18 @@
   years: ""
   link: ""
   verified: "2026-10-20"
-  source: "https://foundry.lbl.gov/staff"
+  source: "https://doi.org/10.1038/s41377-026-02449-5"
+  identity: "https://orcid.org/0000-0002-5655-0146"
 - name: "Erik C. Scher"
   roles: [phd]
-  title: "Chief Operating Officer"
-  org: "Siluria Technologies, Inc."
+  title: "Operating Partner"
+  org: "True North Venture Partners"
   sector: industry
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://www.privatecompanydirector.com/roster_individual/erik-scher/"
+  identity: "https://www.privatecompanydirector.com/roster_individual/erik-scher/"
 - name: "Erin O'Brien"
   roles: [phd]
   title: ""
@@ -254,6 +266,7 @@
   link: ""
   verified: "2026-10-20"
   source: "https://www.chem.pitt.edu/person/haitao-liu"
+  identity: "https://www.chem.pitt.edu/person/haitao-liu"
 - name: "Han Le"
   roles: [phd]
   title: "Patent Agent"
@@ -263,6 +276,7 @@
   link: ""
   verified: "2026-10-20"
   source: "https://www.choate.com/team-member/han-le-phd/"
+  identity: "https://www.choate.com/team-member/han-le-phd/"
 - name: "Hoduk Cho"
   roles: [phd]
   title: "Research Fellow"
@@ -274,11 +288,13 @@
 - name: "Hyun Dong \"Kenneth\" Ha"
   roles: [phd]
   title: ""
-  org: ""
-  sector: unlisted
+  org: "Samsung Advanced Institute of Technology"
+  sector: industry
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://doi.org/10.1002/sdtp.17529"
+  identity: "https://orcid.org/0000-0001-7531-0757"
 - name: "Ilan Gur"
   roles: [phd]
   title: "Senior Fellow"
@@ -287,7 +303,8 @@
   years: ""
   link: ""
   verified: "2026-10-20"
-  source: "https://en.wikipedia.org/wiki/Ilan_Gur"
+  source: "https://x.com/tkalil2050/status/2048526933353476571"
+  identity: "https://x.com/tkalil2050/status/2048526933353476571"
 - name: "Ilan Jen La-Plante"
   roles: [phd]
   title: "Senior Staff Scientist"
@@ -297,6 +314,7 @@
   link: ""
   verified: "2026-10-20"
   source: "https://www.nanosys.com/blog-newsroom/nanosys-quantum-dot-technology-at-display-week-2024"
+  identity: "https://www.nanosys.com/blog-newsroom/nanosys-quantum-dot-technology-at-display-week-2024"
 - name: "Jakob Chayes Dahl"
   roles: [phd]
   title: "Assistant Professor"
@@ -306,6 +324,7 @@
   link: ""
   verified: "2026-10-20"
   source: "https://www.kemi.dtu.dk/english/Research/Inorganic-Chemistry/Jakob-Dahl-group"
+  identity: "https://www.kemi.dtu.dk/english/Research/Inorganic-Chemistry/Jakob-Dahl-group"
 - name: "Jacob Olshansky"
   roles: [phd]
   title: "Assistant Professor of Chemistry"
@@ -315,6 +334,7 @@
   link: ""
   verified: "2026-10-20"
   source: "https://www.amherst.edu/people/facstaff/jolshansky"
+  identity: "https://orcid.org/0000-0003-3658-1487"
 - name: "James Matthew Lucas"
   roles: [phd]
   title: "Associate Director"
@@ -332,6 +352,7 @@
   link: ""
   verified: "2026-10-20"
   source: "http://www.ethree.com/people/jimmy-nelson/"
+  identity: "http://www.ethree.com/people/jimmy-nelson/"
 - name: "Janet Katari"
   roles: [phd]
   title: "President"
@@ -342,13 +363,14 @@
   verified: ""
 - name: "Jesse Engel"
   roles: [phd]
-  title: "Senior Research Scientist"
-  org: "Google"
+  title: "Lead Research Scientist, Magenta"
+  org: "Google DeepMind"
   sector: industry
   years: ""
   link: ""
   verified: "2026-10-20"
-  source: "https://musichackspace.org/events/magenta-rt-workshop-june-2026"
+  source: "https://computationalcreativity.net/iccc24/keynotes/"
+  identity: "https://computationalcreativity.net/iccc24/keynotes/"
 - name: "Jessica Smith"
   roles: [phd]
   title: "Director of Bioinformatics"
@@ -380,8 +402,7 @@
   sector: university
   years: ""
   link: ""
-  verified: "2026-10-20"
-  source: "https://iapme.um.edu.mo/?p=27542"
+  verified: ""
 - name: "Joseph R. Sachleben"
   roles: [phd, postdoc]
   title: "Technical Director, Biomolecular NMR Facility"
@@ -390,7 +411,8 @@
   years: ""
   link: ""
   verified: "2026-10-20"
-  source: "https://voices.uchicago.edu/bnmr/staff"
+  source: "https://doi.org/10.1101/2025.02.04.636507"
+  identity: "https://openalex.org/A5040154189"
 - name: "Joseph Shiang"
   roles: [phd, postdoc]
   title: ""
@@ -408,6 +430,7 @@
   link: ""
   verified: "2026-10-20"
   source: "https://www.wsgr.com/en/people/joseph-swabeck.html"
+  identity: "https://www.wsgr.com/en/people/joseph-swabeck.html"
 - name: "Joshua Wittenberg"
   roles: [phd]
   title: "Product Development Engineer"
@@ -434,12 +457,14 @@
   verified: ""
 - name: "Jungwon Park"
   roles: [phd]
-  title: "Associate Professor"
+  title: "Professor"
   org: "Seoul National University"
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://orcid.org/0000-0003-2927-4331"
+  identity: "https://orcid.org/0000-0003-2927-4331"
 - name: "Justin Ondry"
   roles: [phd]
   title: "Postdoctoral Researcher"
@@ -447,7 +472,9 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://orcid.org/0000-0001-9113-3420"
+  identity: "https://orcid.org/0000-0001-9113-3420"
 - name: "Justine Shaw"
   roles: [phd]
   title: "Chemistry Instructor"
@@ -463,7 +490,9 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://doi.org/10.1021/jacs.6c15582"
+  identity: "https://orcid.org/0000-0001-9260-3391"
 - name: "Katherine Katie Nichols"
   roles: [phd]
   title: "Teaching Fellow"
@@ -482,12 +511,14 @@
   verified: ""
 - name: "Kimberly Hamad-Schifferli"
   roles: [phd]
-  title: "Associate Professor"
-  org: "University of Massachusetts, Boston"
+  title: "Professor"
+  org: "University of Massachusetts Boston"
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://www.umb.edu/directory/kimhamad/"
+  identity: "https://www.umb.edu/directory/kimhamad/"
 - name: "Kristie Koski"
   roles: [phd]
   title: "Associate Professor"
@@ -511,7 +542,9 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://doi.org/10.26434/chemrxiv-2025-s71g5"
+  identity: "https://openalex.org/A5029219192"
 - name: "Marcel Pierre Bruchez"
   roles: [phd]
   title: "Director, Molecular Biosensors and Imaging Center"
@@ -519,7 +552,9 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://doi.org/10.1136/jitc-2025-sitc2025.0356"
+  identity: "https://orcid.org/0000-0002-7370-4848"
 - name: "Marco Tomaselli"
   roles: [phd, postdoc]
   title: ""
@@ -535,15 +570,19 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://doi.org/10.1063/5.0347358"
+  identity: "https://openalex.org/A5080201843"
 - name: "Matthew Koc"
   roles: [phd]
-  title: "Product Engineer"
-  org: "Lam Research Corporation"
-  sector: industry
+  title: "Research Associate"
+  org: "University of Colorado Boulder"
+  sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://orcid.org/0000-0003-1401-8415"
+  identity: "https://orcid.org/0000-0003-1401-8415"
 - name: "Matt Hauwiller"
   roles: [phd]
   title: "Senior Engineer"
@@ -551,15 +590,19 @@
   sector: industry
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://doi.org/10.1093/mam/ozag053.165"
+  identity: "https://orcid.org/0000-0002-5448-6937"
 - name: "Matthew Sheldon"
   roles: [phd]
   title: "Associate Professor"
-  org: "Texas A&M University"
+  org: "University of California, Irvine"
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://scholarconnect.uci.edu/msheldo1"
+  identity: "https://scholarconnect.uci.edu/msheldo1"
 - name: "Max Merkle"
   roles: [phd]
   title: "Senior Process Development Engineer"
@@ -594,12 +637,14 @@
   verified: ""
 - name: "Neil Greenham"
   roles: [phd, postdoc]
-  title: ""
-  org: "Cavendish Laboratory"
+  title: "Professor of Physics"
+  org: "University of Cambridge"
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://clare.cam.ac.uk/about/people/master-and-fellowship/governing-body-fellows/neil-greenham"
+  identity: "https://clare.cam.ac.uk/about/people/master-and-fellowship/governing-body-fellows/neil-greenham"
 - name: "Noah Bronstein"
   roles: [phd]
   title: "Scientist"
@@ -618,12 +663,14 @@
   verified: ""
 - name: "Ophir Klein"
   roles: [phd, postdoc]
-  title: "Distinguished Professor"
-  org: "University of California, San Francisco"
+  title: "Executive Director, Guerin Children's"
+  org: "Cedars-Sinai"
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://www.cedars-sinai.org/stories-and-insights/innovation-and-research/future-of-pediatric-care"
+  identity: "https://en.wikipedia.org/wiki/Ophir_Klein"
 - name: "Richard Roth"
   roles: [phd]
   title: "Quality Manager"
@@ -634,12 +681,14 @@
   verified: ""
 - name: "Robert Kimes Grubbs"
   roles: [phd]
-  title: "Principal Member"
-  org: "Sandia National Laboratories"
+  title: "Scientific Director of Thin Films"
+  org: "imec"
   sector: institute
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://www.avs.org/about-avs/roster/directors/robert-k-grubbs/"
+  identity: "https://www.avs.org/about-avs/roster/directors/robert-k-grubbs/"
 - name: "Sandy Rosenthal"
   roles: [phd, postdoc]
   title: "Professor"
@@ -650,12 +699,14 @@
   verified: ""
 - name: "Sarah Swisher"
   roles: [phd]
-  title: "Assistant Professor"
+  title: "Associate Professor"
   org: "University of Minnesota"
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://orcid.org/0000-0001-7128-3034"
+  identity: "https://orcid.org/0000-0001-7128-3034"
 - name: "Sarah Helen Tolbert"
   roles: [phd]
   title: "Professor"
@@ -663,7 +714,9 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://doi.org/10.1002/smll.75152"
+  identity: "https://orcid.org/0000-0001-9969-1582"
 - name: "Sassan Sheikholeslami"
   roles: [phd]
   title: "Senior Staff Scientist"
@@ -698,12 +751,14 @@
   verified: ""
 - name: "Shelley Claridge"
   roles: [phd]
-  title: "Assistant Professor"
+  title: "Professor"
   org: "Purdue University"
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://www.purdue.edu/academics/ogsps/oigp/profile/pulse-faculty/shelley-claridge"
+  identity: "https://www.purdue.edu/academics/ogsps/oigp/profile/pulse-faculty/shelley-claridge"
 - name: "Stephen Gerald Prilliman"
   roles: [phd]
   title: "Associate Professor"
@@ -711,7 +766,9 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://orcid.org/0000-0002-9699-3638"
+  identity: "https://orcid.org/0000-0002-9699-3638"
 - name: "Steven Hughes"
   roles: [phd]
   title: "Assistant Professor"
@@ -735,15 +792,19 @@
   sector: industry
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://doi.org/10.1109/itherm55375.2024.10709469"
+  identity: "https://openalex.org/A5072299894"
 - name: "Vicki Leigh Colvin"
   roles: [phd]
-  title: "Director of the Center for Biomedical Engineering"
-  org: "Brown University"
+  title: "Dean, College of Engineering"
+  org: "Louisiana State University"
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://www.opportunitylouisiana.gov/comehomelouisiana/homecoming-stories/dean-vicki-colvin"
+  identity: "https://openalex.org/A5001140872"
 - name: "Victor Puntes"
   roles: [phd, postdoc]
   title: "Professor"
@@ -751,7 +812,9 @@
   sector: institute
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://doi.org/10.1021/acsnanoscienceau.5c00199"
+  identity: "https://orcid.org/0000-0001-8996-9499"
 - name: "Wendy Uyen Huynh"
   roles: [phd]
   title: ""
@@ -762,12 +825,14 @@
   verified: ""
 - name: "Wojciech Osowiecki"
   roles: [phd]
-  title: "Rotational Program Process Engineer"
+  title: "Product Marketing Engineer"
   org: "Lam Research Corporation"
   sector: industry
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://www.semi.org/en/esgs-speaker-abstract-bio-wojtek-osowiecki"
+  identity: "https://www.semi.org/en/esgs-speaker-abstract-bio-wojtek-osowiecki"
 - name: "Xingzhi Wang"
   roles: [phd]
   title: "Postdoctoral Researcher"
@@ -775,23 +840,29 @@
   sector: university
   years: "2018–2024"
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://orcid.org/0000-0003-1107-8084"
+  identity: "https://orcid.org/0000-0003-1107-8084"
 - name: "Yingjie Zhang"
   roles: [phd]
-  title: "Assistant Professor"
+  title: "Associate Professor"
   org: "University of Illinois Urbana-Champaign"
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://matse.illinois.edu/people/profile/yjz"
+  identity: "https://matse.illinois.edu/people/profile/yjz"
 - name: "Alexander Mastroianni"
   roles: [postdoc]
-  title: "Staff Scientist, Surface Chemistry"
-  org: "Berkeley Lights, Inc."
+  title: ""
+  org: "Bruker Cellular Analysis"
   sector: industry
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://doi.org/10.1158/1538-7445.am2025-1554"
+  identity: "https://openalex.org/A5089208467"
 - name: "Alf Mews"
   roles: [postdoc]
   title: "Professor of Physical Chemistry"
@@ -799,7 +870,9 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://doi.org/10.1021/acs.chemmater.5c03047"
+  identity: "https://openalex.org/A5039193225"
 - name: "Andreas Meisel"
   roles: [postdoc]
   title: "Manager"
@@ -810,12 +883,14 @@
   verified: ""
 - name: "Andreu Cabot"
   roles: [postdoc]
-  title: "Group Leader"
-  org: "University of Barcelona"
-  sector: university
+  title: "ICREA Research Professor"
+  org: "Catalonia Institute for Energy Research (IREC)"
+  sector: institute
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://icrea.cat/community/hosts-institutions/436/institut-de-recerca-en-energia-de-catalunya"
+  identity: "https://orcid.org/0000-0002-7533-3251"
 - name: "Antonios Kanaras"
   roles: [postdoc]
   title: "Professor"
@@ -823,7 +898,9 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://doi.org/10.1117/12.3073623"
+  identity: "https://orcid.org/0000-0002-9847-6706"
 - name: "Assaf Ben-Moshe"
   roles: [postdoc]
   title: "Senior Lecturer"
@@ -833,6 +910,7 @@
   link: ""
   verified: "2026-10-20"
   source: "https://cris.biu.ac.il/en/persons/assaf-ben-moshe/"
+  identity: "https://orcid.org/0000-0001-7348-8586"
 - name: "Carissa Eisler"
   roles: [postdoc]
   title: "Assistant Professor"
@@ -840,7 +918,9 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://orcid.org/0000-0002-5755-5280"
+  identity: "https://orcid.org/0000-0002-5755-5280"
 - name: "Carsten Soennichsen"
   roles: [postdoc]
   title: "Professor"
@@ -848,7 +928,9 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://doi.org/10.1088/1751-8121/ad6d1e"
+  identity: "https://openalex.org/A5017623880"
 - name: "Chang Yan"
   roles: [postdoc]
   title: "Associate Professor, Department of Chemistry"
@@ -856,7 +938,9 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://orcid.org/0000-0001-9735-3002"
+  identity: "https://orcid.org/0000-0001-9735-3002"
 - name: "Chia-Chun Chen"
   roles: [postdoc]
   title: "Professor"
@@ -864,16 +948,19 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://doi.org/10.1039/d6ta01434h"
+  identity: "https://openalex.org/A5023309672"
 - name: "Christian Laube"
   roles: [postdoc]
   title: "Research Scientist"
-  org: "Leibniz Institute of Surface Engineering (IOM), Leipzig"
+  org: "Leibniz Institute of Surface Engineering (IOM)"
   sector: institute
   years: ""
   link: ""
   verified: "2026-10-20"
   source: "https://www.iom-leipzig.de/en/translate-to-english-christian-laube.html"
+  identity: "https://www.iom-leipzig.de/en/translate-to-english-christian-laube.html"
 - name: "Christina W. Li"
   roles: [postdoc]
   title: "Professor"
@@ -884,12 +971,14 @@
   verified: ""
 - name: "Daeha Seo"
   roles: [postdoc]
-  title: "Assistant Professor"
-  org: "Daegu Gyeongbuk Institute of Science and Technology"
+  title: "Associate Professor"
+  org: "POSTECH"
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://orcid.org/0000-0002-0454-1168"
+  identity: "https://orcid.org/0000-0002-0454-1168"
 - name: "Daniela Zanchet"
   roles: [postdoc]
   title: "Associate Professor"
@@ -897,15 +986,19 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://bv.fapesp.br/en/pesquisador/1867/daniela-zanchet"
+  identity: "https://bv.fapesp.br/en/pesquisador/1867/daniela-zanchet"
 - name: "Daniele Gerion"
   roles: [postdoc]
-  title: "Director of Technology"
-  org: "LamdaGen Corp."
+  title: ""
+  org: "TeraPore Technologies"
   sector: industry
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://doi.org/10.1016/j.seppur.2025.136564"
+  identity: "https://openalex.org/A5006355517"
 - name: "David Britt"
   roles: [postdoc]
   title: "Director of Research & Development"
@@ -924,12 +1017,14 @@
   verified: ""
 - name: "Dong-Hee Son"
   roles: [postdoc]
-  title: "Associate Professor"
+  title: "Professor"
   org: "Texas A&M University"
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://orcid.org/0000-0001-9002-5188"
+  identity: "https://orcid.org/0000-0001-9002-5188"
 - name: "Fabio Zurcher"
   roles: [postdoc]
   title: "Senior Director"
@@ -940,20 +1035,24 @@
   verified: ""
 - name: "Farnaz Niroui"
   roles: [postdoc]
-  title: "Assistant Professor"
+  title: "Associate Professor"
   org: "Massachusetts Institute of Technology"
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://niroui.mit.edu/farnaz-niroui-bio"
+  identity: "https://niroui.mit.edu/farnaz-niroui-bio"
 - name: "Gordana Dukovic"
   roles: [postdoc]
-  title: "Assistant Professor"
+  title: "Professor"
   org: "University of Colorado Boulder"
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://www.colorado.edu/lab/dukovicgroup/gordana-dukovic"
+  identity: "https://www.colorado.edu/lab/dukovicgroup/gordana-dukovic"
 - name: "Haimei Zheng"
   roles: [postdoc]
   title: "Staff Scientist, Materials Sciences Division"
@@ -961,7 +1060,9 @@
   sector: institute
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://doi.org/10.21203/rs.3.rs-11050251/v1"
+  identity: "https://orcid.org/0000-0003-3813-4170"
 - name: "Hongkun Park"
   roles: [postdoc]
   title: "Professor"
@@ -969,7 +1070,9 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://doi.org/10.1038/s41586-026-11073-7"
+  identity: "https://orcid.org/0000-0001-9576-8829"
 - name: "Ivan A. Moreno-Hernandez"
   roles: [postdoc]
   title: "Assistant Professor"
@@ -977,7 +1080,9 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://orcid.org/0000-0001-6461-9214"
+  identity: "https://orcid.org/0000-0001-6461-9214"
 - name: "Jacob Kanady"
   roles: [postdoc]
   title: "Scientist"
@@ -993,39 +1098,49 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://doi.org/10.1021/jacs.6c16624"
+  identity: "https://openalex.org/A5042591801"
 - name: "Jennifer Cha"
   roles: [postdoc]
-  title: "Norviel Associate Professor"
+  title: "Professor"
   org: "University of Colorado Boulder"
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://www.colorado.edu/engineering/jennifer-cha"
+  identity: "https://www.colorado.edu/engineering/jennifer-cha"
 - name: "Jen Dionne"
   roles: [postdoc]
-  title: "Assistant Professor"
+  title: "Professor"
   org: "Stanford University"
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://mse.stanford.edu/people/jennifer-dionne"
+  identity: "https://mse.stanford.edu/people/jennifer-dionne"
 - name: "Jianbo Gao"
   roles: [postdoc]
   title: "Associate Professor"
-  org: "Clemson University"
+  org: "Brock University"
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://orcid.org/0000-0001-6203-5338"
+  identity: "https://orcid.org/0000-0001-6203-5338"
 - name: "Jill Millstone"
   roles: [postdoc]
-  title: "Associate Professor"
+  title: "Leo B. and Teresa Y. Wegemer Professor of Chemistry"
   org: "University of Pittsburgh"
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://www.chem2.pitt.edu/people/faculty"
+  identity: "https://chemistry.northwestern.edu/about/newsletter/2025-newsletters/fall-2025-newsletter/alumni-millstone.html"
 - name: "Jing Tang"
   roles: [postdoc]
   title: "Senior Scientist"
@@ -1049,15 +1164,19 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://owen.chem.columbia.edu/bios"
+  identity: "https://owen.chem.columbia.edu/bios"
 - name: "Joseph Joey Luther"
   roles: [postdoc]
   title: "Senior Scientist"
-  org: "National Renewable Energy Laboratory"
+  org: "National Laboratory of the Rockies (formerly NREL)"
   sector: institute
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://doi.org/10.1126/science.aei2836"
+  identity: "https://www.cmu.edu/nanotechnology-forum/Forum_7/CV/J_Luther_CV.pdf"
 - name: "Joeson Wong"
   roles: [postdoc]
   title: "Engineer"
@@ -1073,7 +1192,9 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://doi.org/10.1021/acs.nanolett.6c03077"
+  identity: "https://orcid.org/0000-0003-3670-8505"
 - name: "Kimani A Stancil"
   roles: [postdoc]
   title: "Professor"
@@ -1089,23 +1210,29 @@
   sector: institute
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://doi.org/10.5281/zenodo.22745372"
+  identity: "https://openalex.org/A5025956413"
 - name: "Lilac Amirav"
   roles: [postdoc]
-  title: "Assistant Professor"
+  title: "Professor"
   org: "Technion, Israel Institute of Technology"
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://gepris.dfg.de/gepris/person/504199696"
+  identity: "https://openalex.org/A5034140175"
 - name: "Lindsey Hanson"
   roles: [postdoc]
-  title: "Assistant Professor"
+  title: "Associate Professor"
   org: "Trinity College"
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://orcid.org/0000-0002-0226-6115"
+  identity: "https://orcid.org/0000-0002-0226-6115"
 - name: "Linyou Cao"
   roles: [postdoc]
   title: "Assistant Professor"
@@ -1116,20 +1243,24 @@
   verified: ""
 - name: "Laura Na Liu"
   roles: [postdoc]
-  title: "Assistant Professor"
-  org: "Max Planck Institute"
-  sector: institute
-  years: ""
-  link: ""
-  verified: ""
-- name: "Marcus Scheele"
-  roles: [postdoc]
-  title: "Jr. Research Leader"
-  org: "University of Tuebingen"
+  title: "Professor and Director, 2nd Physics Institute"
+  org: "University of Stuttgart"
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://www.f08.uni-stuttgart.de/en/news/news/The-Physics-Department-welcomes-Prof.-Laura-Na-Liu-as-the-new-director-of-the-2.-Institute-of-Physics/"
+  identity: "https://pi2.uni-stuttgart.de/team/Liu-00003"
+- name: "Marcus Scheele"
+  roles: [postdoc]
+  title: "W3-Heisenberg Professor for Physical Chemistry"
+  org: "University of Tübingen"
+  sector: university
+  years: ""
+  link: ""
+  verified: "2026-10-20"
+  source: "https://uni-tuebingen.de/zh/148233"
+  identity: "https://uni-tuebingen.de/zh/148233"
 - name: "Maria Francesca Casula"
   roles: [postdoc]
   title: "Associate Professor"
@@ -1145,7 +1276,9 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://doi.org/10.1021/acs.nanolett.6c03564"
+  identity: "https://orcid.org/0000-0002-6882-4183"
 - name: "Markus Haase"
   roles: [postdoc]
   title: "Professor"
@@ -1161,15 +1294,19 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://orcid.org/0000-0002-9289-291X"
+  identity: "https://orcid.org/0000-0002-9289-291X"
 - name: "Ming Lee Tang"
   roles: [postdoc]
-  title: "Assistant Professor"
-  org: "University of California, Riverside"
+  title: "Associate Professor"
+  org: "University of Utah"
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://orcid.org/0000-0002-7642-2598"
+  identity: "https://orcid.org/0000-0002-7642-2598"
 - name: "Min Gee Cho"
   roles: [postdoc]
   title: "Scientist"
@@ -1177,7 +1314,9 @@
   sector: institute
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://doi.org/10.1093/mam/ozag053.622"
+  identity: "https://orcid.org/0000-0003-4490-7352"
 - name: "Myoung Hwan Oh"
   roles: [postdoc]
   title: "Associate Professor"
@@ -1185,7 +1324,9 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://orcid.org/0000-0002-8338-3881"
+  identity: "https://orcid.org/0000-0002-8338-3881"
 - name: "Minhal Hasham"
   roles: [postdoc]
   title: "Founding Scientist"
@@ -1201,15 +1342,19 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://www.cmu.edu/nanotechnology-forum/Forum_8/CV/Bio_Fromer.pdf"
+  identity: "https://www.cmu.edu/nanotechnology-forum/Forum_8/CV/Bio_Fromer.pdf"
 - name: "Paul-Emile Trudeau"
   roles: [postdoc]
   title: "Senior Research Professional"
-  org: "Quantium Technologies, Inc."
+  org: "Quantiam Technologies Inc."
   sector: industry
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://doi.org/10.1115/1.4064495"
+  identity: "https://openalex.org/A5111835924"
 - name: "Peter Allen"
   roles: [postdoc]
   title: "MBA Student"
@@ -1220,20 +1365,24 @@
   verified: ""
 - name: "Prashant Jain"
   roles: [postdoc]
-  title: "Assistant Professor"
+  title: "G. L. Clark Professor of Chemistry"
   org: "University of Illinois Urbana-Champaign"
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://las.illinois.edu/news/2024-01-09/prashant-jain-invested-gl-clark-professor-chemistry"
+  identity: "https://las.illinois.edu/news/2024-01-09/prashant-jain-invested-gl-clark-professor-chemistry"
 - name: "Qian Chen"
   roles: [postdoc]
-  title: "Assistant Professor"
+  title: "Professor"
   org: "University of Illinois Urbana-Champaign"
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://chenlab.matse.illinois.edu/our-team-copy/temp1"
+  identity: "https://chenlab.matse.illinois.edu/our-team-copy/temp1"
 - name: "Qiao Joe Zhang"
   roles: [postdoc]
   title: "Professor"
@@ -1241,7 +1390,9 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://orcid.org/0000-0001-9682-3295"
+  identity: "https://orcid.org/0000-0001-9682-3295"
 - name: "Rachel Smith"
   roles: [postdoc]
   title: "Quality Assurance Manager"
@@ -1257,7 +1408,9 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://en.wikipedia.org/wiki/Richard_D._Robinson_(engineer)"
+  identity: "https://en.wikipedia.org/wiki/Richard_D._Robinson_(engineer)"
 - name: "Somin Eunice Lee"
   roles: [postdoc]
   title: "Assistant Professor"
@@ -1268,21 +1421,22 @@
   verified: ""
 - name: "Sophia Betzler"
   roles: [postdoc]
-  title: "Engineer"
-  org: "Applied Materials Inc."
-  sector: industry
+  title: ""
+  org: ""
+  sector: unlisted
   years: ""
   link: ""
-  verified: "2026-10-20"
-  source: "https://haimeizheng.lbl.gov/scientists/"
+  verified: ""
 - name: "Son Nguyen"
   roles: [postdoc]
-  title: "Assistant Professor"
+  title: "Associate Professor"
   org: "University of California, Merced"
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://orcid.org/0000-0001-7713-4195"
+  identity: "https://orcid.org/0000-0001-7713-4195"
 - name: "Steven Hawks"
   roles: [postdoc]
   title: "Staff Scientist"
@@ -1290,15 +1444,19 @@
   sector: institute
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://doi.org/10.1021/acsestair.6c00145"
+  identity: "https://orcid.org/0000-0002-5983-8698"
 - name: "Terefe Habteyes"
   roles: [postdoc]
-  title: "Associate Professor"
+  title: "Professor and Department Chair"
   org: "University of New Mexico"
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://orcid.org/0000-0001-5978-6464"
+  identity: "https://orcid.org/0000-0001-5978-6464"
 - name: "Udo Bach"
   roles: [postdoc]
   title: "Professor"
@@ -1314,7 +1472,9 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://doi.org/10.48550/arxiv.2610.07213"
+  identity: "https://orcid.org/0000-0003-1698-2128"
 - name: "Vida Jamali"
   roles: [postdoc]
   title: "Assistant Professor, School of Chemical and Biomolecular Engineering"
@@ -1322,15 +1482,19 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://orcid.org/0000-0002-0022-8449"
+  identity: "https://orcid.org/0000-0002-0022-8449"
 - name: "Vivian Ferry"
   roles: [postdoc]
-  title: "Associate Professor"
+  title: "Professor"
   org: "University of Minnesota"
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://ferry.cems.umn.edu/people/vivian-ferry"
+  identity: "https://orcid.org/0000-0002-9676-6056"
 - name: "Wanli Ma"
   roles: [postdoc]
   title: "Professor"
@@ -1370,31 +1534,39 @@
   sector: institute
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://doi.org/10.1021/acsami.6c10668"
+  identity: "https://openalex.org/A5057597603"
 - name: "Wendy Gu"
   roles: [postdoc]
-  title: "Assistant Professor"
+  title: "Associate Professor"
   org: "Stanford University"
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://me.stanford.edu/people/wendy-gu"
+  identity: "https://openalex.org/A5075465440"
 - name: "Werner Hoheisel"
   roles: [postdoc]
-  title: "Group Lead"
-  org: "INVITE GmbH"
+  title: "Principal Expert"
+  org: "Bayer AG"
   sector: industry
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://orcid.org/0000-0003-1583-7156"
+  identity: "https://openalex.org/A5087071908"
 - name: "Wolfgang Parak"
   roles: [postdoc]
   title: "Professor"
-  org: "Philipps University Marburg"
+  org: "University of Hamburg"
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://doi.org/10.1002/admi.70705"
+  identity: "https://orcid.org/0000-0003-1672-6650"
 - name: "Woonhyuk Baek"
   roles: [postdoc]
   title: "Assistant Professor"
@@ -1402,7 +1574,9 @@
   sector: university
   years: "2022–2024"
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://orcid.org/0000-0002-0855-5233"
+  identity: "https://orcid.org/0000-0002-0855-5233"
 - name: "Xiaogang Peng"
   roles: [postdoc]
   title: "Professor"
@@ -1410,15 +1584,19 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://doi.org/10.1021/jacs.6c13849"
+  identity: "https://orcid.org/0000-0002-5606-8472"
 - name: "Xingchen Ye"
   roles: [postdoc]
-  title: "Assistant Professor"
+  title: "Associate Professor"
   org: "Indiana University Bloomington"
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://orcid.org/0000-0001-6851-2721"
+  identity: "https://orcid.org/0000-0001-6851-2721"
 - name: "Yadong Yin"
   roles: [postdoc]
   title: "Professor"
@@ -1426,7 +1604,9 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://doi.org/10.1016/j.scib.2026.09.085"
+  identity: "https://orcid.org/0000-0003-0218-3042"
 - name: "Yi Cui"
   roles: [postdoc]
   title: "Professor"
@@ -1434,7 +1614,9 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://doi.org/10.1038/s44460-026-00150-z"
+  identity: "https://openalex.org/A5071127149"
 - name: "Yogesh Surendranath"
   roles: [postdoc]
   title: "Professor"
@@ -1442,15 +1624,19 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://doi.org/10.26434/chemrxiv.15010104/v1"
+  identity: "https://openalex.org/A5021899292"
 - name: "Young-Wook Jun"
   roles: [postdoc]
-  title: "Associate Professor"
+  title: "Professor"
   org: "University of California, San Francisco"
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://orcid.org/0000-0003-3182-5366"
+  identity: "https://orcid.org/0000-0003-3182-5366"
 - name: "Yue Wu"
   roles: [postdoc]
   title: "Associate Professor"
@@ -1490,7 +1676,9 @@
   sector: university
   years: ""
   link: ""
-  verified: ""
+  verified: "2026-10-20"
+  source: "https://orcid.org/0000-0002-7874-7513"
+  identity: "https://orcid.org/0000-0002-7874-7513"
 - name: "Xiao Huang"
   roles: [undergrad]
   title: "Ph.D. Student, Kulik Research Group"
@@ -1517,10 +1705,9 @@
   verified: ""
 - name: "Sarah Thau"
   roles: [undergrad]
-  title: "Undergraduate student"
-  org: "The College, University of Chicago"
-  sector: university
+  title: ""
+  org: ""
+  sector: unlisted
   years: "2024–2025"
   link: ""
-  verified: "2026-10-20"
-  source: "https://cha.uchicago.edu/winners"
+  verified: ""

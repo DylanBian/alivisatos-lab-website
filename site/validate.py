@@ -80,7 +80,10 @@ assert sum(1 for c in acards if sum(x.startswith('ag-site-r-') for x in classes(
 segments = by_class(roots['alumni'], 'ag-site-sector-segment', 'span')
 assert len(segments) == 3 and all(re.fullmatch(r'width:\d+\.\d\d%', s.get('style', '')) for s in segments)
 assert ':target' in styles['alumni']
-print('alumni: 187 cards (12 with two roles shown once); sector bar; sector and role filters')
+for r in alumni:
+    if r.get('verified'):  # a confirmed position needs both the position page and the identity tie to the group
+        assert str(r.get('source', '')).startswith('http') and str(r.get('identity', '')).startswith('http'), f'alumni: {r["name"]} verified without source and identity'
+print('alumni: 187 cards (12 with two roles shown once); sector bar; sector and role filters; verified entries carry identity ties')
 
 # News
 news = yaml.safe_load((ROOT / 'data/news.yaml').read_text())
