@@ -329,8 +329,13 @@ def paper_figure(paper, cls='ag-site-paper-figure'):
         return ''
     if not paper.get('image_credit'):
         raise ValueError(f'Image without credit line: {paper["doi"]}')
-    return (f'<figure class="{cls}"><a href="https://doi.org/{esc(paper["doi"])}" target="_blank" rel="noopener noreferrer">'
-            f'<img src="{esc(paper["image"])}" alt="{esc(paper.get("image_alt", ""))}" loading="lazy"></a>'
+    # A background image, not <img>: any <img> in the large Publications module makes WordPress render the page empty
+    # (tested 2026-10-20 on the private test page). The link carries role="img" and the alt text as its label.
+    if re.search(r'[\s()"\']', paper['image']):
+        raise ValueError(f'Image URL needs no quoting inside url(): {paper["image"]}')
+    return (f'<figure class="{cls}"><a class="ag-site-figure-img" href="https://doi.org/{esc(paper["doi"])}" target="_blank" '
+            f'rel="noopener noreferrer" role="img" aria-label="{esc(paper.get("image_alt", ""))}" '
+            f'style="background-image:url({esc(paper["image"])})"></a>'
             f'<figcaption>{esc(paper["image_credit"])}</figcaption></figure>')
 
 

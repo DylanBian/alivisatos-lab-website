@@ -226,7 +226,15 @@ def main():
     if request(endpoint+'?context=edit')['content']['raw']!=raw:
         raise RuntimeError('Page changed after the backup; no write performed')
     request(endpoint,{'content':updated})
-    actual=request(endpoint+'?context=edit')['content']['raw']
+    after=request(endpoint+'?context=edit')
+    actual=after['content']['raw']
+    rendered=after['content'].get('rendered') or ''
+    if len(rendered)<1000:
+        # Seen 2026-10-20: an <img> inside the large Publications module made WordPress render the page empty.
+        request(endpoint,{'content':raw})
+        back=request(endpoint+'?context=edit')['content']['raw']
+        raise RuntimeError(f'Saved page renders empty ({len(rendered)} chars). Previous content written back: '
+                           f'{"identical" if back==raw else "DIFFERS, restore from revisions"}.')
     if page!='research' and (f'AUTO:{marker}:START' not in actual or len(actual)<0.5*len(updated)):
         # The save lost the module (seen 2026-10-20: page saved empty). Put the previous content back at once.
         request(endpoint,{'content':raw})

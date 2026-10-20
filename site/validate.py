@@ -114,6 +114,7 @@ for f in re.findall(r'#(f-[\w-]+):target', styles['publications']):
     assert proot.xpath(f'.//*[@id="{f}"]'), f'publications: target {f} missing'
 nfilters = len(set(re.findall(r'#(f-[\w-]+):target', styles['publications'])))
 assert nfilters >= 20
+assert not proot.xpath('.//img'), 'publications: <img> in this module makes WordPress render the page empty; use background images'
 print(f'publications: {len(sel)} selected + {n_rows} numbered papers in 38 years; {nfilters} filters')
 
 # Home
