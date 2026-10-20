@@ -1,0 +1,528 @@
+<title>Alivisatos Group Alumni</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@400;500;600&family=Source+Serif+4:opsz,wght@8..60,500;8..60,600&display=swap">
+<style>
+/* Layout: one 1080px column; intro, four figures, proportional sector bar, then a filterable directory grid with hairline dividers. */
+:root {
+  --bg: #fcfbfb;
+  --surface: #f4f0f0;
+  --fg: #1f1a1b;
+  --muted: #6b6264;
+  --line: #e5dfe0;
+  --accent: #800000;
+  --accent-soft: #f4e7e7;
+  --s-uni: #8a1c1c;
+  --s-ind: #1f6f8b;
+  --s-lab: #a8701a;
+  --s-na: #b3abad;
+  --font-display: "Source Serif 4", "Iowan Old Style", Georgia, serif;
+  --font-body: "IBM Plex Sans", "Segoe UI", system-ui, sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #161314; --surface: #211c1d; --fg: #eeeaea; --muted: #a59c9e; --line: #342d2f;
+    --accent: #e8908f; --accent-soft: #3a2324;
+    --s-uni: #e07a78; --s-ind: #5fb3cf; --s-lab: #e2b05a; --s-na: #6e6567;
+    color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #161314; --surface: #211c1d; --fg: #eeeaea; --muted: #a59c9e; --line: #342d2f;
+  --accent: #e8908f; --accent-soft: #3a2324;
+  --s-uni: #e07a78; --s-ind: #5fb3cf; --s-lab: #e2b05a; --s-na: #6e6567;
+  color-scheme: dark;
+}
+
+body {
+  background: var(--bg);
+  color: var(--fg);
+  font-family: var(--font-body);
+  font-size: 15px;
+  line-height: 1.5;
+}
+.ag-alumni {
+  max-width: 1080px;
+  margin: 0 auto;
+  padding-block: 32px 56px;
+  padding-left: max(16px, env(safe-area-inset-left, 0px));
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  display: grid;
+  gap: 32px;
+}
+
+.proto {
+  justify-self: start;
+  font-size: 12px;
+  letter-spacing: .02em;
+  color: var(--muted);
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  padding: 3px 10px;
+}
+
+.intro { display: grid; gap: 10px; max-width: 66ch; }
+.eyebrow {
+  font-size: 12px; font-weight: 600; letter-spacing: .12em; text-transform: uppercase; color: var(--accent);
+}
+h1 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: clamp(34px, 6vw, 48px);
+  line-height: 1.05;
+  margin: 0;
+  text-wrap: balance;
+}
+.lede { margin: 0; font-size: 17px; color: var(--muted); }
+
+.figures {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 0;
+  border-top: 2px solid var(--fg);
+}
+.fig {
+  padding: 14px 16px 4px 0;
+  display: grid;
+  gap: 2px;
+  align-content: start;
+}
+.fig + .fig { padding-left: 16px; border-left: 1px solid var(--line); }
+.fig b {
+  font-family: var(--font-display);
+  font-weight: 500;
+  font-size: clamp(30px, 5vw, 42px);
+  line-height: 1.1;
+  font-variant-numeric: tabular-nums lining-nums;
+}
+.fig span { font-size: 13px; color: var(--muted); }
+@media (max-width: 640px) {
+  .figures { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  .fig:nth-child(3) { padding-left: 0; border-left: 0; }
+  .fig:nth-child(n+3) { border-top: 1px solid var(--line); }
+}
+
+.sectors { display: grid; gap: 12px; }
+.sectors h2, .dir-head h2 {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 22px;
+  margin: 0;
+}
+.bar {
+  display: flex;
+  height: 14px;
+  border-radius: 3px;
+  overflow: hidden;
+  background: var(--surface);
+}
+.bar button {
+  border: 0; padding: 0; margin: 0; cursor: pointer;
+  transition: opacity .15s, filter .15s;
+}
+.bar button:hover { filter: brightness(1.08); }
+.bar.has-filter button:not([aria-pressed="true"]) { opacity: .28; }
+
+.chips { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip {
+  font: inherit;
+  font-size: 14px;
+  display: inline-flex; align-items: center; gap: 8px;
+  padding: 6px 12px;
+  border: 1px solid var(--line);
+  border-radius: 999px;
+  background: var(--bg);
+  color: var(--fg);
+  cursor: pointer;
+}
+.chip:hover { border-color: var(--muted); }
+.chip[aria-pressed="true"] { background: var(--fg); color: var(--bg); border-color: var(--fg); }
+.chip .dot { width: 9px; height: 9px; border-radius: 50%; flex: none; }
+.chip .n { font-variant-numeric: tabular-nums; color: var(--muted); }
+.chip[aria-pressed="true"] .n { color: inherit; opacity: .75; }
+
+.dir-head {
+  display: flex; flex-wrap: wrap; gap: 12px 24px; align-items: end; justify-content: space-between;
+  padding-bottom: 12px; border-bottom: 1px solid var(--line);
+}
+.controls { display: flex; flex-wrap: wrap; gap: 10px; align-items: center; }
+.seg {
+  display: inline-flex; border: 1px solid var(--line); border-radius: 8px; overflow: hidden;
+}
+.seg button {
+  font: inherit; font-size: 14px; border: 0; background: var(--bg); color: var(--fg);
+  padding: 7px 12px; cursor: pointer;
+}
+.seg button + button { border-left: 1px solid var(--line); }
+.seg button[aria-pressed="true"] { background: var(--accent-soft); color: var(--accent); font-weight: 600; }
+.search {
+  font: inherit; font-size: 14px;
+  width: 220px; max-width: 100%;
+  padding: 7px 12px;
+  border: 1px solid var(--line); border-radius: 8px;
+  background: var(--bg); color: var(--fg);
+}
+.search::placeholder { color: var(--muted); }
+.count { font-size: 13px; color: var(--muted); font-variant-numeric: tabular-nums; width: 100%; }
+
+.grid {
+  list-style: none; margin: 0; padding: 0;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(min(100%, 300px), 1fr));
+  column-gap: 32px;
+}
+.person {
+  padding: 14px 0;
+  border-bottom: 1px solid var(--line);
+  display: grid;
+  grid-template-columns: 10px minmax(0, 1fr);
+  column-gap: 12px;
+  row-gap: 2px;
+}
+.person .dot { width: 8px; height: 8px; border-radius: 50%; margin-top: 7px; grid-row: span 3; }
+.person .name { font-weight: 600; }
+.person .title { font-size: 14px; }
+.person .org { font-size: 14px; color: var(--muted); }
+.person .tags { grid-column: 2; display: flex; gap: 6px; margin-top: 4px; }
+.tag {
+  font-size: 11px; font-weight: 500; letter-spacing: .04em; text-transform: uppercase;
+  color: var(--muted); border: 1px solid var(--line); border-radius: 4px; padding: 1px 6px;
+}
+.empty { padding: 28px 0; color: var(--muted); display: grid; gap: 10px; justify-items: start; }
+.link-btn {
+  font: inherit; font-size: 14px; background: none; border: 0; padding: 0;
+  color: var(--accent); text-decoration: underline; cursor: pointer;
+}
+
+.foot { font-size: 14px; color: var(--muted); border-top: 1px solid var(--line); padding-top: 16px; }
+.foot .addr { color: var(--fg); user-select: all; font-weight: 500; }
+
+button:focus-visible, input:focus-visible { outline: 2px solid var(--accent); outline-offset: 2px; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<section class="ag-alumni">
+  <span class="proto">Prototype · data from the current Alumni page, October 2026</span>
+
+  <header class="intro">
+    <span class="eyebrow">People</span>
+    <h1>Alumni</h1>
+    <p class="lede">Scientists trained in the Alivisatos Group at UC Berkeley, Lawrence Berkeley National Laboratory and the University of Chicago now lead research groups, companies and national laboratories around the world.</p>
+  </header>
+
+  <div class="figures" id="figures" aria-label="Alumni at a glance"></div>
+
+  <section class="sectors" aria-labelledby="sec-h">
+    <h2 id="sec-h">Where they are now</h2>
+    <div class="bar" id="bar" role="group" aria-label="Alumni by sector"></div>
+    <div class="chips" id="sector-chips" role="group" aria-label="Filter by sector"></div>
+  </section>
+
+  <section aria-labelledby="dir-h" style="display:grid;gap:4px">
+    <div class="dir-head">
+      <h2 id="dir-h">Directory</h2>
+      <div class="controls">
+        <div class="seg" id="role-seg" role="group" aria-label="Filter by role in the group"></div>
+        <label for="q" style="position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)">Search alumni</label>
+        <input class="search" id="q" type="search" placeholder="Search name or institution" autocomplete="off">
+      </div>
+      <div class="count" id="count" aria-live="polite"></div>
+    </div>
+    <ul class="grid" id="grid"></ul>
+    <div class="empty" id="empty" hidden>
+      <span>No alumni match these filters.</span>
+      <button class="link-btn" id="clear" type="button">Clear filters</button>
+    </div>
+  </section>
+
+  <p class="foot">Positions are listed as last reported. Alumni can send updates to <span class="addr">alivisatos-lab@uchicago.edu</span>.</p>
+</section>
+
+<script>
+// [name, title, organization, roles (g = Ph.D., p = postdoc, u = undergraduate), sector (A university, I industry, L institute or national lab, U not listed)]
+const ALUMNI = [
+["Abdullah S. Abbas","Engineer","Intel Corp.","g","I"],
+["Aihua Fu","President and CEO","NVIGEN Inc.","g","I"],
+["Alexandra Courtis","","","g","U"],
+["Amy Bowen Herhold","Section Head","Exxon Research and Engineering Co.","g","I"],
+["Andreas Virin Kadavanich","Staff Systems Engineer","Labcyte Inc.","g","I"],
+["Andrew Guzelian","Product Development Manager","Nyacol Nano Technologies Inc.","g","I"],
+["Andrew Lim","Managing Director","Kirribilli Associates","g","I"],
+["Andrew Olson","Corporate Development Consultant","ALX Oncology","g","I"],
+["Arunima Balan","Research Scientist","Lam Research Corporation","g","I"],
+["Avery Goldstein","Patent Attorney","Blue Filament Law PLLC","g","I"],
+["Brandon Beberwyck","Business Consultant","Applied Predictive Technologies","g","I"],
+["Brent Koscher","Postdoctoral Researcher","Massachusetts Institute of Technology","g","A"],
+["Bryce Sadtler","Assistant Professor","Washington University in St. Louis","g","A"],
+["Can Kerem Erdonmez","Assistant Editor","Springer Nature","g","I"],
+["Charina L. Chou","Global Policy Lead for Emerging Technologies","Google","g","I"],
+["Christine M. Micheel","Research Assistant Professor of Medicine","Vanderbilt University Medical Center","g","A"],
+["Cyrus Wadia","Vice President, Sustainable Business","Nike, Portland","g","I"],
+["Daniel Mittleman","Professor of Engineering","Brown University","gp","A"],
+["Danny Hellebusch","Senior Scientist","Imprint Energy","g","I"],
+["David Grauer","Senior Process Engineer","Intrexon Corporation, San Francisco","g","I"],
+["David Klein","","HDI Instrumentation","gp","I"],
+["David Litt","Process Engineer","Intel Corporation","g","I"],
+["David Nenon","Global Supply Manager","Tesla","g","I"],
+["David Zaziski","Director, Government Affairs & Business Development","Siluria Technologies, Inc.","g","I"],
+["Deborah Aruguete","Associate Professor of Environmental Science and Chemistry","Penn State Behrend","g","A"],
+["Delia Milliron","Professor","University of Texas, Austin","g","A"],
+["Emory Chan","Career Staff Scientist","Lawrence Berkeley National Laboratory","g","L"],
+["Erik C. Scher","Chief Operating Officer","Siluria Technologies, Inc.","g","I"],
+["Erin O'Brien","","","g","U"],
+["Haitao Liu","Professor and Department Chair","University of Pittsburgh","g","A"],
+["Han Le","","","g","U"],
+["Hoduk Cho","Research Fellow","Institute for Basic Science","g","L"],
+["Hyun Dong \"Kenneth\" Ha","","","g","U"],
+["Ilan Gur","Chief Executive Officer","Activate","g","I"],
+["Ilan Jen La-Plante","Senior Scientist","Nanosys","g","I"],
+["Jakob Chayes Dahl","A. O. Beckman Postdoctoral Fellow","Massachusetts Institute of Technology","g","A"],
+["Jacob Olshansky","Postdoctoral Researcher","Northwestern University","g","A"],
+["James Matthew Lucas","Associate Director","Carbon1804","g","I"],
+["James Henry Nelson","Consultant","Energy & Environmental Economics","g","I"],
+["Janet Katari","President","altSpirit","g","I"],
+["Jesse Engel","Senior Research Scientist","Google","g","I"],
+["Jessica Smith","Director of Bioinformatics","seqWell","g","I"],
+["Jessy Baker Rivest","Research Staff","Xerox PARC","g","I"],
+["Jennifer Lee","","","gp","U"],
+["Jia Zhu","Professor","Nanjing University","g","A"],
+["Joseph R. Sachleben","Technical Director, Biomolecular NMR Facility","University of Chicago","gp","A"],
+["Joseph Shiang","","Department of Chemistry, University of Michigan","gp","A"],
+["Joseph Swabeck","Patent Agent","Wilson Sonsini Goodrich & Rosati","g","I"],
+["Joshua Wittenberg","Product Development Engineer","KLA Tencor","g","I"],
+["Judy Chang","","Division of Neurology, UCSD Medical Center","gp","A"],
+["Juanita Wickham Kurtin","Director, Materials Research","Osram Opto Semiconductors, Inc.","g","I"],
+["Jungwon Park","Associate Professor","Seoul National University","g","A"],
+["Justin Ondry","Postdoctoral Researcher","University of Chicago","g","A"],
+["Justine Shaw","Chemistry Instructor","Northwestern University","g","A"],
+["Karthish Manthiram","Professor","California Institute of Technology","g","A"],
+["Katherine Katie Nichols","Teaching Fellow","San Francisco Art Institute","g","A"],
+["Katie Lutker","BEOL Senior Process Engineer","Tokyo Electron","g","I"],
+["Kimberly Hamad-Schifferli","Associate Professor","University of Massachusetts, Boston","g","A"],
+["Kristie Koski","Associate Professor","University of California, Davis","g","A"],
+["Kwanghee Kim","","Samsung Advanced Institute of Technology","gp","I"],
+["Liang-Shi Li","Professor","Indiana University","g","A"],
+["Marcel Pierre Bruchez","Director, Molecular Biosensors and Imaging Center","Carnegie Mellon University","g","A"],
+["Marco Tomaselli","","Laboratory of Physical Chemistry","gp","A"],
+["Mark Joseph Polking","Technical Staff","Massachusetts Institute of Technology","g","A"],
+["Matthew Koc","Product Engineer","Lam Research Corporation","g","I"],
+["Matt Hauwiller","Senior Engineer","Seagate","g","I"],
+["Matthew Sheldon","Associate Professor","Texas A&M University","g","A"],
+["Max Merkle","Senior Process Development Engineer","Intel Corporation","g","I"],
+["Meredith McMurdo Doyle","Senior Technical Supervisor","3M","g","I"],
+["Michael Schlamp","Principal","Aquest Consulting, Inc.","g","I"],
+["Michelle Crook","Process Engineer","Intel","g","I"],
+["Neil Greenham","","Cavendish Laboratory","gp","A"],
+["Noah Bronstein","Scientist","Exponent, Inc.","g","I"],
+["Noelle Marie Drugan Kamp","","","g","U"],
+["Ophir Klein","Distinguished Professor","University of California, San Francisco","gp","A"],
+["Richard Roth","Quality Manager","Qimonda","g","I"],
+["Robert Kimes Grubbs","Principal Member","Sandia National Laboratories","g","L"],
+["Sandy Rosenthal","Professor","Vanderbilt University","gp","A"],
+["Sarah Swisher","Assistant Professor","University of Minnesota","g","A"],
+["Sarah Helen Tolbert","Professor","University of California, Los Angeles","g","A"],
+["Sassan Sheikholeslami","Senior Staff Scientist","Pacific Biosciences","g","I"],
+["Scot Kellar","Silicon Architect","Intel Corporation","g","I"],
+["Shara Carol Williams","Scientist","NIWC Pacific","g","L"],
+["Shilpa Raja","Scientist, Materials Science","Zymergen","g","I"],
+["Shelley Claridge","Assistant Professor","Purdue University","g","A"],
+["Stephen Gerald Prilliman","Associate Professor","Oklahoma City University","g","A"],
+["Steven Hughes","Assistant Professor","Roanoke College","g","A"],
+["Tina Ding","Researcher","Invenio Imaging","g","I"],
+["Trevor Ewers","R&D Manager","Dow Chemical Co.","g","I"],
+["Vicki Leigh Colvin","Director of the Center for Biomedical Engineering","Brown University","g","A"],
+["Victor Puntes","Professor","Catalan Institute of Technology","gp","L"],
+["Wendy Uyen Huynh","","Ludwig Maximilian University of Munich","g","A"],
+["Wojciech Osowiecki","Rotational Program Process Engineer","Lam Research Corporation","g","I"],
+["Xingzhi Wang","Postdoctoral Researcher","University of Illinois Urbana-Champaign","g","A"],
+["Yingjie Zhang","Assistant Professor","University of Illinois Urbana-Champaign","g","A"],
+["Alexander Mastroianni","Staff Scientist, Surface Chemistry","Berkeley Lights, Inc.","p","I"],
+["Alf Mews","Professor of Physical Chemistry","University of Hamburg","p","A"],
+["Andreas Meisel","Manager","Tesla","p","I"],
+["Andreu Cabot","Group Leader","University of Barcelona","p","A"],
+["Antonios Kanaras","Professor","University of Southampton","p","A"],
+["Assaf Ben-Moshe","","","p","U"],
+["Carissa Eisler","Assistant Professor","University of California, Los Angeles","p","A"],
+["Carsten Soennichsen","Professor","University of Mainz","p","A"],
+["Chang Yan","Associate Professor, Department of Chemistry","Shanghai Jiao Tong University","p","A"],
+["Chia-Chun Chen","Professor","National Taiwan Normal University","p","A"],
+["Christian Laube","","","p","U"],
+["Christina W. Li","Professor","Purdue University","p","A"],
+["Daeha Seo","Assistant Professor","Daegu Gyeongbuk Institute of Science and Technology","p","A"],
+["Daniela Zanchet","Associate Professor","University of Campinas, Institute of Chemistry","p","A"],
+["Daniele Gerion","Director of Technology","LamdaGen Corp.","p","I"],
+["David Britt","Director of Research & Development","Matrix Sensors","p","I"],
+["Debraj Ghosh","Sr. Product Marketing Manager","Microsoft","p","I"],
+["Dong-Hee Son","Associate Professor","Texas A&M University","p","A"],
+["Fabio Zurcher","Senior Director","Siluria Technologies, Inc.","p","I"],
+["Farnaz Niroui","Assistant Professor","Massachusetts Institute of Technology","p","A"],
+["Gordana Dukovic","Assistant Professor","University of Colorado Boulder","p","A"],
+["Haimei Zheng","Staff Scientist, Materials Sciences Division","Lawrence Berkeley National Laboratory","p","L"],
+["Hongkun Park","Professor","Harvard University","p","A"],
+["Ivan A. Moreno-Hernandez","Assistant Professor","Duke University","p","A"],
+["Jacob Kanady","Scientist","Irvine Ranch Water District","p","L"],
+["Jeffrey Long","Professor","University of California, Berkeley","p","A"],
+["Jennifer Cha","Norviel Associate Professor","University of Colorado Boulder","p","A"],
+["Jen Dionne","Assistant Professor","Stanford University","p","A"],
+["Jianbo Gao","Associate Professor","Clemson University","p","A"],
+["Jill Millstone","Associate Professor","University of Pittsburgh","p","A"],
+["Jing Tang","Senior Scientist","Agilent Labs","p","I"],
+["Joerg Rockenberger","VP Product Development","Ensor","p","I"],
+["Jonathan Owen","Associate Professor","Columbia University","p","A"],
+["Joseph Joey Luther","Senior Scientist","National Renewable Energy Laboratory","p","L"],
+["Joeson Wong","Engineer","","p","I"],
+["Kevin Ryan","Professor","University of Limerick","p","A"],
+["Kimani A Stancil","Professor","Howard University","p","A"],
+["Liberato Manna","Department Director","Italian Institute of Technology","p","L"],
+["Lilac Amirav","Assistant Professor","Technion, Israel Institute of Technology","p","A"],
+["Lindsey Hanson","Assistant Professor","Trinity College","p","A"],
+["Linyou Cao","Assistant Professor","North Carolina State University","p","A"],
+["Laura Na Liu","Assistant Professor","Max Planck Institute","p","L"],
+["Marcus Scheele","Jr. Research Leader","University of Tuebingen","p","A"],
+["Maria Francesca Casula","Associate Professor","University of Cagliari","p","A"],
+["Mario Hentschel","Director of Nanofabrication","University of Stuttgart","p","A"],
+["Markus Haase","Professor","University of Osnabrück","p","A"],
+["Matthew Jones","Assistant Professor","Rice University","p","A"],
+["Ming Lee Tang","Assistant Professor","University of California, Riverside","p","A"],
+["Min Gee Cho","Scientist","Lawrence Berkeley National Laboratory","p","L"],
+["Myoung Hwan Oh","Associate Professor","Korea Institute of Energy Technology","p","A"],
+["Minhal Hasham","Founding Scientist","Optigon, Inc.","p","I"],
+["Neil Fromer","Executive Director, Resnick Institute","California Institute of Technology","p","A"],
+["Paul-Emile Trudeau","Senior Research Professional","Quantium Technologies, Inc.","p","I"],
+["Peter Allen","MBA Student","Harvard University","p","A"],
+["Prashant Jain","Assistant Professor","University of Illinois Urbana-Champaign","p","A"],
+["Qian Chen","Assistant Professor","University of Illinois Urbana-Champaign","p","A"],
+["Qiao Joe Zhang","Professor","Soochow University","p","A"],
+["Rachel Smith","Quality Assurance Manager","Thermo Fisher Scientific","p","I"],
+["Richard Robinson","Associate Professor","Cornell University","p","A"],
+["Somin Eunice Lee","Assistant Professor","University of Michigan","p","A"],
+["Sophia Betzler","","","p","U"],
+["Son Nguyen","Assistant Professor","University of California, Merced","p","A"],
+["Steven Hawks","Staff Scientist","Lawrence Livermore National Laboratory","p","L"],
+["Terefe Habteyes","Associate Professor","University of New Mexico","p","A"],
+["Udo Bach","Professor","Monash University","p","A"],
+["Uri Banin","Professor","Hebrew University of Jerusalem","p","A"],
+["Vida Jamali","Assistant Professor, School of Chemical and Biomolecular Engineering","Georgia Tech","p","A"],
+["Vivian Ferry","Associate Professor","University of Minnesota","p","A"],
+["Wanli Ma","Professor","Soochow University","p","A"],
+["Waqas Khalid","Program Manager Scientist","University of California, Berkeley","p","A"],
+["Wei Wei Gu","Lab Manager","NVIGEN, Inc.","p","I"],
+["Weidong Yang","CEO","Kineviz","p","I"],
+["Weilin Xu","Professor","Changchun Institute of Applied Chemistry","p","L"],
+["Wendy Gu","Assistant Professor","Stanford University","p","A"],
+["Werner Hoheisel","Group Lead","INVITE GmbH","p","I"],
+["Wolfgang Parak","Professor","Philipps University Marburg","p","A"],
+["Woonhyuk Baek","Assistant Professor","Jeonbuk National University","p","A"],
+["Xiaogang Peng","Professor","Zhejiang University","p","A"],
+["Xingchen Ye","Assistant Professor","Indiana University Bloomington","p","A"],
+["Yadong Yin","Professor","University of California, Riverside","p","A"],
+["Yi Cui","Professor","Stanford University","p","A"],
+["Yogesh Surendranath","Professor","Massachusetts Institute of Technology","p","A"],
+["Young-Wook Jun","Associate Professor","University of California, San Francisco","p","A"],
+["Yue Wu","Associate Professor","Iowa State University","p","A"],
+["Jiaqi Sun","Undergraduate Student","Hong Kong University","u","A"],
+["Yasin Badawy","Ph.D. Student, Peidong Yang Lab","UC Berkeley","u","A"],
+["Alex Powers","Ph.D. Student, Dror Lab","Stanford University","u","A"],
+["Amy McKeown-Green","Ph.D. Student, Liu Research Group","Stanford University","u","A"],
+["Xiao Huang","Ph.D. Student, Kulik Research Group","Massachusetts Institute of Technology","u","A"],
+["Viraj Bodiwala","AI Engineer","Theta Neurotech","u","I"],
+["Harrison Burke","","","u","U"],
+["Sarah Thau","","","u","U"]
+];
+
+const SECTORS = {
+  A: { label: "Universities", color: "var(--s-uni)" },
+  I: { label: "Industry", color: "var(--s-ind)" },
+  L: { label: "Institutes & national labs", color: "var(--s-lab)" },
+  U: { label: "Not listed", color: "var(--s-na)" }
+};
+const ROLES = { all: "All", g: "Ph.D.", p: "Postdoc", u: "Undergraduate" };
+const ROLE_TAG = { g: "Ph.D.", p: "Postdoc", u: "Undergrad" };
+
+const people = ALUMNI.map(([name, title, org, roles, sector]) => {
+  const clean = name.replace(/"[^"]*"/g, "").trim().split(/\s+/);
+  return { name, title, org, roles, sector, last: clean[clean.length - 1], faculty: /professor/i.test(title) };
+}).sort((a, b) => a.last.localeCompare(b.last) || a.name.localeCompare(b.name));
+
+const state = { role: "all", sector: "all", q: "" };
+const $ = id => document.getElementById(id);
+const esc = s => s.replace(/[&<>"]/g, c => ({ "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;" }[c]));
+
+function countBy(list, key) {
+  const out = { A: 0, I: 0, L: 0, U: 0 };
+  list.forEach(p => out[p[key]]++);
+  return out;
+}
+
+function renderFigures() {
+  const s = countBy(people, "sector");
+  const fac = people.filter(p => p.faculty).length;
+  const figs = [
+    [people.length, "alumni"],
+    [fac, "professors"],
+    [s.I, "in industry"],
+    [s.L, "at institutes & national labs"]
+  ];
+  $("figures").innerHTML = figs.map(([n, l]) => `<div class="fig"><b>${n}</b><span>${l}</span></div>`).join("");
+}
+
+function inRole(p) { return state.role === "all" || p.roles.includes(state.role); }
+function inQuery(p) {
+  if (!state.q) return true;
+  const hay = (p.name + " " + p.title + " " + p.org).toLowerCase();
+  return state.q.toLowerCase().split(/\s+/).every(t => hay.includes(t));
+}
+
+function renderSectors() {
+  const base = people.filter(p => inRole(p) && inQuery(p));
+  const c = countBy(base, "sector");
+  const total = base.length || 1;
+  const bar = $("bar");
+  bar.classList.toggle("has-filter", state.sector !== "all");
+  bar.innerHTML = Object.keys(SECTORS).filter(k => c[k]).map(k =>
+    `<button type="button" data-sector="${k}" aria-pressed="${state.sector === k}" title="${SECTORS[k].label}: ${c[k]}"
+      aria-label="${SECTORS[k].label}, ${c[k]}" style="flex:${c[k]} 0 0;background:${SECTORS[k].color}"></button>`
+  ).join("");
+  $("sector-chips").innerHTML =
+    `<button type="button" class="chip" data-sector="all" aria-pressed="${state.sector === "all"}">All <span class="n">${base.length}</span></button>` +
+    Object.keys(SECTORS).map(k =>
+      `<button type="button" class="chip" data-sector="${k}" aria-pressed="${state.sector === k}">
+        <span class="dot" style="background:${SECTORS[k].color}"></span>${SECTORS[k].label} <span class="n">${c[k]}</span></button>`
+    ).join("");
+}
+
+function renderRoles() {
+  $("role-seg").innerHTML = Object.keys(ROLES).map(k =>
+    `<button type="button" data-role="${k}" aria-pressed="${state.role === k}">${ROLES[k]}</button>`
+  ).join("");
+}
+
+function renderGrid() {
+  const list = people.filter(p => inRole(p) && inQuery(p) && (state.sector === "all" || p.sector === state.sector));
+  $("grid").innerHTML = list.map(p => `
+    <li class="person">
+      <span class="dot" style="background:${SECTORS[p.sector].color}" title="${SECTORS[p.sector].label}"></span>
+      <span class="name">${esc(p.name)}</span>
+      ${p.title ? `<span class="title">${esc(p.title)}</span>` : ""}
+      ${p.org ? `<span class="org">${esc(p.org)}</span>` : ""}
+      <span class="tags">${[...p.roles].map(r => `<span class="tag">${ROLE_TAG[r]}</span>`).join("")}</span>
+    </li>`).join("");
+  $("empty").hidden = list.length > 0;
+  $("count").textContent = `Showing ${list.length} of ${people.length}, sorted by last name`;
+}
+
+function render() { renderSectors(); renderRoles(); renderGrid(); }
+
+document.addEventListener("click", e => {
+  const s = e.target.closest("[data-sector]");
+  if (s) { const k = s.dataset.sector; state.sector = (state.sector === k && k !== "all") ? "all" : k; render(); return; }
+  const r = e.target.closest("[data-role]");
+  if (r) { state.role = r.dataset.role; render(); }
+});
+$("q").addEventListener("input", e => { state.q = e.target.value.trim(); render(); });
+$("clear").addEventListener("click", () => { state.role = "all"; state.sector = "all"; state.q = ""; $("q").value = ""; render(); });
+
+renderFigures();
+render();
+</script>

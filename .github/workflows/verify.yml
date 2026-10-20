@@ -1,0 +1,27 @@
+name: Daily public check
+
+# Fails (and GitHub emails the repository owner) if a visitor can see forbidden text,
+# the Positions page becomes reachable, or a page stops loading.
+# Note: GitHub pauses scheduled workflows after 60 days without repository activity.
+on:
+  schedule:
+    - cron: "17 13 * * *"   # 08:17 Chicago time (CDT)
+  workflow_dispatch:
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    env:
+      WP_USER: ${{ secrets.WP_USER }}
+      WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Public check
+        run: python scripts/verify_public.py

@@ -1,0 +1,41 @@
+name: Check site access
+
+# Run this first after adding the secrets. It changes nothing on the site
+# (unless "content_test" is ticked, which creates one private test page).
+on:
+  workflow_dispatch:
+    inputs:
+      content_test:
+        description: "Task F: create a private test page to see which HTML survives saving"
+        type: boolean
+        default: false
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+    env:
+      WP_USER: ${{ secrets.WP_USER }}
+      WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - name: Auth check
+        run: python scripts/auth_check.py
+      - name: Backup all pages
+        run: python scripts/backup.py --out backup
+      - uses: actions/upload-artifact@v4
+        with:
+          name: backup-${{ github.run_id }}
+          path: backup/
+          retention-days: 90
+      - name: Content test (task F)
+        if: ${{ inputs.content_test }}
+        run: python scripts/content_test.py
+      - name: Public check
+        run: python scripts/verify_public.py --no-fail
