@@ -12,7 +12,8 @@ PAGE_IDS={'publications':1147,'members':1153,'alumni':1120,'news':1179,'home':2,
 BLOCK=re.compile(r'<!-- wp:(divi/[\w-]+) (\{[\s\S]*?\}) (/?)-->')
 MAX_RAW_CHARS=850_000
 
-def replace_module(raw, fragment, marker):
+def replace_module(raw, fragment, marker, css=None):
+    """Replace the AUTO module content; when css is given, also store it as the module's Free-Form CSS."""
     start=f'<!-- AUTO:{marker}:START -->';end=f'<!-- AUTO:{marker}:END -->'
     hits=0
     def walk(value):
@@ -25,7 +26,11 @@ def replace_module(raw, fragment, marker):
         if isinstance(value,list):return [walk(item) for item in value]
         return value
     def block(m):
-        before=json.loads(m.group(2));after=walk(before)
+        before=json.loads(m.group(2))
+        found=hits;after=walk(before)
+        if hits==found:return m.group(0)
+        if css is not None:
+            after.setdefault('css',{}).setdefault('desktop',{}).setdefault('value',{})['freeForm']=css
         if before==after:return m.group(0)
         encoded=json.dumps(after,ensure_ascii=False,separators=(',',':'))
         for char,escaped in [('--',r'\u002d\u002d'),('<',r'\u003c'),('>',r'\u003e'),('&',r'\u0026')]:
@@ -88,7 +93,11 @@ def main():
     if args.snapshot and args.apply:parser.error('Offline mode cannot publish')
     page=args.page;marker='home-updates' if page=='home' else page
     fragment=(ROOT/'build'/('research-content.raw' if page=='research' else f'{page}.html')).read_text()
-    if page!='research':fragment=fragment.strip()
+    css=None
+    if page!='research':
+        fragment=fragment.strip()
+        css_path=ROOT/'build'/f'{page}.css'
+        css=css_path.read_text().strip() if css_path.exists() else None
     if args.snapshot:
         raw=args.snapshot.read_text();saved={'id':PAGE_IDS[page],'content':{'raw':raw}}
     else:
@@ -127,7 +136,7 @@ def main():
                 print('Research: all three journal labels are already correct; nothing to publish.')
                 if os.environ.get('GITHUB_ACTIONS'): print('::notice title=push research::Already correct; nothing to publish.')
     else:
-        updated=replace_module(raw,fragment,marker)
+        updated=replace_module(raw,fragment,marker,css)
         if page=='members':
             updated,removed=remove_empty_sections(updated)
             print(f'Empty Divi sections removed: {len(removed)}',removed)
@@ -157,7 +166,7 @@ def main():
         raise RuntimeError(f'Saved page lost the AUTO module ({len(actual)} chars saved). Previous content written back: '
                            f'{"identical" if back==raw else "DIFFERS, restore from revisions"}.')
     # Read the saved module back. WordPress may strip unsupported markup.
-    roundtrip=actual if page=='research' else replace_module(actual,fragment,marker)
+    roundtrip=actual if page=='research' else replace_module(actual,fragment,marker,css)
     if roundtrip!=actual:
         raise RuntimeError('Saved markup differs from generated fragment. Backup retained; inspect before further writes.')
     print('Published and verified saved Divi module. Check the public page visually as well.')
