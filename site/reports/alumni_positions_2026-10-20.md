@@ -93,3 +93,4 @@ Alexandra Courtis, Erin O'Brien, Harrison Burke, Jennifer Lee, Noelle Marie Drug
 - Ophir Klein: role changed from Ph.D./postdoc to undergraduate (Dylan, 2026-10-20); his biography gives a B.A. from UC Berkeley (1993) and an M.D./Ph.D. from Yale.
 - Sophia Betzler and Sarah Thau stay on the page without a position: no public page ties the people found to the group.
 - Hyun Dong "Kenneth" Ha, Daniele Gerion and Alexander Mastroianni show the employer only; no page gives their title. The 2024-2025 dates are those of the papers that name the current employer, not of their time in the group: their group papers are from 2018-2021 (Ha, UC Berkeley and LBNL), 2000-2006 (Gerion) and 2006-2013 (Mastroianni).
+- Joeson Wong: the listed title "Engineer" had no employer and no source (the old page showed "Engineer, Inc."); removed 2026-10-20, entry kept with years 2022–2025.
