@@ -138,8 +138,8 @@ def build_members():
 def build_alumni():
     records = yaml.safe_load((ROOT / 'data/alumni.yaml').read_text())
     labels = {'phd': 'Ph.D.', 'postdoc': 'Postdoc', 'undergrad': 'Undergraduate'}
-    sectors = ['university', 'industry', 'institute', 'unlisted']
-    sector_labels = {'university': 'University', 'industry': 'Industry', 'institute': 'Institutes and national labs', 'unlisted': 'Not listed'}
+    sectors = ['university', 'industry', 'institute']  # people whose position is unknown get no sector label
+    sector_labels = {'university': 'University', 'industry': 'Industry', 'institute': 'Institutes and national labs'}
     counts = Counter(r.get('sector', 'unlisted') for r in records)
     profs = sum(1 for r in records if 'professor' in r.get('title', '').casefold())
     total = len(records)
@@ -148,7 +148,8 @@ def build_alumni():
              f'<div class="ag-site-stat"><strong class="ag-site-stat-value">{profs}</strong><span class="ag-site-stat-label">Professors</span></div>'
              f'<div class="ag-site-stat"><strong class="ag-site-stat-value">{counts["industry"]}</strong><span class="ag-site-stat-label">In industry</span></div>'
              f'<div class="ag-site-stat"><strong class="ag-site-stat-value">{counts["institute"]}</strong><span class="ag-site-stat-label">At institutes and national labs</span></div></section>')
-    bar = ''.join(f'<span class="ag-site-sector-segment ag-site-sector-{s}" style="width:{100 * counts[s] / total:.2f}%" title="{esc(sector_labels[s])}: {counts[s]}"></span>' for s in sectors)
+    known = sum(counts[s] for s in sectors)
+    bar = ''.join(f'<span class="ag-site-sector-segment ag-site-sector-{s}" style="width:{100 * counts[s] / known:.2f}%" title="{esc(sector_labels[s])}: {counts[s]}"></span>' for s in sectors)
     filters, css, statuses = [], [], []
     targets = []
     sector_chips = [chip('#alumni-all', 'All', total, ' ag-site-chip-all')]
@@ -172,12 +173,14 @@ def build_alumni():
     for r in sorted(records, key=lambda r: (r['name'].split()[-1].casefold(), r['name'].casefold())):
         roles = r.get('roles', [])
         name = esc(r['name'])
-        meta = ' · '.join(x for x in (esc(r.get('title', '')), esc(r.get('org', '')), esc(r.get('years', ''))) if x)
+        meta = ' · '.join(x for x in (esc(r.get('title', '')), esc(r.get('org', ''))) if x)
         name_html = f'<a href="{esc(r["link"])}" target="_blank" rel="noopener noreferrer">{name}</a>' if r.get('link') else name
-        tags = ''.join(f'<span class="ag-site-role-tag">{labels[x]}</span>' for x in roles)
+        years = r.get('years', '')
+        tags = ''.join(f'<span class="ag-site-role-tag">{labels[x]}{(", " + esc(years)) if years and i == len(roles) - 1 else ""}</span>' for i, x in enumerate(roles))
         role_classes = ''.join(f' ag-site-r-{x}' for x in roles)
         meta_html = f'<p class="ag-site-alumni-meta">{meta}</p>' if meta else ''
-        cards.append(f'<article class="ag-site-alumni-card{role_classes}" data-sector="{esc(r.get("sector", "unlisted"))}">'
+        sector_attr = f' data-sector="{esc(r["sector"])}"' if r.get('sector') in sectors else ''
+        cards.append(f'<article class="ag-site-alumni-card{role_classes}"{sector_attr}>'
                      f'<h3 class="ag-site-alumni-name">{name_html}</h3>{meta_html}<div class="ag-site-role-tags">{tags}</div></article>')
     target_html = '<span class="ag-site-target" id="alumni-all"></span>' + ''.join(f'<span class="ag-site-target" id="{t}"></span>' for t in targets)
     module = ('<!-- AUTO:alumni:START -->\n<div id="alivisatos-alumni" class="ag-site-root ag-site-alumni">'

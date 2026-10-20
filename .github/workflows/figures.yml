@@ -1,0 +1,28 @@
+name: Fetch paper figures
+
+# Downloads candidate TOC / Figure 1 images listed in site/data/figure_sources.yaml and commits them to
+# site/assets/figures/. Changes nothing on the website.
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  fetch:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install requests pyyaml
+      - run: python scripts/fetch_figures.py
+      - name: Commit figures
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add site/assets/figures
+          git commit -m "Candidate paper figures" || echo "No changes"
+          git pull --rebase origin main
+          git push origin HEAD:main

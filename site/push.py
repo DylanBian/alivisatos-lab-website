@@ -127,6 +127,29 @@ def research_update(raw):
     counts=json.loads(counts_path.read_text()) if counts_path.exists() else {}
     return add_research_links(replace_research_citations(raw),counts)
 
+SLIDE_TITLES={  # home slider: three group photos all carried "Alivisatos Group Members" (decided 2026-10-20)
+    'FA687D98BA9E-cover1-1.jpeg':'The Alivisatos Group',
+    'Celebrating-President-PaulAlivisatoss-2024-KavliPrize-in-Nanoscience-1.jpg':'Celebrating the 2024 Kavli Prize in Nanoscience',
+    'slider6.jpg':'',
+}
+
+def update_slider_titles(raw):
+    """Set the heading of specific home-page slides, identified by their image file. Idempotent."""
+    def block(match):
+        if match.group(1)!='divi/slide':return match.group(0)
+        before=json.loads(match.group(2));text=json.dumps(before)
+        key=next((k for k in SLIDE_TITLES if k in text),None)
+        if key is None:return match.group(0)
+        after=json.loads(text)
+        after.setdefault('title',{}).setdefault('innerContent',{}).setdefault('desktop',{})['value']=SLIDE_TITLES[key]
+        if before==after:return match.group(0)
+        encoded=json.dumps(after,ensure_ascii=False,separators=(',',':'))
+        for char,escaped in [('--',r'\u002d\u002d'),('<',r'\u003c'),('>',r'\u003e'),('&',r'\u0026')]:encoded=encoded.replace(char,escaped)
+        return '<!-- wp:'+match.group(1)+' '+encoded+' '+match.group(3)+'-->'
+    updated=BLOCK.sub(block,raw)
+    for match in BLOCK.finditer(updated):json.loads(match.group(2))
+    return updated
+
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('page',choices=PAGE_IDS)
@@ -180,6 +203,8 @@ def main():
                 if os.environ.get('GITHUB_ACTIONS'): print('::notice title=push research::Already up to date; nothing to publish.')
     else:
         updated=replace_module(raw,fragment,marker,css)
+        if page=='home':
+            updated=update_slider_titles(updated)
         if page=='members':
             updated,removed=remove_empty_sections(updated)
             print(f'Empty Divi sections removed: {len(removed)}',removed)

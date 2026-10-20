@@ -1,0 +1,106 @@
+# Candidate image URLs per paper for scripts/fetch_figures.py (TOC graphic or Figure 1).
+- slug: jacs-6c08238
+  doi: 10.1021/jacs.6c08238
+  candidates:
+  - https://arxiv.org/html/2603.24776v1/x1.png
+  - https://arxiv.org/html/2603.24776v2/x1.png
+  - https://pubs.acs.org/cms/10.1021/jacs.6c08238/asset/images/medium/ja6c08238_0001.gif
+  - https://pubs.acs.org/cms/10.1021/jacs.6c08238/asset/images/medium/ja6c08238_0002.gif
+  - https://pubs.acs.org/cms/10.1021/jacs.6c08238/asset/images/medium/ja6c08238_0003.gif
+  - https://pubs.acs.org/cms/10.1021/jacs.6c08238/asset/images/medium/ja6c08238_0004.gif
+  - https://pubs.acs.org/cms/10.1021/jacs.6c08238/asset/images/medium/ja6c08238_0005.gif
+  - https://pubs.acs.org/cms/10.1021/jacs.6c08238/asset/images/medium/ja6c08238_0006.gif
+- slug: s44160-026-01015-6
+  doi: 10.1038/s44160-026-01015-6
+  candidates:
+  - https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44160-026-01015-6/MediaObjects/44160_2026_1015_Fig1_HTML.png
+- slug: acsnano-5c07437
+  doi: 10.1021/acsnano.5c07437
+  candidates:
+  - https://pubs.acs.org/cms/10.1021/acsnano.5c07437/asset/images/medium/nn5c07437_0001.gif
+  - https://pubs.acs.org/cms/10.1021/acsnano.5c07437/asset/images/medium/nn5c07437_0002.gif
+  - https://pubs.acs.org/cms/10.1021/acsnano.5c07437/asset/images/medium/nn5c07437_0003.gif
+  - https://pubs.acs.org/cms/10.1021/acsnano.5c07437/asset/images/medium/nn5c07437_0004.gif
+  - https://pubs.acs.org/cms/10.1021/acsnano.5c07437/asset/images/medium/nn5c07437_0005.gif
+  - https://pubs.acs.org/cms/10.1021/acsnano.5c07437/asset/images/medium/nn5c07437_0006.gif
+  - https://pubs.acs.org/cms/10.1021/acsnano.5c07437/asset/images/medium/nn5c07437_0007.gif
+- slug: s41467-025-60992-y
+  doi: 10.1038/s41467-025-60992-y
+  candidates:
+  - https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs41467-025-60992-y/MediaObjects/41467_2025_60992_Fig1_HTML.png
+- slug: accounts-4c00708
+  doi: 10.1021/acs.accounts.4c00708
+  candidates:
+  - https://pubs.acs.org/cms/10.1021/acs.accounts.4c00708/asset/images/medium/ar4c00708_0001.gif
+  - https://pubs.acs.org/cms/10.1021/acs.accounts.4c00708/asset/images/medium/ar4c00708_0002.gif
+  - https://pubs.acs.org/cms/10.1021/acs.accounts.4c00708/asset/images/medium/ar4c00708_0003.gif
+  - https://pubs.acs.org/cms/10.1021/acs.accounts.4c00708/asset/images/medium/ar4c00708_0004.gif
+  - https://pubs.acs.org/cms/10.1021/acs.accounts.4c00708/asset/images/medium/ar4c00708_0005.gif
+  - https://pubs.acs.org/cms/10.1021/acs.accounts.4c00708/asset/images/medium/ar4c00708_0006.gif
+  - https://pubs.acs.org/cms/10.1021/acs.accounts.4c00708/asset/images/medium/ar4c00708_0007.gif
+  - https://pubs.acs.org/cms/10.1021/acs.accounts.4c00708/asset/images/medium/ar4c00708_0008.gif
+- slug: acsnano-4c04083
+  doi: 10.1021/acsnano.4c04083
+  candidates:
+  - https://arxiv.org/html/2406.07762v1/x1.png
+  - https://arxiv.org/html/2406.07762v2/x1.png
+  - https://pubs.acs.org/cms/10.1021/acsnano.4c04083/asset/images/medium/nn4c04083_0001.gif
+  - https://pubs.acs.org/cms/10.1021/acsnano.4c04083/asset/images/medium/nn4c04083_0002.gif
+  - https://pubs.acs.org/cms/10.1021/acsnano.4c04083/asset/images/medium/nn4c04083_0003.gif
+  - https://pubs.acs.org/cms/10.1021/acsnano.4c04083/asset/images/medium/nn4c04083_0004.gif
+  - https://pubs.acs.org/cms/10.1021/acsnano.4c04083/asset/images/medium/nn4c04083_0005.gif
+  - https://pubs.acs.org/cms/10.1021/acsnano.4c04083/asset/images/medium/nn4c04083_0006.gif
+- slug: pnas-2307633121
+  doi: 10.1073/pnas.2307633121
+  candidates:
+  - https://www.pnas.org/cms/10.1073/pnas.2307633121/asset/images/large/pnas.2307633121fig01.jpg
+  - https://www.pnas.org/cms/10.1073/pnas.2307633121/asset/images/medium/pnas.2307633121fig01.gif
+- slug: jpcc-3c00187
+  doi: 10.1021/acs.jpcc.3c00187
+  candidates:
+  - https://pubs.acs.org/cms/10.1021/acs.jpcc.3c00187/asset/images/medium/jp3c00187_0001.gif
+  - https://pubs.acs.org/cms/10.1021/acs.jpcc.3c00187/asset/images/medium/jp3c00187_0002.gif
+  - https://pubs.acs.org/cms/10.1021/acs.jpcc.3c00187/asset/images/medium/jp3c00187_0003.gif
+  - https://pubs.acs.org/cms/10.1021/acs.jpcc.3c00187/asset/images/medium/jp3c00187_0004.gif
+  - https://pubs.acs.org/cms/10.1021/acs.jpcc.3c00187/asset/images/medium/jp3c00187_0005.gif
+  - https://pubs.acs.org/cms/10.1021/acs.jpcc.3c00187/asset/images/medium/jp3c00187_0006.gif
+- slug: jpcc-2c04223
+  doi: 10.1021/acs.jpcc.2c04223
+  candidates:
+  - https://pubs.acs.org/cms/10.1021/acs.jpcc.2c04223/asset/images/medium/jp2c04223_0001.gif
+  - https://pubs.acs.org/cms/10.1021/acs.jpcc.2c04223/asset/images/medium/jp2c04223_0002.gif
+  - https://pubs.acs.org/cms/10.1021/acs.jpcc.2c04223/asset/images/medium/jp2c04223_0003.gif
+  - https://pubs.acs.org/cms/10.1021/acs.jpcc.2c04223/asset/images/medium/jp2c04223_0004.gif
+  - https://pubs.acs.org/cms/10.1021/acs.jpcc.2c04223/asset/images/medium/jp2c04223_0005.gif
+  - https://pubs.acs.org/cms/10.1021/acs.jpcc.2c04223/asset/images/medium/jp2c04223_0006.gif
+- slug: s44160-022-00025-4
+  doi: 10.1038/s44160-022-00025-4
+  candidates:
+  - https://media.springernature.com/lw685/springer-static/image/art%3A10.1038%2Fs44160-022-00025-4/MediaObjects/44160_2022_25_Fig1_HTML.png
+- slug: chemmater-5c02301
+  doi: 10.1021/acs.chemmater.5c02301
+  candidates:
+  - https://pubs.acs.org/cms/10.1021/acs.chemmater.5c02301/asset/images/medium/cm5c02301_0001.gif
+  - https://pubs.acs.org/cms/10.1021/acs.chemmater.5c02301/asset/images/medium/cm5c02301_0002.gif
+  - https://pubs.acs.org/cms/10.1021/acs.chemmater.5c02301/asset/images/medium/cm5c02301_0003.gif
+  - https://pubs.acs.org/cms/10.1021/acs.chemmater.5c02301/asset/images/medium/cm5c02301_0004.gif
+  - https://pubs.acs.org/cms/10.1021/acs.chemmater.5c02301/asset/images/medium/cm5c02301_0005.gif
+  - https://pubs.acs.org/cms/10.1021/acs.chemmater.5c02301/asset/images/medium/cm5c02301_0006.gif
+- slug: jacs-6c03474
+  doi: 10.1021/jacs.6c03474
+  candidates:
+  - https://pubs.acs.org/cms/10.1021/jacs.6c03474/asset/images/medium/ja6c03474_0001.gif
+  - https://pubs.acs.org/cms/10.1021/jacs.6c03474/asset/images/medium/ja6c03474_0002.gif
+  - https://pubs.acs.org/cms/10.1021/jacs.6c03474/asset/images/medium/ja6c03474_0003.gif
+  - https://pubs.acs.org/cms/10.1021/jacs.6c03474/asset/images/medium/ja6c03474_0004.gif
+  - https://pubs.acs.org/cms/10.1021/jacs.6c03474/asset/images/medium/ja6c03474_0005.gif
+  - https://pubs.acs.org/cms/10.1021/jacs.6c03474/asset/images/medium/ja6c03474_0006.gif
+- slug: jacs-6c10386
+  doi: 10.1021/jacs.6c10386
+  candidates:
+  - https://pubs.acs.org/cms/10.1021/jacs.6c10386/asset/images/medium/ja6c10386_0001.gif
+  - https://pubs.acs.org/cms/10.1021/jacs.6c10386/asset/images/medium/ja6c10386_0002.gif
+  - https://pubs.acs.org/cms/10.1021/jacs.6c10386/asset/images/medium/ja6c10386_0003.gif
+  - https://pubs.acs.org/cms/10.1021/jacs.6c10386/asset/images/medium/ja6c10386_0004.gif
+  - https://pubs.acs.org/cms/10.1021/jacs.6c10386/asset/images/medium/ja6c10386_0005.gif
+  - https://pubs.acs.org/cms/10.1021/jacs.6c10386/asset/images/medium/ja6c10386_0006.gif

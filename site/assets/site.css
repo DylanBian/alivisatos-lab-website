@@ -69,7 +69,6 @@
 .ag-site-root .ag-site-sector-university { background: #800000; }
 .ag-site-root .ag-site-sector-industry { background: #4d6f8f; }
 .ag-site-root .ag-site-sector-institute { background: #6a8a74; }
-.ag-site-root .ag-site-sector-unlisted { background: #d7d1cf; }
 .ag-site-root .ag-site-dot { display: inline-block; width: 9px; height: 9px; border-radius: 50%; }
 .ag-site-root .ag-site-alumni-grid { display: grid; grid-template-columns: repeat(auto-fill, minmax(min(100%, 260px), 1fr)); gap: 14px; }
 .ag-site-root .ag-site-alumni-card { padding: 14px 16px; border: 1px solid var(--ag-line); border-left: 3px solid var(--ag-maroon); border-radius: 6px; background: #fff; }
