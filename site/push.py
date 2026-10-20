@@ -84,6 +84,49 @@ def replace_research_citations(raw):
     for match in BLOCK.finditer(updated):json.loads(match.group(2))
     return updated
 
+RESEARCH_AREA_DOI={'10.1021/acs.accounts.4c00708':'synthesis','10.1021/acsnano.5c07437':'lctem',
+                   '10.1038/s41467-025-60848-5':'spectroscopy','10.1021/acsnano.4c04083':'quantum'}
+RESEARCH_AREA_LABEL={'synthesis':'Synthesis and Properties','lctem':'Electron Microscopy in Liquid',
+                     'spectroscopy':'Spectroscopy and Structure','quantum':'Quantum Information Science'}
+
+def add_research_links(raw,counts):
+    """After each area's selected-publication list on the Research page, link to that area's filtered publication list.
+
+    The area is identified by the first DOI in the Divi text block. Idempotent: the link sits between AUTO markers.
+    """
+    def link(area):
+        start=f'<!-- AUTO:research-more-{area}:START -->';end=f'<!-- AUTO:research-more-{area}:END -->'
+        n=counts.get(area,0)
+        return (f'{start}<p><a href="https://alivisatoslab.uchicago.edu/publications/#f-{area}"><strong>'
+                f'All {n} group papers tagged {RESEARCH_AREA_LABEL[area]} →</strong></a></p>{end}')
+    def walk(value):
+        if isinstance(value,str):
+            m=re.search(r'doi\.org/(10\.[^"<\s]+)',value)
+            area=RESEARCH_AREA_DOI.get(m.group(1).lower()) if m else None
+            if not area or not counts.get(area) or '</ul>' not in value: return value
+            start=f'<!-- AUTO:research-more-{area}:START -->';end=f'<!-- AUTO:research-more-{area}:END -->'
+            if start in value and end in value:
+                return value[:value.index(start)]+link(area)+value[value.index(end)+len(end):]
+            i=value.rindex('</ul>')+len('</ul>')
+            return value[:i]+link(area)+value[i:]
+        if isinstance(value,dict): return {k:walk(v) for k,v in value.items()}
+        if isinstance(value,list): return [walk(v) for v in value]
+        return value
+    def block(match):
+        before=json.loads(match.group(2));after=walk(before)
+        if before==after:return match.group(0)
+        encoded=json.dumps(after,ensure_ascii=False,separators=(',',':'))
+        for char,escaped in [('--',r'\u002d\u002d'),('<',r'\u003c'),('>',r'\u003e'),('&',r'\u0026')]:encoded=encoded.replace(char,escaped)
+        return '<!-- wp:'+match.group(1)+' '+encoded+' '+match.group(3)+'-->'
+    updated=BLOCK.sub(block,raw)
+    for match in BLOCK.finditer(updated):json.loads(match.group(2))
+    return updated
+
+def research_update(raw):
+    counts_path=ROOT/'build'/'research-links.json'
+    counts=json.loads(counts_path.read_text()) if counts_path.exists() else {}
+    return add_research_links(replace_research_citations(raw),counts)
+
 def main():
     parser=argparse.ArgumentParser(description=__doc__)
     parser.add_argument('page',choices=PAGE_IDS)
@@ -130,11 +173,11 @@ def main():
             if updated!=fragment:
                 raise RuntimeError('Research snapshot differs from the generated target; review its source and diff.')
         else:
-            # Apply the three label corrections to the live content (the live page changed after the C baseline).
-            updated=replace_research_citations(raw)
+            # Journal-label corrections and the links to each area's publication list, applied to the live content.
+            updated=research_update(raw)
             if updated==raw:
-                print('Research: all three journal labels are already correct; nothing to publish.')
-                if os.environ.get('GITHUB_ACTIONS'): print('::notice title=push research::Already correct; nothing to publish.')
+                print('Research: already up to date; nothing to publish.')
+                if os.environ.get('GITHUB_ACTIONS'): print('::notice title=push research::Already up to date; nothing to publish.')
     else:
         updated=replace_module(raw,fragment,marker,css)
         if page=='members':

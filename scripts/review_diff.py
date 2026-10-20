@@ -14,7 +14,7 @@ from pathlib import Path
 ROOT = Path(__file__).resolve().parent.parent
 SITE = ROOT / "site"
 sys.path.insert(0, str(SITE))
-from push import BLOCK, replace_research_citations  # noqa: E402
+from push import BLOCK, research_update  # noqa: E402
 
 MAX_LINES = 300
 
@@ -70,7 +70,7 @@ def main():
         out(f"### {page}: no backup found; run site/push.py first")
         return
     if page == "research":
-        new = replace_research_citations(raw)
+        new = research_update(raw)
         old_lines, new_lines = tag_lines(raw.encode().decode("unicode_escape", "ignore")), tag_lines(new.encode().decode("unicode_escape", "ignore"))
     else:
         marker = "home-updates" if page == "home" else page
