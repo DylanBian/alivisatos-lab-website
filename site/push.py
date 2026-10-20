@@ -95,12 +95,16 @@ def main():
         auth=base64.b64encode((os.environ['WP_USER']+':'+os.environ['WP_APP_PASSWORD']).encode()).decode()
         endpoint=base+'/wp-json/wp/v2/pages/'+str(PAGE_IDS[page])
         def request(url,payload=None):
-            headers={'Authorization':'Basic '+auth,'Content-Type':'application/json'}
+            headers={'Authorization':'Basic '+auth,'Content-Type':'application/json','User-Agent':'alivisatos-site-maintenance/1.0','Accept':'application/json'}
             # The site returns occasional 503s; retry reads only. A failed write is never retried blindly.
             for attempt in range(4):
                 req=Request(url,data=json.dumps(payload).encode() if payload is not None else None,headers=headers)
                 try:
                     with urlopen(req,timeout=60) as response:return json.load(response)
+                except (ConnectionError,TimeoutError) as error:
+                    if payload is None and attempt<3:
+                        time.sleep(5*(attempt+1));continue
+                    raise
                 except HTTPError as error:
                     if payload is None and error.code in (502,503,504) and attempt<3:
                         time.sleep(5*(attempt+1));continue
