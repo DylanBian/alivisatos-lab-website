@@ -35,4 +35,5 @@ jobs:
           git add site/drafts
           git commit -m "New-paper candidates from OpenAlex"
           git push origin "$BRANCH"
-          gh pr create --title "New-paper candidates" --body "Drafts from scripts/find_new_papers.py. Review before adding to publications.csv." --base main --head "$BRANCH"
+          gh pr create --title "New-paper candidates" --body "Drafts from scripts/find_new_papers.py. Review before adding to publications.csv." --base main --head "$BRANCH" \
+            || echo "::notice title=New papers::Branch $BRANCH pushed. Open a pull request from it (this repository does not let Actions create pull requests)."
