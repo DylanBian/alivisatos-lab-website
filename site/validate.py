@@ -104,7 +104,7 @@ assert len(sel) == len(selected)
 areas_shown = [sec.get('id') for sec in proot.xpath('.//section[contains(@class,"ag-site-area")]')]
 assert areas_shown and areas_shown[0] == 'selected-lctem', areas_shown
 for p in selected:
-    assert 'alivisatos' in p['authors'][-1].casefold(), p['doi']
+    assert 'alivisatos' in p['authors'][-1].casefold() or p.get('last_author_exception'), p['doi']
     assert p['area'] == 'quantum' or int(p['year']) >= 2025, p['doi']
 for li in sel:
     bold = [b.text_content() for b in by_class(li, 'ag-site-paper-authors', 'p')[0].xpath('.//strong')]

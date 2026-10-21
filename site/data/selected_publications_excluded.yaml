@@ -1,44 +1,6 @@
 # Papers taken out of Selected Publications on 2026-10-21 (Dylan): Selected Publications lists papers with Paul Alivisatos
 # as last and corresponding author; outside Quantum Information Science only papers from 2025 on. Kept here with their
 # image credits in case they are needed again. Not read by the site generator.
-# Paul Alivisatos is not the last author (last: Jungwon Park)
-- doi: 10.1021/jacs.6c08238
-  year: 2026
-  area: lctem
-  journal: J. Am. Chem. Soc.
-  volume: '148'
-  issue: '25'
-  pages: 26845–26853
-  title: Visualizing Millisecond Atomic Dynamics of Nanocrystals in Liquid
-  authors:
-  - Sungsu Kang
-  - Jinho Rhee
-  - Joodeok Kim
-  - Sam Oaks-Leaf
-  - Minwoo Kim
-  - Shengsong Yang
-  - Chang Liu
-  - Dongsu Kim
-  - Sungin Kim
-  - Binyu Wu
-  - Won Bo Lee
-  - David T. Limmer
-  - A. Paul Alivisatos
-  - Peter Ercius
-  - Jungwon Park
-  members:
-  - Sungsu Kang
-  - Shengsong Yang
-  - Chang Liu
-  - Binyu Wu
-  open_access: false
-  status: verified
-  image: https://alivisatoslab.uchicago.edu/files/2026/10/toc-jacs-6c08238.jpg
-  highlight: ''
-  publication_date: '2026-06-18'
-  homepage_summary: Liquid-cell electron microscopy reveals atomic-scale changes in gold nanocrystals in reactive liquids.
-  image_alt: 'Table of contents graphic: millisecond atomic dynamics of gold nanocrystals in liquid'
-  image_credit: Reprinted with permission from Kang, S. et al. J. Am. Chem. Soc. 2026, 148, 26845–26853. Copyright 2026 American Chemical Society.
 # before 2025 (only Quantum Information Science keeps earlier papers)
 - doi: 10.1073/pnas.2307633121
   year: 2024

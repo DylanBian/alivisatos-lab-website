@@ -304,8 +304,9 @@ for paper in selected_source:
     if paper.get('status') != 'verified':
         raise ValueError(f'Unverified selected citation: {paper["doi"]}')
     # Selected Publications rules (Dylan, 2026-10-21): Paul Alivisatos is the last author; only papers from 2025 on,
-    # except Quantum Information Science. Excluded papers live in selected_publications_excluded.yaml.
-    if 'alivisatos' not in paper['authors'][-1].casefold():
+    # except Quantum Information Science. Excluded papers live in selected_publications_excluded.yaml. A paper Dylan adds
+    # explicitly carries last_author_exception.
+    if 'alivisatos' not in paper['authors'][-1].casefold() and not paper.get('last_author_exception'):
         raise ValueError(f'Selected paper without Paul Alivisatos as last author: {paper["doi"]}')
     if paper['area'] != 'quantum' and int(paper['year']) < 2025:
         raise ValueError(f'Selected paper before 2025 outside Quantum Information Science: {paper["doi"]}')

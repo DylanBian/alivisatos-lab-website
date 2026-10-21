@@ -14,20 +14,24 @@ that publish to WordPress and check what visitors see. Agents start with `AGENTS
 | `prototypes/` | Design prototypes (open the HTML files in a browser) |
 | `.github/workflows/` | Check site access, Publish page, Daily public check |
 
-## 快速开始（Dylan）
-1. **生成 Application Password**：浏览器登录 wp-admin（学校 SSO），进入 Users → Profile，页面底部
-   Application Passwords，新建一个，名字填 `github-actions`，复制生成的密码（只显示一次）。
-   如果没有这一栏，说明 Voices 禁用了这个功能，先联系 UChicago Voices 支持。
-2. **存入仓库 Secret**：本仓库 Settings → Secrets and variables → Actions → New repository secret，建两个：
-   - `WP_USER`：你的 WordPress 用户名（后台右上角 "Howdy, dbian" 里的 dbian）
-   - `WP_APP_PASSWORD`：刚才复制的密码
-   密码只存在这里，不要发到任何聊天里。
-3. **试运行**：Actions → Check site access → Run workflow。成功会显示认证结果、账户权限
-   （`unfiltered_html` 决定页面能否保留 `<style>` 和 `<script>`）、所有页面的备份和公开页面检查表。
-   勾选 content_test 会建一个私密测试页，直接告诉你哪些代码会被网站删掉（任务 F）。
-4. **改内容**：改 `site/data/` 里的数据文件（或让 AI 改），提交后再发布。
-5. **发布**：Actions → Publish page，选页面，先用 `dry-run` 看差异，确认后同一页面再选 `publish`。
-6. 每天早上 8:17 自动检查一次公开页面，出问题 GitHub 会发邮件给你。
+## Quick start (Dylan)
+1. **Create an Application Password**: sign in to wp-admin in a browser (university SSO), go to Users → Profile, and at
+   the bottom of the page under Application Passwords create a new one named `github-actions`. Copy the generated
+   password (it is shown only once). If this section is missing, Voices has disabled the feature; contact UChicago
+   Voices support first.
+2. **Store it as repository secrets**: in this repository go to Settings → Secrets and variables → Actions → New
+   repository secret and create two secrets:
+   - `WP_USER`: your WordPress username (the "dbian" in "Howdy, dbian" at the top right of the dashboard)
+   - `WP_APP_PASSWORD`: the password you just copied
+   The password lives only here; never send it in any chat.
+3. **Test run**: Actions → Check site access → Run workflow. A successful run shows the authentication result, the
+   account's permissions (`unfiltered_html` decides whether pages keep `<style>` and `<script>`), a backup of every
+   page, and the public page check table. Ticking content_test creates a private test page and reports which code the
+   site removes (task F).
+4. **Edit content**: change the data files in `site/data/` (or have an AI agent change them), commit, then publish.
+5. **Publish**: Actions → Publish page, choose the page, run `dry-run` first to see the differences, then run the same
+   page again with `publish` once they look right.
+6. Every morning at 8:17 the public pages are checked automatically; GitHub emails you if something is wrong.
 
 ## Working with AI agents
 - Connect the agent to this repository (Codex cloud, ChatGPT with GitHub, Claude Code). It reads `AGENTS.md` and the
