@@ -109,11 +109,8 @@ for p in selected:
 for li in sel:
     bold = [b.text_content() for b in by_class(li, 'ag-site-paper-authors', 'p')[0].xpath('.//strong')]
     names = [x.strip() for x in by_class(li, 'ag-site-paper-authors', 'p')[0].text_content().split(';')]
-    n_first = sum(1 for x in names if x.endswith('*')) or 1
-    assert bold and bold[:n_first] == names[:n_first] and all(b in names[:n_first] or 'Alivisatos' in b for b in bold), bold
-for strong in by_class(proot, 'ag-site-pub-authors', 'p'):
-    for b in strong.xpath('.//strong'):
-        assert 'Alivisatos' in b.text_content(), 'full list: only Paul Alivisatos is bold'
+    assert bold and bold[0] == names[0] and all(b in names[:2] or 'Alivisatos' in b for b in bold), bold
+assert not proot.xpath('.//p[contains(@class,"ag-site-pub-authors")]//strong'), 'full list: no bold names'
 import csv
 n_rows = sum(1 for _ in csv.DictReader((ROOT / 'data/publications.csv').open()))
 pubs = by_class(proot, 'ag-site-pub', 'li')
