@@ -316,10 +316,13 @@ for paper in selected_source:
 
 def render_selected_paper(paper):
     authors = []
+    n_first = int(paper.get('equal_first', 1))  # co-first authors, e.g. 2 (from the group; Dylan, 2026-10-21)
     for i, author in enumerate(paper['authors']):
-        label = esc(initials_name(author))
-        # bold: first author and Paul Alivisatos only (Dylan, 2026-10-21)
-        authors.append(f'<strong>{label}</strong>' if i == 0 or 'alivisatos' in author.casefold() else label)
+        label = esc(initials_name(author)) + ('*' if n_first > 1 and i < n_first else '')
+        # bold: first author(s) and Paul Alivisatos only (Dylan, 2026-10-21)
+        authors.append(f'<strong>{label}</strong>' if i < n_first or 'alivisatos' in author.casefold() else label)
+    if n_first > 1:
+        authors[-1] += ' (*equal contribution)'
     doi_url = 'https://doi.org/' + paper['doi']
     meta = [f'<span class="ag-site-citation">{esc(citation_details(paper))}</span>'] if citation_details(paper) else []
     meta.append(f'<a class="ag-site-paper-doi" href="{esc(doi_url)}" target="_blank" rel="noopener noreferrer">DOI</a>')
@@ -363,18 +366,28 @@ def selected_block():
     return ('<!-- AUTO:selected:START --><section class="ag-site-selected" aria-labelledby="selected-heading">'
             f'<header><span class="ag-site-eyebrow">Since {min(int(p["year"]) for p, _ in eligible)}</span><h2 class="ag-site-selected-heading" id="selected-heading">Selected Publications</h2>'
             '<p class="ag-site-selected-lede">Recent papers with Paul Alivisatos as corresponding author, organized by research area. '
-            'First authors and Paul Alivisatos are in bold.</p></header>'
+            'First authors and Paul Alivisatos are in bold; * marks equal contribution.</p></header>'
             f'<nav class="ag-site-jumps" aria-label="Research areas">{"".join(jumps)}</nav>' + ''.join(area_html) +
             '</section><!-- AUTO:selected:END -->')
 
 
+PAUL_IN_LIST = re.compile(r'A\. (?:Paul|P\.) Alivisatos')
+
+
 def bold_members(rec):
-    """Bold current members by full-name match on the Crossref author list (never by initials alone), 2022 onward."""
-    authors = rec['authors_html'].split('; ')
-    names = rec.get('crossref_authors') or []
-    if rec['group'] == '1980s' or int(rec['group']) < 2022 or len(names) != len(authors):
-        return rec['authors_html']
-    return '; '.join(f'<strong>{a}</strong>' if norm(n) in member_aliases else a for a, n in zip(authors, names))
+    """Full list: bold Paul Alivisatos only (Dylan, 2026-10-21: no bold for other group members in his publication list).
+
+    Crossref spells him "Alivisatos, A. P.", "Alivisatos, P." or "Paul Alivisatos, A."; all are shown as "Alivisatos, A. P.".
+    A few author lists kept from the old page are one comma-separated string; there only his name is wrapped."""
+    out = []
+    for seg in rec['authors_html'].split('; '):
+        if 'alivisatos' not in seg.casefold():
+            out.append(seg)
+        elif seg.count(',') <= 1 and ' and ' not in seg:
+            out.append('<strong>Alivisatos, A. P.</strong>')
+        else:
+            out.append(PAUL_IN_LIST.sub(lambda m: f'<strong>{m.group(0)}</strong>', seg))
+    return '; '.join(out)
 
 
 def build_publications():

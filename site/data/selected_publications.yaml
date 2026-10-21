@@ -68,6 +68,7 @@
 - doi: 10.1021/acsnano.5c07437
   year: 2025
   area: lctem
+  equal_first: 2  # Shengsong Yang and Binyu Wu, co-first authors (Dylan, 2026-10-21)
   journal: ACS Nano
   volume: '19'
   issue: '36'

@@ -108,8 +108,12 @@ for p in selected:
     assert p['area'] == 'quantum' or int(p['year']) >= 2025, p['doi']
 for li in sel:
     bold = [b.text_content() for b in by_class(li, 'ag-site-paper-authors', 'p')[0].xpath('.//strong')]
-    first = by_class(li, 'ag-site-paper-authors', 'p')[0].text_content().split(';')[0].strip()
-    assert bold and bold[0] == first and all(b == first or 'Alivisatos' in b for b in bold), bold
+    names = [x.strip() for x in by_class(li, 'ag-site-paper-authors', 'p')[0].text_content().split(';')]
+    n_first = sum(1 for x in names if x.endswith('*')) or 1
+    assert bold and bold[:n_first] == names[:n_first] and all(b in names[:n_first] or 'Alivisatos' in b for b in bold), bold
+for strong in by_class(proot, 'ag-site-pub-authors', 'p'):
+    for b in strong.xpath('.//strong'):
+        assert 'Alivisatos' in b.text_content(), 'full list: only Paul Alivisatos is bold'
 import csv
 n_rows = sum(1 for _ in csv.DictReader((ROOT / 'data/publications.csv').open()))
 pubs = by_class(proot, 'ag-site-pub', 'li')
