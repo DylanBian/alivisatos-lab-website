@@ -4,6 +4,12 @@ Record every publish: date (UTC), page, Actions run link, public-check result.
 
 ## 2026-10-21
 
+### 19:29 UTC publish run 39662099324 (publications)
+- Selected Publications: Shengsong Yang and Binyu Wu bold as co-first authors of ACS Nano 2025 (Dylan). The sentence
+  added under the heading at 19:13 was not requested and is removed; no equal-contribution note.
+- Full list: no bold names (Dylan). Run 39661883487 at 19:28 had published an intermediate version (Paul bold, name
+  normalized); this run replaced it. Checked as a visitor.
+
 ### 19:13-19:16 UTC publish runs 39659691287 (publications), 39659930117 (home): Selected Publications rules (Dylan)
 - Only papers with Paul Alivisatos as last (and corresponding) author; outside Quantum Information Science only 2025 on.
   Seven papers moved to `site/data/selected_publications_excluded.yaml`: JACS 2026 GaAs quantum dots and JACS 2026 molten
