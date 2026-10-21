@@ -1,0 +1,204 @@
+# Papers taken out of Selected Publications on 2026-10-21 (Dylan): Selected Publications lists papers with Paul Alivisatos
+# as last and corresponding author; outside Quantum Information Science only papers from 2025 on. Kept here with their
+# image credits in case they are needed again. Not read by the site generator.
+# Paul Alivisatos is not the last author (last: Jungwon Park)
+- doi: 10.1021/jacs.6c08238
+  year: 2026
+  area: lctem
+  journal: J. Am. Chem. Soc.
+  volume: '148'
+  issue: '25'
+  pages: 26845–26853
+  title: Visualizing Millisecond Atomic Dynamics of Nanocrystals in Liquid
+  authors:
+  - Sungsu Kang
+  - Jinho Rhee
+  - Joodeok Kim
+  - Sam Oaks-Leaf
+  - Minwoo Kim
+  - Shengsong Yang
+  - Chang Liu
+  - Dongsu Kim
+  - Sungin Kim
+  - Binyu Wu
+  - Won Bo Lee
+  - David T. Limmer
+  - A. Paul Alivisatos
+  - Peter Ercius
+  - Jungwon Park
+  members:
+  - Sungsu Kang
+  - Shengsong Yang
+  - Chang Liu
+  - Binyu Wu
+  open_access: false
+  status: verified
+  image: https://alivisatoslab.uchicago.edu/files/2026/10/toc-jacs-6c08238.jpg
+  highlight: ''
+  publication_date: '2026-06-18'
+  homepage_summary: Liquid-cell electron microscopy reveals atomic-scale changes in gold nanocrystals in reactive liquids.
+  image_alt: 'Table of contents graphic: millisecond atomic dynamics of gold nanocrystals in liquid'
+  image_credit: Reprinted with permission from Kang, S. et al. J. Am. Chem. Soc. 2026, 148, 26845–26853. Copyright 2026 American Chemical Society.
+# before 2025 (only Quantum Information Science keeps earlier papers)
+- doi: 10.1073/pnas.2307633121
+  year: 2024
+  area: synthesis
+  journal: Proc. Natl. Acad. Sci. U.S.A.
+  volume: '121'
+  issue: '18'
+  pages: e2307633121
+  title: Observation of negative surface and interface energies of quantum dots
+  authors:
+  - Jason J. Calvin
+  - Amanda S. Brewer
+  - Michelle F. Crook
+  - Tierni M. Kaufman
+  - A. Paul Alivisatos
+  members:
+  - Amanda S. Brewer
+  open_access: true
+  status: verified
+  image: https://alivisatoslab.uchicago.edu/files/2026/10/fig1-pnas-2307633121.jpg
+  highlight: ''
+  publication_date: '2024-04-22'
+  image_alt: 'Figure 1: calorimetric measurement of surface energies of quantum dots'
+  image_credit: Figure 1 from Calvin, J. J.; Brewer, A. S.; Crook, M. F.; Kaufman, T. M.; Alivisatos, A. P. Proc. Natl. Acad. Sci. U.S.A. 2024, 121, e2307633121,
+    licensed under CC BY-NC-ND 4.0.
+# before 2025 (only Quantum Information Science keeps earlier papers)
+- doi: 10.1021/acs.jpcc.3c00187
+  year: 2023
+  area: synthesis
+  journal: J. Phys. Chem. C
+  volume: '127'
+  issue: '21'
+  pages: 10270–10281
+  title: Impact of Uniform Facets on the Thermodynamics of Ligand Exchanges on Colloidal Quantum Dots
+  authors:
+  - Amanda S. Brewer
+  - Jason J. Calvin
+  - A. Paul Alivisatos
+  members:
+  - Amanda S. Brewer
+  open_access: false
+  status: verified
+  image: https://alivisatoslab.uchicago.edu/files/2026/10/toc-jpcc-3c00187.jpg
+  highlight: ''
+  publication_date: '2023-05-22'
+  image_alt: 'Table of contents graphic: ligand exchange thermodynamics on faceted CdSe nanocrystals'
+  image_credit: Reprinted with permission from Brewer, A. S.; Calvin, J. J.; Alivisatos, A. P. J. Phys. Chem. C 2023, 127, 10270–10281. Copyright 2023 American Chemical
+    Society.
+# before 2025 (only Quantum Information Science keeps earlier papers)
+- doi: 10.1021/acs.jpcc.2c04223
+  year: 2022
+  area: synthesis
+  journal: J. Phys. Chem. C
+  volume: '126'
+  issue: '30'
+  pages: 12958–12971
+  title: Thermodynamics of the Adsorption of Cadmium Oleate to Cadmium Sulfide Quantum Dots and Implications of a Dynamic Ligand Shell
+  authors:
+  - Jason J. Calvin
+  - Assaf Ben-Moshe
+  - Ethan B. Curling
+  - Amanda S. Brewer
+  - Adam B. Sedlak
+  - Tierni M. Kaufman
+  - A. Paul Alivisatos
+  members:
+  - Amanda S. Brewer
+  open_access: false
+  status: verified
+  image: https://alivisatoslab.uchicago.edu/files/2026/10/toc-jpcc-2c04223.jpg
+  highlight: ''
+  publication_date: '2022-07-21'
+  image_alt: 'Table of contents graphic: cadmium oleate adsorption on cadmium sulfide quantum dots'
+  image_credit: Reprinted with permission from Calvin, J. J. et al. J. Phys. Chem. C 2022, 126, 12958–12971. Copyright 2022 American Chemical Society.
+# before 2025 (only Quantum Information Science keeps earlier papers)
+- doi: 10.1038/s44160-022-00025-4
+  year: 2022
+  area: synthesis
+  journal: Nat. Synth.
+  volume: '1'
+  issue: '2'
+  pages: 127–137
+  title: The role of organic ligand shell structures in colloidal nanocrystal synthesis
+  authors:
+  - Jason J. Calvin
+  - Amanda S. Brewer
+  - A. Paul Alivisatos
+  members:
+  - Amanda S. Brewer
+  open_access: false
+  status: verified
+  image: https://alivisatoslab.uchicago.edu/files/2026/10/fig1-s44160-022-00025-4.jpg
+  highlight: ''
+  publication_date: '2022-02-10'
+  image_alt: 'Figure 1: organic ligand shell structures in colloidal nanocrystal synthesis'
+  image_credit: Figure 1 from Calvin, J. J.; Brewer, A. S.; Alivisatos, A. P. Nat. Synth. 2022, 1, 127–137, licensed under CC BY-NC 4.0.
+# Talapin group collaboration; Paul Alivisatos is not the last author
+- doi: 10.1021/jacs.6c03474
+  year: 2026
+  area: synthesis
+  journal: J. Am. Chem. Soc.
+  volume: '148'
+  issue: '22'
+  pages: 22804–22816
+  title: Emissive Colloidal GaAs Quantum Dots
+  authors:
+  - Jun Hyuk Chang
+  - Danial Zangeneh
+  - Heng-Chi Chu
+  - Justin C. Ondry
+  - Kailai Lin
+  - Yuan Liu
+  - Zirui Zhou
+  - Ahhyun Jeong
+  - James Cassidy
+  - Sungsu Kang
+  - Scott A. Crooker
+  - Alexander S. Filatov
+  - A. Paul Alivisatos
+  - Eran Rabani
+  - Robert F. Klie
+  - Richard D. Schaller
+  - Alexander L. Efros
+  - Dmitri V. Talapin
+  members: []
+  open_access: false
+  status: verified
+  image: https://alivisatoslab.uchicago.edu/files/2026/10/toc-jacs-6c03474.jpg
+  highlight: ''
+  publication_date: '2026-05-29'
+  homepage_summary: Molten-salt synthesis and a K2S surface treatment give GaAs quantum dots with bright band-edge emission and working LEDs.
+  image_alt: 'Table of contents graphic: emissive colloidal GaAs quantum dots'
+  image_credit: Reprinted with permission from Chang, J. H. et al. J. Am. Chem. Soc. 2026, 148, 22804–22816. Copyright 2026 American Chemical Society.
+# Talapin group collaboration; Paul Alivisatos is not the last author
+- doi: 10.1021/jacs.6c10386
+  year: 2026
+  area: synthesis
+  journal: J. Am. Chem. Soc.
+  volume: '148'
+  issue: '40'
+  pages: 43123–43138
+  title: Redox Reactions in Molten Indium Halide Salts Enable the Synthesis and Shape Control of In-Pnictide Nanocrystals
+  authors:
+  - Justin C. Ondry
+  - Zirui Zhou
+  - Luca Giordano
+  - Yi-Chen Chen
+  - Jun Hyuk Chang
+  - Yuan Liu
+  - Rebecca C. Hotton
+  - Shengsong Yang
+  - Zeger Hens
+  - A. Paul Alivisatos
+  - Dmitri V. Talapin
+  members: []
+  open_access: false
+  status: verified
+  image: https://alivisatoslab.uchicago.edu/files/2026/10/toc-jacs-6c10386.jpg
+  highlight: ''
+  publication_date: '2026-09-29'
+  homepage_summary: Bromide salt melts keep InP and InAs nanocrystals intact, so annealing turns them into faceted tetrahedra that self-assemble.
+  image_alt: 'Table of contents graphic: indium pnictide nanocrystals in molten indium halide salts'
+  image_credit: Reprinted with permission from Ondry, J. C. et al. J. Am. Chem. Soc. 2026, 148, 43123–43138. Copyright 2026 American Chemical Society.

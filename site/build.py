@@ -25,6 +25,7 @@ NOSCROLL = 'et_smooth_scroll_disabled'  # Divi intercepts in-page links for smoo
 
 TAGS = yaml.safe_load((ROOT / 'data/tags.yaml').read_text())
 AREA_ORDER = ['synthesis', 'lctem', 'spectroscopy', 'quantum']
+SELECTED_AREA_ORDER = ['lctem', 'synthesis', 'spectroscopy', 'quantum']  # Selected Publications: Electron Microscopy in Liquid first (Dylan, 2026-10-21)
 AREA_PAGE_LABEL = {
     'synthesis': 'Synthesis and Properties of Nanoparticles',
     'lctem': 'Advancing Electron Microscopy in Liquid',
@@ -302,6 +303,12 @@ for paper in selected_source:
         raise ValueError(f'Unknown research area: {paper.get("area")}')
     if paper.get('status') != 'verified':
         raise ValueError(f'Unverified selected citation: {paper["doi"]}')
+    # Selected Publications rules (Dylan, 2026-10-21): Paul Alivisatos is the last author; only papers from 2025 on,
+    # except Quantum Information Science. Excluded papers live in selected_publications_excluded.yaml.
+    if 'alivisatos' not in paper['authors'][-1].casefold():
+        raise ValueError(f'Selected paper without Paul Alivisatos as last author: {paper["doi"]}')
+    if paper['area'] != 'quantum' and int(paper['year']) < 2025:
+        raise ValueError(f'Selected paper before 2025 outside Quantum Information Science: {paper["doi"]}')
     matches = current_matches(paper)
     if matches:
         eligible.append((paper, matches))
@@ -309,9 +316,10 @@ for paper in selected_source:
 
 def render_selected_paper(paper):
     authors = []
-    for author in paper['authors']:
+    for i, author in enumerate(paper['authors']):
         label = esc(initials_name(author))
-        authors.append(f'<strong>{label}</strong>' if norm(author) in member_aliases else label)
+        # bold: first author and Paul Alivisatos only (Dylan, 2026-10-21)
+        authors.append(f'<strong>{label}</strong>' if i == 0 or 'alivisatos' in author.casefold() else label)
     doi_url = 'https://doi.org/' + paper['doi']
     meta = [f'<span class="ag-site-citation">{esc(citation_details(paper))}</span>'] if citation_details(paper) else []
     meta.append(f'<a class="ag-site-paper-doi" href="{esc(doi_url)}" target="_blank" rel="noopener noreferrer">DOI</a>')
@@ -342,7 +350,7 @@ def paper_figure(paper, cls='ag-site-paper-figure'):
 
 def selected_block():
     area_html, jumps = [], []
-    for area in AREA_ORDER:
+    for area in SELECTED_AREA_ORDER:
         papers = sorted([p for p, _ in eligible if p['area'] == area], key=lambda p: p.get('publication_date', ''), reverse=True)
         if not papers:
             continue
@@ -353,8 +361,9 @@ def selected_block():
                          f'<a class="ag-site-area-link" href="{SITE}/research/#{area}">About this research area →</a>'
                          f'<ul>{"".join(render_selected_paper(p) for p in papers)}</ul></section>')
     return ('<!-- AUTO:selected:START --><section class="ag-site-selected" aria-labelledby="selected-heading">'
-            '<header><span class="ag-site-eyebrow">Since 2022</span><h2 class="ag-site-selected-heading" id="selected-heading">Selected Publications</h2>'
-            '<p class="ag-site-selected-lede">Recent work by current group members, organized by research area. Names in bold are current group members.</p></header>'
+            f'<header><span class="ag-site-eyebrow">Since {min(int(p["year"]) for p, _ in eligible)}</span><h2 class="ag-site-selected-heading" id="selected-heading">Selected Publications</h2>'
+            '<p class="ag-site-selected-lede">Recent papers with Paul Alivisatos as corresponding author, organized by research area. '
+            'First authors and Paul Alivisatos are in bold.</p></header>'
             f'<nav class="ag-site-jumps" aria-label="Research areas">{"".join(jumps)}</nav>' + ''.join(area_html) +
             '</section><!-- AUTO:selected:END -->')
 

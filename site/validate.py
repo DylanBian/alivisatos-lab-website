@@ -99,6 +99,17 @@ selected = yaml.safe_load((ROOT / 'data/selected_publications.yaml').read_text()
 proot = roots['publications']
 sel = by_class(proot, 'ag-site-paper', 'li')
 assert len(sel) == len(selected)
+# Selected Publications rules (Dylan, 2026-10-21): Electron Microscopy in Liquid first; Paul Alivisatos last author;
+# 2025 on except Quantum Information Science; bold only for the first author and Paul Alivisatos.
+areas_shown = [sec.get('id') for sec in proot.xpath('.//section[contains(@class,"ag-site-area")]')]
+assert areas_shown and areas_shown[0] == 'selected-lctem', areas_shown
+for p in selected:
+    assert 'alivisatos' in p['authors'][-1].casefold(), p['doi']
+    assert p['area'] == 'quantum' or int(p['year']) >= 2025, p['doi']
+for li in sel:
+    bold = [b.text_content() for b in by_class(li, 'ag-site-paper-authors', 'p')[0].xpath('.//strong')]
+    first = by_class(li, 'ag-site-paper-authors', 'p')[0].text_content().split(';')[0].strip()
+    assert bold and bold[0] == first and all(b == first or 'Alivisatos' in b for b in bold), bold
 import csv
 n_rows = sum(1 for _ in csv.DictReader((ROOT / 'data/publications.csv').open()))
 pubs = by_class(proot, 'ag-site-pub', 'li')
