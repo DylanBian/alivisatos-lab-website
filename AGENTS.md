@@ -63,6 +63,9 @@ Current tasks live in `tasks/`. The newest task file is the one to follow.
 - `site/push.py` replaces content only between AUTO markers in the live `content.raw` (see `site/README.md`).
 - Page data lives in `site/data/`; edit data and templates, never the generated files in `site/build/` by hand.
   - `members.yaml`: structured people records. When someone leaves, move the entry to `alumni.yaml` with `end: <year>`.
+  - `selected_publications.yaml`: only papers with Paul Alivisatos as last (corresponding) author; outside Quantum
+    Information Science only papers from 2025 on; bold only the first author and Paul (Dylan, 2026-10-21). Removed
+    papers go to `selected_publications_excluded.yaml`. build.py stops on a paper that breaks these rules.
   - `publications.csv` (the list), `metadata/works.json` (Crossref/OpenAlex), `publication_tags.yaml` (tags; set
     `tag_source: human` on any entry you correct so AI runs never overwrite it), `tags.yaml` (allowed tags and their
     definitions), `selected_publications.yaml`, `key_papers.yaml` (featured paper per research area on the home page).

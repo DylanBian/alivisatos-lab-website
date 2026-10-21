@@ -2,6 +2,19 @@
 
 Record every publish: date (UTC), page, Actions run link, public-check result.
 
+## 2026-10-21
+
+### 19:13-19:16 UTC publish runs 39659691287 (publications), 39659930117 (home): Selected Publications rules (Dylan)
+- Only papers with Paul Alivisatos as last (and corresponding) author; outside Quantum Information Science only 2025 on.
+  Seven papers moved to `site/data/selected_publications_excluded.yaml`: JACS 2026 GaAs quantum dots and JACS 2026 molten
+  indium halide salts (Talapin group collaborations), JACS 2026 millisecond dynamics (last author Jungwon Park), PNAS 2024,
+  J. Phys. Chem. C 2023 and 2022, Nat. Synth. 2022. Seven papers remain; the full list still has all 490.
+- Electron Microscopy in Liquid is the first area in Selected Publications; bold only for first authors and Paul Alivisatos.
+  build.py and validate.py enforce these rules.
+- Home: latest three are now Nat. Synth. 2026, Chem. Mater. 2025 (new one-line summary) and MRS Bull. 2025. The "Recent
+  results" line for Electron Microscopy in Liquid now cites ACS Nano 2025 (Cu3As etching; Paul last author), edited in
+  Chrome outside the AUTO module. Both pages read back identical; checked as a visitor.
+
 ## 2026-10-20
 
 ### 17:26-17:52 UTC: fixes from the external site review (Dylan asked for them; edits in Dylan's signed-in Chrome via REST)
