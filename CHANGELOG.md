@@ -4,6 +4,12 @@ Record every publish: date (UTC), page, Actions run link, public-check result.
 
 ## 2026-10-21
 
+### 23:53-23:55 UTC publish runs 39696296116 (publications), 39696440868 (home)
+- Selected Publications: Kang et al., J. Am. Chem. Soc. 2026 (millisecond atomic dynamics) added back to Electron
+  Microscopy in Liquid at Dylan's request (`last_author_exception`; last author Jungwon Park). Home latest three:
+  JACS 2026, Nat. Synth. 2026, Chem. Mater. 2025. Both pages read back identical.
+- README quick start translated to English.
+
 ### 19:29 UTC publish run 39662099324 (publications)
 - Selected Publications: Shengsong Yang and Binyu Wu bold as co-first authors of ACS Nano 2025 (Dylan). The sentence
   added under the heading at 19:13 was not requested and is removed; no equal-contribution note.
