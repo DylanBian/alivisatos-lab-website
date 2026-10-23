@@ -1,0 +1,26 @@
+name: Member history
+
+# Read-only: first and last Members-page revision that lists each name (for alumni years). Changes nothing.
+on:
+  workflow_dispatch:
+    inputs:
+      names:
+        description: "Names separated by semicolons"
+        type: string
+
+permissions:
+  contents: read
+
+jobs:
+  history:
+    runs-on: ubuntu-latest
+    env:
+      WP_USER: ${{ secrets.WP_USER }}
+      WP_APP_PASSWORD: ${{ secrets.WP_APP_PASSWORD }}
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+      - run: pip install -r requirements.txt
+      - run: python scripts/member_history.py "${{ inputs.names }}"
