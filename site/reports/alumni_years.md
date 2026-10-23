@@ -25,7 +25,7 @@ website edits, which can lag the actual departure.
 | Yifan (Miller) Liao (listed as "YIFAN (MILLER) LIAO") | **no** | Undergraduate Student at UChicago Physical Sciences Division | 2025-04-15 | 2025-05-06 | 2025-05-16 |
 | Nadia Ceaser | **no** | Undergraduate Student | 2024-08-07 | 2024-09-27 | 2024-09-27 |
 | Julien Perce | yes (2026-10-23) | Undergraduate Student at UChicago Physical Sciences Division | 2024-11-12 | 2026-10-20 | moved by Dylan 2026-10-23 |
-| Isaac Spiller | yes (2026-10-23) | Undergraduate Student at UChicago Physical Sciences Division | 2026-01-28 | 2026-10-20 | moved by Dylan 2026-10-23 |
+| Isaac Spiller | yes (2026-10-23) | Undergraduate Student at UChicago Physical Sciences Division | 2026-01-28 | 2026-10-20 | moved by Dylan 2026-10-23; years 2025–2026 per Dylan |
 
 Abdullah S. Abbas and Minhal Hasham also stayed in a hidden (disabled) legacy section of the page until 2026-10-19;
 the dates above use the visible list.
