@@ -2,6 +2,13 @@
 
 Record every publish: date (UTC), page, Actions run link, public-check result.
 
+## 2026-10-23
+
+### 19:41-19:43 UTC publish runs 40013376898 (members), 40013564999 (alumni)
+- Julien Perce (2024–2026) and Isaac Spiller (2025–2026, per Dylan) moved from Members to Alumni as undergraduates;
+  Members 18 people, Alumni 189. Start years from the Members-page revision history (new read-only workflow
+  `member-history.yml`). Both pages read back identical; checked as a visitor.
+
 ## 2026-10-21
 
 ### 23:53-23:55 UTC publish runs 39696296116 (publications), 39696440868 (home)
