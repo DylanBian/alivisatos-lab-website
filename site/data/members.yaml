@@ -284,16 +284,6 @@
   photo_alt: Ivan Shapkarov
   education:
   - Major in Molecular Engineering, Quantum Track
-- id: members-017
-  name: Julien Perce
-  display_name: Julien Perce
-  group: undergrad
-  role: Undergraduate Student at UChicago Physical Sciences Division
-  email: jperce@uchicago.edu
-  photo: https://alivisatoslab.uchicago.edu/files/2024/11/headshot.jpeg
-  photo_alt: Julien Perce
-  education:
-  - Major in Pure Mathematics
 - id: members-018
   name: Davit Moreno
   display_name: Davit Moreno
@@ -304,13 +294,6 @@
   photo_alt: Davit Moreno
   education:
   - Major in Molecular Engineering, Quantum Track
-- id: members-019
-  name: Isaac Spiller
-  display_name: Isaac Spiller
-  group: undergrad
-  role: Undergraduate Student at UChicago Physical Sciences Division
-  photo: https://alivisatoslab.uchicago.edu/files/2026/07/IMG_0085.jpg
-  photo_alt: Isaac Spiller
 - id: members-020
   name: Jamie Sims
   display_name: Jamie Sims
